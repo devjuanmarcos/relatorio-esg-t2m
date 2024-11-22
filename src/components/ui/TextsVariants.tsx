@@ -21,7 +21,7 @@ const variantClasses: Record<TextVariants, string> = {
   h1_main_title: "font-notosans text-4xl leading-tight",
   paragraph_01: "font-opensans text-base",
   top_title: "font-bold text-xl",
-  title_georgia: "font-notosans text-2xl leading-[2.6875rem]",
+  title_georgia: "font-notosans text-4xl leading-[2.6875rem] ",
   button_text: "font-opensans font-medium",
   h2_title: "font-opensans font-bold text-3xl leading-[2.6875rem]",
   title_card: "font-opensans font-semibold text-xl",

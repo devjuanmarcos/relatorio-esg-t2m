@@ -2,33 +2,32 @@
 
 import React from "react";
 import { Skeleton } from "@ui/skeleton";
-import { Button, buttonVariants } from "@ui/button";
+import { buttonVariants } from "@ui/button";
 import TextVariantes from "@ui/TextsVariants";
 import Link from "next/link";
 import { BoxCard } from "../ui/boxCard";
+import { useIsMounted } from "@/hooks/useIsMounted";
 
-export interface MainBannerInterface {
+export interface SimpleCallBannerInterface {
   imageUrl: string;
   title: string;
   paragraph: string;
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
+  alignment: "end" | "start";
 }
 
-const MainBanner: React.FC<MainBannerInterface> = ({
+export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   imageUrl,
+  alignment,
   paragraph,
   title,
   buttonLink,
   buttonTarget,
   buttonText,
 }) => {
-  const [isMounted, setIsMounted] = React.useState<boolean>(false);
-
-  React.useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const isMounted = useIsMounted();
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -36,11 +35,12 @@ const MainBanner: React.FC<MainBannerInterface> = ({
 
   return (
     <div
-      className="bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center"
+      className={`bg-no-repeat bg-cover flex justify-center ${alignment == "start" ? "md:justify-start" : "md:justify-end"} items-center md:items-end w-full 
+        aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <BoxCard>
-        <TextVariantes variant="h1_main_title" lineBottom>
+      <BoxCard type="simple">
+        <TextVariantes variant="h2_title" lineBottom>
           {title}
         </TextVariantes>
         <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
@@ -53,8 +53,3 @@ const MainBanner: React.FC<MainBannerInterface> = ({
     </div>
   );
 };
-
-const MemoizedMainBanner = React.memo(MainBanner);
-MemoizedMainBanner.displayName = "MainBanner";
-
-export default MemoizedMainBanner;
