@@ -69,6 +69,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
         bg: {
           principal: "rgb(var(--var-background-principal))",
           marca50: "rgb(var(--var-marca-50))",
@@ -94,6 +95,10 @@ const config: Config = {
           "verde-escuro": "rgb(var(--var-text-verde-escuro))",
         },
         var: {
+          "verde-principal": "rgb(var(--var-verde-principal))",
+          "preto-principal": "rgb(var(--var-preto-principal))",
+          "branco-principal": "rgb(var(--var-branco-principal))",
+
           "accessibility-header-bg": "rgb(var(--var-accessibility-header-bg))",
           "accessibility-header-icon": "rgb(var(--var-accessibility-header-icon))",
 

@@ -4,6 +4,11 @@
 
 @layer base {
   :root {
+    /* FIGMA COLORS */
+    --var-verde-principal: 1, 169, 152;
+    --var-preto-principal: 22, 21, 19;
+    --var-branco-principal: 255, 255, 255;
+
     /* BRANCO  */
     --var-branco-100: 255, 255, 255;
 
@@ -73,6 +78,11 @@
   }
 
   .dark {
+    /* FIGMA COLORS */
+    --var-verde-principal: 1, 169, 152;
+    --var-preto-principal: 22, 21, 19;
+    --var-branco-principal: 255, 255, 255;
+
     /* BRANCO  */
     --var-branco-100: 255, 255, 255;
 
@@ -147,57 +157,57 @@
     transition: background-color 0.3s linear;
   }
 
-  .h1-bold {
+  .h1_main_title {
+    font-family: var(--font-notosans);
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+
+  .paragraph_01 {
+    font-family: var(--font-opensans);
+  }
+
+  .top_title {
     font-weight: bold;
-    font-size: 2.375rem;
-    line-height: 2.875rem;
-  }
-
-  .h2-semibold {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2.625rem;
-  }
-
-  .top-title-medium {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-
-  .title-card-medium {
-    font-weight: 500;
     font-size: 1.375rem;
+    line-height: auto;
   }
 
-  .paragraph-card {
-    font-size: 0.875rem;
-    font-weight: 132%;
+  .title_georgia {
+    font-family: var(--font-notosans);
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
   }
 
-  .paragraph-banner {
-    font-weight: normal;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .button_text {
+    font-family: var(--font-opensans);
+    font-weight: 500;
   }
 
-  .cta {
-    font-size: 0.875rem;
-    font-weight: 132%;
-    color: rgb(var(--var-verde-300));
+  .h2_title {
+    font-family: var(--font-opensans);
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.6875rem;
   }
 
-  @media (max-width: 480px) {
-    .h1-bold {
-      font-size: 2rem;
-      line-height: 2.375rem;
-    }
+  .title_card {
+    font-family: var(--font-opensans);
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .h2_title_semibold {
+    font-family: var(--font-opensans);
+    font-weight: 600;
+    line-height: 2.6875rem;
+    font-size: 2.5rem;
   }
 
   body {
-    color: rgb(var(--var-text-cinza-escuro));
+    color: rgb(var(--var-preto-principal));
     background-color: rgb(var(--var-background-principal));
-    font-family: var(--font-montserrat);
+    font-family: var(--font-opensans);
     min-height: 100vh;
     overflow-x: hidden;
   }
@@ -384,52 +394,48 @@
 }
 
 .custom-transform {
-  transform: none !important; /* Sobrescreve o transform do plugin */
+  transform: none !important;
   top: 100% !important;
 }
-/* Estilos globais para o controle deslizante de tamanho de fonte */
+
 input[type="range"] {
-  -webkit-appearance: none; /* Remove o estilo padrão do controle deslizante */
+  -webkit-appearance: none;
   width: 100%;
-  height: 2px; /* Espessura do trilho do controle deslizante */
-  background: rgb(var(--var-cinza-800)); /* Cor do trilho do controle deslizante */
-  border-radius: 5px; /* Cantos arredondados */
-  cursor: pointer; /* Muda o cursor ao passar sobre o controle */
-  outline: none; /* Remove o contorno padrão */
+  height: 2px;
+  background: rgb(var(--var-cinza-800));
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
 }
 
-/* Estilo para o "thumb" (cursor) do controle deslizante */
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Remove o estilo padrão do "thumb" */
-  width: 4px; /* Largura do "thumb" */
-  height: 20px; /* Altura do "thumb" */
-  border-radius: 12px; /* "thumb" arredondado */
-  background: rgb(var(--var-cinza-800)); /* Cor do "thumb" */
-  cursor: pointer; /* Muda o cursor ao passar sobre o "thumb" */
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Sombra para o "thumb" */
+  -webkit-appearance: none;
+  width: 4px;
+  height: 20px;
+  border-radius: 12px;
+  background: rgb(var(--var-cinza-800));
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Para navegadores que não são WebKit (Firefox, etc.) */
 input[type="range"]::-moz-range-thumb {
-  width: 4px; /* Largura do "thumb" */
-  height: 20px; /* Altura do "thumb" */
-  border-radius: 12px; /* "thumb" arredondado */
-  background: rgb(var(--var-cinza-800)); /* Cor do "thumb" */
-  cursor: pointer; /* Muda o cursor ao passar sobre o "thumb" */
+  width: 4px;
+  height: 20px;
+  border-radius: 12px;
+  background: rgb(var(--var-cinza-800));
+  cursor: pointer;
 }
 
-/* Adicionando estilo para o "thumb" no IE */
 input[type="range"]::-ms-thumb {
-  width: 20px; /* Largura do "thumb" */
-  height: 20px; /* Altura do "thumb" */
-  border-radius: 50%; /* "thumb" arredondado */
-  background: rgb(var(--var-cinza-800)); /* Cor do "thumb" */
-  cursor: pointer; /* Muda o cursor ao passar sobre o "thumb" */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(var(--var-cinza-800));
+  cursor: pointer;
 }
 
-/* Estilo para o trilho do controle deslizante em IE */
 input[type="range"]::-ms-track {
-  background: rgb(var(--var-cinza-800)); /* Cor do trilho do controle deslizante */
-  border-color: transparent; /* Remove a borda do trilho */
-  color: transparent; /* Torna a cor do trilho transparente */
+  background: rgb(var(--var-cinza-800));
+  border-color: transparent;
+  color: transparent;
 }

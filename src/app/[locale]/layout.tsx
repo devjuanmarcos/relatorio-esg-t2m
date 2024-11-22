@@ -3,18 +3,16 @@ import "./globals.css";
 import { HtmlFontSizeProvider } from "@/context/HtmlFontSizeContext";
 import { ThemeProvider } from "next-themes";
 import { WindowSizeProvider } from "@/context/WindowSizeContext";
-import { Nunito, Martel, Montserrat } from "next/font/google";
-import { Header } from "@/components/header/Header";
-import { BarTools } from "@/components/barra-acessibilidade/BarTools";
+import { Noto_Sans, Open_Sans } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/footer/footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import CombinedHeader from "@/components/header/CombinedHeader";
 
-const APP_NAME = "Biomob";
-const APP_DEFAULT_TITLE = "Biomob";
+const APP_NAME = "T2M - Test to Market";
+const APP_DEFAULT_TITLE = "T2M - Test to Market";
 const APP_TITLE_TEMPLATE = "%s";
-const APP_DESCRIPTION = "Biomob!";
+const APP_DESCRIPTION = "T2M - Test to Market";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000"),
@@ -29,7 +27,6 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: APP_DEFAULT_TITLE,
-    // startUpImage: [],
   },
   formatDetection: {
     telephone: false,
@@ -53,22 +50,16 @@ export const metadata: Metadata = {
   },
 };
 
-const montserrat = Montserrat({
+const notosans = Noto_Sans({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-notosans",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const nunito = Nunito({
+const opensans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-nunito",
+  variable: "--font-opensans",
   weight: ["300", "400", "500", "600", "700", "800"],
-});
-
-const martel = Martel({
-  subsets: ["latin"],
-  variable: "--font-lato",
-  weight: ["400", "700"],
 });
 
 export default function RootLayout({
@@ -84,10 +75,10 @@ export default function RootLayout({
     <html
       className="transition-all h-full w-full scrollbar-thin scrollbar-webkit duration-200 ease-in-out"
       suppressHydrationWarning
-      lang="pt-BR"
+      lang={params.locale}
     >
       <Script defer data-domain="biomob.org" src="https://plausible.biomob.app/js/script.js" />
-      <body className={`${nunito.variable} ${martel.variable} ${montserrat.variable}`}>
+      <body className={`${opensans.variable} ${notosans.variable}`}>
         <NextIntlClientProvider messages={messages} locale={params.locale}>
           <WindowSizeProvider>
             <HtmlFontSizeProvider>
