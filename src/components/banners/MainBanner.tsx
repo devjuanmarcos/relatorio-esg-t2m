@@ -1,57 +1,60 @@
 "use client";
 
-import React, { FC, memo } from "react";
-import { Button } from "../button/Button";
-import TextsVariants from "../texts/TextsVariants";
-import Image from "next/image";
+import React from "react";
+import { Skeleton } from "@ui/skeleton";
+import { Button, buttonVariants } from "@ui/button";
+import TextVariantes from "@ui/TextsVariants";
+import Link from "next/link";
+import { BoxCard } from "../ui/boxCard";
 
-const MainBanner: FC = () => {
-  const imageRef1 = React.useRef(null);
+export interface MainBannerInterface {
+  imageUrl: string;
+  title: string;
+  paragraph: string;
+  buttonText?: string;
+  buttonLink?: string;
+  buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
+}
 
-  const handleImageLoad = (ref: React.MutableRefObject<any>) => {
-    ref.current.dataset.loaded = "true";
-  };
+const MainBanner: React.FC<MainBannerInterface> = ({
+  imageUrl,
+  paragraph,
+  title,
+  buttonLink,
+  buttonTarget,
+  buttonText,
+}) => {
+  const [isMounted, setIsMounted] = React.useState<boolean>(false);
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <Skeleton className="w-full aspect-[1440/572]" />;
+  }
 
   return (
     <div
-      className="bg-no-repeat bg-cover flex justify-center items-center"
-      style={{ backgroundImage: `url(/img/wallpaper/banner_mar.png)` }}
+      className="bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center"
+      style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="flex flex-col items-center justify-center h-screen overflow-hidden w-full">
-        <div className="flex flex-col gap-4 items-center max-w-[60rem] relative">
-          <TextsVariants
-            text="Coloque aqui o top título do Main Banner"
-            variant="topTitle"
-            showLine={false}
-            extraClassName="text-center"
-          />
-          <TextsVariants variant="titleH1Bold" text="Coloque aqui o título do Main Banner" textCenter={true} />
-          <div className="max-w-[40.9375rem] mt-4">
-            <TextsVariants variant="titleBold" text="Coloque aqui a descrição do Main Banner" textCenter={true} />
-          </div>
-          <Button text="SOBRE NÓS" width="fit" />
-        </div>
-        <div className="w-full absolute bottom-0">
-          <Image
-            ref={imageRef1}
-            src="/img/grafismos/onda_1.svg"
-            alt="Grafismo de onda"
-            width={1300}
-            height={142}
-            className=" h-auto blur-up"
-            quality={100}
-            sizes="1300px"
-            placeholder="blur"
-            blurDataURL="data:..."
-            onLoad={() => handleImageLoad(imageRef1)}
-          />
-        </div>
-      </div>
+      <BoxCard>
+        <TextVariantes variant="h1_main_title" lineBottom>
+          {title}
+        </TextVariantes>
+        <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
+        {buttonLink && buttonText && (
+          <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
+            {buttonText}
+          </Link>
+        )}
+      </BoxCard>
     </div>
   );
 };
 
-const MemoizedMainBanner = memo(MainBanner);
+const MemoizedMainBanner = React.memo(MainBanner);
 MemoizedMainBanner.displayName = "MainBanner";
 
 export default MemoizedMainBanner;

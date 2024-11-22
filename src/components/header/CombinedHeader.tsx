@@ -54,22 +54,20 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-var-background-claro ">
-      {/* BarTools */}
-      <div className="relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full px-4 py-1 my-0 mx-auto text-cinza-800 ">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary">
+      <div className="relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade ">
         <VLibrasIntegration />
-        <div className="flex gap-4 text-cinza-800 items-center">
-          <span className="md:contents hidden h2-semibold text-[1.4rem]">{t("acessibilidade")}</span>
+        <div className="flex gap-4 text-var-icone-barra-acessibilidade items-center">
+          <span className="md:contents hidden font-semibold text-[1.4rem] font-montserrat">{t("acessibilidade")}</span>
           <SwitchWithIcon />
           <FontSizeSlider />
-
           <Image
-            src={theme == "light" ? "/ico/librasDark.svg" : "/ico/libras.svg"}
+            src={"/ico/libras.svg"}
             onClick={ativarVLibras}
             alt={t("ativarVLibras")}
             height={32}
             width={32}
-            className="text-cinza-800 cursor-pointer"
+            className="text-var-icone-barra-acessibilidade cursor-pointer"
           />
           <MouseSpeak />
           <ComboboxLanguage locale={locale} type="header" />
@@ -78,9 +76,8 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
           <span className="flex flex-col text-sm justify-end ">
             <span className="w-max text-end ">by</span>
           </span>
-
           <NextImage
-            imageUrl={theme == "light" ? "/img/BIOMOB-PRETA-VERDE.png" : "/img/BIOMOB-BRANCA.png"}
+            imageUrl={"/img/BIOMOB-BRANCA.png"}
             altImage={t("logo")}
             ariaLabel={t("logo")}
             sizes="100vw"

@@ -8,56 +8,21 @@
     --var-verde-principal: 1, 169, 152;
     --var-preto-principal: 22, 21, 19;
     --var-branco-principal: 255, 255, 255;
+    --var-barra-acessibilidade-icone: 255, 255, 255;
 
-    /* BRANCO  */
-    --var-branco-100: 255, 255, 255;
-
-    /* CINZA  */
-    --var-cinza-400: 76, 76, 76;
-    --var-cinza-500: 63, 63, 63;
-    --var-cinza-600: 56, 56, 56;
-    --var-cinza-800: 56, 56, 56;
-
-    /* VERDE  */
-    --var-verde-50: 241, 252, 248;
-    --var-verde-300: 50, 163, 139;
-    --var-verde-400: 54, 173, 150;
-    --var-verde-600: 26, 135, 114;
-
-    /* background colors */
-    --var-background-principal: 253, 253, 253;
-    --var-marca-50: 241, 252, 248;
-    --var-marca-65: 231, 251, 244;
-    --var-marca-80: 218, 249, 239;
-    --var-marca-100: 208, 247, 234;
-    --var-marca-100-08: 208, 247, 234, 0.9;
-    --var-marca-200: 162, 237, 215;
-    --var-marca-300: 107, 221, 191;
-    --var-marca-400: 54, 179, 150;
-    --var-marca-500: 35, 169, 140;
-    --var-marca-600: 26, 135, 114;
-    --var-marca-700: 25, 108, 93;
-    --var-marca-800: 24, 87, 76;
-    --var-marca-900: 25, 72, 64;
-    --var-marca-950: 8, 43, 38;
-
-    /* text colors */
-    --var-text-branco: 224, 242, 241;
-    --var-text-cinza-claro: 88, 88, 88;
-    --var-text-cinza-escuro: 56, 56, 56;
-    --var-text-verde-claro: 107, 221, 191;
-    --var-text-verde-medio: 35, 169, 140;
-    --var-text-verde-escuro: 26, 135, 114;
+    --var-text-button: 255, 255, 255;
 
     /* Shadcn configuration */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0, 0%, 100%;
+    --background-hover: 0, 0%, 100%, 0.703;
+    --foreground: 0, 6.8%, 8.1%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0, 6.8%, 8.1%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover-foreground: 0, 6.8%, 8.1%;
+    --primary: 170, 98.2%, 33.1%;
+    --primary-hover: 171, 78%, 47%, 0.9;
+    --primary-foreground: 0, 0%, 100%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
@@ -80,56 +45,22 @@
   .dark {
     /* FIGMA COLORS */
     --var-verde-principal: 1, 169, 152;
-    --var-preto-principal: 22, 21, 19;
+    --var-preto-principal: 255, 255, 255;
     --var-branco-principal: 255, 255, 255;
+    --var-barra-acessibilidade-icone: 255, 255, 255;
 
-    /* BRANCO  */
-    --var-branco-100: 255, 255, 255;
-
-    /* CINZA  */
-    --var-cinza-400: 76, 76, 76;
-    --var-cinza-500: 63, 63, 63;
-    --var-cinza-600: 56, 56, 56;
-    --var-cinza-800: 255, 255, 255;
-
-    /* VERDE  */
-    --var-verde-50: 241, 252, 248;
-    --var-verde-300: 50, 163, 139;
-    --var-verde-400: 54, 173, 150;
-    --var-verde-600: 26, 135, 114;
-
-    --var-background-principal: 10, 10, 10;
-    --var-marca-50: 36, 37, 37;
-    --var-marca-65: 35, 36, 36;
-    --var-marca-80: 34, 36, 36;
-    --var-marca-100: 36, 36, 36;
-    --var-marca-100-08: 34, 37, 36, 0.9;
-    --var-marca-200: 31, 36, 35;
-    --var-marca-300: 28, 35, 33;
-    --var-marca-400: 25, 32, 30;
-    --var-marca-500: 24, 31, 29;
-    --var-marca-600: 22, 29, 27;
-    --var-marca-700: 21, 27, 25;
-    --var-marca-800: 21, 25, 24;
-    --var-marca-900: 20, 24, 23;
-    --var-marca-950: 18, 21, 20;
-
-    /* text colors */
-    --var-text-cinza-escuro: 255, 255, 255;
-    --var-text-cinza-claro: 255, 255, 255;
-    --var-text-branco: 35, 37, 36;
-    --var-text-verde-claro: 195, 241, 226;
-    --var-text-verde-medio: 77, 192, 167;
-    --var-text-verde-escuro: 161, 201, 190;
+    --var-text-button: 255, 255, 255;
 
     /* Shadcn configuration */
     --background: 222.2 84% 4.9%;
+    --background-hover: 0, 0%, 100%, 0.703;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
+    --primary: 174 100 26;
+    --primary-hover: 174, 100%, 26%, 0.9;
     --primary-foreground: 222.2 47.4% 11.2%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -205,8 +136,8 @@
   }
 
   body {
-    color: rgb(var(--var-preto-principal));
-    background-color: rgb(var(--var-background-principal));
+    color: rgb(var(--foreground));
+    background-color: rgb(var(--background));
     font-family: var(--font-opensans);
     min-height: 100vh;
     overflow-x: hidden;
@@ -235,13 +166,6 @@
 
 .main {
   grid-area: main;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  padding-inline: 100px;
 }
 
 .blur-up {
@@ -402,7 +326,7 @@ input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 2px;
-  background: rgb(var(--var-cinza-800));
+  background: rgb(var(--var-barra-acessibilidade-icone));
   border-radius: 5px;
   cursor: pointer;
   outline: none;
@@ -413,7 +337,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 4px;
   height: 20px;
   border-radius: 12px;
-  background: rgb(var(--var-cinza-800));
+  background: rgb(var(--var-barra-acessibilidade-icone));
   cursor: pointer;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
@@ -422,7 +346,7 @@ input[type="range"]::-moz-range-thumb {
   width: 4px;
   height: 20px;
   border-radius: 12px;
-  background: rgb(var(--var-cinza-800));
+  background: rgb(var(--var-barra-acessibilidade-icone));
   cursor: pointer;
 }
 
@@ -430,12 +354,12 @@ input[type="range"]::-ms-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgb(var(--var-cinza-800));
+  background: rgb(var(--var-barra-acessibilidade-icone));
   cursor: pointer;
 }
 
 input[type="range"]::-ms-track {
-  background: rgb(var(--var-cinza-800));
+  background: rgb(var(--var-barra-acessibilidade-icone));
   border-color: transparent;
   color: transparent;
 }

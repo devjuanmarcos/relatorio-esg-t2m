@@ -39,11 +39,15 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          hover: "hsl(var(--background-hover))",
+        },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -70,54 +74,12 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
 
-        bg: {
-          principal: "rgb(var(--var-background-principal))",
-          marca50: "rgb(var(--var-marca-50))",
-          marca65: "rgb(var(--var-marca-65))",
-          marca80: "rgb(var(--var-marca-80))",
-          marca100: "rgb(var( --var-marca-100))",
-          marca200: "rgb(var(--var-marca-200))",
-          marca300: "rgb(var(--var-marca-300))",
-          marca400: "rgb(var(--var-marca-400))",
-          marca500: "rgb(var(--var-marca-500))",
-          marca600: "rgb(var(--var-marca-600))",
-          marca700: "rgb(var(--var-marca-700))",
-          marca800: "rgb(var(--var-marca-800))",
-          marca900: "rgb(var(--var-marca-900))",
-          marca950: "rgb(var(--var-marca-950))",
-        },
-        text: {
-          branco: "rgb(var(--var-text-branco))",
-          "cinza-claro": "rgb(var(--var-text-cinza-claro))",
-          "cinza-escuro": "rgb(var(--var-text-cinza-escuro))",
-          "verde-claro": "rgb(var(--var-text-verde-claro))",
-          "verde-medio": "rgb(var(--var-text-verde-medio))",
-          "verde-escuro": "rgb(var(--var-text-verde-escuro))",
-        },
         var: {
           "verde-principal": "rgb(var(--var-verde-principal))",
           "preto-principal": "rgb(var(--var-preto-principal))",
           "branco-principal": "rgb(var(--var-branco-principal))",
-
-          "accessibility-header-bg": "rgb(var(--var-accessibility-header-bg))",
-          "accessibility-header-icon": "rgb(var(--var-accessibility-header-icon))",
-
-          branco: {
-            "100": "rgb(var(--var-branco-100))",
-          },
-
-          cinza: {
-            "400": "rgb(var(--var-cinza-400))",
-            "500": "rgb(var(--var-cinza-500))",
-            "600": "rgb(var(--var-cinza-600))",
-          },
-
-          verde: {
-            "50": "rgb(var(--var-verde-50))",
-            "300": "rgb(var(--var-verde-300))",
-            "400": "rgb(var(--var-verde-400))",
-            "600": "rgb(var(--var-verde-600))",
-          },
+          "icone-barra-acessibilidade": "rgb(var(--var-barra-acessibilidade-icone))",
+          "text-button": "rgb(var(--var-text-button))",
         },
       },
       backgroundImage: {

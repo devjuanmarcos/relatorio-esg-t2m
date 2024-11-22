@@ -3,7 +3,7 @@ import "./globals.css";
 import { HtmlFontSizeProvider } from "@/context/HtmlFontSizeContext";
 import { ThemeProvider } from "next-themes";
 import { WindowSizeProvider } from "@/context/WindowSizeContext";
-import { Noto_Sans, Open_Sans } from "next/font/google";
+import { Noto_Sans, Open_Sans, Montserrat } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/footer/footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -50,6 +50,12 @@ export const metadata: Metadata = {
   },
 };
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 const notosans = Noto_Sans({
   subsets: ["latin"],
   variable: "--font-notosans",
@@ -70,7 +76,7 @@ export default function RootLayout({
   params: { locale: string };
 }>) {
   const messages = useMessages();
-
+  const fontClasses = `${opensans.variable} ${notosans.variable} ${montserrat.variable}`;
   return (
     <html
       className="transition-all h-full w-full scrollbar-thin scrollbar-webkit duration-200 ease-in-out"
@@ -78,7 +84,7 @@ export default function RootLayout({
       lang={params.locale}
     >
       <Script defer data-domain="biomob.org" src="https://plausible.biomob.app/js/script.js" />
-      <body className={`${opensans.variable} ${notosans.variable}`}>
+      <body className={fontClasses}>
         <NextIntlClientProvider messages={messages} locale={params.locale}>
           <WindowSizeProvider>
             <HtmlFontSizeProvider>
