@@ -11,6 +11,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 export interface SimpleCallBannerInterface {
   imageUrl: string;
   title: string;
+  topTitle?: string;
   paragraph: string;
   buttonText?: string;
   buttonLink?: string;
@@ -23,6 +24,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   alignment,
   paragraph,
   title,
+  topTitle,
   buttonLink,
   buttonTarget,
   buttonText,
@@ -39,17 +41,32 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <BoxCard type="simple">
-        <TextVariantes variant="h2_title" lineBottom>
-          {title}
-        </TextVariantes>
-        <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
-        {buttonLink && buttonText && (
-          <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
-            {buttonText}
-          </Link>
-        )}
-      </BoxCard>
+      {topTitle ? (
+        <BoxCard type="simple">
+          <TextVariantes variant="top_title">{topTitle}</TextVariantes>
+          <TextVariantes variant="title_georgia" lineBottom>
+            {title}
+          </TextVariantes>
+          <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
+          {buttonLink && buttonText && (
+            <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
+              {buttonText}
+            </Link>
+          )}
+        </BoxCard>
+      ) : (
+        <BoxCard type="simple">
+          <TextVariantes variant="h2_title" lineBottom>
+            {title}
+          </TextVariantes>
+          <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
+          {buttonLink && buttonText && (
+            <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
+              {buttonText}
+            </Link>
+          )}
+        </BoxCard>
+      )}
     </div>
   );
 };

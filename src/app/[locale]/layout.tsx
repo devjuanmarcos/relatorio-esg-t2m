@@ -83,7 +83,6 @@ export default function RootLayout({
       suppressHydrationWarning
       lang={params.locale}
     >
-      <Script defer data-domain="biomob.org" src="https://plausible.biomob.app/js/script.js" />
       <body className={fontClasses}>
         <NextIntlClientProvider messages={messages} locale={params.locale}>
           <WindowSizeProvider>
