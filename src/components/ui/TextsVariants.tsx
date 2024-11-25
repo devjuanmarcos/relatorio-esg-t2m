@@ -15,6 +15,7 @@ interface TextVariantesProps {
   children: React.ReactNode;
   lineTop?: boolean;
   lineBottom?: boolean;
+  extraClassName?: string;
 }
 
 const variantClasses: Record<TextVariants, string> = {
@@ -28,11 +29,11 @@ const variantClasses: Record<TextVariants, string> = {
   h2_title_semibold: "font-opensans font-semibold text-3xl leading-[2.6875rem]",
 };
 
-const TextVariantes: React.FC<TextVariantesProps> = ({ variant, children, lineBottom, lineTop }) => {
+const TextVariantes: React.FC<TextVariantesProps> = ({ variant, children, lineBottom, lineTop, extraClassName }) => {
   return (
     <div className="flex flex-col gap-2">
       {lineTop && <div className="w-10 h-1 bg-primary rounded-ss-[.75rem]" />}
-      <p className={variantClasses[variant]}>{children}</p>
+      <p className={`${variantClasses[variant]} ${extraClassName}`}>{children}</p>
       {lineBottom && <div className="w-10 h-1 bg-primary rounded-ss-[.75rem]" />}
     </div>
   );

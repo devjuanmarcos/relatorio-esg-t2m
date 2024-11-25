@@ -5,7 +5,7 @@ import { Skeleton } from "./skeleton";
 
 const BarToolsSkeleton = () => {
   return (
-    <div className="bg-bg-header fixed w-full z-50">
+    <div className="bg-bg-header fixed w-full z-50 max-h-[3.125rem]">
       <div className="flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full px-4 py-1 my-0 mx-auto text-cinza-800">
         {/* Coluna da esquerda */}
         <div className="flex gap-4 text-cinza-800 items-center">

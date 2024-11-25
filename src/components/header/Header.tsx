@@ -1,172 +1,120 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import TextVariantes from "../ui/TextsVariants";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
 
-import React from "react";
-import { useRouter } from "next/navigation";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { Menubar, MenubarContent, MenubarItem, MenubarMenu, MenubarTrigger } from "../ui/menubar";
-import { LogoWithTheme } from "../button/LogoWithTheme";
+const locales = [
+  "zh-Hant",
+  "zh-Hans",
+  "en",
+  "pt",
+  "es",
+  "ja",
+  "de",
+  "fr",
+  "it",
+  "bn",
+  "hi",
+  "ru",
+  "ko",
+  "vi",
+  "te",
+  "yue",
+  "mr",
+  "ta",
+  "tr",
+  "ur",
+  "gu",
+  "pl",
+  "uk",
+  "ms",
+  "kn",
+  "or",
+  "pa",
+  "ro",
+  "az",
+  "fa",
+  "my",
+  "th",
+  "nl",
+  "yo",
+  "sd",
+];
 
-interface HeaderProps {
-  href?: string;
-}
+export const Header = () => {
+  const pathname = usePathname();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-export const Header = ({ href = "/" }: HeaderProps) => {
-  const [dropdownVisible, setDropdownVisible] = React.useState(false);
-  const dropdownRef = React.useRef<HTMLDivElement>(null);
-  const [sidebarOpen, setSidebarOpen] = React.useState(false);
-  const sidebarRef = React.useRef<HTMLDivElement>(null);
-  const router = useRouter();
+  const topics = [
+    { label: "Sobre", href: "/" },
+    { label: "Quem somos", href: "/quem-somos" },
+    { label: "Proposta de valor", href: "/proposta-de-valor" },
+    { label: "Nossa equipe", href: "/nossa-equipe" },
+    { label: "Comunidade", href: "/comunidade" },
+    { label: "ESG", href: "/esg" },
+  ];
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
-  React.useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownVisible &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node) &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        // setDropdownVisible(false); resolver bug
-      }
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
-        setSidebarOpen(false);
-      }
+  const normalizedPathname = (() => {
+    const parts = pathname.split("/");
+    if (locales.includes(parts[1])) {
+      return `/${parts.slice(2).join("/")}` || "/";
     }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [dropdownVisible, sidebarRef]);
-
-  const toggleDropdown = () => {
-    setDropdownVisible(!dropdownVisible);
-  };
+    return pathname;
+  })();
 
   return (
-    <header className="header w-full bg-[rgb(var(--var-marca-100-08))] backdrop-blur-lg min-h-[4.5rem] flex items-center justify-center px-4 max-sm:px-2 max-2sm:flex-col-reverse max-2sm:py-1 fixed top-[45px] z-50">
-      <div className="px-5 lg:px-[6.25rem] overflow-visible my-0 mx-auto flex items-center justify-center sm:justify-between w-full">
-        <button onClick={toggleSidebar} className="lg:hidden mr-4">
-          <svg className={`w-6 h-6 text-text-cinza-escuro`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d={sidebarOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-            />
-          </svg>
-        </button>
+    <header className="flex justify-between w-full md:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
+      <Image src={"/img/LOGOT2M.png"} alt="Logo da T2M - Test to Market" width={85} height={37} />
+      <div className="hidden md:flex gap-[.625rem] items-center justify-center w-full">
+        {topics.map((topic, index) => (
+          <React.Fragment key={topic.href}>
+            <Link href={topic.href}>
+              <TextVariantes
+                variant="paragraph_01"
+                extraClassName={`${
+                  normalizedPathname === topic.href ? "underline text-primary" : "no-underline"
+                } hover:underline hover:text-primary transition-all duration-200`}
+              >
+                {topic.label}
+              </TextVariantes>
+            </Link>
+            {index < topics.length - 1 && (
+              <TextVariantes variant="paragraph_01" extraClassName="select-none">
+                •
+              </TextVariantes>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
 
-        <LogoWithTheme />
-
-        <nav className="relative items-center justify-end px-9 w-full gap-6 hidden lg:flex">
-          <Menubar>
-            <MenubarMenu>
-              <MenubarTrigger>
-                <span className="flex gap-1 items-center">
-                  Nossas soluções <IoMdArrowDropdown />
-                </span>
-              </MenubarTrigger>
-              <MenubarContent>
-                <MenubarItem>
-                  <button
-                    onClick={() => router.push("/acessibilidade-arquitetonica")}
-                    className="block px-4 py-2 hover:bg-bg-marca300 text-start w-full"
-                  >
-                    Acessibilidade Arquitetônica
-                  </button>
-                </MenubarItem>
-                <MenubarItem>
-                  <button
-                    onClick={() => router.push("/acessibilidade-digital")}
-                    className="block px-4 py-2 hover:bg-bg-marca300 text-start w-full"
-                  >
-                    Acessibilidade Digital
-                  </button>
-                </MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-
-            <MenubarMenu>
-              <MenubarTrigger>
-                <Link className="" href="/noticias">
-                  <span className="h2-semibold text-[1.125rem]">Notícias</span>
+      <div className="md:hidden flex items-center">
+        <Drawer open={sidebarOpen} onOpenChange={setSidebarOpen}>
+          <DrawerTrigger>
+            <button className="text-primary">
+              <HamburgerMenuIcon className="text-primary" width={40} />
+            </button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <div className="flex flex-col p-4">
+              {topics.map((topic) => (
+                <Link
+                  key={topic.href}
+                  href={topic.href}
+                  className={`${
+                    normalizedPathname === topic.href ? "underline text-primary" : "no-underline"
+                  } hover:underline hover:text-primary transition-all duration-200 mb-2`}
+                >
+                  {topic.label}
                 </Link>
-              </MenubarTrigger>
-            </MenubarMenu>
-
-            <MenubarMenu>
-              <MenubarTrigger>
-                <Link className="" href="/instituto-biomob">
-                  <span className="h2-semibold text-[1.125rem]">Instituto</span>
-                </Link>
-              </MenubarTrigger>
-            </MenubarMenu>
-          </Menubar>
-        </nav>
-
-        <aside
-          className={`${sidebarOpen ? "translate-x-0" : "-translate-x-full"}  lg:hidden bg-[rgb(var(--var-background-principal))] h-screen p-5 transition-transform duration-300 flex flex-col text-md font-semibold fixed top-0 left-0 z-50`}
-          ref={sidebarRef}
-        >
-          <button onClick={toggleSidebar} className="lg:hidden mr-4">
-            <svg className={`w-6 h-6 text-text-cinza-escuro`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d={sidebarOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-              />
-            </svg>
-          </button>
-
-          <nav className="flex flex-col items-center justify-end px-9 w-full space-y-4">
-            <div className="relative" ref={dropdownRef}>
-              <button onClick={toggleDropdown} className="h2-semibold text-[1.125rem]">
-                Nossa soluções 🡻
-              </button>
-              {dropdownVisible && (
-                <div className="absolute right-0 mt-2 w-48 bg-[rgb(var(--var-background-principal))] border rounded shadow-lg">
-                  <Link
-                    href="/acessibilidade-arquitetonica"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setDropdownVisible(false);
-                      setSidebarOpen(false);
-                    }}
-                    className="block px-4 py-2"
-                  >
-                    Acessibilidade Arquitetônica
-                  </Link>
-                  <Link
-                    href="/acessibilidade-digital"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setDropdownVisible(false);
-                      setSidebarOpen(false);
-                    }}
-                    className="block px-4 py-2"
-                  >
-                    Acessibilidade Digital
-                  </Link>
-                </div>
-              )}
+              ))}
             </div>
-
-            <Link onClick={toggleSidebar} className="h2-semibold text-[1.125rem]" href="/noticias">
-              Notícias
-            </Link>
-
-            <Link onClick={toggleSidebar} className="h2-semibold text-[1.125rem]" href="/instituto-biomob">
-              Instituto
-            </Link>
-          </nav>
-        </aside>
+          </DrawerContent>
+        </Drawer>
       </div>
     </header>
   );

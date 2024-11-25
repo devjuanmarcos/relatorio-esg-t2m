@@ -11,6 +11,7 @@ import { ComboboxLanguage } from "../ui/combobox-language";
 import { useTheme } from "next-themes";
 import BarToolsSkeleton from "../ui/BarToolsSkeleton";
 import { VLibrasIntegration } from "./VLibrasIntegration";
+import Header from "./Header";
 
 export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
@@ -54,7 +55,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary flex flex-col">
       <div className="relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade ">
         <VLibrasIntegration />
         <div className="flex gap-4 text-var-icone-barra-acessibilidade items-center">
@@ -85,6 +86,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
           />
         </div>
       </div>
+      <Header />
     </header>
   );
 };

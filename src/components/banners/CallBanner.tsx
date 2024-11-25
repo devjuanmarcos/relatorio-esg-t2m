@@ -33,7 +33,7 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className="bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center"
+      className="bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <BoxCard type="main">
