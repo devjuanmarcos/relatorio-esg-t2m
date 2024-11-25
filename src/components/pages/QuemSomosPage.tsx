@@ -8,7 +8,6 @@ import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBann
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
-import { ImageWithTopicsBannerInterface } from "@banners/ImageWithTopicsBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
 import { NumberCardsBanner, NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 
@@ -30,9 +29,6 @@ const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
   import("@/components/banners/ThreeTextCardsWithNumberCardBanner").then(
     (mod) => mod.ThreeTextCardsWithNumberCardBanner
   )
-);
-const ImageWithTopicsBanner = dynamic(() =>
-  import("@/components/banners/ImageWithTopicsBanner").then((mod) => mod.ImageWithTopicsBanner)
 );
 
 const QuemSomosPage: React.FC = () => {
