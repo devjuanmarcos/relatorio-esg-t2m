@@ -17,9 +17,10 @@ export interface IconsCardsBannerInterface {
   title: string;
   paragraph: string;
   icons: IconCard[];
+  type: "center" | "start";
 }
 
-export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragraph, title, icons }) => {
+export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragraph, title, icons, type }) => {
   const isMounted = useIsMounted();
 
   if (!isMounted) {
@@ -41,7 +42,7 @@ export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragrap
           return (
             <div
               key={iconCard.id}
-              className="flex flex-col items-center gap-[.625rem] text-center w-full max-w-[19.5rem]"
+              className={`flex flex-col gap-[.625rem] ${type == "center" ? "items-center text-center" : "items-start text-start"} w-full max-w-[19.5rem]`}
             >
               <Icon className="size-10 text-primary " />
               <TextVariantes variant="top_title">{iconCard.title}</TextVariantes>

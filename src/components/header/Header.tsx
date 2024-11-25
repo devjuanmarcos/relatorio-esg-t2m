@@ -68,9 +68,9 @@ export const Header = () => {
   })();
 
   return (
-    <header className="flex justify-between w-full md:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
+    <header className="flex justify-between w-full lg:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
       <Image src={"/img/LOGOT2M.png"} alt="Logo da T2M - Test to Market" width={85} height={37} />
-      <div className="hidden md:flex gap-[.625rem] items-center justify-center w-full">
+      <div className="hidden lg:flex gap-[.625rem] items-center justify-center w-full">
         {topics.map((topic, index) => (
           <React.Fragment key={topic.href}>
             <Link href={topic.href}>
@@ -92,7 +92,7 @@ export const Header = () => {
         ))}
       </div>
 
-      <div className="md:hidden flex items-center">
+      <div className="lg:hidden flex items-center">
         <Drawer open={sidebarOpen} onOpenChange={setSidebarOpen}>
           <DrawerTrigger>
             <button className="text-primary">

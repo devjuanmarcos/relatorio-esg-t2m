@@ -12,11 +12,12 @@ export interface ImageWithCardTextBannerInterface {
   imageUrl: string;
   imageAlt: string;
   title: string;
-  topTitle: string;
+  topTitle?: string;
   paragraph: string;
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
+  imageAlignment: "start" | "end";
 }
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
@@ -28,6 +29,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   buttonLink,
   buttonTarget,
   buttonText,
+  imageAlignment,
 }) => {
   const isMounted = useIsMounted();
 
@@ -35,28 +37,25 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
     return <Skeleton className="w-full aspect-[1440/572]" />;
   }
 
-  return (
-    <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-5 gap-6 md:gap-[3.5rem] items-center px-4 md:px-12 ">
-      <div className="flex md:hidden w-full mr-auto">
-        <TextVariantes variant="top_title" lineBottom>
-          {topTitle}
-        </TextVariantes>
-      </div>
-      <Image
-        src={imageUrl}
-        alt={imageAlt}
-        className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
-        width={1064}
-        height={716}
-        quality={100}
-      />
+  const renderTopTitle = topTitle && (
+    <div className="flex md:hidden w-full mr-auto">
+      <TextVariantes variant="top_title" lineBottom>
+        {topTitle}
+      </TextVariantes>
+    </div>
+  );
 
-      <div className="flex flex-col gap-3 lg:col-span-3 [&>*:first-child]:hidden [&>*:first-child]:md:flex">
-        <TextVariantes variant="top_title" lineBottom>
-          {topTitle}
-        </TextVariantes>
+  const renderTextContent = (
+    <div className="flex gap-6 md:gap-[3.5rem] lg:col-span-3">
+      {!topTitle && imageAlignment == "start" && (
+        <span className="hidden md:flex  font-openSans font-semibold text-[2rem] text-primary my-auto">•</span>
+      )}
+      <div className="flex flex-col gap-3  [&>*:first-child]:hidden [&>*:first-child]:md:flex">
+        {topTitle && renderTopTitle}
         <div className="flex flex-col gap-3">
-          <TextVariantes variant="title_georgia">{title}</TextVariantes>
+          <TextVariantes variant={topTitle ? "top_title" : "h2_title"} lineBottom={topTitle ? true : false}>
+            {title}
+          </TextVariantes>
           <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
         </div>
         {buttonLink && buttonText && (
@@ -65,6 +64,39 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           </Link>
         )}
       </div>
+      {!topTitle && imageAlignment == "end" && (
+        <span className="hidden md:flex  font-openSans font-semibold text-[2rem] text-primary my-auto">•</span>
+      )}
+    </div>
+  );
+
+  return (
+    <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-5 gap-6 md:gap-[3.5rem] items-center px-4 md:px-12 ">
+      {imageAlignment === "start" ? (
+        <>
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
+            width={1064}
+            height={716}
+            quality={100}
+          />
+          {renderTextContent}
+        </>
+      ) : (
+        <>
+          {renderTextContent}
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
+            width={1064}
+            height={716}
+            quality={100}
+          />
+        </>
+      )}
     </div>
   );
 };
