@@ -39,9 +39,11 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
     return <Skeleton className="w-full aspect-[1440/572]" />;
   }
 
-  const renderTopTitle = topTitle && (
-    <div className="flex md:hidden w-full mr-auto">
-      <TextVariantes variant="top_title" lineBottom>
+  console.log(topTitle);
+
+  const renderTopTitle = (
+    <div className="flex  w-full mr-auto">
+      <TextVariantes variant="top_title" lineBottom={title ? true : false}>
         {topTitle}
       </TextVariantes>
     </div>
@@ -55,12 +57,12 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
       <div className="flex flex-col gap-3  ">
         {topTitle && renderTopTitle}
         <div className="flex flex-col gap-3">
-          {topTitle && (
-            <TextVariantes variant={topTitle ? "top_title" : "h2_title"} lineBottom={topTitle ? true : false}>
+          {title && (
+            <TextVariantes variant={"h2_title"} lineBottom={topTitle ? false : true}>
               {title}
             </TextVariantes>
           )}
-          <TextVariantes variant="paragraph_01" lineTop={title ? true : false}>
+          <TextVariantes variant="paragraph_01" lineTop={!title ? true : false}>
             {paragraph}
           </TextVariantes>
         </div>
