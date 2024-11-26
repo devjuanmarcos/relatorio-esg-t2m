@@ -12,7 +12,7 @@ import { useWindowSize } from "@/context/WindowSizeContext";
 export interface ImageWithCardTextBannerInterface {
   imageUrl: string;
   imageAlt: string;
-  title: string;
+  title?: string;
   topTitle?: string;
   paragraph: string;
   buttonText?: string;
@@ -55,10 +55,14 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
       <div className="flex flex-col gap-3  ">
         {topTitle && renderTopTitle}
         <div className="flex flex-col gap-3">
-          <TextVariantes variant={topTitle ? "top_title" : "h2_title"} lineBottom={topTitle ? true : false}>
-            {title}
+          {topTitle && (
+            <TextVariantes variant={topTitle ? "top_title" : "h2_title"} lineBottom={topTitle ? true : false}>
+              {title}
+            </TextVariantes>
+          )}
+          <TextVariantes variant="paragraph_01" lineTop={title ? true : false}>
+            {paragraph}
           </TextVariantes>
-          <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
         </div>
         {buttonLink && buttonText && (
           <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>

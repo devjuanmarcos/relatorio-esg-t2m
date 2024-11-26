@@ -12,7 +12,7 @@ export interface SimpleCallBannerInterface {
   imageUrl: string;
   title: string;
   topTitle?: string;
-  paragraph: string;
+  paragraph?: string;
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
@@ -59,7 +59,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
           <TextVariantes variant="h2_title" lineBottom>
             {title}
           </TextVariantes>
-          <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
+          {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
           {buttonLink && buttonText && (
             <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
               {buttonText}
