@@ -20,7 +20,6 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const sidebarRef = React.useRef<HTMLDivElement>(null);
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
   const t = useTranslations("Header");
-  const { theme } = useTheme();
 
   React.useEffect(() => {
     setIsMounted(true);
