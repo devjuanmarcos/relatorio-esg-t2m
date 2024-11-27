@@ -38,7 +38,7 @@ const PropostaDeValorPage: React.FC = () => {
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/propostaValor.png",
-    buttonLink: "https://www.t2mlab.com.br",
+    buttonLink: "https://www.t2mlab.com/nosso-blog/",
     buttonText: "Nosso blog",
     buttonTarget: "_blank",
     title: "Proposta de valor",

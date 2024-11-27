@@ -63,7 +63,7 @@ const NossaEquipePage: React.FC = () => {
       },
       {
         id: 2,
-        title: "Privacidade eSegurança de Dados",
+        title: "Privacidade e Segurança de Dados",
         paragraph:
           "Nosso foco está em compreender e superar os desafios de Segurança da Informação, atendendo os clientes de forma consultiva.",
         icon: FaAccessibleIcon,

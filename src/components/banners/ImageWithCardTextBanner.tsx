@@ -39,8 +39,6 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
     return <Skeleton className="w-full aspect-[1440/572]" />;
   }
 
-  console.log(topTitle);
-
   const renderTopTitle = (
     <div className="flex  w-full mr-auto">
       <TextVariantes variant="top_title" lineBottom={title ? true : false}>

@@ -38,7 +38,7 @@ const QuemSomosPage: React.FC = () => {
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/quemsomos.png",
-    buttonLink: "https://www.t2mlab.com.br",
+    buttonLink: "https://www.t2mlab.com",
     buttonText: "Site oficial da empresa",
     buttonTarget: "_blank",
     title: "Quem somos?",
@@ -80,7 +80,7 @@ const QuemSomosPage: React.FC = () => {
       },
       {
         id: 2,
-        title: "Privacidade eSegurança de Dados",
+        title: "Privacidade e Segurança de Dados",
         paragraph:
           "Nosso foco está em compreender e superar os desafios de Segurança da Informação, atendendo os clientes de forma consultiva.",
         icon: FaAccessibleIcon,
