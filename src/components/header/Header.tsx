@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import TextVariantes from "../ui/TextsVariants";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
+import { useTheme } from "next-themes";
 
 const locales = [
   "zh-Hant",
@@ -49,6 +50,7 @@ const locales = [
 export const Header = () => {
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { theme } = useTheme();
 
   const topics = [
     { label: "Sobre", href: "/" },
@@ -69,7 +71,12 @@ export const Header = () => {
 
   return (
     <header className="flex justify-between w-full lg:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
-      <Image src={"/img/LOGOT2M.png"} alt="Logo da T2M - Test to Market" width={85} height={37} />
+      <Image
+        src={theme == "dark" ? "/img/LOGOT2MBRANCA.png" : "/img/LOGOT2M.png"}
+        alt="Logo da T2M - Test to Market"
+        width={85}
+        height={37}
+      />
       <div className="hidden lg:flex gap-[.625rem] items-center justify-center w-full">
         {topics.map((topic, index) => (
           <React.Fragment key={topic.href}>
