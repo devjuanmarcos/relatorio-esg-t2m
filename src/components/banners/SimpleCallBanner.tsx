@@ -84,14 +84,14 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
 
   return (
     <div
-      className={`bg-no-repeat bg-cover flex justify-center ${
+      className={`relative bg-no-repeat bg-cover flex justify-center ${
         alignment === "start" ? "md:justify-start" : "md:justify-end"
-      } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
+      } items-center md:items-end w-full aspect-[1440/572] md:max-h-[35.75rem] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image
         src={imageUrl}
         alt="Cover Image"
-        className="bg-img "
+        className="bg-img ]"
         width={1000}
         height={600}
         sizes="(max-width: 768px) 100vw, 1000px"

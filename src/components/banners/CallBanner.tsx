@@ -39,8 +39,8 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className={`bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full
-           aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
+      className={`relative bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full
+       aspect-[1440/572] max px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image
         ref={imageRef1}
