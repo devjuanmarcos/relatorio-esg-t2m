@@ -7,6 +7,8 @@ import TextVariantes from "../ui/TextsVariants";
 import { buttonVariants } from "../ui/button";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 
 const topics = [
   { label: "Sobre", href: "/" },
@@ -24,16 +26,75 @@ const socialLinks = [
   { href: "https://www.youtube.com/@biomobguia", icon: FaYoutube },
 ];
 
-const TopicLinks = () => (
-  <div className="flex flex-col gap-3">
-    <TextVariantes variant="top_title">Tópicos</TextVariantes>
-    {topics.map((topic) => (
-      <Link key={topic.href} href={topic.href}>
-        <TextVariantes variant="paragraph_01">{topic.label}</TextVariantes>
-      </Link>
-    ))}
-  </div>
-);
+const locales = [
+  "zh-Hant",
+  "zh-Hans",
+  "en",
+  "pt",
+  "es",
+  "ja",
+  "de",
+  "fr",
+  "it",
+  "bn",
+  "hi",
+  "ru",
+  "ko",
+  "vi",
+  "te",
+  "yue",
+  "mr",
+  "ta",
+  "tr",
+  "ur",
+  "gu",
+  "pl",
+  "uk",
+  "ms",
+  "kn",
+  "or",
+  "pa",
+  "ro",
+  "az",
+  "fa",
+  "my",
+  "th",
+  "nl",
+  "yo",
+  "sd",
+];
+
+const TopicLinks = () => {
+  const pathname = usePathname();
+
+  const normalizedPathname = React.useMemo(() => {
+    const parts = pathname.split("/");
+    if (locales.includes(parts[1])) {
+      return `/${parts.slice(2).join("/")}` || "/";
+    }
+    return pathname;
+  }, [pathname]);
+
+  return (
+    <div className="flex flex-col gap-3">
+      <TextVariantes variant="top_title">Tópicos do site</TextVariantes>
+      {topics.map((topic, index) => (
+        <React.Fragment key={topic.href}>
+          <Link href={topic.href}>
+            <TextVariantes
+              variant="paragraph_01"
+              extraClassName={`${
+                normalizedPathname === topic.href ? "underline text-primary" : "no-underline"
+              } hover:underline hover:text-primary transition-all duration-200`}
+            >
+              {topic.label}
+            </TextVariantes>
+          </Link>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
 
 const SocialLinks = () => (
   <div className="flex flex-col gap-3 items-center">
@@ -58,10 +119,17 @@ const OfficialSite = () => (
 );
 
 export const Footer = () => {
+  const { theme } = useTheme();
   return (
     <div className="flex flex-col lg:flex-row py-[52px] px-4 md:px-20 gap-20 w-full md:max-w-[80vw] mx-auto border-t border-primary text-center justify-center">
       <div className="flex flex-col items-center">
-        <Image src="/img/LOGOT2M.png" alt="Logo da T2M" width={407} height={177} quality={100} />
+        <Image
+          src={theme == "light" ? "/img/LOGOT2M.png" : "/img/LOGOT2MBRANCA.png"}
+          alt="Logo da T2M"
+          width={407}
+          height={177}
+          quality={100}
+        />
         <TextVariantes variant="top_title">© T2M 2023 | Todos direitos reservados</TextVariantes>
       </div>
 

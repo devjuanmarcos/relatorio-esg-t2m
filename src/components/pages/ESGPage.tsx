@@ -56,6 +56,20 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/gestaoResiduos.jpg",
     topTitle: "Ambiental",
     title: "Gestão de Resíduos e Escolha de Materiais Sustentáveis",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: [
+      "/img/ods/8.png",
+      "/img/ods/10.png",
+      "/img/ods/12.png",
+      "/img/ods/13.png",
+      "/img/ods/15.png",
+      "/img/ods/16.png",
+      "/img/ods/17.png",
+    ],
   };
 
   const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
@@ -69,8 +83,14 @@ const ESGPage: React.FC = () => {
   const contratosAssinadosData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/temp/esg/contratosAssinados.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
     title: "Contratos Assinados Virtualmente",
+    ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
   };
 
   const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
@@ -84,8 +104,14 @@ const ESGPage: React.FC = () => {
   const utilizacaoNuvemData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/esg/nuvem.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
     title: "Utilização de Nuvem, reduzindo o consumo de hardware",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: ["/img/ods/7.png", "/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png"],
   };
 
   const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
@@ -99,8 +125,14 @@ const ESGPage: React.FC = () => {
   const consumoConscienteData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/temp/esg/consumoAgua.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
     title: "Consumo consciente de Água",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: ["/img/ods/6.png", "/img/ods/12.png"],
   };
 
   const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
@@ -114,8 +146,14 @@ const ESGPage: React.FC = () => {
   const estimuloReducaoData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/esg/veiculosCombustao.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
     title: "Estímulo à redução do uso de veículos a combustão",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: ["/img/ods/3.png", "/img/ods/11.png", "/img/ods/13.png"],
   };
 
   const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
@@ -129,8 +167,14 @@ const ESGPage: React.FC = () => {
   const cadeiaFornecedoresData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/temp/esg/meioambiente.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
     title: "Cadeia de fornecedores comprometidos com o meio ambiente",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: ["/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/17.png"],
   };
 
   const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
@@ -144,8 +188,14 @@ const ESGPage: React.FC = () => {
   const reciclagemMaterialData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/esg/reciclagemBaterias.jpg",
-    topTitle: "Ambiental (e)",
+    topTitle: "Ambiental",
     title: "Reciclagem de material eletrônico e baterias",
+    topTitleColor: "text-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: "ícone referente ao tópico ambiental",
+    },
+    ods: ["/img/ods/6.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
   };
 
   const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
@@ -159,8 +209,14 @@ const ESGPage: React.FC = () => {
   const patrocinadorIniciativasData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/temp/esg/capacitacaoProfissional.jpg",
-    topTitle: "Social (e)",
+    topTitle: "Social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: "ícone referente ao tópico social",
+    },
+    topTitleColor: "text-var-social",
     title: "Patrocinador de iniciativas de capacitação profissional",
+    ods: ["/img/ods/4.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
 
   const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
@@ -174,8 +230,14 @@ const ESGPage: React.FC = () => {
   const equipeGenteGestaoData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/esg/mulheres.jpg",
-    topTitle: "Social (e)",
+    topTitle: "Social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: "ícone referente ao tópico social",
+    },
+    topTitleColor: "text-var-social",
     title: "Equipe de gente e gestão composta por mulheres",
+    ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
 
   const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
@@ -189,8 +251,14 @@ const ESGPage: React.FC = () => {
   const programaQualidadeVidaData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/final/esg/qualidadeVida2.png",
-    topTitle: "Social (e)",
+    topTitle: "Social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: "ícone referente ao tópico social",
+    },
+    topTitleColor: "text-var-social",
     title: "Programa de qualidade de vida",
+    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
   };
 
   const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
@@ -204,8 +272,14 @@ const ESGPage: React.FC = () => {
   const campanhasSolidariasData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/final/esg/campanhasSolidarias.png",
-    topTitle: "Social (e)",
+    topTitle: "Social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: "ícone referente ao tópico social",
+    },
+    topTitleColor: "text-var-social",
     title: "Campanhas solidárias",
+    ods: ["/img/ods/1.png", "/img/ods/10.png", "/img/ods/17.png"],
   };
 
   const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
@@ -219,8 +293,14 @@ const ESGPage: React.FC = () => {
   const voluntariadoApoioData: SimpleCallBannerInterface = {
     alignment: "end",
     imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
-    topTitle: "Social (e)",
+    topTitle: "Social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: "ícone referente ao tópico social",
+    },
+    topTitleColor: "text-var-social",
     title: "Voluntariado e apoio a iniciativas de empregabilidade",
+    ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
 
   const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
@@ -233,16 +313,22 @@ const ESGPage: React.FC = () => {
 
   const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    imageUrl: "/img/temp/esg/legislacao.jpeg",
     topTitle: "Governança",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: "ícone referente ao tópico governança",
+    },
+    topTitleColor: "text-var-governanca",
     title: "Normas, códigos e legislações internas e externas da T2M",
+    ods: ["/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png", "/img/ods/16.png"],
   };
 
   const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph:
       "A T2M, fundada no Brasil em 2002, atua com forte compromisso de transparência e conformidade com as normas, códigos e legislações aplicáveis tanto no contexto corporativo quanto nacional. Nossa normativa se estende a todos os colaboradores, parceiros e diretoria, orientando responsabilidades legais e compromissos éticos que sustentam as operações da T2M.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/legislacao2.jpeg",
     imageAlignment: "end",
   };
 
@@ -250,7 +336,7 @@ const ESGPage: React.FC = () => {
     paragraph:
       "Nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance, e Diversidade e Inclusão, servem como guias de referência para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos, além de promoverem padrões éticos, reduzem a probabilidade de ocorrências de condutas inadequadas.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/legislacao3.jpeg",
     imageAlignment: "start",
   };
 
@@ -258,22 +344,28 @@ const ESGPage: React.FC = () => {
     paragraph:
       "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa Intranet, onde são revisados valores, normas e políticas internas.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/legislacao4.jpeg",
     imageAlignment: "end",
   };
 
   const comiteT2MData: SimpleCallBannerInterface = {
     alignment: "end",
-    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    imageUrl: "/img/temp/esg/comites.jpg",
     topTitle: "Governança",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: "ícone referente ao tópico governança",
+    },
+    topTitleColor: "text-var-governanca",
     title: "Comitês da T2M",
+    ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
   };
 
   const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph:
       "Compliance: Este comitê é responsável pela gestão independente e autônoma do Programa de Integridade da T2M, garantindo os garantindo os recursos necessários para assegurar a imparcialidade das práticas de compliance na empresa. Além de incentivar o reporte de suspeitas e violações, o comitê busca cultivar uma cultura de responsabilidade em todos os níveis, incentivando a prevenção e detecção de fraudes. O Compliance Officer, função essencial neste processo, possui autonomia e acesso direto à Alta Direção, bem como autoridade para gerenciar o Sistema de Antissuborno e Compliance da organização.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/compliance.jpg",
     imageAlignment: "start",
   };
 
@@ -281,23 +373,29 @@ const ESGPage: React.FC = () => {
     paragraph:
       "CIPA (Comissão Interna de Prevenção de Acidentes): Em cumprimento à NR-5, a CIPA da T2M tem a função de identificar e mitigar riscos no ambiente de trabalho, promover campanhas de conscientização treinamentos, além de estar envolvido em questões de assédio, fortalecendo a cultura de segurança e prevenção entre nossos colaboradores. Atualmente, a comissão é composta por 10 membros, sendo 30% mulheres, o que reforça nosso compromisso com a diversidade e inclusão.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/prevencao.jpg",
     imageAlignment: "end",
   };
 
   const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    imageUrl: "/img/temp/esg/certificacoes.png",
     topTitle: "Governança",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: "ícone referente ao tópico governança",
+    },
+    topTitleColor: "text-var-governanca",
     title: "Certificações e padrões internacionais",
     paragraph: "Além dos comitês, a T2M está alinhada com padrões internacionais de integridade e ética empresarial.",
+    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/12.png", "/img/ods/16.png"],
   };
 
   const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph:
       "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora O sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de gestão de de gestão de compliance, compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/verificado.jpg",
     imageAlignment: "end",
   };
 
@@ -305,22 +403,28 @@ const ESGPage: React.FC = () => {
     paragraph:
       "Essas certificações são um relfexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/certificado2.jpeg",
     imageAlignment: "start",
   };
 
   const canaisDenunciaData: SimpleCallBannerInterface = {
     alignment: "end",
-    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    imageUrl: "/img/temp/esg/canalDenuncia.jpg",
     topTitle: "Governança",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: "ícone referente ao tópico governança",
+    },
+    topTitleColor: "text-var-governanca",
     title: "Canais de denúncias",
+    ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
   };
 
   const canaisDenunciaTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph:
       "A T2M disponibiliza um Canal de Denúncias diretamente ligado ao Comitê de Ética, que recebe e analisa todas as denúncias enviadas, além de supervisionar a implementação, o monitoramento e a integridade do Programa de Compliance da empresa.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/canalDenuncia2.jpg",
     imageAlignment: "start",
   };
 
@@ -328,7 +432,7 @@ const ESGPage: React.FC = () => {
     paragraph:
       "As denúncias podem ser realizadas de forma anônima, através de um formulário de fácil acesso, garantindo confidencialidade e segurança para os denunciantes.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/anonimo.jpg",
     imageAlignment: "end",
   };
 
@@ -336,7 +440,7 @@ const ESGPage: React.FC = () => {
     paragraph:
       "Além deste canal, também oferecemos um Canal de Denúncias específico da CIPA, direcionado para a comunicação de casos de assédio e outros incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/denuncia.jpeg",
     imageAlignment: "start",
   };
 
@@ -344,24 +448,30 @@ const ESGPage: React.FC = () => {
     paragraph:
       "Toda informação pessoal compartilhada é tratada com rigoroso sigilo, assegurando a privacidade dos colaboradores. Ambos os canais têm como objetivo promover um ambiente seguro, ético e acolhedor para todos.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/sigilo.jpg",
     imageAlignment: "end",
   };
 
   const equidadeSalarialData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    imageUrl: "/img/temp/esg/equipeSalarial.jpg",
     topTitle: "Governança",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: "ícone referente ao tópico governança",
+    },
+    topTitleColor: "text-var-governanca",
     title: "Equidade salarial",
     paragraph:
       "A T2M disponibiliza do Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, relatório que reforça o compromisso com a justiça social.",
+    ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
 
   const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph:
       "Este relatório apresenta critérios de remuneração e ações para garantir diversidade, como a criação de um Plano de Cargos e Salários ou Plano de Carreira, políticas de contratação de mulheres (negras, com deficiência, em situação de violência, chefes de família, LGBTQIA+, indígenas) e políticas de promoção de mulheres para cargos de direção e gerência.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+    imageUrl: "/img/temp/esg/salarial.jpg",
     imageAlignment: "end",
   };
 

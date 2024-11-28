@@ -115,9 +115,6 @@ const ComunidadePage: React.FC = () => {
   };
 
   const listagemParceirosData: IconsCardsBannerInterface = {
-    title: "Divisão por categoria",
-    paragraph:
-      "Ampliando a eficácia, a qualidade e a segurança dos seus negócios e serviços, trazendo resultados superiores.",
     images: [
       {
         id: 1,
@@ -200,9 +197,9 @@ const ComunidadePage: React.FC = () => {
 
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
       <SimpleCallBanner {...impactoData} />
-      <IconsCardsBanner {...listagemParceirosData} />
       <NumberCardsBanner {...nossoImpactoEmNumeros} />
       <SimpleCallBanner {...nossosParceirosData} />
+      <IconsCardsBanner {...listagemParceirosData} />
     </div>
   );
 };

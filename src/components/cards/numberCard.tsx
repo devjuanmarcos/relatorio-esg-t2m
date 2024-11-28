@@ -35,7 +35,7 @@ export const NumberCard: React.FC<NumberCardInterface> = ({ paragraph, title, ic
   };
 
   return (
-    <div className="bg-background rounded-lg p-8 flex flex-col gap-1 w-[12rem] text-primary shadow-md border-t border-t-primary -ml-7 ">
+    <div className="bg-background rounded-lg p-8 flex flex-col gap-1 w-[12rem] text-primary shadow-md border-t border-t-primary ">
       <TextVariantes variant="top_title">{title}</TextVariantes>
       {renderIcon()}
       <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>

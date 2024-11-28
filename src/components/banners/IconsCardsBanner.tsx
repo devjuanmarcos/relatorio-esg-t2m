@@ -23,8 +23,8 @@ export interface imageCard {
 }
 
 export interface IconsCardsBannerInterface {
-  title: string;
-  paragraph: string;
+  title?: string;
+  paragraph?: string;
   icons?: IconCard[];
   images?: imageCard[];
   type: "center" | "start";
@@ -40,10 +40,12 @@ export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragrap
   return (
     <div className="px-2 md:px-12 flex flex-col gap-[3.75rem] [&>*:first-child]:max-w-[42rem] ">
       <div className="flex flex-col gap-3">
-        <TextVariantes variant="h2_title" lineBottom>
-          {title}
-        </TextVariantes>
-        <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>
+        {title && (
+          <TextVariantes variant="h2_title" lineBottom>
+            {title}
+          </TextVariantes>
+        )}
+        {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
       </div>
 
       <div
@@ -70,7 +72,7 @@ export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragrap
                 key={image.id}
                 className={`flex flex-col gap-[.625rem] ${type == "center" ? "items-center text-center" : "items-start text-start"} w-full max-w-[19.5rem]`}
               >
-                <Image src={image.imageUrl} alt={image.imageAlt} width={150} height={150} />
+                <Image src={image.imageUrl} alt={image.imageAlt} width={150} height={150} quality={100} />
                 <TextVariantes variant="top_title">{image.title}</TextVariantes>
                 <TextVariantes variant="paragraph_01">{image.paragraph}</TextVariantes>
               </div>

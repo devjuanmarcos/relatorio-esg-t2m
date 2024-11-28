@@ -10,6 +10,10 @@
     --var-branco-principal: 255, 255, 255;
     --var-barra-acessibilidade-icone: 255, 255, 255;
 
+    --var-ambiental: 0, 68, 208;
+    --var-social: 245, 123, 29;
+    --var-governanca: 147, 90, 194;
+
     --var-text-button: 255, 255, 255;
 
     /* Shadcn configuration */
@@ -48,6 +52,10 @@
     --var-preto-principal: 255, 255, 255;
     --var-branco-principal: 255, 255, 255;
     --var-barra-acessibilidade-icone: 255, 255, 255;
+
+    --var-ambiental: 51, 119, 255;
+    --var-social: 255, 157, 71;
+    --var-governanca: 176, 128, 229;
 
     --var-text-button: 255, 255, 255;
 

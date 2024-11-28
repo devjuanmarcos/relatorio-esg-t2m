@@ -79,8 +79,9 @@ const PropostaDeValorPage: React.FC = () => {
     title: "Transparência e igualdade Social",
     paragraph:
       "De acordo com as normas do Ministério do Trabalho, informamos que se encontra, disponível em nosso site, o Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, referente ao 2º semestre 2024.",
-    buttonLink: "#",
+    buttonLink: "https://www.t2mlab.com/DOCs/Relatorio-de-Igualdade-Salarial-e-de-Critérios-Remuneratorios_set24.pdf",
     buttonText: "Acessar relatório",
+    buttonTarget: "_blank",
   };
 
   return (

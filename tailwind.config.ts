@@ -13,6 +13,7 @@ const config: Config = {
       transitionProperty: {
         width: "width",
       },
+
       fontFamily: {
         openSans: ["var(--font-open-sans)"],
         lato: ["var(--font-lato)"],
@@ -80,6 +81,9 @@ const config: Config = {
           "branco-principal": "rgb(var(--var-branco-principal))",
           "icone-barra-acessibilidade": "rgb(var(--var-barra-acessibilidade-icone))",
           "text-button": "rgb(var(--var-text-button))",
+          ambiental: "rgb(var(--var-ambiental))",
+          social: "rgb(var(--var-social))",
+          governanca: "rgb(var(--var-governanca))",
         },
       },
       backgroundImage: {

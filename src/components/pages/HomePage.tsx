@@ -76,9 +76,10 @@ const HomePage: React.FC = () => {
     secondBox: {
       title: "Contato",
       paragraph:
-        "Para dúvidas ou comentários sobre este Relatório, favor entrar em contato com a nossa equipe de Impacto Social e Desenvolvimento Sustentável.",
-      buttonLink: "/contato",
+        "Nossa sede fica em Petrópolis no Quitandinha. Teremos muito satisfação em receber a sua visita. Entre em contato para saber mais sobre como podemos ajudar no seu negócio.",
+      buttonLink: "https://www.t2mlab.com/contato/",
       buttonText: "Entrar em contato",
+      buttonTarget: "_blank",
     },
   };
 
