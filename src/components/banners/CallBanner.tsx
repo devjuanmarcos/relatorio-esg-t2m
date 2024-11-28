@@ -7,6 +7,7 @@ import TextVariantes from "@ui/TextsVariants";
 import Link from "next/link";
 import { BoxCard } from "../ui/boxCard";
 import { useIsMounted } from "@/hooks/useIsMounted";
+import Image from "next/image";
 
 export interface CallBannerInterface {
   imageUrl: string;
@@ -26,13 +27,11 @@ const CallBanner: React.FC<CallBannerInterface> = ({
   buttonText,
 }) => {
   const isMounted = useIsMounted();
-  const [isImageLoaded, setIsImageLoaded] = React.useState(false);
+  const imageRef1 = React.useRef(null);
 
-  React.useEffect(() => {
-    const img = new Image();
-    img.src = imageUrl;
-    img.onload = () => setIsImageLoaded(true);
-  }, [imageUrl]);
+  const handleImageLoad = (ref: any) => {
+    ref.current.dataset.loaded = "true";
+  };
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -40,13 +39,21 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className={`bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 ${
-        isImageLoaded ? "blur-0" : "blur-md"
-      }`}
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-      }}
+      className={`bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full
+           aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
+      <Image
+        ref={imageRef1}
+        src={imageUrl}
+        alt="Cover Image"
+        className="bg-img blur-up"
+        width={1440}
+        height={720}
+        quality={100}
+        placeholder="blur"
+        blurDataURL="data:..."
+        onLoad={() => handleImageLoad(imageRef1)}
+      />
       <BoxCard type="main">
         <TextVariantes variant="h1_main_title" lineBottom>
           {title}

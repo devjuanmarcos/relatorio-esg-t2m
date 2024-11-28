@@ -54,11 +54,11 @@ export const Header = () => {
 
   const topics = [
     { label: "Sobre", href: "/" },
+    { label: "ESG", href: "/esg" },
     { label: "Quem somos", href: "/quem-somos" },
     { label: "Proposta de valor", href: "/proposta-de-valor" },
     { label: "Nossa equipe", href: "/nossa-equipe" },
     { label: "Comunidade", href: "/comunidade" },
-    { label: "ESG", href: "/esg" },
   ];
 
   const normalizedPathname = (() => {

@@ -241,3 +241,26 @@ input[type="range"]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.blur-up {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.blur-up:not([data-loaded]) {
+  filter: blur(5px);
+}
+
+.blur-up[data-loaded] {
+  filter: blur(0);
+}

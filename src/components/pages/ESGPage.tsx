@@ -9,7 +9,11 @@ import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { Loading } from "../ui/Loading";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
-  loading: () => <span>Carregando...</span>,
+  loading: () => (
+    <div className="h-screen flex items-center justify-center">
+      <Loading size={100} speed={1.32} />
+    </div>
+  ),
 });
 
 const SimpleCallBanner = dynamic(() =>

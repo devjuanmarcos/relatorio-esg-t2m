@@ -43,13 +43,11 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   ods,
 }) => {
   const isMounted = useIsMounted();
-  const [isImageLoaded, setIsImageLoaded] = React.useState(false);
+  const imageRef3 = React.useRef(null);
 
-  React.useEffect(() => {
-    const img = new window.Image();
-    img.src = imageUrl;
-    img.onload = () => setIsImageLoaded(true);
-  }, [imageUrl]);
+  const handleImageLoad = (ref: any) => {
+    ref.current.dataset.loaded = "true";
+  };
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -93,11 +91,20 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
     <div
       className={`bg-no-repeat bg-cover flex justify-center ${
         alignment === "start" ? "md:justify-start" : "md:justify-end"
-      } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 ${
-        isImageLoaded ? "blur-0" : "blur-md"
-      }`}
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
+      <Image
+        ref={imageRef3}
+        src={imageUrl}
+        alt="Cover Image"
+        className="bg-img blur-up"
+        width={1440}
+        height={720}
+        quality={100}
+        placeholder="blur"
+        blurDataURL="data:..."
+        onLoad={() => handleImageLoad(imageRef3)}
+      />
       {topTitle ? (
         <BoxCard type="simple">
           <div className="flex items-center gap-4">

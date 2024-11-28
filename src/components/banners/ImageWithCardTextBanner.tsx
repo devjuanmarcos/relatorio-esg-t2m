@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Skeleton } from "@ui/skeleton";
 import { buttonVariants } from "@ui/button";
 import TextVariantes from "@ui/TextsVariants";
@@ -34,23 +34,11 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
-  const [blurDataUrl, setBlurDataUrl] = useState<string | undefined>(undefined);
+  const imageRef2 = React.useRef(null);
 
-  // Gerar dinamicamente o blurDataURL para placeholder
-  React.useEffect(() => {
-    const generateBlurDataUrl = async () => {
-      try {
-        // Substituir por uma função de geração real (API ou biblioteca)
-        const placeholder = await fetch(`https://placeholder-blur-url-api.example.com?src=${imageUrl}`);
-        const { blurDataURL } = await placeholder.json();
-        setBlurDataUrl(blurDataURL);
-      } catch {
-        // Fallback: Placeholder simples
-        setBlurDataUrl("data:image/svg+xml;base64,<svg></svg>");
-      }
-    };
-    generateBlurDataUrl();
-  }, [imageUrl]);
+  const handleImageLoad = (ref: any) => {
+    ref.current.dataset.loaded = "true";
+  };
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -99,25 +87,31 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         <>
           {renderTextContent}
           <Image
+            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            {...(blurDataUrl ? { placeholder: "blur", blurDataURL: blurDataUrl } : {})}
+            placeholder="blur"
+            blurDataURL="data:..."
+            onLoad={() => handleImageLoad(imageRef2)}
           />
         </>
       ) : imageAlignment == "start" ? (
         <>
           <Image
+            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            {...(blurDataUrl ? { placeholder: "blur", blurDataURL: blurDataUrl } : {})}
+            placeholder="blur"
+            blurDataURL="data:..."
+            onLoad={() => handleImageLoad(imageRef2)}
           />
           {renderTextContent}
         </>
@@ -125,13 +119,16 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         <>
           {renderTextContent}
           <Image
+            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            {...(blurDataUrl ? { placeholder: "blur", blurDataURL: blurDataUrl } : {})}
+            placeholder="blur"
+            blurDataURL="data:..."
+            onLoad={() => handleImageLoad(imageRef2)}
           />
         </>
       )}
