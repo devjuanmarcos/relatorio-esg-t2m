@@ -6,6 +6,7 @@ import { CallBannerInterface } from "@banners/CallBanner";
 import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBanner";
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
+import { Loading } from "../ui/Loading";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -24,9 +25,23 @@ const NumberCardsBanner = dynamic(() =>
 );
 
 const ESGPage: React.FC = () => {
+  const [isMounted, setIsMounted] = React.useState<boolean>(false);
+
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   React.useEffect(() => {
     import("@/components/banners/CallBanner");
   }, []);
+
+  if (!isMounted) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <Loading size={100} speed={1.32} />
+      </div>
+    );
+  }
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/capacitandoComunidade.jpg",

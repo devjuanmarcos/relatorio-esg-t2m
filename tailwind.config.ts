@@ -95,6 +95,7 @@ const config: Config = {
         scroll: "scroll 40s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        bounce: "bounce 1.32s infinite",
       },
       keyframes: {
         scroll: {
@@ -108,6 +109,10 @@ const config: Config = {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
+        },
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-30%)" },
         },
       },
     },
