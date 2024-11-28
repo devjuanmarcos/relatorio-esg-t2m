@@ -88,7 +88,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         alignment === "start" ? "md:justify-start" : "md:justify-end"
       } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
-      <Image src={imageUrl} alt="Cover Image" className="bg-img blur-up" width={1440} height={720} quality={100} />
+      <Image src={imageUrl} alt="Cover Image" className="bg-img " width={1440} height={720} quality={100} />
       {topTitle ? (
         <BoxCard type="simple">
           <div className="flex items-center gap-4">

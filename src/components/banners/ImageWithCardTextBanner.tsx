@@ -84,7 +84,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
             width={1064}
             height={716}
             quality={100}
@@ -95,7 +95,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
             width={1064}
             height={716}
             quality={100}
@@ -108,7 +108,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
+            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
             width={1064}
             height={716}
             quality={100}
