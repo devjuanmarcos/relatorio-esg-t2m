@@ -56,7 +56,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/gestaoResiduos.jpg",
     topTitle: "Ambiental",
     title: "Gestão de Resíduos e Escolha de Materiais Sustentáveis",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -84,7 +83,6 @@ const ESGPage: React.FC = () => {
     alignment: "end",
     imageUrl: "/img/temp/esg/contratosAssinados.jpg",
     topTitle: "Ambiental",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -106,7 +104,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/nuvem.jpg",
     topTitle: "Ambiental",
     title: "Utilização de Nuvem, reduzindo o consumo de hardware",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -127,7 +124,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/consumoAgua.jpg",
     topTitle: "Ambiental",
     title: "Consumo consciente de Água",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -148,7 +144,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/veiculosCombustao.jpg",
     topTitle: "Ambiental",
     title: "Estímulo à redução do uso de veículos a combustão",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -169,7 +164,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/meioambiente.jpg",
     topTitle: "Ambiental",
     title: "Cadeia de fornecedores comprometidos com o meio ambiente",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -190,7 +184,6 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/reciclagemBaterias.jpg",
     topTitle: "Ambiental",
     title: "Reciclagem de material eletrônico e baterias",
-    topTitleColor: "text-var-ambiental",
     icon: {
       icon: "/img/temp/esg/ambiental.png",
       iconAlt: "ícone referente ao tópico ambiental",
@@ -214,7 +207,6 @@ const ESGPage: React.FC = () => {
       icon: "/img/temp/esg/social.png",
       iconAlt: "ícone referente ao tópico social",
     },
-    topTitleColor: "text-var-social",
     title: "Patrocinador de iniciativas de capacitação profissional",
     ods: ["/img/ods/4.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
@@ -235,7 +227,6 @@ const ESGPage: React.FC = () => {
       icon: "/img/temp/esg/social.png",
       iconAlt: "ícone referente ao tópico social",
     },
-    topTitleColor: "text-var-social",
     title: "Equipe de gente e gestão composta por mulheres",
     ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
@@ -256,7 +247,6 @@ const ESGPage: React.FC = () => {
       icon: "/img/temp/esg/social.png",
       iconAlt: "ícone referente ao tópico social",
     },
-    topTitleColor: "text-var-social",
     title: "Programa de qualidade de vida",
     ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
   };
@@ -277,7 +267,6 @@ const ESGPage: React.FC = () => {
       icon: "/img/temp/esg/social.png",
       iconAlt: "ícone referente ao tópico social",
     },
-    topTitleColor: "text-var-social",
     title: "Campanhas solidárias",
     ods: ["/img/ods/1.png", "/img/ods/10.png", "/img/ods/17.png"],
   };
@@ -298,7 +287,6 @@ const ESGPage: React.FC = () => {
       icon: "/img/temp/esg/social.png",
       iconAlt: "ícone referente ao tópico social",
     },
-    topTitleColor: "text-var-social",
     title: "Voluntariado e apoio a iniciativas de empregabilidade",
     ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
   };
@@ -316,10 +304,9 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/legislacao.jpeg",
     topTitle: "Governança",
     icon: {
-      icon: "/img/temp/esg/governanca.png",
+      icon: "/img/temp/esg/governanca2.png",
       iconAlt: "ícone referente ao tópico governança",
     },
-    topTitleColor: "text-var-governanca",
     title: "Normas, códigos e legislações internas e externas da T2M",
     ods: ["/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png", "/img/ods/16.png"],
   };
@@ -353,10 +340,9 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/comites.jpg",
     topTitle: "Governança",
     icon: {
-      icon: "/img/temp/esg/governanca.png",
+      icon: "/img/temp/esg/governanca2.png",
       iconAlt: "ícone referente ao tópico governança",
     },
-    topTitleColor: "text-var-governanca",
     title: "Comitês da T2M",
     ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
   };
@@ -382,10 +368,9 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/certificacoes.png",
     topTitle: "Governança",
     icon: {
-      icon: "/img/temp/esg/governanca.png",
+      icon: "/img/temp/esg/governanca2.png",
       iconAlt: "ícone referente ao tópico governança",
     },
-    topTitleColor: "text-var-governanca",
     title: "Certificações e padrões internacionais",
     paragraph: "Além dos comitês, a T2M está alinhada com padrões internacionais de integridade e ética empresarial.",
     ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/12.png", "/img/ods/16.png"],
@@ -412,10 +397,9 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/canalDenuncia.jpg",
     topTitle: "Governança",
     icon: {
-      icon: "/img/temp/esg/governanca.png",
+      icon: "/img/temp/esg/governanca2.png",
       iconAlt: "ícone referente ao tópico governança",
     },
-    topTitleColor: "text-var-governanca",
     title: "Canais de denúncias",
     ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
   };
@@ -457,10 +441,9 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/esg/equipeSalarial.jpg",
     topTitle: "Governança",
     icon: {
-      icon: "/img/temp/esg/governanca.png",
+      icon: "/img/temp/esg/governanca2.png",
       iconAlt: "ícone referente ao tópico governança",
     },
-    topTitleColor: "text-var-governanca",
     title: "Equidade salarial",
     paragraph:
       "A T2M disponibiliza do Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, relatório que reforça o compromisso com a justiça social.",
@@ -543,8 +526,6 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...campanhasSolidariasTexto1Data} />
       <SimpleCallBanner {...voluntariadoApoioData} />
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
-
-      {/* ajustar imagens daqui pra baixo */}
       <SimpleCallBanner {...normasCodigosLegislacoesData} />
       <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto1Data} />
       <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto2Data} />

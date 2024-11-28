@@ -26,6 +26,13 @@ const CallBanner: React.FC<CallBannerInterface> = ({
   buttonText,
 }) => {
   const isMounted = useIsMounted();
+  const [isImageLoaded, setIsImageLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    const img = new Image();
+    img.src = imageUrl;
+    img.onload = () => setIsImageLoaded(true);
+  }, [imageUrl]);
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -33,8 +40,12 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className="bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center"
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      className={`bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 ${
+        isImageLoaded ? "blur-0" : "blur-md"
+      }`}
+      style={{
+        backgroundImage: `url(${imageUrl})`,
+      }}
     >
       <BoxCard type="main">
         <TextVariantes variant="h1_main_title" lineBottom>

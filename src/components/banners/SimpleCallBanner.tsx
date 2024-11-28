@@ -43,6 +43,13 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   ods,
 }) => {
   const isMounted = useIsMounted();
+  const [isImageLoaded, setIsImageLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    const img = new window.Image();
+    img.src = imageUrl;
+    img.onload = () => setIsImageLoaded(true);
+  }, [imageUrl]);
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -56,10 +63,10 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         <Image
           src={icon.icon}
           alt={icon.iconAlt || "Ícone"}
-          width={40}
-          height={40}
+          width={400}
+          height={400}
           quality={100}
-          className="w-10 h-10"
+          className="w-20 h-auto"
         />
       );
     }
@@ -86,16 +93,18 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
     <div
       className={`bg-no-repeat bg-cover flex justify-center ${
         alignment === "start" ? "md:justify-start" : "md:justify-end"
-      } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center`}
+      } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 ${
+        isImageLoaded ? "blur-0" : "blur-md"
+      }`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       {topTitle ? (
         <BoxCard type="simple">
           <div className="flex items-center gap-4">
+            {renderIcon()}
             <TextVariantes variant="top_title" extraClassName={topTitleColor}>
               {topTitle}
             </TextVariantes>
-            {renderIcon()}
           </div>
           {title && (
             <TextVariantes variant="title_georgia" lineBottom>
