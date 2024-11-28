@@ -260,7 +260,7 @@ const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
 
 const reciclagemMaterialData: SimpleCallBannerInterface = {
   alignment: "start",
-  imageUrl: "/img/temp/esg/reciclagemBaterias.jpg",
+  imageUrl: "/img/temp/esg/reciclagemBaterias.jpeg",
   topTitle: "Ambiental",
   title: "Reciclagem de material eletrônico e baterias",
   icon: {
@@ -334,7 +334,7 @@ const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
     "A T2M promove o bem-estar de seus colaboradores por meio de seu Programa de Atividade Física, realizado todos os sábados. Esse programa visa melhorar a qualidade de vida e a saúde mental dos colaboradores, incentivando-os a adotar um estilo de vida mais saudável e ativo. As atividades são adaptadas para atender diferentes níveis de condicionamento, promovendo o engajamento e a integração entre os participantes. A T2M acredita que investir na saúde dos colaboradores contribui para um ambiente de trabalho mais produtivo e feliz.",
   imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/atividadeFisica.jpg",
+  imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
   imageAlignment: "start",
 };
 
