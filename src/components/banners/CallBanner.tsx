@@ -48,6 +48,7 @@ const CallBanner: React.FC<CallBannerInterface> = ({
         src={imageUrl}
         alt="Cover Image"
         className="bg-img blur-up"
+        sizes="(max-width: 768px) 100vw, 1440px"
         width={1440}
         height={720}
         quality={100}

@@ -7,7 +7,6 @@ import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBann
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { Loading } from "../ui/Loading";
-import { useInView } from "@/hooks/IntersectionObserver";
 import { Skeleton } from "../ui/skeleton";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
@@ -32,9 +31,6 @@ const NumberCardsBanner = dynamic(() =>
 
 const ESGPage: React.FC = () => {
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
-  const { ref: ref1, isInView: inView1 } = useInView();
-  const { ref: ref2, isInView: inView2 } = useInView();
-  const { ref: ref3, isInView: inView3 } = useInView();
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -65,17 +61,12 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...contratosAssinadosTexto1Data} />
       <SimpleCallBanner {...utilizacaoNuvemData} />
       <ImageWithCardTextBanner {...utilizacaoNuvemTexto1Data} />
-
-      <div ref={ref1}>{inView1 && <SimpleCallBanner {...consumoConscienteData} />}</div>
-
+      <SimpleCallBanner {...consumoConscienteData} />
       <ImageWithCardTextBanner {...consumoConscienteTexto1Data} />
-
-      <div ref={ref2}>{inView2 && <SimpleCallBanner {...estimuloReducaoData} />}</div>
+      <SimpleCallBanner {...estimuloReducaoData} />
       <ImageWithCardTextBanner {...estimuloReducaoTexto1Data} />
-
-      <div ref={ref3}>{inView3 && <SimpleCallBanner {...cadeiaFornecedoresData} />}</div>
+      <SimpleCallBanner {...cadeiaFornecedoresData} />
       <ImageWithCardTextBanner {...cadeiaFornecedoresTexto1Data} />
-
       <SimpleCallBanner {...reciclagemMaterialData} />
       <ImageWithCardTextBanner {...reciclagemMaterialTexto1Data} />
       <SimpleCallBanner {...patrocinadorIniciativasData} />
@@ -131,11 +122,12 @@ const oportunidadesInclusivasData: ImageWithCardTextBannerInterface = {
   paragraph:
     "Nosso compromisso com o ESG é parte central de nossa estratégia, contribuindo para a redução dos impactos ambientais, o fortalecimento de práticas sociais inclusivas e a adoção de uma governança corporativa ética e responsável. Nosso esforço contínuo para integrar os ODS às operações fortalece nossa atuação sustentável, gerando valor para todas as partes interessadas.",
   imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/escritoriopretoebranco.png",
+  imageUrl: "/img/temp/esg/odsonu2.png",
   imageAlignment: "start",
   buttonText: "Quero fazer parte",
   buttonLink: "#",
   buttonTarget: "_blank",
+  objectContain: true,
 };
 
 const gestaoResiduosData: SimpleCallBannerInterface = {
@@ -200,7 +192,7 @@ const utilizacaoNuvemData: SimpleCallBannerInterface = {
 
 const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
-    "Na T2M, a migração para a computação em nuvem faz parte de nossa estratégia para reduzir o consumo de energia e minimizar a necessidade de novos hardwares físicos. Com o uso de soluções em nuvem, diminuímos significativamente a demanda por servidores físicos, que exigem manutenção constante e consomem grande quantidade de energia elétrica. Essa abordagem reduz nossa pegada ambiental e promove uma operação mais eficiente, com maior escalabilidade e menor consumo de recursos. Além disso, a utilização de nuvem permite que nossas operações tenham uma continuidade robusta e segura, mesmo em situações de emergência, garantindo também que nossos dados estejam protegidos e acessíveis. A transição para a nuvem reflete nosso compromisso com práticas tecnológicas avançadas e sustentáveis, atendendo às demandas atuais sem comprometer os recursos das futuras gerações.",
+    "Na T2M, o uso das soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, é essencial para reduzir o consumo de energia e a necessidade de novos hardwares físicos. Essas ferramentas diminuem a demanda por servidores físicos, que consomem muita energia e exigem manutenção. Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável. Além disso, a nuvem oferece escalabilidade, eficiência, segurança e acessibilidade de dados, refletindo o compromisso da T2M com práticas tecnológicas sustentáveis e inovadoras.",
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/computacaoNuvem.jpg",
   imageAlignment: "end",
@@ -235,7 +227,7 @@ const estimuloReducaoData: SimpleCallBannerInterface = {
     icon: "/img/temp/esg/ambiental.png",
     iconAlt: "ícone referente ao tópico ambiental",
   },
-  ods: ["/img/ods/3.png", "/img/ods/11.png", "/img/ods/13.png"],
+  ods: ["/img/ods/3.png", "/img/ods/11.png", "/img/ods/12.png", "/img/ods/13.png"],
 };
 
 const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
@@ -315,7 +307,7 @@ const equipeGenteGestaoData: SimpleCallBannerInterface = {
     iconAlt: "ícone referente ao tópico social",
   },
   title: "Equipe de gente e gestão composta por mulheres",
-  ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
+  ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
 };
 
 const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
@@ -355,7 +347,7 @@ const campanhasSolidariasData: SimpleCallBannerInterface = {
     iconAlt: "ícone referente ao tópico social",
   },
   title: "Campanhas solidárias",
-  ods: ["/img/ods/1.png", "/img/ods/10.png", "/img/ods/17.png"],
+  ods: ["/img/ods/1.png", "/img/ods/10.png"],
 };
 
 const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
@@ -391,7 +383,7 @@ const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/legislacao.jpeg",
   topTitle: "Governança",
   icon: {
-    icon: "/img/temp/esg/governanca2.png",
+    icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
   },
   title: "Normas, códigos e legislações internas e externas da T2M",
@@ -427,7 +419,7 @@ const comiteT2MData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/comites.jpg",
   topTitle: "Governança",
   icon: {
-    icon: "/img/temp/esg/governanca2.png",
+    icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
   },
   title: "Comitês da T2M",
@@ -444,7 +436,7 @@ const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
 
 const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
   paragraph:
-    "CIPA (Comissão Interna de Prevenção de Acidentes): Em cumprimento à NR-5, a CIPA da T2M tem a função de identificar e mitigar riscos no ambiente de trabalho, promover campanhas de conscientização treinamentos, além de estar envolvido em questões de assédio, fortalecendo a cultura de segurança e prevenção entre nossos colaboradores. Atualmente, a comissão é composta por 10 membros, sendo 30% mulheres, o que reforça nosso compromisso com a diversidade e inclusão.",
+    "CIPA (Comissão Interna de Prevenção de Acidentes): Em cumprimento à NR-5, a CIPA da T2M tem a função de identificar e mitigar riscos no ambiente de trabalho, promover campanhas de conscientização e treinamentos, além de estar envolvido em questões de assédio, fortalecendo a cultura de segurança e prevenção entre nossos colaboradores. Atualmente, a comissão é composta por 10 membros, sendo 30% mulheres, o que reforça nosso compromisso com a diversidade e inclusão.",
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/prevencao.jpg",
   imageAlignment: "end",
@@ -455,7 +447,7 @@ const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/certificacoes.png",
   topTitle: "Governança",
   icon: {
-    icon: "/img/temp/esg/governanca2.png",
+    icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
   },
   title: "Certificações e padrões internacionais",
@@ -465,7 +457,7 @@ const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
 
 const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
-    "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora O sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de gestão de de gestão de compliance, compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
+    "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora O sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/verificado.jpg",
   imageAlignment: "end",
@@ -484,7 +476,7 @@ const canaisDenunciaData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/canalDenuncia.jpg",
   topTitle: "Governança",
   icon: {
-    icon: "/img/temp/esg/governanca2.png",
+    icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
   },
   title: "Canais de denúncias",
@@ -528,7 +520,7 @@ const equidadeSalarialData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/equipeSalarial.jpg",
   topTitle: "Governança",
   icon: {
-    icon: "/img/temp/esg/governanca2.png",
+    icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
   },
   title: "Equidade salarial",

@@ -19,9 +19,7 @@ const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner
 const ImageWithCardTextBanner = dynamic(() =>
   import("@/components/banners/ImageWithCardTextBanner").then((mod) => mod.ImageWithCardTextBanner)
 );
-const TwoCardsTextBanner = dynamic(() =>
-  import("@/components/banners/TwoCardsTextBanner").then((mod) => mod.TwoCardsTextBanner)
-);
+
 const SimpleCallBanner = dynamic(() =>
   import("@/components/banners/SimpleCallBanner").then((mod) => mod.SimpleCallBanner)
 );
@@ -64,23 +62,17 @@ const HomePage: React.FC = () => {
     imageAlignment: "start",
   };
 
-  const sobreRelatorioData: TwoCardsTextBannerInterface = {
-    firstBox: {
-      title: "Sobre este relatório",
-      paragraphs: [
-        "Este Relatório de Impacto Social e Desenvolvimento Sustentável apresenta as ações e os compromissos da T2M com práticas de responsabilidade social, ambiental e de governança (ESG).",
-        "Ele reflete nossos esforços para criar um impacto positivo em nossa comunidade, promover um ambiente de trabalho inclusivo e sustentável e minimizar nossa pegada ambiental. ",
-        "Ao compartilhar nossas conquistas e desafios, este relatório reforça nosso compromisso com a transparência e com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, além de guiar nossa evolução contínua em direção a um futuro mais sustentável.",
-      ],
-    },
-    secondBox: {
-      title: "Contato",
-      paragraph:
-        "Nossa sede fica em Petrópolis no Quitandinha. Teremos muito satisfação em receber a sua visita. Entre em contato para saber mais sobre como podemos ajudar no seu negócio.",
-      buttonLink: "https://www.t2mlab.com/contato/",
-      buttonText: "Entrar em contato",
-      buttonTarget: "_blank",
-    },
+  const sobreRelatorioData: ImageWithCardTextBannerInterface = {
+    title: "Sobre este relatório",
+    paragraphs: [
+      "Este Relatório de Impacto Social e Desenvolvimento Sustentável apresenta as ações e os compromissos da T2M com práticas de responsabilidade social, ambiental e de governança (ESG).",
+      "Ele reflete nossos esforços para criar um impacto positivo em nossa comunidade, promover um ambiente de trabalho inclusivo e sustentável e minimizar nossa pegada ambiental. ",
+      "Ao compartilhar nossas conquistas e desafios, este relatório reforça nosso compromisso com a transparência e com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU, além de guiar nossa evolução contínua em direção a um futuro mais sustentável.",
+    ],
+    imageAlt: "Foto das ODS da ONU",
+    imageUrl: "/img/temp/odsonu.png",
+    imageAlignment: "end",
+    objectContain: true,
   };
 
   const processoMaterialidadeData: SimpleCallBannerInterface = {
@@ -388,10 +380,9 @@ const HomePage: React.FC = () => {
       <React.Suspense>
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
-
       <ImageWithCardTextBanner {...mensagemCeoData} />
       <DividingLine />
-      <TwoCardsTextBanner {...sobreRelatorioData} />
+      <ImageWithCardTextBanner {...sobreRelatorioData} />
       <SimpleCallBanner {...processoMaterialidadeData} />
       <IconsCardsBanner {...partesInteressadasData} />
       <SimpleCallBanner {...metodologiaData} />

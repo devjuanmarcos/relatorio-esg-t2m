@@ -59,7 +59,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
           width={400}
           height={400}
           quality={100}
-          className="w-20 h-auto"
+          className="w-20 h-auto aspect-[80/55]"
         />
       );
     }
@@ -75,7 +75,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
       <div className="flex flex-wrap gap-4 mt-4">
         {ods.map((item, index) => (
           <div key={index} className="flex items-center justify-center">
-            <Image src={item} alt={"Ícone da ODS"} width={800} height={800} quality={100} className="size-32" />
+            <Image src={item} alt={"Ícone da ODS"} width={80} height={80} className="size-20" />
           </div>
         ))}
       </div>
@@ -88,7 +88,14 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         alignment === "start" ? "md:justify-start" : "md:justify-end"
       } items-center md:items-end w-full aspect-[1440/572] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
-      <Image src={imageUrl} alt="Cover Image" className="bg-img " width={1440} height={720} quality={100} />
+      <Image
+        src={imageUrl}
+        alt="Cover Image"
+        className="bg-img "
+        width={1000}
+        height={600}
+        sizes="(max-width: 768px) 100vw, 1000px"
+      />
       {topTitle ? (
         <BoxCard type="simple">
           <div className="flex items-center gap-4">

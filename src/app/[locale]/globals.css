@@ -18,7 +18,7 @@
 
     /* Shadcn configuration */
     --background: 0, 0%, 100%;
-    --background-hover: 0, 0%, 100%, 0.703;
+    --background-hover: 0, 0%, 100%, 0.8;
     --foreground: 0, 6.8%, 8.1%;
     --card: 0 0% 100%;
     --card-foreground: 0, 6.8%, 8.1%;
@@ -61,7 +61,7 @@
 
     /* Shadcn configuration */
     --background: 0, 6.8%, 8.1%;
-    --background-hover: 0, 0%, 100%, 0.703;
+    --background-hover: 0, 6.8%, 8.1%, 0.8;
     --foreground: 0, 0%, 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;

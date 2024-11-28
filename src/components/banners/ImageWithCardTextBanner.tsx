@@ -14,11 +14,13 @@ export interface ImageWithCardTextBannerInterface {
   imageAlt: string;
   title?: string;
   topTitle?: string;
-  paragraph: string;
+  paragraph?: string;
+  paragraphs?: string[];
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
   imageAlignment: "start" | "end";
+  objectContain?: boolean;
 }
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
@@ -26,11 +28,13 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   imageAlt,
   topTitle,
   paragraph,
+  paragraphs,
   title,
   buttonLink,
   buttonTarget,
   buttonText,
   imageAlignment,
+  objectContain,
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
@@ -60,9 +64,17 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
               {title}
             </TextVariantes>
           )}
-          <TextVariantes variant="paragraph_01" lineTop={!title ? true : false}>
-            {paragraph}
-          </TextVariantes>
+          {paragraph && (
+            <TextVariantes variant="paragraph_01" lineTop={!title ? true : false}>
+              {paragraph}
+            </TextVariantes>
+          )}
+          {paragraphs &&
+            paragraphs.map((text, index) => (
+              <TextVariantes key={index} variant="paragraph_01">
+                {text}
+              </TextVariantes>
+            ))}
         </div>
         {buttonLink && buttonText && (
           <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
@@ -84,7 +96,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
+            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
             width={1064}
             height={716}
             quality={100}
@@ -95,7 +107,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
+            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
             width={1064}
             height={716}
             quality={100}
@@ -108,7 +120,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 "
+            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
             width={1064}
             height={716}
             quality={100}

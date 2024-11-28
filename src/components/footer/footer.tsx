@@ -9,6 +9,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
+import { Skeleton } from "../ui/skeleton";
 
 const topics = [
   { label: "Sobre", href: "/" },
@@ -119,12 +120,18 @@ const OfficialSite = () => (
 );
 
 export const Footer = () => {
+  const [isMounted, setIsMounted] = React.useState<boolean>(false);
   const { theme } = useTheme();
+
+  if (isMounted) {
+    return <Skeleton className="w-full aspect-[1440/300]" />;
+  }
+
   return (
     <div className="flex flex-col lg:flex-row py-[52px] px-4 md:px-20 gap-20 w-full md:max-w-[80vw] mx-auto border-t border-primary text-center justify-center">
       <div className="flex flex-col items-center">
         <Image
-          src={theme == "light" ? "/img/LOGOT2M.png" : "/img/LOGOT2MBRANCA.png"}
+          src={theme == "dark" ? "/img/LOGOT2MBRANCA.png" : "/img/LOGOT2M.png"}
           alt="Logo da T2M"
           width={407}
           height={177}
