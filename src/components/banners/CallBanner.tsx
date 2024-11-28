@@ -44,6 +44,7 @@ const CallBanner: React.FC<CallBannerInterface> = ({
     >
       <Image
         ref={imageRef1}
+        priority
         src={imageUrl}
         alt="Cover Image"
         className="bg-img blur-up"

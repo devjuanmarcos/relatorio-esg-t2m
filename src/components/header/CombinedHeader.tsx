@@ -53,10 +53,13 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary flex flex-col">
-      <div className="relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade ">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary flex flex-col ">
+      <div
+        className="max-h-12 overflow-y-hidden relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full 
+      px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade "
+      >
         <VLibrasIntegration />
-        <div className="flex gap-4 text-var-icone-barra-acessibilidade items-center">
+        <div className="flex gap-4 text-var-icone-barra-acessibilidade items-center mr-auto">
           <span className="md:contents hidden font-semibold text-[1.4rem] font-montserrat">{t("acessibilidade")}</span>
           <SwitchWithIcon />
           <FontSizeSlider />

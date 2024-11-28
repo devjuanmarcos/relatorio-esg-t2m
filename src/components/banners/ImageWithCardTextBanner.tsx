@@ -34,11 +34,6 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
-  const imageRef2 = React.useRef(null);
-
-  const handleImageLoad = (ref: any) => {
-    ref.current.dataset.loaded = "true";
-  };
 
   if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/572]" />;
@@ -87,31 +82,23 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         <>
           {renderTextContent}
           <Image
-            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
             className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            placeholder="blur"
-            blurDataURL="data:..."
-            onLoad={() => handleImageLoad(imageRef2)}
           />
         </>
       ) : imageAlignment == "start" ? (
         <>
           <Image
-            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
             className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            placeholder="blur"
-            blurDataURL="data:..."
-            onLoad={() => handleImageLoad(imageRef2)}
           />
           {renderTextContent}
         </>
@@ -119,16 +106,12 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         <>
           {renderTextContent}
           <Image
-            ref={imageRef2}
             src={imageUrl}
             alt={imageAlt}
             className="w-full h-full max-h-[22.375rem] object-cover aspect-[532/358] rounded-[.75rem] lg:col-span-2 blur-up"
             width={1064}
             height={716}
             quality={100}
-            placeholder="blur"
-            blurDataURL="data:..."
-            onLoad={() => handleImageLoad(imageRef2)}
           />
         </>
       )}
