@@ -64,8 +64,8 @@ export const NumberCardWithIconAndBorder: React.FC<NumberCardInterface> = ({ par
   };
 
   return (
-    <div className="bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-[22rem]  shadow-md border-t border-t-primary ">
-      <div className="absolute -top-[15%] rounded-full bg-background border border-primary flex items-center p-4 size-16 ">
+    <div className="bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-full max-w-[22rem]  shadow-md border-t border-t-primary ">
+      <div className="absolute bottom-[88%] rounded-full bg-background border border-primary flex items-center p-4 size-16 ">
         {renderIcon()}
       </div>
       <div className="flex flex-col gap-1 w-full text-start ">

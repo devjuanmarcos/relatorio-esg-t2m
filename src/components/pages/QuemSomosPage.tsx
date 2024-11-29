@@ -217,8 +217,8 @@ const QuemSomosPage: React.FC = () => {
   };
 
   const importanciaTerceirizarTestesData: NumberCardsBannerInterface = {
-    topTitle: "A importância de terceirizar",
-    title: "Testes de Qualidade de Software",
+    ods: [8, 9, 17],
+    title: "A importância de terceirizar Testes de Qualidade de Software",
     paragraph:
       "A terceirização dos testes de qualidade de software é essencial em sistemas críticos, como os bancários, de controle aéreo e hospitalares, que exigem alta precisão e segurança.",
     numberCards: [
@@ -323,6 +323,7 @@ const QuemSomosPage: React.FC = () => {
       <ImageWithCardTextBanner {...acessibilidadeInclusao} />
       <SimpleCallBanner {...tresPilaresData} />
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
+      <DividingLine />
       <NumberCardsBanner {...importanciaTerceirizarTestesData} />
       <SimpleCallBanner {...ondeAtuamos} />
       <NumberCardsBanner {...paisesQuantidadeProjetos} />

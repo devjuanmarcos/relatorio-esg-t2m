@@ -6,11 +6,8 @@ import { CallBannerInterface } from "@banners/CallBanner";
 import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBanner";
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
-import { NumberCardsBannerInterface } from "@/components/banners/NumberCardsBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
-import { Fa4 } from "react-icons/fa6";
-import { FaCalendarAlt, FaHandsHelping, FaMapMarkedAlt, FaTree } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -26,10 +23,6 @@ const IconsCardsBanner = dynamic(() =>
 
 const ImageWithCardTextBanner = dynamic(() =>
   import("@/components/banners/ImageWithCardTextBanner").then((mod) => mod.ImageWithCardTextBanner)
-);
-
-const NumberCardsBanner = dynamic(() =>
-  import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
 );
 
 const ComunidadePage: React.FC = () => {
@@ -73,39 +66,6 @@ const ComunidadePage: React.FC = () => {
     paragraph: "Alcançados com programas de impacto social",
     buttonText: "Quero ser um patrocinador",
     buttonLink: "#",
-  };
-
-  const nossoImpactoEmNumeros: NumberCardsBannerInterface = {
-    title: "Movimento Regenerativo Tempo de Plantar",
-    paragraph:
-      "Ao apoiar projetos culturais e de plantação de árvores, como o Movimento Regenerativo Tempo de Plantar, fortalecemos o protagonismo das comunidades e promovemos o sentimento de pertencimento. Com o plantio de árvores, além de proteger o meio ambiente, criamos um legado duradouro, garantindo que as futuras gerações cresçam em um território que valoriza e preserva suas memórias e a natureza ao seu redor.",
-    numberCards: [
-      {
-        title: "Movimento auto-gestionário",
-        icon: FaHandsHelping,
-        paragraph:
-          "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa das pessoas no plantio de árvores, criando uma conexão direta com a natureza e promovendo uma maior conscientização ambiental.",
-      },
-      {
-        title: "Em dezembro de 2024",
-        icon: FaCalendarAlt,
-        paragraph:
-          "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Este marco faz parte de um esforço contínuo para promover a restauração da vegetação nativa e a recuperação de áreas degradadas.",
-      },
-      {
-        title: "A espectativa para 2025",
-        icon: FaTree,
-        paragraph:
-          "Para 2025, a meta é plantar mais de 1000 árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
-      },
-      {
-        title: "No Distrito Federal",
-        icon: FaMapMarkedAlt,
-        paragraph:
-          "Desde 2019, o Movimento Regenerativo Tempo de Plantar já conseguiu plantar 100 mil mudas no Distrito Federal. Esse movimento tem se espalhado por todo o Brasil, incentivando mais pessoas a se unirem a esta causa.",
-      },
-    ],
-    type: "border",
   };
 
   const nossosParceirosData: SimpleCallBannerInterface = {
@@ -199,7 +159,6 @@ const ComunidadePage: React.FC = () => {
 
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
       <SimpleCallBanner {...impactoData} />
-      <NumberCardsBanner {...nossoImpactoEmNumeros} />
       <SimpleCallBanner {...nossosParceirosData} />
       <IconsCardsBanner {...listagemParceirosData} />
     </div>

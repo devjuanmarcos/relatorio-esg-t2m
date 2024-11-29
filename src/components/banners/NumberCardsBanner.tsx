@@ -6,6 +6,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { NumberCard, NumberCardInterface, NumberCardWithIconAndBorder } from "../cards/numberCard";
 import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
+import { OdsCard } from "../cards/odsCard";
 
 export interface TextCardInterface {
   title: string;
@@ -19,13 +20,16 @@ export interface ButtonInterface {
   buttonText: string;
   buttonType?: string;
 }
+
 export interface NumberCardsBannerInterface {
   numberCards: NumberCardInterface[];
   title?: string;
   topTitle?: string;
   paragraph?: string;
   type?: "default" | "border";
+  alignment?: "default" | "center";
   extraButtonBottom?: ButtonInterface;
+  ods?: number[];
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -34,7 +38,9 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   paragraph,
   topTitle,
   type = "default",
+  alignment = "default",
   extraButtonBottom,
+  ods,
 }) => {
   const isMounted = useIsMounted();
 
@@ -44,18 +50,21 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
 
   return (
     <div
-      className={`px-2 md:px-12 flex flex-col w-full ${type == "default" ? "gap-10" : "gap-20 justify-center items-center text-center"} `}
+      className={`px-2 md:px-12 flex flex-col w-full ${type == "default" ? "gap-10" : "gap-20 "} ${alignment == "center" && "justify-center items-center text-center"} `}
     >
-      <div className="flex flex-col gap-3 max-w-[42rem]  ">
-        {topTitle && (
-          <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
-            {topTitle}
-          </TextVariantes>
-        )}
-        {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
-        {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
+      <div className="flex items-center md:justify-between gap-12 flex-col md:flex-row ">
+        <div className="flex flex-col gap-3 max-w-[42rem]  ">
+          {topTitle && (
+            <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
+              {topTitle}
+            </TextVariantes>
+          )}
+          {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
+          {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
+        </div>
+        {ods && <OdsCard ods={ods} />}
       </div>
-      <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-8"}  justify-center`}>
+      <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-12"}  justify-center`}>
         {numberCards.map((iconCard) => {
           if (type != "default") {
             return <NumberCardWithIconAndBorder key={iconCard.title} {...iconCard} />;

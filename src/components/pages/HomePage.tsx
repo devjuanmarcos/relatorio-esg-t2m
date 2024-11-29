@@ -5,7 +5,6 @@ import React from "react";
 import { DividingLine } from "../ui/dividingLine";
 import { CallBannerInterface } from "@banners/CallBanner";
 import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBanner";
-import { TwoCardsTextBannerInterface } from "@banners/TwoCardsTextBanner";
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
@@ -13,7 +12,24 @@ import { ImageWithTopicsBannerInterface } from "@banners/ImageWithTopicsBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
-import { FaBalanceScale, FaCertificate, FaEye, FaRecycle, FaShoppingCart, FaTree } from "react-icons/fa";
+import {
+  FaBalanceScale,
+  FaCertificate,
+  FaEye,
+  FaRecycle,
+  FaShoppingCart,
+  FaCalendarAlt,
+  FaHandsHelping,
+  FaMapMarkedAlt,
+  FaTree,
+  FaUserTie,
+  FaHandshake,
+  FaHandHoldingHeart,
+  FaPeopleCarry,
+  FaGavel,
+  FaChartLine,
+  FaTruckLoading,
+} from "react-icons/fa";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
@@ -101,58 +117,58 @@ const HomePage: React.FC = () => {
   };
 
   const partesInteressadasData: IconsCardsBannerInterface = {
-    title: "Partes interessadas",
+    title: "Partes Interessadas",
     paragraph:
-      "Seguimos um processo interno para identificar e selecionar as referidas partes interessadas com base nos critérios de interação e impacto no negócio, e estabelecemos diferentes mecanismos de diálogo com cada parte interessada como pode ser visto a seguir.",
+      "A T2M valoriza a colaboração com todas as partes interessadas para promover inovação, transparência e soluções de impacto positivo. Estabelecemos canais de diálogo e iniciativas que refletem o compromisso com nossos valores e objetivos estratégicos.",
     icons: [
       {
         id: 1,
-        title: "Colaboradores da Arcos Dourados",
+        title: "Colaboradores",
         paragraph:
-          "Pesquisas de Clima, Arcos Dorados Digital, AD Weekly, Rede Social Corporativa, Yammer, AD Podcasts, Encontros AD, E-mails, Portas Abertas -Portas Transparentes, Relatório de Impacto Social e Desenvolvimento Sustentável, Sites Arcos Dorados e Receita do Futuro, McProtegidos (Protocolos, Cartazes, Treinamentos)",
-        icon: FaAccessibleIcon,
+          "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico, newsletters internas e portais colaborativos para desenvolvimento profissional.",
+        icon: FaUserTie,
       },
       {
         id: 2,
         title: "Clientes",
         paragraph:
-          "Conte-nos como foi sua experiência, Portas Abertas, Relatório de Impacto Social e Desenvolvimento Sustentável, Serviço de Atendimento ao Cliente, Site Arcos Dorados, Site Receita do Futuro, McProtegidos (Cartazes)",
-        icon: FaAccessibleIcon,
+          "Pesquisas de satisfação, canais abertos para feedback, reuniões de acompanhamento e apresentação de resultados, além de um suporte dedicado para resolver questões e aprimorar os serviços.",
+        icon: FaHandshake,
       },
       {
         id: 3,
-        title: "Mídia",
+        title: "Parceiros estratégicos",
         paragraph:
-          "Comunicados à imprensa, Entrevistas, Eventos de Relações Públicas, Relatório de Impacto Social e Desenvolvimento Sustentável, site Arcos Dorados, site Receita do Futuro, Demonstrativos Financeiros, Formulário 20-F",
-        icon: FaAccessibleIcon,
+          "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, workshops e conferências, além de encontros periódicos para fortalecer alianças.",
+        icon: FaHandHoldingHeart,
       },
       {
         id: 4,
-        title: "Comunidade (vizinhos ou representantes de ONGS)",
+        title: "Comunidade",
         paragraph:
-          "Conte-nos como foi sua experiência, Portas Abertas, Relatório de Impacto Social e Desenvolvimento Sustentável, Site Arcos Dorados, Site Receita do Futuro",
-        icon: FaAccessibleIcon,
+          "Iniciativas de responsabilidade social, participação em eventos locais, apoio a ONGs e projetos comunitários para promover impacto positivo e sustentável.",
+        icon: FaPeopleCarry,
       },
       {
         id: 5,
-        title: "Entidades governamentais",
+        title: "Governança e compliance",
         paragraph:
-          "Demonstrações Financeiras, Formulário 20-F, Relatório de Impacto Social e Desenvolvimento Sustentável, site Arcos Dorados",
-        icon: FaAccessibleIcon,
+          "Relatórios de resultados trimestrais, alinhamento com regulamentações, políticas de compliance robustas e interações contínuas com entidades governamentais e reguladoras.",
+        icon: FaGavel,
       },
       {
         id: 6,
-        title: "Acionistas, franqueados, entidades financeiras",
+        title: "Investidores e acionistas",
         paragraph:
-          "Assembleia Geral de Acionistas, Formulário Anual 20-F, Relatório Anual de Impacto Social e Desenvolvimento Sustentável, Demonstrações Financeiras Trimestrais, Relatórios de Resultados Trimestrais, Conferências e Eventos Públicos Periódicos com Investidores, Comunicados Periódicos à Imprensa, Interações Contínuas com Analistas de Vendas, Site Arcos Dorados, Site Receita do Futuro",
-        icon: FaAccessibleIcon,
+          "Divulgação de relatórios financeiros, reuniões periódicas de desempenho, conferências com investidores e materiais detalhados sobre a estratégia e operações da empresa.",
+        icon: FaChartLine,
       },
       {
         id: 7,
-        title: "Fornecedores ou distribuidores",
+        title: "Fornecedores",
         paragraph:
-          "Reunião com fornecedores, Portal de Fornecedores, Portas Abertas, Relatório de Impacto Social e Desenvolvimento Sustentável, Sites Arcos Dorados e Receita do Futuro",
-        icon: FaAccessibleIcon,
+          "Portal exclusivo para fornecedores, reuniões de alinhamento sobre expectativas e demandas, contratos claros e compromissos com práticas justas e sustentáveis.",
+        icon: FaTruckLoading,
       },
     ],
     type: "center",
@@ -163,7 +179,7 @@ const HomePage: React.FC = () => {
     topTitle: "Metodologia",
     title: "Como definimos o conteúdo do relatório?",
     paragraph:
-      "Conduzimos todos os anos um exercício de materialidade para averiguar os pontos de vista das partes interessadas sobre os tópicos ambientais, sociais e econômicos mais relevantes para a gestão sustentável, bem como aqueles que desejam aprender mais. O exercício é realizado de acordo com as recomendações das normas da Global Reporting Initiative e com base na materialidade definida pelos indicadores SASB para o setor de restaurantes.",
+      "Conduzimos todos os anos um exercício de materialidade para averiguar os pontos de vista das partes interessadas sobre os tópicos ambientais, sociais e econômicos mais relevantes para a gestão sustentável, bem como aqueles que desejam aprender mais.",
     imageUrl: "/img/temp/metodologia.png",
   };
 
@@ -266,6 +282,102 @@ const HomePage: React.FC = () => {
         country: "BR",
       },
     ],
+  };
+
+  const greenwashingDesenvolvimentoSustentavelData: NumberCardsBannerInterface = {
+    alignment: "center",
+    topTitle: "Greenwashing x Desenvolvimento Sustentável",
+    title: "A verdade por trás das práticas de sustentabilidade",
+    paragraph:
+      "Muitas empresas utilizam práticas de greenwashing, apresentando iniciativas ambientais superficiais sem mudar realmente seus processos, o que prejudica a transparência e desorienta consumidores e investidores.",
+    extraButtonBottom: {
+      buttonLink:
+        "https://www.t2mlab.com/greenwashing-x-desenvolvimento-sustentavel-a-verdade-por-tras-das-praticas-de-sustentabilidade/",
+      buttonTarget: "_blank",
+      buttonText: "Continue lendo o artigo no nosso site oficial",
+    },
+    numberCards: [
+      {
+        title: "Impacto Ambiental Real",
+        icon: FaTree,
+        paragraph:
+          "Empresas comprometidas com o desenvolvimento sustentável realizam mudanças reais, como a redução das emissões de carbono e o uso responsável dos recursos naturais, para causar impacto ambiental positivo.",
+      },
+      {
+        title: "Transparência Corporativa",
+        icon: FaEye,
+        paragraph:
+          "Para evitar greenwashing, é crucial que as empresas publiquem relatórios claros sobre suas ações e conquistas sustentáveis, com dados verificáveis e metas concretas.",
+      },
+      {
+        title: "Consumo Consciente",
+        icon: FaShoppingCart,
+        paragraph:
+          "Consumidores conscientes podem identificar práticas de greenwashing ao buscar marcas com compromissos sustentáveis comprovados, como o uso de materiais recicláveis e políticas de redução de desperdício.",
+      },
+      {
+        title: "Certificações e Auditorias",
+        icon: FaCertificate,
+        paragraph:
+          "A obtenção de certificações reconhecidas e auditorias externas ajuda a validar o compromisso das empresas com a sustentabilidade, oferecendo confiança aos consumidores e investidores.",
+      },
+      {
+        title: "Economia Circular",
+        icon: FaRecycle,
+        paragraph:
+          "A economia circular é uma alternativa ao modelo tradicional de 'descarte após o uso', incentivando as empresas a reciclar, reutilizar e reduzir os resíduos, promovendo uma abordagem sustentável e regenerativa.",
+      },
+      {
+        title: "O Papel da Governança",
+        icon: FaBalanceScale,
+        paragraph:
+          "A governança desempenha um papel fundamental no combate ao greenwashing, pois orienta as decisões empresariais para práticas responsáveis e alinhadas aos ODS, garantindo integridade e responsabilidade.",
+      },
+    ],
+    type: "border",
+  };
+
+  const sustentabilidadeData: SimpleCallBannerInterface = {
+    title: "Sustentabilidade",
+    paragraph:
+      "Estamos comprometidos em contribuir parao desenvolvimento sustentável por meio dosnossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários,fornecedores, acionistas e a sociedade.",
+    alignment: "end",
+    imageUrl: "/img/temp/esg/plantar.jpg",
+    ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/9.png", "/img/ods/10.png", "/img/ods/13.png"],
+  };
+
+  const movimentoRegenerativoData: NumberCardsBannerInterface = {
+    ods: [11, 13, 15],
+    title: "Movimento Regenerativo Tempo de Plantar",
+    paragraph:
+      "Ao apoiar projetos culturais e de plantação de árvores, como o Movimento Regenerativo Tempo de Plantar, fortalecemos o protagonismo das comunidades e promovemos o sentimento de pertencimento. Com o plantio de árvores, além de proteger o meio ambiente, criamos um legado duradouro, garantindo que as futuras gerações cresçam em um território que valoriza e preserva suas memórias e a natureza ao seu redor.",
+    numberCards: [
+      {
+        title: "Movimento auto-gestionário",
+        icon: FaHandsHelping,
+        paragraph:
+          "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa das pessoas no plantio de árvores, criando uma conexão direta com a natureza e promovendo uma maior conscientização ambiental.",
+      },
+      {
+        title: "Em dezembro de 2024",
+        icon: FaCalendarAlt,
+        paragraph:
+          "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Este marco faz parte de um esforço contínuo para promover a restauração da vegetação nativa e a recuperação de áreas degradadas.",
+      },
+      {
+        title: "A espectativa para 2025",
+        icon: FaTree,
+        paragraph:
+          "Para 2025, a meta é plantar mais de 1000 árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
+      },
+      {
+        title: "No Distrito Federal",
+        icon: FaMapMarkedAlt,
+        paragraph:
+          "Desde 2019, o Movimento Regenerativo Tempo de Plantar já conseguiu plantar 100 mil mudas no Distrito Federal. Esse movimento tem se espalhado por todo o Brasil, incentivando mais pessoas a se unirem a esta causa.",
+      },
+    ],
+    type: "border",
   };
 
   const matrizMaterialidadeData: SimpleCallBannerInterface = {
@@ -392,58 +504,6 @@ const HomePage: React.FC = () => {
     imageUrl: "/img/temp/graficomaterialidade.png",
   };
 
-  const greenwashingDesenvolvimentoSustentavelData: NumberCardsBannerInterface = {
-    topTitle: "Greenwashing x Desenvolvimento Sustentável",
-    title: "A verdade por trás das práticas de sustentabilidade",
-    paragraph:
-      "Muitas empresas utilizam práticas de greenwashing, apresentando iniciativas ambientais superficiais sem mudar realmente seus processos, o que prejudica a transparência e desorienta consumidores e investidores.",
-    extraButtonBottom: {
-      buttonLink:
-        "https://www.t2mlab.com/greenwashing-x-desenvolvimento-sustentavel-a-verdade-por-tras-das-praticas-de-sustentabilidade/",
-      buttonTarget: "_blank",
-      buttonText: "Continue lendo o artigo no nosso site oficial",
-    },
-    numberCards: [
-      {
-        title: "Impacto Ambiental Real",
-        icon: FaTree,
-        paragraph:
-          "Empresas comprometidas com o desenvolvimento sustentável realizam mudanças reais, como a redução das emissões de carbono e o uso responsável dos recursos naturais, para causar impacto ambiental positivo.",
-      },
-      {
-        title: "Transparência Corporativa",
-        icon: FaEye,
-        paragraph:
-          "Para evitar greenwashing, é crucial que as empresas publiquem relatórios claros sobre suas ações e conquistas sustentáveis, com dados verificáveis e metas concretas.",
-      },
-      {
-        title: "Consumo Consciente",
-        icon: FaShoppingCart,
-        paragraph:
-          "Consumidores conscientes podem identificar práticas de greenwashing ao buscar marcas com compromissos sustentáveis comprovados, como o uso de materiais recicláveis e políticas de redução de desperdício.",
-      },
-      {
-        title: "Certificações e Auditorias",
-        icon: FaCertificate,
-        paragraph:
-          "A obtenção de certificações reconhecidas e auditorias externas ajuda a validar o compromisso das empresas com a sustentabilidade, oferecendo confiança aos consumidores e investidores.",
-      },
-      {
-        title: "Economia Circular",
-        icon: FaRecycle,
-        paragraph:
-          "A economia circular é uma alternativa ao modelo tradicional de 'descarte após o uso', incentivando as empresas a reciclar, reutilizar e reduzir os resíduos, promovendo uma abordagem sustentável e regenerativa.",
-      },
-      {
-        title: "O Papel da Governança",
-        icon: FaBalanceScale,
-        paragraph:
-          "A governança desempenha um papel fundamental no combate ao greenwashing, pois orienta as decisões empresariais para práticas responsáveis e alinhadas aos ODS, garantindo integridade e responsabilidade.",
-      },
-    ],
-    type: "border",
-  };
-
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
       <React.Suspense>
@@ -456,9 +516,11 @@ const HomePage: React.FC = () => {
       <IconsCardsBanner {...partesInteressadasData} />
       <SimpleCallBanner {...metodologiaData} />
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
+      <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
+      <SimpleCallBanner {...sustentabilidadeData} />
+      <NumberCardsBanner {...movimentoRegenerativoData} />
       <SimpleCallBanner {...matrizMaterialidadeData} />
       <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
-      <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
     </div>
   );
 };

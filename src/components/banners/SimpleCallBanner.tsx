@@ -130,6 +130,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
               {buttonText}
             </Link>
           )}
+          {renderOds()}
         </BoxCard>
       )}
     </div>
