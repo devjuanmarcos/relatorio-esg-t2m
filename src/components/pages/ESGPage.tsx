@@ -8,6 +8,7 @@ import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
+import { DividingLine } from "../ui/dividingLine";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -55,47 +56,78 @@ const ESGPage: React.FC = () => {
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
+
+      {/* Ambiental */}
       <SimpleCallBanner {...gestaoResiduosData} />
       <ImageWithCardTextBanner {...gestaoResiduosTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...contratosAssinadosData} />
       <ImageWithCardTextBanner {...contratosAssinadosTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...utilizacaoNuvemData} />
       <ImageWithCardTextBanner {...utilizacaoNuvemTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...consumoConscienteData} />
       <ImageWithCardTextBanner {...consumoConscienteTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...estimuloReducaoData} />
       <ImageWithCardTextBanner {...estimuloReducaoTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...cadeiaFornecedoresData} />
       <ImageWithCardTextBanner {...cadeiaFornecedoresTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
       <SimpleCallBanner {...reciclagemMaterialData} />
       <ImageWithCardTextBanner {...reciclagemMaterialTexto1Data} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+
+      {/* Social */}
       <SimpleCallBanner {...patrocinadorIniciativasData} />
       <ImageWithCardTextBanner {...patrocinadorIniciativasTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
       <SimpleCallBanner {...equipeGenteGestaoData} />
       <ImageWithCardTextBanner {...equipeGenteGestaoTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
       <SimpleCallBanner {...programaQualidadeVidaData} />
       <ImageWithCardTextBanner {...programaQualidadeVidaTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
       <SimpleCallBanner {...campanhasSolidariasData} />
       <ImageWithCardTextBanner {...campanhasSolidariasTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
       <SimpleCallBanner {...voluntariadoApoioData} />
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
+      {/* Governança */}
       <SimpleCallBanner {...normasCodigosLegislacoesData} />
       <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto1Data} />
-      <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto2Data} />
-      <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto3Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
       <SimpleCallBanner {...comiteT2MData} />
       <ImageWithCardTextBanner {...comiteT2MTexto1Data} />
       <ImageWithCardTextBanner {...comiteT2MTexto2Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
       <SimpleCallBanner {...certificacoesPadroesInternacionaisData} />
       <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto1Data} />
-      <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto2Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
       <SimpleCallBanner {...canaisDenunciaData} />
       <ImageWithCardTextBanner {...canaisDenunciaTexto1Data} />
-      <ImageWithCardTextBanner {...canaisDenunciaTexto2Data} />
-      <ImageWithCardTextBanner {...canaisDenunciaTexto3Data} />
-      <ImageWithCardTextBanner {...canaisDenunciaTexto4Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
       <SimpleCallBanner {...equidadeSalarialData} />
       <ImageWithCardTextBanner {...equidadeSalarialTexto1Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
 
       {/* Ajustar textos daqui pra baixo */}
       <SimpleCallBanner {...balancoGeralData} />
@@ -134,6 +166,7 @@ const gestaoResiduosData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/gestaoResiduos.jpg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   title: "Gestão de Resíduos e Escolha de Materiais Sustentáveis",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
@@ -156,12 +189,15 @@ const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/impactosAmbientais.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const contratosAssinadosData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/contratosAssinados.jpg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
     iconAlt: "ícone referente ao tópico ambiental",
@@ -176,12 +212,15 @@ const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/digitalizacaoDocumentos.jpg",
   imageAlignment: "start",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const utilizacaoNuvemData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/nuvem.jpg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   title: "Utilização de Nuvem, reduzindo o consumo de hardware",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
@@ -191,11 +230,16 @@ const utilizacaoNuvemData: SimpleCallBannerInterface = {
 };
 
 const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Na T2M, o uso das soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, é essencial para reduzir o consumo de energia e a necessidade de novos hardwares físicos. Essas ferramentas diminuem a demanda por servidores físicos, que consomem muita energia e exigem manutenção. Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável. Além disso, a nuvem oferece escalabilidade, eficiência, segurança e acessibilidade de dados, refletindo o compromisso da T2M com práticas tecnológicas sustentáveis e inovadoras.",
+  paragraphs: [
+    "Na T2M, o uso das soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, é essencial para reduzir o consumo de energia e a necessidade de novos hardwares físicos.",
+    "Essas ferramentas diminuem a demanda por servidores físicos, que consomem muita energia e exigem manutenção. Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável.",
+    "Além disso, a nuvem oferece escalabilidade, eficiência, segurança e acessibilidade de dados, refletindo o compromisso da T2M com práticas tecnológicas sustentáveis e inovadoras.",
+  ],
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/computacaoNuvem.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const consumoConscienteData: SimpleCallBannerInterface = {
@@ -203,6 +247,7 @@ const consumoConscienteData: SimpleCallBannerInterface = {
   imageUrl: "/img/temp/esg/consumoAgua.jpg",
   topTitle: "Ambiental",
   title: "Consumo consciente de Água",
+  lineColor: "bg-var-ambiental",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
     iconAlt: "ícone referente ao tópico ambiental",
@@ -216,12 +261,15 @@ const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/consumoConsciente.jpg",
   imageAlignment: "start",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const estimuloReducaoData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/veiculosCombustao.jpg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   title: "Estímulo à redução do uso de veículos a combustão",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
@@ -236,12 +284,15 @@ const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/mobilidadeSustentavcel.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const cadeiaFornecedoresData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/meioambiente.jpg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   title: "Cadeia de fornecedores comprometidos com o meio ambiente",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
@@ -256,12 +307,15 @@ const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/sustentabilidade.jpg",
   imageAlignment: "start",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const reciclagemMaterialData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/reciclagemBaterias.jpeg",
   topTitle: "Ambiental",
+  lineColor: "bg-var-ambiental",
   title: "Reciclagem de material eletrônico e baterias",
   icon: {
     icon: "/img/temp/esg/ambiental.png",
@@ -276,12 +330,15 @@ const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/lampada.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const patrocinadorIniciativasData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/capacitacaoProfissional.jpg",
   topTitle: "Social",
+  lineColor: "bg-var-social",
   icon: {
     icon: "/img/temp/esg/social.png",
     iconAlt: "ícone referente ao tópico social",
@@ -296,12 +353,15 @@ const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/serratec.jpg",
   imageAlignment: "start",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const equipeGenteGestaoData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/mulheres.jpg",
   topTitle: "Social",
+  lineColor: "bg-var-social",
   icon: {
     icon: "/img/temp/esg/social.png",
     iconAlt: "ícone referente ao tópico social",
@@ -316,12 +376,15 @@ const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/mulheres2.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const programaQualidadeVidaData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/final/esg/qualidadeVida2.png",
   topTitle: "Social",
+  lineColor: "bg-var-social",
   icon: {
     icon: "/img/temp/esg/social.png",
     iconAlt: "ícone referente ao tópico social",
@@ -336,12 +399,15 @@ const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
   imageAlignment: "start",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const campanhasSolidariasData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/final/esg/campanhasSolidarias.png",
   topTitle: "Social",
+  lineColor: "bg-var-social",
   icon: {
     icon: "/img/temp/esg/social.png",
     iconAlt: "ícone referente ao tópico social",
@@ -356,12 +422,15 @@ const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/arrecadacaoAlimentos.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const voluntariadoApoioData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
   topTitle: "Social",
+  lineColor: "bg-var-social",
   icon: {
     icon: "/img/temp/esg/social.png",
     iconAlt: "ícone referente ao tópico social",
@@ -376,12 +445,15 @@ const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
   imageAlignment: "start",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/legislacao.jpeg",
   topTitle: "Governança",
+  lineColor: "bg-var-governanca",
   icon: {
     icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
@@ -391,33 +463,24 @@ const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
 };
 
 const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
+  paragraphs: [
     "A T2M, fundada no Brasil em 2002, atua com forte compromisso de transparência e conformidade com as normas, códigos e legislações aplicáveis tanto no contexto corporativo quanto nacional. Nossa normativa se estende a todos os colaboradores, parceiros e diretoria, orientando responsabilidades legais e compromissos éticos que sustentam as operações da T2M.",
+    "Nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance, e Diversidade e Inclusão, servem como guias de referência para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos, além de promoverem padrões éticos, reduzem a probabilidade de ocorrências de condutas inadequadas.",
+    "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa Intranet, onde são revisados valores, normas e políticas internas.",
+  ],
+  paragraph: "",
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/legislacao2.jpeg",
   imageAlignment: "end",
-};
-
-const normasCodigosLegislacoesTexto2Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance, e Diversidade e Inclusão, servem como guias de referência para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos, além de promoverem padrões éticos, reduzem a probabilidade de ocorrências de condutas inadequadas.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/legislacao3.jpeg",
-  imageAlignment: "start",
-};
-
-const normasCodigosLegislacoesTexto3Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa Intranet, onde são revisados valores, normas e políticas internas.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/legislacao4.jpeg",
-  imageAlignment: "end",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const comiteT2MData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/comites.jpg",
   topTitle: "Governança",
+  lineColor: "bg-var-governanca",
   icon: {
     icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
@@ -432,6 +495,8 @@ const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/compliance.jpg",
   imageAlignment: "start",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
@@ -440,12 +505,15 @@ const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/prevencao.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/certificacoes.png",
   topTitle: "Governança",
+  lineColor: "bg-var-governanca",
   icon: {
     icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
@@ -456,25 +524,22 @@ const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
 };
 
 const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
+  paragraphs: [
     "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora O sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
+    "Essas certificações são um relfexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado.",
+  ],
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/verificado.jpg",
   imageAlignment: "end",
-};
-
-const certificacoesPadroesInternacionaisTexto2Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Essas certificações são um relfexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/certificado2.jpeg",
-  imageAlignment: "start",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const canaisDenunciaData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/canalDenuncia.jpg",
   topTitle: "Governança",
+  lineColor: "bg-var-governanca",
   icon: {
     icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
@@ -484,41 +549,24 @@ const canaisDenunciaData: SimpleCallBannerInterface = {
 };
 
 const canaisDenunciaTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
+  paragraphs: [
     "A T2M disponibiliza um Canal de Denúncias diretamente ligado ao Comitê de Ética, que recebe e analisa todas as denúncias enviadas, além de supervisionar a implementação, o monitoramento e a integridade do Programa de Compliance da empresa.",
+    "As denúncias podem ser realizadas de forma anônima, através de um formulário de fácil acesso, garantindo confidencialidade e segurança para os denunciantes.",
+    "Além deste canal, também oferecemos um Canal de Denúncias específico da CIPA, direcionado para a comunicação de casos de assédio e outros incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
+    "Toda informação pessoal compartilhada é tratada com rigoroso sigilo, assegurando a privacidade dos colaboradores. Ambos os canais têm como objetivo promover um ambiente seguro, ético e acolhedor para todos.",
+  ],
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/canalDenuncia2.jpg",
   imageAlignment: "start",
-};
-
-const canaisDenunciaTexto2Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "As denúncias podem ser realizadas de forma anônima, através de um formulário de fácil acesso, garantindo confidencialidade e segurança para os denunciantes.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/anonimo.jpg",
-  imageAlignment: "end",
-};
-
-const canaisDenunciaTexto3Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Além deste canal, também oferecemos um Canal de Denúncias específico da CIPA, direcionado para a comunicação de casos de assédio e outros incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/denuncia.jpeg",
-  imageAlignment: "start",
-};
-
-const canaisDenunciaTexto4Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Toda informação pessoal compartilhada é tratada com rigoroso sigilo, assegurando a privacidade dos colaboradores. Ambos os canais têm como objetivo promover um ambiente seguro, ético e acolhedor para todos.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/sigilo.jpg",
-  imageAlignment: "end",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const equidadeSalarialData: SimpleCallBannerInterface = {
   alignment: "start",
   imageUrl: "/img/temp/esg/equipeSalarial.jpg",
   topTitle: "Governança",
+  lineColor: "bg-var-governanca",
   icon: {
     icon: "/img/temp/esg/governanca.png",
     iconAlt: "ícone referente ao tópico governança",
@@ -535,6 +583,8 @@ const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlt: "Escritório da T2M",
   imageUrl: "/img/temp/esg/salarial.jpg",
   imageAlignment: "end",
+  lineColor: "bg-var-governanca",
+  pointColor: "text-var-governanca",
 };
 
 const balancoGeralData: SimpleCallBannerInterface = {

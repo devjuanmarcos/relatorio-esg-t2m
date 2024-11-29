@@ -21,6 +21,8 @@ export interface ImageWithCardTextBannerInterface {
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
   imageAlignment: "start" | "end";
   objectContain?: boolean;
+  pointColor?: string;
+  lineColor?: string;
 }
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
@@ -35,6 +37,8 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   buttonText,
   imageAlignment,
   objectContain,
+  pointColor,
+  lineColor,
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
@@ -45,7 +49,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
 
   const renderTopTitle = (
     <div className="flex  w-full mr-auto">
-      <TextVariantes variant="top_title" lineBottom={title ? true : false}>
+      <TextVariantes variant="top_title" lineColor={lineColor} lineBottom={title ? true : false}>
         {topTitle}
       </TextVariantes>
     </div>
@@ -54,18 +58,22 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   const renderTextContent = (
     <div className="flex gap-6 md:gap-[3.5rem] lg:col-span-3">
       {!topTitle && imageAlignment == "start" && (
-        <span className="hidden md:flex  font-openSans font-semibold text-[2rem] text-primary my-auto">•</span>
+        <span
+          className={`hidden md:flex  font-openSans font-semibold text-[2rem] ${pointColor || "text-primary"} my-auto`}
+        >
+          •
+        </span>
       )}
       <div className="flex flex-col gap-3  ">
         {topTitle && renderTopTitle}
         <div className="flex flex-col gap-3">
           {title && (
-            <TextVariantes variant={"h2_title"} lineBottom={topTitle ? false : true}>
+            <TextVariantes variant={"h2_title"} lineColor={lineColor} lineBottom={topTitle ? false : true}>
               {title}
             </TextVariantes>
           )}
           {paragraph && (
-            <TextVariantes variant="paragraph_01" lineTop={!title ? true : false}>
+            <TextVariantes variant="paragraph_01" lineColor={lineColor} lineTop={!title ? true : false}>
               {paragraph}
             </TextVariantes>
           )}
@@ -83,7 +91,11 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         )}
       </div>
       {!topTitle && imageAlignment == "end" && (
-        <span className="hidden md:flex  font-openSans font-semibold text-[2rem] text-primary my-auto">•</span>
+        <span
+          className={`hidden md:flex  font-openSans font-semibold text-[2rem] ${pointColor || "text-primary"} my-auto`}
+        >
+          •
+        </span>
       )}
     </div>
   );

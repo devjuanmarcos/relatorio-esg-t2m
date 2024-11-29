@@ -19,6 +19,7 @@ export interface SimpleCallBannerInterface {
   imageUrl: string;
   title: string;
   topTitle?: string;
+  lineColor?: string;
   paragraph?: string;
   buttonText?: string;
   buttonLink?: string;
@@ -39,6 +40,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   buttonTarget,
   buttonText,
   topTitleColor,
+  lineColor,
   icon,
   ods,
 }) => {
@@ -105,7 +107,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
             </TextVariantes>
           </div>
           {title && (
-            <TextVariantes variant="title_georgia" lineBottom>
+            <TextVariantes variant="title_georgia" lineBottom lineColor={lineColor}>
               {title}
             </TextVariantes>
           )}
@@ -119,7 +121,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         </BoxCard>
       ) : (
         <BoxCard type="simple">
-          <TextVariantes variant="h2_title" lineBottom>
+          <TextVariantes variant="h2_title" lineBottom lineColor={lineColor}>
             {title}
           </TextVariantes>
           {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
