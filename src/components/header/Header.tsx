@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import TextVariantes from "../ui/TextsVariants";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
 import { useTheme } from "next-themes";
+import React from "react";
 
 const locales = [
   "zh-Hant",
@@ -49,8 +49,10 @@ const locales = [
 
 export const Header = () => {
   const pathname = usePathname();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
   const { theme } = useTheme();
+  const router = useRouter();
 
   const topics = [
     { label: "Sobre", href: "/" },
@@ -69,6 +71,15 @@ export const Header = () => {
     return pathname;
   })();
 
+  const handleLinkClick = (href: string) => {
+    setSidebarOpen(false);
+    setIsLoading(true);
+    document.body.classList.add("cursor-wait");
+    router.push(href);
+    setIsLoading(false);
+    document.body.classList.remove("cursor-wait");
+  };
+
   return (
     <header className="flex justify-between w-full lg:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
       <Image
@@ -80,7 +91,7 @@ export const Header = () => {
       <div className="hidden lg:flex gap-[.625rem] items-center justify-center w-full">
         {topics.map((topic, index) => (
           <React.Fragment key={topic.href}>
-            <Link href={topic.href}>
+            <Link href={topic.href} onClick={() => handleLinkClick(topic.href)}>
               <TextVariantes
                 variant="paragraph_01"
                 extraClassName={`${
@@ -115,6 +126,7 @@ export const Header = () => {
                   className={`${
                     normalizedPathname === topic.href ? "underline text-primary" : "no-underline"
                   } hover:underline hover:text-primary transition-all duration-200 mb-2`}
+                  onClick={() => handleLinkClick(topic.href)}
                 >
                   {topic.label}
                 </Link>

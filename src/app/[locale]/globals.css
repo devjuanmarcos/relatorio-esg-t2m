@@ -264,3 +264,7 @@ input[type="range"]::-ms-track {
 .blur-up[data-loaded] {
   filter: blur(0);
 }
+
+.cursor-wait {
+  cursor: wait !important;
+}

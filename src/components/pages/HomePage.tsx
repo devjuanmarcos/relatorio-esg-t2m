@@ -11,6 +11,8 @@ import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
 import { ImageWithTopicsBannerInterface } from "@banners/ImageWithTopicsBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
+import { useIsMounted } from "@/hooks/useIsMounted";
+import { Loading } from "../ui/Loading";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -36,9 +38,15 @@ const ImageWithTopicsBanner = dynamic(() =>
 );
 
 const HomePage: React.FC = () => {
-  React.useEffect(() => {
-    import("@/components/banners/CallBanner");
-  }, []);
+  const isMounted = useIsMounted();
+
+  if (!isMounted) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <Loading size={100} speed={1.32} />
+      </div>
+    );
+  }
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/Frame3.png",

@@ -10,6 +10,8 @@ import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
 import { NumberCardsBanner, NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
+import { useIsMounted } from "@/hooks/useIsMounted";
+import { Loading } from "../ui/Loading";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -32,9 +34,15 @@ const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
 );
 
 const QuemSomosPage: React.FC = () => {
-  React.useEffect(() => {
-    import("@/components/banners/CallBanner");
-  }, []);
+  const isMounted = useIsMounted();
+
+  if (!isMounted) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <Loading size={100} speed={1.32} />
+      </div>
+    );
+  }
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/quemsomos.png",

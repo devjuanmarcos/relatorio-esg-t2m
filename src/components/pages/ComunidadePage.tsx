@@ -7,6 +7,8 @@ import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBann
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { NumberCardsBannerInterface } from "@/components/banners/NumberCardsBanner";
+import { useIsMounted } from "@/hooks/useIsMounted";
+import { Loading } from "../ui/Loading";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -29,9 +31,15 @@ const NumberCardsBanner = dynamic(() =>
 );
 
 const ComunidadePage: React.FC = () => {
-  React.useEffect(() => {
-    import("@/components/banners/CallBanner");
-  }, []);
+  const isMounted = useIsMounted();
+
+  if (!isMounted) {
+    return (
+      <div className="h-screen flex items-center justify-center">
+        <Loading size={100} speed={1.32} />
+      </div>
+    );
+  }
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/capacitandoComunidade.jpg",

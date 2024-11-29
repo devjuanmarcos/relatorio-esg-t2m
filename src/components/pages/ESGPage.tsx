@@ -9,6 +9,7 @@ import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
+import { useIsMounted } from "@/hooks/useIsMounted";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -31,15 +32,7 @@ const NumberCardsBanner = dynamic(() =>
 );
 
 const ESGPage: React.FC = () => {
-  const [isMounted, setIsMounted] = React.useState<boolean>(false);
-
-  React.useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  React.useEffect(() => {
-    import("@/components/banners/CallBanner");
-  }, []);
+  const isMounted = useIsMounted();
 
   if (!isMounted) {
     return (
