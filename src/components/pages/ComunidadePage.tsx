@@ -77,37 +77,37 @@ const ComunidadePage: React.FC = () => {
     title: "2024 EM NÚMEROS",
     numberCards: [
       {
-        title: "20",
+        title: "202",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "201",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "203",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "204",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "205",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "206",
         country: "BR",
         paragraph: "Países",
       },
       {
-        title: "20",
+        title: "207",
         country: "BR",
         paragraph: "Países",
       },

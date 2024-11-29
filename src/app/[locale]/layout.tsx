@@ -4,11 +4,9 @@ import { HtmlFontSizeProvider } from "@/context/HtmlFontSizeContext";
 import { ThemeProvider } from "next-themes";
 import { WindowSizeProvider } from "@/context/WindowSizeContext";
 import { Noto_Sans, Open_Sans, Montserrat } from "next/font/google";
-import Script from "next/script";
 import { Footer } from "@/components/footer/footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import CombinedHeader from "@/components/header/CombinedHeader";
-import Header from "@/components/header/Header";
 
 const APP_NAME = "T2M - Test to Market";
 const APP_DEFAULT_TITLE = "T2M - Test to Market";

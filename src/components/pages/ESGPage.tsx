@@ -10,6 +10,7 @@ import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
 import { useIsMounted } from "@/hooks/useIsMounted";
+import LeitorDeAudio from "../ui/LeitorDeAudio";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -49,6 +50,8 @@ const ESGPage: React.FC = () => {
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
+
+      <LeitorDeAudio />
 
       {/* Ambiental */}
       <SimpleCallBanner {...gestaoResiduosData} />
@@ -595,23 +598,23 @@ const numerosData: NumberCardsBannerInterface = {
       paragraph: "PAÍSES",
     },
     {
-      title: "20",
+      title: "201",
       paragraph: "PAÍSES",
     },
     {
-      title: "20",
+      title: "202",
       paragraph: "PAÍSES",
     },
     {
-      title: "20",
+      title: "203",
       paragraph: "PAÍSES",
     },
     {
-      title: "20",
+      title: "204",
       paragraph: "PAÍSES",
     },
     {
-      title: "20",
+      title: "205",
       paragraph: "PAÍSES",
     },
   ],

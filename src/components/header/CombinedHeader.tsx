@@ -6,11 +6,11 @@ import Image from "next/image";
 import FontSizeSlider from "../ui/FontSizeSlider";
 import BarToolsSkeleton from "../ui/BarToolsSkeleton";
 import Header from "./Header";
-import MouseSpeak from "../ui/MouseSpeak";
 import { NextImage } from "../ui/NextImage";
 import { useTranslations } from "next-intl";
 import { ComboboxLanguage } from "../ui/combobox-language";
 import { VLibrasIntegration } from "./VLibrasIntegration";
+import LeitorDeAudio from "../ui/LeitorDeAudio";
 
 export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
@@ -71,7 +71,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
             width={32}
             className="text-var-icone-barra-acessibilidade cursor-pointer"
           />
-          {/* <MouseSpeak /> */}
+          <LeitorDeAudio />
           <ComboboxLanguage locale={locale} type="header" />
         </div>
         <div className="hidden lg:flex gap-1 items-center text-end max-h-[3.125rem] overflow-hidden">
