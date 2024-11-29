@@ -3,7 +3,9 @@
 import React from "react";
 import TextVariantes from "@ui/TextsVariants";
 import { useIsMounted } from "@/hooks/useIsMounted";
-import { NumberCard, NumberCardInterface } from "../cards/numberCard";
+import { NumberCard, NumberCardInterface, NumberCardWithIconAndBorder } from "../cards/numberCard";
+import { Button, buttonVariants } from "../ui/button";
+import Link from "next/link";
 
 export interface TextCardInterface {
   title: string;
@@ -11,11 +13,19 @@ export interface TextCardInterface {
   topTitle: string;
 }
 
+export interface ButtonInterface {
+  buttonLink: string;
+  buttonTarget: React.HTMLAttributeAnchorTarget;
+  buttonText: string;
+  buttonType?: string;
+}
 export interface NumberCardsBannerInterface {
   numberCards: NumberCardInterface[];
   title?: string;
   topTitle?: string;
   paragraph?: string;
+  type?: "default" | "border";
+  extraButtonBottom?: ButtonInterface;
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -23,6 +33,8 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   title,
   paragraph,
   topTitle,
+  type = "default",
+  extraButtonBottom,
 }) => {
   const isMounted = useIsMounted();
 
@@ -31,21 +43,36 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   }
 
   return (
-    <div className="px-2 md:px-12 flex flex-col gap-10 ">
-      <div className="flex flex-col gap-3">
+    <div
+      className={`px-2 md:px-12 flex flex-col w-full ${type == "default" ? "gap-10" : "gap-20 justify-center items-center text-center"} `}
+    >
+      <div className="flex flex-col gap-3 max-w-[42rem]  ">
         {topTitle && (
-          <TextVariantes variant="top_title" lineBottom>
+          <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
             {topTitle}
           </TextVariantes>
         )}
         {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
         {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
       </div>
-      <div className="flex flex-wrap gap-y-8 ml-7 justify-center">
+      <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-8"}  justify-center`}>
         {numberCards.map((iconCard) => {
-          return <NumberCard key={iconCard.title} {...iconCard} />;
+          if (type != "default") {
+            return <NumberCardWithIconAndBorder key={iconCard.title} {...iconCard} />;
+          } else {
+            return <NumberCard key={iconCard.title} {...iconCard} />;
+          }
         })}
       </div>
+      {extraButtonBottom && (
+        <Link
+          className={`${buttonVariants(extraButtonBottom.buttonType || ("" as any))} -mt-8 `}
+          href={extraButtonBottom.buttonLink}
+          target={extraButtonBottom.buttonTarget}
+        >
+          {extraButtonBottom.buttonText}
+        </Link>
+      )}
     </div>
   );
 };

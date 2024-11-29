@@ -9,9 +9,10 @@ import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
-import { NumberCardsBanner, NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
+import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
+import { FaCogs, FaEye, FaLaptop, FaRegCreditCard, FaTools, FaUserCheck } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -31,6 +32,9 @@ const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
   import("@/components/banners/ThreeTextCardsWithNumberCardBanner").then(
     (mod) => mod.ThreeTextCardsWithNumberCardBanner
   )
+);
+const NumberCardsBanner = dynamic(() =>
+  import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
 );
 
 const QuemSomosPage: React.FC = () => {
@@ -212,6 +216,52 @@ const QuemSomosPage: React.FC = () => {
     ],
   };
 
+  const importanciaTerceirizarTestesData: NumberCardsBannerInterface = {
+    topTitle: "A importância de terceirizar",
+    title: "Testes de Qualidade de Software",
+    paragraph:
+      "A terceirização dos testes de qualidade de software é essencial em sistemas críticos, como os bancários, de controle aéreo e hospitalares, que exigem alta precisão e segurança.",
+    numberCards: [
+      {
+        title: "Acesso a especialistas",
+        icon: FaUserCheck,
+        paragraph:
+          "Empresas especializadas oferecem profissionais qualificados, garantindo testes mais profundos e o uso de práticas de ponta para assegurar a qualidade do software.",
+      },
+      {
+        title: "Foco no core business",
+        icon: FaLaptop,
+        paragraph:
+          "Com a terceirização, a equipe interna pode concentrar-se no desenvolvimento de novas funcionalidades, melhorando a produtividade e impulsionando o crescimento do negócio.",
+      },
+      {
+        title: "Redução de custos e tempo",
+        icon: FaRegCreditCard,
+        paragraph:
+          "Evitar a criação de equipes internas de testes reduz custos fixos e permite otimizar o investimento conforme a demanda, acelerando os processos de testes.",
+      },
+      {
+        title: "Escalabilidade e flexibilidade",
+        icon: FaCogs,
+        paragraph:
+          "Empresas terceirizadas conseguem ajustar a capacidade de testes conforme a demanda, atendendo picos e ajustando a escala conforme o lançamento de novos produtos.",
+      },
+      {
+        title: "Imparcialidade e visão externa",
+        icon: FaEye,
+        paragraph:
+          "Uma equipe externa traz uma visão imparcial do produto, ajudando a identificar falhas que uma equipe interna pode não perceber, melhorando a qualidade geral.",
+      },
+      {
+        title: "Acesso a ferramentas e tecnologias avançadas",
+        icon: FaTools,
+        paragraph:
+          "Empresas especializadas têm acesso a ferramentas de ponta para automação, testes de carga e outras práticas, evitando o alto custo de implementação interna.",
+      },
+    ],
+    type: "border",
+  };
+
   const ondeAtuamos: SimpleCallBannerInterface = {
     topTitle: "Atuação",
     title: "Onde atuamos?",
@@ -273,6 +323,7 @@ const QuemSomosPage: React.FC = () => {
       <ImageWithCardTextBanner {...acessibilidadeInclusao} />
       <SimpleCallBanner {...tresPilaresData} />
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
+      <NumberCardsBanner {...importanciaTerceirizarTestesData} />
       <SimpleCallBanner {...ondeAtuamos} />
       <NumberCardsBanner {...paisesQuantidadeProjetos} />
     </div>

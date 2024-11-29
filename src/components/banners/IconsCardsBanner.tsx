@@ -49,7 +49,7 @@ export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragrap
       </div>
 
       <div
-        className={`flex flex-wrap items-start justify-center ${icons ? "gap-x-5 md:gap-y-5 gap-y-12" : "gap-x-5 md:gap-x-[3.75rem] gap-y-12"}`}
+        className={`flex flex-wrap items-start ${type == "start" ? "justify-start" : "justify-center"} ${icons ? "gap-x-5 md:gap-y-5 gap-y-12" : "gap-x-5 md:gap-x-[3.75rem] gap-y-12"}`}
       >
         {icons &&
           icons.map((iconCard) => {

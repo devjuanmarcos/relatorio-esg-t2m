@@ -13,6 +13,8 @@ import { ImageWithTopicsBannerInterface } from "@banners/ImageWithTopicsBanner";
 import { FaAccessibleIcon } from "react-icons/fa6";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
+import { FaBalanceScale, FaCertificate, FaEye, FaRecycle, FaShoppingCart, FaTree } from "react-icons/fa";
+import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -25,16 +27,23 @@ const ImageWithCardTextBanner = dynamic(() =>
 const SimpleCallBanner = dynamic(() =>
   import("@/components/banners/SimpleCallBanner").then((mod) => mod.SimpleCallBanner)
 );
+
 const IconsCardsBanner = dynamic(() =>
   import("@/components/banners/IconsCardsBanner").then((mod) => mod.IconsCardsBanner)
 );
+
 const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
   import("@/components/banners/ThreeTextCardsWithNumberCardBanner").then(
     (mod) => mod.ThreeTextCardsWithNumberCardBanner
   )
 );
+
 const ImageWithTopicsBanner = dynamic(() =>
   import("@/components/banners/ImageWithTopicsBanner").then((mod) => mod.ImageWithTopicsBanner)
+);
+
+const NumberCardsBanner = dynamic(() =>
+  import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
 );
 
 const HomePage: React.FC = () => {
@@ -383,6 +392,58 @@ const HomePage: React.FC = () => {
     imageUrl: "/img/temp/graficomaterialidade.png",
   };
 
+  const greenwashingDesenvolvimentoSustentavelData: NumberCardsBannerInterface = {
+    topTitle: "Greenwashing x Desenvolvimento Sustentável",
+    title: "A verdade por trás das práticas de sustentabilidade",
+    paragraph:
+      "Muitas empresas utilizam práticas de greenwashing, apresentando iniciativas ambientais superficiais sem mudar realmente seus processos, o que prejudica a transparência e desorienta consumidores e investidores.",
+    extraButtonBottom: {
+      buttonLink:
+        "https://www.t2mlab.com/greenwashing-x-desenvolvimento-sustentavel-a-verdade-por-tras-das-praticas-de-sustentabilidade/",
+      buttonTarget: "_blank",
+      buttonText: "Continue lendo o artigo no nosso site oficial",
+    },
+    numberCards: [
+      {
+        title: "Impacto Ambiental Real",
+        icon: FaTree,
+        paragraph:
+          "Empresas comprometidas com o desenvolvimento sustentável realizam mudanças reais, como a redução das emissões de carbono e o uso responsável dos recursos naturais, para causar impacto ambiental positivo.",
+      },
+      {
+        title: "Transparência Corporativa",
+        icon: FaEye,
+        paragraph:
+          "Para evitar greenwashing, é crucial que as empresas publiquem relatórios claros sobre suas ações e conquistas sustentáveis, com dados verificáveis e metas concretas.",
+      },
+      {
+        title: "Consumo Consciente",
+        icon: FaShoppingCart,
+        paragraph:
+          "Consumidores conscientes podem identificar práticas de greenwashing ao buscar marcas com compromissos sustentáveis comprovados, como o uso de materiais recicláveis e políticas de redução de desperdício.",
+      },
+      {
+        title: "Certificações e Auditorias",
+        icon: FaCertificate,
+        paragraph:
+          "A obtenção de certificações reconhecidas e auditorias externas ajuda a validar o compromisso das empresas com a sustentabilidade, oferecendo confiança aos consumidores e investidores.",
+      },
+      {
+        title: "Economia Circular",
+        icon: FaRecycle,
+        paragraph:
+          "A economia circular é uma alternativa ao modelo tradicional de 'descarte após o uso', incentivando as empresas a reciclar, reutilizar e reduzir os resíduos, promovendo uma abordagem sustentável e regenerativa.",
+      },
+      {
+        title: "O Papel da Governança",
+        icon: FaBalanceScale,
+        paragraph:
+          "A governança desempenha um papel fundamental no combate ao greenwashing, pois orienta as decisões empresariais para práticas responsáveis e alinhadas aos ODS, garantindo integridade e responsabilidade.",
+      },
+    ],
+    type: "border",
+  };
+
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
       <React.Suspense>
@@ -397,6 +458,7 @@ const HomePage: React.FC = () => {
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
       <SimpleCallBanner {...matrizMaterialidadeData} />
       <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
+      <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
     </div>
   );
 };

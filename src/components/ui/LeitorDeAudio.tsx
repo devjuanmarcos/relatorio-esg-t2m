@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React from "react";
-import Image from "next/image";
 import { getSpeechLangFromLocale } from "@/utils/localeToSpeechLangMap";
 import { useParams } from "next/navigation";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
@@ -137,6 +136,13 @@ const LeitorDeAudio: React.FC = () => {
     };
   }, [isReading]);
 
+  React.useEffect(() => {
+    if (filteredVoices.length === 0) {
+      // Definir pt-BR como o valor padrão quando não houver vozes para o idioma selecionado
+      setSelectedVoice("pt-BR");
+    }
+  }, [filteredVoices]);
+
   return (
     <div className="my-auto h-full flex items-center">
       <Popover open={isOpen} onOpenChange={() => setIsOpen((state) => !state)}>
@@ -172,7 +178,7 @@ const LeitorDeAudio: React.FC = () => {
             </SelectTrigger>
             <SelectContent>
               {isLoading ? (
-                <SelectItem disabled value="">
+                <SelectItem disabled value="loading">
                   Carregando vozes...
                 </SelectItem>
               ) : filteredVoices.length > 0 ? (
@@ -182,7 +188,7 @@ const LeitorDeAudio: React.FC = () => {
                   </SelectItem>
                 ))
               ) : (
-                <SelectItem disabled value="">
+                <SelectItem disabled value="no-voices">
                   Sem vozes disponíveis para o idioma selecionado
                 </SelectItem>
               )}

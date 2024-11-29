@@ -9,6 +9,8 @@ import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { NumberCardsBannerInterface } from "@/components/banners/NumberCardsBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
+import { Fa4 } from "react-icons/fa6";
+import { FaCalendarAlt, FaHandsHelping, FaMapMarkedAlt, FaTree } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -74,44 +76,36 @@ const ComunidadePage: React.FC = () => {
   };
 
   const nossoImpactoEmNumeros: NumberCardsBannerInterface = {
-    title: "2024 EM NÚMEROS",
+    title: "Movimento Regenerativo Tempo de Plantar",
+    paragraph:
+      "Ao apoiar projetos culturais e de plantação de árvores, como o Movimento Regenerativo Tempo de Plantar, fortalecemos o protagonismo das comunidades e promovemos o sentimento de pertencimento. Com o plantio de árvores, além de proteger o meio ambiente, criamos um legado duradouro, garantindo que as futuras gerações cresçam em um território que valoriza e preserva suas memórias e a natureza ao seu redor.",
     numberCards: [
       {
-        title: "202",
-        country: "BR",
-        paragraph: "Países",
+        title: "Movimento auto-gestionário",
+        icon: FaHandsHelping,
+        paragraph:
+          "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa das pessoas no plantio de árvores, criando uma conexão direta com a natureza e promovendo uma maior conscientização ambiental.",
       },
       {
-        title: "201",
-        country: "BR",
-        paragraph: "Países",
+        title: "Em dezembro de 2024",
+        icon: FaCalendarAlt,
+        paragraph:
+          "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Este marco faz parte de um esforço contínuo para promover a restauração da vegetação nativa e a recuperação de áreas degradadas.",
       },
       {
-        title: "203",
-        country: "BR",
-        paragraph: "Países",
+        title: "A espectativa para 2025",
+        icon: FaTree,
+        paragraph:
+          "Para 2025, a meta é plantar mais de 1000 árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
       },
       {
-        title: "204",
-        country: "BR",
-        paragraph: "Países",
-      },
-      {
-        title: "205",
-        country: "BR",
-        paragraph: "Países",
-      },
-      {
-        title: "206",
-        country: "BR",
-        paragraph: "Países",
-      },
-      {
-        title: "207",
-        country: "BR",
-        paragraph: "Países",
+        title: "No Distrito Federal",
+        icon: FaMapMarkedAlt,
+        paragraph:
+          "Desde 2019, o Movimento Regenerativo Tempo de Plantar já conseguiu plantar 100 mil mudas no Distrito Federal. Esse movimento tem se espalhado por todo o Brasil, incentivando mais pessoas a se unirem a esta causa.",
       },
     ],
+    type: "border",
   };
 
   const nossosParceirosData: SimpleCallBannerInterface = {

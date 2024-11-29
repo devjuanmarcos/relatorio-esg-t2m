@@ -15,6 +15,7 @@ interface TextVariantesProps {
   children: React.ReactNode;
   lineTop?: boolean;
   lineBottom?: boolean;
+  lineCenter?: boolean;
   extraClassName?: string;
   lineColor?: string;
 }
@@ -37,9 +38,10 @@ const TextVariantes: React.FC<TextVariantesProps> = ({
   lineTop,
   extraClassName,
   lineColor,
+  lineCenter,
 }) => {
   return (
-    <div className="flex flex-col gap-2 ">
+    <div className={`flex flex-col gap-2 ${lineCenter && "items-center"} `}>
       {lineTop && <div className={`w-10 h-1 ${lineColor || "bg-primary"} rounded-ss-[.75rem]`} />}
       <p className={`${variantClasses[variant]} ${extraClassName}`}>{children}</p>
       {lineBottom && <div className={`w-10 h-1 ${lineColor || "bg-primary"} rounded-ss-[.75rem]`} />}
