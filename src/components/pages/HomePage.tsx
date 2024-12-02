@@ -29,8 +29,11 @@ import {
   FaGavel,
   FaChartLine,
   FaTruckLoading,
+  FaHands,
+  FaGift,
 } from "react-icons/fa";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
+import { MdBusinessCenter } from "react-icons/md";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -91,7 +94,7 @@ const HomePage: React.FC = () => {
     paragraph:
       "Este Relatório de Impacto Social e Desenvolvimento Sustentável de 2024 reflete nosso compromisso com a transparência e responsabilidade social na T2M. Ele serve como um canal fundamental para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável da ONU e aos princípios de ESG.",
     buttonText: "Leia a mensagem do nosso CEO",
-    buttonLink: "/mensagem-ceo",
+    buttonLink: "/mensagem-do-nosso-ceo",
     imageAlignment: "start",
   };
 
@@ -125,52 +128,53 @@ const HomePage: React.FC = () => {
         id: 1,
         title: "Colaboradores",
         paragraph:
-          "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico, newsletters internas e portais colaborativos para desenvolvimento profissional.",
+          "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico, newsletters internas e portais colaborativos para crescimento profissional.",
         icon: FaUserTie,
       },
       {
         id: 2,
         title: "Clientes",
         paragraph:
-          "Pesquisas de satisfação, canais abertos para feedback, reuniões de acompanhamento e apresentação de resultados, além de um suporte dedicado para resolver questões e aprimorar os serviços.",
+          "Pesquisas de satisfação, canais abertos para feedback, reuniões de acompanhamento e apresentação de resultados, suporte dedicado para resolver questões e aprimorar os serviços.",
         icon: FaHandshake,
       },
       {
         id: 3,
         title: "Parceiros estratégicos",
         paragraph:
-          "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, workshops e conferências, além de encontros periódicos para fortalecer alianças.",
+          "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, workshops e conferências, além de encontros periódicos para fortalecer parcerias e alianças estratégicas.",
         icon: FaHandHoldingHeart,
       },
       {
         id: 4,
         title: "Comunidade",
         paragraph:
-          "Iniciativas de responsabilidade social, participação em eventos locais, apoio a ONGs e projetos comunitários para promover impacto positivo e sustentável.",
+          "Iniciativas de responsabilidade social, participação em eventos locais, apoio a ONGs e projetos comunitários, promovendo impacto positivo e sustentável nas áreas em que atuamos com eficiência.",
         icon: FaPeopleCarry,
       },
       {
         id: 5,
         title: "Governança e compliance",
         paragraph:
-          "Relatórios de resultados trimestrais, alinhamento com regulamentações, políticas de compliance robustas e interações contínuas com entidades governamentais e reguladoras.",
+          "Relatórios de resultados trimestrais, alinhamento com regulamentações, políticas de compliance robustas, e interações contínuas com entidades governamentais e reguladoras no setor.",
         icon: FaGavel,
       },
       {
         id: 6,
         title: "Investidores e acionistas",
         paragraph:
-          "Divulgação de relatórios financeiros, reuniões periódicas de desempenho, conferências com investidores e materiais detalhados sobre a estratégia e operações da empresa.",
+          "Divulgação de relatórios financeiros, reuniões periódicas de desempenho, conferências com investidores e materiais detalhados sobre estratégia, operações e desempenho da empresa.",
         icon: FaChartLine,
       },
       {
         id: 7,
         title: "Fornecedores",
         paragraph:
-          "Portal exclusivo para fornecedores, reuniões de alinhamento sobre expectativas e demandas, contratos claros e compromissos com práticas justas e sustentáveis.",
+          "Portal exclusivo para fornecedores, reuniões de alinhamento sobre expectativas e demandas, contratos claros e compromissos com práticas justas, transparentes e sustentáveis em toda a cadeia.",
         icon: FaTruckLoading,
       },
     ],
+
     type: "center",
   };
 
@@ -343,7 +347,15 @@ const HomePage: React.FC = () => {
       "Estamos comprometidos em contribuir parao desenvolvimento sustentável por meio dosnossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários,fornecedores, acionistas e a sociedade.",
     alignment: "end",
     imageUrl: "/img/temp/esg/plantar.jpg",
-    ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/9.png", "/img/ods/10.png", "/img/ods/13.png"],
+    ods: [
+      "/img/ods/1.png",
+      "/img/ods/3.png",
+      "/img/ods/5.png",
+      "/img/ods/10.png",
+      "/img/ods/11.png",
+      "/img/ods/13.png",
+      "/img/ods/15.png",
+    ],
   };
 
   const movimentoRegenerativoData: NumberCardsBannerInterface = {
@@ -370,11 +382,33 @@ const HomePage: React.FC = () => {
         paragraph:
           "Para 2025, a meta é plantar mais de 1000 árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
       },
+    ],
+    type: "border",
+  };
+
+  const nossasCampanhasData: NumberCardsBannerInterface = {
+    ods: [1, 3, 5, 8, 10],
+    title: "Nossas campanhas",
+    paragraph:
+      "Além de oferecer testes automatizados de excelência, a T2M se orgulha em criar e produzir suas próprias campanhas",
+    numberCards: [
       {
-        title: "No Distrito Federal",
-        icon: FaMapMarkedAlt,
+        title: "Gesto Solidário",
+        icon: FaHands,
         paragraph:
-          "Desde 2019, o Movimento Regenerativo Tempo de Plantar já conseguiu plantar 100 mil mudas no Distrito Federal. Esse movimento tem se espalhado por todo o Brasil, incentivando mais pessoas a se unirem a esta causa.",
+          "Desde 2014, realizamos campanhas solidárias, como arrecadação de alimentos, roupas de frio, produtos de higiene e tampinhas plásticas trocadas por cadeiras de rodas, fraldas e bengalas. ",
+      },
+      {
+        title: "Dia das Boas Ações",
+        icon: FaGift,
+        paragraph:
+          "O DBA - Cuidando de Quem Cuida é um evento para mães e cuidadores, oferecendo cuidados estéticos, palestras e dicas de bem-estar, integrando o movimento global Dia das Boas Ações (DBA).",
+      },
+      {
+        title: "Bioconecta",
+        icon: MdBusinessCenter,
+        paragraph:
+          "A Bioconecta é uma feira de empregabilidade que oferece oportunidades de primeiro emprego, com foco em mães solteiras e pessoas com deficiência, promovendo inclusão e igualdade no mercado de trabalho.",
       },
     ],
     type: "border",
@@ -519,6 +553,7 @@ const HomePage: React.FC = () => {
       <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
       <SimpleCallBanner {...sustentabilidadeData} />
       <NumberCardsBanner {...movimentoRegenerativoData} />
+      <NumberCardsBanner {...nossasCampanhasData} />
       <SimpleCallBanner {...matrizMaterialidadeData} />
       <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
     </div>
