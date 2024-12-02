@@ -30,9 +30,9 @@ export const OdsCard: React.FC<NumberCardInterface> = ({ ods }) => {
             <Image
               src={`${odsBasePath}${number}.png`}
               alt={`Ícone da ODS ${number}`}
-              width={80}
-              height={80}
-              className="size-16"
+              width={200}
+              height={200}
+              className="size-[5.5rem]"
             />
           </div>
         ))}

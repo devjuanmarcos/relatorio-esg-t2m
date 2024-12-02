@@ -152,7 +152,7 @@ const LeitorDeAudio: React.FC = () => {
               <Mic
                 width={32}
                 height={32}
-                className="text-white rounded-full bg-primary w-full h-full cursor-pointer animate-pulse"
+                className="text-white rounded-full w-full h-full cursor-pointer animate-pulse"
                 style={{ animationDuration: "1.5s" }}
               />
             ) : (

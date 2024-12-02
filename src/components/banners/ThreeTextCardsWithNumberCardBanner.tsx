@@ -15,7 +15,7 @@ export interface TextCardInterface {
 
 export interface ThreeTextCardsWithNumberCardBannerInterface {
   textCards: TextCardInterface[];
-  numberCards: NumberCardInterface[];
+  numberCards?: NumberCardInterface[];
   title?: string;
   topTitle?: string;
   paragraph?: string;
@@ -70,11 +70,13 @@ export const ThreeTextCardsWithNumberCardBanner: React.FC<ThreeTextCardsWithNumb
           {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
           {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
         </div>
-        <div className="flex flex-wrap gap-y-8 ml-7 justify-center">
-          {numberCards.map((iconCard) => {
-            return <NumberCard key={iconCard.title} {...iconCard} />;
-          })}
-        </div>
+        {numberCards && (
+          <div className="flex flex-wrap gap-y-8 ml-7 justify-center">
+            {numberCards.map((iconCard) => {
+              return <NumberCard key={iconCard.title} {...iconCard} />;
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

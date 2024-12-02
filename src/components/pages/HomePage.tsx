@@ -39,6 +39,8 @@ import {
   FaLightbulb,
   FaHeartbeat,
   FaBriefcase,
+  FaEnvelope,
+  FaChalkboardTeacher,
 } from "react-icons/fa";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
@@ -136,21 +138,21 @@ const HomePage: React.FC = () => {
         id: 1,
         title: "Colaboradores",
         paragraph:
-          "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico, newsletters internas e portais colaborativos para crescimento profissional.",
+          "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico e workshops para colaboradores.",
         icon: FaUserTie,
       },
       {
         id: 2,
         title: "Clientes",
         paragraph:
-          "Pesquisas de satisfação, canais abertos para feedback, reuniões de acompanhamento e apresentação de resultados, suporte dedicado para resolver questões e aprimorar os serviços.",
+          "Reuniões de acompanhamento e apresentação de resultados, suporte dedicado para resolver questões e aprimorar os serviços.",
         icon: FaHandshake,
       },
       {
         id: 3,
         title: "Parceiros estratégicos",
         paragraph:
-          "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, workshops e conferências, além de encontros periódicos para fortalecer parcerias e alianças estratégicas.",
+          "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, palestras e conferências, além de encontros periódicos para fortalecer parcerias e alianças estratégicas.",
         icon: FaHandHoldingHeart,
       },
       {
@@ -164,22 +166,15 @@ const HomePage: React.FC = () => {
         id: 5,
         title: "Governança e compliance",
         paragraph:
-          "Relatórios de resultados trimestrais, alinhamento com regulamentações, políticas de compliance robustas, e interações contínuas com entidades governamentais e reguladoras no setor.",
+          "Alinhamento estratégico com regulamentações, políticas robustas de compliance e interações contínuas com entidades governamentais e reguladoras do setor. Inclui certificações ISO 37101 e ISO 37301, além de práticas sólidas de antissuborno e adesão a um rigoroso código de ética.",
         icon: FaGavel,
       },
       {
         id: 6,
-        title: "Investidores e acionistas",
+        title: "Diversidade e equidade",
         paragraph:
           "Divulgação de relatórios financeiros, reuniões periódicas de desempenho, conferências com investidores e materiais detalhados sobre estratégia, operações e desempenho da empresa.",
         icon: FaChartLine,
-      },
-      {
-        id: 7,
-        title: "Fornecedores",
-        paragraph:
-          "Portal exclusivo para fornecedores, reuniões de alinhamento sobre expectativas e demandas, contratos claros e compromissos com práticas justas, transparentes e sustentáveis em toda a cadeia.",
-        icon: FaTruckLoading,
       },
     ],
 
@@ -191,7 +186,7 @@ const HomePage: React.FC = () => {
     topTitle: "Metodologia",
     title: "Como definimos o conteúdo do relatório?",
     paragraph:
-      "Conduzimos todos os anos um exercício de materialidade para averiguar os pontos de vista das partes interessadas sobre os tópicos ambientais, sociais e econômicos mais relevantes para a gestão sustentável, bem como aqueles que desejam aprender mais.",
+      "Anualmente, conduzimos um exercício de materialidade para compreender as perspectivas das partes interessadas sobre os temas ambientais, sociais e econômicos mais relevantes para a gestão sustentável, identificando também oportunidades para promover aprendizado e incentivar o engajamento com as melhores práticas.",
     imageUrl: "/img/temp/metodologia.png",
   };
 
@@ -213,80 +208,6 @@ const HomePage: React.FC = () => {
         title: "Apreciação de sugestões das partes interessadas",
         paragraph:
           "No processo de validação, perguntamos sobre as principais questões e preocupações que nossas partes interessadas sentiram que deveriam ser incluídas além das prioridades da Empresa. A maioria das respostas poderia ser categorizada em questões materiais já listadas, como embalagens recicláveis ou eliminação de canudos de plástico (Embalagem e reciclagem), segurança do alimento (Segurança do alimento), e reciclagem do óleo vegetal (Gestão responsável de recursos)",
-      },
-    ],
-    topTitle: "Validação",
-    title: "Consulta às partes interessadas da organização sobre questões materiais",
-    numberCards: [
-      {
-        title: "971",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "972",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "973",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "974",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "975",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "976",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "977",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "978",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "979",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "970",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "911",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "922",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "933",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "944",
-        paragraph: "BRASIL",
-        country: "BR",
       },
     ],
   };
@@ -409,82 +330,40 @@ const HomePage: React.FC = () => {
   };
 
   const metas2025Data: NumberCardsBannerInterface = {
-    ods: [7, 12, 13, 16, 17],
+    ods: [1, 2, 12, 13],
     title: "Nossas metas para 2025",
     paragraph:
       "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
     numberCards: [
       {
+        title: "Eventos Locais e Impacto Social",
+        icon: FaHandsHelping,
+        paragraph:
+          "Fortaleceremos nossa presença em eventos locais, promovendo ações de responsabilidade social que impactem positivamente as comunidades, com foco em educação, saúde e sustentabilidade.",
+      },
+      {
+        title: "Participação em Eventos e Workshops",
+        icon: FaChalkboardTeacher,
+        paragraph:
+          "Ampliaremos a participação em eventos de mercado, workshops e conferências, promovendo o desenvolvimento profissional, networking estratégico e inovação em nossas práticas organizacionais.",
+      },
+      {
+        title: "Comunicação Interna e Engajamento",
+        icon: FaEnvelope,
+        paragraph:
+          "Expandiremos o alcance e a periodicidade das newsletters internas, fortalecendo a comunicação organizacional e promovendo o engajamento e alinhamento estratégico entre os colaboradores.",
+      },
+      {
         title: "Campanhas Solidárias",
         icon: FaHands,
         paragraph:
-          "Continuamos com campanhas de arrecadação de alimentos e roupas de frio. Até 2025, queremos expandir significativamente essas iniciativas.",
+          "Continuamos com campanhas de arrecadação de alimentos e roupas de frio. Em 2025, queremos expandir significativamente essas iniciativas.",
       },
       {
         title: "Plantio de Árvores",
         icon: FaTree,
         paragraph:
-          "Este ano, plantamos 100 árvores e, até 2025, duplicaremos essa quantidade, com a meta de plantar 200 árvores, contribuindo para a preservação ambiental.",
-      },
-      {
-        title: "Processo de Empregabilidade",
-        icon: FaBriefcase,
-        paragraph:
-          "Aceleramos o processo de empregabilidade e, até 2025, triplicaremos as oportunidades de emprego, focando na inclusão e na formação de talentos para o mercado.",
-      },
-      {
-        title: "Redução de Emissões de Carbono",
-        icon: FaLeaf,
-        paragraph:
-          "Já adotamos fontes renováveis e práticas eficientes. Até 2025, buscamos reduzir as emissões de carbono em 30%, com melhorias progressivas a cada ano.",
-      },
-      {
-        title: "Diversidade e Inclusão",
-        icon: FaUsers,
-        paragraph:
-          "Já ampliamos a diversidade em todos os níveis hierárquicos e, até 2025, continuaremos avançando nas metas de inclusão de mulheres, negros e pessoas com deficiência.",
-      },
-      {
-        title: "Transparência e Governança",
-        icon: FaBuilding,
-        paragraph:
-          "Fortalecemos a governança e, até 2025, intensificaremos a transparência e práticas éticas, alcançando um padrão ainda mais elevado de responsabilidade.",
-      },
-      {
-        title: "Reciclagem e Redução de Resíduos",
-        icon: FaRecycle,
-        paragraph:
-          "Implementamos um sistema eficiente de reciclagem e, até 2025, aumentaremos nossa eficiência na gestão de resíduos, com foco na economia circular.",
-      },
-      {
-        title: "Educação e Capacitação",
-        icon: FaBookOpen,
-        paragraph:
-          "Já promovemos capacitação contínua e, até 2025, intensificaremos os programas focados em sustentabilidade e inovação, desenvolvendo habilidades essenciais.",
-      },
-      {
-        title: "Apoio a Comunidades Locais",
-        icon: FaHandHoldingHeart,
-        paragraph:
-          "Apoiamos comunidades locais e, até 2025, expandiremos projetos sociais, gerando impactos positivos na educação e infraestrutura dessas regiões.",
-      },
-      {
-        title: "Uso Responsável de Água",
-        icon: FaTint,
-        paragraph:
-          "Já adotamos práticas de conservação de água e, até 2025, reduziremos o consumo em 25%, com a implementação de soluções mais eficientes.",
-      },
-      {
-        title: "Inovação Sustentável",
-        icon: FaLightbulb,
-        paragraph:
-          "Investimos constantemente em inovação e, até 2025, continuaremos a integrar soluções sustentáveis em produtos e processos para ampliar o impacto positivo.",
-      },
-      {
-        title: "Bem-Estar e Saúde dos Colaboradores",
-        icon: FaHeartbeat,
-        paragraph:
-          "Já implementamos programas de bem-estar e, até 2025, intensificaremos as ações de saúde física e mental, criando um ambiente de trabalho saudável.",
+          "Este ano, plantamos 100 árvores e, em 2025, duplicaremos essa quantidade, com a meta de plantar 200 árvores, contribuindo para a preservação ambiental.",
       },
     ],
     type: "border",

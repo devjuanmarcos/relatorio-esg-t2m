@@ -122,10 +122,6 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...equidadeSalarialData} />
       <ImageWithCardTextBanner {...equidadeSalarialTexto1Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
-
-      {/* Ajustar textos daqui pra baixo */}
-      <SimpleCallBanner {...balancoGeralData} />
-      <NumberCardsBanner {...numerosData} />
     </div>
   );
 };
@@ -212,7 +208,7 @@ const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
 
 const utilizacaoNuvemData: SimpleCallBannerInterface = {
   alignment: "start",
-  imageUrl: "/img/temp/esg/nuvem.jpg",
+  imageUrl: "/img/temp/esg/nuvem.png",
   topTitle: "Ambiental",
   lineColor: "bg-var-ambiental",
   title: "Utilização de Nuvem, reduzindo o consumo de hardware",
@@ -579,41 +575,4 @@ const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlignment: "end",
   lineColor: "bg-var-governanca",
   pointColor: "text-var-governanca",
-};
-
-const balancoGeralData: SimpleCallBannerInterface = {
-  alignment: "start",
-  topTitle: "Realizações",
-  title: "Nosso balanço geral",
-  imageUrl: "/img/temp/esg/balancoGeral.jpg",
-};
-
-const numerosData: NumberCardsBannerInterface = {
-  topTitle: "2024 em números",
-  numberCards: [
-    {
-      title: "20",
-      paragraph: "PAÍSES",
-    },
-    {
-      title: "201",
-      paragraph: "PAÍSES",
-    },
-    {
-      title: "202",
-      paragraph: "PAÍSES",
-    },
-    {
-      title: "203",
-      paragraph: "PAÍSES",
-    },
-    {
-      title: "204",
-      paragraph: "PAÍSES",
-    },
-    {
-      title: "205",
-      paragraph: "PAÍSES",
-    },
-  ],
 };
