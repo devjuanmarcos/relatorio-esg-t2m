@@ -12,7 +12,17 @@ import { FaAccessibleIcon } from "react-icons/fa6";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
-import { FaCogs, FaEye, FaLaptop, FaRegCreditCard, FaTools, FaUserCheck } from "react-icons/fa";
+import {
+  FaCogs,
+  FaEye,
+  FaLaptop,
+  FaRegCreditCard,
+  FaShieldAlt,
+  FaTachometerAlt,
+  FaTools,
+  FaUniversalAccess,
+  FaUserCheck,
+} from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -60,7 +70,7 @@ const QuemSomosPage: React.FC = () => {
 
   const trabalheConoscoData: ImageWithCardTextBannerInterface = {
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/escritoriopretoebranco.png",
+    imageUrl: "/img/final/trabalheConosco.jpg",
     title: "Segurança de trabalhar em uma empresa sólida, com mais de 20 anos de mercado",
     topTitle: "Trabalhe conosco",
     paragraph:
@@ -85,31 +95,31 @@ const QuemSomosPage: React.FC = () => {
     icons: [
       {
         id: 1,
-        title: "Qualidadede Software",
+        title: "Qualidade de Software",
         paragraph:
-          "Nossas soluções abrangentes em Qualidade de Software otimizam cada etapa do desenvolvimento de seus projetos, garantindo eficiência, confiabilidade e satisfação do cliente.",
-        icon: FaAccessibleIcon,
+          "Nossas soluções em Qualidade de Software otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação de nossos clientes.",
+        icon: FaCogs,
       },
       {
         id: 2,
-        title: "Privacidade e Segurança de Dados",
+        title: "Privacidade e Segurança",
         paragraph:
-          "Nosso foco está em compreender e superar os desafios de Segurança da Informação, atendendo os clientes de forma consultiva.",
-        icon: FaAccessibleIcon,
+          "Nosso foco é superar desafios de Segurança da Informação, oferecendo soluções consultivas para atender as necessidades específicas de cada cliente.",
+        icon: FaShieldAlt,
       },
       {
         id: 3,
         title: "Acessibilidade Digital",
         paragraph:
-          "Na T2M, entendemos que a acessibilidade digital é um compromisso com a inclusão social e a inovação.",
-        icon: FaAccessibleIcon,
+          "Na T2M, buscamos a inclusão digital, promovendo acessibilidade e inovação para garantir um ambiente digital mais inclusivo e acessível para todos.",
+        icon: FaUniversalAccess,
       },
       {
         id: 4,
         title: "Business Agility",
         paragraph:
-          "Nosso objetivo é ajudar nossos clientes a se adaptarem rapidamente às mudanças de mercado, para aproveitar as oportunidades emergentes.",
-        icon: FaAccessibleIcon,
+          "Ajudamos empresas a se adaptarem rapidamente às mudanças de mercado, aproveitando oportunidades e melhorando a agilidade organizacional.",
+        icon: FaTachometerAlt,
       },
     ],
     type: "start",
@@ -138,7 +148,7 @@ const QuemSomosPage: React.FC = () => {
     paragraph:
       "Investimos no crescimento contínuo de nossa equipe por meio de treinamentos especializados e programas de capacitação. Incentivamos a inovação com a aplicação de metodologias ágeis e a exploração de novas tecnologias, garantindo que nossos profissionais estejam sempre na vanguarda das tendências de mercado e preparados para oferecer soluções inovadoras aos nossos clientes.",
     imageAlt: "Mulher usando óculos de realidade virtual",
-    imageUrl: "/img/temp/desenvolvimentoProfissional.png",
+    imageUrl: "/img/final/desenvolvimentoProfissional.jpg",
     imageAlignment: "start",
   };
 
@@ -147,7 +157,7 @@ const QuemSomosPage: React.FC = () => {
     paragraph:
       "Estamos comprometidos em promover a inclusão e acessibilidade digital em todas as nossas soluções. A T2M adota práticas que garantem que nossos produtos e serviços sejam acessíveis a todas as pessoas, independentemente de suas necessidades específicas, como a implementação de tecnologias de acessibilidade em aplicativos e sites, além de fomentar um ambiente de trabalho inclusivo, que respeita e valoriza a diversidade.",
     imageAlt: "Militar na cadeira de rodas junto com a sua família",
-    imageUrl: "/img/temp/qualidadeVida.png",
+    imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
     imageAlignment: "end",
   };
 

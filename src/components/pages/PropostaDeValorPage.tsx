@@ -65,7 +65,7 @@ const PropostaDeValorPage: React.FC = () => {
 
   const inovacaoData: ImageWithCardTextBannerInterface = {
     imageAlt: "Sustentabilidade",
-    imageUrl: "/img/temp/sustentabilidade.png",
+    imageUrl: "/img/temp/sustentabilidade.jpeg",
     title: "Inovação e Sustentabilidade",
     paragraph:
       "Nosso compromisso com a inovação e a sustentabilidade se reflete no trabalho contínuo com nossos parceiros e fornecedores, garantindo que todos os processos sejam executados com os mais altos padrões de qualidade e segurança. Além disso, nossas soluções são adaptadas às necessidades específicas de cada cliente, alinhando-se com suas metas estratégicas e oferecendo vantagens competitivas no mercado.",
@@ -83,7 +83,7 @@ const PropostaDeValorPage: React.FC = () => {
 
   const transparenciaIgualdadeData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/temp/transparenciaIgualdade.png",
+    imageUrl: "/img/temp/transparenciaIgualdade.jpeg",
     title: "Transparência e igualdade Social",
     paragraph:
       "De acordo com as normas do Ministério do Trabalho, informamos que se encontra, disponível em nosso site, o Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, referente ao 2º semestre 2024.",

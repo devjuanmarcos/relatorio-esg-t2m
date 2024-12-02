@@ -52,7 +52,7 @@ const ComunidadePage: React.FC = () => {
     paragraph:
       "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que visa capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia. Este programa oferece formação técnica em desenvolvimento de software e prepara os participantes para ingressarem no mercado de trabalho em um setor de alta demanda. Com isso, a T2M reforça seu compromisso com a responsabilidade social e com o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
     imageAlt: "Escritório da T2M",
-    imageUrl: "/img/temp/escritoriopretoebranco.png",
+    imageUrl: "/img/final/trabalheConosco.jpg",
     imageAlignment: "start",
     buttonText: "Quero me inscrever",
     buttonLink: "https://serratec.org/residencia/",
@@ -62,7 +62,7 @@ const ComunidadePage: React.FC = () => {
   const nossosParceirosData: SimpleCallBannerInterface = {
     alignment: "end",
     topTitle: "Resultados",
-    imageUrl: "/img/temp/nossosParceiros.png",
+    imageUrl: "/img/final/nossosParceiros.jpg",
     title: "Nossos parceiros",
     paragraph: "Nossa rede de colaboradores que impulsiona e molda o sucesso em cada etapa",
   };

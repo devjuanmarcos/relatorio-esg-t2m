@@ -51,8 +51,6 @@ const ESGPage: React.FC = () => {
       </React.Suspense>
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
 
-      <LeitorDeAudio />
-
       {/* Ambiental */}
       <SimpleCallBanner {...gestaoResiduosData} />
       <ImageWithCardTextBanner {...gestaoResiduosTexto1Data} />
@@ -135,7 +133,7 @@ const ESGPage: React.FC = () => {
 export default ESGPage;
 
 const callBannerData: CallBannerInterface = {
-  imageUrl: "/img/temp/capacitandoComunidade.jpg",
+  imageUrl: "/img/final/esg/compromisso.png",
   buttonLink: "https://www.t2mlab.com/nosso-blog/",
   buttonText: "Nosso blog",
   buttonTarget: "_blank",
@@ -355,7 +353,7 @@ const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
 
 const equipeGenteGestaoData: SimpleCallBannerInterface = {
   alignment: "start",
-  imageUrl: "/img/temp/esg/mulheres.jpg",
+  imageUrl: "/img/final/esg/mulheres.png",
   topTitle: "Social",
   lineColor: "bg-var-social",
   icon: {
@@ -370,7 +368,7 @@ const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
     "O time de Gente e Gestão da T2M é 100% composto por mulheres, evidenciando o forte compromisso da empresa com a diversidade e a inclusão. Além disso, cerca de 75% do time administrativo é formado por mulheres, pessoas com deficiência e pessoas pretas, reforçando a dedicação da T2M em promover um ambiente de trabalho plural e representativo. Esta equipe de Gente e Gestão desempenha um papel fundamental na construção de uma cultura organizacional acolhedora e igualitária, implementando políticas de desenvolvimento profissional e ações que valorizam a diversidade de perspectivas dentro da empresa. A T2M acredita que a inclusão é um pilar essencial para o sucesso de sua cultura organizacional, impulsionando a inovação e gerando um impacto social positivo.",
   imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/mulheres2.jpg",
+  imageUrl: "/img/final/esg/mulheres2.jpg",
   imageAlignment: "end",
   lineColor: "bg-var-social",
   pointColor: "text-var-social",
@@ -415,8 +413,8 @@ const campanhasSolidariasData: SimpleCallBannerInterface = {
 const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
     "A T2M promove, ao longo de todo o ano, a campanha Gesto Solidário, campanha para arrecadação de alimentos e roupas, destinados a instituições locais e pessoas em situação de rua. Durante o período de festas, organizamos também a campanha Adote sua Cartinha de Natal, especialmente voltada envio de presentes para crianças em situação de vulnerabilidade e com diversidade funcional, levando alegria e apoio as comunidades e instituições. A T2M incentiva ativamente seus colaboradores a participarem dessas ações, fortalecendo a cultura de solidariedade e engajamento social dentro da empresa. Esse apoio coletivo é essencial para o sucesso das campanhas e para ampliar nosso impacto positivo na comunidade.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/arrecadacaoAlimentos.jpg",
+  imageAlt: "Doações da T2M, Biomob e Serratec.",
+  imageUrl: "/img/final/esg/doacoes.jpg",
   imageAlignment: "end",
   lineColor: "bg-var-social",
   pointColor: "text-var-social",
@@ -439,7 +437,7 @@ const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
   paragraph:
     "A T2M tem um compromisso sólido com o voluntariado e o apoio à empregabilidade, participando ativamente de programas e iniciativas que promovem a inclusão social e o desenvolvimento de jovens talentos. A empresa colabora com feiras de emprego voltadas para pessoas em situação de vulnerabilidade, como mães solo, LGBTQIAP+, pessoas com diversidades  funcionais, refugiados, egressos do sistema prisional e jovens em busca do primeiro emprego. Além disso, a T2M incentiva seus colaboradores a se voluntariarem como palestrantes e instrutores em cursos preparatórios que abordam habilidades técnicas e comportamentais essenciais, preparando os participantes para se destacarem no mercado de trabalho.",
   imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/apoioEmpregabilidade.png",
+  imageUrl: "/img/final/esg/apoioEmpregabilidade.jpeg",
   imageAlignment: "start",
   lineColor: "bg-var-social",
   pointColor: "text-var-social",
@@ -466,7 +464,7 @@ const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
   ],
   paragraph: "",
   imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/legislacao2.jpeg",
+  imageUrl: "/img/final/esg/legislacao.jpg",
   imageAlignment: "end",
   lineColor: "bg-var-governanca",
   pointColor: "text-var-governanca",
@@ -474,7 +472,7 @@ const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
 
 const comiteT2MData: SimpleCallBannerInterface = {
   alignment: "end",
-  imageUrl: "/img/temp/esg/comites.jpg",
+  imageUrl: "/img/final/esg/comites.jpg",
   topTitle: "Governança",
   lineColor: "bg-var-governanca",
   icon: {

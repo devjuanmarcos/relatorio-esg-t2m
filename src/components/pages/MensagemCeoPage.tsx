@@ -75,15 +75,15 @@ const MensagemCeoPage: React.FC = () => {
 
       <div className="flex flex-col gap-2 px-2 md:px-12">
         <TextVariantes variant="paragraph_01">
-          Este Relatório de Impacto Social e Desenvolvimento Sustentável de 2024 reflete nosso compromisso com a
+          {`"Este Relatório de Impacto Social e Desenvolvimento Sustentável de 2024 reflete nosso compromisso com a
           transparência e responsabilidade social na T2M. Ele serve como um canal fundamental para comunicar nossas
           ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável da
           ONU e aos princípios de ESG. Este relatório não apenas evidencia nossos esforços em capacitação, diversidade e
           governança ética, mas também nos permite fortalecer laços com nossos stakeholders e guiar nossas decisões
           futuras. Ao compartilhar nossos resultados e desafios, reafirmamos nossa dedicação a um impacto positivo e
-          duradouro.
+          duradouro."`}
         </TextVariantes>
-        <TextVariantes variant="top_title">Guilherme da Motta Alves - CEO</TextVariantes>
+        <TextVariantes variant="top_title">Guilherme da Motta Alves - CEO da T2M</TextVariantes>
       </div>
 
       <NumberCardsBanner {...tresTopicosData} />

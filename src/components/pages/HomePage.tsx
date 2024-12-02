@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
   }
 
   const callBannerData: CallBannerInterface = {
-    imageUrl: "/img/temp/Frame3.png",
+    imageUrl: "/img/final/impactoSocial.jpg",
     buttonLink: "#",
     buttonText: "Baixe o Relatório de Impacto Social (PDF)",
     buttonTarget: "_blank",
@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
 
   const processoMaterialidadeData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/temp/Frame3.png",
+    imageUrl: "/img/final/materialidade.jpg",
     title: "Processo de materialidade",
     paragraph:
       "Mantemos um relacionamento constante e transparente com todas as nossas partes interessadas, de indivíduos a organizações, para que possamos entender suas expectativas e preocupações e traduzi-las em informações de valor estratégico para auxiliar a gestão de nossos negócios. ",

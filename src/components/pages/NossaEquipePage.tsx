@@ -11,6 +11,7 @@ import { Simple2TitleImageBannerInterface } from "@/components/banners/Simple2Ti
 import { SimpleTextBannerInterface } from "@/components/banners/SimpleTextBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
+import { FaCogs, FaShieldAlt, FaTachometerAlt, FaUniversalAccess } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -48,7 +49,7 @@ const NossaEquipePage: React.FC = () => {
   }
 
   const callBannerData: CallBannerInterface = {
-    imageUrl: "/img/temp/nossaequipe.png",
+    imageUrl: "/img/final/nossEquipe.jpg",
     buttonLink: "https://www.t2mlab.com/trabalhe-conosco-2/",
     buttonText: "Quero fazer parte da equipe",
     buttonTarget: "_blank",
@@ -64,31 +65,31 @@ const NossaEquipePage: React.FC = () => {
     icons: [
       {
         id: 1,
-        title: "Qualidadede Software",
+        title: "Qualidade de Software",
         paragraph:
-          "Nossas soluções abrangentes em Qualidade de Software otimizam cada etapa do desenvolvimento de seus projetos, garantindo eficiência, confiabilidade e satisfação do cliente.",
-        icon: FaAccessibleIcon,
+          "Nossas soluções em Qualidade de Software otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação dos nossos clientes.",
+        icon: FaCogs,
       },
       {
         id: 2,
-        title: "Privacidade e Segurança de Dados",
+        title: "Segurança de Dados",
         paragraph:
-          "Nosso foco está em compreender e superar os desafios de Segurança da Informação, atendendo os clientes de forma consultiva.",
-        icon: FaAccessibleIcon,
+          "Nosso time especializado supera os desafios de Segurança da Informação, garantindo a proteção e confidencialidade de dados sensíveis.",
+        icon: FaShieldAlt,
       },
       {
         id: 3,
         title: "Acessibilidade Digital",
         paragraph:
-          "Na T2M, entendemos que a acessibilidade digital é um compromisso com a inclusão social e a inovação.",
-        icon: FaAccessibleIcon,
+          "Com nossa expertise em acessibilidade digital, garantimos que todas as pessoas possam acessar e interagir com seus produtos digitais de forma inclusiva.",
+        icon: FaUniversalAccess,
       },
       {
         id: 4,
         title: "Business Agility",
         paragraph:
-          "Nosso objetivo é ajudar nossos clientes a se adaptarem rapidamente às mudanças de mercado, para aproveitar as oportunidades emergentes.",
-        icon: FaAccessibleIcon,
+          "Nosso grupo de Business Agility foca em ajudar empresas a se adaptarem rapidamente às mudanças de mercado e otimizar sua performance.",
+        icon: FaTachometerAlt,
       },
     ],
     type: "start",
@@ -96,7 +97,7 @@ const NossaEquipePage: React.FC = () => {
 
   const compromissoComDiversidadeData: SimpleCallBannerInterface = {
     alignment: "start",
-    imageUrl: "/img/temp/biomob.png",
+    imageUrl: "/img/final/materialidade.jpg",
     title: "Compromisso com a diversidade e inclusão",
     paragraph:
       "Recentemente fechamos uma parceria com a BIOMOB, voltada para projetos sociais e serviços ligados à diversidade e inclusão, para aprimorar o nosso comportamento em relação a estes temas e à acessibilidade de forma geral.",
@@ -176,7 +177,7 @@ const NossaEquipePage: React.FC = () => {
     paragraph:
       "Promovemos uma cultura de transparência e equidade, onde todos os colaboradores têm as mesmas oportunidades de crescimento e reconhecimento. Nosso compromisso com a diversidade e inclusão é refletido em práticas que garantem um espaço seguro e respeitoso, onde todos podem se expressar e contribuir com seu potencial máximo.",
     imageAlt: "Mulher com casaco vermelho na natureza",
-    imageUrl: "/img/temp/mulherCasacoVermelho.png",
+    imageUrl: "/img/temp/etiveInclusao.jpg",
     imageAlignment: "end",
   };
 
@@ -185,7 +186,7 @@ const NossaEquipePage: React.FC = () => {
     paragraph:
       "Além disso, oferecemos uma gama de benefícios que visam o bem-estar e qualidade de vida dos nossos colaboradores, como assistência médica e odontológica, auxílios diversos (home-office, alimentação, refeição e transporte), seguro de vida, Wellhub e plano de carreira.",
     imageAlt: "Mulher usando óculos de realidade virtual",
-    imageUrl: "/img/temp/desenvolvimentoProfissional.png",
+    imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
     imageAlignment: "start",
   };
 
