@@ -59,15 +59,6 @@ const ComunidadePage: React.FC = () => {
     buttonTarget: "_blank",
   };
 
-  const impactoData: SimpleCallBannerInterface = {
-    alignment: "start",
-    imageUrl: "/img/temp/patrocinador.jpg",
-    title: "Nosso impacto em números",
-    paragraph: "Alcançados com programas de impacto social",
-    buttonText: "Quero ser um patrocinador",
-    buttonLink: "#",
-  };
-
   const nossosParceirosData: SimpleCallBannerInterface = {
     alignment: "end",
     topTitle: "Resultados",
@@ -158,7 +149,6 @@ const ComunidadePage: React.FC = () => {
       </React.Suspense>
 
       <ImageWithCardTextBanner {...oportunidadesInclusivasData} />
-      <SimpleCallBanner {...impactoData} />
       <SimpleCallBanner {...nossosParceirosData} />
       <IconsCardsBanner {...listagemParceirosData} />
     </div>

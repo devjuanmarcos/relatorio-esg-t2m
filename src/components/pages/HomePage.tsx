@@ -31,6 +31,14 @@ import {
   FaTruckLoading,
   FaHands,
   FaGift,
+  FaLeaf,
+  FaUsers,
+  FaBuilding,
+  FaBookOpen,
+  FaTint,
+  FaLightbulb,
+  FaHeartbeat,
+  FaBriefcase,
 } from "react-icons/fa";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
@@ -280,11 +288,6 @@ const HomePage: React.FC = () => {
         paragraph: "BRASIL",
         country: "BR",
       },
-      {
-        title: "955",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
     ],
   };
 
@@ -347,15 +350,6 @@ const HomePage: React.FC = () => {
       "Estamos comprometidos em contribuir parao desenvolvimento sustentável por meio dosnossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários,fornecedores, acionistas e a sociedade.",
     alignment: "end",
     imageUrl: "/img/temp/esg/plantar.jpg",
-    ods: [
-      "/img/ods/1.png",
-      "/img/ods/3.png",
-      "/img/ods/5.png",
-      "/img/ods/10.png",
-      "/img/ods/11.png",
-      "/img/ods/13.png",
-      "/img/ods/15.png",
-    ],
   };
 
   const movimentoRegenerativoData: NumberCardsBannerInterface = {
@@ -409,6 +403,88 @@ const HomePage: React.FC = () => {
         icon: MdBusinessCenter,
         paragraph:
           "A Bioconecta é uma feira de empregabilidade que oferece oportunidades de primeiro emprego, com foco em mães solteiras e pessoas com deficiência, promovendo inclusão e igualdade no mercado de trabalho.",
+      },
+    ],
+    type: "border",
+  };
+
+  const metas2025Data: NumberCardsBannerInterface = {
+    ods: [7, 12, 13, 16, 17],
+    title: "Nossas metas para 2025",
+    paragraph:
+      "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
+    numberCards: [
+      {
+        title: "Campanhas Solidárias",
+        icon: FaHands,
+        paragraph:
+          "Continuamos com campanhas de arrecadação de alimentos e roupas de frio. Até 2025, queremos expandir significativamente essas iniciativas.",
+      },
+      {
+        title: "Plantio de Árvores",
+        icon: FaTree,
+        paragraph:
+          "Este ano, plantamos 100 árvores e, até 2025, duplicaremos essa quantidade, com a meta de plantar 200 árvores, contribuindo para a preservação ambiental.",
+      },
+      {
+        title: "Processo de Empregabilidade",
+        icon: FaBriefcase,
+        paragraph:
+          "Aceleramos o processo de empregabilidade e, até 2025, triplicaremos as oportunidades de emprego, focando na inclusão e na formação de talentos para o mercado.",
+      },
+      {
+        title: "Redução de Emissões de Carbono",
+        icon: FaLeaf,
+        paragraph:
+          "Já adotamos fontes renováveis e práticas eficientes. Até 2025, buscamos reduzir as emissões de carbono em 30%, com melhorias progressivas a cada ano.",
+      },
+      {
+        title: "Diversidade e Inclusão",
+        icon: FaUsers,
+        paragraph:
+          "Já ampliamos a diversidade em todos os níveis hierárquicos e, até 2025, continuaremos avançando nas metas de inclusão de mulheres, negros e pessoas com deficiência.",
+      },
+      {
+        title: "Transparência e Governança",
+        icon: FaBuilding,
+        paragraph:
+          "Fortalecemos a governança e, até 2025, intensificaremos a transparência e práticas éticas, alcançando um padrão ainda mais elevado de responsabilidade.",
+      },
+      {
+        title: "Reciclagem e Redução de Resíduos",
+        icon: FaRecycle,
+        paragraph:
+          "Implementamos um sistema eficiente de reciclagem e, até 2025, aumentaremos nossa eficiência na gestão de resíduos, com foco na economia circular.",
+      },
+      {
+        title: "Educação e Capacitação",
+        icon: FaBookOpen,
+        paragraph:
+          "Já promovemos capacitação contínua e, até 2025, intensificaremos os programas focados em sustentabilidade e inovação, desenvolvendo habilidades essenciais.",
+      },
+      {
+        title: "Apoio a Comunidades Locais",
+        icon: FaHandHoldingHeart,
+        paragraph:
+          "Apoiamos comunidades locais e, até 2025, expandiremos projetos sociais, gerando impactos positivos na educação e infraestrutura dessas regiões.",
+      },
+      {
+        title: "Uso Responsável de Água",
+        icon: FaTint,
+        paragraph:
+          "Já adotamos práticas de conservação de água e, até 2025, reduziremos o consumo em 25%, com a implementação de soluções mais eficientes.",
+      },
+      {
+        title: "Inovação Sustentável",
+        icon: FaLightbulb,
+        paragraph:
+          "Investimos constantemente em inovação e, até 2025, continuaremos a integrar soluções sustentáveis em produtos e processos para ampliar o impacto positivo.",
+      },
+      {
+        title: "Bem-Estar e Saúde dos Colaboradores",
+        icon: FaHeartbeat,
+        paragraph:
+          "Já implementamos programas de bem-estar e, até 2025, intensificaremos as ações de saúde física e mental, criando um ambiente de trabalho saudável.",
       },
     ],
     type: "border",
@@ -554,6 +630,7 @@ const HomePage: React.FC = () => {
       <SimpleCallBanner {...sustentabilidadeData} />
       <NumberCardsBanner {...movimentoRegenerativoData} />
       <NumberCardsBanner {...nossasCampanhasData} />
+      <NumberCardsBanner {...metas2025Data} />
       <SimpleCallBanner {...matrizMaterialidadeData} />
       <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
     </div>
