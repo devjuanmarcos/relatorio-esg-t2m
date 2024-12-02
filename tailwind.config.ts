@@ -1,3 +1,4 @@
+import { Accessibility } from "lucide-react";
 import type { Config } from "tailwindcss";
 import animatePlugin from "tailwindcss-animate";
 
@@ -40,6 +41,7 @@ const config: Config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        "accessibility-bar": "rgb(var(--var-verde-barra-acessibilidade))",
         background: {
           DEFAULT: "hsl(var(--background))",
           hover: "hsl(var(--background-hover))",

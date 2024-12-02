@@ -53,7 +53,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-primary flex flex-col ">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-accessibility-bar flex flex-col ">
       <div
         className="max-h-12 overflow-y-hidden relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full 
       px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade "

@@ -9,6 +9,8 @@
     --var-preto-principal: 22, 21, 19;
     --var-branco-principal: 255, 255, 255;
     --var-barra-acessibilidade-icone: 255, 255, 255;
+    --var-background: 255, 255, 255;
+    --var-verde-barra-acessibilidade: 1, 169, 152;
 
     --var-ambiental: 0, 68, 208;
     --var-social: 245, 123, 29;
@@ -52,6 +54,8 @@
     --var-preto-principal: 255, 255, 255;
     --var-branco-principal: 255, 255, 255;
     --var-barra-acessibilidade-icone: 255, 255, 255;
+    --var-background: 51, 51, 51;
+    --var-verde-barra-acessibilidade: 0, 92, 83;
 
     --var-ambiental: 51, 119, 255;
     --var-social: 255, 157, 71;
@@ -60,16 +64,16 @@
     --var-text-button: 255, 255, 255;
 
     /* Shadcn configuration */
-    --background: 0, 6.8%, 8.1%;
+    --background: 0, 0%, 20%;
     --background-hover: 0, 6.8%, 8.1%, 0.8;
     --foreground: 0, 0%, 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 174 99% 39%;
+    --primary: 174, 99%, 41%;
     --primary-hover: 174, 100%, 26%, 0.9;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 0, 0%, 0%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
@@ -145,7 +149,7 @@
 
   body {
     color: rgb(var(--foreground));
-    background-color: rgb(var(--background));
+    background-color: rgb(var(--var-background));
     font-family: var(--font-opensans);
     min-height: 100vh;
     overflow-x: hidden;
