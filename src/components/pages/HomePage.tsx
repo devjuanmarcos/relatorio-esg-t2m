@@ -194,20 +194,16 @@ const HomePage: React.FC = () => {
     textCards: [
       {
         topTitle: "Revisão",
-        title: "Preferência da indústria e análise de questões materiais do período anterior",
+        title: "Reflexão sobre as ações e políticas voltadas à diversidade e inclusão do período anterior.",
         paragraph:
-          "Decidimos incluir os tópicos 'Embalagem e reciclagem (Economia Circular)' e 'Ética e Integridade e combate à corrupção'. Outros tópicos materiais foram renomeados para definir com mais precisão o escopo de sua gestão.",
-      },
-      {
-        topTitle: "Priorização",
-        title: "Avaliação de questões materiais pelos tomadores da decisão da empresa",
-        paragraph: "11 membros do conselho de administração participaram do processo de priorização.",
+          "Durante a revisão, avaliamos os avanços alcançados na criação de um ambiente inclusivo e no engajamento de diferentes grupos de stakeholders. Decidimos incluir novos tópicos, como 'Diversidade em múltiplos aspectos nas políticas corporativas' e 'Aprimoramento de acessibilidade em produtos e serviços', para alinhar melhor as práticas às necessidades atuais.",
       },
       {
         topTitle: "Análise",
-        title: "Apreciação de sugestões das partes interessadas",
+        title:
+          "Integração de sugestões com foco em fortalecer as estratégias inclusivas, ambientais e para saúde e bem-estar.",
         paragraph:
-          "No processo de validação, perguntamos sobre as principais questões e preocupações que nossas partes interessadas sentiram que deveriam ser incluídas além das prioridades da Empresa. A maioria das respostas poderia ser categorizada em questões materiais já listadas, como embalagens recicláveis ou eliminação de canudos de plástico (Embalagem e reciclagem), segurança do alimento (Segurança do alimento), e reciclagem do óleo vegetal (Gestão responsável de recursos)",
+          "Durante o processo de análise, foram destacados temas prioritários, como a importância de campanhas educativas que sensibilizem e engajem os colaboradores em práticas inclusivas, sustentáveis e que promovessem o cuidado com a saúde e o bem-estar de todos.",
       },
     ],
   };
@@ -329,129 +325,129 @@ const HomePage: React.FC = () => {
     type: "border",
   };
 
-  const matrizMaterialidadeData: SimpleCallBannerInterface = {
-    alignment: "start",
-    topTitle: "Relatório",
-    title: "Matriz de materialidade",
-    paragraph:
-      "Este relatório foi elaborado com base nas questões materiais priorizadas pela Arcos Dorados e validadas junto às partes interessadas da Empresa.",
-    imageUrl: "/img/temp/matrizmaterialidade.png",
-  };
+  // const matrizMaterialidadeData: SimpleCallBannerInterface = {
+  //   alignment: "start",
+  //   topTitle: "Relatório",
+  //   title: "Matriz de materialidade",
+  //   paragraph:
+  //     "Este relatório foi elaborado com base nas questões materiais priorizadas pela Arcos Dorados e validadas junto às partes interessadas da Empresa.",
+  //   imageUrl: "/img/temp/matrizmaterialidade.png",
+  // };
 
-  const matrizMaterialidadeTopicosData: ImageWithTopicsBannerInterface = {
-    captions: [
-      {
-        color: "bg-[#51BFCC]",
-        title: "Compromisso com as Famílias",
-      },
-      {
-        color: "bg-[#7ABA43]",
-        title: "Oportunidade para os Jovens",
-      },
-      {
-        color: "bg-[#ED883A]",
-        title: "Governo",
-      },
-      {
-        color: "bg-[#DC332E]",
-        title: "Abastecimento Sustentável",
-      },
-      {
-        color: "bg-[#2A6B73]",
-        title: "Mudanças Climáticas",
-      },
-      {
-        color: "bg-[#6B3114]",
-        title: "Diversidade e Inclusão",
-      },
-      {
-        color: "bg-[#FF0000]",
-        title: "Economia Circular",
-      },
-    ],
-    topics: [
-      {
-        color: "bg-[#4ABCD2]",
-        number: 1,
-        title: "Segurança Do Alimento",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#7CBB4A]",
-        number: 2,
-        title: "Direitos humanos e práticas trabalhistas justas",
-        paragraph: "Externa/Interna",
-      },
-      {
-        color: "bg-[#F08540]",
-        number: 3,
-        title: "Ética e integridade e combate à corrupção",
-        paragraph: "Externa/Interna",
-      },
-      {
-        color: "bg-[#7BBB47]",
-        number: 4,
-        title: "Emprego Jovem",
-        paragraph: "Externa/Interna",
-      },
-      {
-        color: "bg-[#7CB949]",
-        number: 5,
-        title: "Saúde e segurança de nossa gente",
-        paragraph: "Interna",
-      },
-      {
-        color: "bg-[#6C1653]",
-        number: 6,
-        title: "Embalagem e reciclagem (Economia Circular)",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#4FBCCD]",
-        number: 7,
-        title: "Nutrição e publicidade responsável",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#286C73]",
-        number: 8,
-        title: "Gestão responsável de recursos",
-        paragraph: "Externa/Interna",
-      },
-      {
-        color: "bg-[#6A311B]",
-        number: 9,
-        title: "Diversidade e inclusão",
-        paragraph: "Externa/Interna",
-      },
-      {
-        color: "bg-[#DD3031]",
-        number: 10,
-        title: "Abastecimento responsável",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#4BC1D4]",
-        number: 11,
-        title: "Apoio à comunidade local",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#DE2D34]",
-        number: 12,
-        title: "Criação de gado sustentável e livre de desmatamento",
-        paragraph: "Externa",
-      },
-      {
-        color: "bg-[#266C76]",
-        number: 13,
-        title: "Mudanças climáticas",
-        paragraph: "Externa",
-      },
-    ],
-    imageAlt: "Gráfico da matriz de materialidade da T2M",
-    imageUrl: "/img/temp/graficomaterialidade.png",
-  };
+  // const matrizMaterialidadeTopicosData: ImageWithTopicsBannerInterface = {
+  //   captions: [
+  //     {
+  //       color: "bg-[#51BFCC]",
+  //       title: "Compromisso com as Famílias",
+  //     },
+  //     {
+  //       color: "bg-[#7ABA43]",
+  //       title: "Oportunidade para os Jovens",
+  //     },
+  //     {
+  //       color: "bg-[#ED883A]",
+  //       title: "Governo",
+  //     },
+  //     {
+  //       color: "bg-[#DC332E]",
+  //       title: "Abastecimento Sustentável",
+  //     },
+  //     {
+  //       color: "bg-[#2A6B73]",
+  //       title: "Mudanças Climáticas",
+  //     },
+  //     {
+  //       color: "bg-[#6B3114]",
+  //       title: "Diversidade e Inclusão",
+  //     },
+  //     {
+  //       color: "bg-[#FF0000]",
+  //       title: "Economia Circular",
+  //     },
+  //   ],
+  //   topics: [
+  //     {
+  //       color: "bg-[#4ABCD2]",
+  //       number: 1,
+  //       title: "Segurança Do Alimento",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#7CBB4A]",
+  //       number: 2,
+  //       title: "Direitos humanos e práticas trabalhistas justas",
+  //       paragraph: "Externa/Interna",
+  //     },
+  //     {
+  //       color: "bg-[#F08540]",
+  //       number: 3,
+  //       title: "Ética e integridade e combate à corrupção",
+  //       paragraph: "Externa/Interna",
+  //     },
+  //     {
+  //       color: "bg-[#7BBB47]",
+  //       number: 4,
+  //       title: "Emprego Jovem",
+  //       paragraph: "Externa/Interna",
+  //     },
+  //     {
+  //       color: "bg-[#7CB949]",
+  //       number: 5,
+  //       title: "Saúde e segurança de nossa gente",
+  //       paragraph: "Interna",
+  //     },
+  //     {
+  //       color: "bg-[#6C1653]",
+  //       number: 6,
+  //       title: "Embalagem e reciclagem (Economia Circular)",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#4FBCCD]",
+  //       number: 7,
+  //       title: "Nutrição e publicidade responsável",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#286C73]",
+  //       number: 8,
+  //       title: "Gestão responsável de recursos",
+  //       paragraph: "Externa/Interna",
+  //     },
+  //     {
+  //       color: "bg-[#6A311B]",
+  //       number: 9,
+  //       title: "Diversidade e inclusão",
+  //       paragraph: "Externa/Interna",
+  //     },
+  //     {
+  //       color: "bg-[#DD3031]",
+  //       number: 10,
+  //       title: "Abastecimento responsável",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#4BC1D4]",
+  //       number: 11,
+  //       title: "Apoio à comunidade local",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#DE2D34]",
+  //       number: 12,
+  //       title: "Criação de gado sustentável e livre de desmatamento",
+  //       paragraph: "Externa",
+  //     },
+  //     {
+  //       color: "bg-[#266C76]",
+  //       number: 13,
+  //       title: "Mudanças climáticas",
+  //       paragraph: "Externa",
+  //     },
+  //   ],
+  //   imageAlt: "Gráfico da matriz de materialidade da T2M",
+  //   imageUrl: "/img/temp/graficomaterialidade.png",
+  // };
 
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem] ">
@@ -469,8 +465,8 @@ const HomePage: React.FC = () => {
       <SimpleCallBanner {...sustentabilidadeData} />
       <NumberCardsBanner {...movimentoRegenerativoData} />
       <NumberCardsBanner {...nossasCampanhasData} />
-      <SimpleCallBanner {...matrizMaterialidadeData} />
-      <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
+      {/* <SimpleCallBanner {...matrizMaterialidadeData} />
+      <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} /> */}
     </div>
   );
 };

@@ -191,39 +191,39 @@ const QuemSomosPage: React.FC = () => {
           "Na T2M, nosso compromisso é com a excelência, entregando serviços de alta qualidade respaldados por conhecimento técnico e experiência consolidada. Valorizamos a inovação, utilizando metodologias ágeis e tecnologias de ponta para transformar desafios em oportunidades. Atuamos com ética e isenção, garantindo decisões imparciais que priorizam os melhores interesses dos nossos clientes. Além disso, promovemos inclusão e sustentabilidade por meio da formação profissional, acessibilidade digital e práticas que impulsionam o desenvolvimento humano e tecnológico. Nosso comprometimento é focado nos resultados, respeitando prazos, confiabilidade e usabilidade, sempre em alinhamento com as necessidades dos nossos parceiros.",
       },
     ],
-    topTitle: "2024 em números",
-    numberCards: [
-      {
-        title: "971",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "972",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "973",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "974",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "975",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "976",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-    ],
+    // topTitle: "2024 em números",
+    // numberCards: [
+    //   {
+    //     title: "971",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    //   {
+    //     title: "972",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    //   {
+    //     title: "973",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    //   {
+    //     title: "974",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    //   {
+    //     title: "975",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    //   {
+    //     title: "976",
+    //     paragraph: "BRASIL",
+    //     country: "BR",
+    //   },
+    // ],
   };
 
   const importanciaTerceirizarTestesData: NumberCardsBannerInterface = {
@@ -272,50 +272,50 @@ const QuemSomosPage: React.FC = () => {
     type: "border",
   };
 
-  const ondeAtuamos: SimpleCallBannerInterface = {
-    topTitle: "Atuação",
-    title: "Onde atuamos?",
-    paragraph:
-      "A T2M é uma empresa global, reconhecida por sua atuação em diversos países, oferecendo serviços de excelência em qualidade de software, privacidade e segurança da informação, acessibilidade digital, business agility e muito mais.",
-    imageUrl: "/img/temp/ondeAtuamos.png",
-    alignment: "end",
-  };
+  // const ondeAtuamos: SimpleCallBannerInterface = {
+  //   topTitle: "Atuação",
+  //   title: "Onde atuamos?",
+  //   paragraph:
+  //     "A T2M é uma empresa global, reconhecida por sua atuação em diversos países, oferecendo serviços de excelência em qualidade de software, privacidade e segurança da informação, acessibilidade digital, business agility e muito mais.",
+  //   imageUrl: "/img/temp/ondeAtuamos.png",
+  //   alignment: "end",
+  // };
 
-  const paisesQuantidadeProjetos: NumberCardsBannerInterface = {
-    topTitle: "Países e quantidades de projetos",
-    numberCards: [
-      {
-        title: "971",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "972",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "973",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "974",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "975",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-      {
-        title: "976",
-        paragraph: "BRASIL",
-        country: "BR",
-      },
-    ],
-  };
+  // const paisesQuantidadeProjetos: NumberCardsBannerInterface = {
+  //   topTitle: "Países e quantidades de projetos",
+  //   numberCards: [
+  //     {
+  //       title: "971",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //     {
+  //       title: "972",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //     {
+  //       title: "973",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //     {
+  //       title: "974",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //     {
+  //       title: "975",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //     {
+  //       title: "976",
+  //       paragraph: "BRASIL",
+  //       country: "BR",
+  //     },
+  //   ],
+  // };
 
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
@@ -335,8 +335,8 @@ const QuemSomosPage: React.FC = () => {
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
       <DividingLine />
       <NumberCardsBanner {...importanciaTerceirizarTestesData} />
-      <SimpleCallBanner {...ondeAtuamos} />
-      <NumberCardsBanner {...paisesQuantidadeProjetos} />
+      {/* <SimpleCallBanner {...ondeAtuamos} />
+      <NumberCardsBanner {...paisesQuantidadeProjetos} /> */}
     </div>
   );
 };

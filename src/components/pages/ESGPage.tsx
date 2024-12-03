@@ -165,7 +165,7 @@ const oportunidadesInclusivasData: ImageWithCardTextBannerInterface = {
 
 const gestaoResiduosData: SimpleCallBannerInterface = {
   alignment: "start",
-  imageUrl: "/img/temp/esg/gestaoResiduos.jpg",
+  imageUrl: "/img/final/esg/reciclagem.jpg",
   topTitle: "Ambiental",
   lineColor: "bg-var-ambiental",
   title: "Gestão de Resíduos e Escolha de Materiais Sustentáveis",
@@ -188,7 +188,7 @@ const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
 
 const contratosAssinadosData: SimpleCallBannerInterface = {
   alignment: "end",
-  imageUrl: "/img/temp/esg/contratosAssinados.jpg",
+  imageUrl: "/img/final/esg/contratosAssinados2.jpg",
   topTitle: "Ambiental",
   lineColor: "bg-var-ambiental",
   icon: {
@@ -249,7 +249,7 @@ const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
 
 const consumoConscienteData: SimpleCallBannerInterface = {
   alignment: "end",
-  imageUrl: "/img/temp/esg/consumoAgua.jpg",
+  imageUrl: "/img/temp/esg/consumoAgua.png",
   topTitle: "Ambiental",
   title: "Consumo consciente de Água",
   lineColor: "bg-var-ambiental",
@@ -272,7 +272,7 @@ const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
 
 const estimuloReducaoData: SimpleCallBannerInterface = {
   alignment: "start",
-  imageUrl: "/img/temp/esg/veiculosCombustao.jpg",
+  imageUrl: "/img/temp/esg/veiculosCombustao.png",
   topTitle: "Ambiental",
   lineColor: "bg-var-ambiental",
   title: "Estímulo à redução do uso de veículos a combustão",
@@ -295,7 +295,7 @@ const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
 
 const cadeiaFornecedoresData: SimpleCallBannerInterface = {
   alignment: "end",
-  imageUrl: "/img/temp/esg/meioambiente.jpg",
+  imageUrl: "/img/temp/esg/meioambiente.png",
   topTitle: "Ambiental",
   lineColor: "bg-var-ambiental",
   title: "Cadeia de fornecedores comprometidos com o meio ambiente",
@@ -345,6 +345,8 @@ const feitosAmbientalData: NumberCardsBannerInterface = {
     "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
   cardType: "mini",
   alignment: "center",
+  cardColor: "var-ambiental",
+  cardBorder: "border-var-ambiental",
   numberCards: [
     {
       title: "100 árvores plantadas",
@@ -487,6 +489,8 @@ const feitosSocialData: NumberCardsBannerInterface = {
     "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
   cardType: "mini",
   alignment: "center",
+  cardColor: "var-social",
+  cardBorder: "border-var-social",
   numberCards: [
     {
       title: "2 toneladas de alimentos arrecadadas",
