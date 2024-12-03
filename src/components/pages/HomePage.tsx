@@ -329,46 +329,6 @@ const HomePage: React.FC = () => {
     type: "border",
   };
 
-  const metas2025Data: NumberCardsBannerInterface = {
-    ods: [1, 2, 12, 13],
-    title: "Nossas metas para 2025",
-    paragraph:
-      "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
-    numberCards: [
-      {
-        title: "Eventos Locais e Impacto Social",
-        icon: FaHandsHelping,
-        paragraph:
-          "Fortaleceremos nossa presença em eventos locais, promovendo ações de responsabilidade social que impactem positivamente as comunidades, com foco em educação, saúde e sustentabilidade.",
-      },
-      {
-        title: "Participação em Eventos e Workshops",
-        icon: FaChalkboardTeacher,
-        paragraph:
-          "Ampliaremos a participação em eventos de mercado, workshops e conferências, promovendo o desenvolvimento profissional, networking estratégico e inovação em nossas práticas organizacionais.",
-      },
-      {
-        title: "Comunicação Interna e Engajamento",
-        icon: FaEnvelope,
-        paragraph:
-          "Expandiremos o alcance e a periodicidade das newsletters internas, fortalecendo a comunicação organizacional e promovendo o engajamento e alinhamento estratégico entre os colaboradores.",
-      },
-      {
-        title: "Campanhas Solidárias",
-        icon: FaHands,
-        paragraph:
-          "Continuamos com campanhas de arrecadação de alimentos e roupas de frio. Em 2025, queremos expandir significativamente essas iniciativas.",
-      },
-      {
-        title: "Plantio de Árvores",
-        icon: FaTree,
-        paragraph:
-          "Este ano, plantamos 100 árvores e, em 2025, duplicaremos essa quantidade, com a meta de plantar 200 árvores, contribuindo para a preservação ambiental.",
-      },
-    ],
-    type: "border",
-  };
-
   const matrizMaterialidadeData: SimpleCallBannerInterface = {
     alignment: "start",
     topTitle: "Relatório",
@@ -509,7 +469,6 @@ const HomePage: React.FC = () => {
       <SimpleCallBanner {...sustentabilidadeData} />
       <NumberCardsBanner {...movimentoRegenerativoData} />
       <NumberCardsBanner {...nossasCampanhasData} />
-      <NumberCardsBanner {...metas2025Data} />
       <SimpleCallBanner {...matrizMaterialidadeData} />
       <ImageWithTopicsBanner {...matrizMaterialidadeTopicosData} />
     </div>

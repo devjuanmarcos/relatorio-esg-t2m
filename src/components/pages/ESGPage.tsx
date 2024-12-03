@@ -10,7 +10,9 @@ import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
 import { useIsMounted } from "@/hooks/useIsMounted";
-import { FaChalkboardTeacher, FaEnvelope, FaHands, FaHandsHelping, FaTree } from "react-icons/fa";
+import { FaHandsHelping, FaTree, FaUsers, FaUtensils } from "react-icons/fa";
+import { MdCo2, MdFoodBank } from "react-icons/md";
+import { LuRecycle } from "react-icons/lu";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -62,6 +64,7 @@ const ESGPage: React.FC = () => {
 
       <SimpleCallBanner {...utilizacaoNuvemData} />
       <ImageWithCardTextBanner {...utilizacaoNuvemTexto1Data} />
+      <ImageWithCardTextBanner {...utilizacaoNuvemTexto2Data} />
       <DividingLine lineColor={"bg-var-ambiental"} />
 
       <SimpleCallBanner {...consumoConscienteData} />
@@ -80,8 +83,6 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...reciclagemMaterialTexto1Data} />
       <DividingLine lineColor={"bg-var-ambiental"} />
       <NumberCardsBanner {...feitosAmbientalData} />
-      <DividingLine lineColor={"bg-var-ambiental"} />
-      <NumberCardsBanner {...metasAmbientalData} />
       <DividingLine lineColor={"bg-var-ambiental"} />
 
       {/* Social */}
@@ -104,6 +105,8 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...voluntariadoApoioData} />
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
+      <NumberCardsBanner {...feitosSocialData} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
 
       {/* Governança */}
       <SimpleCallBanner {...normasCodigosLegislacoesData} />
@@ -126,6 +129,9 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...equidadeSalarialData} />
       <ImageWithCardTextBanner {...equidadeSalarialTexto1Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
+
+      <NumberCardsBanner {...metasData} />
+      <DividingLine lineColor={"bg-var-governanca"} />
     </div>
   );
 };
@@ -138,7 +144,7 @@ const callBannerData: CallBannerInterface = {
   buttonText: "Nosso blog",
   buttonTarget: "_blank",
   title: "Compromisso ESG",
-  alignment: "start",
+  alignment: "end",
   paragraph:
     "Este relatório apresenta as ações de impacto ambiental, social e de governança (ESG) implementadas por nossa empresa ao longo do último ano, destacando como essas iniciativas estão alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.",
 };
@@ -167,15 +173,7 @@ const gestaoResiduosData: SimpleCallBannerInterface = {
     icon: "/img/temp/esg/ambiental.png",
     iconAlt: "ícone referente ao tópico ambiental",
   },
-  ods: [
-    "/img/ods/8.png",
-    "/img/ods/10.png",
-    "/img/ods/12.png",
-    "/img/ods/13.png",
-    "/img/ods/15.png",
-    "/img/ods/16.png",
-    "/img/ods/17.png",
-  ],
+  ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
 };
 
 const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
@@ -222,6 +220,18 @@ const utilizacaoNuvemData: SimpleCallBannerInterface = {
     iconAlt: "ícone referente ao tópico ambiental",
   },
   ods: ["/img/ods/7.png", "/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png"],
+};
+
+const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
+  paragraphs: [
+    "Desde a migração para o Microsoft Cloud, nossa empresa alcançou uma significativa redução nas emissões de carbono, reforçando o compromisso com práticas sustentáveis. Com base em dados estimados, evitamos a emissão de 2,192 toneladas de carbono, o que representa uma redução de 99,72% das emissões potenciais, graças à utilização de ferramentas como o SharePoint e o Exchange Online. ",
+    "Nesse período, as emissões efetivas somaram apenas 0,007 toneladas, em comparação às 2,468 toneladas estimadas em um cenário tradicional. Essa transição para uma infraestrutura digital mais eficiente demonstra o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando a estratégia tecnológica às metas ESG.",
+  ],
+  imageAlt: "Escritório da T2M",
+  imageUrl: "/img/temp/esg/emissaoCarbono.jpg",
+  imageAlignment: "start",
+  lineColor: "bg-var-ambiental",
+  pointColor: "text-var-ambiental",
 };
 
 const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
@@ -337,65 +347,20 @@ const feitosAmbientalData: NumberCardsBannerInterface = {
   alignment: "center",
   numberCards: [
     {
-      title: "200 árvores",
+      title: "100 árvores plantadas",
       icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+      paragraph: "",
     },
     {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+      title: "Redução de 99,72% das emissões de carbono",
+      icon: MdCo2,
+      paragraph: "",
     },
     {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-  ],
-  type: "border",
-};
-
-const metasAmbientalData: NumberCardsBannerInterface = {
-  title: "Nossas metas para 2025",
-  paragraph:
-    "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
-  cardType: "mini",
-  alignment: "center",
-  numberCards: [
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
-    },
-    {
-      title: "200 árvores",
-      icon: FaTree,
-      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+      title: "Zerou o consumo de material descartável",
+      // Colocar
+      icon: LuRecycle,
+      paragraph: "",
     },
   ],
   type: "border",
@@ -514,6 +479,32 @@ const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlignment: "start",
   lineColor: "bg-var-social",
   pointColor: "text-var-social",
+};
+
+const feitosSocialData: NumberCardsBannerInterface = {
+  title: "Nossos feitos sociais em 2024",
+  paragraph:
+    "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
+  cardType: "mini",
+  alignment: "center",
+  numberCards: [
+    {
+      title: "2 toneladas de alimentos arrecadadas",
+      icon: FaUtensils,
+      paragraph: "",
+    },
+    {
+      title: "7 ações sociais realizadas: Bioconecta, DBA, Outubro Rosa e 4 ações de Gesto Solidário",
+      icon: FaHandsHelping,
+      paragraph: "",
+    },
+    {
+      title: "180 voluntários em nossas ações sociais",
+      icon: FaUsers,
+      paragraph: "",
+    },
+  ],
+  type: "border",
 };
 
 const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
@@ -652,4 +643,45 @@ const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
   imageAlignment: "end",
   lineColor: "bg-var-governanca",
   pointColor: "text-var-governanca",
+};
+
+const metasData: NumberCardsBannerInterface = {
+  title: "Nossas metas em 2025",
+  paragraph:
+    "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
+  cardType: "mini",
+  alignment: "center",
+  numberCards: [
+    {
+      title: "Duplicar a quantidade de árvores plantadas",
+      icon: FaTree,
+      paragraph: "",
+    },
+    {
+      title: "Redução de total das emissões de carbono",
+      icon: MdCo2,
+      paragraph: "",
+    },
+    {
+      title: "Ampliar o consumo de material reciclado",
+      icon: LuRecycle,
+      paragraph: "",
+    },
+    {
+      title: "Aumentar em 50% a arrecadação de alimentos",
+      icon: FaUtensils,
+      paragraph: "",
+    },
+    {
+      title: "Duplicar a quantidade de ações sociais realizadas",
+      icon: FaHandsHelping,
+      paragraph: "",
+    },
+    {
+      title: "Aumentar em 30% a quantidade de voluntários em ações sociais",
+      icon: FaUsers,
+      paragraph: "",
+    },
+  ],
+  type: "border",
 };

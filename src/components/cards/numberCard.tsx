@@ -72,12 +72,12 @@ export const NumberCardWithIconAndBorder: React.FC<NumberCardInterface> = ({
 
   return (
     <div
-      className={`bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-full ${type == "default" ? "max-w-[22rem]" : "max-w-[15rem] "} shadow-md border-t border-t-primary `}
+      className={`bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-full ${type == "default" ? "max-w-[22rem] text-start" : "max-w-[15rem] text-center"} shadow-md border-t border-t-primary `}
     >
       <div className="absolute bottom-[88%] rounded-full bg-background border border-primary flex items-center p-4 size-16 ">
         {renderIcon()}
       </div>
-      <div className="flex flex-col gap-1 w-full text-start ">
+      <div className="flex flex-col gap-1 w-full  ">
         <TextVariantes variant="top_title" extraClassName="text-primary">
           {title}
         </TextVariantes>
