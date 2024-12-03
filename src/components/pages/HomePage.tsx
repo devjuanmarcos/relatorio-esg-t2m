@@ -265,7 +265,7 @@ const HomePage: React.FC = () => {
     title: "Sustentabilidade",
     paragraph:
       "Estamos comprometidos em contribuir para o desenvolvimento sustentável por meio dos nossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários, fornecedores, acionistas e a sociedade.",
-    alignment: "end",
+    alignment: "start",
     imageUrl: "/img/temp/esg/plantar.jpg",
   };
 
