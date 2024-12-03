@@ -12,6 +12,7 @@ export interface NumberCardInterface {
   paragraph: string;
   icon?: IconType;
   country?: string;
+  type?: "default" | "mini";
 }
 
 export const NumberCard: React.FC<NumberCardInterface> = ({ paragraph, title, icon, country }) => {
@@ -43,7 +44,13 @@ export const NumberCard: React.FC<NumberCardInterface> = ({ paragraph, title, ic
   );
 };
 
-export const NumberCardWithIconAndBorder: React.FC<NumberCardInterface> = ({ paragraph, title, icon, country }) => {
+export const NumberCardWithIconAndBorder: React.FC<NumberCardInterface> = ({
+  paragraph,
+  title,
+  icon,
+  country,
+  type = "default",
+}) => {
   const isMounted = useIsMounted();
 
   if (!isMounted) {
@@ -64,7 +71,9 @@ export const NumberCardWithIconAndBorder: React.FC<NumberCardInterface> = ({ par
   };
 
   return (
-    <div className="bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-full max-w-[22rem]  shadow-md border-t border-t-primary ">
+    <div
+      className={`bg-background relative border border-primary rounded-lg px-8 pb-8 py-12 flex flex-col items-center gap-1 w-full ${type == "default" ? "max-w-[22rem]" : "max-w-[15rem] "} shadow-md border-t border-t-primary `}
+    >
       <div className="absolute bottom-[88%] rounded-full bg-background border border-primary flex items-center p-4 size-16 ">
         {renderIcon()}
       </div>

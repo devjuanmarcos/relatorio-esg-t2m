@@ -10,7 +10,7 @@ import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
 import { useIsMounted } from "@/hooks/useIsMounted";
-import LeitorDeAudio from "../ui/LeitorDeAudio";
+import { FaChalkboardTeacher, FaEnvelope, FaHands, FaHandsHelping, FaTree } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -79,6 +79,10 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...reciclagemMaterialData} />
       <ImageWithCardTextBanner {...reciclagemMaterialTexto1Data} />
       <DividingLine lineColor={"bg-var-ambiental"} />
+      <NumberCardsBanner {...feitosAmbientalData} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
+      <NumberCardsBanner {...metasAmbientalData} />
+      <DividingLine lineColor={"bg-var-ambiental"} />
 
       {/* Social */}
       <SimpleCallBanner {...patrocinadorIniciativasData} />
@@ -134,6 +138,7 @@ const callBannerData: CallBannerInterface = {
   buttonText: "Nosso blog",
   buttonTarget: "_blank",
   title: "Compromisso ESG",
+  alignment: "start",
   paragraph:
     "Este relatório apresenta as ações de impacto ambiental, social e de governança (ESG) implementadas por nossa empresa ao longo do último ano, destacando como essas iniciativas estão alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.",
 };
@@ -324,6 +329,78 @@ const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
   pointColor: "text-var-ambiental",
 };
 
+const feitosAmbientalData: NumberCardsBannerInterface = {
+  title: "Nossos feitos em 2024",
+  paragraph:
+    "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
+  cardType: "mini",
+  alignment: "center",
+  numberCards: [
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+  ],
+  type: "border",
+};
+
+const metasAmbientalData: NumberCardsBannerInterface = {
+  title: "Nossas metas para 2025",
+  paragraph:
+    "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
+  cardType: "mini",
+  alignment: "center",
+  numberCards: [
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+    {
+      title: "200 árvores",
+      icon: FaTree,
+      paragraph: "Duplicar a quantidade de árvores plantadas em 2024.",
+    },
+  ],
+  type: "border",
+};
+
 const patrocinadorIniciativasData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/temp/esg/capacitacaoProfissional.jpg",
@@ -348,7 +425,7 @@ const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
 };
 
 const equipeGenteGestaoData: SimpleCallBannerInterface = {
-  alignment: "start",
+  alignment: "end",
   imageUrl: "/img/final/esg/mulheres.png",
   topTitle: "Social",
   lineColor: "bg-var-social",

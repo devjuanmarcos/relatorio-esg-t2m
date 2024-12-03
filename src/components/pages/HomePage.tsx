@@ -166,15 +166,15 @@ const HomePage: React.FC = () => {
         id: 5,
         title: "Governança e compliance",
         paragraph:
-          "Alinhamento estratégico com regulamentações, políticas robustas de compliance e interações contínuas com entidades governamentais e reguladoras do setor. Inclui certificações ISO 37101 e ISO 37301, além de práticas sólidas de antissuborno e adesão a um rigoroso código de ética.",
+          "Alinhamento estratégico com regulamentações, políticas robustas de compliance e interações contínuas com entidades governamentais e reguladoras do setor. Certificações ISO 37101 e ISO 37301, além de práticas sólidas de antissuborno e adesão a um rigoroso código de ética.",
         icon: FaGavel,
       },
       {
         id: 6,
         title: "Diversidade e equidade",
         paragraph:
-          "Divulgação de relatórios financeiros, reuniões periódicas de desempenho, conferências com investidores e materiais detalhados sobre estratégia, operações e desempenho da empresa.",
-        icon: FaChartLine,
+          "Promoção de um ambiente inclusivo por meio de iniciativas que valorizam a diversidade cultural, social e de gênero. Políticas para equiparar oportunidades, incentivar a equidade e garantir respeito mútuo, construindo uma cultura organizacional sustentável e plural.",
+        icon: FaBalanceScale,
       },
     ],
 
@@ -268,7 +268,7 @@ const HomePage: React.FC = () => {
   const sustentabilidadeData: SimpleCallBannerInterface = {
     title: "Sustentabilidade",
     paragraph:
-      "Estamos comprometidos em contribuir parao desenvolvimento sustentável por meio dosnossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários,fornecedores, acionistas e a sociedade.",
+      "Estamos comprometidos em contribuir para o desenvolvimento sustentável por meio dos nossos negócios e operações, gerando valor delongo prazo para nossos clientes, funcionários, fornecedores, acionistas e a sociedade.",
     alignment: "end",
     imageUrl: "/img/temp/esg/plantar.jpg",
   };
@@ -280,7 +280,7 @@ const HomePage: React.FC = () => {
       "Ao apoiar projetos culturais e de plantação de árvores, como o Movimento Regenerativo Tempo de Plantar, fortalecemos o protagonismo das comunidades e promovemos o sentimento de pertencimento. Com o plantio de árvores, além de proteger o meio ambiente, criamos um legado duradouro, garantindo que as futuras gerações cresçam em um território que valoriza e preserva suas memórias e a natureza ao seu redor.",
     numberCards: [
       {
-        title: "Movimento auto-gestionário",
+        title: "Movimento autogestionário",
         icon: FaHandsHelping,
         paragraph:
           "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa das pessoas no plantio de árvores, criando uma conexão direta com a natureza e promovendo uma maior conscientização ambiental.",
@@ -295,7 +295,7 @@ const HomePage: React.FC = () => {
         title: "A espectativa para 2025",
         icon: FaTree,
         paragraph:
-          "Para 2025, a meta é plantar mais de 1000 árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
+          "Para 2025, a meta é dobrar o plantio de árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais.",
       },
     ],
     type: "border",

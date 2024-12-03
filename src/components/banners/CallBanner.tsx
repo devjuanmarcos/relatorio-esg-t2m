@@ -16,6 +16,7 @@ export interface CallBannerInterface {
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
+  alignment?: "end" | "start";
 }
 
 const CallBanner: React.FC<CallBannerInterface> = ({
@@ -25,6 +26,7 @@ const CallBanner: React.FC<CallBannerInterface> = ({
   buttonLink,
   buttonTarget,
   buttonText,
+  alignment = "start",
 }) => {
   const isMounted = useIsMounted();
   const imageRef1 = React.useRef(null);
@@ -39,7 +41,9 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className={`relative bg-no-repeat bg-cover flex justify-center md:justify-start items-center md:items-end w-full
+      className={`relative bg-no-repeat bg-cover flex justify-center ${
+        alignment === "start" ? "md:justify-start" : "md:justify-end"
+      } items-center md:items-end w-full
        aspect-[1440/572] max px-2 md:px-12 pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image

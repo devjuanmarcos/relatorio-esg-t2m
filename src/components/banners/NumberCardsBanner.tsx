@@ -30,6 +30,7 @@ export interface NumberCardsBannerInterface {
   alignment?: "default" | "center";
   extraButtonBottom?: ButtonInterface;
   ods?: number[];
+  cardType?: "default" | "mini";
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -39,6 +40,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   topTitle,
   type = "default",
   alignment = "default",
+  cardType = "default",
   extraButtonBottom,
   ods,
 }) => {
@@ -53,7 +55,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
       className={`px-2 md:px-12 flex flex-col w-full ${type == "default" ? "gap-10" : "gap-20 "} ${alignment == "center" && "justify-center items-center text-center"} `}
     >
       <div className="flex items-center md:justify-between gap-12 flex-col md:flex-row ">
-        <div className="flex flex-col gap-3 max-w-[42rem]  ">
+        <div className={`flex flex-col gap-3 max-w-[42rem] `}>
           {topTitle && (
             <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
               {topTitle}
@@ -67,7 +69,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
       <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-12"}  justify-center`}>
         {numberCards.map((iconCard) => {
           if (type != "default") {
-            return <NumberCardWithIconAndBorder key={iconCard.title} {...iconCard} />;
+            return <NumberCardWithIconAndBorder key={iconCard.title} {...iconCard} type={cardType} />;
           } else {
             return <NumberCard key={iconCard.title} {...iconCard} />;
           }
