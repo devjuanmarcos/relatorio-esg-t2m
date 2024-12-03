@@ -106,7 +106,7 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
       <NumberCardsBanner {...feitosSocialData} />
-      <DividingLine lineColor={"bg-var-ambiental"} />
+      <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
       <SimpleCallBanner {...normasCodigosLegislacoesData} />
