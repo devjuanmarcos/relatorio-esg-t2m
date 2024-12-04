@@ -83,7 +83,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
               />
             );
           } else {
-            return <NumberCard key={iconCard.title} {...iconCard} />;
+            return <NumberCard key={iconCard.title} {...iconCard} cardColor={cardColor} cardBorder={cardBorder} />;
           }
         })}
       </div>

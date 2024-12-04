@@ -123,7 +123,11 @@ export const Footer = () => {
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
   const { theme } = useTheme();
 
-  if (isMounted) {
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
     return <Skeleton className="w-full aspect-[1440/300]" />;
   }
 

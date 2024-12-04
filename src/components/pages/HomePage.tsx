@@ -307,7 +307,7 @@ const HomePage: React.FC = () => {
         title: "Gesto Solidário",
         icon: FaHands,
         paragraph:
-          "Desde 2014, realizamos campanhas solidárias, como arrecadação de alimentos, roupas de frio, produtos de higiene e tampinhas plásticas trocadas por cadeiras de rodas, fraldas e bengalas. ",
+          "Desde 2023, realizamos campanhas solidárias, como arrecadação de alimentos, roupas de frio, produtos de higiene e tampinhas plásticas trocadas por cadeiras de rodas, fraldas e bengalas. ",
       },
       {
         title: "Dia das Boas Ações",

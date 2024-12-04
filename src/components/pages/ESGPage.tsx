@@ -10,7 +10,21 @@ import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
 import { useIsMounted } from "@/hooks/useIsMounted";
-import { FaHandsHelping, FaTree, FaUsers, FaUtensils } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaCertificate,
+  FaChalkboardTeacher,
+  FaChartLine,
+  FaChild,
+  FaFemale,
+  FaHandsHelping,
+  FaSchool,
+  FaTree,
+  FaUserAlt,
+  FaUsers,
+  FaUtensils,
+  FaWheelchair,
+} from "react-icons/fa";
 import { MdCo2, MdFoodBank } from "react-icons/md";
 import { LuRecycle } from "react-icons/lu";
 
@@ -88,6 +102,7 @@ const ESGPage: React.FC = () => {
       {/* Social */}
       <SimpleCallBanner {...patrocinadorIniciativasData} />
       <ImageWithCardTextBanner {...patrocinadorIniciativasTexto1Data} />
+      <NumberCardsBanner {...numerosResidenciaData} />
       <DividingLine lineColor={"bg-var-social"} />
 
       <SimpleCallBanner {...equipeGenteGestaoData} />
@@ -106,6 +121,8 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
       <NumberCardsBanner {...feitosSocialData} />
+      <ImageWithCardTextBanner {...campanha1Data} />
+      <ImageWithCardTextBanner {...campanha2Data} />
       <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
@@ -139,12 +156,12 @@ const ESGPage: React.FC = () => {
 export default ESGPage;
 
 const callBannerData: CallBannerInterface = {
-  imageUrl: "/img/final/esg/compromisso.png",
+  imageUrl: "/img/temp/esg/compromisso.jpg",
   buttonLink: "https://www.t2mlab.com/nosso-blog/",
   buttonText: "Nosso blog",
   buttonTarget: "_blank",
   title: "Compromisso ESG",
-  alignment: "end",
+  alignment: "start",
   paragraph:
     "Este relatório apresenta as ações de impacto ambiental, social e de governança (ESG) implementadas por nossa empresa ao longo do último ano, destacando como essas iniciativas estão alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.",
 };
@@ -224,7 +241,7 @@ const utilizacaoNuvemData: SimpleCallBannerInterface = {
 
 const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
   paragraphs: [
-    "Desde a migração para o Microsoft Cloud, nossa empresa alcançou uma significativa redução nas emissões de carbono, reforçando o compromisso com práticas sustentáveis. Com base em dados estimados, evitamos a emissão de 2,192 toneladas de carbono, o que representa uma redução de 99,72% das emissões potenciais, graças à utilização de ferramentas como o SharePoint e o Exchange Online. ",
+    "Desde a migração para o Microsoft Cloud, nossa empresa alcançou uma significativa redução nas emissões de carbono, reforçando o compromisso com práticas sustentáveis. Com base em dados estimados, evitamos a emissão de 2,192 milhões toneladas de carbono, o que representa uma redução de 99,72% das emissões potenciais, graças à utilização de ferramentas como o SharePoint e o Exchange Online. ",
     "Nesse período, as emissões efetivas somaram apenas 0,007 toneladas, em comparação às 2,468 toneladas estimadas em um cenário tradicional. Essa transição para uma infraestrutura digital mais eficiente demonstra o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando a estratégia tecnológica às metas ESG.",
   ],
   imageAlt: "Escritório da T2M",
@@ -391,6 +408,62 @@ const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
   pointColor: "text-var-social",
 };
 
+const numerosResidenciaData: NumberCardsBannerInterface = {
+  title: "Caso Prático T2M – Parceria Serratec",
+  topTitle: "Indicadores - Residência",
+  paragraph: "Profissionais contratados pela T2M oriundos do Programa de Residência em TIC do Serratec 2019.2 – 2024.1",
+  alignment: "center",
+  cardBorder: "border-t-var-social",
+  cardColor: "var-social",
+  numberCards: [
+    {
+      icon: FaChild,
+      title: "205",
+      paragraph: "Pessoas adotadas pelo programa",
+    },
+    {
+      icon: FaBriefcase,
+      title: "101",
+      paragraph: "Contratações realizadas",
+    },
+    {
+      icon: FaChartLine,
+      title: "75%",
+      paragraph: "Permanência na T2M após o programa",
+    },
+    {
+      icon: FaWheelchair,
+      title: "4%",
+      paragraph: "Pessoas com deficiência no programa",
+    },
+    {
+      icon: FaFemale,
+      title: "21%",
+      paragraph: "Participação feminina",
+    },
+    {
+      icon: FaUserAlt,
+      title: "7%",
+      paragraph: "Pessoas negras participantes",
+    },
+    {
+      icon: FaSchool,
+      title: "51%",
+      paragraph: "Egressos de escola pública",
+    },
+    {
+      icon: FaHandsHelping,
+      title: "62%",
+      paragraph: "Beneficiários de ações afirmativas",
+    },
+    {
+      icon: FaChalkboardTeacher,
+      title: "10",
+      paragraph: "Atuam como professores ou monitores do programa",
+    },
+  ],
+};
+
 const equipeGenteGestaoData: SimpleCallBannerInterface = {
   alignment: "end",
   imageUrl: "/img/final/esg/mulheres.png",
@@ -493,7 +566,7 @@ const feitosSocialData: NumberCardsBannerInterface = {
   cardBorder: "border-var-social",
   numberCards: [
     {
-      title: "2 toneladas de alimentos arrecadadas",
+      title: "422 kg de alimentos arrecadados",
       icon: FaUtensils,
       paragraph: "",
     },
@@ -509,6 +582,26 @@ const feitosSocialData: NumberCardsBannerInterface = {
     },
   ],
   type: "border",
+};
+
+const campanha1Data: ImageWithCardTextBannerInterface = {
+  paragraph:
+    "Foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
+  imageAlt: "Escritório da T2M",
+  imageUrl: "/img/final/esg/esperancar.jpeg",
+  imageAlignment: "end",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
+};
+
+const campanha2Data: ImageWithCardTextBannerInterface = {
+  paragraph:
+    "A campanha do Outubro Rosa foi reforçada com a doação de 216 quilos de alimentos destinados à APPO - Associação Petropolitana dos Pacientes Oncológicos. Essa ação foi apadrinhada pela T2M para representar o Outubro Rosa.",
+  imageAlt: "Escritório da T2M",
+  imageUrl: "/img/final/esg/appo.jpeg",
+  imageAlignment: "start",
+  lineColor: "bg-var-social",
+  pointColor: "text-var-social",
 };
 
 const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
@@ -662,7 +755,7 @@ const metasData: NumberCardsBannerInterface = {
       paragraph: "",
     },
     {
-      title: "Redução de total das emissões de carbono",
+      title: "Redução total das emissões de carbono",
       icon: MdCo2,
       paragraph: "",
     },
@@ -684,6 +777,11 @@ const metasData: NumberCardsBannerInterface = {
     {
       title: "Aumentar em 30% a quantidade de voluntários em ações sociais",
       icon: FaUsers,
+      paragraph: "",
+    },
+    {
+      title: "Obter certificações ISO 27001 e ISO 27701",
+      icon: FaCertificate,
       paragraph: "",
     },
   ],
