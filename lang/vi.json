@@ -26,7 +26,13 @@
     "empregabilidade": "Việc làm",
     "empregabilidadeLabel": "Truy cập màn hình việc làm",
     "papoDiverso": "Trò chuyện khác nhau",
-    "papoDiversoLabel": "Truy cập trang web trò chuyện đa dạng"
+    "papoDiversoLabel": "Truy cập trang web trò chuyện đa dạng",
+    "leitorAudio": {
+      "carregando": "Mang theo giọng nói ...",
+      "semVozes": "Không có tiếng nói cho ngôn ngữ đã chọn",
+      "isReading": "Nhấp vào một số văn bản để bắt đầu đọc",
+      "isNotReading": "Bắt đầu đọc"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Hình thành các nhà khoa học trong tương lai",
-    "title": "Cô gái bắt giữ",
-    "paragraph": "Tác động đến những cô gái, vẫn còn ở trường, đối mặt với những thách thức cho sự tham gia của họ vào khoa học",
-    "buttonText": "Liên hệ"
-  },
-  "OQueEBanner": {
-    "topTitle": "Nó là gì?",
-    "title": "Girls STEM PETRAPOLIS TEC HUB",
-    "paragraph": "Dự án tìm cách giảm bất bình đẳng giới và mở rộng sự tham gia của phụ nữ vào khoa học, công nghệ, kỹ thuật và toán học (STEM). Sáng kiến ​​này tập trung vào kiến ​​thức công nghệ và thúc đẩy sự bao gồm nữ vào thành phố Petrópolis, ở Rio de Janeiro."
-  },
-  "ObjetivoBanner": {
-    "title": "Mục tiêu dự án",
-    "paragraph": "Dự án nhằm mục đích khuyến khích kiến ​​thức công nghệ giữa sinh viên và các nhà giáo dục, thúc đẩy một nền văn hóa bao gồm trong các ngành khoa học chính xác.",
-    "altImage": "Cô gái bắt giữ"
-  },
-  "ComoBanner": "Dự án sử dụng nền tảng cào để dạy lập trình theo cách vui tươi và liên ngành, kết hợp các cuộc tranh luận về giới tính, nhân quyền và bất bình đẳng.",
-  "MetodologiaBanner": {
-    "title": "Motodologia",
-    "paragraph": "Dự án nhằm mục đích khuyến khích kiến ​​thức công nghệ giữa sinh viên và các nhà giáo dục, thúc đẩy một nền văn hóa bao gồm trong các ngành khoa học chính xác.",
-    "altImage": "Cô gái bắt giữ"
-  },
-  "IconWithTextBanner": {
-    "title": "Ai phát triển?",
-    "topTitle": "Nhân viên của chúng tôi",
-    "paragraph": "Dự án được thực hiện bởi một mạng lưới các tổ chức nghiên cứu, khoa học và giáo dục, cùng với các tổ chức xã hội và kinh doanh. Tham gia vào sáng kiến ​​này:",
-    "iconCards": [
-      {
-        "title": "LNCC",
-        "description": "Phòng thí nghiệm máy tính khoa học quốc gia là một tổ chức nghiên cứu và nghiên cứu công nghệ của Brazil, chuyên về điện toán khoa học, liên quan đến Bộ Khoa học, Công nghệ và Đổi mới."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Báo cáo tác động xã hội",
+      "paragraph": "Tác động xã hội và phát triển bền vững trình bày các hành động và cam kết của T2M đối với thực tiễn trách nhiệm xã hội, môi trường và quản trị (ESG).",
+      "buttonText": "Tải xuống Báo cáo tác động xã hội"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme Photo, Giám đốc điều hành T2M",
+      "title": "Lãnh đạo sáng tạo.",
+      "topTitle": "Tin nhắn từ CEO của chúng tôi",
+      "paragraph": "Báo cáo tác động xã hội và phát triển bền vững năm 2024 này phản ánh cam kết của chúng tôi về tính minh bạch và trách nhiệm xã hội tại T2M. Nó phục vụ như một kênh cơ bản để truyền đạt các hành động và tiến bộ của chúng tôi trong tính bền vững, phù hợp với thực tiễn của chúng tôi với các mục tiêu phát triển bền vững của Liên Hợp Quốc và các nguyên tắc của ESG.",
+      "buttonText": "Đọc tin nhắn của CEO của chúng tôi"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Về báo cáo này",
+      "paragraphs": [
+        "Báo cáo về tác động xã hội và phát triển bền vững này trình bày các hành động và cam kết của T2M đối với các thực tiễn về trách nhiệm xã hội của xã hội, môi trường và quản trị (ESG).",
+        "Nó phản ánh những nỗ lực của chúng tôi để tạo ra một tác động tích cực đến cộng đồng của chúng tôi, thúc đẩy một môi trường làm việc toàn diện và bền vững và giảm thiểu dấu chân môi trường của chúng tôi.",
+        "Bằng cách chia sẻ những thành tựu và thách thức của chúng tôi, báo cáo này củng cố cam kết của chúng tôi về tính minh bạch và các mục tiêu phát triển bền vững của Liên Hợp Quốc (SDGs), cũng như hướng dẫn sự tiến hóa liên tục của chúng tôi hướng tới một tương lai bền vững hơn."
+      ],
+      "imageAlt": "Ảnh das ods đến đó"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Quá trình vật chất",
+      "paragraph": "Chúng tôi duy trì mối quan hệ liên tục và minh bạch với tất cả các bên liên quan, từ các cá nhân đến các tổ chức, để chúng tôi có thể hiểu được kỳ vọng và mối quan tâm của họ và chuyển chúng thành thông tin giá trị chiến lược để hỗ trợ quản lý kinh doanh của chúng tôi."
+    },
+    "partesInteressadasTrad": {
+      "title": "Cổ đông",
+      "paragraph": "T2M giá trị sự hợp tác với tất cả các bên liên quan để thúc đẩy sự đổi mới, minh bạch và các giải pháp tác động tích cực. Chúng tôi đã thiết lập các kênh đối thoại và các sáng kiến ​​phản ánh cam kết đối với các giá trị và mục tiêu chiến lược của chúng tôi.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Cộng tác viên",
+          "paragraph": "Các chương trình đào tạo liên tục, nghiên cứu khí hậu tổ chức, các cuộc họp liên kết chiến lược và hội thảo nhân viên."
+        },
+        {
+          "id": 2,
+          "title": "Khách hàng",
+          "paragraph": "Theo dõi các cuộc họp và trình bày, hỗ trợ chuyên dụng để giải quyết các câu hỏi và cải thiện dịch vụ."
+        },
+        {
+          "id": 3,
+          "title": "Đối tác chiến lược",
+          "paragraph": "Các thỏa thuận hợp tác cho các dự án tác động, tham gia vào các sự kiện thị trường, bài giảng và hội nghị, cũng như các cuộc họp định kỳ để tăng cường quan hệ đối tác chiến lược và liên minh."
+        },
+        {
+          "id": 4,
+          "title": "Cộng đồng",
+          "paragraph": "Các sáng kiến ​​trách nhiệm xã hội, tham gia vào các sự kiện địa phương, hỗ trợ cho các tổ chức phi chính phủ và các dự án cộng đồng, thúc đẩy tác động tích cực và bền vững trong các lĩnh vực mà chúng tôi hành động hiệu quả."
+        },
+        {
+          "id": 5,
+          "title": "Quản trị và tuân thủ",
+          "paragraph": "Sắp xếp chiến lược với các quy định, chính sách tuân thủ mạnh mẽ và tương tác liên tục với các thực thể chính phủ và quy định. Các chứng nhận ISO 37101 và ISO 37301, cũng như các thông lệ chống lại rắn và tuân thủ một quy tắc đạo đức nghiêm ngặt."
+        },
+        {
+          "id": 6,
+          "title": "Đa dạng và công bằng",
+          "paragraph": "Thúc đẩy một môi trường bao gồm thông qua các sáng kiến ​​coi trọng sự đa dạng về văn hóa, xã hội và giới tính. Các chính sách để đánh đồng các cơ hội, khuyến khích vốn chủ sở hữu và đảm bảo sự tôn trọng lẫn nhau, xây dựng văn hóa tổ chức bền vững và số nhiều."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Phương pháp",
+      "title": "Làm thế nào để chúng tôi xác định nội dung của báo cáo?",
+      "paragraph": "Hàng năm, chúng tôi đã tiến hành một bài tập về tính vật chất để hiểu quan điểm của các bên liên quan về các vấn đề môi trường, xã hội và kinh tế phù hợp hơn với quản lý bền vững, cũng xác định các cơ hội để thúc đẩy học tập và khuyến khích sự tham gia với các thực tiễn tốt nhất."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Ôn tập",
+          "title": "Phản ánh về các hành động và chính sách nhằm mục đích đa dạng và bao gồm giai đoạn trước.",
+          "paragraph": "Trong quá trình xem xét, chúng tôi đã đánh giá những tiến bộ được thực hiện trong việc tạo ra một môi trường bao gồm và trong sự tham gia của các nhóm bên liên quan khác nhau. Chúng tôi quyết định bao gồm các chủ đề mới, chẳng hạn như 'sự đa dạng trong nhiều khía cạnh trong chính sách của công ty' và 'cải thiện khả năng tiếp cận trong các sản phẩm và dịch vụ', để sắp xếp tốt hơn các hoạt động với nhu cầu hiện tại."
+        },
+        {
+          "topTitle": "Phân tích",
+          "title": "Tích hợp các đề xuất tập trung vào việc tăng cường các chiến lược bao gồm, môi trường và sức khỏe và hạnh phúc.",
+          "paragraph": "Trong quá trình phân tích, các chủ đề ưu tiên đã được nhấn mạnh, chẳng hạn như tầm quan trọng của các chiến dịch giáo dục nhạy cảm và thu hút nhân viên vào thực hành bao gồm, bền vững và thúc đẩy chăm sóc sức khỏe và hạnh phúc của tất cả mọi người."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "GreenWashing X Phát triển bền vững",
+      "title": "Sự thật đằng sau các thực hành bền vững",
+      "paragraph": "Nhiều công ty sử dụng các thực tiễn xanh, trình bày các sáng kiến ​​môi trường hời hợt mà không thực sự thay đổi quy trình của họ, điều này làm suy yếu tính minh bạch và mất phương hướng người tiêu dùng và nhà đầu tư.",
+      "extraButtonBottom": {
+        "buttonText": "Tiếp tục đọc bài viết trên trang web chính thức của chúng tôi"
       },
-      {
-        "title": "Serratec",
-        "description": "SERRATEC là một công viên công nghệ phi lợi nhuận trong nội địa của Rio de Janeiro, đóng vai trò là một người có cuộn cảm doanh nghiệp CNTT và bao gồm các thành phố của Petrópolis, Teresótolis, Nova Friburgo và Areal."
-      },
-      {
-        "title": "Faeterj Petropolis",
-        "description": "Faeterj Petrópolis là một tổ chức giáo dục đại học công cộng liên quan đến FAETEC, cung cấp các khóa học kỹ thuật và cao hơn trong các lĩnh vực khác nhau."
-      },
-      {
-        "title": "CEFET/RJ Uned Petrópolis",
-        "description": "CEFET/RJ Petrópolis là tổ chức giáo dục đại học công cộng đầu tiên trong thành phố, cung cấp các khóa học về phương thức Face -to -face và thuộc hệ thống CEFET/RJ."
-      },
-      {
-        "title": "Uff",
-        "description": "Đại học liên bang Fluminense (UFF) là một tổ chức giáo dục đại học công cộng tham khảo quốc gia, nổi bật trong các lĩnh vực kiến ​​thức khác nhau."
-      },
-      {
-        "title": "UFBA",
-        "description": "Đại học liên bang Bahia (UFBA) là một tổ chức giáo dục đại học công cộng có trụ sở tại Salvador, liên quan đến Bộ Giáo dục, với quyền tự chủ hành chính và hợp pháp."
-      },
-      {
-        "title": "Biomob",
-        "description": "Biomob chuyên về các giải pháp tiếp cận và các dự án xã hội, tập trung vào việc thúc đẩy một xã hội toàn diện và bình đẳng hơn."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech phát triển các dự án nghiên cứu, phát triển và đổi mới cho các công ty và các tổ chức chính phủ, nhằm mục đích đổi mới và tiến bộ công nghệ."
-      },
-      {
-        "title": "TJ-RJ",
-        "description": "Tòa án Công lý Rio de Janeiro (TJ-RJ) chịu trách nhiệm quản lý công lý tại Bang, với quyền tài phán đối với toàn bộ lãnh thổ Fluminense."
-      },
-      {
-        "title": "Tòa thị chính Petr Đau",
-        "description": "Tòa thị chính của Petrópolis quản lý thành phố lịch sử nằm ở khu vực miền núi Rio de Janeiro, thực hiện các chính sách và dịch vụ công cộng cho người dân."
-      },
-      {
-        "title": "Seeduc-rj",
-        "description": "Seeduc-RJ chịu trách nhiệm quản lý các chính sách giáo dục của tiểu bang Rio de Janeiro, đảm bảo tiếp cận với giáo dục chất lượng trong các trường công lập tiểu bang."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "TÌM KIẾM",
-    "title": "Những gì được mong đợi của dự án?",
-    "paragraph": "Dự án tìm cách củng cố trí tưởng tượng và lòng tự trọng của các cô gái, chiến đấu bỏ học và đóng góp cho việc xây dựng một xã hội công bằng hơn. Người ta dự kiến ​​sẽ kích thích và mở rộng sự tham gia của phụ nữ vào STEM, đồng thời giảm bớt sự kỳ thị và phân biệt đối xử.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "vi"
+      "numberCards": [
+        {
+          "title": "Tác động môi trường thực sự",
+          "paragraph": "Các công ty cam kết phát triển bền vững tạo ra những thay đổi thực sự, chẳng hạn như giảm lượng khí thải carbon và việc sử dụng tài nguyên thiên nhiên có trách nhiệm, để gây ra tác động môi trường tích cực."
+        },
+        {
+          "title": "Tính minh bạch của công ty",
+          "paragraph": "Để tránh GreenWashing, điều quan trọng đối với các công ty là xuất bản các báo cáo rõ ràng về các hành động và thành tích bền vững của họ, với dữ liệu có thể kiểm chứng và các mục tiêu cụ thể."
+        },
+        {
+          "title": "Tiêu thụ ý thức",
+          "paragraph": "Người tiêu dùng có ý thức có thể xác định các thực tiễn xanh bằng cách tìm kiếm các thương hiệu với các cam kết bền vững đã được chứng minh, chẳng hạn như sử dụng các vật liệu có thể tái chế và chính sách giảm chất thải."
+        },
+        {
+          "title": "Chứng nhận và kiểm toán",
+          "paragraph": "Có được các chứng chỉ được công nhận và kiểm toán bên ngoài giúp xác nhận cam kết của các công ty về tính bền vững bằng cách cung cấp sự tự tin cho người tiêu dùng và nhà đầu tư."
+        },
+        {
+          "title": "Kinh tế vòng tròn",
+          "paragraph": "Nền kinh tế tuần hoàn là một thay thế cho mô hình truyền thống 'loại bỏ sau khi sử dụng', khuyến khích các công ty tái chế, tái sử dụng và giảm chất thải, thúc đẩy một phương pháp tiếp cận bền vững và tái tạo."
+        },
+        {
+          "title": "Vai trò của quản trị",
+          "paragraph": "Quản trị đóng một vai trò cơ bản trong việc chống lại GreenWashing, vì nó hướng dẫn các quyết định kinh doanh cho các hoạt động PDD có trách nhiệm và phù hợp, đảm bảo tính toàn vẹn và trách nhiệm."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Bền vững",
+      "paragraph": "Chúng tôi cam kết đóng góp cho sự phát triển bền vững thông qua hoạt động kinh doanh và hoạt động của chúng tôi, tạo ra giá trị dài hạn cho khách hàng, nhân viên, nhà cung cấp, cổ đông và xã hội của chúng tôi."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Thời gian trồng của Phong trào Tái sinh",
+      "paragraph": "Bằng cách hỗ trợ các dự án trồng cây và cây, chẳng hạn như sự chuyển động tái tạo của việc trồng trọt, chúng tôi tăng cường nhân vật chính của các cộng đồng và thúc đẩy cảm giác thuộc về. Với việc trồng cây, ngoài việc bảo vệ môi trường, chúng tôi tạo ra một di sản lâu dài, đảm bảo rằng các thế hệ tương lai phát triển trong một lãnh thổ coi trọng và bảo tồn ký ức của họ và bản chất xung quanh chúng.",
+      "numberCards": [
+        {
+          "title": "Phong trào tự quản lý",
+          "paragraph": "Hàng năm, trong mùa mưa (tháng 10 đến tháng 3), phong trào khuyến khích sự tham gia tích cực của mọi người vào việc trồng cây, tạo ra một kết nối trực tiếp với tự nhiên và thúc đẩy nhận thức về môi trường lớn hơn."
+        },
+        {
+          "title": "Vào tháng 12 năm 2024",
+          "paragraph": "Vào tháng 12 năm 2024, T2M đã trồng 100 cây con trong Vale Das Videoiras Arboretical. Cột mốc này là một phần của nỗ lực liên tục để thúc đẩy việc phục hồi thảm thực vật bản địa và sự phục hồi của các khu vực xuống cấp."
+        },
+        {
+          "title": "Kỳ vọng cho năm 2025",
+          "paragraph": "Trong năm 2025, mục tiêu là tăng gấp đôi việc trồng cây trên khắp thành phố, với sự hỗ trợ của tất cả nhân viên. Mục tiêu là khôi phục các khu rừng bản địa và các loài bản địa, với sự tham gia tích cực của cộng đồng và các sáng kiến ​​địa phương."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Các chiến dịch của chúng tôi",
+      "paragraph": "Ngoài việc cung cấp các bài kiểm tra xuất sắc tự động, T2M tự hào tạo và sản xuất các chiến dịch của riêng mình",
+      "numberCards": [
+        {
+          "title": "Cử chỉ đoàn kết",
+          "paragraph": "Từ năm 2023, chúng tôi đã thực hiện các chiến dịch đoàn kết như thu gom thực phẩm, quần áo lạnh, các sản phẩm vệ sinh và mũ nhựa trao đổi cho xe lăn, tã và gậy."
+        },
+        {
+          "title": "Làm tốt",
+          "paragraph": "DBA - Chăm sóc những người chăm sóc là một sự kiện dành cho các bà mẹ và người chăm sóc, cung cấp dịch vụ chăm sóc thẩm mỹ, bài giảng và lời khuyên phúc lợi, tích hợp phong trào hành động tốt toàn cầu (DBA)."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta là một hội chợ việc làm cung cấp các cơ hội việc làm đầu tiên, tập trung vào các bà mẹ đơn thân và người khuyết tật, thúc đẩy sự bao gồm và bình đẳng trong thị trường việc làm."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Phần",
-    "title": "Ai tham gia?",
-    "paragraph": "Học sinh sẽ được chọn từ kỷ niệm 8 và 9 của Trường tiểu học II và năm thứ 1, 2 và 3 của trường trung học, theo tiêu chí của dự án, cùng với ít nhất một giáo viên của mỗi trường tham gia. Người nắm giữ học bổng sẽ tham gia vào các hoạt động và mục tiêu sau:",
-    "iconCards": [
-      {
-        "title": "Học về lập trình"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "Cam kết ESG",
+        "paragraph": "Báo cáo này trình bày các hành động của tác động môi trường, xã hội và quản trị (ESG) được thực hiện bởi công ty chúng tôi trong năm qua, nêu bật cách các sáng kiến ​​này được liên kết với các mục tiêu phát triển bền vững của Liên Hợp Quốc (SDGs).",
+        "buttonText": "Blog của chúng tôi"
       },
-      {
-        "title": "Phát triển các trò chơi giáo dục trên nền tảng cào"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Chiến lược",
+        "title": "Cam kết của chúng tôi",
+        "paragraph": "Cam kết của chúng tôi đối với ESG là một phần trung tâm trong chiến lược của chúng tôi, góp phần giảm các tác động môi trường, tăng cường các thực tiễn xã hội bao gồm và áp dụng quản trị doanh nghiệp đạo đức và có trách nhiệm. Nỗ lực liên tục của chúng tôi để tích hợp SDG với các hoạt động củng cố hành động bền vững của chúng tôi, tạo ra giá trị cho tất cả các bên liên quan.",
+        "buttonText": "Tôi muốn trở thành một phần",
+        "imageAlt": "Văn phòng T2M"
       },
-      {
-        "title": "Tham gia vào một câu lạc bộ khoa học"
+      "gestaoResiduosTrad": {
+        "topTitle": "Môi trường",
+        "title": "Quản lý chất thải và lựa chọn vật liệu bền vững",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
       },
-      {
-        "title": "Sự hiện diện trong các sự kiện phổ biến khoa học"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "Văn phòng T2M",
+        "paragraph": "Cam kết của chúng tôi đối với ESG là một phần trung tâm trong chiến lược của chúng tôi, góp phần giảm các tác động môi trường, tăng cường các thực tiễn xã hội bao gồm và áp dụng quản trị doanh nghiệp đạo đức và có trách nhiệm. Nỗ lực liên tục của chúng tôi để tích hợp SDG với các hoạt động củng cố hành động bền vững của chúng tôi, tạo ra giá trị cho tất cả các bên liên quan."
       },
-      {
-        "title": "Tham gia vào các bài giảng và hội thảo"
+      "contratosAssinadosTrad": {
+        "topTitle": "Môi trường",
+        "title": "Hợp đồng đã ký hầu như",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
       },
-      {
-        "title": "Chuẩn bị các báo cáo trung gian và cuối cùng"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Là một phần trong cam kết của chúng tôi về tính bền vững, T2M đã áp dụng chính sách số hóa tài liệu và chữ ký ảo của các hợp đồng, làm giảm đáng kể nhu cầu in giấy. Việc chuyển đổi sang hợp đồng kỹ thuật số không chỉ hợp lý hóa các quy trình của chúng tôi mà còn bảo tồn tài nguyên thiên nhiên, giảm mức tiêu thụ giấy, sơn và năng lượng. Thực tiễn này đóng góp trực tiếp vào việc giảm nạn phá rừng và sử dụng bền vững tài nguyên thiên nhiên. Trong suốt cả năm, thực tế này đã dẫn đến việc giảm đáng kể chất thải giấy, củng cố cam kết của T2M đối với môi trường và quản lý hiện đại và bền vững.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Môi trường",
+        "title": "Sử dụng đám mây, giảm mức tiêu thụ phần cứng",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Kể từ khi di chuyển sang Microsoft Cloud, công ty chúng tôi đã đạt được sự giảm đáng kể lượng khí thải carbon, củng cố cam kết đối với các hoạt động bền vững. Dựa trên dữ liệu ước tính, chúng tôi tránh được mức phát thải 2,192 triệu tấn carbon, đại diện cho việc giảm 99,72% lượng khí thải tiềm năng, nhờ sử dụng các công cụ như SharePoint và Exchange trực tuyến.",
+          "Trong giai đoạn này, khí thải hiệu quả chỉ có 0,007 tấn, so với ước tính 2,468 tấn trong một kịch bản truyền thống. Sự chuyển đổi này sang một cơ sở hạ tầng kỹ thuật số hiệu quả hơn cho thấy tác động tích cực của các giải pháp đám mây trong việc giảm dấu chân carbon, sắp xếp chiến lược công nghệ với EX -goals."
+        ],
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "Trong T2M, việc sử dụng các giải pháp đám mây của Microsoft, chẳng hạn như OneDrive, Azure và các nhóm, là điều cần thiết để giảm mức tiêu thụ năng lượng và nhu cầu về phần cứng vật lý mới.",
+          "Những công cụ này làm giảm nhu cầu đối với các máy chủ vật lý, tiêu thụ rất nhiều năng lượng và cần bảo trì. Với mục đích của Microsoft để sử dụng năng lượng tái tạo 100% trên các dữ liệu của mình vào năm 2025, T2M đóng góp cho một tương lai bền vững hơn.",
+          "Ngoài ra, đám mây cung cấp khả năng mở rộng, hiệu quả, bảo mật và khả năng truy cập dữ liệu, phản ánh cam kết của T2M đối với các thực tiễn công nghệ bền vững và sáng tạo."
+        ],
+        "imageAlt": "Văn phòng T2M"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Môi trường",
+        "title": "Tiêu thụ nước có ý thức",
+        "lineColor": "BG-VAR-Môi trường",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Tiêu thụ nước có ý thức là ưu tiên hàng đầu trong T2M và chúng tôi đã thực hiện các thực tiễn khác nhau để giảm lãng phí tài nguyên quan trọng này. Ngoài ra, chúng tôi thúc đẩy các chiến dịch nâng cao nhận thức nội bộ, khuyến khích nhân viên của chúng tôi áp dụng thói quen chịu trách nhiệm sử dụng nước ở cả nơi làm việc và trong nhà của họ. Thực tiễn này nhằm mục đích giảm mức tiêu thụ nước và đóng góp vào việc bảo tồn tài nguyên nước, liên kết với các mục tiêu phát triển bền vững của Liên Hợp Quốc (SDGs). Với những hành động này, chúng tôi tìm cách giảm thiểu tác động môi trường của chúng tôi và truyền cảm hứng cho văn hóa bền vững trong các nhân viên của chúng tôi.",
+        "imageAlt": "Hình ảnh văn phòng của T2M tập trung vào tiêu thụ nước có ý thức",
+        "iconAlt": "Biểu tượng đại diện của tiêu thụ nước có ý thức"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Môi trường",
+        "title": "Kích thích để giảm việc sử dụng xe đốt",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M khuyến khích nhân viên của mình áp dụng các hoạt động di động bền vững hơn, giảm lưu lượng CO2 và phát hành bằng phương tiện đốt. Để tạo điều kiện cho quá trình chuyển đổi này, chúng tôi cung cấp các ưu đãi cho việc sử dụng giao thông công cộng và chia sẻ, sự kích thích di chuyển bền vững này phản ánh cam kết của chúng tôi trong việc giảm phát thải khí nhà kính và giảm lượng khí thải carbon của chúng tôi. Ngoài ra, chúng tôi thúc đẩy nhận thức về lợi ích của khả năng di chuyển bền vững hơn, góp phần vào hạnh phúc của nhân viên và bảo tồn môi trường.",
+        "imageAlt": "Văn phòng T2M"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Môi trường",
+        "title": "Chuỗi các nhà cung cấp cam kết với môi trường",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M định giá một chuỗi nhà cung cấp phù hợp với các giá trị bền vững của nó, ưu tiên quan hệ đối tác với các công ty áp dụng các hoạt động có trách nhiệm với môi trường. Chúng tôi đã đánh giá cẩn thận các nhà cung cấp của chúng tôi để đảm bảo rằng họ chia sẻ cam kết của chúng tôi đối với việc bảo tồn môi trường và để giảm tác động tiêu cực đến môi trường. Điều này bao gồm các nhà cung cấp áp dụng các phương pháp bền vững trong sản xuất của họ, sử dụng vật liệu tái chế, thực hiện các chương trình giảm chất thải và đáp ứng các tiêu chuẩn trách nhiệm môi trường. Bằng cách tích hợp các thực tiễn ESG vào chuỗi cung ứng của chúng tôi, chúng tôi tăng cường cam kết của chúng tôi đối với hoạt động bền vững và mở rộng tác động tích cực của chúng tôi bằng cách ảnh hưởng đến các tổ chức khác để áp dụng các hoạt động có trách nhiệm.",
+        "imageAlt": "Văn phòng T2M"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Môi trường",
+        "title": "Tái chế vật liệu điện tử và pin",
+        "iconAlt": "Biểu tượng cho chủ đề môi trường"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M áp dụng các hoạt động tái chế nghiêm ngặt của thiết bị điện tử và pin, nhận ra tầm quan trọng của việc xử lý đúng các vật liệu này để tránh các tác động tiêu cực đến môi trường. Chất thải điện tử được gửi đến các công ty được chứng nhận đảm bảo xử lý chính xác và tái chế thành phần, góp phần phục hồi các vật liệu có giá trị và giảm chất thải độc hại. Trong nội bộ, chúng tôi thúc đẩy nhận thức về tầm quan trọng của việc tái chế điện tử giữa các nhân viên, khuyến khích xử lý đúng đắn. Sáng kiến ​​này phản ánh cam kết của chúng tôi đối với nền kinh tế tuần hoàn, tránh ô nhiễm đất và nước và thúc đẩy quản lý chất thải hiệu quả và có trách nhiệm hơn.",
+        "imageAlt": "Văn phòng T2M"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Sản phẩm của chúng tôi vào năm 2024",
+        "paragraph": "Vào năm 2024, chúng tôi đã tiến bộ trong các sáng kiến ​​củng cố tính bền vững và bao gồm, thúc đẩy sự đa dạng, công bằng và thực tiễn vững chắc, tập trung vào tác động tích cực đến năm 2025.",
+        "numberCards": [
+          {
+            "title": "100 cây trồng"
+          },
+          {
+            "title": "Giảm 99,72% lượng khí thải carbon"
+          },
+          {
+            "title": "Không tiêu thụ tài liệu dùng một lần"
+          },
+          {
+            "title": "Tiết kiệm 2.500 tờ thông qua chữ ký số"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Xã hội",
+        "title": "Nhà tài trợ các sáng kiến ​​đào tạo chuyên nghiệp",
+        "iconAlt": "Biểu tượng liên quan đến chủ đề xã hội"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M là một trong những nhà tài trợ chính của Chương trình cư trú phần mềm Serratec, nhằm mục đích cho phép những người trẻ tuổi bị tổn thương kinh tế cho sự nghiệp công nghệ. Ngoài việc tài trợ, T2M còn cung cấp cho nhân viên dạy các lớp học và giám sát, tích cực đóng góp vào sự hình thành của cư dân. Công ty cũng có quan hệ đối tác với UFF tại Fest (Trường Phần mềm và Nhà máy Thử nghiệm), hỗ trợ các khóa học thiết yếu như chủ sở hữu sản phẩm, Master Scrum và chất lượng phần mềm. Những hành động này củng cố cam kết của T2M đối với trách nhiệm xã hội và sự phát triển của các tài năng địa phương, thúc đẩy một nền kinh tế toàn diện và bền vững hơn.",
+        "imageAlt": "Văn phòng T2M"
+      },
+      "numerosResidenciaTrad": {
+        "title": "Trường hợp thực tế T2M - Quan hệ đối tác Serratec",
+        "topTitle": "Chỉ số - Cư trú",
+        "paragraph": "Các chuyên gia được thuê bởi T2M từ Chương trình cư trú CNTT SERRATEC 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Những người được chương trình nhận nuôi"
+          },
+          {
+            "title": "101",
+            "paragraph": "Tuyển dụng"
+          },
+          {
+            "title": "75%",
+            "paragraph": "T2M vĩnh viễn sau chương trình"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Những người khuyết tật trong chương trình"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Sự tham gia của phụ nữ"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Người da đen tham gia"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Sinh viên tốt nghiệp trường công"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Hành động khẳng định thụ hưởng"
+          },
+          {
+            "title": "10",
+            "paragraph": "Đóng vai trò là giáo viên hoặc giám sát viên của chương trình"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Xã hội",
+        "title": "Nhóm người và quản lý tổng hợp 100% bởi phụ nữ",
+        "iconAlt": "Biểu tượng liên quan đến chủ đề xã hội"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Nhóm người và quản lý T2M là 100% bao gồm phụ nữ, nêu bật cam kết mạnh mẽ của công ty về sự đa dạng và hòa nhập. Ngoài ra, khoảng 75% nhóm hành chính bao gồm phụ nữ, người khuyết tật và người da đen, củng cố sự cống hiến của T2M để thúc đẩy môi trường làm việc số nhiều và đại diện. Nhóm người và quản lý này đóng một vai trò quan trọng trong việc xây dựng văn hóa tổ chức chào đón và bình đẳng, thực hiện các chính sách phát triển chuyên nghiệp và các hành động coi trọng sự đa dạng của các quan điểm trong công ty. T2M tin rằng sự bao gồm là một trụ cột thiết yếu cho sự thành công của văn hóa tổ chức, thúc đẩy đổi mới và tạo ra một tác động xã hội tích cực.",
+        "imageAlt": "Văn phòng T2M"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Xã hội",
+        "title": "Chương trình chất lượng cuộc sống",
+        "iconAlt": "Biểu tượng liên quan đến chủ đề xã hội"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M thúc đẩy hạnh phúc của nhân viên thông qua chương trình hoạt động thể chất, được tổ chức vào thứ bảy hàng tuần. Chương trình này nhằm cải thiện chất lượng cuộc sống và sức khỏe tinh thần của nhân viên, khuyến khích họ áp dụng lối sống lành mạnh và năng động hơn. Các hoạt động được điều chỉnh để đáp ứng các cấp điều hòa khác nhau, thúc đẩy sự tham gia và hội nhập giữa những người tham gia. T2M tin rằng đầu tư vào sức khỏe của nhân viên góp phần vào môi trường làm việc hiệu quả và hạnh phúc hơn.",
+        "imageAlt": "Hình ảnh minh họa của chương trình hoạt động thể chất tại văn phòng T2M"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Xã hội",
+        "title": "Chiến dịch đoàn kết",
+        "iconAlt": "Biểu tượng liên quan đến chủ đề xã hội"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M quảng bá, trong suốt cả năm, chiến dịch cử chỉ đoàn kết, chiến dịch thu thập thực phẩm và quần áo, dành cho các tổ chức địa phương và người vô gia cư. Trong thời gian tiệc tùng, chúng tôi cũng đã tổ chức chiến dịch áp dụng bức thư Giáng sinh của mình, đặc biệt tập trung vào việc gửi quà cho trẻ em trong các tình huống dễ bị tổn thương và với sự đa dạng chức năng, mang lại niềm vui và sự hỗ trợ cho các cộng đồng và tổ chức. T2M tích cực khuyến khích nhân viên của mình tham gia vào các hành động này, củng cố văn hóa đoàn kết và tham gia xã hội trong công ty. Hỗ trợ tập thể này là rất cần thiết cho thành công chiến dịch và để mở rộng tác động tích cực của chúng tôi đối với cộng đồng.",
+        "imageAlt": "Hình ảnh quyên góp do T2M, Biomob và Serratec thực hiện"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Xã hội",
+        "title": "Tình nguyện và hỗ trợ cho các sáng kiến ​​việc làm",
+        "iconAlt": "Biểu tượng liên quan đến chủ đề xã hội"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M có cam kết vững chắc trong việc tình nguyện và hỗ trợ việc làm, tích cực tham gia vào các chương trình và sáng kiến ​​thúc đẩy sự bao gồm xã hội và sự phát triển của các tài năng trẻ. Công ty hợp tác với các công việc dễ bị tổn thương nhằm vào những người dễ bị tổn thương, chẳng hạn như các bà mẹ solo, LGBTQIAP+, những người có sự đa dạng chức năng, người tị nạn, nhà tù và sinh viên tốt nghiệp hệ thống trẻ để tìm kiếm công việc đầu tiên. Ngoài ra, T2M khuyến khích nhân viên của mình tình nguyện làm diễn giả và giảng viên trong các khóa học chuẩn bị giải quyết các kỹ năng kỹ thuật và hành vi thiết yếu, chuẩn bị cho người tham gia nổi bật trong thị trường việc làm.",
+        "imageAlt": "Hình ảnh văn phòng của T2M, nhấn mạnh vào hỗ trợ việc làm"
+      },
+      "feitosSocialTrad": {
+        "title": "Thành tựu xã hội của chúng tôi vào năm 2024",
+        "paragraph": "Vào năm 2024, chúng tôi đã tiến bộ trong các sáng kiến ​​củng cố tính bền vững và bao gồm, thúc đẩy sự đa dạng, công bằng và thực tiễn vững chắc, tập trung vào tác động tích cực đến năm 2025.",
+        "numberCards": [
+          {
+            "title": "422 kg thực phẩm được thu thập",
+            "iconAlt": "Biểu tượng dụng cụ nhà bếp"
+          },
+          {
+            "title": "7 Hành động xã hội được thực hiện: Bioconecta, DBA, tháng 10 Rose và 4 hành động cử chỉ đoàn kết",
+            "iconAlt": "Biểu tượng của bàn tay giúp đỡ"
+          },
+          {
+            "title": "180 tình nguyện viên trong các hành động xã hội của chúng tôi",
+            "iconAlt": "Biểu tượng người dùng"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Có 206 pound thực phẩm cho dự án Esperança, một sáng kiến ​​nhằm mục đích biến cuộc sống và hỗ trợ những người cần nó nhất. Hành động được tài trợ bởi nhân viên Emanuel, người đóng vai trò quan trọng trong việc huy động và thu thập. Sự đóng góp này phản ánh tinh thần đoàn kết và cam kết xã hội truyền cảm hứng cho cộng đồng đóng góp cho một tương lai tốt hơn.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "campanha2Trad": {
+        "paragraph": "Chiến dịch hoa hồng tháng 10 đã được củng cố với việc quyên góp 216 pound thực phẩm cho APPO - Hiệp hội bệnh nhân ung thư Petropolitan. Hành động này được T2M tài trợ để đại diện cho tháng mười Rose.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Quản trị",
+        "title": "Các tiêu chuẩn, mã và luật pháp nội bộ và bên ngoài của T2M",
+        "iconAlt": "Biểu tượng liên quan đến quản trị chủ đề"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2M, được thành lập tại Brazil năm 2002, hành động với cam kết mạnh mẽ về tính minh bạch và tuân thủ các quy tắc, quy tắc và luật áp dụng trong cả bối cảnh của công ty và quốc gia. Tiêu chuẩn của chúng tôi mở rộng cho tất cả nhân viên, đối tác và hội đồng quản trị, hướng dẫn các trách nhiệm pháp lý và các cam kết đạo đức hỗ trợ các hoạt động T2M.",
+          "Quy tắc đạo đức và hành vi của chúng tôi, cùng với các chính sách chống -suborno, tuân thủ, và sự đa dạng và bao gồm, đóng vai trò là hướng dẫn tham khảo cho hành vi thích hợp với khách hàng, nhà cung cấp và đối tác. Những tài liệu này, ngoài việc thúc đẩy các tiêu chuẩn đạo đức, giảm khả năng xảy ra hành vi không đầy đủ.",
+          "Để củng cố sự liên kết với các hướng dẫn của chúng tôi, tất cả nhân viên phải định kỳ hoàn thành khóa học chính sách nội bộ, có sẵn trên mạng nội bộ của chúng tôi, nơi các giá trị, quy tắc và chính sách nội bộ được xem xét."
+        ],
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Quản trị",
+        "title": "Ủy ban T2M",
+        "iconAlt": "Biểu tượng liên quan đến quản trị chủ đề"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Tuân thủ: Ủy ban này chịu trách nhiệm quản lý độc lập và tự trị của chương trình toàn vẹn T2M, đảm bảo các nguồn lực cần thiết để đảm bảo sự vô tư của các hoạt động tuân thủ trong công ty. Ngoài việc khuyến khích báo cáo về sự nghi ngờ và vi phạm, ủy ban tìm cách nuôi dưỡng văn hóa trách nhiệm ở tất cả các cấp, khuyến khích phòng chống gian lận và phát hiện. Cán bộ tuân thủ, một chức năng thiết yếu trong quá trình này, có quyền tự chủ trực tiếp và tiếp cận với định hướng cao, cũng như thẩm quyền để quản lý hệ thống chống và tuân thủ của tổ chức.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (Ủy ban phòng chống tai nạn nội bộ): Tuân thủ NR-5, T2M CIPA có chức năng xác định và giảm thiểu rủi ro tại nơi làm việc, thúc đẩy các chiến dịch nâng cao nhận thức và đào tạo, và có liên quan đến các vấn đề quấy rối, tăng cường văn hóa an ninh và phòng ngừa giữa Nhân viên của chúng tôi. Hiện tại, Ủy ban bao gồm 10 thành viên, 30% phụ nữ, củng cố cam kết của chúng tôi về sự đa dạng và hòa nhập.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Quản trị",
+        "title": "Chứng nhận và tiêu chuẩn quốc tế",
+        "iconAlt": "Biểu tượng liên quan đến quản trị chủ đề",
+        "paragraph": "Ngoài các ủy ban, T2M được liên kết với các tiêu chuẩn quốc tế về tính toàn vẹn và đạo đức kinh doanh."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "Chúng tôi có các chứng chỉ ISO 37001: 2017, thiết lập và tăng cường hệ thống quản lý chống hỗ trợ và thúc đẩy văn hóa minh bạch; và ISO 37301: 2021, xác định các tiêu chuẩn cho các hệ thống tuân thủ, đảm bảo tuân thủ các luật và quy định hiện hành.",
+          "Những chứng nhận này là một sự phản ánh cam kết của chúng tôi đối với các hoạt động kinh doanh đạo đức, minh bạch và có trách nhiệm. Những sáng kiến ​​này thể hiện cam kết của T2M nhằm duy trì sự an toàn, đạo đức và phù hợp với các thực tiễn tốt nhất trên thị trường."
+        ],
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Quản trị",
+        "title": "Các kênh của các đơn tố cáo",
+        "iconAlt": "Biểu tượng liên quan đến quản trị chủ đề"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M cung cấp một kênh khiếu nại được liên kết trực tiếp với Ủy ban Đạo đức, nơi nhận và phân tích tất cả các khiếu nại được gửi, cũng như giám sát việc thực hiện, giám sát và tính toàn vẹn của chương trình tuân thủ của công ty.",
+          "Khiếu nại có thể được thực hiện ẩn danh thông qua một hình thức dễ dàng truy cập, đảm bảo tính bảo mật và bảo mật cho những người khiếu nại.",
+          "Ngoài kênh này, chúng tôi cũng cung cấp một kênh khiếu nại cụ thể của CIPA, hướng đến việc liên lạc với các trường hợp quấy rối và các sự cố khác liên quan đến an toàn và hạnh phúc tại nơi làm việc.",
+          "Tất cả thông tin cá nhân được chia sẻ được xử lý với bảo mật nghiêm ngặt, đảm bảo sự riêng tư của nhân viên. Cả hai kênh nhằm mục đích thúc đẩy một môi trường an toàn, đạo đức và chào đón cho tất cả mọi người."
+        ],
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Quản trị",
+        "title": "Vốn chủ sở hữu lương",
+        "iconAlt": "Biểu tượng liên quan đến quản trị chủ đề",
+        "paragraph": "T2M cung cấp báo cáo về tính minh bạch và bình đẳng lương của phụ nữ và nam giới, một báo cáo củng cố cam kết với công bằng xã hội.",
+        "buttonText": "Báo cáo"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Báo cáo này trình bày các tiêu chí về thù lao và hành động để đảm bảo sự đa dạng, chẳng hạn như tạo ra một vị trí và tiền lương hoặc kế hoạch nghề nghiệp, chính sách tuyển dụng của phụ nữ (đen, khuyết tật, trong các tình huống bạo lực, người đứng đầu gia đình, LGBTQIA+, bản địa) và phụ nữ Chính sách xúc tiến cho các vị trí quản lý và quản lý.",
+        "imageAlt": "Hình ảnh văn phòng T2M"
+      },
+      "metasTrad": {
+        "title": "Mục tiêu của chúng tôi vào năm 2025",
+        "paragraph": "Chúng tôi tiếp tục cam kết bền vững và bao gồm, tập trung vào việc cải tiến liên tục các thực hành ESG đến năm 2025, với tác động tích cực đến xã hội và môi trường.",
+        "numberCards": [
+          {
+            "title": "Sao chép lượng cây được trồng"
+          },
+          {
+            "title": "Tổng số lượng khí thải carbon"
+          },
+          {
+            "title": "Mở rộng mức tiêu thụ vật liệu tái chế"
+          },
+          {
+            "title": "Tăng bộ sưu tập thực phẩm lên 50%"
+          },
+          {
+            "title": "Sao chép số lượng các hành động xã hội được thực hiện"
+          },
+          {
+            "title": "Tăng số lượng tình nguyện viên trong các hành động xã hội lên 30%"
+          },
+          {
+            "title": "Get ISO 27001 và ISO 27701 Chứng chỉ"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "liên hệ",
-    "title": "Liên hệ với chúng tôi",
-    "paragraph": "Để liên hệ với chúng tôi, hãy gửi một tin nhắn đến e-mail của chúng tôi cô gái của chúng tôi của chúng tôi@gmail. Chúng tôi trả lời càng sớm càng tốt!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Chúng ta là ai?",
+      "paragraph": "Ngày nay, sau hơn 20 năm thành lập T2M, chúng tôi là một công ty trưởng thành, với khoảng 300 nhân viên, trong quá trình cải thiện kỹ thuật liên tục, được công nhận về chất lượng công việc của chúng tôi bởi các công ty quan trọng trong danh mục khách hàng của chúng tôi.",
+      "buttonText": "Trang web chính thức của công ty"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "Văn phòng T2M",
+      "title": "An ninh làm việc trong một công ty vững chắc, với hơn 20 năm trên thị trường",
+      "topTitle": "Làm việc với chúng tôi",
+      "paragraph": "T2M được thành lập vào năm 2002 ban đầu với tư cách là một văn phòng thử nghiệm phần mềm. Chúng tôi sớm thấy rằng chúng tôi cần phải tiếp tục và chúng tôi đã xác minh tất cả các bước phát triển của một hệ thống và chuyên về chất lượng phần mềm.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Kinh nghiệm phi thường và dễ tiếp cận cho tất cả.",
+      "paragraph": "Một T2M - Kiểm tra thị trường LTDA. Đây là một công ty Brazil, với hơn 20 năm tồn tại, chuyên đảm bảo sự xuất sắc trong phát triển phần mềm, thông qua các bài kiểm tra nghiêm ngặt và theo dõi chi tiết tất cả các bước khác để xây dựng một dự án. Gần đây chúng tôi đã mở rộng các dịch vụ của mình, thêm quyền riêng tư và bảo mật dữ liệu, khả năng truy cập kỹ thuật số và sự nhanh nhẹn kinh doanh thông qua các đối tác nổi tiếng trong các phân khúc này."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Làm thế nào các dịch vụ xuất sắc của chúng tôi có thể giúp thúc đẩy doanh nghiệp của bạn.",
+      "paragraph": "Tìm hiểu làm thế nào chúng tôi có thể mở rộng đáng kể tính hiệu quả, chất lượng và an toàn của doanh nghiệp và dịch vụ của bạn, mang lại kết quả cao hơn.",
+      "icons": [
+        {
+          "title": "Chất lượng phần mềm",
+          "paragraph": "Giải pháp chất lượng phần mềm của chúng tôi tối ưu hóa tất cả các bước phát triển, đảm bảo hiệu quả, độ tin cậy và sự hài lòng của khách hàng."
+        },
+        {
+          "title": "Quyền riêng tư và bảo mật",
+          "paragraph": "Trọng tâm của chúng tôi là khắc phục các thách thức bảo mật thông tin bằng cách cung cấp các giải pháp tư vấn để đáp ứng nhu cầu cụ thể của mỗi khách hàng."
+        },
+        {
+          "title": "Khả năng tiếp cận kỹ thuật số",
+          "paragraph": "Tại T2M, chúng tôi tìm kiếm sự bao gồm kỹ thuật số, thúc đẩy khả năng tiếp cận và đổi mới để đảm bảo môi trường kỹ thuật số toàn diện và dễ tiếp cận hơn cho tất cả mọi người."
+        },
+        {
+          "title": "Kinh doanh nhanh nhẹn",
+          "paragraph": "Chúng tôi giúp các công ty nhanh chóng thích nghi với thay đổi thị trường bằng cách tận dụng các cơ hội và cải thiện sự nhanh nhẹn của tổ chức."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Sáng kiến",
+      "title": "Các sáng kiến ​​và cam kết của chúng tôi",
+      "paragraph": "Trong T2M, các sáng kiến ​​và cam kết của chúng tôi dựa trên việc tìm kiếm sự xuất sắc liên tục và tác động tích cực trong tất cả các lĩnh vực chúng tôi hoạt động. Chúng tôi cam kết thúc đẩy chất lượng cuộc sống của nhân viên, khuyến khích sự đổi mới và đảm bảo đưa vào các giải pháp của chúng tôi."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Chất lượng cuộc sống và hạnh phúc",
+      "paragraph": "T2M duy trì cam kết của mình đối với hạnh phúc của nhân viên và gia đình, cung cấp một môi trường làm việc lành mạnh và cân bằng. Chúng tôi liên tục tìm cách cải thiện chất lượng cuộc sống trong cuộc sống hàng ngày của các chuyên gia của chúng tôi, thúc đẩy các lựa chọn lợi ích đáp ứng các nhu cầu khác nhau, chẳng hạn như tính linh hoạt về thời gian, hỗ trợ sức khỏe tâm thần và các chương trình chất lượng cuộc sống.",
+      "imageAlt": "Người phụ nữ có áo khoác màu đỏ trong tự nhiên"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Phát triển và đổi mới chuyên nghiệp",
+      "paragraph": "Chúng tôi đã đầu tư vào sự tăng trưởng liên tục của nhóm của chúng tôi thông qua các chương trình đào tạo và đào tạo chuyên ngành. Chúng tôi khuyến khích đổi mới với việc áp dụng các phương pháp Agile và khai thác các công nghệ mới, đảm bảo rằng các chuyên gia của chúng tôi luôn đi đầu trong xu hướng thị trường và chuẩn bị cung cấp các giải pháp sáng tạo cho khách hàng của chúng tôi.",
+      "imageAlt": "Người phụ nữ đeo kính thực tế ảo"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Khả năng tiếp cận và bao gồm",
+      "paragraph": "Chúng tôi cam kết thúc đẩy khả năng tiếp cận và tiếp cận kỹ thuật số trong tất cả các giải pháp của chúng tôi. T2M áp dụng các thực tiễn để đảm bảo rằng các sản phẩm và dịch vụ của chúng tôi có thể truy cập được cho mọi người, bất kể nhu cầu cụ thể của họ, chẳng hạn như thực hiện các công nghệ tiếp cận trong các ứng dụng và trang web, cũng như thúc đẩy môi trường làm việc toàn diện tôn trọng và coi trọng sự đa dạng.",
+      "imageAlt": "Quân đội ngồi xe lăn cùng với gia đình của bạn"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 trụ cột",
+      "title": "Trụ cột chiến lược của chúng tôi",
+      "paragraph": "Bản chất của T2M dựa trên một cái nhìn rõ ràng, giá trị vững chắc và một nhiệm vụ truyền cảm hứng. Những trụ cột này hướng dẫn tất cả các hành động của chúng tôi, hướng dẫn cam kết của chúng tôi về sự xuất sắc, đổi mới và hòa nhập. Tìm hiểu bên dưới các nền tảng xác định chúng ta là ai và chúng ta hành động như thế nào."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Trụ cột đầu tiên",
+          "title": "Tầm nhìn",
+          "paragraph": "Trở thành một tài liệu tham khảo quốc gia và quốc tế về chất lượng phần mềm, khả năng tiếp cận và bảo mật thông tin, thúc đẩy đổi mới công nghệ và đóng góp cho sự thành công của hoạt động kinh doanh của khách hàng thông qua các giải pháp phương pháp và công nghệ độc lập."
+        },
+        {
+          "topTitle": "Pilar thứ hai",
+          "title": "Nhiệm vụ",
+          "paragraph": "Đảm bảo rằng các sản phẩm của khách hàng của chúng tôi đáp ứng các tiêu chuẩn chất lượng cao nhất về chất lượng, độ tin cậy, khả năng tiếp cận và khả năng sử dụng, luôn tôn trọng thời hạn và nhu cầu cụ thể của mỗi doanh nghiệp và liên tục đào tạo các chuyên gia để chuyển đổi thị trường công nghệ."
+        },
+        {
+          "topTitle": "Trụ cột thứ ba",
+          "title": "Giá trị",
+          "paragraph": "Tại T2M, cam kết của chúng tôi là xuất sắc, cung cấp các dịch vụ chất lượng cao được hỗ trợ bởi kiến ​​thức kỹ thuật và kinh nghiệm hợp nhất. Chúng tôi đánh giá cao sự đổi mới, sử dụng các phương pháp Agile và các công nghệ cắt giảm để biến các thách thức thành cơ hội. Chúng tôi làm việc với đạo đức và miễn trừ, đảm bảo các quyết định vô tư ưu tiên lợi ích tốt nhất của khách hàng. Ngoài ra, chúng tôi thúc đẩy sự bao gồm và bền vững thông qua đào tạo nghề, khả năng tiếp cận kỹ thuật số và thực hành thúc đẩy sự phát triển của con người và công nghệ. Cam kết của chúng tôi tập trung vào kết quả, tôn trọng thời hạn, độ tin cậy và khả năng sử dụng, luôn phù hợp với nhu cầu của các đối tác của chúng tôi."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Tầm quan trọng của việc thuê ngoài các bài kiểm tra chất lượng phần mềm",
+      "paragraph": "Các bài kiểm tra chất lượng phần mềm gia công là rất cần thiết trong các hệ thống quan trọng, như ngân hàng, kiểm soát không khí và bệnh viện, đòi hỏi độ chính xác và an toàn cao.",
+      "numberCards": [
+        {
+          "title": "Truy cập vào các chuyên gia",
+          "paragraph": "Các công ty chuyên dụng cung cấp các chuyên gia có trình độ, đảm bảo các bài kiểm tra sâu hơn và sử dụng các thực hành cắt giảm để đảm bảo chất lượng phần mềm."
+        },
+        {
+          "title": "Foco không kinh doanh cốt lõi",
+          "paragraph": "Với gia công phần mềm, nhóm nội bộ có thể tập trung vào việc phát triển các tính năng mới, cải thiện năng suất và thúc đẩy tăng trưởng kinh doanh."
+        },
+        {
+          "title": "Giảm chi phí và thời gian",
+          "paragraph": "Tránh việc tạo ra các nhóm thử nghiệm nội bộ làm giảm chi phí cố định và cho phép bạn tối ưu hóa đầu tư theo nhu cầu, tăng tốc các quy trình kiểm tra."
+        },
+        {
+          "title": "Khả năng mở rộng và linh hoạt",
+          "paragraph": "Các công ty thuê ngoài có thể điều chỉnh khả năng kiểm tra theo yêu cầu, phục vụ các đỉnh và điều chỉnh quy mô theo sự ra mắt của các sản phẩm mới."
+        },
+        {
+          "title": "Sự vô tư và tầm nhìn bên ngoài",
+          "paragraph": "Một nhóm bên ngoài mang đến một cái nhìn vô tư về sản phẩm, giúp xác định các lỗ hổng mà một nhóm nội bộ có thể không nhận ra, cải thiện chất lượng tổng thể."
+        },
+        {
+          "title": "Truy cập vào các công cụ và công nghệ nâng cao",
+          "paragraph": "Các công ty chuyên dụng có quyền truy cập vào các công cụ cắt giảm để tự động hóa, kiểm tra tải và các thực tiễn khác, tránh chi phí thực hiện nội bộ cao."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Sóng"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Đề xuất giá trị",
+      "paragraph": "Chúng tôi tin rằng bằng cách cung cấp các giải pháp kỹ thuật mạnh mẽ và cá nhân hóa, chúng tôi không chỉ có thể đáp ứng nhu cầu trước mắt của khách hàng, mà còn góp phần tăng trưởng bền vững và đổi mới liên tục trong kinh doanh của họ.",
+      "buttonText": "Blog của chúng tôi"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Giải pháp chất lượng để thành công",
+      "paragraph": "Trên T2M, chúng tôi cam kết cung cấp các giải pháp công nghệ chất lượng cao giúp tăng thành công của khách hàng. Chúng tôi cung cấp các dịch vụ chuyên ngành về chất lượng phần mềm, quyền riêng tư và bảo mật, khả năng tiếp cận kỹ thuật số và sự nhanh nhẹn kinh doanh, luôn tập trung vào việc cung cấp kết quả cụ thể. Chúng tôi đã chọn các phương pháp và công nghệ cắt giảm để biến các thách thức thành cơ hội, đảm bảo rằng khách hàng của chúng tôi có thể tin tưởng các quy trình của chúng tôi và cung cấp kết quả vào đúng thời điểm.",
+      "imageAlt": "Ý tưởng"
+    },
+    "inovacaoTrad": {
+      "title": "Đổi mới và bền vững",
+      "paragraph": "Cam kết của chúng tôi về sự đổi mới và tính bền vững được phản ánh trong công việc liên tục với các đối tác và nhà cung cấp của chúng tôi, đảm bảo rằng tất cả các quy trình được thực hiện với các tiêu chuẩn an toàn và chất lượng cao nhất. Ngoài ra, các giải pháp của chúng tôi được điều chỉnh theo nhu cầu cụ thể của mỗi khách hàng, phù hợp với các mục tiêu chiến lược của họ và cung cấp các lợi thế cạnh tranh trên thị trường.",
+      "imageAlt": "Bền vững"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Thực tiễn có trách nhiệm và bao gồm",
+      "paragraph": "Trên T2M, chúng tôi cam kết cung cấp các giải pháp công nghệ chất lượng cao giúp tăng thành công của khách hàng. Chúng tôi cung cấp các dịch vụ chuyên ngành về chất lượng phần mềm, quyền riêng tư và bảo mật, khả năng tiếp cận kỹ thuật số và sự nhanh nhẹn kinh doanh, luôn tập trung vào việc cung cấp kết quả cụ thể. Chúng tôi đã chọn các phương pháp và công nghệ cắt giảm để biến các thách thức thành cơ hội, đảm bảo rằng khách hàng của chúng tôi có thể tin tưởng các quy trình của chúng tôi và cung cấp kết quả vào đúng thời điểm.",
+      "imageAlt": "Xe lăn"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Tính minh bạch và bình đẳng xã hội",
+      "paragraph": "Theo Bộ Quy tắc Lao động, chúng tôi thông báo cho bạn rằng, có sẵn trên trang web của chúng tôi, báo cáo về tính minh bạch và bình đẳng về lương của phụ nữ và nam giới, đề cập đến học kỳ thứ 2 năm 2024.",
+      "buttonText": "Báo cáo"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Đội của chúng tôi",
+      "paragraph": "Thành công của các dự án của chúng tôi được thúc đẩy bởi chuyên môn và sự cống hiến của nhóm của chúng tôi. Được hình thành bởi các chuyên gia được đào tạo chuyên sâu và đam mê những gì họ làm, nhóm của chúng tôi luôn sẵn sàng đối mặt với những thách thức mới, đưa ra các giải pháp sáng tạo và hợp tác với khách hàng của chúng tôi để đạt được kết quả đặc biệt.",
+      "buttonText": "Tôi muốn trở thành một phần của đội"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Phân chia theo thể loại",
+      "paragraph": "Mở rộng hiệu quả, chất lượng và sự an toàn của doanh nghiệp và dịch vụ của bạn, mang lại kết quả cao hơn.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Chất lượng phần mềm",
+          "paragraph": "Giải pháp chất lượng phần mềm của chúng tôi tối ưu hóa tất cả các bước phát triển, đảm bảo hiệu quả, độ tin cậy và sự hài lòng của khách hàng."
+        },
+        {
+          "id": 2,
+          "title": "Bảo mật dữ liệu",
+          "paragraph": "Nhóm chuyên gia của chúng tôi vượt quá các thách thức bảo mật thông tin, đảm bảo sự bảo vệ và bảo mật của dữ liệu nhạy cảm."
+        },
+        {
+          "id": 3,
+          "title": "Khả năng tiếp cận kỹ thuật số",
+          "paragraph": "Với chuyên môn về khả năng tiếp cận kỹ thuật số, chúng tôi đảm bảo rằng mọi người đều có thể truy cập và tương tác với các sản phẩm kỹ thuật số của họ theo cách bao gồm."
+        },
+        {
+          "id": 4,
+          "title": "Kinh doanh nhanh nhẹn",
+          "paragraph": "Nhóm nhanh nhẹn kinh doanh của chúng tôi tập trung vào việc giúp các công ty nhanh chóng thích ứng với thay đổi thị trường và tối ưu hóa hiệu suất của họ."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Cam kết về sự đa dạng và hòa nhập",
+      "paragraph": "Gần đây, chúng tôi đã kết thúc quan hệ đối tác với Biomob, tập trung vào các dự án và dịch vụ xã hội liên quan đến sự đa dạng và bao gồm, để cải thiện hành vi của chúng tôi đối với các chủ đề và khả năng tiếp cận này nói chung."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Một môi trường cực kỳ giá trị",
+      "paragraph": "Cam kết của chúng tôi là tạo ra một môi trường nơi mọi người cảm thấy có giá trị, bất kể nguồn gốc, giới tính, dân tộc hay bất kỳ tính năng cá nhân nào khác.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Giới tính",
+          "paragraph": "Chúng tôi đảm bảo các cơ hội bình đẳng, nhận ra sức mạnh của một nhóm giới cân bằng.",
+          "imageAlt": "Biểu tượng giới tính"
+        },
+        {
+          "id": 2,
+          "title": "Loài",
+          "paragraph": "Chúng tôi tôn vinh tất cả các dân tộc và công việc để nhóm của chúng tôi là sự phản ánh số lượng lớn của xã hội chúng tôi.",
+          "imageAlt": "Biểu tượng chủng tộc"
+        },
+        {
+          "id": 3,
+          "title": "Tuổi",
+          "paragraph": "Chúng tôi tôn trọng sự khôn ngoan của những người có kinh nghiệm nhất và năng lượng của những người trẻ tuổi, hiểu rằng mọi người đều có những đóng góp có giá trị.",
+          "imageAlt": "biểu tượng"
+        },
+        {
+          "id": 5,
+          "title": "Đa dạng chức năng",
+          "paragraph": "Chúng tôi cung cấp một môi trường làm việc dễ tiếp cận và toàn diện, nhận ra các kỹ năng và tài năng của người khuyết tật.",
+          "imageAlt": "Biểu tượng của sự đa dạng chức năng"
+        },
+        {
+          "id": 6,
+          "title": "Khả năng tiếp cận",
+          "paragraph": "Cả văn phòng của chúng tôi và trang web của chúng tôi đều có thể truy cập được cho những người có giới hạn trực quan, thính giác, thể chất và nhận thức.",
+          "imageAlt": "Biểu tượng khả năng truy cập"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Đa dạng giới tính trong nhóm của chúng tôi",
+        "imageAlt": "Đồ thị về sự đa dạng giới tính trong nhóm của chúng tôi"
+      },
+      "secondImage": {
+        "title": "Đa dạng giới tính trong nhóm của chúng tôi",
+        "imageAlt": "Đồ thị phân phối theo nhóm tuổi"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Đề xuất giá trị của chúng tôi cho nhân viên",
+      "paragraph": "Trong công ty của chúng tôi, chúng tôi tin rằng thành công có liên quan trực tiếp đến sự tôn trọng, đạo đức và hòa nhập trong tất cả các khía cạnh của môi trường làm việc."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Văn hóa tôn trọng, đạo đức và hòa nhập",
+      "paragraph": "Chúng tôi thúc đẩy một nền văn hóa minh bạch và công bằng, nơi tất cả nhân viên có cùng cơ hội phát triển và công nhận. Cam kết của chúng tôi về sự đa dạng và bao gồm được phản ánh trong các thực tiễn đảm bảo một không gian an toàn và tôn trọng, nơi mọi người có thể thể hiện bản thân và đóng góp vào tiềm năng tối đa của họ.",
+      "imageAlt": "Người phụ nữ có áo khoác màu đỏ trong tự nhiên"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Khả năng tiếp cận và bao gồm",
+      "paragraph": "Ngoài ra, chúng tôi cung cấp một loạt các lợi ích nhằm mục đích hạnh phúc và chất lượng cuộc sống của nhân viên, chẳng hạn như chăm sóc y tế và nha khoa, các công cụ hỗ trợ khác nhau (văn phòng tại nhà, thực phẩm, bữa ăn và vận chuyển), bảo hiểm nhân thọ, đầy đủ và Kế hoạch nghề nghiệp.",
+      "imageAlt": "Người phụ nữ đeo kính thực tế ảo"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Giống cây trồng",
+      "title": "Nhân quyền và thực hành lao động công bằng",
+      "paragraph": "Chúng tôi cam kết tạo ra môi trường làm việc bao gồm, nơi mọi người đều có cơ hội giống nhau để đạt được tiềm năng đầy đủ của họ. Chúng tôi tin rằng việc thúc đẩy nhân quyền và xây dựng các không gian tôn trọng là điều cần thiết để bảo tồn tính toàn vẹn của thương hiệu và thành công liên tục của chúng tôi."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Cam kết về nhân quyền và tiêu chuẩn quốc tế",
+      "paragraph": "Cam kết của công ty để tôn trọng quyền con người, sắp xếp các hoạt động của chúng tôi với các nguyên tắc được thiết lập bởi Tuyên ngôn về quyền con người và các quy tắc được quốc tế công nhận. Các giá trị của chúng tôi dựa trên các nguyên tắc hướng dẫn của Liên Hợp Quốc về các công ty và nhân quyền, cũng như trong Hiến chương Nhân quyền Quốc tế và Tuyên bố Tổ chức Lao động Quốc tế (ILO) về các quyền cơ bản tại nơi làm việc. Các hướng dẫn này được đưa vào các quy tắc ứng xử kinh doanh của chúng tôi, áp dụng như nhau cho tất cả nhân viên, nhà cung cấp và đối tác của T2M, đảm bảo môi trường làm việc toàn diện, tôn trọng và an toàn."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Đảm bảo môi trường làm việc an toàn và tôn trọng",
+      "paragraph": "Cam kết của công ty để tôn trọng quyền con người, sắp xếp các hoạt động của chúng tôi với các nguyên tắc được thiết lập bởi Tuyên ngôn về quyền con người và các quy tắc được quốc tế công nhận. Các giá trị của chúng tôi dựa trên các nguyên tắc hướng dẫn của Liên Hợp Quốc về các công ty và nhân quyền, cũng như trong Hiến chương Nhân quyền Quốc tế và Tuyên bố Tổ chức Lao động Quốc tế (ILO) về các quyền cơ bản tại nơi làm việc. Các hướng dẫn này được đưa vào các quy tắc ứng xử kinh doanh của chúng tôi, áp dụng như nhau cho tất cả nhân viên, nhà cung cấp và đối tác của T2M, đảm bảo môi trường làm việc toàn diện, tôn trọng và an toàn."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Định vị của chúng tôi",
+      "title": "Sự đa dạng và bao gồm",
+      "paragraph": "Cam kết tạo ra một môi trường bao gồm trong đó sự đa dạng là một giá trị thiết yếu. Chúng tôi tin rằng sự kết hợp của các quan điểm, kinh nghiệm và tài năng khác nhau củng cố văn hóa của chúng tôi và thúc đẩy chúng tôi đạt được những chân trời mới."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Đa dạng giới tính",
+      "paragraph": "Trong T2M, chúng tôi tin rằng bình đẳng giới là một yếu tố quan trọng cho sự thành công và đổi mới. Chúng tôi làm việc để tạo ra một môi trường trong đó đàn ông, phụ nữ và những người không phải là người nghe tiếng nói và tài năng của họ được công nhận đầy đủ. Chúng tôi thực hiện các sáng kiến ​​vốn chủ sở hữu bằng cách cung cấp các cơ hội phát triển và tăng trưởng tương tự cho tất cả mọi người, bất kể giới tính của họ. Đối với chúng tôi, một môi trường cân bằng và công bằng là cơ sở cho các giải pháp sáng tạo và để xây dựng một tương lai toàn diện hơn."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Đa dạng tình dục",
+      "paragraph": "Tôn trọng sự đa dạng tình dục là một trong những nền tảng của văn hóa của chúng ta trong T2M. Chúng tôi tự hào quảng bá một môi trường chào đón và an toàn để nhân viên LGBTQIA+ có thể thể hiện tính xác thực của họ. Hơn cả việc chống lại định kiến, chúng tôi tôn vinh cá tính và khuyến khích các thực hành biến việc đưa vào một trụ cột chiến lược. Chúng tôi tin rằng bằng cách định giá các cách yêu thương và tồn tại khác nhau, chúng tôi tăng cường khả năng hợp tác và đổi mới thành một nhóm."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Đa dạng văn hóa",
+      "paragraph": "Trong T2M, chúng tôi nắm lấy sự phong phú về văn hóa và lịch sử mà sự đa dạng chủng tộc mang lại cho công ty chúng tôi. Chúng ta phải đối mặt với đa số của các chủng tộc và các nhóm dân tộc như một cơ hội để học tập và tiến hóa. Với các chính sách vững chắc chống lại phân biệt chủng tộc và các hành động chủ động để đảm bảo các cơ hội bình đẳng, chúng tôi làm việc để xây dựng một môi trường nơi mỗi cá nhân được coi trọng cho những gì nó là, góp phần vào những quan điểm độc đáo khiến chúng tôi mạnh mẽ hơn như một tổ chức."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Đa dạng chủng tộc",
+      "paragraph": "Sự đa dạng về chủng tộc trong T2M được coi là một sự giàu có giúp tăng cường môi trường làm việc của chúng ta và mở rộng quan điểm của chúng ta. Chúng tôi cam kết thúc đẩy một môi trường tôn trọng, chào đón và coi trọng tất cả các chủng tộc và dân tộc, nhận ra tầm quan trọng của các trải nghiệm cuộc sống khác nhau để phát triển các giải pháp sáng tạo và hiệu quả. Chúng tôi có các chính sách rõ ràng chống lại bất kỳ hình thức phân biệt chủng tộc nào và chúng tôi làm việc để đảm bảo rằng tất cả nhân viên, bất kể nguồn gốc chủng tộc của họ, có cùng cơ hội tăng trưởng, được tôn trọng và đánh giá cao bởi sự đóng góp độc đáo của họ cho công ty."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Sự đa dạng cho người khuyết tật",
+      "paragraph": "Việc bao gồm người khuyết tật không chỉ ưu tiên cho T2M; Đó là một cam kết đối với vốn chủ sở hữu và khả năng tiếp cận. Chúng tôi điều chỉnh không gian và quy trình của mình để đảm bảo rằng tất cả nhân viên của chúng tôi có thể hành động với quyền tự chủ và nhân phẩm. Ngoài ra, chúng tôi thúc đẩy nhận thức nội bộ để tạo ra một môi trường thực sự bao gồm, nơi các kỹ năng của mỗi cá nhân được coi trọng và nơi các rào cản biến thành cầu để thành công chung."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pilar",
+      "title": "Sức khỏe và hạnh phúc",
+      "paragraph": "Nếu bạn coi trọng một nơi mà hạnh phúc của bạn là ưu tiên, hãy biết cách chúng tôi chăm sóc nhóm của chúng tôi để cảm thấy được hỗ trợ và khỏe mạnh trong mọi khía cạnh của cuộc sống."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Sức khỏe và hạnh phúc",
+      "paragraph": "Tại T2M, chúng tôi nhận ra rằng sức khỏe và hạnh phúc của nhân viên của chúng tôi là trụ cột cho sự phát triển bền vững của công ty và cho thành công cá nhân. Chúng tôi thúc đẩy các sáng kiến ​​khuyến khích chăm sóc không thể thiếu, bao gồm các chương trình sức khỏe thể chất và tinh thần, chăm sóc y tế và nha khoa, cũng như hỗ trợ tâm lý để đối mặt với những thách thức hàng ngày. Chúng tôi tạo ra một môi trường ưu tiên sự cân bằng giữa cuộc sống chuyên nghiệp và cá nhân, đảm bảo rằng mỗi nhân viên có nguồn lực để nuôi dưỡng những thói quen lành mạnh và đạt được mục tiêu của họ với chất lượng cuộc sống."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Đào tạo cộng đồng",
+      "paragraph": "Công ty phát triển các sáng kiến ​​vượt ra ngoài kinh doanh, tìm cách tạo ra lợi ích xã hội và môi trường phù hợp với các giá trị của họ.",
+      "buttonText": "Blog của chúng tôi"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Nơi cư trú",
+      "title": "Cơ hội bao gồm và đào tạo cho khu vực",
+      "paragraph": "T2M là một trong những nhà tài trợ chính của Chương trình cư trú phần mềm Serratec, nhằm mục đích cho phép những người trẻ tuổi bị tổn thương kinh tế cho sự nghiệp công nghệ. Chương trình này cung cấp đào tạo kỹ thuật về phát triển phần mềm và chuẩn bị cho người tham gia tham gia thị trường việc làm trong lĩnh vực nhu cầu cao. Với điều này, T2M củng cố cam kết của mình đối với trách nhiệm xã hội và sự phát triển của các tài năng địa phương, thúc đẩy một nền kinh tế toàn diện và bền vững hơn.",
+      "imageAlt": "Văn phòng T2M",
+      "buttonText": "Tôi muốn đăng ký"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Kết quả",
+      "title": "Đối tác của chúng tôi",
+      "paragraph": "Mạng lưới nhân viên của chúng tôi thúc đẩy và định hình thành công trong mỗi bước"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Augle đã mở rộng",
+          "paragraph": "Scaled Agile, Inc. được công nhận trên toàn thế giới là người tạo ra Agile Framework® (SAFE), một cách tiếp cận hàng đầu về sự nhanh nhẹn kinh doanh.",
+          "imageAlt": "Logo da agile agile"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Hãy trở thành một phần của một trong những trung tâm công nghệ lớn nhất ở Brazil! Dịch vụ và lợi ích cho doanh nghiệp hoặc khởi nghiệp của bạn bắt đầu bằng chân phải!",
+          "imageAlt": "Logo làm serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Giải pháp để thực hiện một quá trình phát triển hệ thống hoàn chỉnh và tự động.",
+          "imageAlt": "Logo IBM"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft là một nhà lãnh đạo lớn trong điện toán đám mây, nền tảng sức mạnh và trí tuệ nhân tạo.",
+          "imageAlt": "Logo từ Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Công cụ ảo hóa dữ liệu và các giải pháp mặt nạ dữ liệu.",
+          "imageAlt": "Delphi sớm"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Khả năng tiếp cận và bao gồm là nhiệm vụ của chúng tôi. Chúng tôi tạo ra các giải pháp kỹ thuật số để có được cuộc sống xã hội hài hòa hơn, cung cấp chất lượng cuộc sống và sự tham gia đầy đủ vào xã hội cho những người nhìn thấy mình bị bỏ qua.",
+          "imageAlt": "Logo Biomob"
+        },
+        {
+          "id": 7,
+          "title": "Tự động hóa ở bất cứ đâu",
+          "paragraph": "Tự động hóa bất cứ nơi nào tìm cách giải phóng mọi người khỏi các nhiệm vụ tầm thường và lặp đi lặp lại để dành nhiều thời gian hơn bằng cách sử dụng trí tuệ và sự sáng tạo của họ để giải quyết các thách thức kinh doanh nâng cao và thực hiện công việc đòi hỏi kiến ​​thức cụ thể.",
+          "imageAlt": "Logo DA tự động hóa ở bất cứ đâu"
+        },
+        {
+          "id": 8,
+          "title": "Vmedu",
+          "paragraph": "Vmedu là công ty hàng đầu trong ngành chứng nhận và đào tạo chuyên nghiệp và đã cung cấp đào tạo hơn 500.000 sinh viên từ hơn 3500 công ty tại hơn 150 quốc gia với tỷ lệ thành công là 98,7% thông qua mạng lưới toàn cầu gồm hơn 1100 nhà cung cấp đào tạo.",
+          "imageAlt": "Logo Vmedu"
+        },
+        {
+          "id": 9,
+          "title": "Tương lai",
+          "paragraph": "Được công nhận trong thị trường bảo mật thông tin Brazil, chúng tôi có một cơ sở khách hàng vững chắc, được phân phối theo nhiều quy mô và phân khúc khác nhau, phục vụ từ các công ty công cộng và tư nhân lớn, đến các công ty có kích thước trung bình.",
+          "imageAlt": "Logo trong tương lai"
+        }
+      ],
+      "type": "trung tâm"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Tin nhắn từ CEO của chúng tôi",
+      "paragraph": "Trong T2M, chúng tôi củng cố cam kết và liên kết của chúng tôi với các hoạt động của UN SDG và ESG.",
+      "buttonText": "Guilherme da Motta Alves - LinkedIn"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Cam kết với tính bền vững và trách nhiệm kinh doanh, tổ chức của chúng tôi ưu tiên tích hợp các nguyên tắc ESG trong tất cả các hoạt động của chúng tôi. Chúng tôi nhận ra tầm quan trọng của:",
+      "numberCards": [
+        {
+          "title": "Bảo vệ môi trường (môi trường)",
+          "paragraph": "Bằng cách giảm dấu chân carbon của chúng tôi, sử dụng hiệu quả tài nguyên thiên nhiên và thúc đẩy các hoạt động bền vững."
+        },
+        {
+          "title": "Thúc đẩy các mối quan hệ xã hội công bằng và công bằng (xã hội)",
+          "paragraph": "Tôn trọng nhân quyền, sự đa dạng, hòa nhập và hạnh phúc của nhân viên, khách hàng và cộng đồng của chúng tôi."
+        },
+        {
+          "title": "Thực hành Quản trị doanh nghiệp minh bạch và đạo đức (Quản trị)",
+          "paragraph": "Với sự lãnh đạo có trách nhiệm, quản lý rủi ro hiệu quả và tuân thủ luật pháp và quy định. Tầm nhìn của chúng tôi là tạo ra giá trị bền vững cho tất cả các bên liên quan, góp phần vào một tương lai thịnh vượng và kiên cường hơn."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Báo cáo về tác động xã hội này và phát triển bền vững năm 2024 phản ánh cam kết của chúng tôi về sự hấp dẫn và trách nhiệm xã hội trong T2M. Nó phục vụ như một kênh cơ bản để truyền đạt tính bền vững và tiến bộ của chúng tôi, phù hợp với thực tiễn của chúng tôi với các mục tiêu phát triển bền vững của Dooni và các nguyên tắc của ESG. Báo cáo này không chỉ nhấn mạnh những nỗ lực của chúng tôi về đào tạo, sự đa dạng về đạo đức, mà còn cho phép chúng tôi tăng cường quan hệ với các bên liên quan và hướng dẫn các quyết định hiệu quả của chúng tôi. Bằng cách chia sẻ kết quả và thách thức của chúng tôi, chúng tôi đã tái khẳng định sự cống hiến của chúng tôi cho một tác động eduro tích cực.",
+      "CEO": "Giám đốc điều hành DA T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Chủ đề trang web",
+      "items": {
+        "sobre": "TRÊN",
+        "quemSomos": "Chúng ta là ai",
+        "propostaDeValor": "Đề xuất giá trị",
+        "nossaEquipe": "Đội của chúng tôi",
+        "comunidade": "Cộng đồng",
+        "esg": "ESG"
+      }
+    },
+    "socialLinks": {
+      "title": "Mạng xã hội của chúng tôi",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Truy cập trang web chính thức của chúng tôi",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Tất cả quyền được bảo lưu",
+      "logoAlt": "Logo T2M"
+    }
   }
 }

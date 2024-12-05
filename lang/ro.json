@@ -26,7 +26,13 @@
     "empregabilidade": "Angabilitate",
     "empregabilidadeLabel": "Accesați ecranul de angajabilitate",
     "papoDiverso": "Chat diferit",
-    "papoDiversoLabel": "Accesați site -ul Diverse Chat"
+    "papoDiversoLabel": "Accesați site -ul Diverse Chat",
+    "leitorAudio": {
+      "carregando": "Purtând voci ...",
+      "semVozes": "Nu există voci disponibile pentru limba selectată",
+      "isReading": "Faceți clic pe un text pentru a începe citirea",
+      "isNotReading": "Începeți să citiți"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Formând viitori oameni de știință",
-    "title": "Fetele tulpină",
-    "paragraph": "Impact fetele care, încă la școală, se confruntă cu provocările pentru implicarea lor în științe",
-    "buttonText": "Contact"
-  },
-  "OQueEBanner": {
-    "topTitle": "Ce este?",
-    "title": "Fete Stem Petrópolis TEC Hub Project",
-    "paragraph": "Proiectul care încearcă să reducă inegalitatea de gen și să extindă participarea femeilor la știință, tehnologie, inginerie și matematică (STEM). Această inițiativă se concentrează pe alfabetizarea tehnologică și pe promovarea incluziunii feminine în orașul Petrópolis, în Rio de Janeiro."
-  },
-  "ObjetivoBanner": {
-    "title": "Obiectivul proiectului",
-    "paragraph": "Proiectul își propune să încurajeze alfabetizarea tehnologică între studenți și educatori, promovând o cultură incluzivă în științele exacte.",
-    "altImage": "Fetele tulpină"
-  },
-  "ComoBanner": "Proiectul folosește platforma zgârieturi pentru a preda programarea într -un mod jucăuș și interdisciplinar, încorporând dezbateri despre gen, drepturi omului și inegalități.",
-  "MetodologiaBanner": {
-    "title": "Motodologia",
-    "paragraph": "Proiectul își propune să încurajeze alfabetizarea tehnologică între studenți și educatori, promovând o cultură incluzivă în științele exacte.",
-    "altImage": "Fetele tulpină"
-  },
-  "IconWithTextBanner": {
-    "title": "Cine se dezvoltă?",
-    "topTitle": "Angajații noștri",
-    "paragraph": "Proiectul este realizat de o rețea de instituții de cercetare, știință și educație, împreună cu organizații sociale și de afaceri. Participați la această inițiativă:",
-    "iconCards": [
-      {
-        "title": "Lncc",
-        "description": "Laboratorul național de calcul științific este o instituție de cercetare și cercetare tehnologică braziliană, specializată în calcul științific, legată de Ministerul Științei, Tehnologiei și Inovării."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Raport de impact social",
+      "paragraph": "Impact social și dezvoltare durabilă care prezintă acțiunile și angajamentele T2M față de practicile de responsabilitate sociale, de mediu și de guvernare (ESG).",
+      "buttonText": "Descărcați raportul de impact social"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme Photo, CEO T2M",
+      "title": "Conducere inovatoare.",
+      "topTitle": "Mesaj de la CEO -ul nostru",
+      "paragraph": "Acest raport din 2024 Impactul social și dezvoltarea durabilă reflectă angajamentul nostru față de transparență și responsabilitatea socială la T2M. Acesta servește ca un canal fundamental pentru comunicarea acțiunilor și progreselor noastre în sustenabilitate, alinierea practicilor noastre la obiectivele de dezvoltare durabilă a ONU și principiile ESG.",
+      "buttonText": "Citiți mesajul CEO -ului nostru"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Despre acest raport",
+      "paragraphs": [
+        "Acest raport al impactului social și al dezvoltării durabile prezintă acțiuni și angajamente ale T2M față de practicile de responsabilitate socială socială, de mediu și de guvernare (ESG).",
+        "Acesta reflectă eforturile noastre de a crea un impact pozitiv asupra comunității noastre, de a promova un mediu de muncă incluziv și durabil și de a minimiza amprenta noastră de mediu.",
+        "Prin împărtășirea realizărilor și provocărilor noastre, acest raport ne consolidează angajamentul față de transparență și Obiectivele ONU de Dezvoltare Durabilă (ODD), precum și ghidarea evoluției noastre continue către un viitor mai durabil."
+      ],
+      "imageAlt": "Foto das ods la asta"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Proces de materialitate",
+      "paragraph": "Menținem o relație constantă și transparentă cu toate părțile interesate, de la persoane fizice la organizații, astfel încât să putem înțelege așteptările și preocupările lor și să le transpunem în informații despre valori strategice pentru a ajuta managementul afacerilor noastre."
+    },
+    "partesInteressadasTrad": {
+      "title": "Părți interesate",
+      "paragraph": "T2M valorizează colaborarea cu toate părțile interesate pentru a promova inovația, transparența și soluțiile de impact pozitiv. Am stabilit canale de dialog și inițiative care reflectă angajamentul față de valorile și obiectivele noastre strategice.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Colaboratori",
+          "paragraph": "Programe de formare continuă, cercetare climatică organizațională, întâlniri strategice de aliniere și ateliere de angajați."
+        },
+        {
+          "id": 2,
+          "title": "Clienți",
+          "paragraph": "Urmăriți -up și prezentare reuniuni, sprijin dedicat pentru a rezolva întrebările și a îmbunătăți serviciile."
+        },
+        {
+          "id": 3,
+          "title": "Parteneri strategici",
+          "paragraph": "Acorduri de colaborare pentru proiecte de impact, participarea la evenimente de piață, prelegeri și conferințe, precum și întâlniri periodice pentru consolidarea parteneriatelor și alianțelor strategice."
+        },
+        {
+          "id": 4,
+          "title": "Comunitate",
+          "paragraph": "Inițiative de responsabilitate socială, participarea la evenimente locale, sprijin pentru ONG -uri și proiecte comunitare, promovând un impact pozitiv și durabil în domeniile în care acționăm eficient."
+        },
+        {
+          "id": 5,
+          "title": "Guvernanță și conformitate",
+          "paragraph": "Alinierea strategică cu reglementarea, politicile robuste de conformitate și interacțiunile continue cu entitățile de reglementare guvernamentale și sectorul. Certificările ISO 37101 și ISO 37301, precum și practicile solide anti -subsubborn și respectarea unui cod riguros de etică."
+        },
+        {
+          "id": 6,
+          "title": "Diversitate și echitate",
+          "paragraph": "Promovarea unui mediu incluziv prin inițiative care apreciază diversitatea culturală, socială și de gen. Politicile de echivalare a oportunităților, de a încuraja echitatea și de a asigura respectul reciproc, de a construi o cultură organizațională durabilă și plurală."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Metodologie",
+      "title": "Cum definim conținutul raportului?",
+      "paragraph": "Anual, am efectuat un exercițiu de materialitate pentru a înțelege perspectivele părților interesate cu privire la problemele de mediu, sociale și economice mai relevante pentru managementul durabil, identificând, de asemenea, oportunități de promovare a învățării și de a încuraja implicarea cu cele mai bune practici."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Revizuire",
+          "title": "Reflecție asupra acțiunilor și politicilor care vizează diversitatea și includerea perioadei anterioare.",
+          "paragraph": "În timpul revizuirii, am evaluat progresele înregistrate în crearea unui mediu incluziv și în implicarea diferitelor grupuri de părți interesate. Am decis să includem noi subiecte, cum ar fi „diversitatea în mai multe aspecte în politicile corporative” și „îmbunătățirea accesibilității în produse și servicii”, pentru a alinia mai bine practicile cu nevoile actuale."
+        },
+        {
+          "topTitle": "Analiză",
+          "title": "Integrarea sugestiilor s-a concentrat pe consolidarea strategiilor incluzive, de mediu și de sănătate și de bunăstare.",
+          "paragraph": "În timpul procesului de analiză, au fost evidențiate subiecte prioritare, cum ar fi importanța campaniilor educaționale care sensibilizează și implică angajații în practici incluzive, durabile și promovarea îngrijirii sănătății și bunăstării tuturor."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Vârful verde X Dezvoltare durabilă",
+      "title": "Adevărul din spatele practicilor de sustenabilitate",
+      "paragraph": "Multe companii folosesc practici de spălare ecologică, prezentând inițiative superficiale de mediu fără a -și schimba cu adevărat procesele, ceea ce afectează transparența și dezorientarea consumatorilor și investitorilor.",
+      "extraButtonBottom": {
+        "buttonText": "Continuați să citiți articolul pe site -ul nostru oficial"
       },
-      {
-        "title": "Serratec",
-        "description": "Serratec este un parc tehnologic non -profit din interiorul Rio de Janeiro, acționând ca un inductor de afaceri IT și care acoperă orașele Petrópolis, Teresópolis, Nova Friburgo și Areal."
-      },
-      {
-        "title": "Faeterj Petropolis",
-        "description": "Faeterj Petrópolis este o instituție publică de învățământ superior legată de FAETEC, oferind cursuri tehnice și superioare în diferite domenii."
-      },
-      {
-        "title": "Cefet/RJ Uned Petrópolis",
-        "description": "Cefet/RJ Petrópolis este prima instituție publică de învățământ superior din oraș, oferind cursuri în modalitatea de față și aparținând sistemului CEFET/RJ."
-      },
-      {
-        "title": "Uff",
-        "description": "Universitatea Fluminense Federal (UFF) este o instituție publică de învățământ superior de referință națională, ieșind în diferite domenii de cunoștințe."
-      },
-      {
-        "title": "Ufba",
-        "description": "Universitatea Federală din Bahia (UFBA) este o instituție publică de învățământ superior cu sediul în Salvador, legată de Ministerul Educației, cu autonomie administrativă și legală."
-      },
-      {
-        "title": "Biomob",
-        "description": "BioMob este specializată în soluții de accesibilitate și proiecte sociale, concentrându -se pe promovarea unei societăți mai incluzive și egalitare."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech dezvoltă proiecte de cercetare, dezvoltare și inovare pentru companii și instituții guvernamentale, care vizează inovația și avansarea tehnologică."
-      },
-      {
-        "title": "TJ-RJ",
-        "description": "Curtea de Justiție din Rio de Janeiro (TJ-RJ) este responsabilă pentru administrarea justiției în stat, cu jurisdicție pe întregul teritoriu Fluminense."
-      },
-      {
-        "title": "Primăria Petrópolis",
-        "description": "Primăria Petrópolis gestionează orașul istoric situat în regiunea muntoasă din Rio de Janeiro, impleând politici și servicii publice pentru populație."
-      },
-      {
-        "title": "Seeduc-RJ",
-        "description": "Seeduc-RJ este responsabil pentru gestionarea politicilor educaționale ale statului Rio de Janeiro, asigurând accesul la educația de calitate în școlile publice de stat."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "CĂUTARE",
-    "title": "Ce se așteaptă de la proiect?",
-    "paragraph": "Proiectul urmărește să consolideze imaginația și autoestima fetelor, să combată abandonul și să contribuie la construcția unei societăți mai echitabile. Se așteaptă să stimuleze și să extindă participarea femeilor la STEM, reducând în același timp stigmele și discriminarea.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "ro"
+      "numberCards": [
+        {
+          "title": "Impact real asupra mediului",
+          "paragraph": "Companiile angajate pentru dezvoltarea durabilă fac schimbări reale, cum ar fi reducerea emisiilor de carbon și utilizarea responsabilă a resurselor naturale, pentru a provoca un impact pozitiv asupra mediului."
+        },
+        {
+          "title": "Transparență corporativă",
+          "paragraph": "Pentru a evita spălarea ecologică, este crucial pentru companii să publice rapoarte clare despre acțiunile și realizările lor durabile, cu date verificabile și obiective concrete."
+        },
+        {
+          "title": "Consum conștient",
+          "paragraph": "Consumatorii conștienți pot identifica practicile de spălare ecologică prin căutarea mărcilor cu angajamente durabile dovedite, cum ar fi utilizarea materialelor reciclabile și a politicilor de reducere a deșeurilor."
+        },
+        {
+          "title": "Certificări și audituri",
+          "paragraph": "Obținerea de certificări recunoscute și audituri externe ajută la validarea angajamentului companiilor față de sustenabilitate, oferind încredere consumatorilor și investitorilor."
+        },
+        {
+          "title": "Economie circulară",
+          "paragraph": "Economia circulară este o alternativă la modelul tradițional de „eliminare după utilizare”, încurajând companiile să recicleze, să reutilizeze și să reducă deșeurile, promovând o abordare durabilă și regenerativă."
+        },
+        {
+          "title": "Rolul guvernării",
+          "paragraph": "Guvernanța joacă un rol fundamental în combaterea spălării ecologice, deoarece ghidează deciziile de afaceri pentru practicile PDD responsabile și aliniate, asigurând integritatea și responsabilitatea."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Sustenabilitate",
+      "paragraph": "Ne -am angajat să contribuim la dezvoltarea durabilă prin afacerile și operațiunile noastre, generând o valoare pe termen lung pentru clienții, angajații, furnizorii, acționarii și societatea noastră."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Timp de plantare a mișcărilor regenerative",
+      "paragraph": "Prin susținerea proiectelor de plantare culturală și a copacilor, cum ar fi mișcarea regenerativă a plantării, consolidăm protagonismul comunităților și promovăm sentimentul de apartenență. Odată cu plantarea copacilor, pe lângă protejarea mediului, creăm o moștenire de durată, asigurându -ne că generațiile viitoare cresc pe un teritoriu care își apreciază și își păstrează amintirile și natura din jurul lor.",
+      "numberCards": [
+        {
+          "title": "Mișcare de auto -gestionare",
+          "paragraph": "Anual, în timpul sezonului ploios (octombrie până în martie), mișcarea încurajează participarea activă a oamenilor la plantarea copacilor, creând o legătură directă cu natura și promovând o mai mare conștientizare a mediului."
+        },
+        {
+          "title": "În decembrie 2024",
+          "paragraph": "În decembrie 2024, T2M a plantat 100 de răsaduri în Vale Das Videras Arboretic. Această etapă face parte dintr -un efort continuu pentru a promova restaurarea vegetației autohtone și recuperarea zonelor degradate."
+        },
+        {
+          "title": "Așteptarea pentru 2025",
+          "paragraph": "Pentru 2025, obiectivul este de a dubla plantarea copacilor din tot orașul, cu sprijinul tuturor angajaților. Scopul este restabilirea pădurilor autohtone și a speciilor indigene, cu participarea activă a comunității și a inițiativelor locale."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Campaniile noastre",
+      "paragraph": "Pe lângă faptul că oferă teste automate de excelență, T2M este mândru să creeze și să producă propriile campanii",
+      "numberCards": [
+        {
+          "title": "Gestul de solidaritate",
+          "paragraph": "Începând cu 2023, am desfășurat campanii de solidaritate, cum ar fi colectarea alimentelor, hainele reci, produsele de igienă și capacele de plastic schimbate pentru scaune cu rotile, scutece și bastoane."
+        },
+        {
+          "title": "Fapte bune",
+          "paragraph": "DBA - A avea grijă de cei care au grijă este un eveniment pentru mame și îngrijitori, oferind îngrijire estetică, prelegeri și sfaturi de bunăstare, integrând mișcarea Global Day of Good Action (DBA)."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta este un târg de angajare care oferă primele oportunități de muncă, concentrându -se pe mame singure și persoane cu dizabilități, promovând incluziunea și egalitatea pe piața muncii."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Parte",
-    "title": "Cine participă?",
-    "paragraph": "Se vor selecta clasele a VIII -a și a IX -a ale școlii elementare II și al primului, al 2 -lea și al 3 -lea an de liceu, urmând criteriile proiectului, împreună cu cel puțin un profesor al fiecăreia dintre școlile participante. Deținătorii de burse vor fi implicați în următoarele activități și obiective:",
-    "iconCards": [
-      {
-        "title": "Învățarea la programare"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "Angajament ESG",
+        "paragraph": "Acest raport prezintă acțiunile impactului de mediu, social și de guvernare (ESG) implementate de compania noastră în ultimul an, subliniind modul în care aceste inițiative sunt aliniate la Obiectivele ONU de Dezvoltare Durabilă (ODD).",
+        "buttonText": "Blogul nostru"
       },
-      {
-        "title": "Dezvoltarea jocurilor educaționale pe platforma de zgârieturi"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Strategie",
+        "title": "Angajamentul nostru",
+        "paragraph": "Angajamentul nostru față de ESG este o parte centrală a strategiei noastre, contribuind la reducerea impactului asupra mediului, consolidarea practicilor sociale incluzive și adoptarea unei guvernări corporative etice și responsabile. Efortul nostru continuu de a integra SDG cu operațiuni ne întărește acțiunea durabilă, generând valoare pentru toate părțile interesate.",
+        "buttonText": "Vreau să fac parte",
+        "imageAlt": "Biroul T2M"
       },
-      {
-        "title": "Participarea la un club de știință"
+      "gestaoResiduosTrad": {
+        "topTitle": "Mediu",
+        "title": "Gestionarea deșeurilor și alegerea materialelor durabile",
+        "iconAlt": "pictogramă pentru subiectul de mediu"
       },
-      {
-        "title": "Prezența evenimentelor de diseminare științifică"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "Biroul T2M",
+        "paragraph": "Angajamentul nostru față de ESG este o parte centrală a strategiei noastre, contribuind la reducerea impactului asupra mediului, consolidarea practicilor sociale incluzive și adoptarea unei guvernări corporative etice și responsabile. Efortul nostru continuu de a integra SDG cu operațiuni ne întărește acțiunea durabilă, generând valoare pentru toate părțile interesate."
       },
-      {
-        "title": "Participarea la prelegeri și seminarii"
+      "contratosAssinadosTrad": {
+        "topTitle": "Mediu",
+        "title": "Contractele semnate practic",
+        "iconAlt": "Pictogramă pentru subiectul de mediu"
       },
-      {
-        "title": "Pregătirea rapoartelor intermediare și finale"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Ca parte a angajamentului nostru față de sustenabilitate, T2M a adoptat o politică de digitalizare a documentelor și semnătura virtuală a contractelor, reducând semnificativ necesitatea imprimării pe hârtie. Tranziția la contractele digitale nu numai că simplifică procesele noastre, dar păstrează și resursele naturale, reducând consumul de hârtie, vopsea și energie. Această practică contribuie direct la reducerea defrișărilor și la utilizarea durabilă a resurselor naturale. De -a lungul anului, această practică a dus la o reducere semnificativă a deșeurilor de hârtie, consolidând angajamentul T2M față de mediu și managementul modern și durabil.",
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Mediu",
+        "title": "Utilizare în cloud, reducând consumul de hardware",
+        "iconAlt": "Pictogramă pentru subiectul de mediu"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "De la migrația către Microsoft Cloud, compania noastră a obținut o reducere semnificativă a emisiilor de carbon, consolidând angajamentul față de practicile durabile. Pe baza datelor estimate, evităm emisiile de 2,192 milioane de tone de carbon, ceea ce reprezintă o reducere de 99,72% a emisiilor potențiale, datorită utilizării unelte precum SharePoint și Exchange Online.",
+          "În această perioadă, emisiile eficiente au totalizat doar 0,007 tone, comparativ cu 2,468 tone estimate într -un scenariu tradițional. Această tranziție la o infrastructură digitală mai eficientă demonstrează impactul pozitiv al soluțiilor cloud în reducerea amprentei de carbon, alinierea strategiei tehnologice cu ex -goaluri."
+        ],
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "În T2M, utilizarea de soluții Microsoft Cloud, cum ar fi OneDrive, Azure și echipe, este esențială pentru reducerea consumului de energie și necesitatea unui nou hardware fizic.",
+          "Aceste instrumente scad cererea de servere fizice, care consumă multă energie și necesită întreținere. Cu scopul Microsoft de a utiliza 100% energie regenerabilă pe centrele sale de date până în 2025, T2M contribuie la un viitor mai durabil.",
+          "În plus, cloud oferă scalabilitate, eficiență, securitate și accesibilitate a datelor, reflectând angajamentul T2M față de practici tehnologice durabile și inovatoare."
+        ],
+        "imageAlt": "Biroul T2M"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Mediu",
+        "title": "Consumul de apă conștient",
+        "lineColor": "BG-VAR-ENVIRMENTAL",
+        "iconAlt": "pictogramă pentru subiectul de mediu"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Consumul de apă conștient este o prioritate în T2M și am implementat diverse practici pentru a reduce risipa acestei resurse vitale. Além disso, promovemos campanhas internas de conscientização, incentivando nossos colaboradores a adotar hábitos responsáveis no uso de água tanto no ambiente de trabalho quanto em suas casas. Essa prática visa reduzir o consumo de água e contribuir para a preservação dos recursos hídricos, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Cu aceste acțiuni, căutăm să minimalizăm impactul nostru asupra mediului și să inspirăm o cultură a durabilității în rândul angajaților noștri.",
+        "imageAlt": "Imaginea de birou a T2M axată pe consumul de apă conștient",
+        "iconAlt": "Pictograma reprezentativă a consumului de apă conștient"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Mediu",
+        "title": "Stimul pentru a reduce utilizarea vehiculelor cu combustie",
+        "iconAlt": "Pictogramă pentru subiectul de mediu"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M își încurajează angajații să adopte mai multe practici de mobilitate durabilă, reducând traficul de CO2 și emiterea de către vehiculele de ardere. Pentru a facilita această tranziție, oferim stimulente pentru utilizarea transportului public și partajat, această stimulare a mobilității durabile reflectă angajamentul nostru de a reduce emisiile de gaze cu efect de seră și de a reduce amprenta noastră de carbon. În plus, promovăm conștientizarea beneficiilor unei mobilitate mai durabilă, contribuind la bunăstarea angajaților și la păstrarea mediului.",
+        "imageAlt": "Biroul T2M"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Mediu",
+        "title": "Lanț de furnizori angajați în mediu",
+        "iconAlt": "Pictogramă pentru subiectul de mediu"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M valorizează un lanț de furnizori aliniat la valorile sale de sustenabilitate, prioritizând parteneriate cu companii care adoptă practici responsabile pentru mediu. Am evaluat cu atenție furnizorii noștri pentru a ne asigura că împărtășesc angajamentul nostru față de conservarea mediului și pentru a reduce impactul negativ asupra mediului. Aceasta include furnizorii care adoptă metode durabile în producția lor, utilizează materiale reciclate, implementează programe de reducere a deșeurilor și îndeplinesc standardele de responsabilitate a mediului. Prin integrarea practicilor ESG în lanțul nostru de aprovizionare, ne consolidăm angajamentul față de o operație durabilă și ne extindem impactul pozitiv de către alte organizații influențate pentru a adopta practici responsabile.",
+        "imageAlt": "Biroul T2M"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Mediu",
+        "title": "Reciclarea materialelor electronice și a bateriilor",
+        "iconAlt": "Pictogramă pentru subiectul de mediu"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M adoptă practici riguroase de reciclare a echipamentelor și bateriilor electronice, recunoscând importanța eliminării corespunzătoare a acestor materiale pentru a evita impacturile negative asupra mediului. Deșeurile electronice sunt trimise companiilor certificate care asigură tratarea corectă și reciclarea componentelor, contribuind la recuperarea materialelor valoroase și la reducerea deșeurilor toxice. Pe plan intern, promovăm conștientizarea cu privire la importanța reciclării electronicelor în rândul angajaților, încurajând eliminarea corespunzătoare. Această inițiativă reflectă angajamentul nostru față de economia circulară, evitând contaminarea solului și a apei și promovând gestionarea deșeurilor mai eficiente și mai responsabile.",
+        "imageAlt": "Biroul T2M"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Made în 2024",
+        "paragraph": "În 2024, am avansat în inițiative care consolidează sustenabilitatea și includerea, promovând diversitatea, echitatea și practicile solide, concentrându -se pe un impact pozitiv până în 2025.",
+        "numberCards": [
+          {
+            "title": "100 de copaci plantați"
+          },
+          {
+            "title": "99,72% reducere a emisiilor de carbon"
+          },
+          {
+            "title": "A scăzut consumul de materiale de unică folosință"
+          },
+          {
+            "title": "Economii de 2.500 de coli prin semnături digitale"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Social",
+        "title": "Inițiative de formare profesională Sponsor",
+        "iconAlt": "pictogramă cu privire la subiectul social"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M este unul dintre principalii sponsori ai Programului de reședință software SERRATEC, care are ca scop să permită vulnerabilității economice tineri pentru carierele tehnologice. Pe lângă sponsorizare, T2M oferă angajaților să predea cursuri și monitorizare, contribuind activ la formarea rezidenților. Compania are, de asemenea, un parteneriat cu UFF la Fest (Școala de software și fabrica de teste), susținând cursuri esențiale, cum ar fi proprietarul produsului, scrum master și calitatea software -ului. Aceste acțiuni consolidează angajamentul T2M față de responsabilitatea socială și dezvoltarea talentelor locale, promovând o economie mai incluzivă și mai durabilă.",
+        "imageAlt": "Biroul T2M"
+      },
+      "numerosResidenciaTrad": {
+        "title": "Caz practic T2M - Parteneriat SERRATEC",
+        "topTitle": "Indicatori - reședință",
+        "paragraph": "Profesioniști angajați de T2M din Programul de reședință TIC SERRATEC 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Oamenii adoptați de program"
+          },
+          {
+            "title": "101",
+            "paragraph": "Angajare"
+          },
+          {
+            "title": "75%",
+            "paragraph": "Permanență T2M după program"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Persoane cu dizabilități în program"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Participarea femeilor"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Oameni negri participanți"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Absolvenți ai școlii publice"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Acțiuni afirmative beneficiari"
+          },
+          {
+            "title": "10",
+            "paragraph": "Acționează ca profesori sau monitori ai programului"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Social",
+        "title": "Echipa de oameni și managementul compus 100% de femei",
+        "iconAlt": "pictogramă cu privire la subiectul social"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Echipa de oameni și managementul T2M este compus 100% din femei, subliniind angajamentul puternic al companiei față de diversitate și incluziune. În plus, aproximativ 75% din echipa administrativă este formată din femei, persoane cu dizabilități și oameni negri, care consolidează dedicația T2M pentru promovarea unui mediu de muncă plural și reprezentativ. Această echipă de oameni și management joacă un rol esențial în construirea unei culturi organizaționale primitoare și egalitare, implementarea politicilor și acțiunilor de dezvoltare profesională care apreciază diversitatea perspectivelor în cadrul companiei. T2M consideră că includerea este un pilon esențial pentru succesul culturii sale organizaționale, stimulând inovația și generarea unui impact social pozitiv.",
+        "imageAlt": "Biroul T2M"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Social",
+        "title": "Programul de calitate a vieții",
+        "iconAlt": "pictogramă cu privire la subiectul social"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M promovează bunăstarea angajaților săi prin programul său de activitate fizică, organizat în fiecare sâmbătă. Acest program își propune să îmbunătățească calitatea vieții și sănătatea mintală a angajaților, încurajându -i să adopte un stil de viață mai sănătos și mai activ. Activitățile sunt adaptate pentru a îndeplini diferite niveluri de condiționare, promovând implicarea și integrarea între participanți. T2M consideră că investiția în sănătatea angajaților contribuie la un mediu de muncă mai productiv și mai fericit.",
+        "imageAlt": "Imagine ilustrativă a programului de activitate fizică la biroul T2M"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Social",
+        "title": "Campanii de solidaritate",
+        "iconAlt": "Pictogramă cu privire la subiectul social"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M promovează, pe tot parcursul anului, campania de gesturi de solidaritate, campania pentru colectarea alimentelor și îmbrăcămintei, destinată instituțiilor locale și persoanelor fără adăpost. În perioada petrecerii, am organizat, de asemenea, campania să adopte scrisoarea de Crăciun, în special axată pe trimiterea de cadouri către copiii în situații vulnerabile și cu diversitate funcțională, aducând bucurie și sprijin comunităților și instituțiilor. T2M își încurajează activ angajații să participe la aceste acțiuni, consolidând cultura solidarității și implicarea socială în cadrul companiei. Acest sprijin colectiv este esențial pentru succesul campaniei și pentru a ne extinde impactul pozitiv asupra comunității.",
+        "imageAlt": "Imaginea donațiilor făcute de T2M, BioMob și Serratec"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Social",
+        "title": "Voluntariat și sprijin pentru inițiativele de angajare",
+        "iconAlt": "Pictogramă cu privire la subiectul social"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M are un angajament solid pentru sprijinul pentru voluntariat și angajabilitate, participând activ la programe și inițiative care promovează incluziunea socială și dezvoltarea de tineri talente. Compania colaborează cu locuri de muncă vulnerabile destinate persoanelor vulnerabile, cum ar fi mame solo, LGBTQIAP+, persoane cu diversitate funcțională, refugiați, închisori și tineri absolvenți în căutarea primului loc de muncă. În plus, T2M își încurajează angajații să facă voluntariat ca vorbitori și instructori la cursuri pregătitoare care abordează abilitățile tehnice și comportamentale esențiale, pregătind participanții să iasă în evidență pe piața locurilor de muncă.",
+        "imageAlt": "Imaginea de birou a T2M, cu accent pe asistența pentru angajabilitate"
+      },
+      "feitosSocialTrad": {
+        "title": "Realizările noastre sociale în 2024",
+        "paragraph": "În 2024, am avansat în inițiative care consolidează sustenabilitatea și includerea, promovând diversitatea, echitatea și practicile solide, concentrându -se pe un impact pozitiv până în 2025.",
+        "numberCards": [
+          {
+            "title": "422 kg de alimente colectate",
+            "iconAlt": "Pictograma ustensilelor de bucătărie"
+          },
+          {
+            "title": "7 acțiuni sociale efectuate: Bioconecta, DBA, Rose Octombrie și 4 acțiuni ale gesturilor de solidaritate",
+            "iconAlt": "Pictograma mâinilor ajutând"
+          },
+          {
+            "title": "180 de voluntari în acțiunile noastre sociale",
+            "iconAlt": "Pictograma utilizatorului"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Au fost 206 de kilograme de mâncare pentru proiectul Esperança, o inițiativă care vizează transformarea vieții și susținerea celor care au cel mai mult nevoie. Acțiunea a fost sponsorizată de angajatul Emanuel, care a jucat un rol cheie în mobilizare și colectare. Această donație reflectă spiritul de solidaritate și angajament social care inspiră comunitatea să contribuie la un viitor mai bun.",
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "campanha2Trad": {
+        "paragraph": "Campania Rose Rose din octombrie a fost consolidată cu donația de 216 kilograme de alimente pentru APPO - Asociația Petropolitană a pacienților cu cancer. Această acțiune a fost sponsorizată de T2M pentru a reprezenta Rose Octombrie.",
+        "imageAlt": "Imagine de birou T2M"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Guvernanță",
+        "title": "Standarde, coduri și legislații interne și externe ale T2M",
+        "iconAlt": "Pictogramă cu privire la guvernarea subiectului"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2M, fondată în Brazilia în 2002, acționează cu un angajament puternic pentru transparență și respectarea regulilor, codurilor și legilor aplicabile atât în ​​contextul corporativ, cât și în cel național. Normativul nostru se extinde către toți angajații, partenerii și consiliul de administrație, ghidând responsabilitățile legale și angajamentele etice care susțin operațiunile T2M.",
+          "Codul nostru de etică și conduită, însoțit de politicile anti -suborno, conformitate și diversitate și incluziune, servește ca ghiduri de referință pentru o conduită adecvată cu clienții, furnizorii și partenerii. Aceste documente, pe lângă promovarea standardelor etice, reduc probabilitatea unor apariții de conduită inadecvate.",
+          "Pentru a consolida alinierea cu orientările noastre, toți angajații trebuie să finalizeze periodic cursul de politici interne, disponibil pe intranetul nostru, unde sunt revizuite valorile, normele și politicile interne."
+        ],
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Guvernanță",
+        "title": "Comitetele T2M",
+        "iconAlt": "Pictogramă cu privire la guvernarea subiectului"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Conformitate: Acest comitet este responsabil pentru gestionarea independentă și autonomă a programului de integritate T2M, asigurând resursele necesare pentru a asigura imparțialitatea practicilor de conformitate în cadrul companiei. Pe lângă încurajarea raportarii suspiciunilor și încălcărilor, comitetul încearcă să cultive o cultură a responsabilității la toate nivelurile, încurajând prevenirea și detectarea fraudei. Ofițerul de conformitate, o funcție esențială în acest proces, are o autonomie directă și acces la o direcție înaltă, precum și autoritatea de a gestiona sistemul anti -suborne și de conformitate al organizației.",
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (Comisia de prevenire a accidentelor interne): În conformitate cu NR-5, T2M CIPA are funcția de a identifica și atenua riscurile la locul de muncă, promovarea campaniilor de conștientizare și a instruirii și este implicată în problemele de hărțuire, consolidând cultura securității și prevenirii între rândul angajații noștri. În prezent, Comisia este compusă din 10 membri, 30% femei, ceea ce ne consolidează angajamentul față de diversitate și incluziune.",
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Guvernanță",
+        "title": "Certificări și standarde internaționale",
+        "iconAlt": "Pictogramă cu privire la guvernarea subiectului",
+        "paragraph": "Pe lângă comisii, T2M este aliniat la standardele internaționale de integritate și etică în afaceri."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "Avem certificări ISO 37001: 2017, care stabilește și îmbunătățește sistemul de management anti -supuprore și promovează o cultură a transparenței; și ISO 37301: 2021, care definește standardele pentru sistemele de conformitate, asigurând respectarea legilor și reglementărilor aplicabile.",
+          "Aceste certificări reprezintă o reflectare a angajamentului nostru față de practici de afaceri etice, transparente și responsabile. Aceste inițiative demonstrează angajamentul T2M de a menține o sigură, etică și în conformitate cu cele mai bune practici de pe piață."
+        ],
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Guvernanță",
+        "title": "Canale de denunțări",
+        "iconAlt": "Pictogramă cu privire la guvernarea subiectului"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M oferă un canal de plângeri legate direct de Comitetul de etică, care primește și analizează toate reclamațiile trimise, precum și supravegherea implementării, monitorizării și integrității programului de conformitate al companiei.",
+          "Reclamațiile pot fi făcute anonim printr -o formă ușor accesibilă, asigurând confidențialitatea și securitatea reclamanților.",
+          "Pe lângă acest canal, oferim și un canal de reclamații specific CIPA, îndreptat către comunicarea cazurilor de hărțuire și a altor incidente legate de siguranță și bunăstare la locul de muncă.",
+          "Toate informațiile personale partajate sunt tratate cu confidențialitate strictă, asigurând confidențialitatea angajaților. Ambele canale își propun să promoveze un mediu sigur, etic și primitor pentru toți."
+        ],
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Guvernanță",
+        "title": "Echitate salarială",
+        "iconAlt": "Pictogramă cu privire la guvernarea subiectului",
+        "paragraph": "T2M oferă raportul de transparență și egalitate salarială a femeilor și bărbaților, un raport care consolidează angajamentul față de justiția socială.",
+        "buttonText": "Raport"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Acest raport prezintă criterii pentru remunerare și acțiuni pentru a asigura diversitatea, cum ar fi crearea unei poziții și a salariilor sau a planului de carieră, a politicilor de angajare pentru femei (negru, cu dizabilități, în situații de violență, șefi de familie, LGBTQIA+, indigene) și femei Politici de promovare pentru poziții de management și management.",
+        "imageAlt": "Imagine de birou T2M"
+      },
+      "metasTrad": {
+        "title": "Obiectivele noastre în 2025",
+        "paragraph": "Ne -am angajat în continuare pentru sustenabilitate și incluziune, concentrându -ne pe îmbunătățirea continuă a practicilor ESG până în 2025, cu un impact pozitiv asupra societății și a mediului.",
+        "numberCards": [
+          {
+            "title": "Duplicați cantitatea de copaci plantați"
+          },
+          {
+            "title": "Reducerea totală a emisiilor de carbon"
+          },
+          {
+            "title": "Extindeți consumul de material reciclat"
+          },
+          {
+            "title": "Creșterea colecției de alimente cu 50%"
+          },
+          {
+            "title": "Duplică numărul de acțiuni sociale efectuate"
+          },
+          {
+            "title": "Creșteți numărul de voluntari în acțiuni sociale cu 30%"
+          },
+          {
+            "title": "Obțineți certificări ISO 27001 și ISO 27701"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "contact",
-    "title": "Contactaţi-ne",
-    "paragraph": "Pentru a ne contacta, trimiteți un mesaj la e-mail-ul nostru Girlstempetropolis@gmail.com. Răspundem cât mai curând posibil!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Cine suntem?",
+      "paragraph": "Astăzi, după mai bine de 20 de ani de la fondarea T2M, suntem o companie matură, cu aproximativ 300 de angajați, în proces constant de îmbunătățire tehnică, recunoscute pentru calitatea activității noastre de către companii importante din portofoliul nostru de clienți.",
+      "buttonText": "Site -ul oficial al companiei"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "Biroul T2M",
+      "title": "Securitatea de a lucra într -o companie solidă, cu mai mult de 20 de ani pe piață",
+      "topTitle": "Lucrează cu noi",
+      "paragraph": "T2M a fost fondată în 2002 inițial ca birou de testare software. În curând am descoperit că trebuie să mergem mai departe și am verificat toate etapele dezvoltării unui sistem și să ne specializăm în calitatea software -ului.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Experiențe extraordinare și accesibile pentru toți.",
+      "paragraph": "Un T2M - Test pentru a comercializa LTDA. Este o companie braziliană, cu peste 20 de ani de existență, specializată în asigurarea excelenței în dezvoltarea de software, prin teste stricte și urmărirea detaliată a tuturor celorlalți pași de construire a unui proiect. Ne -am extins recent serviciile, adăugând confidențialitate și securitate a datelor, accesibilitate digitală și agilitate de afaceri prin intermediul unor parteneri de renume din aceste segmente."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Modul în care serviciile noastre de excelență vă pot ajuta să vă stimulați afacerea.",
+      "paragraph": "Aflați cum putem extinde semnificativ eficacitatea, calitatea și siguranța afacerii și serviciilor dvs., aducând rezultate mai mari.",
+      "icons": [
+        {
+          "title": "Calitatea software -ului",
+          "paragraph": "Soluțiile noastre de calitate software optimizează toate etapele de dezvoltare, asigurând eficiența, fiabilitatea și satisfacția clienților noștri."
+        },
+        {
+          "title": "Confidențialitate și securitate",
+          "paragraph": "Obiectivul nostru este să depășim provocările de securitate a informațiilor, oferind soluții consultative pentru a răspunde nevoilor specifice fiecărui client."
+        },
+        {
+          "title": "Accesibilitate digitală",
+          "paragraph": "La T2M, căutăm incluziunea digitală, promovând accesibilitatea și inovația pentru a asigura un mediu digital mai incluziv și mai accesibil pentru toți."
+        },
+        {
+          "title": "Agilitate de afaceri",
+          "paragraph": "Ajutăm companiile să se adapteze rapid la schimbările de piață, profitând de oportunități și îmbunătățind agilitatea organizațională."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Inițiative",
+      "title": "Inițiativele și angajamentele noastre",
+      "paragraph": "În T2M, inițiativele și angajamentele noastre se bazează pe căutarea continuă a excelenței și pe impactul pozitiv în toate domeniile pe care le operăm. Ne -am angajat să promovăm calitatea vieții angajaților noștri, să încurajăm inovația și să asigurăm includerea digitală în soluțiile noastre."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Calitatea vieții și bunăstarea",
+      "paragraph": "T2M își menține angajamentul față de bunăstarea angajaților și familiilor săi, oferind un mediu de muncă sănătos și echilibrat. Căutăm continuu să îmbunătățim calitatea vieții în viața de zi cu zi a profesioniștilor noștri, promovând opțiuni de beneficii care răspund nevoilor diferite, cum ar fi flexibilitatea timpului, asistența pentru sănătate mintală și programele de calitate a vieții.",
+      "imageAlt": "Femeie cu haina roșie în natură"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Dezvoltare profesională și inovație",
+      "paragraph": "Am investit în creșterea continuă a echipei noastre prin programe specializate de formare și formare. Încurajăm inovația cu aplicarea metodologiilor agile și exploatarea noilor tehnologii, asigurându -ne că profesioniștii noștri sunt întotdeauna în fruntea tendințelor pieței și sunt pregătiți să ofere soluții inovatoare clienților noștri.",
+      "imageAlt": "Femeie care poartă ochelari de realitate virtuală"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Accesibilitate și incluziune",
+      "paragraph": "Ne -am angajat să promovăm incluziunea și accesibilitatea digitală în toate soluțiile noastre. T2M adoptă practici care se asigură că produsele și serviciile noastre sunt accesibile tuturor, indiferent de nevoile lor specifice, cum ar fi implementarea tehnologiilor de accesibilitate în aplicații și site -uri web, precum și încurajarea unui mediu de lucru incluziv care respectă și apreciază diversitatea.",
+      "imageAlt": "Militar în scaunul cu rotile împreună cu familia ta"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 stâlpi",
+      "title": "Pilonii noștri strategici",
+      "paragraph": "Esența T2M se bazează pe o viziune clară, valori solide și o misiune inspirată. Acești piloni ne ghidează toate acțiunile, ghidându -ne angajamentul față de excelență, inovație și incluziune. Aflați mai jos fundațiile care definesc cine suntem și cum acționăm."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Primul pilon",
+          "title": "Viziune",
+          "paragraph": "Fii o referință națională și internațională în ceea ce privește calitatea software -ului, accesibilitatea și securitatea informației, promovarea inovației tehnologice și contribuind la succesul activității clienților noștri prin soluții independente de tehnologie și metodologie."
+        },
+        {
+          "topTitle": "Al doilea pilar",
+          "title": "Misiune",
+          "paragraph": "Asigurați -vă că produsele clienților noștri îndeplinesc cele mai înalte standarde de calitate de calitate, fiabilitate, accesibilitate și capacitate de utilizare, respectând întotdeauna termenele și nevoile specifice ale fiecărei afaceri și formând continuu profesioniști pentru a transforma piața tehnologiei."
+        },
+        {
+          "topTitle": "Al treilea pilon",
+          "title": "Valori",
+          "paragraph": "La T2M, angajamentul nostru este să exceleze, oferind servicii de înaltă calitate, susținute de cunoștințe tehnice și experiență consolidată. Apreciem inovația, folosind metodologii agile și tăierea tehnologiilor pentru a transforma provocările în oportunități. Lucrăm cu etică și scutire, asigurând decizii imparțiale care prioritizează interesele superioare ale clienților noștri. În plus, promovăm includerea și sustenabilitatea prin formare profesională, accesibilitate digitală și practici care determină dezvoltarea umană și tehnologică. Angajamentul nostru este axat pe rezultate, respectând termenele, fiabilitatea și capacitatea de utilizare, alinierea întotdeauna la nevoile partenerilor noștri."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Importanța externalizării testelor de calitate a software -ului",
+      "paragraph": "Externalizarea testelor de calitate a software -ului este esențială în sistemele critice, cum ar fi banca, aerul și controlul spitalului, care necesită o precizie și siguranță ridicată.",
+      "numberCards": [
+        {
+          "title": "Acces la experți",
+          "paragraph": "Companiile specializate oferă profesioniști calificați, asigurând teste mai profunde și utilizarea practicilor de tăiere -pentru a asigura calitatea software -ului."
+        },
+        {
+          "title": "Foto fără afaceri de bază",
+          "paragraph": "Odată cu externalizarea, echipa internă se poate concentra pe dezvoltarea de noi caracteristici, îmbunătățirea productivității și stimularea creșterii afacerii."
+        },
+        {
+          "title": "Reducerea costurilor și a timpului",
+          "paragraph": "Evitarea creării echipelor de testare internă reduce costurile fixe și vă permite să optimizați investițiile în funcție de cerere, accelerând procesele de testare."
+        },
+        {
+          "title": "Scalabilitate și flexibilitate",
+          "paragraph": "Companiile externalizate pot ajusta capacitatea de testare în funcție de cerere, îndeplinirea vârfurilor și ajustarea scării în funcție de lansarea de noi produse."
+        },
+        {
+          "title": "Imparțialitate și viziune externă",
+          "paragraph": "O echipă externă aduce o viziune imparțială a produsului, contribuind la identificarea defectelor pe care o echipă internă nu poate să le realizeze, îmbunătățind calitatea generală."
+        },
+        {
+          "title": "Acces la instrumente și tehnologii avansate",
+          "paragraph": "Companiile specializate au acces la instrumente de tăiere -pentru automatizare, teste de încărcare și alte practici, evitând costul ridicat de implementare internă."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Val"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Propunere de valoare",
+      "paragraph": "Considerăm că, prin furnizarea de soluții tehnice robuste și personalizate, nu numai că putem satisface nevoile imediate ale clienților noștri, dar și contribuim la creșterea durabilă și la inovația continuă în activitatea lor.",
+      "buttonText": "Blogul nostru"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Soluții de calitate pentru succes",
+      "paragraph": "Pe T2M, ne -am angajat să oferim soluții tehnologice de înaltă calitate care să sporească succesul clienților noștri. Oferim servicii specializate în software, confidențialitate și calitatea securității, accesibilitate digitală și agilitate de afaceri, concentrându -se mereu pe furnizarea de rezultate concrete. Am selectat metodologii și tehnologii de tăiere pentru a transforma provocările în oportunități, asigurându -ne că clienții noștri pot avea încredere în procesele noastre și pot oferi rezultate la momentul potrivit.",
+      "imageAlt": "Idee"
+    },
+    "inovacaoTrad": {
+      "title": "Inovație și durabilitate",
+      "paragraph": "Angajamentul nostru față de inovație și sustenabilitate se reflectă în activitatea continuă cu partenerii și furnizorii noștri, asigurându -se că toate procesele sunt efectuate cu cele mai înalte standarde de calitate și siguranță. În plus, soluțiile noastre sunt adaptate la nevoile specifice ale fiecărui client, alinându -se la obiectivele lor strategice și oferind avantaje competitive pe piață.",
+      "imageAlt": "Sustenabilitate"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Practici responsabile și incluzive",
+      "paragraph": "Pe T2M, ne -am angajat să oferim soluții tehnologice de înaltă calitate care să sporească succesul clienților noștri. Oferim servicii specializate în software, confidențialitate și calitatea securității, accesibilitate digitală și agilitate de afaceri, concentrându -se mereu pe furnizarea de rezultate concrete. Am selectat metodologii și tehnologii de tăiere pentru a transforma provocările în oportunități, asigurându -ne că clienții noștri pot avea încredere în procesele noastre și pot oferi rezultate la momentul potrivit.",
+      "imageAlt": "Scaun cu rotile"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Transparență și egalitate socială",
+      "paragraph": "Conform Ministerului Regulilor Muncii, vă informăm că, disponibil pe site -ul nostru web, raportul de transparență și egalitate salarială a femeilor și bărbaților, referindu -se la semestrul 2 2024.",
+      "buttonText": "Raport"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Echipa noastră",
+      "paragraph": "Succesul proiectelor noastre este determinat de expertiza și dedicația echipei noastre. Formată de profesioniști extrem de pregătiți și pasionați de ceea ce fac, echipa noastră este întotdeauna gata să facă față noi provocări, să ofere soluții inovatoare și să colaboreze cu clienții noștri pentru a obține rezultate excepționale.",
+      "buttonText": "Vreau să fac parte din echipă"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Diviziune pe categorie",
+      "paragraph": "Extinderea eficacității, calității și siguranței afacerii și serviciilor dvs., aducând rezultate mai mari.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Calitatea software -ului",
+          "paragraph": "Soluțiile noastre de calitate software optimizează toate etapele de dezvoltare, asigurând eficiența, fiabilitatea și satisfacția clienților noștri."
+        },
+        {
+          "id": 2,
+          "title": "Securitatea datelor",
+          "paragraph": "Echipa noastră de experți depășește provocările de securitate a informațiilor, asigurând protecția și confidențialitatea datelor sensibile."
+        },
+        {
+          "id": 3,
+          "title": "Accesibilitate digitală",
+          "paragraph": "Cu expertiza noastră în accesibilitate digitală, vă garantăm că toată lumea poate accesa și interacționa cu produsele lor digitale într -un mod incluziv."
+        },
+        {
+          "id": 4,
+          "title": "Agilitate de afaceri",
+          "paragraph": "Grupul nostru de agilitate de afaceri se concentrează pe a ajuta companiile să se adapteze rapid la schimbările de piață și să le optimizeze performanța."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Angajament pentru diversitate și incluziune",
+      "paragraph": "Am închis recent un parteneriat cu Biomob, axat pe proiecte sociale și servicii legate de diversitate și incluziune, pentru a ne îmbunătăți comportamentul față de aceste subiecte și accesibilitatea în general."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Un mediu extrem de valoros",
+      "paragraph": "Angajamentul nostru este să creăm un mediu în care toată lumea se simte apreciată, indiferent de originea, sexul, etnia sau orice altă caracteristică personală.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Gen",
+          "paragraph": "Garantăm oportunități egale, recunoscând puterea unei echipe de gen echilibrate.",
+          "imageAlt": "pictograma de gen"
+        },
+        {
+          "id": 2,
+          "title": "Rasă",
+          "paragraph": "Sărbătorim toate etniile și munca, astfel încât echipa noastră să fie o reflectare a pluralității societății noastre.",
+          "imageAlt": "Pictograma cursei"
+        },
+        {
+          "id": 3,
+          "title": "Vârstă",
+          "paragraph": "Respectăm înțelepciunea celor mai experimentați și energia celor mai tineri, înțelegând că toată lumea are contribuții valoroase.",
+          "imageAlt": "pictogramă"
+        },
+        {
+          "id": 5,
+          "title": "Diversitate funcțională",
+          "paragraph": "Oferim un mediu de muncă accesibil și incluziv, recunoscând abilitățile și talentele persoanelor cu dizabilități.",
+          "imageAlt": "Pictograma diversității funcționale"
+        },
+        {
+          "id": 6,
+          "title": "Accesibilitate",
+          "paragraph": "Atât birourile noastre, cât și site -ul nostru sunt accesibile persoanelor cu limitări vizuale, auditive, fizice și cognitive.",
+          "imageAlt": "Pictogramă de accesibilitate"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Diversitatea de gen în echipa noastră",
+        "imageAlt": "Graficul diversității de gen în echipa noastră"
+      },
+      "secondImage": {
+        "title": "Diversitatea de gen în echipa noastră",
+        "imageAlt": "Grafic de distribuție pe grupe de vârstă"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Propunerea noastră de valoare pentru angajat",
+      "paragraph": "În compania noastră, credem că succesul este direct legat de respect, etică și incluziune în toate aspectele mediului de muncă."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Cultura respectului, eticii și incluziunii",
+      "paragraph": "Promovăm o cultură de transparență și echitate, unde toți angajații au aceleași oportunități de creștere și recunoaștere. Angajamentul nostru față de diversitate și incluziune se reflectă în practicile care garantează un spațiu sigur și respectuos, unde toată lumea se poate exprima și contribuie la potențialul lor maxim.",
+      "imageAlt": "Femeie cu haina roșie în natură"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Accesibilitate și incluziune",
+      "paragraph": "În plus, oferim o serie de beneficii care vizează bunăstarea și calitatea vieții angajaților noștri, cum ar fi îngrijirea medicală și dentară, diverse SIDA (birou de casă, mâncare, masă și transport), asigurări de viață, viață și carieră de plan.",
+      "imageAlt": "Femeie care poartă ochelari de realitate virtuală"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Cultivar",
+      "title": "Drepturile omului și practicile corecte de muncă",
+      "paragraph": "Ne -am angajat să creăm medii de muncă incluzive, unde toată lumea are aceleași oportunități de a -și atinge potențialul maxim. Considerăm că promovarea drepturilor omului și construcția de spații respectuoase sunt esențiale pentru păstrarea integrității mărcii noastre și a succesului nostru continuu."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Angajamentul pentru drepturile omului și standardele internaționale",
+      "paragraph": "Angajament ferm de respectare a drepturilor omului, alinierea practicilor noastre cu principiile stabilite de Declarația universală a drepturilor omului și a normelor recunoscute la nivel internațional. Valorile noastre se bazează pe principii de ghidare a Națiunilor Unite asupra companiilor și drepturilor omului, precum și pe Carta internațională a drepturilor omului și Declarația Organizației Internaționale a Muncii (OIM) privind drepturile fundamentale la locul de muncă. Aceste orientări sunt încorporate în regulile noastre de conduită de afaceri, care se aplică în mod egal tuturor angajaților, furnizorilor și partenerilor T2M, asigurând un mediu de muncă incluziv, respectuos și sigur."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Garanția unui mediu de lucru sigur și respectuos",
+      "paragraph": "Angajament ferm de respectare a drepturilor omului, alinierea practicilor noastre cu principiile stabilite de Declarația universală a drepturilor omului și a normelor recunoscute la nivel internațional. Valorile noastre se bazează pe principii de ghidare a Națiunilor Unite asupra companiilor și drepturilor omului, precum și pe Carta internațională a drepturilor omului și Declarația Organizației Internaționale a Muncii (OIM) privind drepturile fundamentale la locul de muncă. Aceste orientări sunt încorporate în regulile noastre de conduită de afaceri, care se aplică în mod egal tuturor angajaților, furnizorilor și partenerilor T2M, asigurând un mediu de muncă incluziv, respectuos și sigur."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Poziționarea noastră",
+      "title": "Diversitate și incluziune",
+      "paragraph": "Angajat pentru crearea unui mediu incluziv în care diversitatea este o valoare esențială. Credem că combinația de perspective, experiențe și talente diferite ne întărește cultura și ne determină să realizăm noi orizonturi."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Diversitatea de gen",
+      "paragraph": "În T2M, credem că egalitatea de gen este un factor crucial pentru succes și inovație. Lucrăm pentru a crea un mediu în care bărbații, femeile și persoanele non -binare și -au recunoscut vocile și talentele auzite pe deplin. Implementăm inițiative de capitaluri proprii oferind aceleași oportunități de dezvoltare și creștere pentru toți, indiferent de sexul lor. Pentru noi, un mediu echilibrat și corect este baza pentru soluții creative și pentru construirea unui viitor mai incluziv."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Diversitate sexuală",
+      "paragraph": "Respectul pentru diversitatea sexuală este unul dintre fundamentele culturii noastre în T2M. Suntem mândri să promovăm un mediu primitor și sigur, astfel încât angajații LGBTQIA+ să își poată exprima autenticitatea identității. Mai mult decât combatem prejudecățile, sărbătorim individualitatea și încurajăm practicile care transformă incluziunea într -un pilon strategic. Credem că prin evaluarea diferitelor moduri de a iubi și de a fi, ne consolidem capacitatea de a colabora și de a inova ca echipă."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Diversitate culturală",
+      "paragraph": "În T2M, îmbrățișăm bogăția culturală și istorică pe care o aduce diversitatea rasială companiei noastre. Ne confruntăm cu mult mai multe rase și grupuri etnice ca o oportunitate de învățare și evoluție. Cu politici ferme împotriva rasismului și acțiunilor proactive pentru a asigura oportunități egale, lucrăm pentru a construi un mediu în care fiecare individ este apreciat pentru ceea ce este, contribuind la perspective unice care ne fac mai puternici ca organizație."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Diversitate rasială",
+      "paragraph": "Diversitatea rasială în T2M este văzută ca o bogăție care ne întărește mediul de muncă și ne extinde perspectivele. Ne -am angajat să promovăm un mediu care respectă, salută și apreciază toate rasele și grupurile etnice, recunoscând importanța diferitelor experiențe de viață pentru dezvoltarea de soluții creative și eficiente. Avem politici clare împotriva oricărei forme de rasism și lucrăm pentru a ne asigura că toți angajații, indiferent de originea lor rasială, au aceleași oportunități de creștere, fiind respectați și apreciați de contribuția lor unică la companie."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Diversitate pentru persoanele cu dizabilități",
+      "paragraph": "Includerea persoanelor cu dizabilități este mai mult decât o prioritate pentru T2M; Este un angajament față de echitate și accesibilitate. Ne adaptăm spațiile și procesele pentru a ne asigura că toți angajații noștri pot acționa cu autonomie și demnitate. În plus, promovăm conștientizarea internă pentru a crea un mediu cu adevărat incluziv, în care abilitățile fiecărui individ sunt apreciate și unde barierele se transformă în poduri pentru un succes comun."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pilar",
+      "title": "Sănătate și bunăstare",
+      "paragraph": "Dacă apreciați un loc în care bunăstarea dvs. este o prioritate, cunoașteți cum avem grijă de echipa noastră, astfel încât să se simtă sprijinit și sănătos în fiecare aspect al vieții."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Sănătate și bunăstare",
+      "paragraph": "La T2M, recunoaștem că sănătatea și bunăstarea angajaților noștri sunt piloni pentru creșterea durabilă a companiei și pentru succesul individual. Promovăm inițiative care încurajează îngrijirea integrală, inclusiv programe de sănătate fizică și psihică, îngrijiri medicale și stomatologice, precum și sprijin psihologic pentru a face față provocărilor de zi cu zi. Creăm un mediu care prioritizează echilibrul dintre viața profesională și personală, asigurându -ne că fiecare angajat are resurse pentru a cultiva obiceiuri sănătoase și pentru a -și atinge obiectivele cu calitatea vieții."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Instruirea comunității",
+      "paragraph": "Compania dezvoltă inițiative care depășesc afacerile, căutând să genereze beneficii sociale și de mediu aliniate la valorile lor.",
+      "buttonText": "Blogul nostru"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Şedere",
+      "title": "Oportunități incluzive și de formare pentru regiune",
+      "paragraph": "T2M este unul dintre principalii sponsori ai Programului de reședință software SERRATEC, care are ca scop să permită vulnerabilității economice tineri pentru carierele tehnologice. Acest program oferă instruire tehnică în dezvoltarea de software și pregătește participanții pentru a intra pe piața locurilor de muncă într -un sector de mare cerere. Prin aceasta, T2M își consolidează angajamentul față de responsabilitatea socială și dezvoltarea talentelor locale, promovând o economie mai incluzivă și mai durabilă.",
+      "imageAlt": "Biroul T2M",
+      "buttonText": "Vreau să mă abonez"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Rezultate",
+      "title": "Partenerii noștri",
+      "paragraph": "Rețeaua noastră de angajați care determină și modelează succesul în fiecare pas"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Agil scalat",
+          "paragraph": "Scaled Agile, Inc. este recunoscut la nivel mondial ca creator al Agile Framework® (SAFE), o abordare principală a agilității de afaceri.",
+          "imageAlt": "Logo da scalat agile"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Vino să faci parte dintr -unul dintre cele mai mari centre tehnologice din Brazilia! Serviciile și beneficiile pentru afacerea dvs. sau pornirea încep pe piciorul drept!",
+          "imageAlt": "Logo -ul face serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Soluții pentru implementarea unui proces complet și automat de dezvoltare a sistemelor.",
+          "imageAlt": "Logo -ul IBM"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft este un lider BigTech în cloud computing, platformă de putere și inteligență artificială.",
+          "imageAlt": "Logo de la Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Instrumente de virtualizare a datelor și soluții de mască de date.",
+          "imageAlt": "Delphi în curând"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Accesibilitatea și includerea este misiunea noastră. Creăm soluții digitale pentru a duce mai multă viață socială armonioasă, oferind calitatea vieții și participarea deplină la societate pentru cei care se văd omisiți din aceasta.",
+          "imageAlt": "Logo -ul biomob"
+        },
+        {
+          "id": 7,
+          "title": "Automatizare oriunde",
+          "paragraph": "Automatizarea oriunde încearcă să elibereze oameni din sarcini banale și repetitive pentru a petrece mai mult timp folosind intelectul și creativitatea lor pentru a rezolva provocările avansate de afaceri și a efectua o muncă care necesită cunoștințe specifice.",
+          "imageAlt": "Logo da automatizare oriunde"
+        },
+        {
+          "id": 8,
+          "title": "VMedu",
+          "paragraph": "VMEDU este cea mai importantă companie în industria de certificare și formare profesională și a oferit deja instruire a peste 500.000 de studenți de la peste 3500 de companii din peste 150 de țări, cu o rată de succes de 98,7% prin rețeaua sa globală de peste 1100 de furnizori de formare.",
+          "imageAlt": "Logo -ul VMEDU"
+        },
+        {
+          "id": 9,
+          "title": "Viitor",
+          "paragraph": "Recunoscută pe piața de securitate a informațiilor braziliene, avem o bază de clienți solidă, distribuită în diferite dimensiuni și segmente, deservind de la mari companii publice și private, la companii cu dimensiuni medii.",
+          "imageAlt": "Logo -ul viitor"
+        }
+      ],
+      "type": "centru"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Mesaj de la CEO -ul nostru",
+      "paragraph": "În T2M, ne consolidăm angajamentul și alinierea cu practicile OND și ESG ONU.",
+      "buttonText": "Guilherme da Motta Alves - LinkedIn"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Angajat pentru sustenabilitate și responsabilitatea afacerii, organizația noastră prioritizează integrarea principiilor ESG în toate activitățile noastre. Recunoaștem importanța:",
+      "numberCards": [
+        {
+          "title": "Protejarea mediului (mediu)",
+          "paragraph": "Prin reducerea amprentei noastre de carbon, utilizarea eficientă a resurselor naturale și promovarea practicilor durabile."
+        },
+        {
+          "title": "Promovarea relațiilor sociale corecte și echitabile (social)",
+          "paragraph": "Respectarea drepturilor omului, diversității, incluziunii și bunăstării angajaților, clienților și comunităților noastre."
+        },
+        {
+          "title": "Practicați o guvernare corporativă transparentă și etică (guvernanță)",
+          "paragraph": "Cu un leadership responsabil, gestionarea eficientă a riscurilor și respectarea legilor și reglementărilor. Viziunea noastră este de a crea o valoare durabilă pentru toate părțile interesate, contribuind la un viitor mai prosper și mai rezistent."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Acest raport al impactului social și al dezvoltării durabile din 2024 reflectă angajamentul nostru pentru atractivitate și responsabilitatea socială în T2M. Acesta servește ca un canal fundamental pentru comunicarea sustenabilității și progreselor noastre, alinierea practicilor noastre la obiectivele de dezvoltare durabilă Dooni și principiile ESG. Acest raport nu numai că evidențiază eforturile noastre privind instruirea, diversitatea etică a guvernării, dar ne permite, de asemenea, să consolidăm legăturile cu părțile interesate și să ne ghiim deciziile eficiente. Împărtășind rezultatele și provocările noastre, am reafirmat dedicația noastră pentru un impact pozitiv al Eduro.",
+      "CEO": "CEO da T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Subiecte de site",
+      "items": {
+        "sobre": "Pe",
+        "quemSomos": "Cine suntem",
+        "propostaDeValor": "Propunere de valoare",
+        "nossaEquipe": "Echipa noastră",
+        "comunidade": "Comunitate",
+        "esg": "Esg"
+      }
+    },
+    "socialLinks": {
+      "title": "Rețelele noastre sociale",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Accesați site -ul nostru oficial",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Toate drepturile rezervate",
+      "logoAlt": "Logo -ul T2M"
+    }
   }
 }

@@ -23,6 +23,7 @@ import {
   FaUniversalAccess,
   FaUserCheck,
 } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -35,20 +36,35 @@ const ImageWithCardTextBanner = dynamic(() =>
 const SimpleCallBanner = dynamic(() =>
   import("@/components/banners/SimpleCallBanner").then((mod) => mod.SimpleCallBanner)
 );
+
 const IconsCardsBanner = dynamic(() =>
   import("@/components/banners/IconsCardsBanner").then((mod) => mod.IconsCardsBanner)
 );
+
 const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
   import("@/components/banners/ThreeTextCardsWithNumberCardBanner").then(
     (mod) => mod.ThreeTextCardsWithNumberCardBanner
   )
 );
+
 const NumberCardsBanner = dynamic(() =>
   import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
 );
 
 const QuemSomosPage: React.FC = () => {
   const isMounted = useIsMounted();
+
+  const callBannerTrad = useTranslations("QuemSomosPage.callBannerTrad");
+  const trabalheConoscoTrad = useTranslations("QuemSomosPage.trabalheConoscoTrad");
+  const experienciasExtraordinariasTrad = useTranslations("QuemSomosPage.experienciasExtraordinariasTrad");
+  const servicosExcelenciaTrad = useTranslations("QuemSomosPage.servicosExcelenciaTrad");
+  const iniciativasTrad = useTranslations("QuemSomosPage.iniciativasTrad");
+  const qualidadeDeVidaTrad = useTranslations("QuemSomosPage.qualidadeDeVidaTrad");
+  const desenvolvimentoProfissionalTrad = useTranslations("QuemSomosPage.desenvolvimentoProfissionalTrad");
+  const acessibilidadeInclusaoTrad = useTranslations("QuemSomosPage.acessibilidadeInclusaoTrad");
+  const tresPilaresTrad = useTranslations("QuemSomosPage.tresPilaresTrad");
+  const quatroCardsMetodologiaTrad = useTranslations("QuemSomosPage.quatroCardsMetodologiaTrad");
+  const importanciaTerceirizarTestesTrad = useTranslations("QuemSomosPage.importanciaTerceirizarTestesTrad");
 
   if (!isMounted) {
     return (
@@ -61,21 +77,19 @@ const QuemSomosPage: React.FC = () => {
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/quemsomos.png",
     buttonLink: "https://www.t2mlab.com",
-    buttonText: "Site oficial da empresa",
+    buttonText: callBannerTrad("buttonText"),
     buttonTarget: "_blank",
-    title: "Quem somos?",
-    paragraph:
-      "Hoje, passados mais de 20 anos da  fundação  da T2M, somos uma empresa madura, com cerca de 300 funcionários, em constante processo de aprimoramento técnico,  reconhecida pela qualidade do nosso trabalho por importantes companhias do nosso portfólio de clientes.",
+    title: callBannerTrad("title"),
+    paragraph: callBannerTrad("paragraph"),
   };
 
   const trabalheConoscoData: ImageWithCardTextBannerInterface = {
-    imageAlt: "Escritório da T2M",
+    imageAlt: trabalheConoscoTrad("imageAlt"),
     imageUrl: "/img/final/trabalheConosco.jpg",
-    title: "Segurança de trabalhar em uma empresa sólida, com mais de 20 anos de mercado",
-    topTitle: "Trabalhe conosco",
-    paragraph:
-      "A T2M foi fundada em 2002 inicialmente como um bureau de testes de Software. Logo descobrimos que precisávamos avançar e passamos a verificar todas as etapas do desenvolvimento de um sistema e nos especializamos em qualidade de software.",
-    buttonText: "info@t2mlab.com",
+    title: trabalheConoscoTrad("title"),
+    topTitle: trabalheConoscoTrad("topTitle"),
+    paragraph: trabalheConoscoTrad("paragraph"),
+    buttonText: trabalheConoscoTrad("buttonText"),
     buttonLink: "/contato",
     imageAlignment: "start",
   };
@@ -83,42 +97,36 @@ const QuemSomosPage: React.FC = () => {
   const experienciasExtraordinariasData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/experienciasExtraordinarias.png",
-    title: "Experiências extraordinárias e acessíveis para todos.",
-    paragraph:
-      "A T2M – Test to Market Ltda. é uma empresa brasileira, com mais de 20 anos de existência, especializada em assegurar excelência em desenvolvimento de software, através de testes rigorosos e acompanhamento detalhado de todas as demais etapas da construção de um projeto. Recentemente, ampliamos a nossa prestação de serviços, agregando privacidade e segurança de dados, acessibilidade digital e Business Agility, por meio de renomados parceiros nestes segmentos.",
+    title: experienciasExtraordinariasTrad("title"),
+    paragraph: experienciasExtraordinariasTrad("paragraph"),
   };
 
   const servicosExcelenciaData: IconsCardsBannerInterface = {
-    title: "Como os nossos serviços de excelência podem ajudar a impulsionar seus negócios.",
-    paragraph:
-      "Saiba como podemos ampliar, significativamente, a eficácia, a qualidade e a segurança dos seus negócios e serviços, trazendo resultados superiores.",
+    title: servicosExcelenciaTrad("title"),
+    paragraph: servicosExcelenciaTrad("paragraph"),
     icons: [
       {
         id: 1,
-        title: "Qualidade de Software",
-        paragraph:
-          "Nossas soluções em Qualidade de Software otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação de nossos clientes.",
+        title: servicosExcelenciaTrad("icons.0.title"),
+        paragraph: servicosExcelenciaTrad("icons.0.paragraph"),
         icon: FaCogs,
       },
       {
         id: 2,
-        title: "Privacidade e Segurança",
-        paragraph:
-          "Nosso foco é superar desafios de Segurança da Informação, oferecendo soluções consultivas para atender as necessidades específicas de cada cliente.",
+        title: servicosExcelenciaTrad("icons.1.title"),
+        paragraph: servicosExcelenciaTrad("icons.1.paragraph"),
         icon: FaShieldAlt,
       },
       {
         id: 3,
-        title: "Acessibilidade Digital",
-        paragraph:
-          "Na T2M, buscamos a inclusão digital, promovendo acessibilidade e inovação para garantir um ambiente digital mais inclusivo e acessível para todos.",
+        title: servicosExcelenciaTrad("icons.2.title"),
+        paragraph: servicosExcelenciaTrad("icons.2.paragraph"),
         icon: FaUniversalAccess,
       },
       {
         id: 4,
-        title: "Business Agility",
-        paragraph:
-          "Ajudamos empresas a se adaptarem rapidamente às mudanças de mercado, aproveitando oportunidades e melhorando a agilidade organizacional.",
+        title: servicosExcelenciaTrad("icons.3.title"),
+        paragraph: servicosExcelenciaTrad("icons.3.paragraph"),
         icon: FaTachometerAlt,
       },
     ],
@@ -127,45 +135,40 @@ const QuemSomosPage: React.FC = () => {
 
   const iniciativasData: SimpleCallBannerInterface = {
     alignment: "end",
-    topTitle: "Iniciativas",
-    title: "Nossas iniciativas e compromissos",
-    paragraph:
-      "Na T2M, nossas iniciativas e compromissos são fundamentados na busca contínua pela excelência e pelo impacto positivo em todas as áreas que atuamos. Estamos empenhados em promover a qualidade de vida dos nossos colaboradores, incentivar a inovação e garantir a inclusão digital em nossas soluções.",
+    topTitle: iniciativasTrad("topTitle"),
+    title: iniciativasTrad("title"),
+    paragraph: iniciativasTrad("paragraph"),
     imageUrl: "/img/temp/iniciativas.png",
   };
 
   const qualidadeDeVidaData: ImageWithCardTextBannerInterface = {
-    title: "Qualidade de Vida e Bem-Estar",
-    paragraph:
-      "A T2M mantém seu compromisso com o bem-estar de seus colaboradores e suas famílias, oferecendo um ambiente de trabalho saudável e equilibrado. Buscamos continuamente melhorar a qualidade de vida no dia a dia de nossos profissionais, promovendo opções de benefícios que atendem a diferentes necessidades, como flexibilidade de horário, apoio à saúde mental e programas de qualidade de vida.",
-    imageAlt: "Mulher com casaco vermelho na natureza",
+    title: qualidadeDeVidaTrad("title"),
+    paragraph: qualidadeDeVidaTrad("paragraph"),
+    imageAlt: qualidadeDeVidaTrad("imageAlt"),
     imageUrl: "/img/temp/mulherCasacoVermelho.png",
     imageAlignment: "end",
   };
 
   const desenvolvimentoProfissionalData: ImageWithCardTextBannerInterface = {
-    title: "Desenvolvimento Profissional e Inovação",
-    paragraph:
-      "Investimos no crescimento contínuo de nossa equipe por meio de treinamentos especializados e programas de capacitação. Incentivamos a inovação com a aplicação de metodologias ágeis e a exploração de novas tecnologias, garantindo que nossos profissionais estejam sempre na vanguarda das tendências de mercado e preparados para oferecer soluções inovadoras aos nossos clientes.",
-    imageAlt: "Mulher usando óculos de realidade virtual",
+    title: desenvolvimentoProfissionalTrad("title"),
+    paragraph: desenvolvimentoProfissionalTrad("paragraph"),
+    imageAlt: desenvolvimentoProfissionalTrad("imageAlt"),
     imageUrl: "/img/final/desenvolvimentoProfissional.jpg",
     imageAlignment: "start",
   };
 
   const acessibilidadeInclusao: ImageWithCardTextBannerInterface = {
-    title: "Acessibilidade e Inclusão",
-    paragraph:
-      "Estamos comprometidos em promover a inclusão e acessibilidade digital em todas as nossas soluções. A T2M adota práticas que garantem que nossos produtos e serviços sejam acessíveis a todas as pessoas, independentemente de suas necessidades específicas, como a implementação de tecnologias de acessibilidade em aplicativos e sites, além de fomentar um ambiente de trabalho inclusivo, que respeita e valoriza a diversidade.",
-    imageAlt: "Militar na cadeira de rodas junto com a sua família",
+    title: acessibilidadeInclusaoTrad("title"),
+    paragraph: acessibilidadeInclusaoTrad("paragraph"),
+    imageAlt: acessibilidadeInclusaoTrad("imageAlt"),
     imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
     imageAlignment: "end",
   };
 
   const tresPilaresData: SimpleCallBannerInterface = {
-    topTitle: "3 Pilares",
-    title: "Nossos pilares estratégicos",
-    paragraph:
-      "A essência da T2M está fundamentada em uma visão clara, valores sólidos e uma missão inspiradora. Esses pilares norteiam todas as nossas ações, guiando nosso compromisso com a excelência, a inovação e a inclusão. Conheça abaixo os fundamentos que definem quem somos e como atuamos.",
+    topTitle: tresPilaresTrad("topTitle"),
+    title: tresPilaresTrad("title"),
+    paragraph: tresPilaresTrad("paragraph"),
     imageUrl: "/img/temp/3pilares.png",
     alignment: "start",
   };
@@ -173,149 +176,61 @@ const QuemSomosPage: React.FC = () => {
   const quatroCardsMetodologiaData: ThreeTextCardsWithNumberCardBannerInterface = {
     textCards: [
       {
-        topTitle: "Primeiro Pilar",
-        title: "Visão",
-        paragraph:
-          "Ser referência nacional e internacional em qualidade de software, acessibilidade e segurança da informação, promovendo inovação tecnológica e contribuindo para o sucesso dos negócios de nossos clientes por meio de soluções independentes de tecnologia e metodologia.",
+        topTitle: quatroCardsMetodologiaTrad("textCards.0.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.0.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.0.paragraph"),
       },
       {
-        topTitle: "Segundo Pilar",
-        title: "Missão",
-        paragraph:
-          "Garantir que os produtos de nossos clientes atendam aos mais elevados padrões de qualidade, confiabilidade, acessibilidade e usabilidade, sempre respeitando os prazos e necessidades específicas de cada negócio, e capacitar continuamente profissionais para transformar o mercado de tecnologia.",
+        topTitle: quatroCardsMetodologiaTrad("textCards.1.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.1.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.1.paragraph"),
       },
       {
-        topTitle: "Terceiro Pilar",
-        title: "Valores",
-        paragraph:
-          "Na T2M, nosso compromisso é com a excelência, entregando serviços de alta qualidade respaldados por conhecimento técnico e experiência consolidada. Valorizamos a inovação, utilizando metodologias ágeis e tecnologias de ponta para transformar desafios em oportunidades. Atuamos com ética e isenção, garantindo decisões imparciais que priorizam os melhores interesses dos nossos clientes. Além disso, promovemos inclusão e sustentabilidade por meio da formação profissional, acessibilidade digital e práticas que impulsionam o desenvolvimento humano e tecnológico. Nosso comprometimento é focado nos resultados, respeitando prazos, confiabilidade e usabilidade, sempre em alinhamento com as necessidades dos nossos parceiros.",
+        topTitle: quatroCardsMetodologiaTrad("textCards.2.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.2.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.2.paragraph"),
       },
     ],
-    // topTitle: "2024 em números",
-    // numberCards: [
-    //   {
-    //     title: "971",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    //   {
-    //     title: "972",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    //   {
-    //     title: "973",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    //   {
-    //     title: "974",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    //   {
-    //     title: "975",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    //   {
-    //     title: "976",
-    //     paragraph: "BRASIL",
-    //     country: "BR",
-    //   },
-    // ],
   };
 
   const importanciaTerceirizarTestesData: NumberCardsBannerInterface = {
     ods: [8, 9, 17],
-    title: "A importância de terceirizar Testes de Qualidade de Software",
-    paragraph:
-      "A terceirização dos testes de qualidade de software é essencial em sistemas críticos, como os bancários, de controle aéreo e hospitalares, que exigem alta precisão e segurança.",
+    title: importanciaTerceirizarTestesTrad("title"),
+    paragraph: importanciaTerceirizarTestesTrad("paragraph"),
     numberCards: [
       {
-        title: "Acesso a especialistas",
+        title: importanciaTerceirizarTestesTrad("numberCards.0.title"),
         icon: FaUserCheck,
-        paragraph:
-          "Empresas especializadas oferecem profissionais qualificados, garantindo testes mais profundos e o uso de práticas de ponta para assegurar a qualidade do software.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.0.paragraph"),
       },
       {
-        title: "Foco no core business",
+        title: importanciaTerceirizarTestesTrad("numberCards.1.title"),
         icon: FaLaptop,
-        paragraph:
-          "Com a terceirização, a equipe interna pode concentrar-se no desenvolvimento de novas funcionalidades, melhorando a produtividade e impulsionando o crescimento do negócio.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.1.paragraph"),
       },
       {
-        title: "Redução de custos e tempo",
+        title: importanciaTerceirizarTestesTrad("numberCards.2.title"),
         icon: FaRegCreditCard,
-        paragraph:
-          "Evitar a criação de equipes internas de testes reduz custos fixos e permite otimizar o investimento conforme a demanda, acelerando os processos de testes.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.2.paragraph"),
       },
       {
-        title: "Escalabilidade e flexibilidade",
+        title: importanciaTerceirizarTestesTrad("numberCards.3.title"),
         icon: FaCogs,
-        paragraph:
-          "Empresas terceirizadas conseguem ajustar a capacidade de testes conforme a demanda, atendendo picos e ajustando a escala conforme o lançamento de novos produtos.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.3.paragraph"),
       },
       {
-        title: "Imparcialidade e visão externa",
+        title: importanciaTerceirizarTestesTrad("numberCards.4.title"),
         icon: FaEye,
-        paragraph:
-          "Uma equipe externa traz uma visão imparcial do produto, ajudando a identificar falhas que uma equipe interna pode não perceber, melhorando a qualidade geral.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.4.paragraph"),
       },
       {
-        title: "Acesso a ferramentas e tecnologias avançadas",
+        title: importanciaTerceirizarTestesTrad("numberCards.5.title"),
         icon: FaTools,
-        paragraph:
-          "Empresas especializadas têm acesso a ferramentas de ponta para automação, testes de carga e outras práticas, evitando o alto custo de implementação interna.",
+        paragraph: importanciaTerceirizarTestesTrad("numberCards.5.paragraph"),
       },
     ],
     type: "border",
   };
-
-  // const ondeAtuamos: SimpleCallBannerInterface = {
-  //   topTitle: "Atuação",
-  //   title: "Onde atuamos?",
-  //   paragraph:
-  //     "A T2M é uma empresa global, reconhecida por sua atuação em diversos países, oferecendo serviços de excelência em qualidade de software, privacidade e segurança da informação, acessibilidade digital, business agility e muito mais.",
-  //   imageUrl: "/img/temp/ondeAtuamos.png",
-  //   alignment: "end",
-  // };
-
-  // const paisesQuantidadeProjetos: NumberCardsBannerInterface = {
-  //   topTitle: "Países e quantidades de projetos",
-  //   numberCards: [
-  //     {
-  //       title: "971",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //     {
-  //       title: "972",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //     {
-  //       title: "973",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //     {
-  //       title: "974",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //     {
-  //       title: "975",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //     {
-  //       title: "976",
-  //       paragraph: "BRASIL",
-  //       country: "BR",
-  //     },
-  //   ],
-  // };
 
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
@@ -335,8 +250,6 @@ const QuemSomosPage: React.FC = () => {
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
       <DividingLine />
       <NumberCardsBanner {...importanciaTerceirizarTestesData} />
-      {/* <SimpleCallBanner {...ondeAtuamos} />
-      <NumberCardsBanner {...paisesQuantidadeProjetos} /> */}
     </div>
   );
 };

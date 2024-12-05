@@ -26,7 +26,13 @@
     "empregabilidade": "Inzetbaarheid",
     "empregabilidadeLabel": "Ga naar het inzetbaarheidsscherm",
     "papoDiverso": "Andere chat",
-    "papoDiversoLabel": "Ga naar de diverse chatwebsite"
+    "papoDiversoLabel": "Ga naar de diverse chatwebsite",
+    "leitorAudio": {
+      "carregando": "Stemmen dragen ...",
+      "semVozes": "Geen stemmen beschikbaar voor de geselecteerde taal",
+      "isReading": "Klik op wat tekst om te beginnen met lezen",
+      "isNotReading": "Begin met lezen"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Toekomstige wetenschappers vormen",
-    "title": "Meisjes stelen",
-    "paragraph": "Impact meisjes die, nog op school, worden geconfronteerd met de uitdagingen voor hun betrokkenheid in de wetenschapsgebieden",
-    "buttonText": "Contact"
-  },
-  "OQueEBanner": {
-    "topTitle": "Wat is het?",
-    "title": "Meisjes stam Petrópolis TEC Hub Project",
-    "paragraph": "Het project dat ernaar streeft om genderongelijkheid te verminderen en vrouwelijke participatie in wetenschap, technologie, engineering en wiskunde (STEM) uit te breiden. Dit initiatief richt zich op technologische geletterdheid en de promotie van vrouwelijke inclusie in de stad Petrópolis, in Rio de Janeiro."
-  },
-  "ObjetivoBanner": {
-    "title": "Projectdoelstelling",
-    "paragraph": "Het project is bedoeld om technologische geletterdheid tussen studenten en opvoeders aan te moedigen, een inclusieve cultuur te promoten in de exacte wetenschappen.",
-    "altImage": "Meisjes stelen"
-  },
-  "ComoBanner": "Het project gebruikt het krasplatform om programmeren op een speelse en interdisciplinaire manier te onderwijzen, met debatten over geslacht, mensenrechten en ongelijkheden.",
-  "MetodologiaBanner": {
-    "title": "Motodologia",
-    "paragraph": "Het project is bedoeld om technologische geletterdheid tussen studenten en opvoeders aan te moedigen, een inclusieve cultuur te promoten in de exacte wetenschappen.",
-    "altImage": "Meisjes stelen"
-  },
-  "IconWithTextBanner": {
-    "title": "Wie ontwikkelt zich?",
-    "topTitle": "Onze werknemers",
-    "paragraph": "Het project wordt uitgevoerd door een netwerk van onderzoek, wetenschap en onderwijsinstellingen, samen met sociale en zakelijke organisaties. Deelnemen aan dit initiatief:",
-    "iconCards": [
-      {
-        "title": "Lncc",
-        "description": "Het National Laboratory of Scientific Computing is een Braziliaans onderzoeks- en technologisch onderzoeksinstelling, gespecialiseerd in wetenschappelijk computergebruik, gekoppeld aan het ministerie van Wetenschap, Technologie en Innovatie."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Sociaal impactrapport",
+      "paragraph": "Sociale impact en duurzame ontwikkeling die de acties en toezeggingen van T2M voor sociale, milieu- en governance (ESG) verantwoordelijkheidspraktijken presenteren.",
+      "buttonText": "Download het Social Impact Report"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme foto, T2M CEO",
+      "title": "Innovatief leiderschap.",
+      "topTitle": "Bericht van onze CEO",
+      "paragraph": "Dit sociale impact en duurzame ontwikkelingsrapport uit 2024 weerspiegelt onze toewijding aan transparantie en sociale verantwoordelijkheid bij T2M. Het dient als een fundamenteel kanaal voor het communiceren van onze acties en vooruitgang in duurzaamheid, waardoor onze praktijken worden afgestemd op de doelen van de VN -duurzame ontwikkeling en de principes van ESG.",
+      "buttonText": "Lees het bericht van onze CEO"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Over dit rapport",
+      "paragraphs": [
+        "Dit rapport van sociale impact en duurzame ontwikkeling presenteert de acties en toezeggingen van T2M aan praktijken van sociale, milieu- en governance (ESG) maatschappelijke verantwoordelijkheid.",
+        "Het weerspiegelt onze inspanningen om een ​​positieve impact op onze gemeenschap te creëren, een inclusieve en duurzame werkomgeving te bevorderen en onze milieuvoetafdruk te minimaliseren.",
+        "Door onze prestaties en uitdagingen te delen, versterkt dit rapport onze toewijding aan transparantie en de UN Sustainable Development Doelen (SDG's), evenals het begeleiden van onze voortdurende evolutie naar een duurzamere toekomst."
+      ],
+      "imageAlt": "Foto das ods daarop"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Materialiteitsproces",
+      "paragraph": "We onderhouden een constante en transparante relatie met al onze belanghebbenden, van individuen tot organisaties, zodat we hun verwachtingen en zorgen kunnen begrijpen en ze kunnen vertalen in strategische waarde -informatie om ons bedrijfsbeheer te helpen."
+    },
+    "partesInteressadasTrad": {
+      "title": "Stakeholder",
+      "paragraph": "T2M waardeert samenwerking met alle belanghebbenden om innovatie, transparantie en positieve impactoplossingen te bevorderen. We hebben dialoogkanalen en initiatieven opgezet die de inzet voor onze strategische waarden en doelstellingen weerspiegelen.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Medewerker",
+          "paragraph": "Continue trainingsprogramma's, organisatorisch klimaatonderzoek, strategische afstemmingsbijeenkomsten en workshops voor werknemers."
+        },
+        {
+          "id": 2,
+          "title": "Klanten",
+          "paragraph": "Volg -Up- en presentatievergaderingen, toegewijde ondersteuning om vragen op te lossen en diensten te verbeteren."
+        },
+        {
+          "id": 3,
+          "title": "Strategische partners",
+          "paragraph": "Samenwerkingsovereenkomsten voor impactprojecten, deelname aan marktevenementen, lezingen en conferenties, evenals periodieke vergaderingen om strategische partnerschappen en allianties te versterken."
+        },
+        {
+          "id": 4,
+          "title": "Gemeenschap",
+          "paragraph": "Initiatieven voor sociale verantwoordelijkheid, deelname aan lokale evenementen, ondersteuning voor NGO's en gemeenschapsprojecten, die een positieve en duurzame impact bevorderen op de gebieden waar we efficiënt handelen."
+        },
+        {
+          "id": 5,
+          "title": "Governance en Naleving",
+          "paragraph": "Strategische afstemming met regelgeving, robuust nalevingsbeleid en continue interacties met wettelijke en sectorwettelijke entiteiten. ISO 37101- en ISO 37301 -certificeringen, evenals solide anti -subborn -praktijken en naleving van een rigoureuze ethische code."
+        },
+        {
+          "id": 6,
+          "title": "Diversiteit en billijkheid",
+          "paragraph": "Promotie van een inclusieve omgeving door initiatieven die culturele, sociale en genderdiversiteit waarderen. Beleid om kansen gelijk te stellen, gelijkheid aan te moedigen en wederzijds respect te garanderen, een duurzame en meervoudige organisatiecultuur op te bouwen."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Methodologie",
+      "title": "Hoe definiëren we de inhoud van het rapport?",
+      "paragraph": "Jaarlijks hebben we een oefening in materialiteit uitgevoerd om de perspectieven van belanghebbenden op milieu-, sociale en economische kwesties te begrijpen die relevanter zijn voor duurzaam management, waarbij we ook kansen identificeren om het leren te bevorderen en betrokkenheid bij best practices aan te moedigen."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Herziening",
+          "title": "Reflectie op acties en beleid gericht op diversiteit en opname van de vorige periode.",
+          "paragraph": "Tijdens de beoordeling evalueerden we de vooruitgang bij het creëren van een inclusieve omgeving en bij de betrokkenheid van verschillende groepen belanghebbenden. We hebben besloten nieuwe onderwerpen op te nemen, zoals 'diversiteit in meerdere aspecten in het bedrijfsbeleid' en 'verbetering van de toegankelijkheid in producten en diensten', om praktijken beter af te stemmen op de huidige behoeften."
+        },
+        {
+          "topTitle": "Analyse",
+          "title": "Integratie van suggesties gericht op het versterken van inclusieve, milieu- en gezondheids- en welzijnsstrategieën.",
+          "paragraph": "Tijdens het analyseproces werden prioritaire onderwerpen benadrukt, zoals het belang van educatieve campagnes die werknemers gevoelig maken en betrekken bij inclusieve, duurzame praktijken en het bevorderen van de zorg voor de gezondheid en het welzijn van allemaal."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Greenwashing X duurzame ontwikkeling",
+      "title": "De waarheid achter duurzaamheidspraktijken",
+      "paragraph": "Veel bedrijven gebruiken greenwashing -praktijken, die oppervlakkige milieu -initiatieven presenteren zonder hun processen echt te veranderen, wat transparantie en desoriënterende consumenten en investeerders schaadt.",
+      "extraButtonBottom": {
+        "buttonText": "Blijf het artikel lezen op onze officiële website"
       },
-      {
-        "title": "Serratec",
-        "description": "Serratec is een niet -profit technologiepark in het interieur van Rio de Janeiro, die fungeert als een IT -zakelijke inductor en de steden Petrópolis, Teresópolis, Nova Friburgo en Areal."
-      },
-      {
-        "title": "Faeterj petropolis",
-        "description": "Faeterj Petrópolis is een openbare instelling voor hoger onderwijs gekoppeld aan FAetec en biedt technische en hogere cursussen op verschillende gebieden."
-      },
-      {
-        "title": "Cefet/RJ Uned Petrópolis",
-        "description": "Cefet/RJ Petrópolis is de eerste openbare instelling in het hoger onderwijs in de stad en biedt cursussen in het gezicht -op -face -modaliteit en behorend tot het Cefet/RJ -systeem."
-      },
-      {
-        "title": "Uff",
-        "description": "De Fluminense Federal University (UFF) is een openbare instelling voor hoger onderwijs voor nationale referentie, die opvalt op verschillende kennisgebieden."
-      },
-      {
-        "title": "UFBA",
-        "description": "De Federal University of Bahia (UFBA) is een openbare instelling in het hoger onderwijs gevestigd in Salvador, gekoppeld aan het ministerie van Onderwijs, met administratieve en juridische autonomie."
-      },
-      {
-        "title": "Biomob",
-        "description": "Biomob is gespecialiseerd in toegankelijkheidsoplossingen en sociale projecten, gericht op het promoten van een meer inclusieve en egalitaire samenleving."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech ontwikkelt onderzoeks-, ontwikkelings- en innovatieprojecten voor bedrijven en overheidsinstellingen, gericht op innovatie en technologische vooruitgang."
-      },
-      {
-        "title": "Tj-rj",
-        "description": "Het Rio de Janeiro Court of Justice (TJ-RJ) is verantwoordelijk voor de rechtspersoon in de staat, met jurisdictie over het hele fluminense-gebied."
-      },
-      {
-        "title": "Petrópolis City Hall",
-        "description": "Het stadhuis van Petrópolis beheert de historische stad in de bergachtige regio van Rio de Janeiro en implementeert openbaar beleid en diensten voor de bevolking."
-      },
-      {
-        "title": "Zaad-rj",
-        "description": "Seeduc-RJ is verantwoordelijk voor het beheren van het onderwijsbeleid van de staat Rio de Janeiro, waardoor de toegang tot kwaliteitsonderwijs op openbare scholen voor staatsonderwijs wordt gewaarborgd."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "ZOEKOPDRACHT",
-    "title": "Wat wordt van het project verwacht?",
-    "paragraph": "Het project beoogt de verbeelding van meisjes en zelfvertrouwen te versterken, drop -out te bestrijden en bij te dragen aan de constructie van een eerlijkere samenleving. Verwacht wordt dat het de vrouwelijke deelname aan STEM stimuleert en uitbreidt, terwijl het stigma's en discriminatie vermindert.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "nl"
+      "numberCards": [
+        {
+          "title": "Echte impact op het milieu",
+          "paragraph": "Toegewijde bedrijven aan duurzame ontwikkeling brengen echte veranderingen aan, zoals de vermindering van de koolstofemissies en het verantwoordelijke gebruik van natuurlijke hulpbronnen, om positieve milieu -impact te veroorzaken."
+        },
+        {
+          "title": "Zakelijke transparantie",
+          "paragraph": "Om greenwashing te voorkomen, is het cruciaal voor bedrijven om duidelijke rapporten te publiceren over hun duurzame acties en prestaties, met verifieerbare gegevens en concrete doelen."
+        },
+        {
+          "title": "Bewuste consumptie",
+          "paragraph": "Bewuste consumenten kunnen greenwashing -praktijken identificeren door merken te zoeken met bewezen duurzame verplichtingen, zoals het gebruik van recyclebare materialen en afvalreductiebeleid."
+        },
+        {
+          "title": "Certificeringen en audits",
+          "paragraph": "Het verkrijgen van erkende certificeringen en externe audits helpt de betrokkenheid van bedrijven aan duurzaamheid te valideren door consumenten en investeerders vertrouwen te bieden."
+        },
+        {
+          "title": "Cirkelvormige economie",
+          "paragraph": "De circulaire economie is een alternatief voor het traditionele model van 'weggooien na gebruik', bedrijven aanmoedigen om afval te recyclen, opnieuw te gebruiken en te verminderen, een duurzame en regeneratieve aanpak te bevorderen."
+        },
+        {
+          "title": "De rol van governance",
+          "paragraph": "Governance speelt een fundamentele rol bij het bestrijden van greenwashing, omdat het zakelijke beslissingen voor verantwoordelijke en afgestemde PDD -praktijken begeleidt, waardoor integriteit en verantwoordelijkheid worden gewaarborgd."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Duurzaamheid",
+      "paragraph": "We zijn toegewijd aan het bijdragen aan duurzame ontwikkeling door onze activiteiten en activiteiten, het genereren van lange termijnwaarde voor onze klanten, werknemers, leveranciers, aandeelhouders en de samenleving."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Regeneratieve beweging van de beweging van de beweging",
+      "paragraph": "Door het ondersteunen van culturele en boomplantprojecten, zoals de regeneratieve beweging van het planten, versterken we het protagonisme van gemeenschappen en bevorderen we het gevoel van verbondenheid. Met het planten van bomen, naast het beschermen van het milieu, creëren we een blijvende erfenis, waardoor toekomstige generaties groeien op een grondgebied dat hun herinneringen en de aard om hen heen waardeert en behoudt.",
+      "numberCards": [
+        {
+          "title": "Zelfbeheersingsbeweging",
+          "paragraph": "Jaarlijks, tijdens het regenseizoen (oktober tot maart), moedigt de beweging de actieve deelname van mensen aan bomen aan, het creëren van een directe verbinding met de natuur en het bevorderen van een groter milieubewustzijn."
+        },
+        {
+          "title": "In december 2024",
+          "paragraph": "In december 2024 plantte T2M 100 zaailingen in Vale Das Videiras Arboretical. Deze mijlpaal maakt deel uit van een voortdurende inspanning om het herstel van inheemse vegetatie en het herstel van afgebroken gebieden te bevorderen."
+        },
+        {
+          "title": "De verwachting voor 2025",
+          "paragraph": "Voor 2025 is het doel om de planten van bomen in de stad te verdubbelen, met de steun van alle werknemers. Het doel is om inheemse bossen en inheemse soorten te herstellen, met de actieve deelname van de gemeenschap en lokale initiatieven."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Onze campagnes",
+      "paragraph": "Naast het aanbieden van geautomatiseerde tests van uitmuntendheid, is T2M trots om zijn eigen campagnes te creëren en te produceren",
+      "numberCards": [
+        {
+          "title": "Solidariteitsgebaar",
+          "paragraph": "Sinds 2023 hebben we solidariteitscampagnes uitgevoerd, zoals voedselcollectie, koude kleding, hygiëneproducten en plastic doppen die zijn uitgewisseld voor rolstoelen, luiers en wandelstokken."
+        },
+        {
+          "title": "Goede daden",
+          "paragraph": "DBA - Zorg voor degenen die zorgt, is een evenement voor moeders en zorgverleners, die esthetische zorg, lezingen en welzijnstips bieden, de Global Day of Good Action (DBA) -beweging integreren."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta is een beurs voor inzetbaarheid die eerste vacatures biedt, gericht op alleenstaande moeders en mensen met een handicap, het bevorderen van inclusie en gelijkheid op de arbeidsmarkt."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Deel",
-    "title": "Wie neemt er deel aan?",
-    "paragraph": "De 8e en 9e graden van de basisschool II en de 1e, 2e en 3e jaar van de middelbare school zullen worden geselecteerd, na de projectcriteria, samen met ten minste één leraar van elk van de deelnemende scholen. Scholarshiphouders zullen betrokken zijn bij de volgende activiteiten en doelstellingen:",
-    "iconCards": [
-      {
-        "title": "Leren over programmeren"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "ESG -inzet",
+        "paragraph": "Dit rapport presenteert de acties van milieu-, sociale en governance -impact (ESG) die ons bedrijf het afgelopen jaar heeft geïmplementeerd, en benadrukt hoe deze initiatieven zijn afgestemd op de UN Sustainable Development Doelen (SDG's).",
+        "buttonText": "Onze blog"
       },
-      {
-        "title": "Ontwikkeling van educatieve spellen op het krasplatform"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Strategie",
+        "title": "Onze toewijding",
+        "paragraph": "Onze toewijding aan ESG is een centraal onderdeel van onze strategie, wat bijdraagt ​​aan de vermindering van de milieueffecten, de versterking van inclusieve sociale praktijken en de goedkeuring van een ethisch en verantwoord corporate governance. Onze voortdurende inspanningen om de SDG te integreren met operaties versterkt onze duurzame actie en genereert waarde voor alle belanghebbenden.",
+        "buttonText": "Ik wil deel uitmaken",
+        "imageAlt": "T2M -kantoor"
       },
-      {
-        "title": "Deelname aan een wetenschapsclub"
+      "gestaoResiduosTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Afvalbeheer en keuze van duurzame materialen",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
       },
-      {
-        "title": "Aanwezigheid in wetenschappelijke verspreidingsgebeurtenissen"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "T2M -kantoor",
+        "paragraph": "Onze toewijding aan ESG is een centraal onderdeel van onze strategie, wat bijdraagt ​​aan de vermindering van de milieueffecten, de versterking van inclusieve sociale praktijken en de goedkeuring van een ethisch en verantwoord corporate governance. Onze voortdurende inspanningen om de SDG te integreren met operaties versterkt onze duurzame actie en genereert waarde voor alle belanghebbenden."
       },
-      {
-        "title": "Deelname aan lezingen en seminars"
+      "contratosAssinadosTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Contracten zijn vrijwel getekend",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
       },
-      {
-        "title": "Voorbereiding van tussenliggende en uiteindelijke rapporten"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Als onderdeel van onze toewijding aan duurzaamheid heeft T2M een documentdigitaliseringsbeleid en virtuele handtekening van contracten aangenomen, waardoor de behoefte aan papierafdrukken aanzienlijk wordt verminderd. De overgang naar digitale contracten stroomlijnt niet alleen onze processen, maar behoudt ook natuurlijke hulpbronnen, waardoor de consumptie van papier, verf en energie wordt verminderd. Deze praktijk draagt ​​rechtstreeks bij aan de vermindering van ontbossing en het duurzame gebruik van natuurlijke hulpbronnen. Het hele jaar door heeft deze praktijk geresulteerd in een aanzienlijke vermindering van papierafval, waardoor de toewijding van T2M aan het milieu en het moderne en duurzaam beheer wordt versterkt.",
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Wolksgebruik, het verminderen van hardwareverbruik",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Sinds migratie naar Microsoft Cloud heeft ons bedrijf een aanzienlijke vermindering van de CO2 -uitstoot bereikt, waardoor de toewijding aan duurzame praktijken wordt versterkt. Op basis van geschatte gegevens vermijden we de emissie van 2,192 miljoen ton koolstof, wat een vermindering van 99,72% in potentiële emissies vertegenwoordigt, dankzij het gebruik van tools zoals SharePoint en Exchange Online.",
+          "Tijdens deze periode bedroeg de effectieve emissies slechts 0,007 ton, vergeleken met de geschatte 2,468 ton in een traditioneel scenario. Deze overgang naar een efficiëntere digitale infrastructuur toont de positieve impact van cloudoplossingen op het verminderen van de koolstofvoetafdruk, waardoor de technologische strategie wordt afgestemd op ex -goals."
+        ],
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "In T2M is het gebruik van Microsoft Cloud -oplossingen, zoals OneDrive, Azure en teams, essentieel om het energieverbruik en de behoefte aan nieuwe fysieke hardware te verminderen.",
+          "Deze tools verminderen de vraag naar fysieke servers, die veel energie verbruiken en onderhoud vereisen. Met het doel van Microsoft om tegen 2025 100% hernieuwbare energie op zijn datacers te gebruiken, draagt ​​T2M bij aan een duurzamere toekomst.",
+          "Bovendien biedt de cloud schaalbaarheid, efficiëntie, beveiliging en gegevens toegankelijkheid, wat de toewijding van T2M voor duurzame en innovatieve technologische praktijken weerspiegelt."
+        ],
+        "imageAlt": "T2M -kantoor"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Bewust waterverbruik",
+        "lineColor": "BG-Var-milieu",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Bewust waterverbruik is een prioriteit in T2M en we hebben verschillende praktijken geïmplementeerd om de verspilling van deze vitale hulpbron te verminderen. Bovendien promoten we interne bewustmakingscampagnes, waardoor onze werknemers worden aangemoedigd om gewoonten aan te nemen die verantwoordelijk zijn voor het gebruik van water op zowel de werkplek als in hun huizen. Deze praktijk is bedoeld om het waterverbruik te verminderen en bij te dragen aan het behoud van watervoorraden, zich af te stemmen op de VN -doelen voor duurzame ontwikkeling (SDG's). Met deze acties proberen we onze impact op het milieu te minimaliseren en een cultuur van duurzaamheid bij onze werknemers te inspireren.",
+        "imageAlt": "T2M's kantoorafbeelding was gericht op bewust waterverbruik",
+        "iconAlt": "Representatief icoon van bewust waterverbruik"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Stimulus om het gebruik van verbrandingsvoertuigen te verminderen",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M moedigt zijn werknemers aan om duurzamere mobiliteitspraktijken aan te nemen, CO2 -verkeer en uitgifte door verbrandingsvoertuigen te verminderen. Om deze overgang te vergemakkelijken, bieden we prikkels voor het gebruik van publiek en gedeeld transport, deze stimulatie van duurzame mobiliteit weerspiegelt onze toewijding om de uitstoot van broeikasgassen te verminderen en onze koolstofvoetafdruk te verminderen. Bovendien bevorderen we het bewustzijn van de voordelen van duurzamere mobiliteit, wat bijdraagt ​​aan het welzijn van werknemers en het behoud van het milieu.",
+        "imageAlt": "T2M -kantoor"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Keten van leveranciers die zich inzetten voor het milieu",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M waardeert een leveranciersketen die is afgestemd op zijn duurzaamheidswaarden en prioriteit geeft aan partnerschappen met bedrijven die milieuvriendelijke praktijken aannemen. We hebben onze leveranciers zorgvuldig geëvalueerd om ervoor te zorgen dat ze onze toewijding aan het behoud van het milieu delen en om negatieve effecten op het milieu te verminderen. Dit omvat leveranciers die duurzame methoden in hun productie gebruiken, gerecyclede materialen gebruiken, afvalreductieprogramma's implementeren en voldoen aan de normen voor milieuverantwoordelijkheid. Door ESG -praktijken in onze supply chain te integreren, versterken we onze toewijding aan een duurzame operatie en breiden we onze positieve impact uit door andere organisaties te beïnvloeden om verantwoordelijke praktijken aan te nemen.",
+        "imageAlt": "T2M -kantoor"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Omgevings-",
+        "title": "Recycling van elektronisch materiaal en batterijen",
+        "iconAlt": "Icon voor het omgevingsonderwerp"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M neemt rigoureuze recyclingpraktijken van elektronische apparatuur en batterijen aan, en erkent het belang van de juiste verwijdering van deze materialen om negatieve effecten op het milieu te voorkomen. Elektronisch afval wordt verzonden naar gecertificeerde bedrijven die zorgen voor een correcte behandeling en recycling van componenten, wat bijdraagt ​​aan het herstel van waardevolle materialen en de vermindering van giftig afval. Intern bevorderen we het bewustzijn over het belang van het recyclen van elektronica bij werknemers, wat de juiste verwijdering aanmoedigt. Dit initiatief weerspiegelt onze toewijding aan de circulaire economie, het vermijden van bodem- en waterverontreiniging en bevordering van efficiëntere en verantwoordelijke afvalbeheer.",
+        "imageAlt": "T2M -kantoor"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Our Made in 2024",
+        "paragraph": "In 2024 gingen we verder in initiatieven die duurzaamheid en inclusie versterken, waardoor diversiteit, billijkheid en solide praktijken worden bevorderd, gericht op een positieve impact op 2025.",
+        "numberCards": [
+          {
+            "title": "100 geplante bomen"
+          },
+          {
+            "title": "99,72% vermindering van de koolstofemissies"
+          },
+          {
+            "title": "Nulde het verbruik van wegwerpmateriaal"
+          },
+          {
+            "title": "Besparingen van 2500 vellen via digitale handtekeningen"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Sociaal",
+        "title": "Professionele trainingsinitiatieven Sponsor",
+        "iconAlt": "icoon met betrekking tot het sociale onderwerp"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M is een van de belangrijkste sponsors van het Serratec Software Residence Program, dat tot doel heeft economische kwetsbaarheid jongeren in staat te stellen voor technologische loopbanen. Naast sponsoring biedt T2M werknemers aan om lessen te geven en te monitoren, waardoor actief bijdraagt ​​aan de vorming van bewoners. Het bedrijf heeft ook een partnerschap met UFF op Fest (Software School en Test Factory), ter ondersteuning van essentiële cursussen zoals producteigenaar, Scrum Master en Softwarekwaliteit. Deze acties versterken de toewijding van T2M aan sociale verantwoordelijkheid en de ontwikkeling van lokale talenten, het bevorderen van een meer inclusieve en duurzame economie.",
+        "imageAlt": "T2M -kantoor"
+      },
+      "numerosResidenciaTrad": {
+        "title": "T2M Practical Case - Serratec Partnership",
+        "topTitle": "Indicatoren - Woonplaats",
+        "paragraph": "Professionals ingehuurd door T2M van het Serratec ICT Residence Program 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Mensen overgenomen door het programma"
+          },
+          {
+            "title": "101",
+            "paragraph": "Inhuren"
+          },
+          {
+            "title": "75%",
+            "paragraph": "T2m permanentie na het programma"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Mensen met een handicap in het programma"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Vrouwelijke deelname"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Zwarte mensen die deelnemen"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Afgestudeerden in de openbare school"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Bevestigende acties begunstigden"
+          },
+          {
+            "title": "10",
+            "paragraph": "Fungeren als leraren of monitoren van het programma"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Sociaal",
+        "title": "People team en samengesteld management 100% door vrouwen",
+        "iconAlt": "icoon met betrekking tot het sociale onderwerp"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Het team van mensen en het management van T2M is 100% samengesteld uit vrouwen, wat de sterke toewijding van het bedrijf voor diversiteit en inclusie benadrukt. Bovendien bestaat ongeveer 75% van het administratieve team uit vrouwen, mensen met een handicap en zwarte mensen, waardoor de toewijding van T2M aan het bevorderen van een meervoud en representatieve werkomgeving wordt versterkt. Dit team van mensen en management speelt een sleutelrol bij het opbouwen van een gastvrije en egalitaire organisatiecultuur, het implementeren van het beleid van de professionele ontwikkeling en acties die de diversiteit van perspectieven binnen het bedrijf waarderen. T2M gelooft dat inclusie een essentiële pijler is voor het succes van de organisatiecultuur, het stimuleren van innovatie en het genereren van een positieve sociale impact.",
+        "imageAlt": "T2M -kantoor"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Sociaal",
+        "title": "Programma voor kwaliteit van leven",
+        "iconAlt": "icoon met betrekking tot het sociale onderwerp"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M promoot het welzijn van zijn werknemers via zijn fysieke activiteitsprogramma, die elke zaterdag wordt gehouden. Dit programma is bedoeld om de kwaliteit van leven en geestelijke gezondheid van werknemers te verbeteren en hen aan te moedigen een gezondere en actievere levensstijl aan te nemen. De activiteiten zijn aangepast om te voldoen aan verschillende conditioneringsniveaus, waardoor betrokkenheid en integratie tussen deelnemers worden bevorderd. T2M is van mening dat investeren in de gezondheid van werknemers bijdraagt ​​aan een productievere en gelukkige werkomgeving.",
+        "imageAlt": "Illustratief beeld van het fysieke activiteitsprogramma op het T2M -kantoor"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Sociaal",
+        "title": "Solidariteitscampagnes",
+        "iconAlt": "Icoon met betrekking tot het sociale onderwerp"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M promoot het hele jaar door de solidariteitsgebaarcampagne, campagne voor het verzamelen van voedsel en kleding, bedoeld voor lokale instellingen en daklozen. Tijdens de feestperiode hebben we ook de campagne georganiseerd die haar kerstbrief aannemen, vooral gericht op het verzenden van geschenken naar kinderen in kwetsbare situaties en met functionele diversiteit, het brengen van vreugde en steun aan gemeenschappen en instellingen. T2M moedigt haar werknemers actief aan om deel te nemen aan deze acties, waardoor de cultuur van solidariteit en sociale betrokkenheid binnen het bedrijf wordt versterken. Deze collectieve ondersteuning is essentieel voor campagnesucces en om onze positieve impact op de gemeenschap uit te breiden.",
+        "imageAlt": "Afbeelding van donaties gemaakt door T2M, Biomob en Serratec"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Sociaal",
+        "title": "Vrijwilligerswerk en ondersteuning voor inzetbaarheidsinitiatieven",
+        "iconAlt": "Icoon met betrekking tot het sociale onderwerp"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M heeft een solide verbintenis met ondersteuning voor vrijwilligerswerk en inzetbaarheid, actief deelnemen aan programma's en initiatieven die sociale inclusie en de ontwikkeling van jonge talenten bevorderen. Het bedrijf werkt samen met kwetsbare banen gericht op kwetsbare mensen, zoals solo -moeders, LGBTQIAP+, mensen met functionele diversiteit, vluchtelingen, gevangenis- en jonge systeemafgestudeerden op zoek naar de eerste baan. Bovendien moedigt T2M zijn werknemers aan om vrijwilligerswerk te doen als sprekers en instructeurs in voorbereidende cursussen die essentiële technische en gedragsvaardigheden aanpakken, waardoor deelnemers zich voorbereiden op de arbeidsmarkt.",
+        "imageAlt": "T2M's kantoorafbeelding, met nadruk op ondersteuning van inzetbaarheid"
+      },
+      "feitosSocialTrad": {
+        "title": "Onze sociale prestaties in 2024",
+        "paragraph": "In 2024 gingen we verder in initiatieven die duurzaamheid en inclusie versterken, waardoor diversiteit, billijkheid en solide praktijken worden bevorderd, gericht op een positieve impact op 2025.",
+        "numberCards": [
+          {
+            "title": "422 kg voedsel verzameld",
+            "iconAlt": "Keukengerei pictogram"
+          },
+          {
+            "title": "7 sociale acties uitgevoerd: Bioconecta, DBA, oktober Rose en 4 Solidarity Gebesture Actions",
+            "iconAlt": "Icoon van handen helpen"
+          },
+          {
+            "title": "180 vrijwilligers in onze sociale acties",
+            "iconAlt": "Gebruikerspictogram"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Er waren 206 pond voedsel voor het Esperança -project, een initiatief gericht op het veranderen van levens en het ondersteunen van degenen die het het meest nodig hebben. De actie werd gesponsord door de werknemer Emanuel, die een sleutelrol speelde in mobilisatie en verzameling. Deze donatie weerspiegelt de geest van solidariteit en sociale toewijding die de gemeenschap inspireert om bij te dragen aan een betere toekomst.",
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "campanha2Trad": {
+        "paragraph": "De campagne van oktober Rose werd versterkt met de donatie van 216 kilo voedsel voor Appo - Petropolitan Association of Cancer Patients. Deze actie werd gesponsord door T2M om oktober Rose te vertegenwoordigen.",
+        "imageAlt": "T2M Office -afbeelding"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Bestuur",
+        "title": "Normen, codes en interne en externe wetgeving van de T2M",
+        "iconAlt": "Icoon met betrekking tot het onderwerp Governance"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2M, opgericht in Brazilië in 2002, handelt met een sterke toewijding aan transparantie en naleving van de regels, codes en toepasselijke wetten in zowel de bedrijfs- als de nationale context. Onze normatieve strekt zich uit tot alle werknemers, partners en bestuur, die wettelijke verantwoordelijkheden en ethische verplichtingen begeleiden die T2M -activiteiten ondersteunen.",
+          "Onze ethische code en gedrag, in combinatie met het beleid van anti -suborno, compliance en diversiteit en inclusie, dienen als referentiegidsen voor goed gedrag met klanten, leveranciers en partners. Deze documenten verminderen, naast het bevorderen van ethische normen, de kans op onvoldoende gedragingen.",
+          "Om de afstemming met onze richtlijnen te versterken, moeten alle werknemers periodiek de cursus interne beleidsmaatregelen voltooien, beschikbaar op ons intranet, waar interne waarden, normen en beleid worden beoordeeld."
+        ],
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Bestuur",
+        "title": "T2M -commissies",
+        "iconAlt": "Icoon met betrekking tot het onderwerp Governance"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Naleving: deze commissie is verantwoordelijk voor het onafhankelijke en autonome beheer van het T2M -integriteitsprogramma, waardoor de nodige middelen worden gewaarborgd om de onpartijdigheid van nalevingspraktijken in het bedrijf te waarborgen. Naast het aanmoedigen van de rapportage van vermoedens en schendingen, wil de commissie een verantwoordelijkheidscultuur op alle niveaus cultiveren, waardoor fraudepreventie en detectie wordt aanmoedigen. Compliance Officer, een essentiële functie in dit proces, heeft directe autonomie en toegang tot hoge richting, evenals de autoriteit om het anti -suborne- en compliance -systeem van de organisatie te beheren.",
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (Internal Accident Prevention Commission): In overeenstemming met NR-5 heeft T2M CIPA de functie van het identificeren en verminderen van risico's op de werkplek, het bevorderen van bewustmakingscampagnes en training, en is betrokken bij intimidatieproblemen, het versterken van de cultuur van veiligheid en preventie tussen onze werknemers. Momenteel bestaat de Commissie uit 10 leden, 30% vrouwen, die onze toewijding aan diversiteit en inclusie versterkt.",
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Bestuur",
+        "title": "Internationale certificeringen en normen",
+        "iconAlt": "Icoon met betrekking tot het onderwerp Governance",
+        "paragraph": "Naast de commissies is T2M afgestemd op internationale normen voor integriteit en bedrijfsethiek."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "We rekenen op ISO 37001: 2017 -certificeringen, die het anti -Suborno Management System vestigen en verbetert en een transparantiecultuur bevordert; en ISO 37301: 2021, die normen voor nalevingssystemen definieert, wat zorgt voor naleving van de toepasselijke wet- en voorschriften.",
+          "Deze certificeringen zijn een weerspiegeling van onze toewijding aan ethische, transparante en verantwoordelijke bedrijfspraktijken. Deze initiatieven tonen de toewijding van T2M om een ​​veilige, ethische en in overeenstemming met de best practices in de markt te behouden."
+        ],
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Bestuur",
+        "title": "Kanalen van beschuldigingen",
+        "iconAlt": "Icoon met betrekking tot het onderwerp Governance"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M biedt een kanaal van klachten die rechtstreeks verband houden met de ethische commissie, die alle verzonden klachten ontvangt en analyseert, evenals toezicht te houden op de implementatie, monitoring en integriteit van het compliance -programma van het bedrijf.",
+          "Klachten kunnen anoniem worden ingediend door een gemakkelijk toegankelijke vorm, waardoor vertrouwelijkheid en beveiliging voor de klagers worden gewaarborgd.",
+          "Naast dit kanaal bieden we ook een CIPA-specifiek klachtenkanaal, gericht op de communicatie van intimidatiezaken en andere incidenten met betrekking tot veiligheid en welzijn op de werkplek.",
+          "Alle gedeelde persoonlijke informatie wordt met strikte vertrouwelijkheid behandeld en zorgt voor de privacy van werknemers. Beide kanalen zijn bedoeld om een ​​veilige, ethische en gastvrije omgeving voor iedereen te promoten."
+        ],
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Bestuur",
+        "title": "Salarisgelijkheid",
+        "iconAlt": "Icoon met betrekking tot het onderwerp Governance",
+        "paragraph": "T2M biedt het transparantie- en salarisgelijkheidsrapport van vrouwen en mannen, een rapport dat de toewijding aan sociale rechtvaardigheid versterkt.",
+        "buttonText": "Rapport"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Dit rapport presenteert criteria voor beloning en acties om diversiteit te waarborgen, zoals de oprichting van een positie en lonen of carrièreplanplan, het aanwervingsbeleid van vrouwen (zwart, met handicaps, in situaties van geweld, hoofden van familie, LGBTQIA+, inheems) en inheems) en inheems) Promotiebeleid voor management- en managementposities.",
+        "imageAlt": "T2M Office -afbeelding"
+      },
+      "metasTrad": {
+        "title": "Onze doelen in 2025",
+        "paragraph": "We blijven ons inzetten voor duurzaamheid en inclusie, gericht op de voortdurende verbetering van ESG -praktijken tot 2025, met een positieve impact op de samenleving en het milieu.",
+        "numberCards": [
+          {
+            "title": "Dupliceer de hoeveelheid geplante bomen"
+          },
+          {
+            "title": "Totale vermindering van de koolstofemissies"
+          },
+          {
+            "title": "Het verbruik van gerecycled materiaal uitbreiden"
+          },
+          {
+            "title": "Verhoog de voedselverzameling met 50%"
+          },
+          {
+            "title": "Dupliceer het aantal uitgevoerde sociale acties"
+          },
+          {
+            "title": "Verhoog het aantal vrijwilligers in sociale acties met 30%"
+          },
+          {
+            "title": "Haal ISO 27001 en ISO 27701 -certificeringen"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "contact",
-    "title": "Neem contact met ons op",
-    "paragraph": "Stuur een bericht naar onze e-mail girlstempetropolis@gmail.com om contact met ons op te nemen. We reageren zo snel mogelijk!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Wie zijn we?",
+      "paragraph": "Vandaag, na meer dan 20 jaar van de oprichting van T2M, zijn we een volwassen bedrijf, met ongeveer 300 werknemers, in constant proces van technische verbetering, erkend voor de kwaliteit van ons werk door belangrijke bedrijven in onze klantportfolio.",
+      "buttonText": "Officiële website van het bedrijf"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "T2M -kantoor",
+      "title": "Beveiliging van het werken in een solide bedrijf, met meer dan 20 jaar op de markt",
+      "topTitle": "Werk met ons samen",
+      "paragraph": "T2M werd aanvankelijk in 2002 opgericht als een softwaretestbureau. We ontdekten al snel dat we verder moesten gaan en we hebben alle stappen van de ontwikkeling van een systeem geverifieerd en gespecialiseerd in softwarekwaliteit.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Buitengewone en toegankelijke ervaringen voor iedereen.",
+      "paragraph": "Een T2M - Test to Market LTDA. Het is een Braziliaans bedrijf, met meer dan 20 jaar bestaan, gespecialiseerd in het waarborgen van uitmuntendheid in softwareontwikkeling, door strikte tests en gedetailleerd vervolg op alle andere stappen voor het bouwen van een project. We hebben onlangs onze services uitgebreid, het toevoegen van gegevensprivacy en beveiliging, digitale toegankelijkheid en zakelijke behendigheid via gerenommeerde partners in deze segmenten."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Hoe onze Excellence Services uw bedrijf kunnen helpen stimuleren.",
+      "paragraph": "Leer hoe we de effectiviteit, kwaliteit en veiligheid van uw bedrijf en diensten aanzienlijk kunnen uitbreiden, waardoor hogere resultaten worden gebracht.",
+      "icons": [
+        {
+          "title": "Softwarekwaliteit",
+          "paragraph": "Onze softwarekwaliteitsoplossingen optimaliseren alle ontwikkelingsstappen en zorgen voor efficiëntie, betrouwbaarheid en tevredenheid van onze klanten."
+        },
+        {
+          "title": "Privacy en beveiliging",
+          "paragraph": "Onze focus ligt op het overwinnen van uitdagingen voor informatiebeveiliging door consultatieve oplossingen aan te bieden om aan de specifieke behoeften van elke klant te voldoen."
+        },
+        {
+          "title": "Digitale toegankelijkheid",
+          "paragraph": "Bij T2M zoeken we naar digitale inclusie, waarmee we toegankelijkheid en innovatie bevorderen om een ​​meer inclusieve en toegankelijke digitale omgeving voor iedereen te garanderen."
+        },
+        {
+          "title": "Zakelijkheid",
+          "paragraph": "We helpen bedrijven zich snel aan te passen aan marktwijzigingen door gebruik te maken van kansen en het verbeteren van de behendigheid van de organisatie."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Initiatieven",
+      "title": "Onze initiatieven en verplichtingen",
+      "paragraph": "In T2M zijn onze initiatieven en verplichtingen gebaseerd op de continue zoektocht naar uitmuntendheid en de positieve impact op alle gebieden die we werken. We zijn toegewijd om de kwaliteit van leven van onze werknemers te promoten, innovatie aan te moedigen en digitale opname in onze oplossingen te waarborgen."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Kwaliteit van leven en welzijn",
+      "paragraph": "T2M handhaaft zijn toewijding aan het welzijn van zijn werknemers en gezinnen en biedt een gezonde en evenwichtige werkomgeving. We proberen voortdurend de kwaliteit van leven te verbeteren in het dagelijkse leven van onze professionals, het bevorderen van batenopties die aan verschillende behoeften voldoen, zoals tijdflexibiliteit, ondersteuning voor geestelijke gezondheid en programma's van levenskwaliteit.",
+      "imageAlt": "Vrouw met rode jas in de natuur"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Professionele ontwikkeling en innovatie",
+      "paragraph": "We hebben geïnvesteerd in de voortdurende groei van ons team door gespecialiseerde trainings- en trainingsprogramma's. We moedigen innovatie aan met de toepassing van agile methoden en de exploitatie van nieuwe technologieën, zodat onze professionals altijd voorop lopen in markttrends en bereid zijn om innovatieve oplossingen aan onze klanten aan te bieden.",
+      "imageAlt": "Vrouw draagt ​​een virtual reality -bril"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Toegankelijkheid en inclusie",
+      "paragraph": "We zijn toegewijd aan het bevorderen van opname en digitale toegankelijkheid in al onze oplossingen. T2M hanteert praktijken die ervoor zorgen dat onze producten en diensten voor iedereen toegankelijk zijn, ongeacht hun specifieke behoeften, zoals de implementatie van toegankelijkheidstechnologieën in applicaties en websites, evenals het bevorderen van een inclusieve werkomgeving die de diversiteit respecteert en waardeert.",
+      "imageAlt": "Militair in de rolstoel samen met uw gezin"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 pilaren",
+      "title": "Onze strategische pijlers",
+      "paragraph": "De essentie van T2M is gebaseerd op een duidelijk beeld, solide waarden en een inspirerende missie. Deze pilaren begeleiden al onze acties, en leiden onze toewijding aan uitmuntendheid, innovatie en inclusie. Leer hieronder de basis die bepalen wie we zijn en hoe we handelen."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Eerste pilaar",
+          "title": "Visie",
+          "paragraph": "Wees een nationale en internationale referentie in softwarekwaliteit, toegankelijkheid en informatiebeveiliging, het bevorderen van technologische innovatie en bijdragen aan het succes van de activiteiten van onze klanten door middel van onafhankelijke technologie- en methodologieoplossingen."
+        },
+        {
+          "topTitle": "Tweede pilar",
+          "title": "Missie",
+          "paragraph": "Zorg ervoor dat de producten van onze klanten voldoen aan de hoogste kwaliteitsnormen van kwaliteit, betrouwbaarheid, toegankelijkheid en bruikbaarheid, altijd respecteren van de specifieke deadlines en behoeften van elk bedrijf en de professionals continu trainen om de technologiemarkt te transformeren."
+        },
+        {
+          "topTitle": "Derde pilaar",
+          "title": "Waarden",
+          "paragraph": "Bij T2M is onze toewijding aan excellentie, het leveren van diensten van hoge kwaliteit die worden ondersteund door technische kennis en geconsolideerde ervaring. We waarderen innovatie, het gebruik van Agile -methoden en het snijden van -ge -technologieën om uitdagingen om te zetten in kansen. We werken met ethiek en vrijstelling en zorgen voor onpartijdige beslissingen die prioriteit geven aan de beste belangen van onze klanten. Bovendien bevorderen we inclusie en duurzaamheid door beroepsopleiding, digitale toegankelijkheid en praktijken die de menselijke en technologische ontwikkeling stimuleren. Onze toewijding is gericht op resultaten, met respect voor deadlines, betrouwbaarheid en bruikbaarheid, altijd afgestemd op de behoeften van onze partners."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Het belang van het outsourcen van softwarekwaliteitstests",
+      "paragraph": "Outsourcing van softwarekwaliteitstests is essentieel in kritieke systemen, zoals bank-, lucht- en ziekenhuiscontrole, die een hoge nauwkeurigheid en veiligheid vereisen.",
+      "numberCards": [
+        {
+          "title": "Toegang tot experts",
+          "paragraph": "Gespecialiseerde bedrijven bieden gekwalificeerde professionals, waarvoor diepere tests worden gewaarborgd en het gebruik van snijmethoden om softwarekwaliteit te waarborgen."
+        },
+        {
+          "title": "Foco geen kernbedrijf",
+          "paragraph": "Met outsourcing kan het interne team zich concentreren op het ontwikkelen van nieuwe functies, het verbeteren van de productiviteit en het stimuleren van de bedrijfsgroei."
+        },
+        {
+          "title": "Kosten en tijdsvermindering",
+          "paragraph": "Het vermijden van het creëren van interne testteams vermindert de vaste kosten en stelt u in staat om investeringen te optimaliseren volgens de vraag, waarbij u testprocessen versnelt."
+        },
+        {
+          "title": "Schaalbaarheid en flexibiliteit",
+          "paragraph": "Uit uitbestede bedrijven kunnen de testcapaciteit aanpassen aan de vraag, het voldoen aan pieken en het aanpassen van de schaal volgens de lancering van nieuwe producten."
+        },
+        {
+          "title": "Onpartijdigheid en externe visie",
+          "paragraph": "Een extern team brengt een onpartijdig beeld van het product en helpt bij het identificeren van fouten die een intern team zich mogelijk niet realiseert, waardoor de algehele kwaliteit wordt verbeterd."
+        },
+        {
+          "title": "Toegang tot geavanceerde tools en technologieën",
+          "paragraph": "Gespecialiseerde bedrijven hebben toegang tot het snijden van -gehulpmiddelen voor automatisering, laadtests en andere praktijken, waardoor de hoge interne implementatiekosten worden vermeden."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Golf"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Waardevoorstel",
+      "paragraph": "Wij zijn van mening dat we door robuuste en gepersonaliseerde technische oplossingen te leveren, niet alleen kunnen voldoen aan de onmiddellijke behoeften van onze klanten, maar ook kunnen bijdragen aan duurzame groei en voortdurende innovatie in hun bedrijf.",
+      "buttonText": "Onze blog"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Kwaliteitsoplossingen voor succes",
+      "paragraph": "Op T2M zijn we toegewijd aan het leveren van technologische oplossingen van hoge kwaliteit die het succes van onze klanten vergroten. We bieden gespecialiseerde services in software, privacy en beveiligingskwaliteit, digitale toegankelijkheid en zakelijke behendigheid, waarbij we ons altijd richten op de levering van concrete resultaten. We hebben geselecteerde snijmethoden en technologieën geselecteerd om uitdagingen om te zetten in kansen, zodat onze klanten onze processen kunnen vertrouwen en resultaten op het juiste moment kunnen leveren.",
+      "imageAlt": "Idee"
+    },
+    "inovacaoTrad": {
+      "title": "Innovatie en duurzaamheid",
+      "paragraph": "Onze toewijding aan innovatie en duurzaamheid wordt weerspiegeld in het continue werk met onze partners en leveranciers, zodat alle processen worden uitgevoerd met de hoogste kwaliteit en veiligheidsnormen. Bovendien zijn onze oplossingen aangepast aan de specifieke behoeften van elke klant, in overeenstemming met hun strategische doelen en het aanbieden van concurrentievoordelen op de markt.",
+      "imageAlt": "Duurzaamheid"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Verantwoorde en inclusieve praktijken",
+      "paragraph": "Op T2M zijn we toegewijd aan het leveren van technologische oplossingen van hoge kwaliteit die het succes van onze klanten vergroten. We bieden gespecialiseerde services in software, privacy en beveiligingskwaliteit, digitale toegankelijkheid en zakelijke behendigheid, waarbij we ons altijd richten op de levering van concrete resultaten. We hebben geselecteerde snijmethoden en technologieën geselecteerd om uitdagingen om te zetten in kansen, zodat onze klanten onze processen kunnen vertrouwen en resultaten op het juiste moment kunnen leveren.",
+      "imageAlt": "Rolstoel"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Transparantie en sociale gelijkheid",
+      "paragraph": "Volgens het ministerie van Arbeidsregels informeren wij u dat, beschikbaar op onze website, het transparantie- en salarisgelijkheidsrapport van vrouwen en mannen, verwijzend naar het 2e semester 2024.",
+      "buttonText": "Rapport"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Ons team",
+      "paragraph": "Het succes van onze projecten wordt gedreven door de expertise en toewijding van ons team. Gevormd door hoog opgeleide professionals en gepassioneerd over wat ze doen, is ons team altijd klaar om nieuwe uitdagingen aan te gaan, innovatieve oplossingen te leveren en samen te werken met onze klanten om uitzonderlijke resultaten te bereiken.",
+      "buttonText": "Ik wil deel uitmaken van het team"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Divisie per categorie",
+      "paragraph": "Het uitbreiden van de effectiviteit, kwaliteit en veiligheid van uw bedrijf en diensten, waardoor hogere resultaten opleveren.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Softwarekwaliteit",
+          "paragraph": "Onze softwarekwaliteitsoplossingen optimaliseren alle ontwikkelingsstappen en zorgen voor efficiëntie, betrouwbaarheid en tevredenheid van onze klanten."
+        },
+        {
+          "id": 2,
+          "title": "Gegevensbeveiliging",
+          "paragraph": "Ons expertteam overschrijdt de uitdagingen voor informatiebeveiliging en zorgt voor de bescherming en vertrouwelijkheid van gevoelige gegevens."
+        },
+        {
+          "id": 3,
+          "title": "Digitale toegankelijkheid",
+          "paragraph": "Met onze expertise op het gebied van digitale toegankelijkheid garanderen we dat iedereen op een inclusieve manier toegang heeft tot en met zijn digitale producten kan communiceren."
+        },
+        {
+          "id": 4,
+          "title": "Zakelijkheid",
+          "paragraph": "Onze Business Agility Group richt zich op het helpen van bedrijven om zich snel aan te passen aan marktwijzigingen en hun prestaties te optimaliseren."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Toewijding aan diversiteit en inclusie",
+      "paragraph": "We hebben onlangs een partnerschap gesloten met Biomob, gericht op sociale projecten en diensten met betrekking tot diversiteit en inclusie, om ons gedrag ten opzichte van deze onderwerpen en toegankelijkheid in het algemeen te verbeteren."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Een extreem waardeomgeving",
+      "paragraph": "Onze toewijding is om een ​​omgeving te creëren waarin iedereen zich gewaardeerd voelt, ongeacht zijn oorsprong, geslacht, etniciteit of een andere persoonlijke functie.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Geslacht",
+          "paragraph": "We garanderen gelijke kansen en erkennen de kracht van een uitgebalanceerd genderteam.",
+          "imageAlt": "geslacht pictogram"
+        },
+        {
+          "id": 2,
+          "title": "Race",
+          "paragraph": "We vieren alle etnische groepen en werken zodat ons team een ​​weerspiegeling is van het aantal van onze samenleving.",
+          "imageAlt": "racepictogram"
+        },
+        {
+          "id": 3,
+          "title": "Leeftijd",
+          "paragraph": "We respecteren de wijsheid van de meest ervaren en de energie van de jongere, begrijpend dat iedereen waardevolle bijdragen heeft.",
+          "imageAlt": "icon"
+        },
+        {
+          "id": 5,
+          "title": "Functionele diversiteit",
+          "paragraph": "We bieden een toegankelijke en inclusieve werkomgeving en erkennen de vaardigheden en talenten van mensen met een handicap.",
+          "imageAlt": "icoon van functionele diversiteit"
+        },
+        {
+          "id": 6,
+          "title": "Toegankelijkheid",
+          "paragraph": "Zowel onze kantoren als onze site zijn toegankelijk voor mensen met visuele, auditieve, fysieke en cognitieve beperkingen.",
+          "imageAlt": "Toegankelijkheidspictogram"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Genderdiversiteit in ons team",
+        "imageAlt": "Grafiek van genderdiversiteit in ons team"
+      },
+      "secondImage": {
+        "title": "Genderdiversiteit in ons team",
+        "imageAlt": "Distributiegrafiek per leeftijdsgroep"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Ons waardevoorstel voor de werknemer",
+      "paragraph": "In ons bedrijf zijn wij van mening dat succes direct is gekoppeld aan respect, ethiek en inclusie in alle aspecten van de werkomgeving."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Cultuur van respect, ethiek en inclusie",
+      "paragraph": "We bevorderen een cultuur van transparantie en billijkheid, waarbij alle werknemers dezelfde mogelijkheden hebben voor groei en erkenning. Onze toewijding aan diversiteit en inclusie wordt weerspiegeld in praktijken die een veilige en respectvolle ruimte garanderen, waar iedereen zich kan uiten en bijdraagt ​​aan hun maximale potentieel.",
+      "imageAlt": "Vrouw met rode jas in de natuur"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Toegankelijkheid en inclusie",
+      "paragraph": "Bovendien bieden we een reeks voordelen gericht op het welzijn en de kwaliteit van leven van onze werknemers, zoals medische en tandheelkundige zorg, verschillende hulpmiddelen (thuiskantoor, eten, maaltijd en transport), levensverzekering, leven en plancarrière.",
+      "imageAlt": "Vrouw draagt ​​een virtual reality -bril"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Cultivar",
+      "title": "Mensenrechten en eerlijke arbeidspraktijken",
+      "paragraph": "We zijn toegewijd aan het creëren van inclusieve werkomgevingen, waarbij iedereen dezelfde mogelijkheden heeft om zijn volledige potentieel te bereiken. Wij geloven dat de bevordering van mensenrechten en de constructie van respectvolle ruimtes essentieel zijn voor het behoud van de integriteit van ons merk en ons voortdurende succes."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Toewijding aan mensenrechten en internationale normen",
+      "paragraph": "Stevige toewijding aan respect voor de mensenrechten, waarbij onze praktijken worden afgestemd op de principes die zijn vastgesteld door de universele verklaring van mensenrechten en internationaal erkende normen. Onze waarden zijn gebaseerd op de Verenigde Naties die principes voor bedrijven en mensenrechten leiden, evenals in het International Human Rights Charter en de Verklaring van de International Labour Organisation (ILO) over fundamentele rechten op het werk. Deze richtlijnen zijn opgenomen in onze regels voor zakengeleiders, die evenzeer van toepassing zijn op alle T2M -werknemers, leveranciers en partners, waardoor een inclusieve, respectvolle en veilige werkomgeving wordt gewaarborgd."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Garantie voor een veilige en respectvolle werkomgeving",
+      "paragraph": "Stevige toewijding aan respect voor de mensenrechten, waarbij onze praktijken worden afgestemd op de principes die zijn vastgesteld door de universele verklaring van mensenrechten en internationaal erkende normen. Onze waarden zijn gebaseerd op de Verenigde Naties die principes voor bedrijven en mensenrechten leiden, evenals in het International Human Rights Charter en de Verklaring van de International Labour Organisation (ILO) over fundamentele rechten op het werk. Deze richtlijnen zijn opgenomen in onze regels voor zakengeleiders, die evenzeer van toepassing zijn op alle T2M -werknemers, leveranciers en partners, waardoor een inclusieve, respectvolle en veilige werkomgeving wordt gewaarborgd."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Onze positionering",
+      "title": "Diversiteit en inclusie",
+      "paragraph": "Toegewijd aan het creëren van een inclusieve omgeving waar diversiteit een essentiële waarde is. Wij geloven dat de combinatie van verschillende perspectieven, ervaringen en talenten onze cultuur versterkt en ons drijft om nieuwe horizon te bereiken."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Genderdiversiteit",
+      "paragraph": "In T2M zijn we van mening dat gendergelijkheid een cruciale factor is voor succes en innovatie. We werken aan het creëren van een omgeving waarin mannen, vrouwen en niet -binaire mensen hun gehoord stemmen en hun talenten volledig erkennen hebben. We implementeren aandeleninitiatieven door dezelfde kansen voor ontwikkeling en groei voor iedereen te bieden, ongeacht hun geslacht. Voor ons is een evenwichtige en eerlijke omgeving de basis voor creatieve oplossingen en voor het opbouwen van een meer inclusieve toekomst."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Seksuele diversiteit",
+      "paragraph": "Respect voor seksuele diversiteit is een van de basis van onze cultuur in T2M. We zijn er trots op een gastvrije en beveiligde omgeving te promoten, zodat LGBTQIA+ werknemers hun identiteitsauthenticiteit kunnen uiten. Meer dan het bestrijden van vooroordelen, vieren we individualiteit en moedigen we praktijken aan die inclusie veranderen in een strategische pijler. Wij geloven dat we door verschillende manieren van liefhebben en zijn te waarderen, ons vermogen om samen te werken en innoveren als een team versterken."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Culturele diversiteit",
+      "paragraph": "In T2M omarmen we de culturele en historische rijkdom die raciale diversiteit voor ons bedrijf brengt. We worden geconfronteerd met het aantal rassen en etnische groepen als een kans voor leren en evolutie. Met een vast beleid tegen racisme en proactieve acties om gelijke kansen te garanderen, werken we aan het opbouwen van een omgeving waarin elk individu wordt gewaardeerd voor wat het is, wat bijdraagt ​​aan unieke perspectieven die ons sterker maken als organisatie."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Raciale diversiteit",
+      "paragraph": "Raciale diversiteit in T2M wordt gezien als een rijkdom die onze werkomgeving versterkt en onze perspectieven uitbreidt. We zijn toegewijd aan het promoten van een omgeving die alle rassen en etnische groepen respecteert, verwelkomt en waardeert, waardoor het belang van verschillende levenservaringen wordt herkend voor de ontwikkeling van creatieve en effectieve oplossingen. We hebben een duidelijk beleid tegen elke vorm van racisme en we werken om ervoor te zorgen dat alle werknemers, ongeacht hun raciale oorsprong, dezelfde groeimogelijkheden hebben, gerespecteerd en gewaardeerd door hun unieke bijdrage aan het bedrijf."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Diversiteit voor mensen met een handicap",
+      "paragraph": "De opname van mensen met een handicap is meer dan een prioriteit voor T2M; Het is een toewijding aan billijkheid en toegankelijkheid. We passen onze ruimtes en processen aan om ervoor te zorgen dat al onze werknemers met autonomie en waardigheid kunnen handelen. Bovendien bevorderen we intern bewustzijn om een ​​echt inclusieve omgeving te creëren, waarbij de vaardigheden van elk individu worden gewaardeerd en waar barrières in bruggen veranderen voor gedeeld succes."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pittig",
+      "title": "Gezondheid en welzijn",
+      "paragraph": "Als je een plek waardeert waar je welzijn een prioriteit is, leer dan hoe we voor ons team zorgen, zodat het in elk aspect van het leven ondersteund en gezond voelt."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Gezondheid en welzijn",
+      "paragraph": "Bij T2M erkennen we dat de gezondheid en het welzijn van onze werknemers pijlers zijn voor de duurzame groei van het bedrijf en voor individueel succes. We promoten initiatieven die integrale zorg aanmoedigen, waaronder programma's voor lichamelijke en geestelijke gezondheidszorg, medische en tandheelkundige zorg, evenals psychologische ondersteuning om dagelijkse uitdagingen aan te gaan. We creëren een omgeving die prioriteit geeft aan de balans tussen het professionele en persoonlijke leven, zodat elke werknemer de middelen heeft om gezonde gewoonten te cultiveren en hun doelen te bereiken met de kwaliteit van leven."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Training van de gemeenschap",
+      "paragraph": "Het bedrijf ontwikkelt initiatieven die verder gaan dan het bedrijfsleven en proberen sociale en milieuvoordelen te genereren die zijn afgestemd op hun waarden.",
+      "buttonText": "Onze blog"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Residentie",
+      "title": "Inclusieve en trainingsmogelijkheden voor de regio",
+      "paragraph": "T2M is een van de belangrijkste sponsors van het Serratec Software Residence Program, dat tot doel heeft economische kwetsbaarheid jongeren in staat te stellen voor technologische loopbanen. Dit programma biedt technische training in softwareontwikkeling en bereidt deelnemers voor op de arbeidsmarkt in een grote sector. Hiermee versterkt T2M zijn toewijding aan sociale verantwoordelijkheid en de ontwikkeling van lokale talenten, het bevorderen van een meer inclusieve en duurzame economie.",
+      "imageAlt": "T2M -kantoor",
+      "buttonText": "Ik wil me abonneren"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Resultaat",
+      "title": "Onze partners",
+      "paragraph": "Ons netwerk van werknemers dat succes in elke stap stimuleert en vormt"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Geschaald wendbaar",
+          "paragraph": "Scaled Agile, Inc. wordt wereldwijd erkend als de maker van Scaled Agile Framework® (SAFE), een leidende benadering van zakelijke behendigheid.",
+          "imageAlt": "Logo da geschaald Agile"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Kom deel uitmaken van een van de grootste technologische centra in Brazilië! Diensten en voordelen voor uw bedrijf of startup beginnen op de juiste voet!",
+          "imageAlt": "Logo do serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Oplossingen om een ​​volledig en geautomatiseerd systeemontwikkelingsproces te implementeren.",
+          "imageAlt": "IBM -logo"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft is een BigTech -leider in cloud computing, power platform en kunstmatige intelligentie.",
+          "imageAlt": "Logo van Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Data virtualisatie -tool en datamaskoplossingen.",
+          "imageAlt": "Delphi binnenkort"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Toegankelijkheid en inclusie is onze missie. We creëren digitale oplossingen om een ​​meer harmonieus sociaal leven te nemen, en bieden kwaliteit van leven en volledige deelname aan de samenleving voor degenen die zichzelf hiervan laten weglaten.",
+          "imageAlt": "Biomob -logo"
+        },
+        {
+          "id": 7,
+          "title": "Automatisering overal",
+          "paragraph": "Automatisering overal wil mensen vrijgeven van triviale en repetitieve taken om meer tijd te besteden aan het gebruik van hun intellect en creativiteit om geavanceerde zakelijke uitdagingen op te lossen en werk uit te voeren dat specifieke kennis vereist.",
+          "imageAlt": "Logo da automatisering overal"
+        },
+        {
+          "id": 8,
+          "title": "VMEDU",
+          "paragraph": "VMEDU is het toonaangevende bedrijf in de certificerings- en professionele trainingsindustrie en heeft al een training gegeven van meer dan 500.000 studenten van meer dan 3500 bedrijven in meer dan 150 landen met een slagingspercentage van 98,7% via haar wereldwijde netwerk van meer dan 1100 trainingsaanbieders.",
+          "imageAlt": "VMedu -logo"
+        },
+        {
+          "id": 9,
+          "title": "Toekomst",
+          "paragraph": "Erkend in de Braziliaanse informatiebeveiligingsmarkt, hebben we een solide klantenbestand, gedistribueerd in verschillende maten en segmenten, die dienen van grote openbare en particuliere bedrijven tot op middelgrote bedrijven.",
+          "imageAlt": "Toekomstig logo"
+        }
+      ],
+      "type": "centrum"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Bericht van onze CEO",
+      "paragraph": "In T2M versterken we onze inzet en afstemming met UN SDG's en ESG -praktijken.",
+      "buttonText": "Guilherme da Motta Alves - LinkedIn"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Inzet voor duurzaamheid en bedrijfsverantwoordelijkheid, geeft onze organisatie prioriteit aan de integratie van ESG -principes in al onze activiteiten. We erkennen het belang van:",
+      "numberCards": [
+        {
+          "title": "Bescherm het milieu (milieu)",
+          "paragraph": "Door onze koolstofvoetafdruk te verminderen, efficiënt gebruik van natuurlijke hulpbronnen en de bevordering van duurzame praktijken."
+        },
+        {
+          "title": "Bevorder eerlijke en billijke sociale relaties (sociaal)",
+          "paragraph": "Respecteer mensenrechten, diversiteit, inclusie en welzijn van onze werknemers, klanten en gemeenschappen."
+        },
+        {
+          "title": "Oefenen een transparant en ethisch corporate governance (bestuur)",
+          "paragraph": "Met verantwoord leiderschap, effectief risicobeheer en naleving van wetten en voorschriften. Onze visie is om duurzame waarde te creëren voor alle belanghebbenden, wat bijdraagt ​​aan een meer welvarende en veerkrachtige toekomst."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Dit rapport van sociale impact en duurzame ontwikkeling van 2024 weerspiegelt onze toewijding aan aantrekkelijkheid en sociale verantwoordelijkheid in T2M. Het dient als een fundamenteel kanaal voor het communiceren van onze duurzaamheid en vooruitgang, waardoor onze praktijken worden afgestemd op de DOOSI DODUCTIONS DOELSTELLINGEN EN DE BEGINSELEN VAN ESG. Dit rapport benadrukt niet alleen onze inspanningen voor training, ethische eGovernance -diversiteit, maar het stelt ons ook in staat om banden met onze stakeholders te versterken en onze effectieve beslissingen te begeleiden. Door onze resultaten en uitdagingen te delen, hebben we onze toewijding opnieuw bevestigd aan een positieve eduro -impact.",
+      "CEO": "CEO DA T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Site -onderwerpen",
+      "items": {
+        "sobre": "Op",
+        "quemSomos": "Wie we zijn",
+        "propostaDeValor": "Waardevoorstel",
+        "nossaEquipe": "Ons team",
+        "comunidade": "Gemeenschap",
+        "esg": "ESG"
+      }
+    },
+    "socialLinks": {
+      "title": "Onze sociale netwerken",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Bezoek onze officiële website",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Alle rechten voorbehouden",
+      "logoAlt": "T2M -logo"
+    }
   }
 }

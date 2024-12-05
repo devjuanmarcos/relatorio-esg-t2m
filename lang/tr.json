@@ -26,7 +26,13 @@
     "empregabilidade": "İstihdam edilebilirlik",
     "empregabilidadeLabel": "İstihdam edilebilirlik ekranına git",
     "papoDiverso": "Farklı sohbet",
-    "papoDiversoLabel": "Çeşitli sohbet web sitesine git"
+    "papoDiversoLabel": "Çeşitli sohbet web sitesine git",
+    "leitorAudio": {
+      "carregando": "Taşıma Sesleri ...",
+      "semVozes": "Seçilen dil için ses yok",
+      "isReading": "Okumaya başlamak için bir metni tıklayın",
+      "isNotReading": "Okumaya başlayın"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Gelecek Bilim Adamları Oluşturma",
-    "title": "Kızlar sap",
-    "paragraph": "Halen okulda, bilimlere katılmalarının zorluklarıyla karşı karşıya olan etkiler",
-    "buttonText": "Temas etmek"
-  },
-  "OQueEBanner": {
-    "topTitle": "Nedir?",
-    "title": "Kızlar Petrópolis Tec Hub Projesi STEM",
-    "paragraph": "Cinsiyet eşitsizliğini azaltmayı ve kadınların bilim, teknoloji, mühendislik ve matematiğe (STEM) katılımını genişletmeyi amaçlayan proje. Bu girişim, teknolojik okuryazarlık ve Rio de Janeiro'daki Petrópolis şehrinde kadınların dahil edilmesinin tanıtımına odaklanmaktadır."
-  },
-  "ObjetivoBanner": {
-    "title": "Proje hedefi",
-    "paragraph": "Proje, öğrenciler ve eğitimciler arasında teknolojik okuryazarlığı teşvik etmeyi ve tam bilimlerde kapsayıcı bir kültürü teşvik etmeyi amaçlamaktadır.",
-    "altImage": "Kızlar sap"
-  },
-  "ComoBanner": "Proje, programlamayı, cinsiyet, insan hakları ve eşitsizlikler üzerine tartışmalar içeren eğlenceli ve disiplinlerarası bir şekilde öğretmek için Scratch platformunu kullanıyor.",
-  "MetodologiaBanner": {
-    "title": "Motodoloji",
-    "paragraph": "Proje, öğrenciler ve eğitimciler arasında teknolojik okuryazarlığı teşvik etmeyi ve tam bilimlerde kapsayıcı bir kültürü teşvik etmeyi amaçlamaktadır.",
-    "altImage": "Kızlar sap"
-  },
-  "IconWithTextBanner": {
-    "title": "Kim gelişir?",
-    "topTitle": "Çalışanlarımız",
-    "paragraph": "Proje, sosyal ve iş organizasyonlarıyla birlikte bir araştırma, bilim ve eğitim kurumları ağı tarafından gerçekleştirilmektedir. Bu girişime katılın:",
-    "iconCards": [
-      {
-        "title": "LNCC",
-        "description": "Ulusal Bilimsel Hesap Laboratuvarı, Bilim, Teknoloji ve Yenilik Bakanlığı ile bağlantılı bilimsel bilgi işlem konusunda uzmanlaşmış Brezilya araştırma ve teknolojik araştırma kurumudur."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Sosyal etki raporu",
+      "paragraph": "T2M'nin sosyal, çevresel ve yönetişim (ESG) sorumluluk uygulamalarına yönelik eylemlerini ve taahhütlerini sunan sosyal etki ve sürdürülebilir kalkınma.",
+      "buttonText": "Sosyal Etki Raporunu İndirin"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme Photo, T2M CEO",
+      "title": "Yenilikçi liderlik.",
+      "topTitle": "CEO'mızdan mesaj",
+      "paragraph": "Bu 2024 Sosyal Etki ve Sürdürülebilir Kalkınma raporu, T2M'de şeffaflık ve sosyal sorumluluk konusundaki bağlılığımızı yansıtmaktadır. Uygulamalarımızı BM sürdürülebilir kalkınma hedeflerine ve ESG ilkelerine hizalamak için sürdürülebilirlikteki eylemlerimizi ve ilerlemelerimizi iletmek için temel bir kanal görevi görür.",
+      "buttonText": "CEO'mızın mesajını okuyun"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Bu rapor hakkında",
+      "paragraphs": [
+        "Sosyal etki ve sürdürülebilir kalkınma raporu, T2M'nin sosyal, çevresel ve yönetişim (ESG) uygulamalarına yönelik eylemlerini ve taahhütlerini sunar.",
+        "Topluluğumuz üzerinde olumlu bir etki yaratma, kapsayıcı ve sürdürülebilir bir çalışma ortamını teşvik etme ve çevresel ayak izimizi en aza indirme çabalarımızı yansıtır.",
+        "Başarılarımızı ve zorluklarımızı paylaşarak, bu rapor şeffaflık ve BM sürdürülebilir kalkınma hedeflerine (SKH) olan bağlılığımızı güçlendirmenin yanı sıra sürekli evrimimizi daha sürdürülebilir bir geleceğe yönlendirir."
+      ],
+      "imageAlt": "Fotoğraf Das Ods"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Önemlilik süreci",
+      "paragraph": "Beklentilerini ve endişelerini anlayabilmemiz ve bunları işletme yönetimimize yardımcı olmak için stratejik değer bilgilerine çevirebilmemiz için tüm paydaşlarımızla sürekli ve şeffaf bir ilişki sürdürüyoruz."
+    },
+    "partesInteressadasTrad": {
+      "title": "Paydaş",
+      "paragraph": "T2M, inovasyonu, şeffaflığı ve olumlu etki çözümlerini teşvik etmek için tüm paydaşlarla işbirliğini değerlendirmektedir. Stratejik değerlerimize ve hedeflerimize olan bağlılığı yansıtan diyalog kanalları ve girişimler oluşturduk.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Ortak çalışanlar",
+          "paragraph": "Sürekli eğitim programları, örgütsel iklim araştırmaları, stratejik uyum toplantıları ve çalışan atölyeleri."
+        },
+        {
+          "id": 2,
+          "title": "Müşteriler",
+          "paragraph": "Soruları çözmek ve hizmetleri geliştirmek için özel destek ve sunum toplantılarını takip edin."
+        },
+        {
+          "id": 3,
+          "title": "Stratejik ortaklar",
+          "paragraph": "Etki projeleri için işbirliği anlaşmaları, piyasa etkinliklerine katılım, dersler ve konferanslar ve stratejik ortaklıkları ve ittifakları güçlendirmek için periyodik toplantılar."
+        },
+        {
+          "id": 4,
+          "title": "Toplum",
+          "paragraph": "Sosyal sorumluluk girişimleri, yerel etkinliklere katılım, STK'lara ve topluluk projelerine destek, verimli hareket ettiğimiz alanlarda olumlu ve sürdürülebilir etkiyi teşvik etmek."
+        },
+        {
+          "id": 5,
+          "title": "Yönetişim ve uyumluluk",
+          "paragraph": "Düzenlemeler, sağlam uyum politikaları ve hükümet ve düzenleyici kuruluşlarla sürekli etkileşimlerle stratejik uyum. ISO 37101 ve ISO 37301 sertifikalarının yanı sıra katı anti -subborn uygulamaları ve titiz bir etik koduna bağlılık."
+        },
+        {
+          "id": 6,
+          "title": "Çeşitlilik ve eşitlik",
+          "paragraph": "Kültürel, sosyal ve cinsiyet çeşitliliğine değer veren girişimler yoluyla kapsayıcı bir ortamın teşvik edilmesi. Fırsatları eşitleme, eşitliği teşvik etme ve karşılıklı saygı gösterme, sürdürülebilir ve çoğul bir örgüt kültürü oluşturma politikaları."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Metodoloji",
+      "title": "Raporun içeriğini nasıl tanımlarız?",
+      "paragraph": "Yıllık olarak, paydaşların sürdürülebilir yönetim ile daha alakalı çevresel, sosyal ve ekonomik konular üzerindeki bakış açılarını anlamak için önemlilik bir egzersiz gerçekleştirdik, ayrıca öğrenmeyi teşvik etme ve en iyi uygulamalarla katılımı teşvik etme fırsatlarını da belirledik."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Revizyon",
+          "title": "Önceki dönemin çeşitliliğini ve dahil edilmesini amaçlayan eylemler ve politikalar üzerine düşünme.",
+          "paragraph": "İnceleme sırasında, kapsayıcı bir ortamın oluşturulmasında ve farklı paydaş gruplarının katılımında yapılan ilerlemeleri değerlendirdik. Uygulamaları mevcut ihtiyaçlarla daha iyi hizalamak için 'kurumsal politikalardaki çeşitli açılardan çeşitlilik' ve 'ürün ve hizmetlerde erişilebilirliğin iyileştirilmesi' gibi yeni konuları eklemeye karar verdik."
+        },
+        {
+          "topTitle": "Analiz",
+          "title": "Kapsayıcı, çevre ve sağlık ve refah stratejilerinin güçlendirilmesine odaklanan önerilerin entegrasyonu.",
+          "paragraph": "Analiz süreci sırasında, çalışanları kapsayıcı, sürdürülebilir uygulamalara duyarlı hale getiren ve bunlarla ilgilenen eğitim kampanyalarının önemi gibi öncelik konuları vurgulanmıştır."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Yeşil yıkama x sürdürülebilir kalkınma",
+      "title": "Sürdürülebilirlik uygulamalarının arkasındaki gerçek",
+      "paragraph": "Birçok şirket, süreçlerini gerçekten değiştirmeden yüzeysel çevresel girişimler sunan yeşil yıkama uygulamaları kullanır, bu da şeffaflığı bozar ve tüketicileri ve yatırımcıları yönlendirir.",
+      "extraButtonBottom": {
+        "buttonText": "Makaleyi resmi web sitemizdeki okumaya devam edin"
       },
-      {
-        "title": "Serratek",
-        "description": "Serratec, Rio de Janeiro'nun iç kısmında, BT iş indüktörü olarak görev yapan ve Petrópolis, Teresópolis, Nova Friburgo ve Areal şehirlerini kapsayan kar amacı gütmeyen bir teknoloji parkıdır."
-      },
-      {
-        "title": "Faeterj Petropolis",
-        "description": "Faeterj Petrópolis, FAETEC ile bağlantılı bir kamu yükseköğretim kurumudur ve çeşitli alanlarda teknik ve yüksek dersler sunmaktadır."
-      },
-      {
-        "title": "Cefet/rj uned petrópolis",
-        "description": "CEFET/RJ Petrópolis, şehirdeki ilk kamu yüksek öğrenim kurumudur ve yüz yüze modalitede ve CEFET/RJ sistemine ait kurslar sunmaktadır."
-      },
-      {
-        "title": "UFF",
-        "description": "Fluminense Federal Üniversitesi (UFF), çeşitli bilgi alanlarında öne çıkan ulusal referansların kamusal yüksek öğrenim kurumudur."
-      },
-      {
-        "title": "UFBA",
-        "description": "Bahia Federal Üniversitesi (UFBA), Salvador merkezli, Eğitim Bakanlığı ile bağlantılı, idari ve yasal özerklik ile bir kamu yükseköğretim kurumudur."
-      },
-      {
-        "title": "Biyomob",
-        "description": "Biomob, daha kapsayıcı ve eşitlikçi bir toplumu teşvik etmeye odaklanan erişilebilirlik çözümleri ve sosyal projeler konusunda uzmanlaşmıştır."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech, inovasyon ve teknolojik ilerlemeyi hedefleyen şirketler ve devlet kurumları için araştırma, geliştirme ve inovasyon projeleri geliştirmektedir."
-      },
-      {
-        "title": "TJ-RJ",
-        "description": "Rio de Janeiro Adalet Mahkemesi (TJ-RJ), tüm Fluminense bölgesi üzerinde yargı yetkisi ile eyaletteki adaletin yönetiminden sorumludur."
-      },
-      {
-        "title": "Petrópolis Belediye Binası",
-        "description": "Petrópolis Belediye Binası, Rio de Janeiro'nun dağlık bölgesinde bulunan tarihi şehri yöneterek nüfus için kamu politikaları ve hizmetleri uyguluyor."
-      },
-      {
-        "title": "Seduc-rj",
-        "description": "Seenduc-RJ, Rio de Janeiro eyaletinin eğitim politikalarını yönetmekten sorumludur ve devlet devlet okullarında kaliteli eğitime erişim sağlamaktan sorumludur."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "ARAMAK",
-    "title": "Projeden ne bekleniyor?",
-    "paragraph": "Proje, kızların hayal gücünü ve benlik sayısını güçlendirmeyi, terk edilmeyi ve daha adil bir toplumun inşasına katkıda bulunmayı amaçlıyor. Stigmaları ve ayrımcılığı azaltırken, kadınların STEM'e katılımını teşvik etmesi ve genişletmesi beklenmektedir.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "tr"
+      "numberCards": [
+        {
+          "title": "Gerçek çevresel etki",
+          "paragraph": "Sürdürülebilir kalkınmaya kararlı olan şirketler, karbon emisyonlarının azaltılması ve doğal kaynakların sorumlu kullanımı gibi gerçek değişiklikler yapar."
+        },
+        {
+          "title": "Kurumsal şeffaflık",
+          "paragraph": "Yeşil yıkamayı önlemek için, şirketlerin doğrulanabilir veriler ve somut hedeflerle sürdürülebilir eylemleri ve başarıları hakkında net raporlar yayınlamaları çok önemlidir."
+        },
+        {
+          "title": "Bilinçli tüketim",
+          "paragraph": "Bilinçli tüketiciler, geri dönüştürülebilir malzemelerin kullanımı ve atık azaltma politikaları gibi kanıtlanmış sürdürülebilir taahhütlere sahip markalar arayarak yeşil yıkama uygulamalarını belirleyebilir."
+        },
+        {
+          "title": "Sertifikalar ve denetimler",
+          "paragraph": "Tanınmış sertifikalar ve dış denetimler elde etmek, tüketicilere ve yatırımcılara güven sunarak şirketlerin sürdürülebilirlik taahhüdünü doğrulamaya yardımcı olur."
+        },
+        {
+          "title": "Dairesel ekonomi",
+          "paragraph": "Dairesel ekonomi, geleneksel 'kullanımdan sonra atma' modeline bir alternatiftir, şirketleri atıkları geri dönüştürmeye, yeniden kullanmaya ve azaltmaya ve sürdürülebilir ve rejeneratif bir yaklaşımı teşvik etmeye teşvik eder."
+        },
+        {
+          "title": "Yönetişimin rolü",
+          "paragraph": "Yönetişim, sorumlu ve hizalanmış PDD uygulamaları için iş kararlarını yönlendirerek dürüstlük ve sorumluluk sağladığı için yeşil yıkama ile mücadelede temel bir rol oynamaktadır."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Sürdürülebilirlik",
+      "paragraph": "Müşterilerimiz, çalışanlarımız, tedarikçilerimiz, hissedarlarımız ve toplum için uzun vadeli değer yaratarak iş ve operasyonlarımız yoluyla sürdürülebilir kalkınmaya katkıda bulunmaya kararlıyız."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Rejeneratif hareket dikim süresi",
+      "paragraph": "Dikimin rejeneratif hareketi gibi kültürel ve ağaç dikim projelerini destekleyerek, toplulukların kahramanını güçlendirir ve aidiyet hissini teşvik ederiz. Ağaçların ekilmesiyle, çevreyi korumanın yanı sıra, gelecek nesillerin anılarına ve etraflarındaki doğaya değer veren ve koruyan bir bölgede büyümesini sağlayarak kalıcı bir miras yaratıyoruz.",
+      "numberCards": [
+        {
+          "title": "Kendini yönetme hareketi",
+          "paragraph": "Her yıl, yağmur mevsimi (Ekim -Mart), hareket, insanların ağaç dikimine aktif katılımını teşvik ederek doğa ile doğrudan bir bağlantı kurar ve daha fazla çevresel farkındalığı teşvik eder."
+        },
+        {
+          "title": "Aralık 2024'te",
+          "paragraph": "Aralık 2024'te T2M, Vale Das Videiras Arboretical'a 100 fide dikti. Bu kilometre taşı, yerel bitki örtüsünün restorasyonunu ve bozulmuş alanların geri kazanılmasını teşvik etmek için sürekli bir çabanın bir parçasıdır."
+        },
+        {
+          "title": "2025 beklentisi",
+          "paragraph": "2025 için amaç, tüm çalışanların desteğiyle şehir genelinde ağaç dikimini ikiye katlamaktır. Amaç, toplumun aktif katılımı ve yerel girişimlerle yerli ormanları ve yerli türleri restore etmektir."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Kampanyalarımız",
+      "paragraph": "Otomatik Mükemmellik Testleri sunmanın yanı sıra, T2M kendi kampanyalarını oluşturmak ve üretmekten gurur duyuyor",
+      "numberCards": [
+        {
+          "title": "Dayanışma hareketi",
+          "paragraph": "2023'ten bu yana, tekerlekli sandalye, çocuk bezi ve baston için değiştirilmiş gıda toplama, soğuk kıyafetler, hijyen ürünleri ve plastik kapaklar gibi dayanışma kampanyaları gerçekleştirdik."
+        },
+        {
+          "title": "İyi işler",
+          "paragraph": "DBA - Dikkat çekenlere dikkat etmek, anneler ve bakıcılar için bir olay, estetik bakım, dersler ve refah ipuçları sunan, Küresel İyi Eylem Günü (DBA) hareketini entegre eder."
+        },
+        {
+          "title": "Biyokonekta",
+          "paragraph": "Bioconecta, bekar annelere ve engelli insanlara odaklanan, iş piyasasına dahil edilmeyi ve eşitliği teşvik eden ilk iş fırsatları sunan bir istihdam fuarıdır."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Parça",
-    "title": "Kim Katılır?",
-    "paragraph": "Öğrenciler, ilkokul II'nin 8. ve 9. yıldönümlerinden ve projenin kriterlerini takip ederek, katılımcı okulların her birinin en az bir öğretmeni ile birlikte lisenin 1., 2. ve 3. yılından seçilecektir. Burs sahipleri aşağıdaki faaliyetlere ve hedeflere katılacaktır:",
-    "iconCards": [
-      {
-        "title": "Programlama konusunda öğrenme"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "ESG taahhüdü",
+        "paragraph": "Bu rapor, şirketimiz tarafından geçen yıl uygulanan Çevre, Sosyal ve Yönetişim Etkisi (ESG) eylemlerini sunarak bu girişimlerin BM Sürdürülebilir Kalkınma Hedefleri (SKH) ile nasıl uyumlu olduğunu vurgulamaktadır.",
+        "buttonText": "Blogumuz"
       },
-      {
-        "title": "Scratch platformunda eğitim oyunlarının geliştirilmesi"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Strateji",
+        "title": "Taahhüdümüz",
+        "paragraph": "ESG'ye olan bağlılığımız, çevresel etkilerin azaltılmasına, kapsayıcı sosyal uygulamaların güçlendirilmesine ve etik ve sorumlu bir kurumsal yönetişimin benimsenmesine katkıda bulunan stratejimizin merkezi bir parçasıdır. SDG'yi operasyonlarla entegre etme çabamız, tüm paydaşlar için değer yaratarak sürdürülebilir eylemimizi güçlendirir.",
+        "buttonText": "Parçası olmak istiyorum",
+        "imageAlt": "T2M ofisi"
       },
-      {
-        "title": "Bir Bilim Kulübüne Katılım"
+      "gestaoResiduosTrad": {
+        "topTitle": "Çevre",
+        "title": "Atık yönetimi ve sürdürülebilir malzemelerin seçimi",
+        "iconAlt": "Çevresel konu için simge"
       },
-      {
-        "title": "Bilimsel yayılma olaylarında varlık"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "T2M ofisi",
+        "paragraph": "ESG'ye olan bağlılığımız, çevresel etkilerin azaltılmasına, kapsayıcı sosyal uygulamaların güçlendirilmesine ve etik ve sorumlu bir kurumsal yönetişimin benimsenmesine katkıda bulunan stratejimizin merkezi bir parçasıdır. SDG'yi operasyonlarla entegre etme çabamız, tüm paydaşlar için değer yaratarak sürdürülebilir eylemimizi güçlendirir."
       },
-      {
-        "title": "Derslere ve seminerlere katılım"
+      "contratosAssinadosTrad": {
+        "topTitle": "Çevre",
+        "title": "Sözleşmeler sanal olarak imzaladı",
+        "iconAlt": "Çevresel konu için simge"
       },
-      {
-        "title": "Ara ve nihai raporların hazırlanması"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Sürdürülebilirliğe olan bağlılığımızın bir parçası olarak T2M, bir belge dijitalleştirme politikası ve sözleşmelerin sanal imzasını benimsedi ve kağıt baskı ihtiyacını önemli ölçüde azalttı. Dijital sözleşmelere geçiş sadece süreçlerimizi kolaylaştırmakla kalmaz, aynı zamanda doğal kaynakları da korur ve kağıt, boya ve enerji tüketimini azaltır. Bu uygulama, ormansızlaşmanın azaltılmasına ve doğal kaynakların sürdürülebilir kullanımına doğrudan katkıda bulunur. Yıl boyunca, bu uygulama, T2M'nin çevreye olan bağlılığını ve modern ve sürdürülebilir yönetimi güçlendirerek kağıt atıklarda önemli bir azalma ile sonuçlanmıştır.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Çevre",
+        "title": "Bulut kullanımı, donanım tüketimini azaltma",
+        "iconAlt": "Çevresel konu için simge"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Microsoft Cloud'a geçişten bu yana, şirketimiz karbon emisyonlarında önemli bir azalma sağladı ve sürdürülebilir uygulamalara olan bağlılığını güçlendirdi. Tahmini verilere dayanarak, SharePoint ve Exchange Online gibi araçların kullanımı sayesinde potansiyel emisyonlarda% 99,72'lik bir azalmayı temsil eden 2.192 milyon ton karbon emisyonundan kaçıyoruz.",
+          "Bu dönemde, etkili emisyonlar, geleneksel bir senaryoda tahmini 2.468 tona kıyasla sadece 0.007 tondur. Daha verimli bir dijital altyapıya geçiş, bulut çözümlerinin karbon ayak izini azaltmada olumlu etkisini, teknolojik stratejiyi ex Goals ile hizaladığını göstermektedir."
+        ],
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "T2M'de, OneDrive, Azure ve ekipler gibi Microsoft Cloud çözümlerinin kullanımı, enerji tüketimini ve yeni fiziksel donanıma olan ihtiyacı azaltmak için gereklidir.",
+          "Bu araçlar, çok fazla enerji tüketen ve bakım gerektiren fiziksel sunuculara olan talebi azaltır. Microsoft'un 2025 yılına kadar vericılarında% 100 yenilenebilir enerji kullanması amacıyla T2M, daha sürdürülebilir bir geleceğe katkıda bulunuyor.",
+          "Buna ek olarak, bulut ölçeklenebilirlik, verimlilik, güvenlik ve veri erişilebilirliği sunar ve T2M'nin sürdürülebilir ve yenilikçi teknolojik uygulamalara olan bağlılığını yansıtır."
+        ],
+        "imageAlt": "T2M ofisi"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Çevre",
+        "title": "Bilinçli su tüketimi",
+        "lineColor": "BG-VAR-Çevresel",
+        "iconAlt": "Çevresel konu için simge"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Bilinçli su tüketimi T2M'de bir önceliktir ve bu hayati kaynağın israfını azaltmak için çeşitli uygulamalar uyguladık. Buna ek olarak, çalışanlarımızı hem işyerinde hem de evlerinde su kullanımından sorumlu alışkanlıkları benimsemeye teşvik ederek iç farkındalık kampanyalarını teşvik ediyoruz. Bu uygulama, su tüketimini azaltmayı ve su kaynaklarının korunmasına katkıda bulunmayı ve kendisini BM Sürdürülebilir Kalkınma Hedefleri (SDG'ler) ile hizalamayı amaçlamaktadır. Bu eylemlerle, çevresel etkimizi en aza indirmeye ve çalışanlarımız arasında bir sürdürülebilirlik kültürüne ilham vermeye çalışıyoruz.",
+        "imageAlt": "T2M'nin ofis görüntüsü bilinçli su tüketimine odaklandı",
+        "iconAlt": "Bilinçli su tüketiminin temsili simgesi"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Çevre",
+        "title": "Yanma araçlarının kullanımını azaltmak için uyaran",
+        "iconAlt": "Çevresel konu için simge"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M, çalışanlarını daha sürdürülebilir hareketlilik uygulamalarını benimsemeye, CO2 trafiğini ve yanma araçlarıyla ihraç etmeyi azaltmaya teşvik eder. Bu geçişi kolaylaştırmak için, kamu ve paylaşılan ulaşım kullanımı için teşvikler sunuyoruz, sürdürülebilir hareketliliğin bu uyarılması, sera gazı emisyonlarını azaltma ve karbon ayak izimizi azaltma taahhüdümüzü yansıtır. Buna ek olarak, daha sürdürülebilir hareketliliğin faydaları konusunda farkındalığı, çalışanların refahına ve çevrenin korunmasına katkıda bulunuyoruz.",
+        "imageAlt": "T2M ofisi"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Çevre",
+        "title": "Çevreye bağlı tedarikçiler zinciri",
+        "iconAlt": "Çevresel konu için simge"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M, sürdürülebilirlik değerleriyle uyumlu bir tedarikçi zinciri, çevreye karşı sorumlu uygulamaları benimseyen şirketlerle ortaklıklara öncelik veriyor. Çevresel koruma konusundaki taahhüdümüzü paylaştıklarından emin olmak ve çevre üzerindeki olumsuz etkileri azaltmak için tedarikçilerimizi dikkatlice değerlendirdik. Bu, üretimlerinde sürdürülebilir yöntemler benimseyen, geri dönüştürülmüş malzemeler kullanan, atık azaltma programlarını uygulayan ve çevre sorumluluk standartlarını karşılayan tedarikçileri içerir. ESG uygulamalarını tedarik zincirimize entegre ederek, sürdürülebilir bir operasyona olan bağlılığımızı güçlendiriyoruz ve diğer kuruluşların sorumlu uygulamaları benimsemeleri için olumlu etkimizi genişletiyoruz.",
+        "imageAlt": "T2M ofisi"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Çevre",
+        "title": "Elektronik malzemenin ve pillerin geri dönüşümü",
+        "iconAlt": "Çevresel konu için simge"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M, elektronik ekipman ve pillerin titiz geri dönüşüm uygulamalarını benimser ve çevre üzerindeki olumsuz etkileri önlemek için bu malzemelerin uygun şekilde bertaraf edilmesinin önemini kabul eder. Elektronik atıklar, değerli malzemelerin geri kazanılmasına ve toksik atıkların azaltılmasına katkıda bulunan doğru tedavi ve bileşen geri dönüşümünü sağlayan sertifikalı şirketlere gönderilir. Dahili olarak, çalışanlar arasında elektroniklerin geri dönüşümünün önemi konusunda farkındalığı teşvik ederek, uygun bertarafı teşvik ediyoruz. Bu girişim dairesel ekonomiye olan bağlılığımızı yansıtır, toprak ve su kontaminasyonundan kaçınır ve daha verimli ve sorumlu atık yönetimini teşvik eder.",
+        "imageAlt": "T2M ofisi"
+      },
+      "feitosAmbientalTrad": {
+        "title": "2024'te Made",
+        "paragraph": "2024 yılında, sürdürülebilirliği ve dahil edilmeyi güçlendiren, çeşitliliği, eşitlik ve sağlam uygulamaları teşvik eden, 2025'e olumlu bir etkiye odaklanan girişimlerde ilerledik.",
+        "numberCards": [
+          {
+            "title": "100 dikilmiş ağaç"
+          },
+          {
+            "title": "Karbon emisyonlarında% 99.72 azalma"
+          },
+          {
+            "title": "Tek kullanımlık malzeme tüketimini sıfırladı"
+          },
+          {
+            "title": "Dijital imzalarla 2.500 yaprak tasarrufu"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Sosyal",
+        "title": "Profesyonel Eğitim Girişimleri Sponsor",
+        "iconAlt": "Sosyal konuyla ilgili simge"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M, teknoloji kariyerleri için ekonomik kırılganlık sağlamayı amaçlayan Serratec Software Residence Programının ana sponsorlarından biridir. Sponsorluğa ek olarak, T2M, çalışanlara dersleri ve izlemeyi öğretmelerini sağlayarak sakinlerin oluşumuna aktif olarak katkıda bulunuyor. Şirket ayrıca Ürün Sahibi, Scrum Master ve Yazılım Kalitesi gibi temel kursları destekleyen UFF'de Fest (Yazılım Okulu ve Test Fabrikası) ile bir ortaklığa sahiptir. Bu eylemler T2M'nin sosyal sorumluluk ve yerel yeteneklerin gelişimine olan bağlılığını güçlendirerek daha kapsayıcı ve sürdürülebilir bir ekonomiyi teşvik eder.",
+        "imageAlt": "T2M ofisi"
+      },
+      "numerosResidenciaTrad": {
+        "title": "T2M Pratik Vaka - Serratec Ortaklığı",
+        "topTitle": "Göstergeler - Konut",
+        "paragraph": "T2M tarafından Serratec ICt Residence Programından Kiralanan Profesyoneller 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Program tarafından benimsenen kişiler"
+          },
+          {
+            "title": "101",
+            "paragraph": "İşe alma"
+          },
+          {
+            "title": "% 75",
+            "paragraph": "Programdan sonra t2m kalıcılık"
+          },
+          {
+            "title": "% 4",
+            "paragraph": "Programda engelli kişiler"
+          },
+          {
+            "title": "% 21",
+            "paragraph": "Kadın katılımı"
+          },
+          {
+            "title": "% 7",
+            "paragraph": "Katılan siyah insanlar"
+          },
+          {
+            "title": "% 51",
+            "paragraph": "Devlet okulu mezunları"
+          },
+          {
+            "title": "% 62",
+            "paragraph": "Olumlu eylemler yararlanıcılar"
+          },
+          {
+            "title": "10",
+            "paragraph": "Programın öğretmenleri veya monitörleri olarak hareket edin"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Sosyal",
+        "title": "İnsanların Ekibi ve Kompozit Yönetimi Kadınlar tarafından% 100",
+        "iconAlt": "Sosyal konuyla ilgili simge"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "İnsanların ekibi ve T2M yönetimi, şirketin çeşitlilik ve içerme konusundaki güçlü taahhüdünü vurgulayarak kadınlardan% 100'dür. Buna ek olarak, idari ekibin yaklaşık% 75'i kadınlardan, engelli ve siyah insanlardan oluşuyor ve T2M'nin çoğul ve temsili bir çalışma ortamını teşvik etme bağlılığını güçlendiriyor. Bu insan ve yönetim ekibi, şirket içindeki perspektiflerin çeşitliliğine değer veren mesleki gelişim politikaları ve eylemleri uygulayarak, hoş ve eşitlikçi bir örgüt kültürü oluşturmada kilit bir rol oynamaktadır. T2M, dahil edilmenin örgüt kültürünün başarısı için önemli bir sütun olduğuna inanıyor, yeniliği artırıyor ve olumlu bir sosyal etki yaratıyor.",
+        "imageAlt": "T2M ofisi"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Sosyal",
+        "title": "Yaşam Kalitesi Programı",
+        "iconAlt": "Sosyal konuyla ilgili simge"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M, her Cumartesi düzenlenen fiziksel aktivite programı aracılığıyla çalışanlarının refahını teşvik eder. Bu program, çalışanların yaşam kalitesini ve zihinsel sağlığını artırmayı ve onları daha sağlıklı ve daha aktif bir yaşam tarzı benimsemeye teşvik etmeyi amaçlamaktadır. Faaliyetler, katılımcılar arasında katılımı ve entegrasyonu teşvik ederek farklı koşullandırma seviyelerini karşılayacak şekilde uyarlanmıştır. T2M, çalışanların sağlığına yatırım yapmanın daha üretken ve mutlu bir çalışma ortamına katkıda bulunduğuna inanmaktadır.",
+        "imageAlt": "T2M ofisinde fiziksel aktivite programının açıklayıcı görüntüsü"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Sosyal",
+        "title": "Dayanışma Kampanyaları",
+        "iconAlt": "Sosyal konuyla ilgili simge"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M, yıl boyunca, yerel kurumlar ve evsiz insanlara yönelik gıda ve giyim toplama kampanyasını, dayanışma jest kampanyasını teşvik ediyor. Parti döneminde, kampanyanın Noel mektubunu benimsediğini, özellikle de savunmasız durumlarda çocuklara hediye göndermeye ve işlevsel çeşitlilik ile topluluklara ve kurumlara sevinç ve destek getirmeye odaklandık. T2M, çalışanlarını bu eylemlere katılmaya teşvik ederek şirket içindeki dayanışma ve sosyal katılım kültürünü güçlendirir. Bu kolektif destek, kampanya başarısı ve topluluk üzerindeki olumlu etkimizi genişletmek için gereklidir.",
+        "imageAlt": "T2M, Biomob ve Serratec tarafından yapılan bağışların görüntüsü"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Sosyal",
+        "title": "İstihdam edilebilirlik girişimlerine gönüllülük ve destek",
+        "iconAlt": "Sosyal konuyla ilgili simge"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M, sosyal içermeyi ve genç yeteneklerin gelişimini teşvik eden programlara ve girişimlere aktif olarak katılan gönüllülük ve istihdam edilebilirlik desteğine sağlam bir taahhüdü vardır. Şirket, solo anneler, LGBTQIAP+, fonksiyonel çeşitliliği olan kişiler, mülteciler, hapishane ve genç sistem mezunları gibi savunmasız kişilere yönelik savunmasız işlerle işbirliği yapmaktadır. Buna ek olarak, T2M, çalışanlarını temel teknik ve davranışsal becerileri ele alan hazırlık kurslarında konuşmacı ve eğitmen olarak gönüllü olmaya teşvik ederek katılımcıları iş piyasasında öne çıkmaya hazırlar.",
+        "imageAlt": "T2M'nin ofis imajı, istihdam edilebilirlik desteğine vurgu yaparak"
+      },
+      "feitosSocialTrad": {
+        "title": "2024'teki sosyal başarılarımız",
+        "paragraph": "2024 yılında, sürdürülebilirliği ve dahil edilmeyi güçlendiren, çeşitliliği, eşitlik ve sağlam uygulamaları teşvik eden, 2025'e olumlu bir etkiye odaklanan girişimlerde ilerledik.",
+        "numberCards": [
+          {
+            "title": "Toplanan 422 kg gıda",
+            "iconAlt": "Mutfak Ediniler simgesi"
+          },
+          {
+            "title": "7 Sosyal Eylemler: Bioconecta, DBA, Ekim Gül ve 4 Dayanışma Hareketi",
+            "iconAlt": "Yardımcı eller simgesi"
+          },
+          {
+            "title": "Sosyal eylemlerimizde 180 gönüllü",
+            "iconAlt": "Kullanıcı simgesi"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Hayat çevirmeyi ve en çok ihtiyaç duyanları desteklemeyi amaçlayan bir girişim olan Esperança projesine 206 kilo yiyecek vardı. Eylem, seferberlik ve koleksiyonda önemli bir rol oynayan çalışan Emanuel tarafından desteklendi. Bu bağış, topluluğa daha iyi bir geleceğe katkıda bulunmaya ilham veren dayanışma ve sosyal bağlılık ruhunu yansıtır.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "campanha2Trad": {
+        "paragraph": "Ekim gül kampanyası, Appo - Petropolitan Kanser Hastaları Derneği için 216 kilo gıda bağışıyla güçlendirildi. Bu eylem, T2M tarafından Ekim Rose'u temsil etmek için sponsor oldu.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Yönetişim",
+        "title": "T2M'nin standartları, kodları ve iç ve dış mevzuatları",
+        "iconAlt": "Konu yönetişimi ile ilgili simge"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "2002 yılında Brezilya'da kurulan T2M, hem kurumsal hem de ulusal bağlamda kurallara, kodlara ve uygulanabilir yasalara şeffaflık ve uyum konusunda güçlü bir bağlılıkla hareket etmektedir. Normatifimiz tüm çalışanlara, ortaklara ve yönetim kurulu için uzanır, yasal sorumlulukları ve T2M operasyonlarını destekleyen etik taahhütleri yönlendirir.",
+          "Etik ve davranış kurallarımız, anti -Suborno, uyum, çeşitlilik ve dahil etme politikaları ile birleştiğinde, müşteriler, tedarikçiler ve ortaklarla uygun davranışlar için referans kılavuzları olarak hizmet etmektedir. Bu belgeler, etik standartları teşvik etmenin yanı sıra, yetersiz davranış meydana gelme olasılığını azaltır.",
+          "Yönergelerimizle uyumu güçlendirmek için, tüm çalışanlar, dahili değerlerin, normların ve politikaların gözden geçirildiği intranetimizde bulunan dahili politikalar kursunu periyodik olarak tamamlamalıdır."
+        ],
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Yönetişim",
+        "title": "T2M komiteleri",
+        "iconAlt": "Konu yönetişimi ile ilgili simge"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Uyum: Bu Komite, T2M bütünlük programının bağımsız ve özerk yönetiminden sorumludur ve şirketteki uyum uygulamalarının tarafsızlığını sağlamak için gerekli kaynakları sağlar. Komite, şüphelerin ve ihlallerin raporlanmasını teşvik etmenin yanı sıra, her düzeyde bir sorumluluk kültürü geliştirmeye ve dolandırıcılık önleme ve tespiti teşvik etmeye çalışır. Bu süreçte önemli bir işlev olan uyum görevlisi, doğrudan özerkliğe ve yüksek yöne erişime ve kuruluşun anti -suborne ve uyum sistemini yönetme yetkisine sahiptir.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (İç Kaza Önleme Komisyonu): NR-5'e uygun olarak, T2M CIPA, işyerinde riskleri tanımlama ve azaltma, farkındalık kampanyalarını ve eğitimi teşvik etme ve taciz konularında yer alıyor, güvenlik ve önleme arasındaki güçlendirme, çalışanlarımız. Şu anda, Komisyon, çeşitlilik ve içerme bağlılığımızı güçlendiren 10 üyeden oluşmaktadır,% 30 kadın.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Yönetişim",
+        "title": "Uluslararası sertifikalar ve standartlar",
+        "iconAlt": "Konu yönetişimi ile ilgili simge",
+        "paragraph": "Komitelere ek olarak, T2M uluslararası dürüstlük ve iş ahlakı standartlarıyla uyumludur."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "Anti -suprore yönetim sistemini oluşturan ve geliştiren ve şeffaflık kültürünü teşvik eden ISO 37001: 2017 sertifikalarımız var; ve uyum sistemleri için standartları tanımlayan ve geçerli yasa ve düzenlemelere uyumu sağlayan ISO 37301: 2021.",
+          "Bu sertifikalar, etik, şeffaf ve sorumlu iş uygulamalarına olan bağlılığımızın bir yansımasıdır. Bu girişimler T2M'nin piyasadaki en iyi uygulamalara uygun, etik ve güvenli bir şekilde korunma taahhüdünü göstermektedir."
+        ],
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Yönetişim",
+        "title": "Tahmetin kanalları",
+        "iconAlt": "Konu yönetişimi ile ilgili simge"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M, doğrudan Etik Komitesi ile bağlantılı, gönderilen tüm şikayetleri alan ve analiz eden ve şirketin uyum programının uygulanmasını, izlenmesini ve bütünlüğünü denetleyen bir şikayet kanalı sunar.",
+          "Şikayetler, şikayetçiler için gizlilik ve güvenlik sağlayarak kolay erişilebilir bir formla anonim olarak yapılabilir.",
+          "Bu kanala ek olarak, taciz davalarının ve işyerinde güvenlik ve refah ile ilgili diğer olayların iletişimine yönelik CIPA'ya özgü bir şikayet kanalı da sunuyoruz.",
+          "Paylaşılan tüm kişisel bilgiler, çalışanların gizliliğini sağlayarak katı gizlilikle ele alınır. Her iki kanal da herkes için güvenli, etik ve misafirperver bir ortamı teşvik etmeyi amaçlamaktadır."
+        ],
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Yönetişim",
+        "title": "Maaş eşitliği",
+        "iconAlt": "Konu yönetişimi ile ilgili simge",
+        "paragraph": "T2M, sosyal adalete olan bağlılığını güçlendiren bir rapor olan kadınların ve erkeklerin şeffaflık ve maaş eşitliği raporunu sunar.",
+        "buttonText": "Rapor"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Bu rapor, bir pozisyon ve ücret veya kariyer planı oluşturulması, kadın işe alma politikaları (siyah, engelli, şiddetli, aile başkanları, LGBTQIA+, yerli) gibi çeşitliliği sağlamak için ücret ve eylem kriterleri sunmaktadır. Yönetim ve yönetim pozisyonları için tanıtım politikaları.",
+        "imageAlt": "T2M Ofis Görüntüsü"
+      },
+      "metasTrad": {
+        "title": "2025'teki hedeflerimiz",
+        "paragraph": "Toplum ve çevre üzerinde olumlu bir etkisi ile ESG uygulamalarının 2025'e sürekli iyileştirilmesine odaklanarak sürdürülebilirlik ve dahil edilmeye kararlıyız.",
+        "numberCards": [
+          {
+            "title": "Dikilen ağaç miktarını kopyalayın"
+          },
+          {
+            "title": "Karbon emisyonlarında toplam azalma"
+          },
+          {
+            "title": "Geri dönüştürülmüş malzemenin tüketimini genişletin"
+          },
+          {
+            "title": "Yiyecek toplamayı% 50 artırın"
+          },
+          {
+            "title": "Gerçekleştirilen sosyal eylemlerin sayısını kopyalayın"
+          },
+          {
+            "title": "Sosyal eylemlerdeki gönüllü sayısını% 30 arttırın"
+          },
+          {
+            "title": "ISO 27001 ve ISO 27701 sertifikalarını alın"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "temas etmek",
-    "title": "Bize Ulaşın",
-    "paragraph": "Bizimle iletişime geçmek için e-posta Girlstempetropolis@gmail.com'a bir mesaj gönderin. Mümkün olan en kısa sürede cevap veriyoruz!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Biz kimiz?",
+      "paragraph": "Bugün, T2M'nin kuruluşundan 20 yıldan fazla bir süre sonra, yaklaşık 300 çalışanı olan, sürekli teknik iyileştirme sürecinde, müşteri portföyümüzdeki önemli şirketler tarafından yapılan çalışmalarımızın kalitesi için tanınan olgun bir şirketiyiz.",
+      "buttonText": "Şirketin resmi web sitesi"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "T2M ofisi",
+      "title": "Piyasada 20 yıldan fazla süren sağlam bir şirkette çalışma güvenliği",
+      "topTitle": "Bizimle çalış",
+      "paragraph": "T2M 2002 yılında başlangıçta bir yazılım test bürosu olarak kuruldu. Yakında devam etmemiz gerektiğini ve bir sistemin geliştirilmesinin tüm adımlarını doğruladık ve yazılım kalitesinde uzmanlaştık.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Herkes için olağanüstü ve erişilebilir deneyimler.",
+      "paragraph": "Bir T2M - Market LTDA'ya test edin. 20 yılı aşkın bir süredir var olan, yazılım geliştirmede mükemmelliğin sağlanmasında uzmanlaşmış, katı testler ve bir proje oluşturmanın diğer tüm adımlarının ayrıntılı olarak takip edilmesi yoluyla bir Brezilya şirketidir. Son zamanlarda hizmetlerimizi genişlettik, bu segmentlerdeki ünlü ortaklar aracılığıyla veri gizliliği ve güvenlik, dijital erişilebilirlik ve iş çevikliği ekledik."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Mükemmellik hizmetlerimiz işletmenizi artırmaya nasıl yardımcı olabilir.",
+      "paragraph": "İşletmenizin ve hizmetlerinizin etkinliğini, kalitesini ve güvenliğini nasıl genişletebileceğimizi ve daha yüksek sonuçlar getirebileceğimizi öğrenin.",
+      "icons": [
+        {
+          "title": "Yazılım kalitesi",
+          "paragraph": "Yazılım kalitesi çözümlerimiz, tüm geliştirme adımlarını optimize ederek müşterilerimizin verimliliğini, güvenilirliğini ve memnuniyetini sağlıyor."
+        },
+        {
+          "title": "Gizlilik ve Güvenlik",
+          "paragraph": "Odak noktamız, her müşterinin özel ihtiyaçlarını karşılamak için danışmanlık çözümleri sunarak bilgi güvenliği zorluklarının üstesinden gelmektir."
+        },
+        {
+          "title": "Dijital Erişilebilirlik",
+          "paragraph": "T2M'de, herkes için daha kapsayıcı ve erişilebilir bir dijital ortam sağlamak için erişilebilirliği ve yeniliği teşvik ederek dijital içerme arıyoruz."
+        },
+        {
+          "title": "İş çevikliği",
+          "paragraph": "Fırsatlardan yararlanarak ve organizasyonel çevikliği geliştirerek şirketlerin pazar değişikliklerine hızla uyum sağlamalarına yardımcı oluyoruz."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Girişimler",
+      "title": "Girişimlerimiz ve taahhütlerimiz",
+      "paragraph": "T2M'de girişimlerimiz ve taahhütlerimiz, sürekli mükemmellik arayışına ve işlettiğimiz tüm alanlarda olumlu etkiye dayanmaktadır. Çalışanlarımızın yaşam kalitesini teşvik etmeye, yeniliği teşvik etmeye ve çözümlerimize dijital içermeyi sağlamaya kararlıyız."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Yaşam kalitesi ve refahı",
+      "paragraph": "T2M, sağlıklı ve dengeli bir çalışma ortamı sunarak çalışanlarının ve ailelerinin refahına olan bağlılığını sürdürmektedir. Zaman esnekliği, zihinsel sağlık desteği ve yaşam kalitesi programları gibi farklı ihtiyaçları karşılayan fayda seçeneklerini teşvik ederek, profesyonellerimizin günlük yaşamlarındaki yaşam kalitesini sürekli olarak artırmaya çalışıyoruz.",
+      "imageAlt": "Doğada kırmızı katlı kadın"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Mesleki Gelişim ve Yenilik",
+      "paragraph": "Özel eğitim ve öğretim programları aracılığıyla ekibimizin sürekli büyümesine yatırım yaptık. Çevik metodolojilerin uygulanması ve yeni teknolojilerin sömürülmesi ile yeniliği teşvik ederek, profesyonellerimizin her zaman pazar trendlerinin ön saflarında olmalarını ve müşterilerimize yenilikçi çözümler sunmaya hazır olmalarını sağlıyoruz.",
+      "imageAlt": "Sanal gerçeklik gözlükleri giyen kadın"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Erişilebilirlik ve dahil etme",
+      "paragraph": "Tüm çözümlerimizde dahil etme ve dijital erişilebilirliği teşvik etmeye kararlıyız. T2M, ürün ve hizmetlerimizin, uygulamalarda ve web sitelerinde erişilebilirlik teknolojilerinin uygulanması ve çeşitliliğe saygı duyan ve değer verilen kapsayıcı bir çalışma ortamını teşvik etmek gibi özel ihtiyaçlarına bakılmaksızın herkes için erişilebilir olmasını sağlayan uygulamaları benimser.",
+      "imageAlt": "Ailenle birlikte tekerlekli sandalyede ordu"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 sütun",
+      "title": "Stratejik Sütunlarımız",
+      "paragraph": "T2M'nin özü net bir görüşe, sağlam değerlere ve ilham verici bir göreve dayanmaktadır. Bu sütunlar, mükemmellik, inovasyon ve içerme bağlılığımızı yönlendirerek tüm eylemlerimize rehberlik eder. Aşağıda kim olduğumuzu ve nasıl davrandığımızı tanımlayan temelleri öğrenin."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "İlk sütun",
+          "title": "Görüş",
+          "paragraph": "Yazılım kalitesi, erişilebilirlik ve bilgi güvenliği konusunda ulusal ve uluslararası bir referans olun, teknolojik yeniliği teşvik eder ve bağımsız teknoloji ve metodoloji çözümleri yoluyla müşterilerimizin işinin başarısına katkıda bulunur."
+        },
+        {
+          "topTitle": "İkinci Pilar",
+          "title": "Misyon",
+          "paragraph": "Müşterilerimizin ürünlerinin, her zaman her bir işletmenin belirli son tarihlerine ve ihtiyaçlarına saygı duyarak ve teknoloji pazarını dönüştürmek için profesyonelleri sürekli eğitmek için en yüksek kalite, güvenilirlik, erişilebilirlik ve kullanılabilirlik standartlarını karşıladığından emin olun."
+        },
+        {
+          "topTitle": "Üçüncü direk",
+          "title": "Değer",
+          "paragraph": "T2M'de, teknik bilgi ve konsolide deneyim tarafından desteklenen yüksek kaliteli hizmetler sunarak mükemmelliktir. Zorlukları fırsatlara dönüştürmek için çevik metodolojileri ve kesme teknolojilerini kullanarak yeniliğe değer veriyoruz. Müşterilerimizin çıkarlarına öncelik veren tarafsız kararlar sağlayarak etik ve muafiyetle çalışıyoruz. Buna ek olarak, mesleki eğitim, dijital erişilebilirlik ve insan ve teknolojik gelişimi yönlendiren uygulamalar yoluyla dahil etme ve sürdürülebilirliği teşvik ediyoruz. Taahhüdümüz sonuçlara, son teslim tarihlerine, güvenilirliğe ve kullanılabilirliğe saygı göstermeye, her zaman ortaklarımızın ihtiyaçlarına uygun olarak odaklanmaktadır."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Yazılım Kalite Testlerini Dış Kaynak Kullanmanın Önemi",
+      "paragraph": "Yüksek doğruluk ve güvenlik gerektiren bankacılık, hava ve hastane kontrolü gibi kritik sistemlerde dış kaynak kullanımı kalite testleri gereklidir.",
+      "numberCards": [
+        {
+          "title": "Uzmanlara erişim",
+          "paragraph": "Uzmanlaşmış şirketler, daha derin testler ve yazılım kalitesini sağlamak için kesme uygulamalarının kullanılmasını sağlayan nitelikli profesyoneller sunar."
+        },
+        {
+          "title": "FOCO Çekirdek İş Yok",
+          "paragraph": "Dış kaynak kullanımı ile iç ekip yeni özellikler geliştirmeye, üretkenliği artırmaya ve iş büyümesini artırmaya odaklanabilir."
+        },
+        {
+          "title": "Maliyet ve zaman azaltma",
+          "paragraph": "Dahili test ekiplerinin oluşturulmasından kaçınmak, sabit maliyetleri azaltır ve yatırımları talebe göre optimize etmenizi sağlar ve test süreçlerini hızlandırır."
+        },
+        {
+          "title": "Ölçeklenebilirlik ve esneklik",
+          "paragraph": "Dış kaynaklı şirketler test kapasitesini gerektiği gibi ayarlayabilir, pikler sunabilir ve ölçeği yeni ürünlerin piyasaya sürülmesine göre ayarlayabilir."
+        },
+        {
+          "title": "Tarafsızlık ve dış görme",
+          "paragraph": "Harici bir ekip, ürünün tarafsız bir görünümünü getirir ve iç bir ekibin fark edemeyeceği kusurları belirlemeye yardımcı olur ve genel kaliteyi iyileştirir."
+        },
+        {
+          "title": "Gelişmiş araçlara ve teknolojilere erişim",
+          "paragraph": "Özel şirketler, yüksek iç uygulama maliyetinden kaçınarak otomasyon, yük testleri ve diğer uygulamalar için kesme araçlarına erişebilir."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Dalga"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Değer teklifi",
+      "paragraph": "Sağlam ve kişiselleştirilmiş teknik çözümler sunarak sadece müşterilerimizin acil ihtiyaçlarını karşılayabileceğimize, aynı zamanda işlerinde sürdürülebilir büyümeye ve sürekli yeniliğe katkıda bulunduğumuza inanıyoruz.",
+      "buttonText": "Blogumuz"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Başarı için Kalite Çözümleri",
+      "paragraph": "T2M'de, müşterilerimizin başarısını artıran yüksek kaliteli teknolojik çözümler sunmaya kararlıyız. Her zaman somut sonuçların verilmesine odaklanan yazılım, gizlilik ve güvenlik kalitesi, dijital erişilebilirlik ve iş çevikliği konusunda özel hizmetler sunuyoruz. Müşterilerimizin süreçlerimize güvenebilmelerini ve sonuçları doğru zamanda sunabilmelerini sağlayarak zorlukları fırsatlara dönüştürmek için kesme yöntemleri ve teknolojileri seçtik.",
+      "imageAlt": "Fikir"
+    },
+    "inovacaoTrad": {
+      "title": "Yenilik ve Sürdürülebilirlik",
+      "paragraph": "İnovasyon ve sürdürülebilirliğe olan bağlılığımız, ortaklarımız ve tedarikçilerimizle olan sürekli çalışmaya yansır, bu da tüm süreçlerin en yüksek kalite ve güvenlik standartlarıyla gerçekleştirilmesini sağlar. Buna ek olarak, çözümlerimiz her bir müşterinin özel ihtiyaçlarına uyarlanmış, stratejik hedefleriyle uyumludur ve piyasada rekabetçi avantajlar sunmaktadır.",
+      "imageAlt": "Sürdürülebilirlik"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Sorumlu ve Kapsayıcı Uygulamalar",
+      "paragraph": "T2M'de, müşterilerimizin başarısını artıran yüksek kaliteli teknolojik çözümler sunmaya kararlıyız. Her zaman somut sonuçların verilmesine odaklanan yazılım, gizlilik ve güvenlik kalitesi, dijital erişilebilirlik ve iş çevikliği konusunda özel hizmetler sunuyoruz. Müşterilerimizin süreçlerimize güvenebilmelerini ve sonuçları doğru zamanda sunabilmelerini sağlayarak zorlukları fırsatlara dönüştürmek için kesme yöntemleri ve teknolojileri seçtik.",
+      "imageAlt": "Tekerlekli sandalye"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Şeffaflık ve sosyal eşitlik",
+      "paragraph": "Çalışma Bakanlığı Kurallarına göre, Web Sitemizde, 2024 dönemine atıfta bulunarak kadınların ve erkeklerin şeffaflık ve maaş eşitliği raporunun mevcut olduğunu bildiriyoruz.",
+      "buttonText": "Rapor"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Ekibimiz",
+      "paragraph": "Projelerimizin başarısı, ekibimizin uzmanlığı ve özveri tarafından yönlendirilmektedir. Yüksek eğitimli profesyoneller tarafından oluşturulan ve yaptıkları şey konusunda tutkulu olan ekibimiz, her zaman yeni zorluklarla karşılaşmaya, yenilikçi çözümler sunmaya ve olağanüstü sonuçlar elde etmek için müşterilerimizle işbirliği yapmaya hazırdır.",
+      "buttonText": "Takımın bir parçası olmak istiyorum"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Kategoriye göre bölünme",
+      "paragraph": "İşletmenizin ve hizmetlerinizin etkinliğini, kalitesini ve güvenliğini genişletmek, daha yüksek sonuçlar getirmek.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Yazılım kalitesi",
+          "paragraph": "Yazılım kalitesi çözümlerimiz, müşterilerimizin verimliliğini, güvenilirliğini ve memnuniyetini sağlayarak tüm geliştirme adımlarını optimize eder."
+        },
+        {
+          "id": 2,
+          "title": "Veri güvenliği",
+          "paragraph": "Uzman ekibimiz, hassas verilerin korunmasını ve gizliliğini sağlayarak bilgi güvenliği zorluklarını aşmaktadır."
+        },
+        {
+          "id": 3,
+          "title": "Dijital Erişilebilirlik",
+          "paragraph": "Dijital erişilebilirlik konusundaki uzmanlığımızla, herkesin dijital ürünlerine kapsayıcı bir şekilde erişebileceğini ve etkileşime girebileceğini garanti ediyoruz."
+        },
+        {
+          "id": 4,
+          "title": "İş çevikliği",
+          "paragraph": "İş Çeviklik Grubumuz, şirketlerin pazar değişikliklerine hızla uyum sağlamasına ve performanslarını optimize etmesine odaklanmaktadır."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Çeşitlilik ve dahil edilmeye bağlılık",
+      "paragraph": "Son zamanlarda, bu konulara ve genel olarak erişilebilirliğe yönelik davranışlarımızı geliştirmek için çeşitlilik ve içerme ile ilgili sosyal projeler ve hizmetlere odaklanan Biomob ile bir ortaklığı kapattık."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Son derece değerli bir ortam",
+      "paragraph": "Taahhüdümüz, kökenine, cinsiyetine, etnik kökenine veya başka bir kişisel özelliğe bakılmaksızın herkesin değerli hissettiği bir ortam yaratmaktır.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Cinsiyet",
+          "paragraph": "Dengeli bir cinsiyet ekibinin gücünü tanıyarak eşit fırsatları garanti ediyoruz.",
+          "imageAlt": "cinsiyet simgesi"
+        },
+        {
+          "id": 2,
+          "title": "Irk",
+          "paragraph": "Tüm etnik kökenleri kutluyoruz ve ekibimiz toplumumuzun çoğulluğunun bir yansıması olacak şekilde çalışıyoruz.",
+          "imageAlt": "yarış simgesi"
+        },
+        {
+          "id": 3,
+          "title": "Yaş",
+          "paragraph": "Herkesin değerli katkıları olduğunu anlayarak, gençlerin en deneyimli ve enerjisinin bilgeliğine saygı duyuyoruz.",
+          "imageAlt": "simge"
+        },
+        {
+          "id": 5,
+          "title": "Fonksiyonel çeşitlilik",
+          "paragraph": "Engelli insanların beceri ve yeteneklerini tanıyan erişilebilir ve kapsayıcı bir çalışma ortamı sunuyoruz.",
+          "imageAlt": "fonksiyonel çeşitlilik simgesi"
+        },
+        {
+          "id": 6,
+          "title": "Erişilebilirlik",
+          "paragraph": "Hem ofislerimiz hem de sitemize görsel, işitsel, fiziksel ve bilişsel sınırlamaları olan kişiler için erişilebilir.",
+          "imageAlt": "Erişilebilirlik simgesi"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Ekibimizde cinsiyet çeşitliliği",
+        "imageAlt": "Ekibimizdeki cinsiyet çeşitliliği grafiği"
+      },
+      "secondImage": {
+        "title": "Ekibimizde cinsiyet çeşitliliği",
+        "imageAlt": "Yaş grubuna göre dağıtım grafiği"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Çalışan için değer teklifimiz",
+      "paragraph": "Şirketimizde, başarının doğrudan çalışma ortamının tüm yönlerine saygı, etik ve dahil edilme ile bağlantılı olduğuna inanıyoruz."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Saygı kültürü, etik ve içerme",
+      "paragraph": "Tüm çalışanların büyüme ve tanıma için aynı fırsatlara sahip olduğu bir şeffaflık ve eşitlik kültürünü teşvik ediyoruz. Çeşitlilik ve içerme konusundaki bağlılığımız, herkesin kendilerini ifade edebileceği ve maksimum potansiyellerine katkıda bulunabileceği güvenli ve saygılı bir alanı garanti eden uygulamalara yansımaktadır.",
+      "imageAlt": "Doğada kırmızı katlı kadın"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Erişilebilirlik ve dahil etme",
+      "paragraph": "Buna ek olarak, çalışanlarımızın tıbbi ve diş bakımı, çeşitli AIDS (ev ofisi, yiyecek, yemek ve ulaşım), hayat sigortası, dolu ve gibi yaşam kalitesini hedefleyen bir dizi fayda sunuyoruz. Kariyeri planlayın.",
+      "imageAlt": "Sanal gerçeklik gözlükleri giyen kadın"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Çeşit",
+      "title": "İnsan hakları ve adil işgücü uygulamaları",
+      "paragraph": "Herkesin tam potansiyeline ulaşmak için aynı fırsatlara sahip olduğu kapsayıcı çalışma ortamları yaratmaya kararlıyız. İnsan haklarının tanıtımının ve saygılı alanların inşasının, markamızın bütünlüğünün ve sürekli başarımızın korunması için gerekli olduğuna inanıyoruz."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "İnsan haklarına ve uluslararası standartlara bağlılık",
+      "paragraph": "İnsan haklarına saygı göstermeye, uygulamalarımızı İnsan Hakları Evrensel Beyannamesi ve uluslararası kabul görmüş normların belirlediği ilkelerle uyumlu hale getirme. Değerlerimiz, Birleşmiş Milletler Şirketler ve İnsan Hakları Üzerine Yol Gösterici İlkelerin yanı sıra Uluslararası İnsan Hakları Şartı'na ve Uluslararası Çalışma Örgütü'nün (ILO) işyerinde temel haklar konusunda beyanına dayanmaktadır. Bu yönergeler, tüm T2M çalışanları, tedarikçileri ve ortakları için eşit olarak uygulanan ve kapsayıcı, saygılı ve güvenli bir çalışma ortamı sağlayan iş davranış kurallarımıza dahil edilmiştir."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Güvenli ve saygılı bir çalışma ortamının garantisi",
+      "paragraph": "İnsan haklarına saygı göstermeye, uygulamalarımızı İnsan Hakları Evrensel Beyannamesi ve uluslararası kabul görmüş normların belirlediği ilkelerle uyumlu hale getirme. Değerlerimiz, Birleşmiş Milletler Şirketler ve İnsan Hakları Üzerine Yol Gösterici İlkelerin yanı sıra Uluslararası İnsan Hakları Şartı'na ve Uluslararası Çalışma Örgütü'nün (ILO) işyerinde temel haklar konusunda beyanına dayanmaktadır. Bu yönergeler, tüm T2M çalışanları, tedarikçileri ve ortakları için eşit olarak uygulanan ve kapsayıcı, saygılı ve güvenli bir çalışma ortamı sağlayan iş davranış kurallarımıza dahil edilmiştir."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Konumlandırmamız",
+      "title": "Çeşitlilik ve dahil etme",
+      "paragraph": "Çeşitliliğin önemli bir değer olduğu kapsayıcı bir ortamın yaratılmasına bağlıdır. Farklı perspektiflerin, deneyimlerin ve yeteneklerin birleşiminin kültürümüzü güçlendirdiğine ve bizi yeni ufuklara ulaşmaya ittiğine inanıyoruz."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Cinsiyet çeşitliliği",
+      "paragraph": "T2M'de, cinsiyet eşitliğinin başarı ve yenilik için çok önemli bir faktör olduğuna inanıyoruz. Erkeklerin, kadınların ve ikincil olmayan insanların duydukları sesleri ve yeteneklerinin tam olarak tanındığı bir ortam yaratmak için çalışıyoruz. Eşitlik girişimlerini, cinsiyetlerine bakılmaksızın herkes için aynı gelişme ve büyüme fırsatlarını sunarak uyguluyoruz. Bizim için dengeli ve adil bir ortam, yaratıcı çözümler ve daha kapsayıcı bir gelecek oluşturmak için temeldir."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Cinsel çeşitlilik",
+      "paragraph": "Cinsel çeşitliliğe saygı, T2M'deki kültürümüzün temellerinden biridir. LGBTQIA+ çalışanlarının kimlik özgünlüğünü ifade edebilmeleri için hoş ve güvenli bir ortamı teşvik etmekten gurur duyuyoruz. Önyargı ile mücadele etmekten çok, bireyselliği kutluyoruz ve dahil edilmeyi stratejik bir sütuna dönüştüren uygulamaları teşvik ediyoruz. Farklı sevgi ve varlık yollarına değer vererek, bir ekip olarak işbirliği yapma ve yenilik yapma yeteneğimizi güçlendirdiğimize inanıyoruz."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Kültürel çeşitlilik",
+      "paragraph": "T2M'de ırksal çeşitliliğin şirketimize getirdiği kültürel ve tarihsel zenginliği benimsiyoruz. Öğrenme ve evrim için bir fırsat olarak çok sayıda ırk ve etnik grupla karşılaşıyoruz. Irkçılığa karşı firma politikaları ve eşit fırsatlar sağlamak için proaktif eylemlerle, her bireyin ne olduğu için değerlendiği bir ortam oluşturmak için çalışıyoruz ve bizi bir organizasyon olarak daha güçlü hale getiren benzersiz perspektiflere katkıda bulunuyoruz."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Irksal çeşitlilik",
+      "paragraph": "T2M'deki ırksal çeşitlilik, çalışma ortamımızı güçlendiren ve bakış açılarımızı genişleten bir zenginlik olarak görülür. Yaratıcı ve etkili çözümlerin geliştirilmesi için farklı yaşam deneyimlerinin önemini kabul eden tüm ırklara ve etnik gruplara saygı duyan, memnuniyetle karşılayan ve değer veren bir ortamı teşvik etmeye kararlıyız. Herhangi bir ırkçılık biçimine karşı açık politikalarımız var ve ırksal kökenlerinden bağımsız olarak tüm çalışanların, şirkete benzersiz katkılarıyla saygı duyulup değerlenmelerini sağlamak için çalışıyoruz."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Engelli insanlar için çeşitlilik",
+      "paragraph": "Engelli insanların dahil edilmesi T2M için bir öncelikten daha fazlasıdır; Eşitlik ve erişilebilirlik taahhüdüdür. Tüm çalışanlarımızın özerklik ve haysiyetle hareket edebilmesini sağlamak için alanlarımızı ve süreçlerimizi uyarlıyoruz. Buna ek olarak, her bireyin becerilerinin değerlendiği ve engellerin ortak başarı için köprülere dönüştüğü gerçekten kapsayıcı bir ortam yaratmak için iç farkındalığı teşvik ediyoruz."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pilar",
+      "title": "Sağlık ve refah",
+      "paragraph": "Refahınızın bir öncelik olduğu bir yere değer verirseniz, ekibimize nasıl baktığımızı öğrenin, böylece yaşamın her alanında desteklenir ve sağlıklı hissedin."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Sağlık ve refah",
+      "paragraph": "T2M'de, çalışanlarımızın sağlığı ve refahının şirketin sürdürülebilir büyümesi ve bireysel başarı için sütunlar olduğunu kabul ediyoruz. Fiziksel ve akıl sağlığı programları, tıbbi ve diş bakımı da dahil olmak üzere integral bakımı teşvik eden girişimleri ve günlük zorluklarla yüzleşmek için psikolojik desteği teşvik ediyoruz. Profesyonel ve kişisel yaşam arasındaki dengeye öncelik veren bir ortam yaratarak, her çalışanın sağlıklı alışkanlıkları geliştirmek ve hedeflerine yaşam kalitesi ile elde etmek için kaynaklara sahip olmasını sağlıyoruz."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Topluluğu eğitmek",
+      "paragraph": "Şirket, değerleriyle uyumlu sosyal ve çevresel faydalar elde etmeye çalışan, işin ötesine geçen girişimler geliştirmektedir.",
+      "buttonText": "Blogumuz"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "İkamet",
+      "title": "Bölge için kapsayıcı ve eğitim fırsatları",
+      "paragraph": "T2M, teknoloji kariyerleri için ekonomik kırılganlık sağlamayı amaçlayan Serratec Software Residence Programının ana sponsorlarından biridir. Bu program yazılım geliştirme konusunda teknik eğitim sunar ve katılımcıları yüksek talep sektöründe iş piyasasına girmeye hazırlar. Bununla T2M, sosyal sorumluluk ve yerel yeteneklerin gelişimine olan bağlılığını güçlendirerek daha kapsayıcı ve sürdürülebilir bir ekonomiyi teşvik eder.",
+      "imageAlt": "T2M ofisi",
+      "buttonText": "Abone olmak istiyorum"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Sonuçlar",
+      "title": "Ortaklarımız",
+      "paragraph": "Her adımda başarıyı yönlendiren ve şekillendiren çalışan ağımız"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Ölçekli çevik",
+          "paragraph": "Scaled Agile, Inc. dünya çapında iş çevikliğine öncü bir yaklaşım olan Scaled Agile Framework® (SAFE) 'nin yaratıcısı olarak tanınıyor.",
+          "imageAlt": "Logo da ölçekli çevik"
+        },
+        {
+          "id": 2,
+          "title": "Serratek",
+          "paragraph": "Brezilya'daki en büyük teknolojik merkezlerden birinin bir parçası olun! İşletmeniz veya başlangıç ​​için hizmetler ve faydalar sağ ayaktan başlayın!",
+          "imageAlt": "Logo do serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Tam ve otomatik sistem geliştirme süreci uygulamak için çözümler.",
+          "imageAlt": "IBM logosu"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft, bulut bilişim, güç platformu ve yapay zekada BigTech lideridir.",
+          "imageAlt": "Microsoft'tan logo"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Veri sanallaştırma aracı ve veri maskesi çözümleri.",
+          "imageAlt": "Delphi yakında"
+        },
+        {
+          "id": 6,
+          "title": "Biyomob",
+          "paragraph": "Erişilebilirlik ve dahil etme bizim görevimizdir. Daha uyumlu sosyal yaşam almak için dijital çözümler yaratıyoruz, yaşam kalitesi ve kendilerini atladığını görenler için topluma tam katılım sağlıyoruz.",
+          "imageAlt": "Biyomob logosu"
+        },
+        {
+          "id": 7,
+          "title": "Her yerde otomasyon",
+          "paragraph": "Otomasyon Her Yerde, gelişmiş iş zorluklarını çözmek ve belirli bilgi gerektiren işler yapmak için akıl ve yaratıcılıklarını kullanarak daha fazla zaman harcamak için insanları önemsiz ve tekrarlayan görevlerden serbest bırakmaya çalışır.",
+          "imageAlt": "Logo da otomasyon her yerde"
+        },
+        {
+          "id": 8,
+          "title": "VMEDU",
+          "paragraph": "VMEDU, sertifikasyon ve profesyonel eğitim endüstrisinde lider şirkettir ve 150'den fazla ülkede 3500'den fazla şirketten 500.000'den fazla öğrenciden 1100'den fazla eğitim sağlayıcısından oluşan küresel ağı aracılığıyla% 98,7'lik bir eğitim vermiştir.",
+          "imageAlt": "VMEDU Logosu"
+        },
+        {
+          "id": 9,
+          "title": "Gelecek",
+          "paragraph": "Brezilya Bilgi Güvenliği pazarında tanınan, büyük kamu ve özel şirketlerden hizmet veren çeşitli boyut ve segmentlerde dağıtılmış sağlam bir müşteri tabanımız var.",
+          "imageAlt": "Gelecek Logosu"
+        }
+      ],
+      "type": "merkez"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "CEO'mızdan mesaj",
+      "paragraph": "T2M'de BM SKH'leri ve ESG uygulamalarıyla olan bağlılığımızı ve uyumumuzu güçlendiriyoruz.",
+      "buttonText": "Guilherme da Motta Alves - LinkedIn"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Sürdürülebilirlik ve iş sorumluluğuna bağlı olan kuruluşumuz, ESG ilkelerinin tüm faaliyetlerimizde entegrasyonuna öncelik vermektedir. Aşağıdakilerin önemini kabul ediyoruz:",
+      "numberCards": [
+        {
+          "title": "Çevreyi Koruyun (Çevre)",
+          "paragraph": "Karbon ayak izimizi azaltarak, doğal kaynakların verimli kullanımı ve sürdürülebilir uygulamaların teşvik edilmesi."
+        },
+        {
+          "title": "Fuar ve Eşit Sosyal İlişkileri Teşvik Et (Sosyal)",
+          "paragraph": "Çalışanlarımızın, müşterilerimizin ve topluluklarımızın insan haklarına, çeşitliliğine, dahil edilmesine ve refahına saygı gösterilmesi."
+        },
+        {
+          "title": "Şeffaf ve Etik Kurumsal Yönetim (Yönetişim)",
+          "paragraph": "Sorumlu liderlik, etkili risk yönetimi ve yasa ve düzenlemelere uyum ile. Vizyonumuz, daha müreffeh ve esnek bir geleceğe katkıda bulunan tüm paydaşlar için sürdürülebilir değer yaratmaktır."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "2024'ün sosyal etki ve sürdürülebilir kalkınma raporu, T2M'de çekiciliğe ve sosyal sorumluluk konusundaki bağlılığımızı yansıtmaktadır. Sürdürülebilirliğimizi ve ilerlemelerimizi iletmek, uygulamalarımızı Dooni sürdürülebilir kalkınma hedeflerine ve ESG ilkelerine hizalamak için temel bir kanal görevi görür. Bu rapor sadece eğitim, etik egoverasyon çeşitliliği konusundaki çabalarımızı vurgulamakla kalmaz, aynı zamanda paydaşlarımızla bağları güçlendirmemize ve etkili kararlarımıza rehberlik etmemize de izin verir. Sonuçlarımızı ve zorluklarımızı paylaşarak, olumlu bir Eturo etkisine olan bağlılığımızı yeniden teyit ettik.",
+      "CEO": "CEO DA T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Site Konuları",
+      "items": {
+        "sobre": "Açık",
+        "quemSomos": "Biz kimiz",
+        "propostaDeValor": "Değer teklifi",
+        "nossaEquipe": "Ekibimiz",
+        "comunidade": "Toplum",
+        "esg": "ESG"
+      }
+    },
+    "socialLinks": {
+      "title": "Sosyal Ağlarımız",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Resmi web sitemizi ziyaret edin",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Her hakkı saklıdır",
+      "logoAlt": "T2M logosu"
+    }
   }
 }

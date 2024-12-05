@@ -26,7 +26,13 @@
     "empregabilidade": "Kebolehpasaran",
     "empregabilidadeLabel": "Pergi ke skrin kebolehpasaran",
     "papoDiverso": "Berbual berbeza",
-    "papoDiversoLabel": "Pergi ke laman web sembang yang pelbagai"
+    "papoDiversoLabel": "Pergi ke laman web sembang yang pelbagai",
+    "leitorAudio": {
+      "carregando": "Membawa suara ...",
+      "semVozes": "Tiada suara yang tersedia untuk bahasa yang dipilih",
+      "isReading": "Klik beberapa teks untuk mula membaca",
+      "isNotReading": "Mula membaca"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Membentuk saintis masa depan",
-    "title": "Gadis batang",
-    "paragraph": "Impak gadis yang, masih di sekolah, menghadapi cabaran untuk penglibatan mereka dalam sains",
-    "buttonText": "Hubungi"
-  },
-  "OQueEBanner": {
-    "topTitle": "Apa itu?",
-    "title": "Projek Hub Petrópolis Tec Girls Stem",
-    "paragraph": "Projek yang bertujuan untuk mengurangkan ketidaksamaan jantina dan mengembangkan penyertaan wanita dalam sains, teknologi, kejuruteraan dan matematik (STEM). Inisiatif ini memberi tumpuan kepada literasi teknologi dan promosi kemasukan wanita di bandar Petrópolis, di Rio de Janeiro."
-  },
-  "ObjetivoBanner": {
-    "title": "Objektif Projek",
-    "paragraph": "Projek ini bertujuan untuk menggalakkan literasi teknologi antara pelajar dan pendidik, mempromosikan budaya inklusif dalam sains yang tepat.",
-    "altImage": "Gadis batang"
-  },
-  "ComoBanner": "Projek ini menggunakan platform awal untuk mengajar pengaturcaraan dengan cara yang suka bermain dan interdisipliner, menggabungkan perdebatan mengenai jantina, hak asasi manusia dan ketidaksamaan.",
-  "MetodologiaBanner": {
-    "title": "Motodologia",
-    "paragraph": "Projek ini bertujuan untuk menggalakkan literasi teknologi antara pelajar dan pendidik, mempromosikan budaya inklusif dalam sains yang tepat.",
-    "altImage": "Gadis batang"
-  },
-  "IconWithTextBanner": {
-    "title": "Siapa yang berkembang?",
-    "topTitle": "Pekerja kami",
-    "paragraph": "Projek ini dijalankan oleh rangkaian institusi penyelidikan, sains dan pendidikan, bersama dengan organisasi sosial dan perniagaan. Mengambil bahagian dalam inisiatif ini:",
-    "iconCards": [
-      {
-        "title": "Lncc",
-        "description": "Makmal Pengkomputeran Saintifik Kebangsaan adalah institusi penyelidikan dan penyelidikan teknologi Brazil, yang mengkhususkan diri dalam pengkomputeran saintifik, yang dikaitkan dengan Kementerian Sains, Teknologi dan Inovasi."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Laporan Impak Sosial",
+      "paragraph": "Kesan sosial dan pembangunan mampan yang membentangkan tindakan dan komitmen T2M terhadap amalan tanggungjawab sosial, alam sekitar dan tadbir urus (ESG).",
+      "buttonText": "Muat turun Laporan Impak Sosial"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Foto Guilherme, Ketua Pegawai Eksekutif T2M",
+      "title": "Kepimpinan inovatif.",
+      "topTitle": "Mesej dari CEO kami",
+      "paragraph": "Laporan Sosial dan Laporan Pembangunan Sosial 2024 mencerminkan komitmen kami terhadap ketelusan dan tanggungjawab sosial di T2M. Ia berfungsi sebagai saluran asas untuk menyampaikan tindakan dan kemajuan kami dalam kemampanan, menyelaraskan amalan kami kepada objektif pembangunan mampan PBB dan prinsip -prinsip ESG.",
+      "buttonText": "Baca mesej CEO kami"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Mengenai laporan ini",
+      "paragraphs": [
+        "Laporan kesan sosial dan pembangunan mampan ini membentangkan tindakan dan komitmen T2M terhadap amalan tanggungjawab sosial sosial, alam sekitar dan tadbir urus (ESG).",
+        "Ia mencerminkan usaha kami untuk mewujudkan kesan positif terhadap komuniti kami, mempromosikan persekitaran kerja yang inklusif dan lestari dan meminimumkan jejak alam sekitar kami.",
+        "Dengan berkongsi pencapaian dan cabaran kami, laporan ini memperkuat komitmen kami terhadap ketelusan dan Matlamat Pembangunan Mampan PBB (SDGS), serta membimbing evolusi berterusan kami ke arah masa depan yang lebih mampan."
+      ],
+      "imageAlt": "Foto das ods untuk itu"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Proses materialiti",
+      "paragraph": "Kami mengekalkan hubungan yang berterusan dan telus dengan semua pihak berkepentingan kami, dari individu ke organisasi, supaya kami dapat memahami jangkaan dan kebimbangan mereka dan menterjemahkannya ke dalam maklumat nilai strategik untuk membantu pengurusan perniagaan kami."
+    },
+    "partesInteressadasTrad": {
+      "title": "Pemegang kepentingan",
+      "paragraph": "T2M menghargai kerjasama dengan semua pihak berkepentingan untuk mempromosikan penyelesaian inovasi, ketelusan dan kesan positif. Kami menubuhkan saluran dialog dan inisiatif yang mencerminkan komitmen terhadap nilai dan objektif strategik kami.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Kolaborator",
+          "paragraph": "Program latihan berterusan, penyelidikan iklim organisasi, mesyuarat penjajaran strategik dan bengkel pekerja."
+        },
+        {
+          "id": 2,
+          "title": "Pelanggan",
+          "paragraph": "Ikuti mesyuarat -mesyuarat dan persembahan, sokongan khusus untuk menyelesaikan soalan dan meningkatkan perkhidmatan."
+        },
+        {
+          "id": 3,
+          "title": "Rakan kongsi strategik",
+          "paragraph": "Perjanjian kerjasama untuk projek impak, penyertaan dalam acara pasaran, kuliah dan persidangan, serta mesyuarat berkala untuk mengukuhkan perkongsian strategik dan pakatan."
+        },
+        {
+          "id": 4,
+          "title": "Komuniti",
+          "paragraph": "Inisiatif tanggungjawab sosial, penyertaan dalam acara tempatan, sokongan untuk NGO dan projek komuniti, mempromosikan kesan positif dan mampan di kawasan -kawasan di mana kita bertindak dengan cekap."
+        },
+        {
+          "id": 5,
+          "title": "Tadbir urus dan pematuhan",
+          "paragraph": "Penjajaran strategik dengan peraturan, dasar pematuhan yang mantap dan interaksi berterusan dengan entiti pengawalseliaan kerajaan dan sektor. ISO 37101 dan pensijilan ISO 37301, serta amalan anti -subborn yang kukuh dan pematuhan kepada kod etika yang ketat."
+        },
+        {
+          "id": 6,
+          "title": "Kepelbagaian dan ekuiti",
+          "paragraph": "Promosi persekitaran inklusif melalui inisiatif yang menghargai kepelbagaian budaya, sosial dan jantina. Dasar untuk menyamakan peluang, menggalakkan ekuiti dan memastikan saling menghormati, membina budaya organisasi yang mampan dan jamak."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Metodologi",
+      "title": "Bagaimanakah kita menentukan kandungan laporan?",
+      "paragraph": "Setiap tahun, kami menjalankan latihan dalam materialiti untuk memahami perspektif pihak berkepentingan mengenai isu -isu alam sekitar, sosial dan ekonomi yang lebih relevan dengan pengurusan yang mampan, juga mengenal pasti peluang untuk menggalakkan pembelajaran dan menggalakkan penglibatan dengan amalan terbaik."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Semakan",
+          "title": "Refleksi terhadap tindakan dan dasar yang bertujuan untuk kepelbagaian dan kemasukan tempoh sebelumnya.",
+          "paragraph": "Semasa semakan, kami menilai kemajuan yang dibuat dalam penciptaan persekitaran yang inklusif dan dalam penglibatan kumpulan pemegang kepentingan yang berbeza. Kami memutuskan untuk memasukkan topik baru, seperti 'kepelbagaian dalam pelbagai aspek dalam dasar korporat' dan 'peningkatan kebolehcapaian dalam produk dan perkhidmatan', untuk menyelaraskan amalan dengan lebih baik dengan keperluan semasa."
+        },
+        {
+          "topTitle": "Analisis",
+          "title": "Integrasi cadangan yang memberi tumpuan kepada pengukuhan strategi inklusif, alam sekitar dan kesihatan dan kesejahteraan.",
+          "paragraph": "Semasa proses analisis, topik keutamaan telah diketengahkan, seperti kepentingan kempen pendidikan yang mempermudahkan dan melibatkan pekerja dalam amalan inklusif, lestari dan mempromosikan penjagaan kesihatan dan kesejahteraan semua."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Pembangunan Hijau X Pencucian Hijau",
+      "title": "Kebenaran di sebalik amalan kemampanan",
+      "paragraph": "Banyak syarikat menggunakan amalan pencuci hijau, menyampaikan inisiatif alam sekitar yang cetek tanpa mengubah proses mereka, yang merosakkan ketelusan dan membingungkan pengguna dan pelabur.",
+      "extraButtonBottom": {
+        "buttonText": "Terus membaca artikel di laman web rasmi kami"
       },
-      {
-        "title": "Serratec",
-        "description": "Serratec adalah taman teknologi bukan keuntungan di pedalaman Rio de Janeiro, bertindak sebagai induktor perniagaan IT dan meliputi bandar -bandar Petrópolis, Teresópolis, Nova Friburgo dan Areal."
-      },
-      {
-        "title": "Faeterj petropolis",
-        "description": "Faeterj Petrópolis adalah institusi pengajian tinggi awam yang dikaitkan dengan Faetec, yang menawarkan kursus teknikal dan lebih tinggi di pelbagai bidang."
-      },
-      {
-        "title": "Cefet/rj uned petrópolis",
-        "description": "CEFET/RJ Petrópolis adalah institusi pengajian tinggi awam yang pertama di bandar, menawarkan kursus -kursus di wajah -face -face modality dan kepunyaan sistem CEFET/RJ."
-      },
-      {
-        "title": "Uff",
-        "description": "Universiti Persekutuan Fluminense (UFF) adalah institusi pengajian tinggi awam rujukan kebangsaan, yang berdiri di pelbagai bidang pengetahuan."
-      },
-      {
-        "title": "UFBA",
-        "description": "Universiti Persekutuan Bahia (UFBA) adalah institusi pendidikan tinggi awam yang berpusat di Salvador, yang dikaitkan dengan Kementerian Pendidikan, dengan autonomi pentadbiran dan undang -undang."
-      },
-      {
-        "title": "Biomob",
-        "description": "Biomob mengkhususkan diri dalam penyelesaian aksesibiliti dan projek sosial, yang memberi tumpuan kepada mempromosikan masyarakat yang lebih inklusif dan egalitarian."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech membangunkan projek penyelidikan, pembangunan dan inovasi untuk syarikat dan institusi kerajaan, yang bertujuan untuk inovasi dan kemajuan teknologi."
-      },
-      {
-        "title": "TJ-RJ",
-        "description": "Mahkamah Keadilan Rio de Janeiro (TJ-RJ) bertanggungjawab untuk pentadbiran keadilan di negeri ini, dengan bidang kuasa ke atas seluruh wilayah fluminense."
-      },
-      {
-        "title": "Dewan Bandaraya Petrópolis",
-        "description": "Dewan Bandaraya Petrópolis menguruskan bandar bersejarah yang terletak di rantau pergunungan Rio de Janeiro, melaksanakan dasar dan perkhidmatan awam untuk penduduk."
-      },
-      {
-        "title": "Seeduc-RJ",
-        "description": "Seeduc-RJ bertanggungjawab untuk menguruskan dasar pendidikan negeri Rio de Janeiro, memastikan akses kepada pendidikan berkualiti di sekolah awam negeri."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "Cari",
-    "title": "Apa yang diharapkan dari projek itu?",
-    "paragraph": "Projek ini bertujuan untuk mengukuhkan imaginasi gadis dan diri sendiri, kejatuhan pertempuran dan menyumbang kepada pembinaan masyarakat yang lebih adil. Ia dijangka merangsang dan mengembangkan penyertaan wanita di STEM, sambil mengurangkan stigma dan diskriminasi.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "ms"
+      "numberCards": [
+        {
+          "title": "Kesan alam sekitar yang sebenar",
+          "paragraph": "Syarikat -syarikat yang komited untuk pembangunan mampan membuat perubahan sebenar, seperti pengurangan pelepasan karbon dan penggunaan sumber semula jadi yang bertanggungjawab, untuk menyebabkan kesan alam sekitar yang positif."
+        },
+        {
+          "title": "Ketelusan korporat",
+          "paragraph": "Untuk mengelakkan pencuci hijau, adalah penting bagi syarikat untuk menerbitkan laporan yang jelas mengenai tindakan dan pencapaian mereka yang mampan, dengan data yang dapat disahkan dan matlamat konkrit."
+        },
+        {
+          "title": "Penggunaan sedar",
+          "paragraph": "Pengguna sedar dapat mengenal pasti amalan pencuci hijau dengan mencari jenama dengan komitmen yang terbukti mampan, seperti penggunaan bahan kitar semula dan dasar pengurangan sisa."
+        },
+        {
+          "title": "Pensijilan dan audit",
+          "paragraph": "Mendapatkan pensijilan yang diiktiraf dan audit luaran membantu mengesahkan komitmen syarikat terhadap kemampanan dengan menawarkan keyakinan kepada pengguna dan pelabur."
+        },
+        {
+          "title": "Ekonomi Pekeliling",
+          "paragraph": "Ekonomi pekeliling adalah alternatif kepada model tradisional 'membuang selepas penggunaan', menggalakkan syarikat untuk mengitar semula, menggunakan semula dan mengurangkan sisa, mempromosikan pendekatan yang mampan dan regeneratif."
+        },
+        {
+          "title": "Peranan tadbir urus",
+          "paragraph": "Tadbir urus memainkan peranan penting dalam memerangi pencuci hijau, kerana ia membimbing keputusan perniagaan untuk amalan PDD yang bertanggungjawab dan sejajar, memastikan integriti dan tanggungjawab."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Kemampanan",
+      "paragraph": "Kami komited untuk menyumbang kepada pembangunan mampan melalui perniagaan dan operasi kami, menghasilkan nilai panjang untuk pelanggan, pekerja, pembekal, pemegang saham dan masyarakat kami."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Masa penanaman pergerakan regeneratif",
+      "paragraph": "Dengan menyokong projek penanaman budaya dan pokok, seperti pergerakan penanaman semula, kami mengukuhkan protagonisme komuniti dan mempromosikan perasaan kepunyaan. Dengan penanaman pokok, selain melindungi alam sekitar, kami mewujudkan warisan yang berkekalan, memastikan generasi akan datang berkembang di wilayah yang menghargai dan mengekalkan kenangan mereka dan sifat di sekelilingnya.",
+      "numberCards": [
+        {
+          "title": "Pergerakan Pengurusan Sendiri",
+          "paragraph": "Setiap tahun, semasa musim hujan (Oktober hingga Mac), pergerakan ini menggalakkan penyertaan aktif rakyat dalam penanaman pokok, mewujudkan hubungan langsung dengan alam semula jadi dan mempromosikan kesedaran alam sekitar yang lebih besar."
+        },
+        {
+          "title": "Pada bulan Disember 2024",
+          "paragraph": "Pada bulan Disember 2024, T2M menanam 100 anak benih di Vale Das Videiras Arboretical. Kejayaan ini adalah sebahagian daripada usaha berterusan untuk mempromosikan pemulihan tumbuh -tumbuhan asli dan pemulihan kawasan yang terdegradasi."
+        },
+        {
+          "title": "Harapan untuk 2025",
+          "paragraph": "Untuk 2025, matlamatnya adalah untuk menggandakan penanaman pokok di seluruh bandar, dengan sokongan semua pekerja. Matlamatnya adalah untuk memulihkan hutan asli dan spesies pribumi, dengan penyertaan aktif masyarakat dan inisiatif tempatan."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Kempen kami",
+      "paragraph": "Di samping menawarkan ujian kecemerlangan automatik, T2M dengan bangga membuat dan menghasilkan kempennya sendiri",
+      "numberCards": [
+        {
+          "title": "Isyarat perpaduan",
+          "paragraph": "Sejak tahun 2023, kami telah menjalankan kempen perpaduan seperti pengumpulan makanan, pakaian sejuk, produk kebersihan dan topi plastik yang ditukar untuk kerusi roda, lampin dan tongkat."
+        },
+        {
+          "title": "Perbuatan baik",
+          "paragraph": "DBA - Mengurus mereka yang menjaga adalah acara untuk ibu dan penjaga, yang menawarkan penjagaan estetik, kuliah dan tip kebajikan, mengintegrasikan Gerakan Global Good Action (DBA)."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta adalah pameran pekerjaan yang menawarkan peluang pekerjaan pertama, memberi tumpuan kepada ibu tunggal dan orang kurang upaya, mempromosikan kemasukan dan kesamaan dalam pasaran pekerjaan."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Bahagian",
-    "title": "Siapa yang mengambil bahagian?",
-    "paragraph": "Pelajar akan dipilih dari ulang tahun ke -8 dan ke -9 Sekolah Rendah II dan tahun ke -1, ke -2 dan ke -3 sekolah menengah, berikutan kriteria projek, bersama -sama dengan sekurang -kurangnya seorang guru dari setiap sekolah yang mengambil bahagian. Pemegang biasiswa akan terlibat dalam aktiviti dan objektif berikut:",
-    "iconCards": [
-      {
-        "title": "Belajar pada pengaturcaraan"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "Komitmen ESG",
+        "paragraph": "Laporan ini membentangkan tindakan kesan alam sekitar, sosial dan tadbir urus (ESG) yang dilaksanakan oleh syarikat kami sepanjang tahun lepas, yang menonjolkan bagaimana inisiatif -inisiatif ini sejajar dengan Matlamat Pembangunan Mampan PBB (SDGS).",
+        "buttonText": "Blog kami"
       },
-      {
-        "title": "Pembangunan permainan pendidikan di platform awal"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Strategi",
+        "title": "Komitmen kami",
+        "paragraph": "Komitmen kami terhadap ESG adalah bahagian utama strategi kami, yang menyumbang kepada pengurangan kesan alam sekitar, pengukuhan amalan sosial yang inklusif dan penggunaan tadbir urus korporat yang beretika dan bertanggungjawab. Usaha berterusan kami untuk mengintegrasikan SDG dengan operasi menguatkan tindakan lestari kami, menjana nilai untuk semua pihak berkepentingan.",
+        "buttonText": "Saya mahu menjadi sebahagian",
+        "imageAlt": "Pejabat T2M"
       },
-      {
-        "title": "Penyertaan dalam Kelab Sains"
+      "gestaoResiduosTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Pengurusan sisa dan pilihan bahan lestari",
+        "iconAlt": "ikon untuk topik alam sekitar"
       },
-      {
-        "title": "Kehadiran dalam peristiwa penyebaran saintifik"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "Pejabat T2M",
+        "paragraph": "Komitmen kami terhadap ESG adalah bahagian utama strategi kami, yang menyumbang kepada pengurangan kesan alam sekitar, pengukuhan amalan sosial yang inklusif dan penggunaan tadbir urus korporat yang beretika dan bertanggungjawab. Usaha berterusan kami untuk mengintegrasikan SDG dengan operasi menguatkan tindakan lestari kami, menjana nilai untuk semua pihak berkepentingan."
       },
-      {
-        "title": "Penyertaan dalam kuliah dan seminar"
+      "contratosAssinadosTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Kontrak ditandatangani secara hampir",
+        "iconAlt": "Ikon untuk topik alam sekitar"
       },
-      {
-        "title": "Penyediaan laporan pertengahan dan akhir"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Sebagai sebahagian daripada komitmen kami terhadap kemampanan, T2M telah menggunakan dasar pendigitan dokumen dan tandatangan maya kontrak, dengan ketara mengurangkan keperluan percetakan kertas. Peralihan ke kontrak digital bukan sahaja menyelaraskan proses kami tetapi juga mengekalkan sumber semula jadi, mengurangkan penggunaan kertas, cat dan tenaga. Amalan ini menyumbang secara langsung kepada pengurangan penebangan hutan dan penggunaan sumber semula jadi yang mampan. Sepanjang tahun ini, amalan ini telah mengakibatkan pengurangan sisa kertas yang ketara, memperkuat komitmen T2M terhadap alam sekitar dan pengurusan moden dan mampan.",
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Penggunaan awan, mengurangkan penggunaan perkakasan",
+        "iconAlt": "Ikon untuk topik alam sekitar"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Sejak penghijrahan ke Microsoft Cloud, syarikat kami telah mencapai pengurangan ketara dalam pelepasan karbon, memperkuat komitmen terhadap amalan mampan. Berdasarkan anggaran data, kami mengelakkan pelepasan 2.192 juta tan karbon, yang mewakili pengurangan 99.72% dalam potensi pelepasan, berkat penggunaan alat seperti SharePoint dan Exchange Online.",
+          "Dalam tempoh ini, pelepasan yang berkesan hanya berjumlah 0.007 tan, berbanding dengan anggaran 2.468 tan dalam senario tradisional. Peralihan ini ke infrastruktur digital yang lebih efisien menunjukkan kesan positif penyelesaian awan dalam mengurangkan jejak karbon, menjajarkan strategi teknologi dengan bekas gol."
+        ],
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "Dalam T2M, penggunaan Microsoft Cloud Solutions, seperti OneDrive, Azure dan Teams, adalah penting untuk mengurangkan penggunaan tenaga dan keperluan untuk perkakasan fizikal baru.",
+          "Alat ini mengurangkan permintaan untuk pelayan fizikal, yang menggunakan banyak tenaga dan memerlukan penyelenggaraan. Dengan tujuan Microsoft menggunakan tenaga boleh diperbaharui 100% pada datacersnya menjelang 2025, T2M menyumbang kepada masa depan yang lebih mampan.",
+          "Di samping itu, awan menawarkan skalabiliti, kecekapan, keselamatan dan kebolehcapaian data, mencerminkan komitmen T2M terhadap amalan teknologi yang mampan dan inovatif."
+        ],
+        "imageAlt": "Pejabat T2M"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Penggunaan air sedar",
+        "lineColor": "BG-var-environmental",
+        "iconAlt": "ikon untuk topik alam sekitar"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Penggunaan air sedar adalah keutamaan dalam T2M, dan kami telah melaksanakan pelbagai amalan untuk mengurangkan pembaziran sumber penting ini. Di samping itu, kami mempromosikan kempen kesedaran dalaman, menggalakkan pekerja kami untuk mengamalkan tabiat yang bertanggungjawab untuk menggunakan air di tempat kerja dan di rumah mereka. Amalan ini bertujuan untuk mengurangkan penggunaan air dan menyumbang kepada pemeliharaan sumber air, menjajarkan dirinya dengan Matlamat Pembangunan Mampan PBB (SDGs). Dengan tindakan ini, kami berusaha meminimumkan kesan alam sekitar kami dan memberi inspirasi kepada budaya kemampanan di kalangan pekerja kami.",
+        "imageAlt": "Imej pejabat T2M memberi tumpuan kepada penggunaan air yang sedar",
+        "iconAlt": "Ikon wakil penggunaan air sedar"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Stimulus untuk mengurangkan penggunaan kenderaan pembakaran",
+        "iconAlt": "Ikon untuk topik alam sekitar"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M menggalakkan pekerjanya untuk mengamalkan amalan mobiliti yang lebih mampan, mengurangkan trafik CO2 dan terbitan oleh kenderaan pembakaran. Untuk memudahkan peralihan ini, kami menawarkan insentif untuk penggunaan pengangkutan awam dan bersama, rangsangan mobiliti mampan ini mencerminkan komitmen kami untuk mengurangkan pelepasan gas rumah hijau dan mengurangkan jejak karbon kami. Di samping itu, kami menggalakkan kesedaran tentang manfaat mobiliti yang lebih mampan, menyumbang kepada kesejahteraan pekerja dan pemeliharaan alam sekitar.",
+        "imageAlt": "Pejabat T2M"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Rantai pembekal yang komited terhadap alam sekitar",
+        "iconAlt": "Ikon untuk topik alam sekitar"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M Nilai Rantaian pembekal sejajar dengan nilai kemampanannya, mengutamakan perkongsian dengan syarikat yang mengamalkan amalan yang bertanggungjawab terhadap alam sekitar. Kami dengan teliti menilai pembekal kami untuk memastikan bahawa mereka berkongsi komitmen kami terhadap pemeliharaan alam sekitar dan untuk mengurangkan kesan negatif terhadap alam sekitar. Ini termasuk pembekal yang menggunakan kaedah yang mampan dalam pengeluaran mereka, menggunakan bahan kitar semula, melaksanakan program pengurangan sisa dan memenuhi piawaian tanggungjawab alam sekitar. Dengan mengintegrasikan amalan ESG ke dalam rantaian bekalan kami, kami mengukuhkan komitmen kami terhadap operasi yang mampan dan mengembangkan kesan positif kami dengan mempengaruhi organisasi lain untuk mengamalkan amalan yang bertanggungjawab.",
+        "imageAlt": "Pejabat T2M"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Alam sekitar",
+        "title": "Kitar semula bahan dan bateri elektronik",
+        "iconAlt": "Ikon untuk topik alam sekitar"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M mengamalkan amalan kitar semula yang ketat peralatan dan bateri elektronik, mengiktiraf kepentingan pelupusan bahan -bahan ini untuk mengelakkan kesan negatif terhadap alam sekitar. Sisa elektronik dihantar kepada syarikat yang disahkan yang memastikan rawatan dan kitar semula komponen yang betul, menyumbang kepada pemulihan bahan berharga dan pengurangan sisa toksik. Secara dalaman, kami menggalakkan kesedaran tentang kepentingan kitar semula elektronik di kalangan pekerja, menggalakkan pelupusan yang betul. Inisiatif ini mencerminkan komitmen kami terhadap ekonomi pekeliling, mengelakkan pencemaran tanah dan air dan mempromosikan pengurusan sisa yang lebih cekap dan bertanggungjawab.",
+        "imageAlt": "Pejabat T2M"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Kami dibuat pada tahun 2024",
+        "paragraph": "Pada tahun 2024, kami maju dalam inisiatif yang mengukuhkan kemampanan dan kemasukan, mempromosikan kepelbagaian, ekuiti dan amalan pepejal, yang memberi tumpuan kepada kesan positif kepada 2025.",
+        "numberCards": [
+          {
+            "title": "100 pokok yang ditanam"
+          },
+          {
+            "title": "99.72% pengurangan pelepasan karbon"
+          },
+          {
+            "title": "Sifar penggunaan bahan pakai buang"
+          },
+          {
+            "title": "Penjimatan 2,500 helai melalui tandatangan digital"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Sosial",
+        "title": "Penaja Inisiatif Latihan Profesional",
+        "iconAlt": "ikon mengenai topik sosial"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M adalah salah satu penaja utama Program Kediaman Perisian Serratec, yang bertujuan untuk membolehkan kelemahan ekonomi orang muda untuk kerjaya teknologi. Sebagai tambahan kepada penaja, T2M menawarkan pekerja untuk mengajar kelas dan pemantauan, secara aktif menyumbang kepada pembentukan penduduk. Syarikat itu juga mempunyai perkongsian dengan UFF di Fest (Sekolah Perisian dan Kilang Ujian), menyokong kursus -kursus penting seperti pemilik produk, master scrum dan kualiti perisian. Tindakan ini memperkuat komitmen T2M terhadap tanggungjawab sosial dan pembangunan bakat tempatan, mempromosikan ekonomi yang lebih inklusif dan mampan.",
+        "imageAlt": "Pejabat T2M"
+      },
+      "numerosResidenciaTrad": {
+        "title": "Kes praktikal T2M - Perkongsian Serratec",
+        "topTitle": "Petunjuk - kediaman",
+        "paragraph": "Profesional yang diupah oleh T2M dari Program Kediaman Serratec ICT 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Orang yang diterima pakai oleh program ini"
+          },
+          {
+            "title": "101",
+            "paragraph": "Menyewa"
+          },
+          {
+            "title": "75%",
+            "paragraph": "T2M kekal selepas program"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Orang kurang upaya dalam program"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Penyertaan wanita"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Orang kulit hitam mengambil bahagian"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Graduan sekolah awam"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Tindakan afirmatif benefisiari"
+          },
+          {
+            "title": "10",
+            "paragraph": "Bertindak sebagai guru atau monitor program"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Sosial",
+        "title": "Pasukan orang dan pengurusan komposit 100% oleh wanita",
+        "iconAlt": "ikon mengenai topik sosial"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Pasukan orang dan pengurusan T2M adalah 100% yang terdiri daripada wanita, yang menonjolkan komitmen kuat syarikat terhadap kepelbagaian dan kemasukan. Di samping itu, kira -kira 75% daripada pasukan pentadbiran terdiri daripada wanita, orang kurang upaya dan orang kulit hitam, memperkuat dedikasi T2M untuk mempromosikan persekitaran kerja jamak dan wakil. Pasukan orang dan pengurusan ini memainkan peranan penting dalam membina budaya organisasi yang mesra dan egalitarian, melaksanakan dasar pembangunan profesional dan tindakan yang menghargai kepelbagaian perspektif dalam syarikat. T2M percaya bahawa kemasukan adalah tonggak penting untuk kejayaan budaya organisasinya, meningkatkan inovasi dan menghasilkan kesan sosial yang positif.",
+        "imageAlt": "Pejabat T2M"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Sosial",
+        "title": "Program Kualiti Kehidupan",
+        "iconAlt": "ikon mengenai topik sosial"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M menggalakkan kesejahteraan pekerja melalui program aktiviti fizikalnya, yang diadakan setiap hari Sabtu. Program ini bertujuan untuk meningkatkan kualiti hidup dan kesihatan mental pekerja, menggalakkan mereka mengamalkan gaya hidup yang lebih sihat dan lebih aktif. Aktiviti -aktiviti ini disesuaikan untuk memenuhi tahap pengkondisian yang berbeza, menggalakkan penglibatan dan integrasi antara peserta. T2M percaya bahawa melabur dalam kesihatan pekerja menyumbang kepada persekitaran kerja yang lebih produktif dan bahagia.",
+        "imageAlt": "Imej Ilustrasi Program Aktiviti Fizikal di Pejabat T2M"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Sosial",
+        "title": "Kempen Perpaduan",
+        "iconAlt": "Ikon mengenai topik sosial"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M menggalakkan, sepanjang tahun, kempen isyarat perpaduan, kempen untuk pengumpulan makanan dan pakaian, yang dimaksudkan untuk institusi tempatan dan orang -orang yang tiada tempat tinggal. Semasa tempoh parti, kami juga menganjurkan kempen ini mengamalkan surat Krismasnya, terutamanya memberi tumpuan kepada menghantar hadiah kepada kanak -kanak dalam situasi yang terdedah dan kepelbagaian fungsional, membawa kegembiraan dan sokongan kepada komuniti dan institusi. T2M secara aktif menggalakkan pekerjanya untuk mengambil bahagian dalam tindakan ini, mengukuhkan budaya perpaduan dan penglibatan sosial dalam syarikat. Sokongan kolektif ini penting untuk kejayaan kempen dan untuk memperluaskan kesan positif kami kepada masyarakat.",
+        "imageAlt": "Imej sumbangan yang dibuat oleh T2M, Biomob dan Serratec"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Sosial",
+        "title": "Sukarela dan sokongan untuk inisiatif pekerjaan",
+        "iconAlt": "Ikon mengenai topik sosial"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M mempunyai komitmen yang kukuh untuk sokongan sukarela dan kebolehpasaran, secara aktif mengambil bahagian dalam program dan inisiatif yang menggalakkan kemasukan sosial dan pembangunan bakat muda. Syarikat ini bekerjasama dengan pekerjaan yang terdedah yang bertujuan untuk orang yang terdedah, seperti ibu solo, LGBTQiap+, orang yang mempunyai kepelbagaian fungsional, pelarian, penjara dan graduan sistem muda mencari pekerjaan pertama. Di samping itu, T2M menggalakkan pekerja -pekerjanya untuk menjadi sukarelawan sebagai penceramah dan pengajar dalam kursus persediaan yang menangani kemahiran teknikal dan tingkah laku yang penting, menyediakan peserta untuk menonjol dalam pasaran kerja.",
+        "imageAlt": "Imej pejabat T2M, dengan penekanan pada sokongan pekerjaan"
+      },
+      "feitosSocialTrad": {
+        "title": "Pencapaian sosial kita pada tahun 2024",
+        "paragraph": "Pada tahun 2024, kami maju dalam inisiatif yang mengukuhkan kemampanan dan kemasukan, mempromosikan kepelbagaian, ekuiti dan amalan pepejal, yang memberi tumpuan kepada kesan positif kepada 2025.",
+        "numberCards": [
+          {
+            "title": "422 kg makanan yang dikumpulkan",
+            "iconAlt": "Ikon peralatan dapur"
+          },
+          {
+            "title": "7 Tindakan Sosial Dilaksanakan: Bioconecta, DBA, Oktober Rose dan 4 Tindakan Gesture Solidarity",
+            "iconAlt": "Ikon tangan membantu"
+          },
+          {
+            "title": "180 sukarelawan dalam tindakan sosial kita",
+            "iconAlt": "Ikon pengguna"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Terdapat 206 paun makanan ke Projek Esperança, inisiatif yang bertujuan mengubah kehidupan dan menyokong mereka yang paling memerlukannya. Tindakan itu ditaja oleh pekerja Emanuel, yang memainkan peranan utama dalam penggerak dan pengumpulan. Derma ini mencerminkan semangat perpaduan dan komitmen sosial yang memberi inspirasi kepada masyarakat untuk menyumbang kepada masa depan yang lebih baik.",
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "campanha2Trad": {
+        "paragraph": "Kempen Rose Oktober diperkuat dengan sumbangan 216 paun makanan untuk Persatuan Pesakit Kanser Appo - Petropolitan. Tindakan ini ditaja oleh T2M untuk mewakili Oktober Rose.",
+        "imageAlt": "Imej pejabat T2M"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Tadbir urus",
+        "title": "Piawaian, kod dan undang -undang dalaman dan luaran T2M",
+        "iconAlt": "Ikon mengenai tadbir urus topik"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2M, yang diasaskan di Brazil pada tahun 2002, bertindak dengan komitmen yang kuat terhadap ketelusan dan pematuhan terhadap peraturan, kod dan undang -undang yang berkenaan dalam konteks korporat dan kebangsaan. Normatif kami meliputi semua pekerja, rakan kongsi dan lembaga, membimbing tanggungjawab undang -undang dan komitmen etika yang menyokong operasi T2M.",
+          "Kod etika dan kelakuan kami, ditambah pula dengan dasar -dasar anti -suborno, pematuhan, dan kepelbagaian dan kemasukan, berfungsi sebagai panduan rujukan untuk kelakuan yang betul dengan pelanggan, pembekal dan rakan kongsi. Dokumen -dokumen ini, sebagai tambahan kepada mempromosikan piawaian etika, mengurangkan kemungkinan kejadian kelakuan yang tidak mencukupi.",
+          "Untuk mengukuhkan penjajaran dengan garis panduan kami, semua pekerja mesti melengkapkan kursus dasar dalaman secara berkala, yang terdapat pada intranet kami, di mana nilai dalaman, norma dan dasar dikaji semula."
+        ],
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Tadbir urus",
+        "title": "Jawatankuasa T2M",
+        "iconAlt": "Ikon mengenai tadbir urus topik"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Pematuhan: Jawatankuasa ini bertanggungjawab untuk pengurusan bebas dan autonomi Program Integriti T2M, memastikan sumber yang diperlukan untuk memastikan kesaksamaan amalan pematuhan dalam syarikat. Di samping menggalakkan pelaporan kecurigaan dan pelanggaran, jawatankuasa itu bertujuan untuk memupuk budaya tanggungjawab di semua peringkat, menggalakkan pencegahan dan pengesanan penipuan. Pegawai Pematuhan, fungsi penting dalam proses ini, mempunyai autonomi langsung dan akses ke arah yang tinggi, serta kuasa untuk menguruskan sistem anti -suborne dan pematuhan organisasi.",
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (Suruhanjaya Pencegahan Kemalangan Dalaman): Mematuhi NR-5, T2M CIPA mempunyai fungsi mengenal pasti dan mengurangkan risiko di tempat kerja, mempromosikan kempen dan latihan kesedaran, dan terlibat dalam isu-isu gangguan, mengukuhkan budaya keselamatan dan pencegahan antara pekerja kami. Pada masa ini, Suruhanjaya terdiri daripada 10 ahli, 30% wanita, yang memperkuat komitmen kami terhadap kepelbagaian dan kemasukan.",
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Tadbir urus",
+        "title": "Pensijilan dan piawaian antarabangsa",
+        "iconAlt": "Ikon mengenai tadbir urus topik",
+        "paragraph": "Sebagai tambahan kepada jawatankuasa, T2M selaras dengan piawaian integriti dan etika perniagaan antarabangsa."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "Kami mempunyai pensijilan ISO 37001: 2017, yang menubuhkan dan meningkatkan sistem pengurusan anti -suprore dan menggalakkan budaya ketelusan; dan ISO 37301: 2021, yang mentakrifkan piawaian untuk sistem pematuhan, memastikan pematuhan undang -undang dan peraturan yang berkenaan.",
+          "Pensijilan ini mencerminkan komitmen kami terhadap amalan perniagaan etika, telus dan bertanggungjawab. Inisiatif ini menunjukkan komitmen T2M untuk mengekalkan selamat, beretika dan selaras dengan amalan terbaik di pasaran."
+        ],
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Tadbir urus",
+        "title": "Saluran penolakan",
+        "iconAlt": "Ikon mengenai tadbir urus topik"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M menawarkan saluran aduan yang dikaitkan secara langsung dengan Jawatankuasa Etika, yang menerima dan menganalisis semua aduan yang dihantar, serta mengawasi pelaksanaan, pemantauan dan integriti program pematuhan Syarikat.",
+          "Aduan boleh dibuat tanpa nama melalui bentuk yang mudah diakses, memastikan kerahsiaan dan keselamatan bagi pengadu.",
+          "Sebagai tambahan kepada saluran ini, kami juga menawarkan saluran aduan khusus CIPA, yang diarahkan kepada komunikasi kes-kes gangguan dan insiden lain yang berkaitan dengan keselamatan dan kesejahteraan di tempat kerja.",
+          "Semua maklumat peribadi bersama dirawat dengan kerahsiaan yang ketat, memastikan privasi pekerja. Kedua -dua saluran ini bertujuan untuk mempromosikan persekitaran yang selamat, beretika dan mesra untuk semua."
+        ],
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Tadbir urus",
+        "title": "Ekuiti gaji",
+        "iconAlt": "Ikon mengenai tadbir urus topik",
+        "paragraph": "T2M menawarkan Laporan Kesamaan Ketelusan dan Gaji Wanita dan Lelaki, laporan yang memperkuat komitmen terhadap keadilan sosial.",
+        "buttonText": "Laporan"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Laporan ini membentangkan kriteria untuk imbuhan dan tindakan untuk memastikan kepelbagaian, seperti penciptaan kedudukan dan upah atau pelan pelan kerjaya, dasar pengambilan wanita (hitam, kurang upaya, dalam situasi keganasan, ketua keluarga, lgbtqia+, pribumi) dan wanita dan wanita) Dasar promosi untuk jawatan pengurusan dan pengurusan.",
+        "imageAlt": "Imej pejabat T2M"
+      },
+      "metasTrad": {
+        "title": "Matlamat kami pada tahun 2025",
+        "paragraph": "Kami terus berkomitmen untuk kemampanan dan kemasukan, memberi tumpuan kepada peningkatan amalan ESG yang berterusan hingga 2025, dengan kesan positif terhadap masyarakat dan alam sekitar.",
+        "numberCards": [
+          {
+            "title": "Menduplikasi jumlah pokok yang ditanam"
+          },
+          {
+            "title": "Jumlah pengurangan pelepasan karbon"
+          },
+          {
+            "title": "Kembangkan penggunaan bahan kitar semula"
+          },
+          {
+            "title": "Meningkatkan Koleksi Makanan sebanyak 50%"
+          },
+          {
+            "title": "Menduplikasi bilangan tindakan sosial yang dilakukan"
+          },
+          {
+            "title": "Meningkatkan bilangan sukarelawan dalam tindakan sosial sebanyak 30%"
+          },
+          {
+            "title": "Dapatkan pensijilan ISO 27001 dan ISO 27701"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "hubungi",
-    "title": "Hubungi kami",
-    "paragraph": "Untuk menghubungi kami, hantar mesej ke girlstempetropolis@gmail.com e-mel kami. Kami bertindak balas secepat mungkin!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Siapa kita?",
+      "paragraph": "Hari ini, selepas lebih daripada 20 tahun penubuhan T2M, kami adalah sebuah syarikat yang matang, dengan kira -kira 300 pekerja, dalam proses penambahbaikan teknikal yang berterusan, yang diiktiraf untuk kualiti kerja kami oleh syarikat -syarikat penting dalam portfolio pelanggan kami.",
+      "buttonText": "Laman web rasmi syarikat"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "Pejabat T2M",
+      "title": "Keselamatan bekerja di syarikat yang kukuh, dengan lebih dari 20 tahun di pasaran",
+      "topTitle": "Bekerjasama dengan kami",
+      "paragraph": "T2M ditubuhkan pada tahun 2002 pada mulanya sebagai biro ujian perisian. Kami tidak lama lagi mendapati bahawa kami perlu bergerak dan kami mengesahkan semua langkah pembangunan sistem dan pakar dalam kualiti perisian.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Pengalaman yang luar biasa dan boleh diakses untuk semua.",
+      "paragraph": "A T2M - Ujian untuk memasarkan LTDA. Ia adalah sebuah syarikat Brazil, dengan lebih daripada 20 tahun kewujudan, yang mengkhususkan diri dalam memastikan kecemerlangan dalam pembangunan perisian, melalui ujian yang ketat dan terperinci mengikuti semua langkah lain untuk membina projek. Kami baru -baru ini mengembangkan perkhidmatan kami, menambah privasi dan keselamatan data, kebolehcapaian digital dan ketangkasan perniagaan melalui rakan kongsi terkenal dalam segmen ini."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Bagaimana perkhidmatan kecemerlangan kami dapat membantu meningkatkan perniagaan anda.",
+      "paragraph": "Ketahui bagaimana kami dapat mengembangkan keberkesanan, kualiti dan keselamatan perniagaan anda dengan ketara, membawa hasil yang lebih tinggi.",
+      "icons": [
+        {
+          "title": "Kualiti perisian",
+          "paragraph": "Penyelesaian kualiti perisian kami mengoptimumkan semua langkah pembangunan, memastikan kecekapan, kebolehpercayaan dan kepuasan pelanggan kami."
+        },
+        {
+          "title": "Privasi dan keselamatan",
+          "paragraph": "Tumpuan kami adalah untuk mengatasi cabaran keselamatan maklumat dengan menawarkan penyelesaian perundingan untuk memenuhi keperluan khusus setiap pelanggan."
+        },
+        {
+          "title": "Kebolehcapaian digital",
+          "paragraph": "Di T2M, kami mencari kemasukan digital, mempromosikan akses dan inovasi untuk memastikan persekitaran digital yang lebih inklusif dan boleh diakses untuk semua."
+        },
+        {
+          "title": "Ketangkasan perniagaan",
+          "paragraph": "Kami membantu syarikat dengan cepat menyesuaikan diri dengan perubahan pasaran dengan memanfaatkan peluang dan meningkatkan ketangkasan organisasi."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Inisiatif",
+      "title": "Inisiatif dan komitmen kami",
+      "paragraph": "Dalam T2M, inisiatif dan komitmen kami adalah berdasarkan pencarian berterusan untuk kecemerlangan dan kesan positif dalam semua bidang yang kami beroperasi. Kami komited untuk mempromosikan kualiti hidup pekerja kami, menggalakkan inovasi dan memastikan kemasukan digital dalam penyelesaian kami."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Kualiti hidup dan kesejahteraan",
+      "paragraph": "T2M mengekalkan komitmennya terhadap kesejahteraan pekerja dan keluarga, yang menawarkan persekitaran kerja yang sihat dan seimbang. Kami terus berusaha meningkatkan kualiti hidup dalam kehidupan seharian para profesional kami, mempromosikan pilihan manfaat yang memenuhi keperluan yang berbeza, seperti fleksibiliti masa, sokongan kesihatan mental dan kualiti program kehidupan.",
+      "imageAlt": "Wanita dengan mantel merah"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Pembangunan dan inovasi profesional",
+      "paragraph": "Kami melabur dalam pertumbuhan berterusan pasukan kami melalui program latihan dan latihan khusus. Kami menggalakkan inovasi dengan penerapan metodologi tangkas dan eksploitasi teknologi baru, memastikan bahawa profesional kami sentiasa berada di barisan hadapan trend pasaran dan bersedia untuk menawarkan penyelesaian inovatif kepada pelanggan kami.",
+      "imageAlt": "Wanita memakai cermin realiti maya"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Kebolehcapaian dan kemasukan",
+      "paragraph": "Kami komited untuk mempromosikan kemasukan dan akses digital dalam semua penyelesaian kami. T2M mengamalkan amalan yang memastikan produk dan perkhidmatan kami dapat diakses oleh semua orang, tanpa mengira keperluan khusus mereka, seperti pelaksanaan teknologi aksesibiliti dalam aplikasi dan laman web, serta memupuk persekitaran kerja inklusif yang menghormati dan menghargai kepelbagaian.",
+      "imageAlt": "Tentera di kerusi roda bersama keluarga anda"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 tiang",
+      "title": "Tiang strategik kami",
+      "paragraph": "Inti T2M didasarkan pada pandangan yang jelas, nilai pepejal dan misi inspirasi. Rukun ini membimbing semua tindakan kami, membimbing komitmen kami untuk kecemerlangan, inovasi dan kemasukan. Ketahui di bawah asas -asas yang menentukan siapa kita dan bagaimana kita bertindak."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Tiang pertama",
+          "title": "Penglihatan",
+          "paragraph": "Menjadi rujukan kebangsaan dan antarabangsa dalam kualiti perisian, kebolehcapaian dan keselamatan maklumat, mempromosikan inovasi teknologi dan menyumbang kepada kejayaan perniagaan pelanggan kami melalui penyelesaian teknologi dan metodologi bebas."
+        },
+        {
+          "topTitle": "Kedua Pilar",
+          "title": "Misi",
+          "paragraph": "Memastikan produk pelanggan kami memenuhi piawaian kualiti tertinggi kualiti, kebolehpercayaan, kebolehcapaian dan kebolehgunaan, sentiasa menghormati tarikh akhir dan keperluan khusus setiap perniagaan, dan profesional latihan berterusan untuk mengubah pasaran teknologi."
+        },
+        {
+          "topTitle": "Tiang ketiga",
+          "title": "Nilai",
+          "paragraph": "Di T2M, komitmen kami adalah untuk kecemerlangan, menyampaikan perkhidmatan berkualiti tinggi yang disokong oleh pengetahuan teknikal dan pengalaman disatukan. Kami menghargai inovasi, menggunakan metodologi tangkas dan teknologi pemotongan untuk menjadikan cabaran menjadi peluang. Kami bekerjasama dengan etika dan pengecualian, memastikan keputusan yang tidak memihak yang mengutamakan kepentingan terbaik pelanggan kami. Di samping itu, kami menggalakkan kemasukan dan kelestarian melalui latihan vokasional, kebolehcapaian dan amalan digital yang mendorong pembangunan manusia dan teknologi. Komitmen kami memberi tumpuan kepada hasil, menghormati tarikh akhir, kebolehpercayaan dan kebolehgunaan, sentiasa menyelaraskan keperluan rakan kongsi kami."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Kepentingan ujian kualiti perisian penyumberan luar",
+      "paragraph": "Ujian kualiti perisian penyumberan luar adalah penting dalam sistem kritikal, seperti perbankan, udara dan kawalan hospital, yang memerlukan ketepatan dan keselamatan yang tinggi.",
+      "numberCards": [
+        {
+          "title": "Akses kepada pakar",
+          "paragraph": "Syarikat -syarikat khusus menawarkan profesional yang berkelayakan, memastikan ujian yang lebih mendalam dan penggunaan amalan pemotongan untuk memastikan kualiti perisian."
+        },
+        {
+          "title": "Foco Tiada Perniagaan Teras",
+          "paragraph": "Dengan penyumberan luar, pasukan dalaman boleh memberi tumpuan kepada membangunkan ciri -ciri baru, meningkatkan produktiviti dan meningkatkan pertumbuhan perniagaan."
+        },
+        {
+          "title": "Pengurangan kos dan masa",
+          "paragraph": "Mengelakkan penciptaan pasukan ujian dalaman mengurangkan kos tetap dan membolehkan anda mengoptimumkan pelaburan mengikut permintaan, mempercepatkan proses ujian."
+        },
+        {
+          "title": "Skalabiliti dan fleksibiliti",
+          "paragraph": "Syarikat -syarikat outsourcing boleh menyesuaikan kapasiti ujian seperti yang diperlukan, melayani puncak dan menyesuaikan skala mengikut pelancaran produk baru."
+        },
+        {
+          "title": "Tidak adil dan penglihatan luaran",
+          "paragraph": "Pasukan luaran membawa pandangan yang tidak adil terhadap produk, membantu mengenal pasti kelemahan yang mungkin tidak disedari oleh pasukan dalaman, meningkatkan kualiti keseluruhan."
+        },
+        {
+          "title": "Akses ke alat dan teknologi canggih",
+          "paragraph": "Syarikat -syarikat khusus mempunyai akses kepada alat pemotongan untuk automasi, ujian beban dan amalan lain, mengelakkan kos pelaksanaan dalaman yang tinggi."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Gelombang"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Cadangan Nilai",
+      "paragraph": "Kami percaya bahawa dengan menyampaikan penyelesaian teknikal yang mantap dan peribadi, kami bukan sahaja dapat memenuhi keperluan segera pelanggan kami, tetapi juga menyumbang kepada pertumbuhan yang mampan dan inovasi berterusan dalam perniagaan mereka.",
+      "buttonText": "Blog kami"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Penyelesaian kualiti untuk berjaya",
+      "paragraph": "Pada T2M, kami komited untuk menyampaikan penyelesaian teknologi berkualiti tinggi yang meningkatkan kejayaan pelanggan kami. Kami menawarkan perkhidmatan khusus dalam perisian, privasi dan kualiti keselamatan, kebolehcapaian digital dan ketangkasan perniagaan, sentiasa memberi tumpuan kepada penyampaian hasil konkrit. Kami telah memilih metodologi dan teknologi yang memotong untuk menjadikan cabaran menjadi peluang, memastikan pelanggan kami dapat mempercayai proses kami dan menyampaikan hasil pada masa yang tepat.",
+      "imageAlt": "Idea"
+    },
+    "inovacaoTrad": {
+      "title": "Inovasi dan kemampanan",
+      "paragraph": "Komitmen kami terhadap inovasi dan kemampanan dicerminkan dalam kerja yang berterusan dengan rakan kongsi dan pembekal kami, memastikan semua proses dilakukan dengan piawaian kualiti dan keselamatan tertinggi. Di samping itu, penyelesaian kami disesuaikan dengan keperluan khusus setiap pelanggan, menjajarkan matlamat strategik mereka dan menawarkan kelebihan daya saing di pasaran.",
+      "imageAlt": "Kemampanan"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Amalan yang bertanggungjawab dan inklusif",
+      "paragraph": "Pada T2M, kami komited untuk menyampaikan penyelesaian teknologi berkualiti tinggi yang meningkatkan kejayaan pelanggan kami. Kami menawarkan perkhidmatan khusus dalam perisian, privasi dan kualiti keselamatan, kebolehcapaian digital dan ketangkasan perniagaan, sentiasa memberi tumpuan kepada penyampaian hasil konkrit. Kami telah memilih metodologi dan teknologi yang memotong untuk menjadikan cabaran menjadi peluang, memastikan pelanggan kami dapat mempercayai proses kami dan menyampaikan hasil pada masa yang tepat.",
+      "imageAlt": "Kerusi roda"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Ketelusan dan kesamaan sosial",
+      "paragraph": "Menurut Peraturan Kementerian Buruh, kami memaklumkan kepada anda bahawa, boleh didapati di laman web kami, Laporan Kesetaraan Ketelusan dan Gaji Wanita dan Lelaki, merujuk kepada semester ke -2 2024.",
+      "buttonText": "Laporan"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Pasukan kami",
+      "paragraph": "Kejayaan projek kami didorong oleh kepakaran dan dedikasi pasukan kami. Dibentuk oleh profesional yang terlatih dan bersemangat tentang apa yang mereka lakukan, pasukan kami sentiasa bersedia menghadapi cabaran baru, memberikan penyelesaian yang inovatif dan bekerjasama dengan pelanggan kami untuk mencapai hasil yang luar biasa.",
+      "buttonText": "Saya mahu menjadi sebahagian daripada pasukan"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Bahagian mengikut kategori",
+      "paragraph": "Memperluas keberkesanan, kualiti dan keselamatan perniagaan dan perkhidmatan anda, membawa hasil yang lebih tinggi.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Kualiti perisian",
+          "paragraph": "Penyelesaian kualiti perisian kami mengoptimumkan semua langkah pembangunan, memastikan kecekapan, kebolehpercayaan dan kepuasan pelanggan kami."
+        },
+        {
+          "id": 2,
+          "title": "Keselamatan Data",
+          "paragraph": "Pasukan pakar kami melebihi cabaran keselamatan maklumat, memastikan perlindungan dan kerahsiaan data sensitif."
+        },
+        {
+          "id": 3,
+          "title": "Kebolehcapaian digital",
+          "paragraph": "Dengan kepakaran kami dalam akses digital, kami menjamin bahawa semua orang boleh mengakses dan berinteraksi dengan produk digital mereka dengan cara yang inklusif."
+        },
+        {
+          "id": 4,
+          "title": "Ketangkasan perniagaan",
+          "paragraph": "Kumpulan Ketangkasan Perniagaan kami memberi tumpuan kepada membantu syarikat dengan cepat menyesuaikan diri dengan perubahan pasaran dan mengoptimumkan prestasi mereka."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Komitmen terhadap kepelbagaian dan kemasukan",
+      "paragraph": "Kami baru -baru ini menutup perkongsian dengan Biomob, memberi tumpuan kepada projek -projek sosial dan perkhidmatan yang berkaitan dengan kepelbagaian dan kemasukan, untuk meningkatkan tingkah laku kami ke arah topik dan kebolehcapaian ini secara umum."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Persekitaran yang sangat bernilai",
+      "paragraph": "Komitmen kami adalah untuk mewujudkan persekitaran di mana semua orang merasa dihargai, tanpa mengira asalnya, jantina, etnik, atau ciri peribadi lain.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Jantina",
+          "paragraph": "Kami menjamin peluang yang sama, mengiktiraf kekuatan pasukan jantina yang seimbang.",
+          "imageAlt": "ikon jantina"
+        },
+        {
+          "id": 2,
+          "title": "Perlumbaan",
+          "paragraph": "Kami meraikan semua etnik dan bekerja supaya pasukan kami mencerminkan pluralitas masyarakat kita.",
+          "imageAlt": "ikon perlumbaan"
+        },
+        {
+          "id": 3,
+          "title": "Umur",
+          "paragraph": "Kami menghormati kebijaksanaan yang paling berpengalaman dan tenaga yang lebih muda, memahami bahawa setiap orang mempunyai sumbangan yang berharga.",
+          "imageAlt": "ikon"
+        },
+        {
+          "id": 5,
+          "title": "Kepelbagaian fungsional",
+          "paragraph": "Kami menawarkan persekitaran kerja yang boleh diakses dan inklusif, mengiktiraf kemahiran dan bakat orang kurang upaya.",
+          "imageAlt": "ikon kepelbagaian fungsional"
+        },
+        {
+          "id": 6,
+          "title": "Kebolehcapaian",
+          "paragraph": "Kedua -dua pejabat dan laman web kami boleh diakses oleh orang -orang yang mempunyai batasan visual, pendengaran, fizikal dan kognitif.",
+          "imageAlt": "Ikon kebolehcapaian"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Kepelbagaian jantina dalam pasukan kami",
+        "imageAlt": "Graf kepelbagaian jantina dalam pasukan kami"
+      },
+      "secondImage": {
+        "title": "Kepelbagaian jantina dalam pasukan kami",
+        "imageAlt": "Graf pengedaran mengikut kumpulan umur"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Cadangan nilai kami untuk pekerja",
+      "paragraph": "Di syarikat kami, kami percaya bahawa kejayaan dikaitkan secara langsung dengan rasa hormat, etika dan kemasukan dalam semua aspek persekitaran kerja."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Budaya penghormatan, etika dan kemasukan",
+      "paragraph": "Kami mempromosikan budaya ketelusan dan ekuiti, di mana semua pekerja mempunyai peluang yang sama untuk pertumbuhan dan pengiktirafan. Komitmen kami terhadap kepelbagaian dan kemasukan dicerminkan dalam amalan yang menjamin ruang yang selamat dan hormat, di mana semua orang dapat menyatakan diri mereka dan menyumbang kepada potensi maksimum mereka.",
+      "imageAlt": "Wanita dengan mantel merah"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Kebolehcapaian dan kemasukan",
+      "paragraph": "Di samping itu, kami menawarkan pelbagai faedah yang bertujuan untuk kebajikan dan kualiti hidup pekerja kami, seperti penjagaan perubatan dan pergigian, pelbagai bantuan (pejabat rumah, makanan, makanan dan pengangkutan), insurans hayat, kehidupan dan kerjaya pelan.",
+      "imageAlt": "Wanita memakai cermin realiti maya"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Kultivar",
+      "title": "Hak asasi manusia dan amalan buruh yang adil",
+      "paragraph": "Kami komited untuk mewujudkan persekitaran kerja yang inklusif, di mana setiap orang mempunyai peluang yang sama untuk mencapai potensi penuh mereka. Kami percaya bahawa promosi hak asasi manusia dan pembinaan ruang yang menghormati adalah penting untuk pemeliharaan integriti jenama kami dan kejayaan berterusan kami."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Komitmen terhadap hak asasi manusia dan piawaian antarabangsa",
+      "paragraph": "Komitmen firma untuk menghormati hak asasi manusia, menyelaraskan amalan kita dengan prinsip -prinsip yang ditubuhkan oleh Deklarasi Hak Asasi Manusia sejagat dan norma -norma yang diiktiraf di peringkat antarabangsa. Nilai -nilai kami berdasarkan Prinsip Panduan Pertubuhan Bangsa -Bangsa Bersatu mengenai Syarikat dan Hak Asasi Manusia, serta dalam Piagam Hak Asasi Manusia Antarabangsa dan Deklarasi Pertubuhan Buruh Antarabangsa (ILO) mengenai hak asasi di tempat kerja. Garis panduan ini dimasukkan ke dalam peraturan tingkah laku perniagaan kami, yang sama -sama digunakan untuk semua pekerja, pembekal dan rakan kongsi T2M, memastikan persekitaran kerja yang inklusif, menghormati dan selamat."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Menjamin persekitaran kerja yang selamat dan hormat",
+      "paragraph": "Komitmen firma untuk menghormati hak asasi manusia, menyelaraskan amalan kita dengan prinsip -prinsip yang ditubuhkan oleh Deklarasi Hak Asasi Manusia sejagat dan norma -norma yang diiktiraf di peringkat antarabangsa. Nilai -nilai kami berdasarkan Prinsip Panduan Pertubuhan Bangsa -Bangsa Bersatu mengenai Syarikat dan Hak Asasi Manusia, serta dalam Piagam Hak Asasi Manusia Antarabangsa dan Deklarasi Pertubuhan Buruh Antarabangsa (ILO) mengenai hak asasi di tempat kerja. Garis panduan ini dimasukkan ke dalam peraturan tingkah laku perniagaan kami, yang sama -sama digunakan untuk semua pekerja, pembekal dan rakan kongsi T2M, memastikan persekitaran kerja yang inklusif, menghormati dan selamat."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Kedudukan kami",
+      "title": "Kepelbagaian dan kemasukan",
+      "paragraph": "Komited kepada penciptaan persekitaran inklusif di mana kepelbagaian adalah nilai penting. Kami percaya bahawa gabungan perspektif, pengalaman dan bakat yang berbeza menguatkan budaya kita dan mendorong kita untuk mencapai cakrawala baru."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Kepelbagaian jantina",
+      "paragraph": "Dalam T2M, kami percaya bahawa kesamaan jantina adalah faktor penting untuk kejayaan dan inovasi. Kami berusaha untuk mewujudkan persekitaran di mana lelaki, wanita dan bukan orang -orang mempunyai suara yang mereka dengar dan bakat mereka diiktiraf sepenuhnya. Kami melaksanakan inisiatif ekuiti dengan menawarkan peluang yang sama untuk pembangunan dan pertumbuhan untuk semua, tanpa mengira jantina mereka. Bagi kami, persekitaran yang seimbang dan adil adalah asas untuk penyelesaian kreatif dan untuk membina masa depan yang lebih inklusif."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Kepelbagaian seksual",
+      "paragraph": "Menghormati kepelbagaian seksual adalah salah satu asas budaya kita dalam T2M. Kami berbangga untuk mempromosikan persekitaran yang mesra dan selamat supaya pekerja LGBTQIA+ dapat menyatakan keaslian identiti mereka. Lebih daripada memerangi prasangka, kita meraikan keperibadian dan menggalakkan amalan yang menjadikan kemasukan menjadi tiang strategik. Kami percaya bahawa dengan menilai cara yang berbeza untuk mencintai dan menjadi, kami mengukuhkan keupayaan kami untuk bekerjasama dan berinovasi sebagai satu pasukan."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Kepelbagaian budaya",
+      "paragraph": "Dalam T2M, kami memeluk kekayaan budaya dan sejarah yang membawa kepelbagaian kaum kepada syarikat kami. Kami menghadapi banyak kaum dan kumpulan etnik sebagai peluang untuk belajar dan evolusi. Dengan dasar -dasar yang kukuh terhadap perkauman dan tindakan proaktif untuk memastikan peluang yang sama, kami berusaha untuk membina persekitaran di mana setiap individu dihargai untuk apa itu, menyumbang kepada perspektif yang unik yang menjadikan kita lebih kuat sebagai organisasi."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Kepelbagaian kaum",
+      "paragraph": "Kepelbagaian kaum dalam T2M dilihat sebagai kekayaan yang menguatkan persekitaran kerja kita dan memperluaskan perspektif kita. Kami komited untuk mempromosikan persekitaran yang menghormati, mengalu -alukan dan menghargai semua kaum dan kumpulan etnik, mengiktiraf kepentingan pengalaman hidup yang berbeza untuk pembangunan penyelesaian kreatif dan berkesan. Kami mempunyai dasar yang jelas terhadap sebarang bentuk perkauman dan kami berusaha untuk memastikan semua pekerja, tanpa mengira asal -usul kaum mereka, mempunyai peluang pertumbuhan yang sama, dihormati dan dihargai oleh sumbangan unik mereka kepada syarikat."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Kepelbagaian untuk orang kurang upaya",
+      "paragraph": "Kemasukan orang kurang upaya adalah lebih daripada keutamaan untuk T2M; Ini adalah komitmen terhadap ekuiti dan kebolehcapaian. Kami menyesuaikan ruang dan proses kami untuk memastikan semua pekerja kami boleh bertindak dengan autonomi dan martabat. Di samping itu, kami menggalakkan kesedaran dalaman untuk mewujudkan persekitaran yang benar -benar inklusif, di mana kemahiran setiap individu dinilai dan di mana halangan menjadi jambatan untuk kejayaan bersama."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pilar",
+      "title": "Kesihatan dan kesejahteraan",
+      "paragraph": "Sekiranya anda menghargai tempat di mana kesejahteraan anda adalah keutamaan, dapatkan bagaimana kami menjaga pasukan kami supaya ia dirasakan disokong dan sihat dalam setiap aspek kehidupan."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Kesihatan dan kesejahteraan",
+      "paragraph": "Di T2M, kami menyedari bahawa kesihatan dan kesejahteraan pekerja kami adalah tiang untuk pertumbuhan syarikat yang mampan dan untuk kejayaan individu. Kami mempromosikan inisiatif yang menggalakkan penjagaan integral, termasuk program kesihatan fizikal dan mental, penjagaan perubatan dan pergigian, serta sokongan psikologi untuk menghadapi cabaran sehari -hari. Kami mewujudkan persekitaran yang mengutamakan keseimbangan antara kehidupan profesional dan peribadi, memastikan setiap pekerja mempunyai sumber untuk memupuk tabiat yang sihat dan mencapai matlamat mereka dengan kualiti hidup."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Melatih masyarakat",
+      "paragraph": "Syarikat membangunkan inisiatif yang melampaui perniagaan, berusaha untuk menjana manfaat sosial dan alam sekitar sejajar dengan nilai -nilai mereka.",
+      "buttonText": "Blog kami"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Kediaman",
+      "title": "Peluang inklusif dan latihan untuk rantau ini",
+      "paragraph": "T2M adalah salah satu penaja utama Program Kediaman Perisian Serratec, yang bertujuan untuk membolehkan kelemahan ekonomi orang muda untuk kerjaya teknologi. Program ini menawarkan latihan teknikal dalam pembangunan perisian dan menyediakan peserta untuk memasuki pasaran pekerjaan dalam sektor permintaan yang tinggi. Dengan ini, T2M memperkuat komitmennya terhadap tanggungjawab sosial dan pembangunan bakat tempatan, mempromosikan ekonomi yang lebih inklusif dan mampan.",
+      "imageAlt": "Pejabat T2M",
+      "buttonText": "Saya mahu melanggan"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Hasilnya",
+      "title": "Rakan kongsi kami",
+      "paragraph": "Rangkaian pekerja kami yang memacu dan membentuk kejayaan dalam setiap langkah"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Agile skala",
+          "paragraph": "Scaled Agile, Inc. diiktiraf di seluruh dunia sebagai pencipta Skala Agile Framework® (SAFE), pendekatan utama untuk ketangkasan perniagaan.",
+          "imageAlt": "Logo da skala tangkas"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Datanglah menjadi sebahagian daripada pusat teknologi terbesar di Brazil! Perkhidmatan dan faedah untuk perniagaan atau permulaan anda bermula di kaki kanan!",
+          "imageAlt": "Logo lakukan Serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Penyelesaian untuk melaksanakan proses pembangunan sistem yang lengkap dan automatik.",
+          "imageAlt": "Logo IBM"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft adalah pemimpin BigTech dalam pengkomputeran awan, platform kuasa dan kecerdasan buatan.",
+          "imageAlt": "Logo dari Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Alat virtualisasi data dan penyelesaian topeng data.",
+          "imageAlt": "Delphi tidak lama lagi"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Kebolehcapaian dan kemasukan adalah misi kami. Kami mewujudkan penyelesaian digital untuk mengambil kehidupan sosial yang lebih harmoni, memberikan kualiti hidup dan penyertaan penuh dalam masyarakat bagi mereka yang melihat diri mereka ditinggalkan daripadanya.",
+          "imageAlt": "Logo Biomob"
+        },
+        {
+          "id": 7,
+          "title": "Automasi di mana sahaja",
+          "paragraph": "Automasi Anywhere bertujuan untuk melepaskan orang dari tugas -tugas remeh dan berulang untuk menghabiskan lebih banyak masa menggunakan akal dan kreativiti mereka untuk menyelesaikan cabaran perniagaan maju dan melakukan kerja yang memerlukan pengetahuan khusus.",
+          "imageAlt": "Logo da automasi di mana sahaja"
+        },
+        {
+          "id": 8,
+          "title": "Vmedu",
+          "paragraph": "VMEDU adalah syarikat terkemuka dalam industri latihan pensijilan dan profesional dan telah menyediakan latihan lebih daripada 500,000 pelajar dari lebih 3500 syarikat di lebih daripada 150 negara dengan kadar kejayaan 98.7% melalui rangkaian globalnya lebih daripada 1100 penyedia latihan.",
+          "imageAlt": "Logo VMEDU"
+        },
+        {
+          "id": 9,
+          "title": "Masa depan",
+          "paragraph": "Diiktiraf di pasaran Keselamatan Maklumat Brazil, kami mempunyai pangkalan pelanggan yang kukuh, diedarkan dalam pelbagai saiz dan segmen, yang berkhidmat dari syarikat awam dan swasta yang besar, kepada syarikat -syarikat yang bersaiz sederhana.",
+          "imageAlt": "Logo masa depan"
+        }
+      ],
+      "type": "pusat"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Mesej dari CEO kami",
+      "paragraph": "Dalam T2M, kami mengukuhkan komitmen dan penjajaran dengan amalan SDG dan ESG PBB.",
+      "buttonText": "Guilherme da Motta Alves - LinkedIn"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Komited kepada kemampanan dan tanggungjawab perniagaan, organisasi kami mengutamakan integrasi prinsip ESG dalam semua aktiviti kami. Kami menyedari kepentingan:",
+      "numberCards": [
+        {
+          "title": "Melindungi Alam Sekitar (Alam Sekitar)",
+          "paragraph": "Dengan mengurangkan jejak karbon kami, penggunaan sumber semula jadi yang cekap dan promosi amalan mampan."
+        },
+        {
+          "title": "Menggalakkan hubungan sosial yang adil dan saksama (sosial)",
+          "paragraph": "Menghormati hak asasi manusia, kepelbagaian, kemasukan dan kesejahteraan pekerja, pelanggan dan komuniti kami."
+        },
+        {
+          "title": "Amalkan tadbir urus korporat yang telus dan beretika (tadbir urus)",
+          "paragraph": "Dengan kepimpinan yang bertanggungjawab, pengurusan risiko yang berkesan dan pematuhan terhadap undang -undang dan peraturan. Visi kami adalah untuk mewujudkan nilai mampan bagi semua pihak berkepentingan, menyumbang kepada masa depan yang lebih makmur dan berdaya tahan."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Laporan kesan sosial dan pembangunan lestari 2024 mencerminkan komitmen kami terhadap daya tarikan dan tanggungjawab sosial di T2M. Ia berfungsi sebagai saluran asas untuk menyampaikan kemampanan dan kemajuan kami, menyelaraskan amalan kami kepada objektif pembangunan lestari Dooni dan prinsip -prinsip ESG. Laporan ini bukan sahaja menonjolkan usaha kami mengenai latihan, kepelbagaian eGovernance etika, tetapi ia juga membolehkan kami menguatkan hubungan dengan pihak berkepentingan kami dan membimbing keputusan kami yang berkesan. Dengan berkongsi hasil dan cabaran kami, kami mengesahkan dedikasi kami kepada kesan Eduro yang positif.",
+      "CEO": "Ketua Pegawai Eksekutif DA T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Topik tapak",
+      "items": {
+        "sobre": "Pada",
+        "quemSomos": "Siapa kita",
+        "propostaDeValor": "Cadangan Nilai",
+        "nossaEquipe": "Pasukan kami",
+        "comunidade": "Komuniti",
+        "esg": "ESG"
+      }
+    },
+    "socialLinks": {
+      "title": "Rangkaian sosial kami",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Lawati laman web rasmi kami",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Semua hak terpelihara",
+      "logoAlt": "Logo T2M"
+    }
   }
 }

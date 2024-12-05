@@ -26,7 +26,13 @@
     "empregabilidade": "Możliwość zatrudnienia",
     "empregabilidadeLabel": "Przejdź do ekranu zdolności do zatrudnienia",
     "papoDiverso": "Inny czat",
-    "papoDiversoLabel": "Przejdź do zróżnicowanej strony internetowej czatu"
+    "papoDiversoLabel": "Przejdź do zróżnicowanej strony internetowej czatu",
+    "leitorAudio": {
+      "carregando": "Noszenie głosów ...",
+      "semVozes": "Brak głosów dla wybranego języka",
+      "isReading": "Kliknij tekst, aby rozpocząć czytanie",
+      "isNotReading": "Zacznij czytać"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Joruba",
     "Sindhi": "Sindhi"
   },
-  "MainBanner": {
-    "topTitle": "Tworzenie przyszłych naukowców",
-    "title": "Girls STEM",
-    "paragraph": "Wpływ dziewcząt, które wciąż w szkole stają przed wyzwaniami związanymi z zaangażowaniem w nauki",
-    "buttonText": "Kontakt"
-  },
-  "OQueEBanner": {
-    "topTitle": "Co to jest?",
-    "title": "Dziewczyny Petrólis Tec Hub Project",
-    "paragraph": "Projekt, który ma na celu zmniejszenie nierówności płci i rozszerzenie uczestnictwa kobiet w nauce, technologii, inżynierii i matematyce (STEM). Ta inicjatywa koncentruje się na umiejętnościach technologicznych i promowaniu włączenia kobiet w mieście Petrópolis w Rio de Janeiro."
-  },
-  "ObjetivoBanner": {
-    "title": "Cel projektu",
-    "paragraph": "Projekt ma na celu zachęcanie do umiejętności technologicznej między studentami i nauczycielami, promując kulturę integracyjną w dokładnych naukach.",
-    "altImage": "Girls STEM"
-  },
-  "ComoBanner": "Projekt wykorzystuje platformę Scratch do nauczania programowania w zabawny i interdyscyplinarny sposób, obejmujący debaty na temat płci, praw człowieka i nierówności.",
-  "MetodologiaBanner": {
-    "title": "Motodologia",
-    "paragraph": "Projekt ma na celu zachęcanie do umiejętności technologicznej między studentami i nauczycielami, promując kulturę integracyjną w dokładnych naukach.",
-    "altImage": "Girls STEM"
-  },
-  "IconWithTextBanner": {
-    "title": "Kto się rozwija?",
-    "topTitle": "Nasi pracownicy",
-    "paragraph": "Projekt jest przeprowadzany przez sieć instytucji badań, nauki i edukacji, wraz z organizacjami społecznymi i biznesowymi. Uczestniczyć w tej inicjatywie:",
-    "iconCards": [
-      {
-        "title": "LNCC",
-        "description": "National Laboratory of Scientific Computing to brazylijska instytucja badawcza i technologiczna, specjalizująca się w obliczeniach naukowych, powiązanej z Ministerstwem Nauki, Technologii i Innowacji."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Raport o wpływie społecznym",
+      "paragraph": "Wpływ społeczny i zrównoważony rozwój, który przedstawia działania i zobowiązania T2M w zakresie praktyk odpowiedzialności społecznej, środowiskowej i zarządzania (ESG).",
+      "buttonText": "Pobierz raport Social Impact"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme Photo, CEO T2M",
+      "title": "Innowacyjne przywództwo.",
+      "topTitle": "Wiadomość od naszego CEO",
+      "paragraph": "Ten raport dotyczący wpływu społecznego i zrównoważonego rozwoju w 2024 r. Odzwierciedla nasze zaangażowanie w przejrzystość i odpowiedzialność społeczną w T2M. Służy jako fundamentalny kanał do przekazywania naszych działań i postępów w zakresie zrównoważonego rozwoju, dostosowywania naszych praktyk do celów zrównoważonego rozwoju ONZ i zasad ESG.",
+      "buttonText": "Przeczytaj wiadomość naszego CEO"
+    },
+    "sobreRelatorioTrad": {
+      "title": "O tym raporcie",
+      "paragraphs": [
+        "Niniejszy raport o wpływie społecznym i zrównoważonym rozwoju przedstawia działania i zobowiązania T2M w praktyce społecznej odpowiedzialności społecznej, środowiskowej i zarządzającej (ESG).",
+        "Odzwierciedla nasze wysiłki, aby wywierać pozytywny wpływ na naszą społeczność, promować integracyjne i zrównoważone środowisko pracy oraz zminimalizować nasz ślad środowiskowy.",
+        "Dzieląc się naszymi osiągnięciami i wyzwaniami, ten raport wzmacnia nasze zaangażowanie w przejrzystość i cele zrównoważonego rozwoju ONZ (SDG), a także prowadząc naszą ciągłą ewolucję w kierunku bardziej zrównoważonej przyszłości."
+      ],
+      "imageAlt": "Zdjęcie Das ODS"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Proces istotności",
+      "paragraph": "Utrzymujemy stałe i przejrzyste relacje ze wszystkimi naszymi zainteresowanymi stronami, od osób po organizacjach, abyśmy mogli zrozumieć ich oczekiwania i obawy oraz przełożyć je na informacje o wartości strategicznej, aby pomóc naszemu zarządzaniu biznesem."
+    },
+    "partesInteressadasTrad": {
+      "title": "Interesariuszy",
+      "paragraph": "T2M ceni współpracę ze wszystkimi zainteresowanymi stronami w celu promowania innowacji, przejrzystości i pozytywnego wpływu. Ustanowiliśmy kanały i inicjatywy dialogowe, które odzwierciedlają zaangażowanie w nasze strategiczne wartości i cele.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Współpracownicy",
+          "paragraph": "Ciągłe programy szkoleniowe, organizacyjne badania klimatyczne, strategiczne spotkania wyrównania i warsztaty pracowników."
+        },
+        {
+          "id": 2,
+          "title": "Klienci",
+          "paragraph": "Kontynuacja spotkań i prezentacji, dedykowane wsparcie w rozwiązywaniu pytań i ulepszaniu usług."
+        },
+        {
+          "id": 3,
+          "title": "Partnerzy strategiczni",
+          "paragraph": "Umowy o współpracy dotyczące projektów wpływowych, uczestnictwo w wydarzeniach rynkowych, wykładach i konferencjach, a także okresowe spotkania w celu wzmocnienia strategicznych partnerstw i sojuszy."
+        },
+        {
+          "id": 4,
+          "title": "Wspólnota",
+          "paragraph": "Inicjatywy odpowiedzialności społecznej, udział w lokalnych wydarzeniach, wsparcie dla organizacji pozarządowych i projektów społecznych, promowanie pozytywnego i zrównoważonego wpływu w obszarach, w których działamy skutecznie."
+        },
+        {
+          "id": 5,
+          "title": "Zarządzanie i zgodność",
+          "paragraph": "Strategiczne dostosowanie do przepisów, solidne polityki zgodności i ciągłe interakcje z podmiotami rządowymi i regulacyjnymi. Certyfikaty ISO 37101 i ISO 37301, a także solidne praktyki anty -subborn i przestrzeganie rygorystycznego kodeksu etyki."
+        },
+        {
+          "id": 6,
+          "title": "Różnorodność i równość",
+          "paragraph": "Promowanie środowiska integracyjnego poprzez inicjatywy, które cenią różnorodność kulturową, społeczną i płciową. Polityka zrównania możliwości, zachęcania do sprawiedliwości i zapewnienia wzajemnego szacunku, budowania zrównoważonej i mnogiej kultury organizacyjnej."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Metodologia",
+      "title": "Jak definiujemy treść raportu?",
+      "paragraph": "Corocznie przeprowadzaliśmy ćwiczenie istotności w celu zrozumienia perspektyw interesariuszy na kwestie środowiskowe, społeczne i ekonomiczne bardziej odpowiednie dla zrównoważonego zarządzania, a także identyfikując możliwości promowania uczenia się i zachęcania do zaangażowania w najlepsze praktyki."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Rewizja",
+          "title": "Refleksja nad działaniami i politykami mającymi na celu różnorodność i włączenie poprzedniego okresu.",
+          "paragraph": "Podczas przeglądu oceniliśmy postępy w tworzeniu środowiska integracyjnego i zaangażowania różnych grup interesariuszy. Postanowiliśmy uwzględnić nowe tematy, takie jak „różnorodność w wielu aspektach polityk korporacyjnych” oraz „poprawa dostępności produktów i usług”, aby lepiej dostosować praktyki z obecnymi potrzebami."
+        },
+        {
+          "topTitle": "Analiza",
+          "title": "Integracja sugestii koncentrujących się na wzmocnieniu strategii włączania, środowiska i zdrowia i dobrego samopoczucia.",
+          "paragraph": "Podczas procesu analizy podkreślono tematy priorytetowe, takie jak znaczenie kampanii edukacyjnych, które uwrażliwiają i angażują pracowników w integracyjne, zrównoważone praktyki oraz promowanie opieki nad zdrowiem i dobrostanem wszystkich."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Greenwashing x Zrównoważony rozwój",
+      "title": "Prawda stojąca za praktykami zrównoważonego rozwoju",
+      "paragraph": "Wiele firm korzysta z praktyk prania zielonych, prezentując powierzchowne inicjatywy środowiskowe, nie zmieniając ich procesów, co upośledza przejrzystość i dezorientujące konsumentów i inwestorów.",
+      "extraButtonBottom": {
+        "buttonText": "Czytaj dalej artykuł na naszej oficjalnej stronie internetowej"
       },
-      {
-        "title": "Serratec",
-        "description": "Serratec jest parkiem technologicznym niezwiązanym z organizacją we wnętrzu Rio de Janeiro, działającego jako induktor biznesowy IT i obejmujący miasta Petrópolis, Teresópolis, Nova Friburgo i Areal."
-      },
-      {
-        "title": "Faeterj Petropolis",
-        "description": "Faeterj Petrópolis to publiczna instytucja szkolnictwa wyższego związana z FAETEC, oferującą kursy techniczne i wyższe w różnych obszarach."
-      },
-      {
-        "title": "Cefet/RJ UNED Petrópolis",
-        "description": "CEFET/RJ Petrópolis jest pierwszą publiczną instytucją szkolnictwa wyższego w mieście, oferującą kursy w twarz -do metody i należące do systemu CEFET/RJ."
-      },
-      {
-        "title": "Uff",
-        "description": "Fluminense Federal University (UFF) to publiczna instytucja szkolnictwa wyższego krajowego, wyróżniająca się w różnych dziedzinach wiedzy."
-      },
-      {
-        "title": "UFBA",
-        "description": "Federalny Uniwersytet Bahia (UFBA) to publiczna instytucja szkolnictwa wyższego z siedzibą w Salvador, powiązana z Ministerstwem Edukacji, z autonomią administracyjną i prawną."
-      },
-      {
-        "title": "Biomob",
-        "description": "Biomob specjalizuje się w rozwiązaniach dostępności i projektach społecznych, koncentrując się na promowaniu bardziej integracyjnego i egalitarnego społeczeństwa."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech opracowuje projekty badań, rozwoju i innowacji dla firm i instytucji rządowych, mające na celu innowacje i postęp technologiczny."
-      },
-      {
-        "title": "TJ-RJ",
-        "description": "Sąd Sprawiedliwości Rio de Janeiro (TJ-RJ) jest odpowiedzialny za administrację sprawiedliwości w państwie, z jurysdykcją nad całym terytorium Fluminense."
-      },
-      {
-        "title": "Ratusz Petrópolis",
-        "description": "Ratusz w Petrópolis zarządza historycznym miastem położonym w górzystym regionie Rio de Janeiro, wdrażając politykę i usługi publiczne dla ludności."
-      },
-      {
-        "title": "Seeduc-rj",
-        "description": "Seeduc-RJ jest odpowiedzialny za zarządzanie polityką edukacyjną stanu Rio de Janeiro, zapewniając dostęp do wysokiej jakości edukacji w państwowych szkołach publicznych."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "SZUKAJ",
-    "title": "Czego oczekuje się od projektu?",
-    "paragraph": "Projekt ma na celu wzmocnienie wyobraźni dziewcząt i samooceny, zwalczania porzucenia i przyczynienia się do budowy sprawiedliwszego społeczeństwa. Oczekuje się, że stymuluje i rozszerzy udział kobiet w STEM, jednocześnie zmniejszając piętnowanie i dyskryminację.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "pl"
+      "numberCards": [
+        {
+          "title": "Prawdziwy wpływ na środowisko",
+          "paragraph": "Zobowiązane firmy w zrównoważonym rozwoju dokonują rzeczywistych zmian, takich jak zmniejszenie emisji dwutlenku węgla i odpowiedzialne wykorzystanie zasobów naturalnych, w celu uzyskania pozytywnego wpływu na środowisko."
+        },
+        {
+          "title": "Przejrzystość korporacyjna",
+          "paragraph": "Aby uniknąć prania zielonego, firmy kluczowe jest publikowanie jasnych raportów na temat ich zrównoważonych działań i osiągnięć, z możliwymi do zweryfikowanymi danymi i konkretnymi celami."
+        },
+        {
+          "title": "Świadome konsumpcja",
+          "paragraph": "Świadomi konsumenci mogą zidentyfikować praktyki prania zielone, szukając marek o sprawdzonych zrównoważonych zobowiązaniach, takich jak stosowanie materiałów nadających się do recyklingu i zasad redukcji odpadów."
+        },
+        {
+          "title": "Certyfikaty i audyty",
+          "paragraph": "Uzyskanie uznanych certyfikatów i audytów zewnętrznych pomaga potwierdzić zaangażowanie firm w zrównoważony rozwój, oferując zaufanie konsumentom i inwestorom."
+        },
+        {
+          "title": "Gospodarka o zakładzie",
+          "paragraph": "Gospodarka o obiegu zamkniętym jest alternatywą dla tradycyjnego modelu „odrzucania po użyciu”, zachęcając firmy do recyklingu, ponownego wykorzystywania i ograniczenia odpadów, promując podejście zrównoważonego i regeneracyjnego."
+        },
+        {
+          "title": "Rola zarządzania",
+          "paragraph": "Zarządzanie odgrywa fundamentalną rolę w zwalczaniu prania zieleni, ponieważ kieruje decyzjami biznesowymi w zakresie odpowiedzialnych i wyrównanych praktyk PDD, zapewniając uczciwość i odpowiedzialność."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Zrównoważony rozwój",
+      "paragraph": "Jesteśmy zaangażowani w przyczynianie się do zrównoważonego rozwoju poprzez naszą działalność i działalność, generując długoterminową wartość dla naszych klientów, pracowników, dostawców, akcjonariuszy i społeczeństwo."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Czas sadzenia ruchu regeneracyjnego",
+      "paragraph": "Wspierając projekty sadzenia kulturalnego i drzew, takie jak regeneracyjny ruch sadzenia, wzmacniamy bohater społeczności i promujemy poczucie przynależności. Dzięki sadzeniu drzew, oprócz ochrony środowiska, tworzymy trwałe dziedzictwo, zapewniając, że przyszłe pokolenia wzrośnie na terytorium, które ceni i zachowuje ich wspomnienia i otaczającą ich naturę.",
+      "numberCards": [
+        {
+          "title": "Ruch zarządzania",
+          "paragraph": "Corocznie, w porze deszczowej (październik do marca), ruch zachęca ludzi do udziału w sadzeniu drzew, tworząc bezpośredni związek z naturą i promując większą świadomość środowiskową."
+        },
+        {
+          "title": "W grudniu 2024 r",
+          "paragraph": "W grudniu 2024 r. T2M zasadził 100 sadzonek w Vale Das VideoRas Arboretical. Ten kamień milowy jest częścią ciągłego wysiłku w celu promowania przywracania rodzimej roślinności i odzyskania zdegradowanych obszarów."
+        },
+        {
+          "title": "Oczekiwanie na 2025",
+          "paragraph": "W 2025 r. Celem jest podwojenie sadzenia drzew w całym mieście, przy wsparciu wszystkich pracowników. Celem jest przywrócenie rodzimych lasów i gatunków tubylczych, przy aktywnym udziale społeczności i lokalnych inicjatyw."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Nasze kampanie",
+      "paragraph": "Oprócz oferowania automatycznych testów doskonałości, T2M z dumą tworzy i tworzy własne kampanie",
+      "numberCards": [
+        {
+          "title": "Gest solidarności",
+          "paragraph": "Od 2023 r. Przeprowadzamy kampanie solidarnościowe, takie jak kolekcja żywności, zimne ubrania, produkty higieniczne i czapki z tworzywa sztucznego wymienione na wózki inwalidzkie, pieluchy i laski."
+        },
+        {
+          "title": "Dobre uczynki",
+          "paragraph": "DBA - Opieka nad tymi, którzy uważają, jest wydarzeniem dla matek i opiekunów, oferując opiekę estetyczną, wykłady i porady opieki społecznej, integrując ruch globalnego dnia dobrego działania (DBA)."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta to targi związane z zatrudnieniem, które oferują pierwsze możliwości zatrudnienia, koncentrujące się na samotnych matkach i osobach niepełnosprawnych, promujące włączenie i równość na rynku pracy."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Część",
-    "title": "Kto uczestniczy?",
-    "paragraph": "Uczniowie zostaną wybrani z 8 i 9 rocznicy szkoły podstawowej II oraz pierwszego, 2. i 3 lat liceum, zgodnie z kryteriami projektu, wraz z co najmniej jednym nauczycielem każdej z uczestniczących szkół. Posiadacze stypendiów będą zaangażowani w następujące działania i cele:",
-    "iconCards": [
-      {
-        "title": "Uczenie się na programowaniu"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "Zobowiązanie ESG",
+        "paragraph": "Niniejszy raport przedstawia działania wpływu środowiskowego, społecznego i zarządzania (ESG) wdrożonych przez naszą firmę w ciągu ostatniego roku, podkreślając, w jaki sposób inicjatywy te są dostosowane do celów zrównoważonego rozwoju ONZ (SDG).",
+        "buttonText": "Nasz blog"
       },
-      {
-        "title": "Rozwój gier edukacyjnych na platformie zarysowni"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Strategia",
+        "title": "Nasze zaangażowanie",
+        "paragraph": "Nasze zaangażowanie w ESG jest główną częścią naszej strategii, przyczyniając się do zmniejszenia wpływu na środowisko, wzmocnienie integracyjnych praktyk społecznych oraz przyjęcie etycznego i odpowiedzialnego ładu korporacyjnego. Nasz ciągły wysiłek na rzecz integracji SDG z operacjami wzmacnia nasze zrównoważone działanie, generując wartość dla wszystkich zainteresowanych stron.",
+        "buttonText": "Chcę być częścią",
+        "imageAlt": "Biuro T2M"
       },
-      {
-        "title": "Udział w klubie naukowym"
+      "gestaoResiduosTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Zarządzanie odpadami i wybór zrównoważonych materiałów",
+        "iconAlt": "ikona tematu środowiskowego"
       },
-      {
-        "title": "Obecność w zdarzeniach naukowych rozpowszechniania"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "Biuro T2M",
+        "paragraph": "Nasze zaangażowanie w ESG jest główną częścią naszej strategii, przyczyniając się do zmniejszenia wpływu na środowisko, wzmocnienie integracyjnych praktyk społecznych oraz przyjęcie etycznego i odpowiedzialnego ładu korporacyjnego. Nasz ciągły wysiłek na rzecz integracji SDG z operacjami wzmacnia nasze zrównoważone działanie, generując wartość dla wszystkich zainteresowanych stron."
       },
-      {
-        "title": "Udział w wykładach i seminariach"
+      "contratosAssinadosTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Umowy podpisane wirtualnie",
+        "iconAlt": "Ikona tematu środowiskowego"
       },
-      {
-        "title": "Przygotowanie raportów pośrednich i końcowych"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "W ramach naszego zaangażowania w zrównoważony rozwój T2M przyjął politykę digitalizacji dokumentów i wirtualną podpis umów, znacznie zmniejszając potrzebę drukowania papieru. Przejście na kontrakty cyfrowe nie tylko usprawnia nasze procesy, ale także zachowuje zasoby naturalne, zmniejszając zużycie papieru, farby i energii. Ta praktyka przyczynia się bezpośrednio do zmniejszenia wylesiania i zrównoważonego wykorzystania zasobów naturalnych. Przez cały rok praktyka ta spowodowała znaczne zmniejszenie odpadów papierowych, wzmacniając zaangażowanie T2M w środowisko oraz nowoczesne i zrównoważone zarządzanie.",
+        "imageAlt": "Obraz Office T2M"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Używanie w chmurze, zmniejszenie zużycia sprzętu",
+        "iconAlt": "Ikona tematu środowiskowego"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Od czasu migracji do Microsoft Cloud nasza firma osiągnęła znaczne zmniejszenie emisji emisji dwutlenku węgla, wzmacniając zaangażowanie w zrównoważone praktyki. Na podstawie szacowanych danych unikamy emisji 2,192 miliona ton węgla, co stanowi 99,72% zmniejszenie potencjalnych emisji, dzięki korzystaniu z narzędzi takich jak SharePoint i Exchange Online.",
+          "W tym okresie skuteczne emisje wyniosły zaledwie 0,007 tony, w porównaniu z szacunkowymi 2,468 ton w tradycyjnym scenariuszu. To przejście do bardziej wydajnej infrastruktury cyfrowej pokazuje pozytywny wpływ roztworów w chmurze na zmniejszenie śladu węglowego, dostosowując strategię technologiczną do ex -goals."
+        ],
+        "imageAlt": "Obraz Office T2M"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "W T2M zastosowanie rozwiązań w chmurze Microsoft, takich jak OneDrive, Azure i Teams, jest niezbędne do zmniejszenia zużycia energii i potrzeby nowego fizycznego sprzętu.",
+          "Narzędzia te zmniejszają zapotrzebowanie na fizyczne serwery, które zużywają dużo energii i wymagają konserwacji. W celu wykorzystania 100% energii odnawialnej na swoich danych do 2025 r., T2M przyczynia się do bardziej zrównoważonej przyszłości.",
+          "Ponadto chmura oferuje skalowalność, wydajność, bezpieczeństwo i dostępność danych, odzwierciedlając zaangażowanie T2M w zrównoważone i innowacyjne praktyki technologiczne."
+        ],
+        "imageAlt": "Biuro T2M"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Świadome zużycie wody",
+        "lineColor": "BG-VAR-Environmental",
+        "iconAlt": "ikona tematu środowiskowego"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Świadome zużycie wody jest priorytetem w T2M i wdrożyliśmy różne praktyki w celu zmniejszenia marnotrawstwa tego ważnego zasobu. Ponadto promujemy wewnętrzne kampanie uświadamiające, zachęcając naszych pracowników do przyjmowania nawyków odpowiedzialnych za korzystanie z wody zarówno w miejscu pracy, jak i w ich domach. Ta praktyka ma na celu zmniejszenie zużycia wody i przyczynienie się do zachowania zasobów wodnych, dostosowując się do celów zrównoważonego rozwoju ONZ (SDG). Dzięki tym działaniom staramy się zminimalizować nasz wpływ na środowisko i zainspirować kulturę zrównoważonego rozwoju wśród naszych pracowników.",
+        "imageAlt": "Obraz biura T2M koncentruje się na świadomym zużyciu wody",
+        "iconAlt": "Reprezentatywna ikona świadomego zużycia wody"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Bodziec w celu zmniejszenia stosowania pojazdów spalania",
+        "iconAlt": "Ikona tematu środowiskowego"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M zachęca swoich pracowników do przyjęcia bardziej zrównoważonych praktyk mobilności, zmniejszania ruchu CO2 i emisji przez pojazdy spalania. Aby ułatwić to przejście, oferujemy zachęty do korzystania z transportu publicznego i wspólnego, ta stymulacja zrównoważonej mobilności odzwierciedla nasze zaangażowanie w zmniejszanie emisji gazów cieplarnianych i zmniejszenie śladu węglowego. Ponadto promujemy świadomość korzyści z bardziej zrównoważonej mobilności, przyczyniając się do dobrego samopoczucia pracowników i zachowania środowiska.",
+        "imageAlt": "Biuro T2M"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Łańcuch dostawców zaangażowanych w środowisko",
+        "iconAlt": "Ikona tematu środowiskowego"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "T2M ceni łańcuch dostawców zgodny z wartościami zrównoważonego rozwoju, priorytetem partnerstw z firmami przyjmującymi praktyki odpowiedzialne za środowisko. Dokładnie oceniliśmy naszych dostawców, aby zapewnić, że podzielają nasze zaangażowanie w ochronę środowiska i zmniejszyć negatywny wpływ na środowisko. Obejmuje to dostawców, którzy przyjmują zrównoważone metody w produkcji, wykorzystują materiały z recyklingu, wdrażają programy redukcji odpadów i spełniają standardy odpowiedzialności za środowisko. Integrując praktyki ESG z naszym łańcuchem dostaw, wzmacniamy nasze zaangażowanie w zrównoważoną działanie i rozszerzamy nasz pozytywny wpływ innych organizacji na przyjęcie odpowiedzialnych praktyk.",
+        "imageAlt": "Biuro T2M"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Środowiskowy",
+        "title": "Recykling materiału elektronicznego i baterii",
+        "iconAlt": "Ikona tematu środowiskowego"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M przyjmuje rygorystyczne praktyki recyklingu sprzętu elektronicznego i akumulatorów, uznając znaczenie właściwego usuwania tych materiałów w celu uniknięcia negatywnego wpływu na środowisko. Odpady elektroniczne są wysyłane do firm certyfikowanych, które zapewniają prawidłowe oczyszczanie i recykling komponentów, przyczyniając się do odzyskania cennych materiałów i zmniejszenia odpadów toksycznych. Wewnętrznie promujemy świadomość na temat znaczenia recyklingu elektroniki wśród pracowników, zachęcając do właściwego usuwania. Ta inicjatywa odzwierciedla nasze zaangażowanie w gospodarkę o obiegu zamkniętym, unikając zanieczyszczenia gleby i wody oraz promując bardziej wydajne i odpowiedzialne gospodarki odpadów.",
+        "imageAlt": "Biuro T2M"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Nasz Made w 2024",
+        "paragraph": "W 2024 r. Rozwinęliśmy inicjatywy, które wzmacniają zrównoważony rozwój i włączenie, promując różnorodność, równość i solidne praktyki, koncentrując się na pozytywnym wpływie do 2025 r.",
+        "numberCards": [
+          {
+            "title": "100 posadzonych drzew"
+          },
+          {
+            "title": "99,72% zmniejszenie emisji emisji dwutlenku węgla"
+          },
+          {
+            "title": "Zerował zużycie materiału jednorazowego użytku"
+          },
+          {
+            "title": "Oszczędności 2500 arkuszy poprzez podpisy cyfrowe"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Społeczny",
+        "title": "Sponsor szkolenia zawodowego",
+        "iconAlt": "Ikona dotycząca tematu społecznego"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2M jest jednym z głównych sponsorów programu Residence Software Software Serratec, którego celem jest umożliwienie młodych ludzi podatnych na podatność ekonomiczną. Oprócz sponsorowania T2M oferuje pracownikom nauczanie zajęć i monitorowania, aktywnie przyczyniając się do tworzenia mieszkańców. Firma współpracuje również z UFF w Fest (Software School and Test Factory), wspierając podstawowe kursy, takie jak właściciel produktu, Scrum Master i Software Quality. Działania te wzmacniają zaangażowanie T2M w odpowiedzialność społeczną i rozwój lokalnych talentów, promując bardziej integracyjną i zrównoważoną gospodarkę.",
+        "imageAlt": "Biuro T2M"
+      },
+      "numerosResidenciaTrad": {
+        "title": "T2M Practical Case - Serratec Partnership",
+        "topTitle": "Wskaźniki - miejsce zamieszkania",
+        "paragraph": "Specjaliści zatrudnieni przez T2M z programu zamieszkania ICT Serratec ICT 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Osoby przyjęte przez program"
+          },
+          {
+            "title": "101",
+            "paragraph": "Wynajmowanie"
+          },
+          {
+            "title": "75%",
+            "paragraph": "T2M trwałość po programie"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Osoby niepełnosprawne w programie"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Udział kobiet"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Czarni uczestniczą"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Absolwenci szkół publicznych"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Działania afirmatywne beneficjenci"
+          },
+          {
+            "title": "10",
+            "paragraph": "Działać jako nauczyciele lub monitory programu"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Społeczny",
+        "title": "Zespół ludzi i zarządzanie złożone w 100% przez kobiety",
+        "iconAlt": "Ikona dotycząca tematu społecznego"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Zespół ludzi i zarządzanie T2M w 100% składa się z kobiet, podkreślając silne zaangażowanie firmy w różnorodność i włączenie. Ponadto około 75% zespołu administracyjnego składa się z kobiet, osób niepełnosprawnych i czarnych ludzi, wzmacniając zaangażowanie T2M w promowanie liczby mnogiej i reprezentatywnej środowiska pracy. Ten zespół ludzi i zarządzania odgrywa kluczową rolę w budowaniu przyjaznej i egalitarnej kultury organizacyjnej, wdrażaniu polityk i działań rozwoju zawodowego, które cenią różnorodność perspektyw w firmie. T2M uważa, że ​​włączenie jest niezbędnym filarem sukcesu kultury organizacyjnej, zwiększając innowacje i generując pozytywny wpływ społeczny.",
+        "imageAlt": "Biuro T2M"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Społeczny",
+        "title": "Program jakości życia",
+        "iconAlt": "Ikona dotycząca tematu społecznego"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2M promuje dobre samopoczucie swoich pracowników poprzez program aktywności fizycznej, który odbył się w każdą sobotę. Program ten ma na celu poprawę jakości życia i zdrowia psychicznego pracowników, zachęcając ich do przyjęcia zdrowszego i bardziej aktywnego stylu życia. Działania są dostosowywane do różnych poziomów warunkowania, promując zaangażowanie i integrację między uczestnikami. T2M uważa, że ​​inwestowanie w zdrowie pracowników przyczynia się do bardziej produktywnego i szczęśliwego środowiska pracy.",
+        "imageAlt": "Ilustracyjny obraz programu aktywności fizycznej w biurze T2M"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Społeczny",
+        "title": "Kampanie solidarnościowe",
+        "iconAlt": "Ikona dotycząca tematu społecznego"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "T2M promuje przez cały rok kampania gestów solidarności, kampania na rzecz zbierania żywności i odzieży, przeznaczona dla lokalnych instytucji i osób bezdomnych. W okresie imprezowym zorganizowaliśmy również kampanię przyjęła list świąteczny, szczególnie skoncentrowany na wysyłaniu prezentów do dzieci w sytuacjach wrażliwych oraz z różnorodnością funkcjonalną, przynosząc radość i wsparcie społecznościom i instytucjom. T2M aktywnie zachęca swoich pracowników do uczestnictwa w tych działaniach, wzmacniając kulturę solidarności i zaangażowania społecznego w firmie. To zbiorowe wsparcie jest niezbędne do sukcesu kampanii i rozszerzenia naszego pozytywnego wpływu na społeczność.",
+        "imageAlt": "Obraz darowizn dokonanych przez T2M, Biomob i Serratec"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Społeczny",
+        "title": "Wolontariat i wsparcie dla inicjatyw związanych z zatrudnieniem",
+        "iconAlt": "Ikona dotycząca tematu społecznego"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2M ma solidne zaangażowanie w wsparcie wolontariatu i zdolności do zatrudnienia, aktywnie uczestnicząc w programach i inicjatywach, które promują włączenie społeczne i rozwój młodych talentów. Firma współpracuje z wrażliwymi pracami mające na celu wrażliwe osoby, takie jak matki solo, LGBTQIAP+, osoby z różnorodnością funkcjonalną, uchodźców, absolwentów systemów więziennych i młodych w poszukiwaniu pierwszej pracy. Ponadto T2M zachęca swoich pracowników do wolontariatu jako mówcy i instruktorzy na kursach przygotowawczych, które dotyczą istotnych umiejętności technicznych i behawioralnych, przygotowując uczestników do wyróżnienia się na rynku pracy.",
+        "imageAlt": "Obraz biura T2M, z naciskiem na wsparcie w zakresie zatrudnienia"
+      },
+      "feitosSocialTrad": {
+        "title": "Nasze osiągnięcia społeczne w 2024 roku",
+        "paragraph": "W 2024 r. Rozwinęliśmy inicjatywy, które wzmacniają zrównoważony rozwój i włączenie, promując różnorodność, równość i solidne praktyki, koncentrując się na pozytywnym wpływie do 2025 r.",
+        "numberCards": [
+          {
+            "title": "422 kg zebranej żywności",
+            "iconAlt": "Ikona przyborów kuchennych"
+          },
+          {
+            "title": "7 Wykonywane działania społeczne: Bioconecta, DBA, październik Rose i 4 działania gestów solidarnościowych",
+            "iconAlt": "Ikona rąk pomagających"
+          },
+          {
+            "title": "180 wolontariuszy w naszych działaniach społecznych",
+            "iconAlt": "Ikona użytkownika"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "W projekcie Esperança było 206 funtów żywności, inicjatywa mającą na celu przekształcenie życia i wspieranie tych, którzy najbardziej go potrzebują. Akcja została sponsorowana przez pracownika Emanuela, który odegrał kluczową rolę w mobilizacji i kolekcji. Ta darowizna odzwierciedla ducha solidarności i zaangażowania społecznego, które inspiruje społeczność do przyczynienia się do lepszej przyszłości.",
+        "imageAlt": "Obraz Office T2M"
+      },
+      "campanha2Trad": {
+        "paragraph": "Kampania z róży październikowej została wzmocniona darowizną w wysokości 216 funtów żywności na APPO -Petropolitan Association pacjentów z rakiem. Ta akcja została sponsorowana przez T2M w celu reprezentowania października Rose.",
+        "imageAlt": "Obraz Office T2M"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Rządzenie",
+        "title": "Standardy, kody oraz wewnętrzne i zewnętrzne przepisy T2M",
+        "iconAlt": "Ikona dotyczące zarządzania tematem"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2M, założony w Brazylii w 2002 r., Działa z silnym zaangażowaniem w przejrzystość i zgodność z przepisami, kodeksami i obowiązującymi przepisami w kontekście korporacyjnym i krajowym. Nasz normatywny obejmuje wszystkich pracowników, partnerów i zarządu, kierując obowiązkami prawnymi i zobowiązaniami etycznymi, które wspierają operacje T2M.",
+          "Nasz kodeks etyki i postępowania, w połączeniu z polityką anty -suborno, zgodności i różnorodności i włączenia, służy jako przewodniki referencyjne dotyczące właściwego postępowania z klientami, dostawcami i partnerami. Dokumenty te, oprócz promowania standardów etycznych, zmniejszają prawdopodobieństwo nieodpowiedniego zachowania.",
+          "Aby wzmocnić dostosowanie do naszych wytycznych, wszyscy pracownicy muszą okresowo uzupełniać kurs polityki wewnętrznej, dostępny w naszym intranecie, w którym sprawdzane są wartości wewnętrzne, normy i zasady."
+        ],
+        "imageAlt": "Obraz Office T2M"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Rządzenie",
+        "title": "Komisje T2M",
+        "iconAlt": "Ikona dotyczące zarządzania tematem"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Zgodność: Komitet ten jest odpowiedzialny za niezależne i autonomiczne zarządzanie programem integralności T2M, zapewniając niezbędne zasoby w celu zapewnienia bezstronności praktyk zgodności w firmie. Oprócz zachęcania do zgłaszania podejrzeń i naruszeń komitet stara się kultywować kulturę odpowiedzialności na wszystkich poziomach, zachęcając do zapobiegania i wykrywania oszustw. Urzędnik ds. Zgodności, niezbędna funkcja w tym procesie, ma bezpośrednią autonomię i dostęp do wysokiego kierunku, a także uprawnienia do zarządzania anty -podmiotem i systemem zgodności organizacji.",
+        "imageAlt": "Obraz Office T2M"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (wewnętrzna Komisja Zapobiegania Wypadkom): Zgodnie z NR-5, T2M CIPA ma funkcję identyfikacji i łagodzenia ryzyka w miejscu pracy, promowaniu kampanii i szkoleń uświadamiających oraz jest zaangażowany w problemy z nękaniem, wzmacnianie kultury bezpieczeństwa i zapobiegania wśród nich nasi pracownicy. Obecnie Komisja składa się z 10 członków, 30% kobiet, co wzmacnia nasze zaangażowanie w różnorodność i włączenie.",
+        "imageAlt": "Obraz Office T2M"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Rządzenie",
+        "title": "Międzynarodowe certyfikaty i standardy",
+        "iconAlt": "Ikona dotyczące zarządzania tematem",
+        "paragraph": "Oprócz komitetów T2M jest zgodny z międzynarodowymi standardami uczciwości i etyki biznesowej."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "Mamy certyfikaty ISO 37001: 2017, które ustanawiają i wzmacnia system zarządzania anty -suprore i promuje kulturę przejrzystości; oraz ISO 37301: 2021, który określa standardy systemów zgodności, zapewniając zgodność z obowiązującymi przepisami i przepisami.",
+          "Te certyfikaty są odzwierciedleniem naszego zaangażowania w etyczne, przejrzyste i odpowiedzialne praktyki biznesowe. Inicjatywy te pokazują zaangażowanie T2M w utrzymanie bezpiecznego, etycznego i zgodnie z najlepszymi praktykami na rynku."
+        ],
+        "imageAlt": "Obraz Office T2M"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Rządzenie",
+        "title": "Kanały wypowiedzi",
+        "iconAlt": "Ikona dotyczące zarządzania tematem"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2M oferuje kanał skarg bezpośrednio powiązanych z Komitetem ds. Etyki, który otrzymuje i analizuje wszystkie wysłane skargi, a także nadzorowanie wdrażania, monitorowania i integralności programu zgodności firmy.",
+          "Skargi mogą być anonimowe poprzez łatwo dostępną formę, zapewniając poufność i bezpieczeństwo skarżącym.",
+          "Oprócz tego kanału oferujemy również kanał reklamacyjny specyficzny dla CIPA, skierowany do komunikacji przypadków nękania i innych incydentów związanych z bezpieczeństwem i dobrostanem w miejscu pracy.",
+          "Wszystkie udostępnione dane osobowe są traktowane z ścisłą poufnością, zapewniając prywatność pracowników. Oba kanały mają na celu promowanie bezpiecznego, etycznego i przyjaznego środowiska dla wszystkich."
+        ],
+        "imageAlt": "Obraz Office T2M"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Rządzenie",
+        "title": "Rachunek wynagrodzenia",
+        "iconAlt": "Ikona dotyczące zarządzania tematem",
+        "paragraph": "T2M oferuje raport o przejrzystości i równości wynagrodzeń kobiet i mężczyzn, raport, który wzmacnia zaangażowanie w sprawiedliwość społeczną.",
+        "buttonText": "Raport"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Niniejszy raport przedstawia kryteria wynagrodzeń i działań w celu zapewnienia różnorodności, takich jak utworzenie stanowiska i płac lub planu kariery, polityki zatrudniania kobiet (czarny, niepełnosprawny, w sytuacjach przemocy, głowy rodziny, LGBTQIA+, rodzimych) oraz kobiet Zasady promocji na stanowiska zarządzania i zarządzania.",
+        "imageAlt": "Obraz Office T2M"
+      },
+      "metasTrad": {
+        "title": "Nasze cele w 2025",
+        "paragraph": "Kontynuujemy zaangażowanie w zrównoważony rozwój i włączenie, koncentrując się na ciągłym doskonaleniu praktyk ESG do 2025 r., Mając pozytywny wpływ na społeczeństwo i środowisko.",
+        "numberCards": [
+          {
+            "title": "Zduplikuj ilość posadzonych drzew"
+          },
+          {
+            "title": "Całkowite zmniejszenie emisji emisji dwutlenku węgla"
+          },
+          {
+            "title": "Rozszerzyć zużycie materiału pochodzącego z recyklingu"
+          },
+          {
+            "title": "Zwiększ zbiór żywności o 50%"
+          },
+          {
+            "title": "Zduplikuj liczbę wykonywanych działań społecznych"
+          },
+          {
+            "title": "Zwiększ liczbę wolontariuszy w działaniach społecznych o 30%"
+          },
+          {
+            "title": "Zdobądź certyfikaty ISO 27001 i ISO 27701"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "kontakt",
-    "title": "Skontaktuj się z nami",
-    "paragraph": "Aby się z nami skontaktować, wyślij wiadomość na nasz e-mail girlstempetropolis@gmail.com. Odpowiadamy jak najszybciej!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Kim jesteśmy?",
+      "paragraph": "Dzisiaj, po ponad 20 latach założenia T2M, jesteśmy dojrzałą firmą, z około 300 pracownikami, w ciągłym procesie poprawy technicznej, uznanej za jakość naszej pracy przez ważne firmy w naszym portfelu klientów.",
+      "buttonText": "Oficjalna strona internetowa firmy"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "Biuro T2M",
+      "title": "Bezpieczeństwo pracy w solidnej firmie, z ponad 20 latami na rynku",
+      "topTitle": "Pracuj z nami",
+      "paragraph": "T2M został początkowo założony w 2002 roku jako biuro testowania oprogramowania. Wkrótce stwierdziliśmy, że musimy przejść dalej i zweryfikowaliśmy wszystkie etapy rozwoju systemu i specjalizujemy się w jakości oprogramowania.",
+      "buttonText": "info@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Niezwykłe i dostępne doświadczenia dla wszystkich.",
+      "paragraph": "T2M - test na rynku Ltda. Jest to brazylijska firma, z ponad 20 -letnią istnieniem, specjalizującą się w zapewnianiu doskonałości w tworzeniu oprogramowania, poprzez ścisłe testy i szczegółowe obserwacje wszystkich innych etapów budowania projektu. Niedawno rozszerzyliśmy nasze usługi, dodając prywatność i bezpieczeństwo danych, dostępność cyfrową i zwinność biznesową za pośrednictwem uznanych partnerów w tych segmentach."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Jak nasze usługi doskonałości mogą pomóc w zwiększeniu Twojej firmy.",
+      "paragraph": "Dowiedz się, w jaki sposób możemy znacznie poszerzyć skuteczność, jakość i bezpieczeństwo Twojej firmy i usług, przynosząc wyższe wyniki.",
+      "icons": [
+        {
+          "title": "Jakość oprogramowania",
+          "paragraph": "Nasze rozwiązania dotyczące jakości oprogramowania optymalizują wszystkie etapy rozwoju, zapewniając wydajność, niezawodność i zadowolenie naszych klientów."
+        },
+        {
+          "title": "Prywatność i bezpieczeństwo",
+          "paragraph": "Naszym celem jest przezwyciężenie wyzwań związanych z bezpieczeństwem informacji poprzez oferowanie rozwiązań konsultacyjnych w celu zaspokojenia konkretnych potrzeb każdego klienta."
+        },
+        {
+          "title": "Dostępność cyfrowa",
+          "paragraph": "W T2M szukamy włączenia cyfrowego, promując dostępność i innowacje, aby zapewnić bardziej integracyjne i dostępne cyfrowe środowisko."
+        },
+        {
+          "title": "Zwinność biznesowa",
+          "paragraph": "Pomagamy firmom szybko dostosować się do zmian rynkowych, wykorzystując możliwości i poprawia zwinność organizacyjną."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Inicjatywy",
+      "title": "Nasze inicjatywy i zobowiązania",
+      "paragraph": "W T2M nasze inicjatywy i zobowiązania opierają się na ciągłym poszukiwaniu doskonałości i pozytywnemu wpływowi we wszystkich obszarach, w których działamy. Jesteśmy zaangażowani w promowanie jakości życia naszych pracowników, zachęcanie do innowacji i zapewnienie włączenia cyfrowego do naszych rozwiązań."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Jakość życia i dobre samopoczucie",
+      "paragraph": "T2M utrzymuje zaangażowanie w dobro swoich pracowników i rodzin, oferując zdrowe i zrównoważone środowisko pracy. Ciągle staramy się poprawić jakość życia w codziennym życiu naszych profesjonalistów, promując opcje świadczeń, które spełniają różne potrzeby, takie jak elastyczność czasu, wsparcie zdrowia psychicznego i programy jakości życia.",
+      "imageAlt": "Kobieta z czerwonym płaszczem w naturze"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Rozwój zawodowy i innowacje",
+      "paragraph": "Inwestowaliśmy w ciągły rozwój naszego zespołu poprzez specjalistyczne programy szkoleniowe i szkoleniowe. Zachęcamy do innowacji w stosowaniu zwinnych metodologii i wykorzystaniu nowych technologii, zapewniając, że nasi profesjonaliści są zawsze w czołówce trendów rynkowych i przygotowani do oferowania innowacyjnych rozwiązań dla naszych klientów.",
+      "imageAlt": "Kobieta w okularach wirtualnej rzeczywistości"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Dostępność i włączenie",
+      "paragraph": "Jesteśmy zaangażowani w promowanie włączenia i dostępności cyfrowej we wszystkich naszych rozwiązaniach. T2M przyjmuje praktyki, które zapewniają, że nasze produkty i usługi są dostępne dla wszystkich, niezależnie od ich konkretnych potrzeb, takich jak wdrażanie technologii dostępności w aplikacjach i stronach internetowych, a także wspieranie integracyjnego środowiska pracy, które szanuje i ceni różnorodność.",
+      "imageAlt": "Wojsko na wózku inwalidzkim wraz z rodziną"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 filary",
+      "title": "Nasze strategiczne filary",
+      "paragraph": "Esencja T2M opiera się na jasnym poglądu, solidnych wartościach i inspirującej misji. Te filary prowadzą wszystkie nasze działania, kierując naszym zaangażowaniem w doskonałość, innowacje i włączenie. Dowiedz się poniżej podstaw, które określają, kim jesteśmy i jak działamy."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Pierwszy filar",
+          "title": "Wizja",
+          "paragraph": "Być krajowym i międzynarodowym odniesieniem do jakości oprogramowania, dostępności i bezpieczeństwa informacji, promowanie innowacji technologicznych i przyczyniając się do sukcesu działalności naszych klientów poprzez niezależne rozwiązania technologiczne i metodologii."
+        },
+        {
+          "topTitle": "Drugi Pilar",
+          "title": "Misja",
+          "paragraph": "Upewnij się, że produkty naszych klientów spełniają najwyższe standardy jakości, niezawodność, dostępność i użyteczność, zawsze szanując konkretne terminy i potrzeby każdej firmy, a także stale szkolenie specjalistów w celu przekształcenia rynku technologii."
+        },
+        {
+          "topTitle": "Trzeci filar",
+          "title": "Wartości",
+          "paragraph": "W T2M zobowiązujemy się do doskonałości, dostarczaniu wysokiej jakości usług wspieranych przez wiedzę techniczną i konsolidowane doświadczenie. Cenimy innowacje, wykorzystując zwinne metodologie i najnowocześniejsze technologie, aby przekształcić wyzwania w możliwości. Pracujemy z etyką i zwolnieniem, zapewniając bezstronne decyzje, które priorytetują najlepszy interes naszych klientów. Ponadto promujemy włączenie i zrównoważony rozwój poprzez szkolenie zawodowe, dostępność cyfrową i praktyki, które napędzają rozwój ludzki i technologiczny. Nasze zobowiązanie koncentruje się na wynikach, w poszanowaniu terminów, niezawodności i użyteczności, zawsze dostosowanie się do potrzeb naszych partnerów."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Znaczenie testów jakości outsourcingu oprogramowania",
+      "paragraph": "Testy jakości oprogramowania outsourcingu są niezbędne w systemach krytycznych, takich jak bankowość, kontrola powietrza i szpitala, które wymagają wysokiej dokładności i bezpieczeństwa.",
+      "numberCards": [
+        {
+          "title": "Dostęp do ekspertów",
+          "paragraph": "Specjalistyczne firmy oferują wykwalifikowanych specjalistów, zapewniając głębsze testy i wykorzystanie najnowocześniejszych praktyk w celu zapewnienia jakości oprogramowania."
+        },
+        {
+          "title": "Skup bez podstawowej firmy",
+          "paragraph": "Dzięki outsourcingowi zespół wewnętrzny może skupić się na opracowywaniu nowych funkcji, poprawie wydajności i zwiększeniu rozwoju biznesu."
+        },
+        {
+          "title": "Redukcja kosztów i czasu",
+          "paragraph": "Unikanie tworzenia wewnętrznych zespołów testowych zmniejsza koszty stałe i pozwala zoptymalizować inwestycje zgodnie z popytem, ​​przyspieszając procesy testowe."
+        },
+        {
+          "title": "Skalowalność i elastyczność",
+          "paragraph": "Firmy outsourcingowe mogą dostosować pojemność testową zgodnie z wymaganiami, obsługując szczyty i dostosowując skalę zgodnie z uruchomieniem nowych produktów."
+        },
+        {
+          "title": "Bezstronność i wizja zewnętrzna",
+          "paragraph": "Zespół zewnętrzny wprowadza bezstronny widok produktu, pomagając zidentyfikować wady, których zespół wewnętrzny może nie zdawać sobie sprawy, poprawiając ogólną jakość."
+        },
+        {
+          "title": "Dostęp do zaawansowanych narzędzi i technologii",
+          "paragraph": "Specjalistyczne firmy mają dostęp do najnowocześniejszych narzędzi do automatyzacji, testów obciążenia i innych praktyk, unikając wysokich wewnętrznych kosztów wdrażania."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Fala"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "Propozycja wartości",
+      "paragraph": "Uważamy, że dostarczając solidne i spersonalizowane rozwiązania techniczne, możemy nie tylko zaspokoić bezpośrednie potrzeby naszych klientów, ale także przyczyniać się do zrównoważonego rozwoju i ciągłych innowacji w ich działalności.",
+      "buttonText": "Nasz blog"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Rozwiązania jakościowe dla sukcesu",
+      "paragraph": "W T2M jesteśmy zaangażowani w dostarczanie wysokiej jakości rozwiązań technologicznych, które zwiększają sukces naszych klientów. Oferujemy specjalistyczne usługi w zakresie oprogramowania, prywatności i bezpieczeństwa, dostępności cyfrowej i zwinności biznesowej, zawsze koncentrując się na dostarczaniu konkretnych wyników. Wybraliśmy najnowocześniejsze metodologie i technologie, aby przekształcić wyzwania w możliwości, zapewniając, że nasi klienci mogą zaufać naszym procesom i zapewnić wyniki we właściwym czasie.",
+      "imageAlt": "Pomysł"
+    },
+    "inovacaoTrad": {
+      "title": "Innowacje i zrównoważony rozwój",
+      "paragraph": "Nasze zaangażowanie w innowacje i zrównoważony rozwój znajduje odzwierciedlenie w ciągłej pracy z naszymi partnerami i dostawcami, zapewniając, że wszystkie procesy są wykonywane z najwyższymi standardami jakości i bezpieczeństwa. Ponadto nasze rozwiązania są dostosowywane do konkretnych potrzeb każdego klienta, dostosowując się do jego strategicznych celów i oferując korzyści konkurencyjne na rynku.",
+      "imageAlt": "Zrównoważony rozwój"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Odpowiedzialne i integracyjne praktyki",
+      "paragraph": "W T2M jesteśmy zaangażowani w dostarczanie wysokiej jakości rozwiązań technologicznych, które zwiększają sukces naszych klientów. Oferujemy specjalistyczne usługi w zakresie oprogramowania, prywatności i bezpieczeństwa, dostępności cyfrowej i zwinności biznesowej, zawsze koncentrując się na dostarczaniu konkretnych wyników. Wybraliśmy najnowocześniejsze metodologie i technologie, aby przekształcić wyzwania w możliwości, zapewniając, że nasi klienci mogą zaufać naszym procesom i zapewnić wyniki we właściwym czasie.",
+      "imageAlt": "Wózek inwalidzki"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Przejrzystość i równość społeczna",
+      "paragraph": "Zgodnie z zasadami Ministerstwa Pracy informujemy, że dostępny na naszej stronie internetowej raport przejrzystości i równości wynagrodzeń kobiet i mężczyzn odnoszący się do drugiego semestru 2024.",
+      "buttonText": "Raport"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Nasz zespół",
+      "paragraph": "Sukces naszych projektów wynika z wiedzy specjalistycznej i poświęcenia naszego zespołu. Utworzony przez wysoko wyszkolonych profesjonalistów i pasjonujący się tym, co robią, nasz zespół jest zawsze gotowy stawić czoła nowym wyzwaniom, dostarczać innowacyjne rozwiązania i współpracować z naszymi klientami, aby osiągnąć wyjątkowe wyniki.",
+      "buttonText": "Chcę być częścią zespołu"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Podział według kategorii",
+      "paragraph": "Rozszerzanie skuteczności, jakości i bezpieczeństwa Twojej firmy i usług, przynosząc wyższe wyniki.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Jakość oprogramowania",
+          "paragraph": "Nasze rozwiązania dotyczące jakości oprogramowania optymalizują wszystkie etapy rozwoju, zapewniając wydajność, niezawodność i satysfakcję naszych klientów."
+        },
+        {
+          "id": 2,
+          "title": "Bezpieczeństwo danych",
+          "paragraph": "Nasz zespół ekspertów przekracza wyzwania związane z bezpieczeństwem informacji, zapewniając ochronę i poufność poufnych danych."
+        },
+        {
+          "id": 3,
+          "title": "Dostępność cyfrowa",
+          "paragraph": "Dzięki naszej wiedzy na temat dostępności cyfrowej gwarantujemy, że każdy może uzyskać dostęp do swoich produktów cyfrowych i wchodzić w interakcje."
+        },
+        {
+          "id": 4,
+          "title": "Zwinność biznesowa",
+          "paragraph": "Nasza grupa Agility Business koncentruje się na pomocy firmom w szybkim dostosowaniu się do zmian rynkowych i optymalizacji ich wyników."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Zaangażowanie w różnorodność i włączenie",
+      "paragraph": "Niedawno zamknęliśmy partnerstwo z Biomob, koncentrując się na projektach społecznych i usługach związanych z różnorodnością i włączeniem, aby poprawić nasze zachowanie w kierunku tych tematów i ogólnie dostępności."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Środowisko niezwykle wartościowe",
+      "paragraph": "Naszym zobowiązaniem jest stworzenie środowiska, w którym wszyscy czują się cenione, niezależnie od jego pochodzenia, płci, pochodzenia etnicznego lub innej cechy osobistej.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Płeć",
+          "paragraph": "Gwarantujemy równe szanse, uznając siłę zrównoważonego zespołu płciowego.",
+          "imageAlt": "Ikona płci"
+        },
+        {
+          "id": 2,
+          "title": "Wyścig",
+          "paragraph": "Świętujemy wszystkie pochodzenie etniczne i pracujemy, aby nasz zespół był odzwierciedleniem wielu społeczeństwa.",
+          "imageAlt": "Ikona wyścigu"
+        },
+        {
+          "id": 3,
+          "title": "Wiek",
+          "paragraph": "Szanujemy mądrość najbardziej doświadczonych i energii młodszych, rozumiejąc, że każdy ma cenny wkład.",
+          "imageAlt": "ikona"
+        },
+        {
+          "id": 5,
+          "title": "Różnorodność funkcjonalna",
+          "paragraph": "Oferujemy dostępne i integracyjne środowisko pracy, uznając umiejętności i talenty osób niepełnosprawnych.",
+          "imageAlt": "Ikona różnorodności funkcjonalnej"
+        },
+        {
+          "id": 6,
+          "title": "Dostępność",
+          "paragraph": "Zarówno nasze biura, jak i nasza strona są dostępne dla osób z ograniczeniami wizualnymi, słuchowymi, fizycznymi i poznawczymi.",
+          "imageAlt": "Ikona dostępności"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Różnorodność płci w naszym zespole",
+        "imageAlt": "Wykres różnorodności płci w naszym zespole"
+      },
+      "secondImage": {
+        "title": "Różnorodność płci w naszym zespole",
+        "imageAlt": "Wykres dystrybucji według grupy wiekowej"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Nasza propozycja wartości dla pracownika",
+      "paragraph": "W naszej firmie uważamy, że sukces jest bezpośrednio powiązany z szacunkiem, etyką i włączeniem we wszystkich aspektach środowiska pracy."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Kultura szacunku, etyki i włączenia",
+      "paragraph": "Promujemy kulturę przejrzystości i sprawiedliwości, w której wszyscy pracownicy mają takie same możliwości wzrostu i uznania. Nasze zaangażowanie w różnorodność i włączenie znajduje odzwierciedlenie w praktykach, które gwarantują bezpieczną i pełną szacunku przestrzeń, w której każdy może wyrazić siebie i przyczyniać się do maksymalnego potencjału.",
+      "imageAlt": "Kobieta z czerwonym płaszczem w naturze"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Dostępność i włączenie",
+      "paragraph": "Ponadto oferujemy szereg korzyści, które mają na celu dobre samopoczucie i jakość życia naszych pracowników, takich jak opieka medyczna i dentystyczna, różne pomoce (domowe, jedzenie, posiłek i transport), ubezpieczenie na życie, pełne i Zaplanuj karierę.",
+      "imageAlt": "Kobieta w okularach wirtualnej rzeczywistości"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Odmiana",
+      "title": "Prawa człowieka i uczciwe praktyki pracy",
+      "paragraph": "Jesteśmy zaangażowani w tworzenie integracyjnych środowisk pracy, w których każdy ma takie same możliwości osiągnięcia pełnego potencjału. Uważamy, że promocja praw człowieka i budowa pełnych szacunku przestrzeni są niezbędne do zachowania integralności naszej marki i naszego ciągłego sukcesu."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Zaangażowanie w prawa człowieka i standardy międzynarodowe",
+      "paragraph": "Solidne zobowiązanie do poszanowania praw człowieka, dostosowanie naszych praktyk z zasadami ustanowionymi przez powszechną deklarację praw człowieka i normy uznane na całym świecie. Nasze wartości oparte są na zasadach ONZ na temat firm i praw człowieka, a także na Międzynarodowej Karcie Praw Człowieka i Deklaracji Międzynarodowej Organizacji Pracy (MOP) w sprawie podstawowych praw w pracy. Wytyczne te są włączone do naszych przepisów dotyczących postępowania biznesowego, które mają zastosowanie do wszystkich pracowników, dostawców i partnerów T2M, zapewniając integracyjne, pełne szacunku i bezpieczne środowisko pracy."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Gwarancja bezpiecznego i pełnego szacunku środowiska pracy",
+      "paragraph": "Solidne zobowiązanie do poszanowania praw człowieka, dostosowanie naszych praktyk z zasadami ustanowionymi przez powszechną deklarację praw człowieka i normy uznane na całym świecie. Nasze wartości oparte są na zasadach ONZ na temat firm i praw człowieka, a także na Międzynarodowej Karcie Praw Człowieka i Deklaracji Międzynarodowej Organizacji Pracy (MOP) w sprawie podstawowych praw w pracy. Wytyczne te są włączone do naszych przepisów dotyczących postępowania biznesowego, które mają zastosowanie do wszystkich pracowników, dostawców i partnerów T2M, zapewniając integracyjne, pełne szacunku i bezpieczne środowisko pracy."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Nasze pozycjonowanie",
+      "title": "Różnorodność i włączenie",
+      "paragraph": "Zaangażowanie w stworzenie środowiska integracyjnego, w którym różnorodność jest istotną wartością. Wierzymy, że połączenie różnych perspektyw, doświadczeń i talentów wzmacnia naszą kulturę i doprowadza nas do osiągnięcia nowych horyzontów."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "Różnorodność płci",
+      "paragraph": "W T2M uważamy, że równość płci jest kluczowym czynnikiem sukcesu i innowacji. Pracujemy nad stworzeniem środowiska, w którym mężczyźni, kobiety i osoby nie -binarne mają w pełni rozpoznawane głosy i ich talenty. Wdrażamy inicjatywy kapitałowe, oferując dla wszystkich takie same możliwości rozwoju i wzrostu, niezależnie od ich płci. Dla nas zrównoważone i sprawiedliwe środowisko jest podstawą kreatywnych rozwiązań i budowania bardziej integracyjnej przyszłości."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Różnorodność seksualna",
+      "paragraph": "Szacunek dla różnorodności seksualnej jest jednym z podstaw naszej kultury w T2M. Z dumą promujemy przyjazne i bezpieczne środowisko, aby pracownicy LGBTQIA+ mogli wyrazić swoją autentyczność tożsamości. Bardziej niż zwalczanie uprzedzeń, świętujemy indywidualność i zachęcamy do praktyk, które zamieniają włączenie w strategiczny filar. Wierzymy, że ceniąc różne sposoby kochania i bycia, wzmacniamy naszą zdolność do współpracy i wprowadzania innowacji jako zespół."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Różnorodność kulturowa",
+      "paragraph": "W T2M przyjmujemy bogactwo kulturowe i historyczne, jakie różnorodność rasowa wnosi do naszej firmy. Stajemy w obliczu wielu ras i grup etnicznych jako okazja do nauki i ewolucji. Dzięki solidnym polityce przeciwko rasizmowi i proaktywnym działaniom w celu zapewnienia równych szans, pracujemy nad budowaniem środowiska, w którym każda osoba jest ceniona na to, co to jest, przyczyniając się do wyjątkowej perspektywy, które czyni nas silniejszymi jako organizacja."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Różnorodność rasowa",
+      "paragraph": "Różnorodność rasowa w T2M jest postrzegana jako bogactwo, które wzmacnia nasze środowisko pracy i rozszerza nasze perspektywy. Jesteśmy zaangażowani w promowanie środowiska, które szanuje, przyjmuje i ceni wszystkie rasy i grupy etniczne, uznając znaczenie różnych doświadczeń życiowych dla rozwoju kreatywnych i skutecznych rozwiązań. Mamy jasne polityki wobec jakiejkolwiek formy rasizmu i pracujemy nad tym, aby wszyscy pracownicy, niezależnie od ich pochodzenia rasowego, mieli takie same możliwości rozwoju, szanowani i cenieni ich wyjątkowy wkład w firmę."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Różnorodność osób niepełnosprawnych",
+      "paragraph": "Włączenie osób niepełnosprawnych jest czymś więcej niż priorytetem dla T2M; Jest to zobowiązanie do sprawiedliwości i dostępności. Dostosowujemy nasze przestrzenie i procesy, aby zapewnić, że wszyscy nasi pracownicy mogą działać z autonomią i godnością. Ponadto promujemy świadomość wewnętrzną, aby stworzyć naprawdę integracyjne środowisko, w którym umiejętności każdej osoby są cenione i gdzie bariery zamieniają się w mosty dla wspólnego sukcesu."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pilar",
+      "title": "Zdrowie i dobre samopoczucie",
+      "paragraph": "Jeśli cenisz miejsce, w którym twoje samopoczucie jest priorytetem, dowiedz się, jak dbamy o nasz zespół, aby było to wspierane i zdrowe w każdym aspekcie życia."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Zdrowie i dobre samopoczucie",
+      "paragraph": "W T2M zdajemy sobie sprawę, że zdrowie i dobre samopoczucie naszych pracowników są filarami zrównoważonego rozwoju firmy i indywidualnego sukcesu. Promujemy inicjatywy zachęcające do integralnej opieki, w tym programy zdrowia fizycznego i psychicznego, opiekę medyczną i dentystyczną, a także wsparcie psychologiczne w stawianiu czoła codziennym wyzwaniom. Tworzymy środowisko, które priorytetowo traktuje równowagę między życiem zawodowym i osobistym, zapewniając, że każdy pracownik ma zasoby, aby kultywować zdrowe nawyki i osiągnąć swoje cele przy jakości życia."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Szkolenie społeczności",
+      "paragraph": "Firma opracowuje inicjatywy, które wykraczają poza biznes, starając się generować korzyści społeczne i środowiskowe dostosowane do ich wartości.",
+      "buttonText": "Nasz blog"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Rezydencja",
+      "title": "Sprzyjające i szkoleniowe możliwości dla regionu",
+      "paragraph": "T2M jest jednym z głównych sponsorów programu Residence Software Software Serratec, którego celem jest umożliwienie młodych ludzi podatnych na zagrożenia ekonomiczne. Ten program oferuje szkolenia techniczne w zakresie rozwoju oprogramowania i przygotowuje uczestników do wejścia na rynek pracy w sektorze wysokiego popytu. Dzięki temu T2M wzmacnia swoje zaangażowanie w odpowiedzialność społeczną i rozwój lokalnych talentów, promując bardziej integracyjną i zrównoważoną gospodarkę.",
+      "imageAlt": "Biuro T2M",
+      "buttonText": "Chcę zasubskrybować"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Wyniki",
+      "title": "Nasi partnerzy",
+      "paragraph": "Nasza sieć pracowników, którzy napędzają i kształtuje sukces na każdym kroku"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Skalowane zwinne",
+          "paragraph": "Scaled Agile, Inc. jest uznawany na całym świecie jako twórca Scaled Agile Framework® (Safe), wiodącego podejścia do sprawności biznesowej.",
+          "imageAlt": "Logo DA skalowane zwinne"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Przyjdź być częścią jednego z największych centrów technologicznych w Brazylii! Usługi i świadczenia dla Twojej firmy lub startup rozpoczynają się od właściwej stopy!",
+          "imageAlt": "Logo do serratec"
+        },
+        {
+          "id": 3,
+          "title": "IBM",
+          "paragraph": "Rozwiązania wdrożenia kompletnego i zautomatyzowanego procesu tworzenia systemów.",
+          "imageAlt": "Logo IBM"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft jest liderem BigTech w zakresie przetwarzania w chmurze, platformie energetycznej i sztucznej inteligencji.",
+          "imageAlt": "Logo z Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Delphi",
+          "paragraph": "Rozwiązania narzędzia wirtualizacji danych i roztwory maski danych.",
+          "imageAlt": "Delphi wkrótce"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Dostępność i włączenie to nasza misja. Tworzymy rozwiązania cyfrowe, aby przyjmować bardziej harmonijne życie społeczne, zapewniając jakość życia i pełne uczestnictwo w społeczeństwie dla tych, którzy widzą, że się z niego pominięci.",
+          "imageAlt": "Logo biomobu"
+        },
+        {
+          "id": 7,
+          "title": "Automatyzacja w dowolnym miejscu",
+          "paragraph": "Automatyzacja w dowolnym miejscu ma na celu wydanie ludzi z trywialnych i powtarzających się zadań, aby spędzić więcej czasu na wykorzystaniu intelektu i kreatywności w celu rozwiązywania zaawansowanych wyzwań biznesowych i wykonywania pracy wymagającej określonej wiedzy.",
+          "imageAlt": "Logo DA Automation w dowolnym miejscu"
+        },
+        {
+          "id": 8,
+          "title": "Vmedu",
+          "paragraph": "VMEDU jest wiodącą firmą w branży certyfikacji i szkoleń zawodowych i zapewniła już szkolenie ponad 500 000 studentów z ponad 3500 firm w ponad 150 krajach z wskaźnikiem sukcesu 98,7% dzięki globalnej sieci ponad 1100 dostawców szkoleń.",
+          "imageAlt": "Logo vmedu"
+        },
+        {
+          "id": 9,
+          "title": "Przyszły",
+          "paragraph": "Uznani na brazylijskim rynku bezpieczeństwa informacji, mamy solidną bazę klientów, dystrybuowaną w różnych rozmiarach i segmentach, służących od dużych firm publicznych i prywatnych do średnich firm.",
+          "imageAlt": "Przyszłe logo"
+        }
+      ],
+      "type": "centrum"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Wiadomość od naszego CEO",
+      "paragraph": "W T2M wzmacniamy nasze zaangażowanie i dostosowanie do programów SDG i ESG.",
+      "buttonText": "Guilherme da Motta Alves - Linkedin"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Zobowiązana do zrównoważonego rozwoju i odpowiedzialności biznesowej, nasza organizacja priorytetuje integrację zasad ESG we wszystkich naszych działaniach. Uznajemy znaczenie:",
+      "numberCards": [
+        {
+          "title": "Chroń środowisko (środowisko)",
+          "paragraph": "Zmniejszając nasz ślad węglowy, efektywne wykorzystanie zasobów naturalnych i promocja zrównoważonych praktyk."
+        },
+        {
+          "title": "Promuj uczciwe i sprawiedliwe stosunki społeczne (społeczne)",
+          "paragraph": "Szanowanie praw człowieka, różnorodności, włączenia i dobrego samopoczucia naszych pracowników, klientów i społeczności."
+        },
+        {
+          "title": "Praktykuj przejrzyste i etyczne ładowanie korporacyjne (rządy)",
+          "paragraph": "Z odpowiedzialnym przywództwem, skuteczne zarządzanie ryzykiem i zgodność z przepisami i przepisami. Naszą wizją jest stworzenie zrównoważonej wartości dla wszystkich zainteresowanych stron, przyczyniając się do bardziej dostatniej i odpornej przyszłości."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Niniejszy raport o wpływie społecznym i zrównoważonego rozwoju 2024 r. Odzwierciedla nasze zaangażowanie w atrakcyjność i odpowiedzialność społeczną w T2M. Służy jako podstawowy kanał do przekazywania naszego zrównoważonego rozwoju i postępów, dostosowywania naszych praktyk do celów zrównoważonego rozwoju Dooni i zasad ESG. Niniejszy raport nie tylko podkreśla nasze wysiłki w zakresie szkolenia, różnorodności etycznej egovernance, ale także pozwala nam wzmocnić powiązania z naszymi zainteresowanymi stronami i kierować naszymi skutecznymi decyzjami. Dzieląc się naszymi wynikami i wyzwaniami, potwierdziliśmy nasze zaangażowanie w pozytywny wpływ eduro.",
+      "CEO": "CEO DA T2M"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Tematy witryny",
+      "items": {
+        "sobre": "NA",
+        "quemSomos": "Kim jesteśmy",
+        "propostaDeValor": "Propozycja wartości",
+        "nossaEquipe": "Nasz zespół",
+        "comunidade": "Wspólnota",
+        "esg": "Esg"
+      }
+    },
+    "socialLinks": {
+      "title": "Nasze sieci społecznościowe",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "youtube": "YouTube"
+    },
+    "officialSite": {
+      "title": "Odwiedź naszą oficjalną stronę internetową",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2M 2023 | Wszelkie prawa zastrzeżone",
+      "logoAlt": "Logo T2M"
+    }
   }
 }

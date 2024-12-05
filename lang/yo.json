@@ -26,7 +26,13 @@
     "empregabilidade": "Gba oojọ",
     "empregabilidadeLabel": "Lọ si iboju oojọ",
     "papoDiverso": "Oriṣiriṣi iwiregbe",
-    "papoDiversoLabel": "Lọ si oju opo wẹẹbu Oniruuru"
+    "papoDiversoLabel": "Lọ si oju opo wẹẹbu Oniruuru",
+    "leitorAudio": {
+      "carregando": "Gbigbe awọn obe ...",
+      "semVozes": "Ko si awọn ohun ti o wa fun ede ti o yan",
+      "isReading": "Tẹ diẹ ninu ọrọ lati bẹrẹ kika",
+      "isNotReading": "Bẹrẹ kika"
+    }
   },
   "ObraPage": {
     "buttons": {
@@ -74,121 +80,898 @@
     "Yoruba": "Yoruba",
     "Sindhi": "Poinhi"
   },
-  "MainBanner": {
-    "topTitle": "Ti awọn onimo ijinlẹ iwaju",
-    "title": "Awọn ọmọbirin yio",
-    "paragraph": "Awọn ọmọbirin ti o ni ipa ti o wa, tun wa ni ile-iwe, koju awọn italaya fun adehun igbeyawo wọn ninu awọn sá",
-    "buttonText": "Kan"
-  },
-  "OQueEBanner": {
-    "topTitle": "Kini o?",
-    "title": "Awọn ọmọbirin Stem Petóópolis Tec sub",
-    "paragraph": "Ise agbese ti n wa lati dinku aidogba abo ati gbooro igbe ikopa obinrin ni imọ-jinlẹ, imọ-ẹrọ, imọ-ẹrọ ati mathimatiki (yio). Ifọwọsi yii dojukọ imọ-ẹrọ imọ-ẹrọ ati igbega ti ibajẹ obinrin ni Ilu Petṣópolis, ni Rio de Janeioro."
-  },
-  "ObjetivoBanner": {
-    "title": "Ise agbese",
-    "paragraph": "Ise agbese naa n ni iyanju imọ-ẹrọ laarin awọn ọmọ ile-iwe ati awọn ẹkọ, igbelaruge aṣa ti o wa ni awọn imọ aṣa gangan.",
-    "altImage": "Awọn ọmọbirin yio"
-  },
-  "ComoBanner": "Ise agbese na nlo Syeed Street lati kọ siseto ni ere idaraya ati isọdọkan, kopopo awọn ariyanjiyan lori abo, awọn ẹtọ eniyan ati aidogba eniyan.",
-  "MetodologiaBanner": {
-    "title": "Motodogia",
-    "paragraph": "Ise agbese naa n ni iyanju imọ-ẹrọ laarin awọn ọmọ ile-iwe ati awọn ẹkọ, igbelaruge aṣa ti o wa ni awọn imọ aṣa gangan.",
-    "altImage": "Awọn ọmọbirin yio"
-  },
-  "IconWithTextBanner": {
-    "title": "Tani o ndagba?",
-    "topTitle": "Awọn oṣiṣẹ wa",
-    "paragraph": "Ise agbese na ni a ṣe nipasẹ nẹtiwọọki ti iwadii, imọ-jinlẹ ati awọn ile-iṣẹ ti ẹkọ, papọ pẹlu awujọ ati awọn ajọ iṣowo. Kopa ninu ipilẹṣẹ yii:",
-    "iconCards": [
-      {
-        "title": "Lncc",
-        "description": "Ile-iṣẹ ilu ti ti kariaye jẹ iwadi Brazil kan ati imọ-ẹrọ iwadii imọ-ẹrọ, amọja ni iṣiro ni iṣiro ti imọ-jinlẹ, sopọ si iṣẹ-iranṣẹ ti imọ-jinlẹ, imọ-ẹrọ ati innodàsation."
+  "HomePage": {
+    "callBannerTrad": {
+      "title": "Iroyin igbeja awujọ",
+      "paragraph": "Ipade awujọ ati idagbasoke alagbero ti o ṣafihan awọn iṣe T2m ati awọn adehun si awujọ, ayika ati ijọba (ESG).",
+      "buttonText": "Ṣe igbasilẹ ijabọ ipa awujọ"
+    },
+    "mensagemCeoTrad": {
+      "imageAlt": "Guilherme Fọto, T2m CEO",
+      "title": "Adanwo imotara.",
+      "topTitle": "Ifiranṣẹ lati coo wa",
+      "paragraph": "Ijabọ awujọ 2024 yii ati ijabọ idagbasoke wa ti nfa ifaramọ wa si Ifipahan ati pe ojuse ni T2m. O ṣiṣẹ bi ikanni ti ipilẹ fun sisọ awọn iṣe ati awọn ilọsiwaju wa ni iduroṣinṣin ati ilọsiwaju wa ni idurosinsin, tito awọn iṣe wa si awọn ipinnu ti ko ni agbara ati awọn ilana ti ESG.",
+      "buttonText": "Ka ifiranṣẹ ile wa"
+    },
+    "sobreRelatorioTrad": {
+      "title": "Nipa ijabọ yii",
+      "paragraphs": [
+        "Ijabọ yii ti ikolu awujọ ati idagbasoke alagbero pe awọn iṣe T2m ati awọn adehun si awọn iṣe awujọ, ayika ati iṣakoso (ESG).",
+        "O ṣe afihan awọn akitiyan wa lati ṣẹda ipa rere lori agbegbe wa, ṣe igbelaruge agbegbe iṣẹ ati gbekuro itẹwe ayika wa dinku afẹsodi wa.",
+        "Nipasẹ pinpin awọn aṣeyọri wa ati awọn italaya, iṣiro yii jẹ ifarada wa si tito ati awọn ibi-afẹde idagbasoke alagbero (SDGs), bi itọsọna ti ilọsiwaju idagbasoke wa si ọjọ iwaju alagbero si."
+      ],
+      "imageAlt": "Fọto Das Odin si iyẹn"
+    },
+    "processoMaterialidadeTrad": {
+      "title": "Ilana lilo",
+      "paragraph": "A ṣetọju ibatan nigbagbogbo ati sihin si gbogbo awọn alabaṣepọ wa si awọn ajo ati awọn ifiyesi wọn ki o tumọ wọn si alaye iye ile-ije."
+    },
+    "partesInteressadasTrad": {
+      "title": "Steaketer",
+      "paragraph": "Alejopọ si awọn ifowosowopo pẹlu gbogbo awọn alabaṣiṣẹpọ lati ṣe igbega vationstants, ami ati awọn solusan ipa rere. A mu awọn ikanni ọrọ ati awọn ipilẹṣẹ ti o ṣe afihan ifaramọ si awọn iye ati awọn ete imọran wa.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Awọn oniwopo",
+          "paragraph": "Awọn eto ikẹkọ arin lẹhin iwadii ategun ipinle, awọn ipade titete awọn ipade ati awọn iṣẹ idanimiṣẹ oṣiṣẹ."
+        },
+        {
+          "id": 2,
+          "title": "Awọn onibara",
+          "paragraph": "Atẹle ati awọn ipade igbejade, atilẹyin igbẹhin lati yanju awọn ibeere ati mu awọn iṣẹ mu."
+        },
+        {
+          "id": 3,
+          "title": "Awọn alabaṣepọ ilana",
+          "paragraph": "Awọn adehun ifowosowopo fun awọn iṣẹ akanṣe, ikopa ni awọn iṣẹlẹ ọjù, awọn ikowe, bakanna bi awọn ipade igbakọọkan lati fun awọn ipade ilana ẹkọ lọpọlọpọ lati fun awọn ipade ilana lorrectore lati fun awọn ipade ilana lojiyari lati fun awọn ipade ilana logan lati mu awọn ipade ilana pupọ lati mu awọn ipade ilana loga."
+        },
+        {
+          "id": 4,
+          "title": "Agbegbe",
+          "paragraph": "Awọn ipilẹṣẹ ti awọn iṣẹ awujọ, ikopa ni awọn iṣẹlẹ agbegbe, atilẹyin fun awọn Ngos ati awọn iṣẹ-iṣẹ agbegbe, igbega ni ikolu rere ati alagbero ni awọn agbegbe eyiti a ṣe daradara."
+        },
+        {
+          "id": 5,
+          "title": "Ijọba ati ibamu",
+          "paragraph": "Titẹ-ọrọ ilana pẹlu ilana, aṣaju Romumu ati awọn ibaraenisọrọ atẹle pẹlu ijọba ati awọn nkan ilana ilana eka. ISO 37101 ati awọn iwe-ẹri ISO 37301, ati awọn iṣe egboogi-odo ti o muna ati ki o farahan si koodu ipọnju ti iwa."
+        },
+        {
+          "id": 6,
+          "title": "Oniruuru ati inifura",
+          "paragraph": "Igbega ti agbegbe sisun nipasẹ awọn ipilẹṣẹ ti aṣa iye, awujọ awujọ ati eniyan lokensity. Awọn imulo lati ṣe idiwọ awọn aye, ni iwuri fun ni iwuri ati rii daju ọwọ ifọwọra, kọ ile-iṣẹ alagbero ati ọwọn kan."
+        }
+      ]
+    },
+    "metodologiaTrad": {
+      "topTitle": "Ilana ẹkọ",
+      "title": "Bawo ni a ṣe ṣalaye akoonu ti ijabọ naa?",
+      "paragraph": "Ni ọdọ ọdun, a ṣe adaṣe ni ohun elo lati ni oye awọn irisi awọn aṣoju lori iṣakoso 'ti awujọ ati awọn ọran imọ-ọrọ diẹ sii si awọn anfani alagbero lati ṣe igbelaruge igbeyawo ati iwuri fun awọn iṣe ti o dara julọ."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Ayẹwo",
+          "title": "Ijinde lori awọn iṣe ati awọn eto imulo ti o ṣojuuṣe ni iyatọ ati ifisi akoko ti tẹlẹ.",
+          "paragraph": "Lakoko atunyẹwo, a ṣe iṣiro awọn iṣoro ti a ṣe ni ṣiṣẹda agbegbe agbegbe ati ninu adehun igbeyawo ti awọn ẹgbẹ awọn irawọ oriṣiriṣi. A pinnu lati pẹlu awọn akọle tuntun, bii 'iyatọ ninu awọn ẹya pupọ ninu awọn ilana ile-iṣẹ ati ilọsiwaju ti iraye si awọn ọja ati iṣẹ, si awọn iṣe ilaba ti o dara julọ pẹlu awọn aini lọwọlọwọ."
+        },
+        {
+          "topTitle": "Itu kawe",
+          "title": "Idapọ ti awọn imọran lojutu lori okun fun okunkan pẹlu okun, ati ilera ati awọn ọgbọn-ẹni daradara.",
+          "paragraph": "Lakoko ilana itupalẹ, awọn akọle pataki ni a tẹnumọ, bii pataki awọn ipolowo eto-ẹkọ ti o ni oye ati awọn iṣe alagbero ati pe o ni igbega ni ilera ati alafia ti gbogbo."
+        }
+      ]
+    },
+    "greenwashingDesenvolvimentoSustentavelTrad": {
+      "topTitle": "Awọn idagbasoke alawọ ewe x alagbero",
+      "title": "Otitọ lẹhin awọn iṣe iduro",
+      "paragraph": "Ọpọlọpọ awọn ile-iṣẹ Lo awọn iṣẹ alawọ ewe, fifi awọn ipilẹṣẹ ayika ipari ti ko ni irọrun laisi iyipada awọn ilana wọn ni otitọ, eyiti o jẹ ki itankalẹ ati awọn onibara diorisinfin ati awọn oludokoowo.",
+      "extraButtonBottom": {
+        "buttonText": "Jeki kika nkan lori oju opo wẹẹbu osise wa"
       },
-      {
-        "title": "Serratec",
-        "description": "Serratec jẹ ọgba-ẹrọ imọ-ẹrọ ti kii ṣe -PoroFit ni inu ti rio de Janeiro, ṣiṣe bi awọn ilu ti o iṣowo ati bo awọn ilu Patópolis, Nosa Friburgo ati Areal."
-      },
-      {
-        "title": "Faopopolis",
-        "description": "Irisi - Ile-ẹkọ giga ti Ẹjọ giga ti gbogbo eniyan ni ọna asopọ si Taeec, nfunni awọn iṣẹ giga ati giga ni awọn agbegbe pupọ."
-      },
-      {
-        "title": "Ceedet / rj ti o wa ti o wa fun ọsin",
-        "description": "Cefet / Rj Totópolis jẹ ile-iṣẹ eto-ẹkọ giga ti gbogbo eniyan ni ilu, funni ni ipo-iṣẹ ni oju-aye ati pe o jẹ ti eto Cefet / Rj."
-      },
-      {
-        "title": "Isunkan eniyan",
-        "description": "Ile-ẹkọ giga Fliminal kan (UFF) jẹ ile-ẹkọ giga ti gbogbo eniyan ti itọkasi orilẹ-ede, duro jade ni ọpọlọpọ awọn agbegbe ti imo."
-      },
-      {
-        "title": "Ufba",
-        "description": "Ile-ẹkọ giga Ile-ẹkọ giga ti Bahia (UFBA) jẹ ile-ẹkọ ti ile-iṣẹ giga ti gbogbo eniyan ti o da lori Salvador, sopọ si Ile-iṣẹ ti Ẹkọ, pẹlu Isakoso ati Idaduro Ofin."
-      },
-      {
-        "title": "Biomob",
-        "description": "Biomob ṣe pataki ni awọn solusan ipamọ ati awọn iṣẹ-ṣiṣe awujọ, dojukọ lori igbega si awujọ diẹ sii ati Egalitaritarion."
-      },
-      {
-        "title": "Quipotec",
-        "description": "Quipo Tech Asopọmọra, idagbasoke ati awọn iṣẹ itan ati awọn iṣẹ imotunda fun awọn ile-iṣẹ ati awọn ile-iṣẹ ijọba, ifojusi ni imotuntun ati ilọsiwaju imọ-ẹrọ."
-      },
-      {
-        "title": "Tj-rj",
-        "description": "Awọn Rio de Janeiro Ogbon ti Oṣoju (TJ-RJ) jẹ lodidi fun iṣakoso ti ododo ni ipinle, pẹlu aṣẹ lori gbogbo agbegbe agbegbe ti fumunsense."
-      },
-      {
-        "title": "Gbongan Ilu Pantópolis",
-        "description": "Gbanc Hall of Petóópolis ṣafihan ilu nla ti Rio de Janeioro, mu awọn eto ati awọn iṣẹ ati awọn iṣẹ gbogbo eniyan fun olugbe."
-      },
-      {
-        "title": "Seurtuu-rj",
-        "description": "Seuc-RJ jẹ lodidi fun ṣakoso iṣakoso awọn ilana eto ẹkọ ti ipinlẹ ti Rio de Janeiro, aridaju iraye si ẹkọ didara ni awọn ile-iwe gbogbogbo."
-      }
-    ]
-  },
-  "OqueSeEsperaBanner": {
-    "topTitle": "Ṣewadii",
-    "title": "Kini o ti ṣe yẹ ti ise agbese?",
-    "paragraph": "Ise agbese na n wa lati mu inu inu inu ati ti ara ẹni, ija-ija kuro ati ṣe alabapin si ikole ti awujọ Faler. O nireti lati ṣaro ati faagun ikopa obinrin ni yio, lakoko ti o dinku awọn ọlọ ati iyasoto.",
-    "altImage": {
-      "text": "",
-      "from": "auto",
-      "raw": "",
-      "to": "yo"
+      "numberCards": [
+        {
+          "title": "Agbara agbegbe gidi",
+          "paragraph": "Awọn ile-iṣẹ ṣe si idagbasoke alagbero si idagbasoke gidi ṣe awọn ayipada gidi, bii idinku awọn aarun eegun ati lilo ikolu idaniloju rere."
+        },
+        {
+          "title": "Iwe akoso ile",
+          "paragraph": "Lati yago fun alawọ ewe, o ṣe pataki fun awọn ile-iṣẹ lati gbejade awọn ijabọ ti o han nipa awọn iṣe alagbero wọn ati awọn ibi-afẹde ti o ni idaniloju."
+        },
+        {
+          "title": "Mailo agbara",
+          "paragraph": "Mimọ awọn onibara le ṣe idanimọ awọn iṣẹ ile ewe nipasẹ wiwa awọn adehun ti o ni imudaniloju, gẹgẹ bi lilo awọn ohun elo atunlo ati awọn ilana imukuro."
+        },
+        {
+          "title": "Awọn iwe-ẹri ati awọn awari",
+          "paragraph": "Gba awọn iwe-ẹri ti a mọ ati awọn ayẹwo ita n ṣe iranlọwọ fun ifaramọ awọn ile-iṣẹ ti o jẹrisi nipa fifunni igbẹkẹle si awọn alabara ati awọn oludokoowo."
+        },
+        {
+          "title": "Ọrọ-aje ipin",
+          "paragraph": "Aṣa-ọrọ ipin jẹ omiiran si awoṣe ibile ti 'rọ lẹhin lilo', awọn ile-iṣẹ iwuri lati tunro, tun bẹrẹ lati tun ọna alagbero ati aṣa alagbero."
+        },
+        {
+          "title": "Ipa ti iṣakoso",
+          "paragraph": "Ilana mu ipa pataki ni apapọ awọn ipinnu iṣowo fun iṣeduro ati awọn iṣẹ PDD, aridaju ipo iṣootọ ati ojuse."
+        }
+      ]
+    },
+    "sustentabilidadeTrad": {
+      "title": "Iduro ibinu",
+      "paragraph": "A ni ileri lati ṣe alabapin si idagbasoke alagbero nipasẹ iṣowo wa ati awọn iṣẹ wa ti npese fun awọn alabara wa, awọn olupese, awọn olutọsọna ati awujọ."
+    },
+    "movimentoRegenerativoTrad": {
+      "title": "Akoko gbingbin ronu",
+      "paragraph": "Nipa atilẹyin aṣa ati awọn iṣẹ gbingbin igi, bii ronu akole ti gbingbin, a fun ni protagomimu ti awọn agbegbe ati igbelaruge ikunsinu ti o jẹ. Pẹlu gbingbin ti awọn igi, ni afikun si aabo agbegbe, a ṣẹda ohun-ini gigun, ni idaniloju pe awọn ọrọ iwaju ti o pọ si ati ṣe itọju awọn iranti wọn ati iru ni ayika wọn.",
+      "numberCards": [
+        {
+          "title": "Ara ẹni",
+          "paragraph": "Ni ọdọọdun, lakoko akoko ojo (Oṣu Kẹwa si Oṣu Kẹta, ronu naa ṣe iwuri lati kopa ti awọn eniyan, ṣiṣẹda imọ-jinlẹ akọkọ."
+        },
+        {
+          "title": "Ni Oṣu kejila 2024",
+          "paragraph": "Ni Oṣu kejila 2024, T2M gbin awọn irugbin 100 ni Vale Das Archetical. Ibi-ọrọ yii jẹ apakan ti igbiyanju nigbagbogbo lati ṣe agbega imuse ti koriko abinibi ati gbigba awọn agbegbe ti ibajẹ."
+        },
+        {
+          "title": "Ireti fun 2025",
+          "paragraph": "Fun 2025, ipinnu naa ni lati di ilọpo meji ti awọn igi jakejado ilu, pẹlu atilẹyin gbogbo awọn oṣiṣẹ. Ibi-afẹde ni lati pada si awọn igbo abinibi ati awọn ẹya abinibi, pẹlu ikopa ti nṣiṣe lọwọ ti agbegbe ati awọn ipilẹṣẹ agbegbe."
+        }
+      ]
+    },
+    "nossasCampanhasTrad": {
+      "title": "Awọn ipolongo wa",
+      "paragraph": "Ni afikun lati wa awọn idanwo adaṣe ti didara julọ, T2m jẹ agberaga lati ṣẹda ati gbe awọn ipolongo tirẹ",
+      "numberCards": [
+        {
+          "title": "Ifarakan ori",
+          "paragraph": "Lati 2023, a ti gbe awọn ipolongo iṣọkan bi ikojọpọ ounje, awọn aṣọ tutu, awọn ọja awọn scygis ati awọn bọtini ṣiṣu paarọ fun awọn kẹkẹ kẹkẹ, awọn apo ile-iwe ati awọn apo ile-iwe."
+        },
+        {
+          "title": "Awọn iṣẹ rere",
+          "paragraph": "DBA - Itọju ti awọn ti o tọju jẹ iṣẹlẹ jẹ iṣẹlẹ fun awọn iya ati awọn olutọju, awọn ikowe ati awọn imọran dara julọ, ṣepọ ọjọ agbaye ti iṣe to dara (DBA) ronu."
+        },
+        {
+          "title": "Bioconecta",
+          "paragraph": "Bioconecta jẹ itẹ itẹwọgba ti o funni ni anfani iṣẹ iṣẹ akọkọ, dojukọ lori awọn iya iṣẹ akọkọ ati awọn eniyan ti o ni ailera nikan, igbega ni agbara ati iṣọkan ni ọja iṣẹ."
+        }
+      ]
     }
   },
-  "QuemParticipaBanner": {
-    "topTitle": "Apakan",
-    "title": "Tani o kopa?",
-    "paragraph": "Awọn ọmọ ile-iwe yoo ti yan lati ọdun kẹrin ati 9th ti ile-iwe alakọbẹrẹ II ati 1std ati awọn ọdun ti ile-iwe giga, ni atẹle pe o kere ju olukọ kan ti awọn ile-iwe ti o kopa kọọkan. Awọn olutọju sikolashipu yoo kopa ninu awọn iṣẹ atẹle ati awọn ipinnu:",
-    "iconCards": [
-      {
-        "title": "Kọ ẹkọ lori siseto"
+  "ESGPage": {
+    "Ambiental": {
+      "callBannerTrad": {
+        "title": "Itoju Esg",
+        "paragraph": "Ijabọ yii ṣafihan awọn iṣe ti ayika, awujọ ijọba (ESG) ti iṣelọpọ ni ọdun to kọja, ṣe afihan bi awọn ipilẹṣẹ wọnyi ṣe deede pẹlu awọn ibi-itọju idagbasoke alagbero.",
+        "buttonText": "Bulọọgi wa"
       },
-      {
-        "title": "Idagbasoke ti awọn ere ẹkọ lori pẹpẹ hip"
+      "oportunidadesInclusivasTrad": {
+        "topTitle": "Ilana",
+        "title": "Idomọ wa",
+        "paragraph": "Ifaramo wa si ESG jẹ apakan aringbungbun ti ilana wa, idasi si idinku awọn ipa ayika ti awọn iṣe awujọ ati isọdọmọ. Ipa ọna wa lati ṣepọ SDG naa mu ṣiṣẹ igbese ti o ni agbara, ṣiṣe agbekalẹ iye fun gbogbo awọn alabaṣepọ.",
+        "buttonText": "Mo fẹ lati jẹ apakan",
+        "imageAlt": "Ọffisi T2m"
       },
-      {
-        "title": "Ilowosi ni ile-iṣẹ imọ-jinlẹ"
+      "gestaoResiduosTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Isakoso egbin ati yiyan ti awọn ohun elo alagbero",
+        "iconAlt": "Aami fun akọle ayika"
       },
-      {
-        "title": "Wiwa ni awọn iṣẹlẹ imọ-jinlẹ"
+      "gestaoResiduosTexto1Trad": {
+        "imageAlt": "Ọffisi T2m",
+        "paragraph": "Ifaramo wa si ESG jẹ apakan aringbungbun ti ilana wa, idasi si idinku awọn ipa ayika ti awọn iṣe awujọ ati isọdọmọ. Ipa ọna wa lati ṣepọ SDG naa mu ṣiṣẹ igbese ti o ni agbara, ṣiṣe agbekalẹ iye fun gbogbo awọn alabaṣepọ."
       },
-      {
-        "title": "Ikopa ninu awọn ikowe ati awọn apejọ"
+      "contratosAssinadosTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Awọn adehun fowo si fere",
+        "iconAlt": "Aami fun akọle ayika"
       },
-      {
-        "title": "Igbaradi ti awọn ijabọ agbedemeji ati ikẹhin"
+      "contratosAssinadosTexto1Trad": {
+        "paragraph": "Gẹgẹbi apakan ti ifaramo wa, T2m ti gba eto imulo tito lẹsẹsẹ iwe-aṣẹ ati awọn ibuwọlu foju ti awọn iwe adehun, fifa awọn iwulo fun titẹ iwe. Iyipo si awọn ile-iwe oni-nọmba kii ṣe ṣiṣan awọn ilana wa nikan ṣugbọn tun ṣe itọju awọn orisun adayeba, dinku ati agbara ati agbara. Iṣe yii ṣe alabapin taara si idinku idinku ti o lagbara ati lilo alagbero ti awọn orisun adayeba. Jakejado ọdun, iṣe yii ti yorisi idinku pataki ni idibajẹ iwe, gba ifaramọ T2m si ayika ati iṣakoso alagbero ati iṣakoso alagbero.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "utilizacaoNuvemTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Lilo awọsanma, idinku agbara ohun elo",
+        "iconAlt": "Aami fun akọle ayika"
+      },
+      "utilizacaoNuvemTexto2Trad": {
+        "paragraphs": [
+          "Niwọn igba ti ijira si Microsoft awọsanma, ile-iṣẹ wa ti ṣaṣeyọri idinku pataki ni awọn iyọ ilẹ Carbon, fun ifaramọ si awọn iṣe alagbero. Da lori data iṣiro, a yago fun itusilẹ ti 2.192 mis ti erogba, eyiti o duro idinku opin erogba, o ṣeun si lilo awọn irinṣẹ bii aworan ati paṣipaarọ ori ayelujara.",
+          "Lakoko yii, awọn itusilẹ ti o munadoko nikan ni awọn toonu 0.007 nikan, akawe si awọn iṣiro to iṣiro 2.468 tons ninu awọn oju iṣẹlẹ ibile. Ipele yii si awọn amayederun oni nọmba oni nọmba ti o munadoko sii ṣe afihan ipa rere ti awọn ipinnu awọsanma lori idotimọra ọwọn, ti o papọ imọ-ẹrọ imọ-ẹrọ pẹlu awọn ọrọ-ọrọ ẹrọ pẹlu."
+        ],
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "utilizacaoNuvemTexto1Trad": {
+        "paragraphs": [
+          "Ni T2m, lilo awọn solusan awọsanma Microsoft, gẹgẹ bi onederive, azure ati awọn ẹgbẹ, jẹ pataki lati dinku lilo agbara ati iwulo fun ohun elo ti ara tuntun.",
+          "Awọn irinṣẹ wọnyi dinku ibeere fun awọn olupin ti ara, eyiti o jẹ agbara pupọ ati nilo itọju. Pẹlu idi ti Microsoft lati lo agbara isọdọtun 100% lori awọn aami rẹ nipasẹ 2025, T2M ṣe alabapin si ọjọ iwaju alagbero.",
+          "Ni afikun, awọsanma nfunni iwọn, ṣiṣe, aabo ati wiwole data, tan imọlẹ ifaramọ T2m si awọn iṣe imọ-ẹrọ imotuntun ati awọn imọ-ẹrọ imotuntun."
+        ],
+        "imageAlt": "Ọffisi T2m"
+      },
+      "consumoConscienteTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Agbara omi mimọ",
+        "lineColor": "bg-var-ayika",
+        "iconAlt": "Aami fun akọle ayika"
+      },
+      "consumoConscienteTexto1Trad": {
+        "paragraph": "Agbara omi mimọ jẹ pataki ni T2m, ati pe a ti ṣe imulo awọn iṣe pupọ lati dinku egbin ti awọn orisun pataki yii. Ni afikun, a ṣe agbega awọn ipolongo ti inu, iwuri fun awọn oṣiṣẹ wa lati gba awọn iwalaaye lodidi fun lilo omi ni ile iṣẹ ati ni ile wọn. Iṣe yii ṣe ifọkansi lati dinku lilo omi ati ṣe alabapin si ifipamọ awọn orisun omi, ti o jọ ara rẹ pẹlu awọn ibi-afẹde idagbasoke alagbero (SDGS). Pẹlu awọn iṣe wọnyi, a wa lati dinku ipa ayika wa ati iwuri fun asa ti iduroṣinṣin laarin awọn oṣiṣẹ wa.",
+        "imageAlt": "Aworan ọfiisi T2m ni idojukọ lori lilo omi mimọ",
+        "iconAlt": "Aami Aṣoju Aṣoju ti Lilo Omi-Omi"
+      },
+      "estimuloReducaoTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Iwuri lati dinku lilo awọn ọkọ ti awọn ọkọ ayọkẹlẹ",
+        "iconAlt": "Aami fun akọle ayika"
+      },
+      "estimuloReducaoTexto1Trad": {
+        "paragraph": "T2M ṣe iwuri fun awọn oṣiṣẹ rẹ lati gba awọn iṣe iṣakojọpọ diẹ sii, dinku ijabọ co2 ati ipinfunni nipasẹ awọn ọkọ awọn ọkọ. Lati dẹrọ igbowosi yii, a nfunni ni iyanju fun gbigbe ti gbogbo eniyan ati gbigbe ti Alabaṣiṣẹpọ ti o jẹ ifarada lati dinku gige eefin gaasi ati dinku tabili itẹwe wa. Ni afikun, awa ṣe igbega akiyesi ti awọn anfani ti ilosiwaju diẹ sii, idasi si awọn oṣiṣẹ daradara-jije ti awọn oṣiṣẹ ati itọju agbegbe ti o wa.",
+        "imageAlt": "Ọffisi T2m"
+      },
+      "cadeiaFornecedoresTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Pq ti awọn olupese ti ṣe si ayika",
+        "iconAlt": "Aami fun akọle ayika"
+      },
+      "cadeiaFornecedoresTexto1Trad": {
+        "paragraph": "Awọn iye T2mm jẹ ibamu pẹlu awọn iye alagbero pẹlu rẹ, awọn ajọṣepọ pẹlu awọn ile-iṣẹ ti o gba awọn iṣe ti ayika ayika. A farabalẹ ṣe atunyẹwo awọn olupese wa lati rii daju pe wọn pin adehun wa si ifipamọ ayika ati lati dinku awọn ipa odi lori ayika. Eyi pẹlu awọn olupese ti o gba awọn ọna alagbero ni iṣelọpọ wọn, lo awọn ohun elo ti a tun kasilẹ, ṣe awọn eto idinku egbin ati ki o pade awọn ajohunse oju-aye. Nipa ṣipọ awọn iṣe eg sinu ẹwọn ipese wa, awa mu adehun wa si iṣẹ alagbero ati faagun ipa rere wa nipasẹ awọn ẹgbẹ miiran ti o ni ipa nipasẹ awọn iṣẹ miiran ti o gba awọn iṣe ẹru.",
+        "imageAlt": "Ọffisi T2m"
+      },
+      "reciclagemMaterialTrad": {
+        "topTitle": "Agbegbe",
+        "title": "Tun atunlo awọn ohun elo itanna ati awọn batiri",
+        "iconAlt": "Aami fun akọle ayika"
+      },
+      "reciclagemMaterialTexto1Trad": {
+        "paragraph": "T2M gba awọn iṣe atunse lile ti awọn ohun elo itanna ati awọn batiri, riri pataki ti awọn ohun elo wọnyi lati yago fun awọn ikolu odi lori ayika. A firanṣẹ egbin itanna ti a firanṣẹ si awọn ile-iṣẹ ifọwọsi ati atunlo paati, idasi si imularada ti awọn ohun elo ti o niyelori ati idinku ti egbin majele. Ni abẹ, a ṣe igbega akiyesi nipa pataki ti awọn oojọ ti atunlo laarin awọn oṣiṣẹ, iwuri fun sisọnu daradara. Ipilẹṣẹ yii ṣe afihan ifaramo wa si aje ipin, yago fun ile ati kontaminesonu omi ati promateting diẹ sii daradara ati gbega diẹ sii daradara ati iṣakoso.",
+        "imageAlt": "Ọffisi T2m"
+      },
+      "feitosAmbientalTrad": {
+        "title": "Ti a ṣe ni 2024",
+        "paragraph": "Ni 2024, a ti ni ilọsiwaju ni ibamu ti iduroṣinṣin ati ifisi, inifura, inifura, ni idojukọ lori ipa rere si 2025.",
+        "numberCards": [
+          {
+            "title": "Awọn igi ti a gbin"
+          },
+          {
+            "title": "99.72% idinku ninu awọn itukuro erogba"
+          },
+          {
+            "title": "Isowo lilo ti awọn ohun elo isọnu"
+          },
+          {
+            "title": "Awọn ifipamọ ti awọn aṣọ atẹsẹ 2,500 nipasẹ awọn ibuwọlu oni nọmba"
+          }
+        ]
       }
-    ]
+    },
+    "Social": {
+      "patrocinadorIniciativasTrad": {
+        "topTitle": "Awujọ",
+        "title": "Awọn ipilẹṣẹ ọjọgbọn",
+        "iconAlt": "Aami nipa akọle awujọ"
+      },
+      "patrocinadorIniciativasTexto1Trad": {
+        "paragraph": "T2m jẹ ọkan ninu awọn onigbọwọ akọkọ ti eto ibugbe ibugbe Serratec, eyiti o ni ero lati ṣiṣẹ awọn ọdọmọkunrin ti ọrọ-aje fun awọn baseers imọ-ẹrọ. Ni afikun si awọn onigbọwọ, T2M n funni ni awọn oṣiṣẹ lati kọ awọn kilasi ati ibojuwo, ṣiṣe alabapin sisẹ si dida awọn olugbe. The company also has a partnership with UFF at Fest (Software School and Test Factory), supporting essential courses such as Product Owner, Scrum Master and Software Quality. Awọn iṣe wọnyi ṣe itọju ifaramo T2m si ojuse awujọ ati idagbasoke awọn talenti agbegbe, igbelaruge diẹ sii ati aje alagbero kan.",
+        "imageAlt": "Ọffisi T2m"
+      },
+      "numerosResidenciaTrad": {
+        "title": "Igbesi T2m Idu - ajọṣepọ Serratec",
+        "topTitle": "Atọka - ibugbe",
+        "paragraph": "Awọn akosemose Awọn akosemose Gbadura nipasẹ T2m lati Eto ibugbe Serratect Face 2019.2 - 2024.1",
+        "numberCards": [
+          {
+            "title": "205",
+            "paragraph": "Eniyan gba nipasẹ eto naa"
+          },
+          {
+            "title": "101",
+            "paragraph": "Igbanisile"
+          },
+          {
+            "title": "75%",
+            "paragraph": "T2m duro de ipo naa"
+          },
+          {
+            "title": "4%",
+            "paragraph": "Awọn eniyan ti o ni ailera ninu eto naa"
+          },
+          {
+            "title": "21%",
+            "paragraph": "Agbepa obirin"
+          },
+          {
+            "title": "7%",
+            "paragraph": "Awọn eniyan dudu ti o kopa"
+          },
+          {
+            "title": "51%",
+            "paragraph": "Ile-iwe ile-iwe ti gbogbo eniyan"
+          },
+          {
+            "title": "62%",
+            "paragraph": "Awọn iṣẹ idaniloju"
+          },
+          {
+            "title": "10",
+            "paragraph": "Ṣe bi awọn olukọ tabi awọn abojuto ti eto naa"
+          }
+        ]
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Awujọ",
+        "title": "Ẹgbẹ eniyan ati Isakoso idapọ 100% nipasẹ awọn obinrin",
+        "iconAlt": "Aami nipa akọle awujọ"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraph": "Ẹgbẹ ti awọn eniyan ati iṣakoso ti T2m jẹ 100% Awọn obinrin ti a kọ silẹ 100% ti awọn obinrin, ṣe afihan ifarakan ti ile-iṣẹ lagbara si iyatọ ati ifisi. Ni afikun, nipa 75% ti ẹgbẹ Isakoso ẹgbẹ naa ni awọn obinrin, awọn eniyan ti o ni awọn ailera ati eniyan dudu, ndagba Ayika Iṣẹ-ọfẹ ati aṣoju lọ. Ẹgbẹ yii ti awọn eniyan ati iṣakoso ṣe ipa bọtini kan ni kikọ aafin ati Egalitaritional aṣa, imulo awọn ilana ipọnju ọjọgbọn ati awọn iṣe ti o ni iye awọn oju-iṣẹ naa. T2M gbagbọ pe idamu ti o jẹri fun aṣeyọri aṣa ti aṣa rẹ, igbelaruge imotuntun ati ṣiṣẹda ipa awujọ to daju.",
+        "imageAlt": "Ọffisi T2m"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Awujọ",
+        "title": "Didara eto igbesi aye",
+        "iconAlt": "Aami nipa akọle awujọ"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "T2m ṣe igbelaruge daradara ti awọn oṣiṣẹ rẹ nipasẹ eto iṣẹ ṣiṣe ti ara, waye ni gbogbo Satidee. Eto yii ni ifọkansi lati mu didara aye ati ilera ti opolo ti awọn oṣiṣẹ, iwuri fun wọn lati gba ilera ati ọpọlọpọ igbesi aye ti nṣiṣe lọwọ. Awọn iṣẹ naa jẹ deede lati pade awọn ipele ipo ti o yatọ, igbega igbelera igbeyawo ati idapọ laarin awọn alabaṣepọ. T2M gbagbọ pe o ṣe idokowo ninu ilera 'ilera ti o ṣe alabapin si agbegbe iṣẹ diẹ ati idunnu.",
+        "imageAlt": "Aworan apejuwe ti eto iṣẹ ṣiṣe ti ara ni ọfiisi T2m"
+      },
+      "campanhasSolidariasTrad": {
+        "topTitle": "Awujọ",
+        "title": "Awọn ipolongo Hedolity",
+        "iconAlt": "Aami nipa akọle awujọ"
+      },
+      "campanhasSolidariasTexto1Trad": {
+        "paragraph": "Awọn igbelaruge T2m, jakejado ọdun, ipolongo Ibani atọwọda, ipolongo fun gbigba ounjẹ ati aṣọ, ti a pinnu fun awọn ile-iṣẹ agbegbe ati awọn eniyan aini ile. Lakoko ayẹyẹ ayẹyẹ naa, a tun ṣeto lẹta ti o mu lẹta Keresimesi rẹ, ni pataki lori fifiranṣẹ awọn ẹbun si awọn ọmọde ti o firanṣẹ si awọn ọmọde, mu aanu ṣiṣẹ, mu ayọ wa ati awọn ile-iṣẹ. T2M ṣiṣẹ ni agbara ni iwuri fun awọn oṣiṣẹ rẹ lati kopa ninu awọn iṣe wọnyi, agbara aṣa ti iṣọkan ati ajọṣepọ awujọ laarin ile-iṣẹ naa. Atilẹyin apapọ yii jẹ pataki fun aṣeyọri ipolongo ati lati faagun ipa rere wa lori agbegbe.",
+        "imageAlt": "Aworan ti awọn ẹbun ti a ṣe nipasẹ T2M, Biomob ati Serrotec"
+      },
+      "voluntariadoApoioTrad": {
+        "topTitle": "Awujọ",
+        "title": "Ikẹkọ ati atilẹyin fun awọn ipilẹṣẹ oojọ",
+        "iconAlt": "Aami nipa akọle awujọ"
+      },
+      "voluntariadoApoioTexto1Trad": {
+        "paragraph": "T2m ni ifaramọ to lagbara si gbigbasilẹ ati atilẹyin oojọ, ṣiṣe alabapin ni pipe ninu awọn eto ati ipilẹṣẹ ti o ṣe igbesoke idiwọ awujọ ati idagbasoke awọn talenti awọn ọdọ. Ile-iṣẹ naa bọmopọ pẹlu awọn iṣẹ ipalara ti o ni ipalara, gẹgẹbi awọn iya ti o jẹ alaimọ, LGBTQTQIAP +, awọn eniyan pẹlu iyatọ, awọn agọ ati eto ọmọ ile-iwe kekere. Ni afikun, T2M ṣe iwuri fun awọn oṣiṣẹ rẹ lati yọọda bi awọn agbọrọsọ ati awọn olukọ ni awọn ẹkọ imurasi ti o ṣalaye awọn oye ati ihuwasi ihuwasi, ngbaradi awọn alabaṣepọ lati duro jade ni ọja iṣẹ.",
+        "imageAlt": "Aworan ọfiisi T2m, pẹlu tcnu lori atilẹyin oojọ"
+      },
+      "feitosSocialTrad": {
+        "title": "Awọn aṣeyọri awujọ wa ni 2024",
+        "paragraph": "Ni 2024, a ti ni ilọsiwaju ni ibamu ti iduroṣinṣin ati ifisi, inifura, inifura, ni idojukọ lori ipa rere si 2025.",
+        "numberCards": [
+          {
+            "title": "422 kg ti ounje gba",
+            "iconAlt": "Aami ibi idana"
+          },
+          {
+            "title": "7 Awọn iṣe Awujọ ti a ṣe: Bioconecta, DBA, Oṣu Kẹwa dide ati awọn iṣe idari iṣọkan 4",
+            "iconAlt": "Aami awọn ọwọ ṣe iranlọwọ"
+          },
+          {
+            "title": "Awọn oluyọọda 180 ninu awọn iṣẹ awujọ wa",
+            "iconAlt": "Oluṣakoso olumulo"
+          }
+        ]
+      },
+      "campanha1Trad": {
+        "paragraph": "Awọn poun 207 ti ounjẹ wa si iṣẹ akanṣe pe Espença wa, ipilẹṣẹ titan ni titan awọn igbesi aye ati atilẹyin fun awọn ti o nilo julọ. Iṣe naa ti ṣe onigbọwọ nipasẹ oṣiṣẹ Emanuel, ti o dun ipa bọtini kan ninu koriya ati gbigba. Ẹbun yii n tan imọlẹ ẹmi ti ara ati adehun awujọ ti o fun agbegbe lati ṣe alabapin si ọjọ iwaju to dara julọ.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "campanha2Trad": {
+        "paragraph": "Awọn Oṣu Kẹwa Rose Rogo ti fi agbara mu pẹlu ẹbun ti 216 kilos ti ounjẹ fun appdo - Petropolitan consopọ ti awọn alaisan akàn. Iṣe yii ti ṣe onigbọwọ nipasẹ T2M lati ṣe aṣoju fun Oṣu Kẹwa dide.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      }
+    },
+    "Governamental": {
+      "normasCodigosLegislacoesTrad": {
+        "topTitle": "Iṣakoso ijọba",
+        "title": "Awọn ajohunše, awọn koodu ati inu ilu ati ita ti T2m",
+        "iconAlt": "Aami nipa Fanal Koko-ọrọ"
+      },
+      "normasCodigosLegislacoesTexto1Trad": {
+        "paragraphs": [
+          "T2m, ti a da ni Ilu Brazil ni 2002, awọn iṣẹ pẹlu ifarada to lagbara si ami ati ibamu pẹlu awọn ofin, awọn koodu ati awọn ofin ti o wulo ni mejeeji ọrọ-iṣẹ ati ti orilẹ-ede. Awọn iwuwasi wa n fa gbogbo awọn oṣiṣẹ wa, awọn alabaṣiṣẹpọ ati igbimọ t'olofin ati awọn adehun ofin ti o ṣe atilẹyin awọn iṣẹ T2m.",
+          "Koko-ẹda wa ati ihuwasi, popupo pẹlu awọn eto imulo ti Anti -Stobrorno, ati ariyanjiyan ati ifisisi bi awọn itọsọna itọkasi pẹlu awọn alabara, awọn olupese ati awọn alabaṣepọ. Awọn iwe aṣẹ wọnyi, ni afikun si igbelaruge awọn ajohunše aṣa, dinku o ṣeeṣe ti ihuwasi ti ko tọ.",
+          "Lati lepọ pẹlu awọn itọsọna wa, gbogbo awọn oṣiṣẹ gbọdọ pari ni iṣẹ awọn ofin, wa lori intrant ti inu, wa lori intrant ti abẹnu, nibiti awọn iye ti inu wa, nibiti awọn iye ti inu, awọn ilana ati awọn ilana imulo ti ṣe atunyẹwo."
+        ],
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "comiteT2MTrad": {
+        "topTitle": "Iṣakoso ijọba",
+        "title": "Awọn igbimọ T2m",
+        "iconAlt": "Aami nipa Fanal Koko-ọrọ"
+      },
+      "comiteT2MTexto1Trad": {
+        "paragraph": "Ifarabalẹ: Igbimọ yii jẹ iduro fun ominira ati agbara ti T2m ti eto otitọ T2m, aridaju awọn orisun to wulo lati rii daju pe ko mọ. Ni afikun si iwuri fun ijabọ ti awọn ifura ati awọn irufin, Igbimọ naa n ṣiṣẹ lati gbin aṣa ti ojuse ti o wa ni gbogbo awọn ipele, yọ idena jegudujera ati iwari. Oṣiṣẹ ibamu, iṣẹ pataki ninu ilana yii, o ni iwọle taara si itọsọna giga, bakanna bi aṣẹ lati ṣakoso egboogi-inu-okú ati eto imudani.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "comiteT2MTexto2Trad": {
+        "paragraph": "CIPA (Igbimọ Idejade airotẹlẹ Imọlẹ): Ni ibamu pẹlu NR-5, T2m Cipa ni iṣẹ ti idanimọ ati ikẹkọ, ati pe o ni idena aabo ati idena aabo awọn oṣiṣẹ wa. Lọwọlọwọ, Igbimọ naa ni awọn ọmọ ẹgbẹ 10, awọn obinrin 30% eyiti eyiti o mu ifarada wa si iyatọ ati ifisi.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "certificacoesPadroesInternacionaisTrad": {
+        "topTitle": "Iṣakoso ijọba",
+        "title": "Awọn iwe-ẹri okeere ati awọn ajohunše",
+        "iconAlt": "Aami nipa Fanal Koko-ọrọ",
+        "paragraph": "Ni afikun si awọn igbimọ, T2M jẹ ibamu pẹlu awọn ajohunše agbaye ti iduroṣinṣin ati awọn ere iṣowo."
+      },
+      "certificacoesPadroesInternacionaisTexto1Trad": {
+        "paragraphs": [
+          "A gbẹkẹle lori ISO 37001: Ọdun 2017, eyiti o mu ki o mule eto iṣakoso iṣakoso----boburorno ati igbega aṣa ti akomọra; Ati pe ISO 373030: 2021, eyiti o ṣalaye awọn iṣedede fun awọn eto ibamu, daju idaniloju pẹlu awọn ofin ati ilana to wulo.",
+          "Awọn iwe-ẹri wọnyi jẹ oye ti aabo wa si ẹya ti o jẹ ati ti o ni igbẹkẹle awọn iṣe iṣowo. Awọn ipilẹṣẹ wọnyi ṣafihan ifaramọ T2m lati ṣetọju ailewu, iṣe iṣede, ati ni ibarẹ pẹlu awọn iṣe ti o dara julọ ni ọja."
+        ],
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "canaisDenunciaTrad": {
+        "topTitle": "Iṣakoso ijọba",
+        "title": "Awọn ikanni ti awọn ẹwọn",
+        "iconAlt": "Aami nipa Fanal Koko-ọrọ"
+      },
+      "canaisDenunciaTexto1Trad": {
+        "paragraphs": [
+          "T2m nfunni ni ikanni ti awọn awawi taara si Igbimọ Efec taara, eyiti o gba ati awọn itupalẹ gbogbo awọn ẹdun ti o firanṣẹ, bi abojuto imuse, ibojuwo ati iduroṣinṣin ti ilana ifaramọ ile-iṣẹ.",
+          "Awọn ẹdun ọkan le ṣee ṣe ailorukọ nipasẹ ọna irọrun irọrun, idaniloju imudaniloju ati aabo fun awọn apejọ naa.",
+          "Ni afikun si ikanni yii, a tun nfunni ikanni kankan-ni ibamu-kan pato, tọka si ibaraẹnisọrọ ti awọn ọran ti o ni ifura ati awọn iṣẹlẹ miiran ti o ni ibatan si ailewu ati ṣiṣe daradara ni ibi iṣẹ.",
+          "Gbogbo alaye ti ara ẹni pin ni itọju pẹlu aṣiri ti o muna, aridaju awọn oṣiṣẹ. Awọn ikanni mejeeji ṣojuro lati ṣe igbelaruge kan laileto, ẹya ara ati iranran agbegbe fun gbogbo."
+        ],
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "equidadeSalarialTrad": {
+        "topTitle": "Iṣakoso ijọba",
+        "title": "Inifura owo",
+        "iconAlt": "Aami nipa Fanal Koko-ọrọ",
+        "paragraph": "Igbese T2m nfunni ni akotan ati ijabọkogba oye owo osan ti awọn obinrin ati awọn ọkunrin, ijabọ kan ti o mu ifarada si idajọ awujọ.",
+        "buttonText": "Ijabọ"
+      },
+      "equidadeSalarialTexto1Trad": {
+        "paragraph": "Iroyin yii ṣafihan awọn ibeere fun awọn iṣe ati awọn iṣe lati rii daju iyatọ, gẹgẹ bi ẹda ti iwa-ipa ati awọn iṣẹ ti awọn obinrin, LGTQTQA +, Indigenous) ati awọn obinrin Awọn imulo igbega fun iṣakoso ati awọn ipo iṣakoso.",
+        "imageAlt": "Aworan ọfiisi T2m"
+      },
+      "metasTrad": {
+        "title": "Awọn ibi-afẹde wa ni 2025",
+        "paragraph": "A tẹsiwaju ti a ṣeduro lati ṣe iduroṣinṣin ati ifisi, dojukọ lori ilọsiwaju tẹsiwaju ti awọn iṣe iṣere si 2025, pẹlu ipa rere lori awujọ ati ayika.",
+        "numberCards": [
+          {
+            "title": "Ṣẹda iye ti awọn igi ti a gbìn"
+          },
+          {
+            "title": "Idinku lapapọ ni awọn itumo erogba"
+          },
+          {
+            "title": "Faagun agbara agbara ti ohun elo atunlo"
+          },
+          {
+            "title": "Mu gbigba ounje pọ si nipasẹ 50%"
+          },
+          {
+            "title": "Ẹda awọn nọmba ti awọn iṣẹ awujọ ti a ṣe"
+          },
+          {
+            "title": "Mu nọmba awọn oluyọọda pọ si ni awọn iṣe awujọ nipasẹ 30%"
+          },
+          {
+            "title": "Gba ISO 27001 ati Awọn iwe-ẹri ISO 27701"
+          }
+        ]
+      }
+    }
   },
-  "ContatoBanner": {
-    "topTitle": "kan",
-    "title": "Pe wa",
-    "paragraph": "Lati Kan si Wa, fi ifiranṣẹ ranṣẹ si ọmọbirin imeeli wa@gmail.com. A fesi ni kete bi o ti ṣee!"
+  "QuemSomosPage": {
+    "callBannerTrad": {
+      "title": "Tani awa?",
+      "paragraph": "Loni, lẹhin diẹ sii ju ọdun 20 ti T2m, a jẹ ile-iṣẹ ogbo, ti a mọ fun didara iṣẹ wa nipasẹ awọn ile-iṣẹ pataki ni Portfolio alabara wa.",
+      "buttonText": "Oju opo wẹẹbu ti ile-iṣẹ naa"
+    },
+    "trabalheConoscoTrad": {
+      "imageAlt": "Ọffisi T2m",
+      "title": "Aabo ti ṣiṣẹ ni ile-iṣẹ to lagbara, pẹlu diẹ sii ju ọdun 20 ni ọja",
+      "topTitle": "Ṣiṣẹ pẹlu wa",
+      "paragraph": "Ti da silẹ T2M ni ọdun 2002 lakoko ipilẹṣẹ bi Igbimọ idanwo kan. Laipẹ a rii pe a nilo lati lọ siwaju ati pe a ṣayẹwo gbogbo awọn igbesẹ ti idagbasoke eto ati imọ-ẹrọ pataki ni didara sọfitiwia.",
+      "buttonText": "alaye@t2mlab.com"
+    },
+    "experienciasExtraordinariasTrad": {
+      "title": "Awọn iriri alailẹgbẹ ati awọn iriri wiwọle fun gbogbo rẹ.",
+      "paragraph": "A T2M - idanwo lati ṣe ọja LTDA. O jẹ ile-iṣẹ Brazil kan ti o wa, pẹlu ọdun 20 ti aye, amọja ni idaniloju ni idagbasoke sọfitiwia, awọn idanwo ti o munadoko ati atẹle atẹle ti awọn igbesẹ miiran ti ṣiṣe iṣẹ. Laipẹ a fẹsi awọn iṣẹ wa laipe ṣafikun asiri data ati aabo data ati aabo oni-nọmba ati ifikọṣẹ iṣowo nipasẹ awọn alabaṣiṣẹpọ olokiki ni awọn apakan wọnyi."
+    },
+    "servicosExcelenciaTrad": {
+      "title": "Bawo ni awọn iṣẹ didara wa le ṣe iranlọwọ fun igbewọle iṣowo rẹ.",
+      "paragraph": "Kọ ẹkọ bi a ṣe fa alekun imunadoko, didara ati aabo ti iṣowo ati iṣẹ rẹ, mu awọn abajade to ga julọ.",
+      "icons": [
+        {
+          "title": "Didara sọfitiwia",
+          "paragraph": "Awọn solusan sọfitiwia wa Ṣelọpọ gbogbo awọn igbesẹ Idagbasoke, ni idaniloju ṣiṣe, igbẹkẹle ati itẹlọrun ti awọn alabara wa."
+        },
+        {
+          "title": "Asiri ati aabo",
+          "paragraph": "Idojukọ wa ni lati bori awọn italaya aabo alaye nipasẹ nfunni awọn solusan ijumọsọrọ lati pade awọn iwulo alabara nikan."
+        },
+        {
+          "title": "Wiwọn oni-nọmba",
+          "paragraph": "Ni T2M, a ma wa ifisi oni onisoso, igbega igbelaruge wiwo ati incation lati rii daju diẹ sii siwaju sii ati wiwọle agbegbe oni-nọmba fun gbogbo."
+        },
+        {
+          "title": "Asopọ Iṣowo",
+          "paragraph": "A ṣe iranlọwọ fun awọn ile-iṣẹ ti o yarayara badọgba si awọn ayipada awọn ayipada nipasẹ lilo anfani awọn anfani ati imudaragi afinju ti o jẹ ilọsiwaju."
+        }
+      ]
+    },
+    "iniciativasTrad": {
+      "topTitle": "Ipilẹṣẹ",
+      "title": "Awọn ipilẹṣẹ wa ati awọn adehun",
+      "paragraph": "Ni T2m, awọn ipilẹṣẹ wa ati awọn iṣeduro wa da lori didara julọ fun darasipo ati ipa rere ni gbogbo awọn agbegbe ti a ṣiṣẹ. A ni ileri lati ṣe agbekalẹ didara igbesi aye ti awọn oṣiṣẹ wa, iwuri ni iyanju ati aridaju ifisiyeleyele ninu awọn solusan wa."
+    },
+    "qualidadeDeVidaTrad": {
+      "title": "Didara igbesi aye ati alafia",
+      "paragraph": "T2m ṣetọju ifaramọ rẹ si alafia ati awọn idile rẹ, nfunni agbegbe iṣẹ ati iwọntunwọnsi. A nigbagbogbo wa lati mu didara aye wa ni igbesi aye lojoojumọ ti awọn akosemose ojoojumọ ti awọn iṣiro ti o pade awọn iwulo oriṣiriṣi, bii akoko irọrun, atilẹyin ilera ilera ati didara awọn eto igbesi aye.",
+      "imageAlt": "Obinrin ti o ni awọ pupa ni iseda"
+    },
+    "desenvolvimentoProfissionalTrad": {
+      "title": "Idagbasoke ọjọgbọn ati vationdàs",
+      "paragraph": "A ṣe idoko-owo ni idagbasoke atẹle ti ẹgbẹ wa nipasẹ ikẹkọ pataki ati awọn eto ikẹkọ. A gba ara ẹrọ niyanju pẹlu ohun elo ti awọn ọna agile ati iṣawakiri ti awọn imọ-ẹrọ tuntun, aridaju pe awọn akosemose wa nigbagbogbo ni awọn apẹẹrẹ ti aṣa ati gbaradi lati pese awọn solusan imotuntun ati awọn solusan ti imotuntun ati awọn solusan ti imotuntun awọn alabara wa.",
+      "imageAlt": "Obinrin ti o wọ awọn gilaasi otito foju"
+    },
+    "acessibilidadeInclusaoTrad": {
+      "title": "Wiwọle ati ifisi",
+      "paragraph": "A ni ileri lati gbega ifisi ati aye oni-nọmba ni gbogbo awọn solusan wa. Awọn itọnisọna T2m gba idaniloju pe awọn ọja ati awọn iṣẹ wa ni wọle si gbogbo eniyan, laibikita fun imuse iṣẹ irọrun ni awọn ohun elo ti o wa ni ayika agbegbe oniruuru.",
+      "imageAlt": "Ologun ninu kẹkẹ ẹrọ pẹlú pẹlu ẹbi rẹ"
+    },
+    "tresPilaresTrad": {
+      "topTitle": "3 Ọwọn",
+      "title": "Awọn ọwọ isorisi wa",
+      "paragraph": "Ni pataki ti T2m da lori wiwo ti o han, awọn iye to muna ati iṣẹ iyanu. Awọn ọwọn wọnyi ba gbogbo awọn iṣe wa, itọsọna ifaramọ wa si didara julọ, vationdàs ati ifisi. Kọ ẹkọ ni isalẹ awọn ipilẹ ti o ṣalaye ẹni ti a wa ati bi a ṣe ṣe."
+    },
+    "quatroCardsMetodologiaTrad": {
+      "textCards": [
+        {
+          "topTitle": "Ọkọ akọkọ",
+          "title": "Iwoye",
+          "paragraph": "Jẹ Itọkasi ti orilẹ-ede ati ilu okeere ni didara sọfitiwia, wiwọle ati aabo alaye, igbelaruge alaye ti imọ-ẹrọ wa nipasẹ imọ-ẹrọ ominira ati awọn solo awọn solusan."
+        },
+        {
+          "topTitle": "Aami keri keji",
+          "title": "Iṣẹ apinfunni",
+          "paragraph": "Rii daju pe awọn ọja alabara wa pade awọn iṣedede didara didara julọ ti didara, igbẹkẹle ati lilo iṣẹ ṣiṣe pato, ati awọn alamọdaju ikẹkọ kọọkan, nigbagbogbo ikẹkọ iṣowo ti imọ-ẹrọ naa."
+        },
+        {
+          "topTitle": "Ọwọn Ọwọn Kẹta",
+          "title": "Awọn iye",
+          "paragraph": "Ni T2M, adehun wa ni lati dara si, fifipamọ awọn iṣẹ didara giga ti atilẹyin nipasẹ imọ imọ ati isọdọkan. A ni oye ti imotuntun, lilo awọn ọna apọju ati awọn imọ-ẹrọ gige gige lati pa awọn italaya sinu awọn aye. A ṣiṣẹ pẹlu ẹmi ati itusilẹ, aridaju awọn ipinnu alaiwaga ti o ṣe pataki awọn ifẹ ti o dara julọ ti awọn alabara wa. Ni afikun, a ṣe adehun ifisi ati iduroṣinṣin nipasẹ ikẹkọ iṣẹ, wiwo oni-nọmba ati awọn iṣe ti o wakọ eniyan ati idagbasoke imọ-ẹrọ. Itoju wa ni idojukọ lori awọn abajade, ọwọ ọwọ ọwọ ọwọ, ibọwọ awọn akoko, igbẹkẹle ati lilo, tito pẹlu awọn aini ti awọn alabaṣiṣẹpọ wa."
+        }
+      ]
+    },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Pataki ti awọn idanwo didara ti ita",
+      "paragraph": "Awọn idanwo didara sọfitiwia jẹ pataki ni awọn ọna to ṣe pataki, gẹgẹ bi ile-ifowopamọ, afẹfẹ ati iṣakoso ile-iwosan, eyiti o nilo deede ati ailewu.",
+      "numberCards": [
+        {
+          "title": "Iraye si awọn amoye",
+          "paragraph": "Awọn ile-iṣẹ pataki ti awọn onisẹ ti oyeye, aridaju awọn idanwo to jinlẹ ati lilo awọn ọna gige lati rii daju didara sọfitiwia."
+        },
+        {
+          "title": "Foju mọ iṣowo mojuto",
+          "paragraph": "Pẹlu ita, ẹgbẹ ti inu le dojusi awọn ẹya tuntun, imudarasi iṣelọpọ ati igbelaruge idagbasoke iṣowo."
+        },
+        {
+          "title": "Iye owo ati idinku akoko",
+          "paragraph": "Yago fun ṣiṣẹda ẹda awọn ẹgbẹ ti o wa titi dinku awọn idiyele ti o wa titi ati fun ọ laaye lati mu idoko-owo pọ si gẹgẹ bi ibeere, yiyo awọn ilana idanwo."
+        },
+        {
+          "title": "Isẹpọ ati irọrun",
+          "paragraph": "Awọn ile-iṣẹ itage le ṣatunṣe agbara idanwo ni ibamu si ibeere, awọn ibi ipade ati ṣiṣatunṣe iwọn gẹgẹ bi ifilole ti awọn ọja tuntun."
+        },
+        {
+          "title": "Alailẹgbẹ ati iran ita",
+          "paragraph": "Ẹgbẹ ti ita n mu oju iwoye ti ọja ṣiṣẹ, ṣe iranlọwọ lati ṣe idanimọ abawọn ti ẹgbẹ inu le ma ṣe mọ, imudara didara julọ."
+        },
+        {
+          "title": "Wọle si awọn irinṣẹ ati awọn imọ-ẹrọ ti o ni ilọsiwaju",
+          "paragraph": "Awọn ile-iṣẹ amọja ni iraye si ge awọn irinṣẹ to ge fun adaṣe, awọn idanwo fifuye ati awọn iṣe miiran, yago fun idiyele imuse ti ga julọ."
+        }
+      ]
+    }
   },
-  "Outros": {
-    "ondinhas": "Igbi"
+  "PropostaValorPage": {
+    "callBannerTrad": {
+      "title": "IKILỌ Iye Iye",
+      "paragraph": "A gbagbọ pe nipa fifi awọn Solusan imọ-ẹrọ ati imọ-ẹrọ ti ara ẹni, a ko le pade awọn itọnisọna lẹsẹkẹsẹ ti awọn alabara wa nikan, ṣugbọn tun ṣe alabapin si idapo alagbero ati awọn vantalperperpation nigbagbogbo ni iṣowo wọn.",
+      "buttonText": "Bulọọgi wa"
+    },
+    "solucoesQualidadeTrad": {
+      "title": "Awọn solusan didara fun aṣeyọri",
+      "paragraph": "Lori T2m, a ni ileri lati ṣafihan awọn solupo imọ-ẹrọ ti o ga ti o ṣe aleri aṣeyọri ti awọn alabara wa. A nfun awọn iṣẹ amọja ni sọfitiwia, aṣiri ipamọ, oju opo wẹẹbu ati ailagbara iṣowo, ni idojukọ nigbagbogbo lori ifijiṣẹ awọn abajade iṣe. A ti yan Awọn ọna Awọn ọna gige gige ati imọ-ẹrọ lati pa awọn italaya sinu awọn ero wa, aridaju pe awọn alabara wa le gbega awọn ilana wa ati firanṣẹ awọn abajade ni akoko to tọ.",
+      "imageAlt": "Ero"
+    },
+    "inovacaoTrad": {
+      "title": "Vationdàs ati idurosinsin",
+      "paragraph": "Itoju wa si vationdàs ati iduroṣinṣin ti wa ni afihan ninu ilana lilọsiwaju pẹlu awọn alabaṣiṣẹpọ wa ati awọn olupese, aridaju pe gbogbo awọn ilana ni a ṣe pẹlu didara ati awọn iṣedede ti o ga julọ ati awọn ajo ailewu. Ni afikun, awọn ipinnu wa ni deede si awọn iwulo kan pato ti alabara kọọkan, ṣajọpọ pẹlu awọn ibi-afẹde wọn ati jade awọn anfani idije ni ọja.",
+      "imageAlt": "Iduro ibinu"
+    },
+    "praticasResponsivasTrad": {
+      "title": "Lodidi ati awọn iṣe inu",
+      "paragraph": "Lori T2m, a ni ileri lati ṣafihan awọn solupo imọ-ẹrọ ti o ga ti o ṣe aleri aṣeyọri ti awọn alabara wa. A nfun awọn iṣẹ amọja ni sọfitiwia, aṣiri ipamọ, oju opo wẹẹbu ati ailagbara iṣowo, ni idojukọ nigbagbogbo lori ifijiṣẹ awọn abajade iṣe. A ti yan Awọn ọna Awọn ọna gige gige ati imọ-ẹrọ lati pa awọn italaya sinu awọn ero wa, aridaju pe awọn alabara wa le gbega awọn ilana wa ati firanṣẹ awọn abajade ni akoko to tọ.",
+      "imageAlt": "Kẹkẹ abirun"
+    },
+    "transparenciaIgualdadeTrad": {
+      "title": "Ifiweranṣẹ ati Adogba Awujọ",
+      "paragraph": "Gẹgẹbi iṣẹ iranṣẹ ti awọn ofin iṣẹ, a sọ fun ọ pe, wa lori oju opo wẹẹbu wa, akosile ati ijabọ to dọgbadọgba ti awọn obinrin ati awọn ọkunrin, tọka siEmerete ọmin 224.",
+      "buttonText": "Ijabọ"
+    }
+  },
+  "NossaEquipePage": {
+    "callBannerTrad": {
+      "title": "Ẹgbẹ wa",
+      "paragraph": "Aṣeyọri ti awọn iṣẹ wa ti wa ni iwakọ nipasẹ expericia ati ìmọji ti ẹgbẹ wa. Ti ṣẹda nipasẹ awọn akosemose ti o ni ikẹkọ pupọ ati ifẹhinti nipa ohun ti wọn ṣe, ẹgbẹ wa ti ṣetan lati dojuko awọn alabara tuntun ati ki o siso pẹlu awọn alabara wa lati ṣaṣeyọri awọn abajade alailẹgbẹ.",
+      "buttonText": "Mo fẹ lati jẹ apakan ti ẹgbẹ naa"
+    },
+    "divisaoPorCategoriaTrad": {
+      "title": "Pipin nipasẹ Ẹya",
+      "paragraph": "Gbooro si imuna, didara ati aabo ti iṣowo ati iṣẹ rẹ, mu awọn abajade to gaju wa.",
+      "icons": [
+        {
+          "id": 1,
+          "title": "Didara sọfitiwia",
+          "paragraph": "Awọn solusan sọfitiwia wa Ṣelọpọ gbogbo awọn igbesẹ Idagbasoke, ni idaniloju ṣiṣe, igbẹkẹle ati itẹlọrun ti awọn alabara wa."
+        },
+        {
+          "id": 2,
+          "title": "Aabo data",
+          "paragraph": "Ẹgbẹ Onimọn wa kọja awọn itaja aabo alaye, aridaju aabo ati igbekele data ifura."
+        },
+        {
+          "id": 3,
+          "title": "Wiwọn oni-nọmba",
+          "paragraph": "Pẹlu imọ-jinlẹ wa ni oju aye oni-nọmba, a ṣe iṣeduro pe gbogbo eniyan le wọle ati pẹlu awọn ọja wọn oni-nọmba wọn ni ọna ja."
+        },
+        {
+          "id": 4,
+          "title": "Asopọ Iṣowo",
+          "paragraph": "Ẹgbẹ Asofin Wa ni idojukọ lori awọn ile-iṣẹ iranlọwọ ni iyara si awọn ayipada ọja ati awọn iṣapẹẹrẹ iṣẹ wọn."
+        }
+      ]
+    },
+    "compromissoComDiversidadeTrad": {
+      "title": "Ifaramo si oniruuru ati ifisi",
+      "paragraph": "A laipe ni pipade ajọṣepọ kan pẹlu Biomob, fojusi lori awọn iṣẹ ati awọn iṣẹ ti o ni ibatan si iyatọ ati ifisisi wa si awọn akọle wọnyi si gbogbogbo."
+    },
+    "ambienteExtremoValorTrad": {
+      "title": "Agbegbe iye ti o lalailopinpin",
+      "paragraph": "Itoju wa ni lati ṣẹda agbegbe nibiti gbogbo eniyan kan ni agbara, laibikita fun ipilẹṣẹ rẹ, akọ tabi abo, ẹya-ara, tabi eyikeyi ẹya miiran ti ara.",
+      "images": [
+        {
+          "id": 1,
+          "title": "Ọkunrin",
+          "paragraph": "A ṣe iṣeduro awọn anfani dogba, mọ agbara ti ẹgbẹ ti o ni ibamu.",
+          "imageAlt": "Aami akọ"
+        },
+        {
+          "id": 2,
+          "title": "Ere-ije",
+          "paragraph": "A ṣe ayẹyẹ gbogbo ohun-ini ati iṣẹ ki a ṣiṣẹ ki ẹgbẹ wa jẹ afihan ti ọranpa ti awujọ wa.",
+          "imageAlt": "Aami aago"
+        },
+        {
+          "id": 3,
+          "title": "Ọjọ ori",
+          "paragraph": "A bọwọ fun ọgbọn ti o lodi julọ ati agbara ti awọn ọdọ ti awọn, oye pe gbogbo eniyan ni awọn ọrẹ ti o niyelori.",
+          "imageAlt": "aami"
+        },
+        {
+          "id": 5,
+          "title": "Oniruuru iṣẹ",
+          "paragraph": "A nfunni ni ayika iṣẹ ati agbegbe iṣẹ ti wiwọle, riri awọn ọgbọn ati awọn ẹbun ti eniyan pẹlu awọn ailera.",
+          "imageAlt": "Aami ti Oniruuru Oniye"
+        },
+        {
+          "id": 6,
+          "title": "Iyẹ",
+          "paragraph": "Mejeeji awọn ọfiisi wa ati pe aaye wa wa ni wiwọle si awọn eniyan ti o ni wiwo, asioro, ti ara ati awọn idiwọn oye.",
+          "imageAlt": "ICON AGBARA"
+        }
+      ]
+    },
+    "graficosDistribuicaoTrad": {
+      "firstImage": {
+        "title": "Oniruuru eniyan ni ẹgbẹ wa",
+        "imageAlt": "Iwọn ti iyatọ ti ara ni ẹgbẹ wa"
+      },
+      "secondImage": {
+        "title": "Oniruuru eniyan ni ẹgbẹ wa",
+        "imageAlt": "Pinping Aworan nipasẹ ẹgbẹ ẹgbẹ"
+      }
+    },
+    "propostaDeValorTrad": {
+      "title": "Alaaye iye wa fun oṣiṣẹ",
+      "paragraph": "Ninu ile-iṣẹ wa, a gbagbọ pe aṣeyọri jẹ asopọ taara si ọwọ, iwa ati ifisira ni gbogbo abala ti ayika iṣẹ."
+    },
+    "culturaRespeitoTrad": {
+      "title": "Asa ti ibowo, eṣu ati ifisi",
+      "paragraph": "A ṣe agbega aṣa ti akosile ati inifura, nibiti gbogbo awọn oṣiṣẹ ni awọn aye kanna fun idagbasoke ati idanimọ. Ifaratara wa si awọn iṣe ti o ṣe afihan ailewu ati ọwọ ni ọwọ, nibiti gbogbo eniyan le ṣafihan ara wọn ati ṣe alabapin si agbara to pọju wọn.",
+      "imageAlt": "Obinrin ti o ni awọ pupa ni iseda"
+    },
+    "beneficiosValorizamTrad": {
+      "title": "Wiwọle ati ifisi",
+      "paragraph": "Ni afikun, a nfun ọpọlọpọ awọn anfani ti a foju si ni iranlọwọ ati didara igbesi aye wa, bii agbara-iṣẹ, aṣeduro aye, igbesi aye ati ero aye.",
+      "imageAlt": "Obinrin ti o wọ awọn gilaasi otito foju"
+    },
+    "direitosHumanosTrad": {
+      "topTitle": "Kogidi",
+      "title": "Awọn ẹtọ eniyan ati awọn iṣẹ laala",
+      "paragraph": "A ni ileri lati ṣiṣẹda awọn agbegbe iṣẹ gbigbọn, nibiti gbogbo eniyan ni o ni awọn anfani kanna lati ṣe aṣeyọri agbara kikun wọn. A gbagbọ pe igbega ti awọn ẹtọ eniyan ati ikole ti awọn aaye ọwọ jẹ pataki fun ifipamọ iduroṣinṣin ti ami wa ati aṣeyọri ilọsiwaju wa."
+    },
+    "compromissoDireitosHumanosTrad": {
+      "title": "Ifaramo si awọn ẹtọ eniyan ati awọn ajohunše agbaye",
+      "paragraph": "Idanimọ iduroṣinṣin si ọwọ fun awọn ẹtọ fun eniyan, ti ntejọpọ awọn iṣe wa pẹlu ikede ikede agbaye ti awọn ẹtọ eniyan ati iwuwasi ti a mọ ni kaakiri. Awọn iye wa da lori awọn agbekale Ajo Agbaye ti Ajo Agbaye lori awọn ile-iṣẹ ati awọn eto eniyan, bakanna ni ipo-aṣẹ eto-iranṣẹ ilu okeere ati ikede) lori awọn ẹtọ pataki ni iṣẹ. Awọn itọsọna wọnyi jẹ idapọ si awọn ofin ihuwasi iṣowo wa, eyiti o waye ni dọgbadọgba si gbogbo awọn oṣiṣẹ T2m, awọn oluta ati awọn alabaṣepọ, aridaju, ni ayika agbegbe iṣẹ iṣẹ ailewu."
+    },
+    "garantiaAmbienteTrad": {
+      "title": "Iṣeduro ti agbegbe iṣẹ ailewu ati ọwọ",
+      "paragraph": "Idanimọ iduroṣinṣin si ọwọ fun awọn ẹtọ fun eniyan, ti ntejọpọ awọn iṣe wa pẹlu ikede ikede agbaye ti awọn ẹtọ eniyan ati iwuwasi ti a mọ ni kaakiri. Awọn iye wa da lori awọn agbekale Ajo Agbaye ti Ajo Agbaye lori awọn ile-iṣẹ ati awọn eto eniyan, bakanna ni ipo-aṣẹ eto-iranṣẹ ilu okeere ati ikede) lori awọn ẹtọ pataki ni iṣẹ. Awọn itọsọna wọnyi jẹ idapọ si awọn ofin ihuwasi iṣowo wa, eyiti o waye ni dọgbadọgba si gbogbo awọn oṣiṣẹ T2m, awọn oluta ati awọn alabaṣepọ, aridaju, ni ayika agbegbe iṣẹ iṣẹ ailewu."
+    },
+    "diversidadeInclusaoTrad": {
+      "topTitle": "Aye wa",
+      "title": "Oniruuru ati ifisi",
+      "paragraph": "Ti adehun si ṣiṣẹda agbegbe ti agbegbe kan nibiti oludari jẹ iye pataki. A gbagbọ pe apapo awọn irisi oriṣiriṣi, awọn iriri ati awọn talenti ati awọn talenti nfa aṣa wa ati mu wa duro lati ṣaṣeyọri awọn ọrun."
+    },
+    "diversidadeGeneroTrad": {
+      "title": "IDAGBASOKA",
+      "paragraph": "Ni T2m, a gbagbọ pe imudogba abo jẹ ifosiwewe pataki fun aṣeyọri ati vationdàs. A ṣiṣẹ lati ṣẹda ayika ninu eyiti awọn ọkunrin, awọn obinrin ati awọn eniyan ti ko ni itọju ti ko gbọ awọn ẹbun wọn ati awọn ẹbun wọn ni kikun. A ṣe ipilẹṣẹ awọn ipilẹṣẹ nipa fifun awọn aye kanna fun idagbasoke ati idagbasoke fun gbogbo, laibikita ọkunrin wọn. Fun wa, agbegbe ti o ni iwọntunwọnsi ati ododo ni ipilẹ fun awọn solusan ṣiṣẹ ati fun fifi ọjọ iwaju diẹ sii."
+    },
+    "diversidadeSexualTrad": {
+      "title": "Oniruuru ibalopo",
+      "paragraph": "Ọwọ fun Oniruuru Ibase jẹ ọkan ninu awọn ipilẹ ti aṣa wa ni T2m. A ni igberaga lati ṣe igbelaruge fun gbigba aabọ ati agbegbe ti o ni aabo ki LGBTQAIA + Awọn oṣiṣẹ le ṣafihan ododo idanimọ wọn. Diẹ ẹ sii ju koju etrundice, a ṣe ayẹyẹ ẹyọkan ati iwuri ti o tan ifiyọnu sinu ọwọn ilana. A gbagbọ pe nipasẹ awọn ọna oriṣiriṣi oriṣiriṣi ti ifẹ ati pe a mu agbara wa mu agbara ati imolara gẹgẹ bi ẹgbẹ kan."
+    },
+    "diversidadeCulturalTrad": {
+      "title": "Oniruuru",
+      "paragraph": "Ni T2m, a gba esin aṣa ati ọlọrọ itan pe iyatọ iyatọ ti o mu wa si ile-iṣẹ wa. A dojuko ni ilodisi ti awọn ere-ije ati awọn ẹgbẹ ẹya bi aye fun kikọ ati itankalẹ. Pẹlu awọn imulo iduroṣinṣin lodi si ẹlẹyamẹya ati awọn iṣe to ṣakoso lati rii daju awọn anfani dogba fun ohun ti o jẹ pataki ti o jẹ ki a ni agbara bi agbari kan."
+    },
+    "diversidadeRacialTrad": {
+      "title": "Oniruuru owo",
+      "paragraph": "Oniruuru ori-kiri ni T2m ni a rii bi ọrọ ti o nfa agbegbe iṣẹ wa ṣiṣẹ ati faagun awọn irisi wa. A ni ileri lati ṣe igbega agbegbe ti awọn ọwọ, n ṣe itẹwọgba gbogbo awọn ere ati awọn ẹgbẹ ti awọn ẹgbẹ, riri pataki awọn iriri igbesi aye ti o yatọ fun idagbasoke ẹda ati awọn solusan to munadoko. A ni awọn eto imulo ti o han lodi si eyikeyi fọọmu ti ẹlẹyamẹya ati pe a ṣiṣẹ lati rii daju pe gbogbo awọn oṣiṣẹ, laibikita fun idile wọn, ni ibọwọ fun iye wọn alailẹgbẹ si ile-iṣẹ naa."
+    },
+    "diversidadeDeficienciaTrad": {
+      "title": "Oniruuru fun awọn eniyan ti o ni ailera",
+      "paragraph": "Ifisi awọn eniyan ti o ni ailera jẹ diẹ sii ju pataki lọ fun T2m; O jẹ ifarada si dọti ati wiwọle. A mu awọn aye ati awọn ilana wa lati rii daju pe gbogbo awọn oṣiṣẹ wa le ṣe pẹlu ijọba ati iyi. Ni afikun, a ṣe agbega imọ inu ti inu lati ṣẹda agbegbe ti inu ti inu, nibiti awọn ọgbọn kọọkan ti ni idiyele ati ibi ti awọn idena ti tan sinu aṣeyọri fun aṣeyọri ti o pin."
+    },
+    "saudeBemEstarTrad": {
+      "topTitle": "Pi ain",
+      "title": "Ilera ati alafia",
+      "paragraph": "Ti o ba ni iye kan ibi ti alafia rẹ jẹ pataki, wa lati mọ bi a ṣe ṣe abojuto ẹgbẹ wa ki o ba ni atilẹyin atilẹyin ati ilera ni gbogbo abala ti igbesi aye."
+    },
+    "saudeBemEstarTextoTrad": {
+      "title": "Ilera ati alafia",
+      "paragraph": "Ni T2M, a da pe ilera ati alafia ti awọn oṣiṣẹ wa jẹ awọn ọwọn fun idagbasoke alagbero ti ile-iṣẹ ati fun aṣeyọri kọọkan. A ṣe agbega awọn ipilẹṣẹ ti o ni iwuri itọjupọpọ, pẹlu awọn eto ilera ti ara ati ti opolo, itọju ati itọju ehín, bakanna bi atilẹyin lojoojumọ. A ṣẹda agbegbe ti o ṣe pataki dọgbadọgba laarin awọn ọjọgbọn ati igbesi aye ti ara ẹni, aridaju pe oṣiṣẹ kọọkan ni awọn orisun lati gbin awọn ibi ilera ki o ṣaṣeyọri awọn ibi-aye wọn."
+    }
+  },
+  "ComunidadePage": {
+    "callBannerTrad": {
+      "title": "Ikẹkọ agbegbe",
+      "paragraph": "Ile-iṣẹ n ṣe idagbasoke awọn ipilẹṣẹ ti o kọja ti iṣowo lọ, wiwa lati ṣe awọn anfani awujọ ati ayika ni ibamu pẹlu awọn iye wọn.",
+      "buttonText": "Bulọọgi wa"
+    },
+    "oportunidadesInclusivasTrad": {
+      "topTitle": "Ile gbigbe",
+      "title": "Awọn anfani ikẹkọ ati awọn anfani ikẹkọ fun agbegbe naa",
+      "paragraph": "T2m jẹ ọkan ninu awọn onigbọwọ akọkọ ti eto ibugbe ibugbe Serratec, eyiti o ni ero lati ṣiṣẹ awọn ọdọmọkunrin ti ọrọ-aje fun awọn baseers imọ-ẹrọ. Eto yii nfunni ikẹkọ imọ-ẹrọ ni idagbasoke sọfitiwia ati murasilẹ awọn olukopa lati tẹ ọja iṣẹ ni eka elere giga. Pẹlu eyi, t2m mu ifarada wa si ojuse awujọ ati idagbasoke awọn talenti agbegbe, igbelaruge diẹ sii ati aje alagbero kan.",
+      "imageAlt": "Ọffisi T2m",
+      "buttonText": "Mo fẹ lati ṣe alabapin"
+    },
+    "nossosParceirosTrad": {
+      "topTitle": "Awọn abajade",
+      "title": "Awọn alabaṣiṣẹpọ wa",
+      "paragraph": "Nẹtiwọki wa ti awọn oṣiṣẹ ti o jẹ awakọ ati awọn apẹrẹ aṣeyọri ni igbesẹ kọọkan"
+    },
+    "listagemParceirosTrad": {
+      "images": [
+        {
+          "id": 1,
+          "title": "Ti a se",
+          "paragraph": "Aṣọ Agerele, Inc n mọ ni agbaye bi Ẹlẹda ti Aṣọ Agile Agile® (ailewu), ọna itọsọna kan si ifiso iṣowo.",
+          "imageAlt": "Logo da downled agile"
+        },
+        {
+          "id": 2,
+          "title": "Serratec",
+          "paragraph": "Wá jẹ apakan ti ọkan ninu awọn ile-iṣẹ imọ-ẹrọ ti o tobi julọ ni Ilu Brazil! Awọn iṣẹ ati awọn anfani fun iṣowo rẹ tabi ibẹrẹ bẹrẹ ni ẹsẹ ọtun!",
+          "imageAlt": "Logo ni seretetec"
+        },
+        {
+          "id": 3,
+          "title": "IbM",
+          "paragraph": "Awọn solusan lati ṣe ilana pipe ati adaṣe awọn ọna imukuro.",
+          "imageAlt": "Aami IBM"
+        },
+        {
+          "id": 4,
+          "title": "Microsoft",
+          "paragraph": "Microsoft jẹ oludari Bigtech ni iṣiro awọsanma, pẹpẹ agbara ati oye ti ara-ara.",
+          "imageAlt": "Logo lati Microsoft"
+        },
+        {
+          "id": 5,
+          "title": "Dephi",
+          "paragraph": "Irinṣẹ ipasẹ data ati awọn solusan iboju data.",
+          "imageAlt": "Delphi laipẹ"
+        },
+        {
+          "id": 6,
+          "title": "Biomob",
+          "paragraph": "Wiwọle ati ifisi jẹ iṣẹ wa. A ṣẹda awọn ipinnu oni-nọmba lati mu igbesi aye awujọ ibaramu diẹ sii, pese didara igbesi aye ati ikopa ni kikun ni awujọ fun o.",
+          "imageAlt": "Aami biomob"
+        },
+        {
+          "id": 7,
+          "title": "Adaṣe nibikibi",
+          "paragraph": "Adaṣe nibikibi lati tu awọn eniyan silẹ lati awọn iṣẹ ṣiṣe ati atunwi lati lo akoko pupọ nipa lilo ọgbọn iṣowo ti ilọsiwaju ati ṣe iṣẹ ti o nilo imọ-ẹrọ ti o ni ilọsiwaju ati ṣe iṣẹ ti o nilo imọ-ọrọ ti o ni ilọsiwaju ati ṣe iṣẹ ti o nilo imọ-ẹrọ iṣowo ti o ba wulo",
+          "imageAlt": "Logo Da Ṣiṣe adaṣe nibikibi"
+        },
+        {
+          "id": 8,
+          "title": "Vmeddi",
+          "paragraph": "Vmeme ni ile-iṣẹ adari ninu iwe-ẹri ati ile-iṣẹ ikẹkọ ọjọgbọn ati pe o ti pese ikẹkọ tẹlẹ awọn orilẹ-iṣẹ 500,000 pẹlu idiyele nẹtiwọọki ti o ju awọn olupese ikẹkọ 1100 rẹ lọ.",
+          "imageAlt": "Aami vmemetu"
+        },
+        {
+          "id": 9,
+          "title": "Ọjọ iwaju",
+          "paragraph": "Ti mọ ni ọja aabo aabo Brazil, ti o ni ipilẹ alabara to lagbara, pin ni awọn titobi ati awọn ẹgbẹ, sìn lati awọn ile-iṣẹ gbogbogbo ati aladani, si awọn ile-iṣẹ alabọde.",
+          "imageAlt": "Ojo iwaju"
+        }
+      ],
+      "type": "ile-iṣẹ"
+    }
+  },
+  "MensagemCeoPage": {
+    "callBannerTrad": {
+      "title": "Ifiranṣẹ lati coo wa",
+      "paragraph": "Ni T2m, a fi agbara mu igbẹkẹle ati tito pẹlu awọn iṣe SDGS ati awọn iṣẹ ESG.",
+      "buttonText": "Guilherme da motta alves - Lindedin"
+    },
+    "tresTopicosTrad": {
+      "paragraph": "Ti ni adehun lati duro de ati ojuse iṣowo, agbari wa ṣe pataki isomọ ti awọn iṣe esg ninu gbogbo awọn iṣẹ wa. A ṣe idanimọ pataki ti:",
+      "numberCards": [
+        {
+          "title": "Daabobo ayika (ayika)",
+          "paragraph": "Nipa didimu ẹsẹ ọkọ ayọkẹlẹ wa, lilo carbodan wa, lilo daradara ti awọn orisun adayeba ati igbega ti awọn iṣe alagbero."
+        },
+        {
+          "title": "Ṣe igbelaruge itẹ ati awọn ibatan awujọ ti ko ṣeeṣe (awujọ)",
+          "paragraph": "Ni ọwọ awọn ẹtọ eniyan, Oniruuru, ifisi ti awọn oṣiṣẹ wa, awọn alabara ati awọn agbegbe."
+        },
+        {
+          "title": "Ṣe adaṣe ami-ilu ati ti iṣe ti iṣe ti iṣe-iṣẹ (iṣakoso)",
+          "paragraph": "Pẹlu olori ti o ni iduroṣinṣin, iṣakoso ewu eewu ti o munadoko ati ibamu pẹlu awọn ofin ati ilana. Iran wa ni lati ṣẹda iye alagbero fun gbogbo awọn alabaṣepọ, idasi si ilọsiwaju ati ọjọ-ọla."
+        }
+      ]
+    },
+    "mensagemTrad": {
+      "paragraph": "Ijabọ yii ti ikolu awujọ ati idagbasoke alagbero ti 2024 tan ojiji wa si ifamọra ati ojuse aabo ni T2m. O ṣiṣẹ bi ikanni ipilẹ fun sisọ sisọ wa iduro ati ilọsiwaju wa, ti n ba awọn iṣe wa mọ ati awọn ilana ti SG. Ijabọ yii kii ṣe afihan awọn akitiyan wa nikan lori ikẹkọ, oniruuru ẹdinwo idaniloju, ṣugbọn o tun gba wa laaye lati mu wa lagbara lati fun awọn iṣẹlẹ awọn alabaṣiṣẹsi wa. Nipa pinpin awọn abajade wa ati awọn italaya, a jẹri iyasọtọ wa si ikolu Edouro ti o daju.",
+      "CEO": "Ceo da t2m"
+    }
+  },
+  "footer": {
+    "topics": {
+      "title": "Awọn akọle Aye",
+      "items": {
+        "sobre": "Lori",
+        "quemSomos": "Tani a jẹ",
+        "propostaDeValor": "IKILỌ Iye Iye",
+        "nossaEquipe": "Ẹgbẹ wa",
+        "comunidade": "Agbegbe",
+        "esg": "Esg"
+      }
+    },
+    "socialLinks": {
+      "title": "Awọn nẹtiwọki awujọ wa",
+      "instagram": "Ile ipamọ",
+      "linkedin": "Lindedin",
+      "facebook": "Facebook",
+      "youtube": "Youtube"
+    },
+    "officialSite": {
+      "title": "Ṣabẹwo si oju opo wẹẹbu osise wa",
+      "link": "https://www.t2mlab.com"
+    },
+    "footerInfo": {
+      "text": "© T2m 2023 | Gbogbo awọn ẹtọ wa ni ipamọ",
+      "logoAlt": "Logo T2m"
+    }
   }
 }

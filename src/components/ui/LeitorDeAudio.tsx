@@ -8,6 +8,7 @@ import { Button } from "./button";
 import { Mic } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./select";
 import { BiUserVoice } from "react-icons/bi";
+import { useTranslations } from "next-intl";
 
 const LeitorDeAudio: React.FC = () => {
   const params = useParams<{ locale: string }>();
@@ -19,6 +20,8 @@ const LeitorDeAudio: React.FC = () => {
   const [isLoading, setIsLoading] = React.useState<boolean>(true);
   const speechLang = getSpeechLangFromLocale(params?.locale || "pt");
   const utterance = new SpeechSynthesisUtterance();
+
+  const t = useTranslations("Header.leitorAudio");
 
   const loadVoices = () => {
     const availableVoices = speechSynthesis.getVoices();
@@ -169,7 +172,7 @@ const LeitorDeAudio: React.FC = () => {
         <PopoverContent className="p-4 w-60 flex flex-col gap-2">
           <div className=" flex space-x-2">
             <Button onClick={toggleReadingMode} className="w-full">
-              {isReading ? "Clique em algum texto para iniciar a leitura" : "Iniciar Leitura"}
+              {isReading ? t("isReading") : t("isNotReading")}
             </Button>
           </div>
           <Select onValueChange={handleVoiceChange} value={selectedVoice}>
@@ -179,7 +182,7 @@ const LeitorDeAudio: React.FC = () => {
             <SelectContent>
               {isLoading ? (
                 <SelectItem disabled value="loading">
-                  Carregando vozes...
+                  {t("carregando")}
                 </SelectItem>
               ) : filteredVoices.length > 0 ? (
                 filteredVoices.map((voice) => (
@@ -189,7 +192,7 @@ const LeitorDeAudio: React.FC = () => {
                 ))
               ) : (
                 <SelectItem disabled value="no-voices">
-                  Sem vozes disponíveis para o idioma selecionado
+                  {t("semVozes")}
                 </SelectItem>
               )}
             </SelectContent>

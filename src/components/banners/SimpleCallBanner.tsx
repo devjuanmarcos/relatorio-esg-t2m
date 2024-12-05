@@ -93,7 +93,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
       <Image
         src={imageUrl}
         alt="Cover Image"
-        className="bg-img ]"
+        className="bg-img bg-bottom"
         width={1000}
         height={600}
         sizes="(max-width: 768px) 100vw, 1000px"

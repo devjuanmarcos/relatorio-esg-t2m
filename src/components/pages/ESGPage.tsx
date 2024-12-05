@@ -18,6 +18,7 @@ import {
   FaChild,
   FaFemale,
   FaHandsHelping,
+  FaLeaf,
   FaSchool,
   FaTree,
   FaUserAlt,
@@ -25,8 +26,9 @@ import {
   FaUtensils,
   FaWheelchair,
 } from "react-icons/fa";
-import { MdCo2, MdFoodBank } from "react-icons/md";
+import { MdCo2, MdFoodBank, MdInsertDriveFile } from "react-icons/md";
 import { LuRecycle } from "react-icons/lu";
+import { useTranslations } from "next-intl";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -51,6 +53,62 @@ const NumberCardsBanner = dynamic(() =>
 const ESGPage: React.FC = () => {
   const isMounted = useIsMounted();
 
+  // TRADUÇÕES BANNERS AMBIENTAIS:
+  const callBannerTrad = useTranslations("ESGPage.Ambiental.callBannerTrad");
+  const oportunidadesInclusivasTrad = useTranslations("ESGPage.Ambiental.oportunidadesInclusivasTrad");
+  const gestaoResiduosTrad = useTranslations("ESGPage.Ambiental.gestaoResiduosTrad");
+  const gestaoResiduosTexto1Trad = useTranslations("ESGPage.Ambiental.gestaoResiduosTexto1Trad");
+  const contratosAssinadosTrad = useTranslations("ESGPage.Ambiental.contratosAssinadosTrad");
+  const contratosAssinadosTexto1Trad = useTranslations("ESGPage.Ambiental.contratosAssinadosTexto1Trad");
+  const utilizacaoNuvemTrad = useTranslations("ESGPage.Ambiental.utilizacaoNuvemTrad");
+  const utilizacaoNuvemTexto2Trad = useTranslations("ESGPage.Ambiental.utilizacaoNuvemTexto2Trad");
+  const utilizacaoNuvemTexto1Trad = useTranslations("ESGPage.Ambiental.utilizacaoNuvemTexto1Trad");
+  const consumoConscienteTrad = useTranslations("ESGPage.Ambiental.consumoConscienteTrad");
+  const consumoConscienteTexto1Trad = useTranslations("ESGPage.Ambiental.consumoConscienteTexto1Trad");
+  const estimuloReducaoTrad = useTranslations("ESGPage.Ambiental.estimuloReducaoTrad");
+  const estimuloReducaoTexto1Trad = useTranslations("ESGPage.Ambiental.estimuloReducaoTexto1Trad");
+  const cadeiaFornecedoresTrad = useTranslations("ESGPage.Ambiental.cadeiaFornecedoresTrad");
+  const cadeiaFornecedoresTexto1Trad = useTranslations("ESGPage.Ambiental.cadeiaFornecedoresTexto1Trad");
+  const reciclagemMaterialTrad = useTranslations("ESGPage.Ambiental.reciclagemMaterialTrad");
+  const reciclagemMaterialTexto1Trad = useTranslations("ESGPage.Ambiental.reciclagemMaterialTexto1Trad");
+  const feitosAmbientalTrad = useTranslations("ESGPage.Ambiental.feitosAmbientalTrad");
+
+  // TRADUÇÕES BANNERS SOCIAIS:
+  const patrocinadorIniciativasTrad = useTranslations("ESGPage.Social.patrocinadorIniciativasTrad");
+  const patrocinadorIniciativasTexto1Trad = useTranslations("ESGPage.Social.patrocinadorIniciativasTexto1Trad");
+  const numerosResidenciaTrad = useTranslations("ESGPage.Social.numerosResidenciaTrad");
+  const equipeGenteGestaoTrad = useTranslations("ESGPage.Social.equipeGenteGestaoTrad");
+  const equipeGenteGestaoTexto1Trad = useTranslations("ESGPage.Social.equipeGenteGestaoTexto1Trad");
+  const programaQualidadeVidaTrad = useTranslations("ESGPage.Social.programaQualidadeVidaTrad");
+  const programaQualidadeVidaTexto1Trad = useTranslations("ESGPage.Social.programaQualidadeVidaTexto1Trad");
+  const campanhasSolidariasTrad = useTranslations("ESGPage.Social.campanhasSolidariasTrad");
+  const campanhasSolidariasTexto1Trad = useTranslations("ESGPage.Social.campanhasSolidariasTexto1Trad");
+  const voluntariadoApoioTrad = useTranslations("ESGPage.Social.voluntariadoApoioTrad");
+  const voluntariadoApoioTexto1Trad = useTranslations("ESGPage.Social.voluntariadoApoioTexto1Trad");
+  const feitosSocialTrad = useTranslations("ESGPage.Social.feitosSocialTrad");
+  const campanha1Trad = useTranslations("ESGPage.Social.campanha1Trad");
+  const campanha2Trad = useTranslations("ESGPage.Social.campanha2Trad");
+
+  // TRADUÇÕES BANNERS GOVERNAMENTAIS
+  const normasCodigosLegislacoesTrad = useTranslations("ESGPage.Governamental.normasCodigosLegislacoesTrad");
+  const normasCodigosLegislacoesTexto1Trad = useTranslations(
+    "ESGPage.Governamental.normasCodigosLegislacoesTexto1Trad"
+  );
+  const comiteT2MTrad = useTranslations("ESGPage.Governamental.comiteT2MTrad");
+  const comiteT2MTexto1Trad = useTranslations("ESGPage.Governamental.comiteT2MTexto1Trad");
+  const comiteT2MTexto2Trad = useTranslations("ESGPage.Governamental.comiteT2MTexto2Trad");
+  const certificacoesPadroesInternacionaisTrad = useTranslations(
+    "ESGPage.Governamental.certificacoesPadroesInternacionaisTrad"
+  );
+  const certificacoesPadroesInternacionaisTexto1Trad = useTranslations(
+    "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
+  );
+  const canaisDenunciaTrad = useTranslations("ESGPage.Governamental.canaisDenunciaTrad");
+  const canaisDenunciaTexto1Trad = useTranslations("ESGPage.Governamental.canaisDenunciaTexto1Trad");
+  const equidadeSalarialTrad = useTranslations("ESGPage.Governamental.equidadeSalarialTrad");
+  const equidadeSalarialTexto1Trad = useTranslations("ESGPage.Governamental.equidadeSalarialTexto1Trad");
+  const metasTrad = useTranslations("ESGPage.Governamental.metasTrad");
+
   if (!isMounted) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -58,6 +116,624 @@ const ESGPage: React.FC = () => {
       </div>
     );
   }
+
+  // AMBIENTAL
+  const callBannerData: CallBannerInterface = {
+    imageUrl: "/img/temp/esg/compromisso.jpg",
+    buttonLink: "https://www.t2mlab.com/nosso-blog/",
+    buttonTarget: "_blank",
+    buttonText: callBannerTrad("buttonText"),
+    title: callBannerTrad("title"),
+    paragraph: callBannerTrad("paragraph"),
+    alignment: "start",
+  };
+
+  const oportunidadesInclusivasData: ImageWithCardTextBannerInterface = {
+    topTitle: oportunidadesInclusivasTrad("topTitle"),
+    title: oportunidadesInclusivasTrad("title"),
+    paragraph: oportunidadesInclusivasTrad("paragraph"),
+    imageAlt: oportunidadesInclusivasTrad("imageAlt"),
+    imageUrl: "/img/temp/esg/odsonu2.png",
+    imageAlignment: "start",
+    buttonText: oportunidadesInclusivasTrad("buttonText"),
+    buttonLink: "#",
+    buttonTarget: "_blank",
+    objectContain: true,
+  };
+
+  const gestaoResiduosData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/reciclagem.jpg",
+    topTitle: gestaoResiduosTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    title: gestaoResiduosTrad("title"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: gestaoResiduosTrad("iconAlt"),
+    },
+    ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
+  };
+
+  const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: gestaoResiduosTexto1Trad("paragraph"),
+    imageAlt: gestaoResiduosTexto1Trad("imageUrl"),
+    imageUrl: "/img/temp/esg/impactosAmbientais.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const contratosAssinadosData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/contratosAssinados2.jpg",
+    topTitle: contratosAssinadosTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: contratosAssinadosTrad("iconAlt"),
+    },
+    title: contratosAssinadosTrad("title"),
+    ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
+  };
+
+  const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: contratosAssinadosTexto1Trad("paragraph"),
+    imageAlt: contratosAssinadosTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/digitalizacaoDocumentos.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const utilizacaoNuvemData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/nuvem.png",
+    topTitle: utilizacaoNuvemTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    title: utilizacaoNuvemTrad("title"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: utilizacaoNuvemTrad("iconAlt"),
+    },
+    ods: ["/img/ods/7.png", "/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png"],
+  };
+
+  const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [utilizacaoNuvemTexto2Trad("paragraphs.0"), utilizacaoNuvemTexto2Trad("paragraphs.1")],
+    imageAlt: utilizacaoNuvemTexto2Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/emissaoCarbono.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      utilizacaoNuvemTexto1Trad("paragraphs.0"),
+      utilizacaoNuvemTexto1Trad("paragraphs.1"),
+      utilizacaoNuvemTexto1Trad("paragraphs.2"),
+    ],
+    imageAlt: utilizacaoNuvemTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/computacaoNuvem.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const consumoConscienteData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/temp/esg/consumoAgua.png",
+    topTitle: consumoConscienteTrad("topTitle"),
+    title: consumoConscienteTrad("title"),
+    lineColor: consumoConscienteTrad("lineColor"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: consumoConscienteTrad("iconAlt"),
+    },
+    ods: ["/img/ods/6.png", "/img/ods/12.png"],
+  };
+
+  const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: consumoConscienteTexto1Trad("paragraph"),
+    imageAlt: consumoConscienteTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/consumoConsciente.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const estimuloReducaoData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/veiculosCombustao.png",
+    topTitle: estimuloReducaoTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    title: estimuloReducaoTrad("title"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: estimuloReducaoTrad("iconAlt"),
+    },
+    ods: ["/img/ods/3.png", "/img/ods/11.png", "/img/ods/12.png", "/img/ods/13.png"],
+  };
+
+  const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: estimuloReducaoTexto1Trad("paragraph"),
+    imageAlt: estimuloReducaoTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/mobilidadeSustentavcel.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const cadeiaFornecedoresData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/temp/esg/meioambiente.png",
+    topTitle: cadeiaFornecedoresTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    title: cadeiaFornecedoresTrad("title"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: cadeiaFornecedoresTrad("iconAlt"),
+    },
+    ods: ["/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/17.png"],
+  };
+
+  const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: cadeiaFornecedoresTexto1Trad("paragraph"),
+    imageAlt: cadeiaFornecedoresTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/sustentabilidade.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const reciclagemMaterialData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/reciclagemBaterias.jpeg",
+    topTitle: reciclagemMaterialTrad("topTitle"),
+    lineColor: "bg-var-ambiental",
+    title: reciclagemMaterialTrad("title"),
+    icon: {
+      icon: "/img/temp/esg/ambiental.png",
+      iconAlt: reciclagemMaterialTrad("iconAlt"),
+    },
+    ods: ["/img/ods/6.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
+  };
+
+  const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: reciclagemMaterialTexto1Trad("paragraph"),
+    imageAlt: reciclagemMaterialTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/lampada.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const feitosAmbientalData: NumberCardsBannerInterface = {
+    title: feitosAmbientalTrad("title"),
+    paragraph: feitosAmbientalTrad("paragraph"),
+    cardType: "mini",
+    alignment: "center",
+    cardColor: "var-ambiental",
+    cardBorder: "border-var-ambiental",
+    numberCards: [
+      {
+        title: feitosAmbientalTrad("numberCards.0.title"),
+        icon: FaTree,
+        paragraph: "",
+      },
+      {
+        title: feitosAmbientalTrad("numberCards.1.title"),
+        icon: MdCo2,
+        paragraph: "",
+      },
+      {
+        title: feitosAmbientalTrad("numberCards.2.title"),
+        icon: LuRecycle,
+        paragraph: "",
+      },
+      {
+        title: feitosAmbientalTrad("numberCards.3.title"),
+        icon: MdInsertDriveFile,
+        paragraph: "",
+      },
+    ],
+    type: "border",
+  };
+
+  // SOCIAL
+  const patrocinadorIniciativasData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/temp/esg/capacitacaoProfissional.jpg",
+    topTitle: patrocinadorIniciativasTrad("topTitle"),
+    lineColor: "bg-var-social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: patrocinadorIniciativasTrad("iconAlt"),
+    },
+    title: patrocinadorIniciativasTrad("title"),
+    ods: ["/img/ods/4.png", "/img/ods/8.png", "/img/ods/10.png"],
+  };
+
+  const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: patrocinadorIniciativasTexto1Trad("paragraph"),
+    imageAlt: patrocinadorIniciativasTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/serratec.svg",
+    imageAlignment: "start",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const numerosResidenciaData: NumberCardsBannerInterface = {
+    title: numerosResidenciaTrad("title"),
+    topTitle: numerosResidenciaTrad("topTitle"),
+    paragraph: numerosResidenciaTrad("paragraph"),
+    alignment: "center",
+    cardBorder: "border-t-var-social",
+    cardColor: "var-social",
+    numberCards: [
+      {
+        icon: FaChild,
+        title: "205",
+        paragraph: numerosResidenciaTrad("numberCards.0.paragraph"),
+      },
+      {
+        icon: FaBriefcase,
+        title: "101",
+        paragraph: numerosResidenciaTrad("numberCards.1.paragraph"),
+      },
+      {
+        icon: FaChartLine,
+        title: "75%",
+        paragraph: numerosResidenciaTrad("numberCards.2.paragraph"),
+      },
+      {
+        icon: FaWheelchair,
+        title: "4%",
+        paragraph: numerosResidenciaTrad("numberCards.3.paragraph"),
+      },
+      {
+        icon: FaFemale,
+        title: "21%",
+        paragraph: numerosResidenciaTrad("numberCards.4.paragraph"),
+      },
+      {
+        icon: FaUserAlt,
+        title: "7%",
+        paragraph: numerosResidenciaTrad("numberCards.5.paragraph"),
+      },
+      {
+        icon: FaSchool,
+        title: "51%",
+        paragraph: numerosResidenciaTrad("numberCards.6.paragraph"),
+      },
+      {
+        icon: FaHandsHelping,
+        title: "62%",
+        paragraph: numerosResidenciaTrad("numberCards.7.paragraph"),
+      },
+      {
+        icon: FaChalkboardTeacher,
+        title: "10",
+        paragraph: numerosResidenciaTrad("numberCards.8.paragraph"),
+      },
+    ],
+  };
+
+  const equipeGenteGestaoData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/mulheres.png",
+    topTitle: equipeGenteGestaoTrad("topTitle"),
+    lineColor: "bg-var-social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: equipeGenteGestaoTrad("iconAlt"),
+    },
+    title: equipeGenteGestaoTrad("title"),
+    ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
+  };
+
+  const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: equipeGenteGestaoTexto1Trad("paragraph"),
+    imageAlt: equipeGenteGestaoTexto1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/mulheres2.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const programaQualidadeVidaData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/qualidadeVida2.png",
+    topTitle: programaQualidadeVidaTrad("topTitle"),
+    lineColor: "bg-var-social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: programaQualidadeVidaTrad("iconAlt"),
+    },
+    title: programaQualidadeVidaTrad("title"),
+    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
+  };
+
+  const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: programaQualidadeVidaTexto1Trad("paragraph"),
+    imageAlt: programaQualidadeVidaTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
+    imageAlignment: "start",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const campanhasSolidariasData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/final/esg/campanhasSolidarias.png",
+    topTitle: campanhasSolidariasTrad("topTitle"),
+    lineColor: "bg-var-social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: campanhasSolidariasTrad("iconAlt"),
+    },
+    title: campanhasSolidariasTrad("title"),
+    ods: ["/img/ods/1.png", "/img/ods/10.png"],
+  };
+
+  const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: campanhasSolidariasTexto1Trad("paragraph"),
+    imageAlt: campanhasSolidariasTexto1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/doacoes.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const voluntariadoApoioData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
+    topTitle: voluntariadoApoioTrad("topTitle"),
+    lineColor: "bg-var-social",
+    icon: {
+      icon: "/img/temp/esg/social.png",
+      iconAlt: voluntariadoApoioTrad("iconAlt"),
+    },
+    title: voluntariadoApoioTrad("title"),
+    ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
+  };
+
+  const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: voluntariadoApoioTexto1Trad("paragraph"),
+    imageAlt: voluntariadoApoioTexto1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/apoioEmpregabilidade.jpeg",
+    imageAlignment: "start",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const feitosSocialData: NumberCardsBannerInterface = {
+    title: feitosSocialTrad("title"),
+    paragraph: feitosSocialTrad("paragraph"),
+    cardType: "mini",
+    alignment: "center",
+    cardColor: "var-social",
+    cardBorder: "border-var-social",
+    numberCards: [
+      {
+        title: feitosSocialTrad("numberCards.0.title"),
+        icon: FaUtensils,
+        paragraph: "",
+      },
+      {
+        title: feitosSocialTrad("numberCards.1.title"),
+        icon: FaHandsHelping,
+        paragraph: "",
+      },
+      {
+        title: feitosSocialTrad("numberCards.2.title"),
+        icon: FaUsers,
+        paragraph: "",
+      },
+    ],
+    type: "border",
+  };
+
+  const campanha1Data: ImageWithCardTextBannerInterface = {
+    paragraph: campanha1Trad("paragraph"),
+    imageAlt: campanha1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/esperancar.jpeg",
+    imageAlignment: "end",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const campanha2Data: ImageWithCardTextBannerInterface = {
+    paragraph: campanha2Trad("paragraph"),
+    imageAlt: campanha2Trad("imageAlt"),
+    imageUrl: "/img/final/esg/appo.jpeg",
+    imageAlignment: "start",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  // GOVERNAMENTAL
+  const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/legislacao.jpeg",
+    topTitle: normasCodigosLegislacoesTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: normasCodigosLegislacoesTrad("iconAlt"),
+    },
+    title: normasCodigosLegislacoesTrad("title"),
+    ods: ["/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png", "/img/ods/16.png"],
+  };
+
+  const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      normasCodigosLegislacoesTexto1Trad("paragraphs.0"),
+      normasCodigosLegislacoesTexto1Trad("paragraphs.1"),
+      normasCodigosLegislacoesTexto1Trad("paragraphs.2"),
+    ],
+    paragraph: "",
+    imageAlt: normasCodigosLegislacoesTexto1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/legislacao.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const comiteT2MData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/final/esg/comites.jpg",
+    topTitle: comiteT2MTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: comiteT2MTrad("iconAlt"),
+    },
+    title: comiteT2MTrad("title"),
+    ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
+  };
+
+  const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: comiteT2MTexto1Trad("paragraph"),
+    imageAlt: comiteT2MTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/compliance.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
+    paragraph: comiteT2MTexto2Trad("paragraph"),
+    imageAlt: comiteT2MTexto2Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/prevencao.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/certificacoes.png",
+    topTitle: certificacoesPadroesInternacionaisTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: certificacoesPadroesInternacionaisTrad("iconAlt"),
+    },
+    title: certificacoesPadroesInternacionaisTrad("title"),
+    paragraph: certificacoesPadroesInternacionaisTrad("paragraph"),
+    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/12.png", "/img/ods/16.png"],
+  };
+
+  const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      certificacoesPadroesInternacionaisTexto1Trad("paragraphs.0"),
+      certificacoesPadroesInternacionaisTexto1Trad("paragraphs.1"),
+    ],
+    imageAlt: certificacoesPadroesInternacionaisTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/verificado.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const canaisDenunciaData: SimpleCallBannerInterface = {
+    alignment: "end",
+    imageUrl: "/img/temp/esg/canalDenuncia.jpg",
+    topTitle: canaisDenunciaTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: canaisDenunciaTrad("iconAlt"),
+    },
+    title: canaisDenunciaTrad("title"),
+    ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
+  };
+
+  const canaisDenunciaTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      canaisDenunciaTexto1Trad("paragraphs.0"),
+      canaisDenunciaTexto1Trad("paragraphs.1"),
+      canaisDenunciaTexto1Trad("paragraphs.2"),
+      canaisDenunciaTexto1Trad("paragraphs.3"),
+    ],
+    imageAlt: canaisDenunciaTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/canalDenuncia2.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const equidadeSalarialData: SimpleCallBannerInterface = {
+    alignment: "start",
+    imageUrl: "/img/temp/esg/equipeSalarial.jpg",
+    buttonLink: "https://www.t2mlab.com/DOCs/Relatorio-de-Igualdade-Salarial-e-de-Critérios-Remuneratorios_set24.pdf",
+    buttonText: equidadeSalarialTrad("buttonText"),
+    buttonTarget: "_blank",
+    topTitle: equidadeSalarialTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: equidadeSalarialTrad("iconAlt"),
+    },
+    title: equidadeSalarialTrad("title"),
+    paragraph: equidadeSalarialTrad("paragraph"),
+    ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
+  };
+
+  const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: equidadeSalarialTexto1Trad("paragraph"),
+    imageAlt: equidadeSalarialTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/salarial.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const metasData: NumberCardsBannerInterface = {
+    title: metasTrad("title"),
+    paragraph: metasTrad("paragraph"),
+    cardType: "mini",
+    alignment: "center",
+    numberCards: [
+      {
+        title: metasTrad("numberCards.0.title"),
+        icon: FaTree,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.1.title"),
+        icon: MdCo2,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.2.title"),
+        icon: LuRecycle,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.3.title"),
+        icon: FaUtensils,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.4.title"),
+        icon: FaHandsHelping,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.5.title"),
+        icon: FaUsers,
+        paragraph: "",
+      },
+      {
+        title: metasTrad("numberCards.6.title"),
+        icon: FaCertificate,
+        paragraph: "",
+      },
+    ],
+    type: "border",
+  };
 
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
@@ -154,636 +830,3 @@ const ESGPage: React.FC = () => {
 };
 
 export default ESGPage;
-
-const callBannerData: CallBannerInterface = {
-  imageUrl: "/img/temp/esg/compromisso.jpg",
-  buttonLink: "https://www.t2mlab.com/nosso-blog/",
-  buttonText: "Nosso blog",
-  buttonTarget: "_blank",
-  title: "Compromisso ESG",
-  alignment: "start",
-  paragraph:
-    "Este relatório apresenta as ações de impacto ambiental, social e de governança (ESG) implementadas por nossa empresa ao longo do último ano, destacando como essas iniciativas estão alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU.",
-};
-
-const oportunidadesInclusivasData: ImageWithCardTextBannerInterface = {
-  topTitle: "Estratégia",
-  title: "Nosso compromisso",
-  paragraph:
-    "Nosso compromisso com o ESG é parte central de nossa estratégia, contribuindo para a redução dos impactos ambientais, o fortalecimento de práticas sociais inclusivas e a adoção de uma governança corporativa ética e responsável. Nosso esforço contínuo para integrar os ODS às operações fortalece nossa atuação sustentável, gerando valor para todas as partes interessadas.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/odsonu2.png",
-  imageAlignment: "start",
-  buttonText: "Quero fazer parte",
-  buttonLink: "#",
-  buttonTarget: "_blank",
-  objectContain: true,
-};
-
-const gestaoResiduosData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/final/esg/reciclagem.jpg",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  title: "Gestão de Resíduos e Escolha de Materiais Sustentáveis",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
-};
-
-const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Nosso compromisso com o ESG é parte central de nossa estratégia, contribuindo para a redução dos impactos ambientais, o fortalecimento de práticas sociais inclusivas e a adoção de uma governança corporativa ética e responsável. Nosso esforço contínuo para integrar os ODS às operações fortalece nossa atuação sustentável, gerando valor para todas as partes interessadas.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/impactosAmbientais.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const contratosAssinadosData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/final/esg/contratosAssinados2.jpg",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  title: "Contratos Assinados Virtualmente",
-  ods: ["/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
-};
-
-const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Como parte de nosso compromisso com a sustentabilidade, a T2M adotou uma política de digitalização de documentos e assinatura virtual de contratos, reduzindo significativamente a necessidade de impressão em papel. A transição para contratos digitais não só agiliza nossos processos como também preserva recursos naturais, diminuindo o consumo de papel, tinta e energia. Esta prática contribui diretamente para a redução do desmatamento e o uso sustentável dos recursos naturais. Ao longo do ano, essa prática resultou em uma expressiva redução de resíduos de papel, reforçando o compromisso da T2M com o meio ambiente e com uma gestão moderna e sustentável.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/digitalizacaoDocumentos.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const utilizacaoNuvemData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/nuvem.png",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  title: "Utilização de Nuvem, reduzindo o consumo de hardware",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/7.png", "/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png"],
-};
-
-const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
-  paragraphs: [
-    "Desde a migração para o Microsoft Cloud, nossa empresa alcançou uma significativa redução nas emissões de carbono, reforçando o compromisso com práticas sustentáveis. Com base em dados estimados, evitamos a emissão de 2,192 milhões toneladas de carbono, o que representa uma redução de 99,72% das emissões potenciais, graças à utilização de ferramentas como o SharePoint e o Exchange Online. ",
-    "Nesse período, as emissões efetivas somaram apenas 0,007 toneladas, em comparação às 2,468 toneladas estimadas em um cenário tradicional. Essa transição para uma infraestrutura digital mais eficiente demonstra o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando a estratégia tecnológica às metas ESG.",
-  ],
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/emissaoCarbono.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraphs: [
-    "Na T2M, o uso das soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, é essencial para reduzir o consumo de energia e a necessidade de novos hardwares físicos.",
-    "Essas ferramentas diminuem a demanda por servidores físicos, que consomem muita energia e exigem manutenção. Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável.",
-    "Além disso, a nuvem oferece escalabilidade, eficiência, segurança e acessibilidade de dados, refletindo o compromisso da T2M com práticas tecnológicas sustentáveis e inovadoras.",
-  ],
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/computacaoNuvem.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const consumoConscienteData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/temp/esg/consumoAgua.png",
-  topTitle: "Ambiental",
-  title: "Consumo consciente de Água",
-  lineColor: "bg-var-ambiental",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/6.png", "/img/ods/12.png"],
-};
-
-const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "O consumo consciente de água é uma prioridade na T2M, e implementamos diversas práticas para reduzir o desperdício desse recurso vital. Além disso, promovemos campanhas internas de conscientização, incentivando nossos colaboradores a adotar hábitos responsáveis no uso de água tanto no ambiente de trabalho quanto em suas casas. Essa prática visa reduzir o consumo de água e contribuir para a preservação dos recursos hídricos, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Com essas ações, buscamos minimizar nosso impacto ambiental e inspirar uma cultura de sustentabilidade entre nossos colaboradores.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/consumoConsciente.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const estimuloReducaoData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/veiculosCombustao.png",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  title: "Estímulo à redução do uso de veículos a combustão",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/3.png", "/img/ods/11.png", "/img/ods/12.png", "/img/ods/13.png"],
-};
-
-const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M incentiva seus colaboradores a adotarem práticas de mobilidade mais sustentáveis, reduzindo o transito e a emissão de CO2 por veículos a combustão. Para facilitar essa transição, oferecemos incentivos para o uso de transporte público e compartilhado, esse estímulo à mobilidade sustentável reflete nosso compromisso em diminuir a emissão de gases de efeito estufa e reduzir nossa pegada de carbono. Além disso, promovemos a conscientização sobre os benefícios de uma mobilidade mais sustentável, contribuindo para o bem-estar dos colaboradores e para a preservação do meio ambiente.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/mobilidadeSustentavcel.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const cadeiaFornecedoresData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/temp/esg/meioambiente.png",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  title: "Cadeia de fornecedores comprometidos com o meio ambiente",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/17.png"],
-};
-
-const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M preza por uma cadeia de fornecedores alinhada com seus valores de sustentabilidade, priorizando parcerias com empresas que adotam práticas ambientalmente responsáveis. Avaliamos criteriosamente nossos fornecedores para assegurar que eles compartilhem nosso compromisso com a preservação ambiental e com a redução de impactos negativos ao meio ambiente. Isso inclui fornecedores que adotam métodos sustentáveis em sua produção, utilizam materiais reciclados, implementam programas de redução de resíduos e cumprem com normas de responsabilidade ambiental. Ao integrar práticas de ESG em nossa cadeia de suprimentos, fortalecemos nosso compromisso com uma operação sustentável e ampliamos nosso impacto positivo ao influenciar outras organizações a adotarem práticas responsáveis",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/sustentabilidade.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const reciclagemMaterialData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/reciclagemBaterias.jpeg",
-  topTitle: "Ambiental",
-  lineColor: "bg-var-ambiental",
-  title: "Reciclagem de material eletrônico e baterias",
-  icon: {
-    icon: "/img/temp/esg/ambiental.png",
-    iconAlt: "ícone referente ao tópico ambiental",
-  },
-  ods: ["/img/ods/6.png", "/img/ods/12.png", "/img/ods/13.png", "/img/ods/15.png"],
-};
-
-const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M adota práticas rigorosas de reciclagem de equipamentos eletrônicos e baterias, reconhecendo a importância do descarte adequado desses materiais para evitar impactos negativos ao meio ambiente. Os resíduos eletrônicos são enviados para empresas certificadas que garantem o tratamento correto e a reciclagem de componentes, contribuindo para a recuperação de materiais valiosos e a redução de resíduos tóxicos. Internamente, promovemos a conscientização sobre a importância da reciclagem de eletrônicos entre os colaboradores, incentivando o descarte adequado. Essa iniciativa reflete nosso compromisso com a economia circular, evitando a contaminação do solo e das águas e promovendo uma gestão de resíduos mais eficiente e responsável.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/lampada.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-ambiental",
-  pointColor: "text-var-ambiental",
-};
-
-const feitosAmbientalData: NumberCardsBannerInterface = {
-  title: "Nossos feitos em 2024",
-  paragraph:
-    "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
-  cardType: "mini",
-  alignment: "center",
-  cardColor: "var-ambiental",
-  cardBorder: "border-var-ambiental",
-  numberCards: [
-    {
-      title: "100 árvores plantadas",
-      icon: FaTree,
-      paragraph: "",
-    },
-    {
-      title: "Redução de 99,72% das emissões de carbono",
-      icon: MdCo2,
-      paragraph: "",
-    },
-    {
-      title: "Zerou o consumo de material descartável",
-      // Colocar
-      icon: LuRecycle,
-      paragraph: "",
-    },
-  ],
-  type: "border",
-};
-
-const patrocinadorIniciativasData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/temp/esg/capacitacaoProfissional.jpg",
-  topTitle: "Social",
-  lineColor: "bg-var-social",
-  icon: {
-    icon: "/img/temp/esg/social.png",
-    iconAlt: "ícone referente ao tópico social",
-  },
-  title: "Patrocinador de iniciativas de capacitação profissional",
-  ods: ["/img/ods/4.png", "/img/ods/8.png", "/img/ods/10.png"],
-};
-
-const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que visa capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia. Além de patrocinar, a T2M disponibiliza funcionários para ministrarem aulas e monitorias, contribuindo ativamente para a formação dos residentes. A empresa também mantém uma parceria com a UFF na FEST (Fábrica Escola de Software e Teste), apoiando cursos essenciais como Product Owner, Scrum Master e Qualidade de Software. Essas ações reforçam o compromisso da T2M com a responsabilidade social e o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/serratec.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const numerosResidenciaData: NumberCardsBannerInterface = {
-  title: "Caso Prático T2M – Parceria Serratec",
-  topTitle: "Indicadores - Residência",
-  paragraph: "Profissionais contratados pela T2M oriundos do Programa de Residência em TIC do Serratec 2019.2 – 2024.1",
-  alignment: "center",
-  cardBorder: "border-t-var-social",
-  cardColor: "var-social",
-  numberCards: [
-    {
-      icon: FaChild,
-      title: "205",
-      paragraph: "Pessoas adotadas pelo programa",
-    },
-    {
-      icon: FaBriefcase,
-      title: "101",
-      paragraph: "Contratações realizadas",
-    },
-    {
-      icon: FaChartLine,
-      title: "75%",
-      paragraph: "Permanência na T2M após o programa",
-    },
-    {
-      icon: FaWheelchair,
-      title: "4%",
-      paragraph: "Pessoas com deficiência no programa",
-    },
-    {
-      icon: FaFemale,
-      title: "21%",
-      paragraph: "Participação feminina",
-    },
-    {
-      icon: FaUserAlt,
-      title: "7%",
-      paragraph: "Pessoas negras participantes",
-    },
-    {
-      icon: FaSchool,
-      title: "51%",
-      paragraph: "Egressos de escola pública",
-    },
-    {
-      icon: FaHandsHelping,
-      title: "62%",
-      paragraph: "Beneficiários de ações afirmativas",
-    },
-    {
-      icon: FaChalkboardTeacher,
-      title: "10",
-      paragraph: "Atuam como professores ou monitores do programa",
-    },
-  ],
-};
-
-const equipeGenteGestaoData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/final/esg/mulheres.png",
-  topTitle: "Social",
-  lineColor: "bg-var-social",
-  icon: {
-    icon: "/img/temp/esg/social.png",
-    iconAlt: "ícone referente ao tópico social",
-  },
-  title: "Equipe de gente e gestão composta por mulheres",
-  ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
-};
-
-const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "O time de Gente e Gestão da T2M é 100% composto por mulheres, evidenciando o forte compromisso da empresa com a diversidade e a inclusão. Além disso, cerca de 75% do time administrativo é formado por mulheres, pessoas com deficiência e pessoas pretas, reforçando a dedicação da T2M em promover um ambiente de trabalho plural e representativo. Esta equipe de Gente e Gestão desempenha um papel fundamental na construção de uma cultura organizacional acolhedora e igualitária, implementando políticas de desenvolvimento profissional e ações que valorizam a diversidade de perspectivas dentro da empresa. A T2M acredita que a inclusão é um pilar essencial para o sucesso de sua cultura organizacional, impulsionando a inovação e gerando um impacto social positivo.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/final/esg/mulheres2.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const programaQualidadeVidaData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/final/esg/qualidadeVida2.png",
-  topTitle: "Social",
-  lineColor: "bg-var-social",
-  icon: {
-    icon: "/img/temp/esg/social.png",
-    iconAlt: "ícone referente ao tópico social",
-  },
-  title: "Programa de qualidade de vida",
-  ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
-};
-
-const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M promove o bem-estar de seus colaboradores por meio de seu Programa de Atividade Física, realizado todos os sábados. Esse programa visa melhorar a qualidade de vida e a saúde mental dos colaboradores, incentivando-os a adotar um estilo de vida mais saudável e ativo. As atividades são adaptadas para atender diferentes níveis de condicionamento, promovendo o engajamento e a integração entre os participantes. A T2M acredita que investir na saúde dos colaboradores contribui para um ambiente de trabalho mais produtivo e feliz.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
-  imageAlignment: "start",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const campanhasSolidariasData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/final/esg/campanhasSolidarias.png",
-  topTitle: "Social",
-  lineColor: "bg-var-social",
-  icon: {
-    icon: "/img/temp/esg/social.png",
-    iconAlt: "ícone referente ao tópico social",
-  },
-  title: "Campanhas solidárias",
-  ods: ["/img/ods/1.png", "/img/ods/10.png"],
-};
-
-const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M promove, ao longo de todo o ano, a campanha Gesto Solidário, campanha para arrecadação de alimentos e roupas, destinados a instituições locais e pessoas em situação de rua. Durante o período de festas, organizamos também a campanha Adote sua Cartinha de Natal, especialmente voltada envio de presentes para crianças em situação de vulnerabilidade e com diversidade funcional, levando alegria e apoio as comunidades e instituições. A T2M incentiva ativamente seus colaboradores a participarem dessas ações, fortalecendo a cultura de solidariedade e engajamento social dentro da empresa. Esse apoio coletivo é essencial para o sucesso das campanhas e para ampliar nosso impacto positivo na comunidade.",
-  imageAlt: "Doações da T2M, Biomob e Serratec.",
-  imageUrl: "/img/final/esg/doacoes.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const voluntariadoApoioData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/final/esg/socialVoluntarioApoio.png",
-  topTitle: "Social",
-  lineColor: "bg-var-social",
-  icon: {
-    icon: "/img/temp/esg/social.png",
-    iconAlt: "ícone referente ao tópico social",
-  },
-  title: "Voluntariado e apoio a iniciativas de empregabilidade",
-  ods: ["/img/ods/4.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
-};
-
-const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A T2M tem um compromisso sólido com o voluntariado e o apoio à empregabilidade, participando ativamente de programas e iniciativas que promovem a inclusão social e o desenvolvimento de jovens talentos. A empresa colabora com feiras de emprego voltadas para pessoas em situação de vulnerabilidade, como mães solo, LGBTQIAP+, pessoas com diversidades  funcionais, refugiados, egressos do sistema prisional e jovens em busca do primeiro emprego. Além disso, a T2M incentiva seus colaboradores a se voluntariarem como palestrantes e instrutores em cursos preparatórios que abordam habilidades técnicas e comportamentais essenciais, preparando os participantes para se destacarem no mercado de trabalho.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/final/esg/apoioEmpregabilidade.jpeg",
-  imageAlignment: "start",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const feitosSocialData: NumberCardsBannerInterface = {
-  title: "Nossos feitos sociais em 2024",
-  paragraph:
-    "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
-  cardType: "mini",
-  alignment: "center",
-  cardColor: "var-social",
-  cardBorder: "border-var-social",
-  numberCards: [
-    {
-      title: "422 kg de alimentos arrecadados",
-      icon: FaUtensils,
-      paragraph: "",
-    },
-    {
-      title: "7 ações sociais realizadas: Bioconecta, DBA, Outubro Rosa e 4 ações de Gesto Solidário",
-      icon: FaHandsHelping,
-      paragraph: "",
-    },
-    {
-      title: "180 voluntários em nossas ações sociais",
-      icon: FaUsers,
-      paragraph: "",
-    },
-  ],
-  type: "border",
-};
-
-const campanha1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/final/esg/esperancar.jpeg",
-  imageAlignment: "end",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const campanha2Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "A campanha do Outubro Rosa foi reforçada com a doação de 216 quilos de alimentos destinados à APPO - Associação Petropolitana dos Pacientes Oncológicos. Essa ação foi apadrinhada pela T2M para representar o Outubro Rosa.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/final/esg/appo.jpeg",
-  imageAlignment: "start",
-  lineColor: "bg-var-social",
-  pointColor: "text-var-social",
-};
-
-const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/legislacao.jpeg",
-  topTitle: "Governança",
-  lineColor: "bg-var-governanca",
-  icon: {
-    icon: "/img/temp/esg/governanca.png",
-    iconAlt: "ícone referente ao tópico governança",
-  },
-  title: "Normas, códigos e legislações internas e externas da T2M",
-  ods: ["/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png", "/img/ods/16.png"],
-};
-
-const normasCodigosLegislacoesTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraphs: [
-    "A T2M, fundada no Brasil em 2002, atua com forte compromisso de transparência e conformidade com as normas, códigos e legislações aplicáveis tanto no contexto corporativo quanto nacional. Nossa normativa se estende a todos os colaboradores, parceiros e diretoria, orientando responsabilidades legais e compromissos éticos que sustentam as operações da T2M.",
-    "Nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance, e Diversidade e Inclusão, servem como guias de referência para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos, além de promoverem padrões éticos, reduzem a probabilidade de ocorrências de condutas inadequadas.",
-    "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa Intranet, onde são revisados valores, normas e políticas internas.",
-  ],
-  paragraph: "",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/final/esg/legislacao.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const comiteT2MData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/final/esg/comites.jpg",
-  topTitle: "Governança",
-  lineColor: "bg-var-governanca",
-  icon: {
-    icon: "/img/temp/esg/governanca.png",
-    iconAlt: "ícone referente ao tópico governança",
-  },
-  title: "Comitês da T2M",
-  ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
-};
-
-const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Compliance: Este comitê é responsável pela gestão independente e autônoma do Programa de Integridade da T2M, garantindo os garantindo os recursos necessários para assegurar a imparcialidade das práticas de compliance na empresa. Além de incentivar o reporte de suspeitas e violações, o comitê busca cultivar uma cultura de responsabilidade em todos os níveis, incentivando a prevenção e detecção de fraudes. O Compliance Officer, função essencial neste processo, possui autonomia e acesso direto à Alta Direção, bem como autoridade para gerenciar o Sistema de Antissuborno e Compliance da organização.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/compliance.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "CIPA (Comissão Interna de Prevenção de Acidentes): Em cumprimento à NR-5, a CIPA da T2M tem a função de identificar e mitigar riscos no ambiente de trabalho, promover campanhas de conscientização e treinamentos, além de estar envolvido em questões de assédio, fortalecendo a cultura de segurança e prevenção entre nossos colaboradores. Atualmente, a comissão é composta por 10 membros, sendo 30% mulheres, o que reforça nosso compromisso com a diversidade e inclusão.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/prevencao.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/certificacoes.png",
-  topTitle: "Governança",
-  lineColor: "bg-var-governanca",
-  icon: {
-    icon: "/img/temp/esg/governanca.png",
-    iconAlt: "ícone referente ao tópico governança",
-  },
-  title: "Certificações e padrões internacionais",
-  paragraph: "Além dos comitês, a T2M está alinhada com padrões internacionais de integridade e ética empresarial.",
-  ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/12.png", "/img/ods/16.png"],
-};
-
-const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraphs: [
-    "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora O sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
-    "Essas certificações são um relfexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado.",
-  ],
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/verificado.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const canaisDenunciaData: SimpleCallBannerInterface = {
-  alignment: "end",
-  imageUrl: "/img/temp/esg/canalDenuncia.jpg",
-  topTitle: "Governança",
-  lineColor: "bg-var-governanca",
-  icon: {
-    icon: "/img/temp/esg/governanca.png",
-    iconAlt: "ícone referente ao tópico governança",
-  },
-  title: "Canais de denúncias",
-  ods: ["/img/ods/3.png", "/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/16.png"],
-};
-
-const canaisDenunciaTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraphs: [
-    "A T2M disponibiliza um Canal de Denúncias diretamente ligado ao Comitê de Ética, que recebe e analisa todas as denúncias enviadas, além de supervisionar a implementação, o monitoramento e a integridade do Programa de Compliance da empresa.",
-    "As denúncias podem ser realizadas de forma anônima, através de um formulário de fácil acesso, garantindo confidencialidade e segurança para os denunciantes.",
-    "Além deste canal, também oferecemos um Canal de Denúncias específico da CIPA, direcionado para a comunicação de casos de assédio e outros incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
-    "Toda informação pessoal compartilhada é tratada com rigoroso sigilo, assegurando a privacidade dos colaboradores. Ambos os canais têm como objetivo promover um ambiente seguro, ético e acolhedor para todos.",
-  ],
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/canalDenuncia2.jpg",
-  imageAlignment: "start",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const equidadeSalarialData: SimpleCallBannerInterface = {
-  alignment: "start",
-  imageUrl: "/img/temp/esg/equipeSalarial.jpg",
-  topTitle: "Governança",
-  lineColor: "bg-var-governanca",
-  icon: {
-    icon: "/img/temp/esg/governanca.png",
-    iconAlt: "ícone referente ao tópico governança",
-  },
-  title: "Equidade salarial",
-  paragraph:
-    "A T2M disponibiliza do Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, relatório que reforça o compromisso com a justiça social.",
-  ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
-};
-
-const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
-  paragraph:
-    "Este relatório apresenta critérios de remuneração e ações para garantir diversidade, como a criação de um Plano de Cargos e Salários ou Plano de Carreira, políticas de contratação de mulheres (negras, com deficiência, em situação de violência, chefes de família, LGBTQIA+, indígenas) e políticas de promoção de mulheres para cargos de direção e gerência.",
-  imageAlt: "Escritório da T2M",
-  imageUrl: "/img/temp/esg/salarial.jpg",
-  imageAlignment: "end",
-  lineColor: "bg-var-governanca",
-  pointColor: "text-var-governanca",
-};
-
-const metasData: NumberCardsBannerInterface = {
-  title: "Nossas metas em 2025",
-  paragraph:
-    "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
-  cardType: "mini",
-  alignment: "center",
-  numberCards: [
-    {
-      title: "Duplicar a quantidade de árvores plantadas",
-      icon: FaTree,
-      paragraph: "",
-    },
-    {
-      title: "Redução total das emissões de carbono",
-      icon: MdCo2,
-      paragraph: "",
-    },
-    {
-      title: "Ampliar o consumo de material reciclado",
-      icon: LuRecycle,
-      paragraph: "",
-    },
-    {
-      title: "Aumentar em 50% a arrecadação de alimentos",
-      icon: FaUtensils,
-      paragraph: "",
-    },
-    {
-      title: "Duplicar a quantidade de ações sociais realizadas",
-      icon: FaHandsHelping,
-      paragraph: "",
-    },
-    {
-      title: "Aumentar em 30% a quantidade de voluntários em ações sociais",
-      icon: FaUsers,
-      paragraph: "",
-    },
-    {
-      title: "Obter certificações ISO 27001 e ISO 27701",
-      icon: FaCertificate,
-      paragraph: "",
-    },
-  ],
-  type: "border",
-};

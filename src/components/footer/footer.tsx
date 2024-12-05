@@ -11,20 +11,22 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { Skeleton } from "../ui/skeleton";
 
+import { useTranslations } from "next-intl";
+
 const topics = [
-  { label: "Sobre", href: "/" },
-  { label: "Quem somos", href: "/quem-somos" },
-  { label: "Proposta de valor", href: "/proposta-de-valor" },
-  { label: "Nossa equipe", href: "/nossa-equipe" },
-  { label: "Comunidade", href: "/comunidade" },
-  { label: "ESG", href: "/esg" },
+  { label: "sobre", href: "/" },
+  { label: "quemSomos", href: "/quem-somos" },
+  { label: "propostaDeValor", href: "/proposta-de-valor" },
+  { label: "nossaEquipe", href: "/nossa-equipe" },
+  { label: "comunidade", href: "/comunidade" },
+  { label: "esg", href: "/esg" },
 ];
 
 const socialLinks = [
-  { href: "https://www.instagram.com/biomobguia/", icon: IoLogoInstagram },
-  { href: "https://www.linkedin.com/company/biomob/", icon: FaLinkedinIn },
-  { href: "https://pt-br.facebook.com/biomobguia/", icon: FaFacebookF },
-  { href: "https://www.youtube.com/@biomobguia", icon: FaYoutube },
+  { href: "https://www.instagram.com/test2market/", icon: IoLogoInstagram, label: "instagram" },
+  { href: "https://br.linkedin.com/company/t2mtesttomarket", icon: FaLinkedinIn, label: "linkedin" },
+  { href: "https://www.facebook.com/p/T2M-Test-to-Market-100040759607015/", icon: FaFacebookF, label: "facebook" },
+  { href: "https://www.youtube.com/@T2Mlab", icon: FaYoutube, label: "youtube" },
 ];
 
 const locales = [
@@ -66,6 +68,7 @@ const locales = [
 ];
 
 const TopicLinks = () => {
+  const t = useTranslations("footer");
   const pathname = usePathname();
 
   const normalizedPathname = React.useMemo(() => {
@@ -78,7 +81,7 @@ const TopicLinks = () => {
 
   return (
     <div className="flex flex-col gap-3">
-      <TextVariantes variant="top_title">Tópicos do site</TextVariantes>
+      <TextVariantes variant="top_title">{t("topics.title")}</TextVariantes>
       {topics.map((topic, index) => (
         <React.Fragment key={topic.href}>
           <Link href={topic.href}>
@@ -88,7 +91,7 @@ const TopicLinks = () => {
                 normalizedPathname === topic.href ? "underline text-primary" : "no-underline"
               } hover:underline hover:text-primary transition-all duration-200`}
             >
-              {topic.label}
+              {t(`topics.items.${topic.label}`)}
             </TextVariantes>
           </Link>
         </React.Fragment>
@@ -97,31 +100,40 @@ const TopicLinks = () => {
   );
 };
 
-const SocialLinks = () => (
-  <div className="flex flex-col gap-3 items-center">
-    <TextVariantes variant="top_title">Nossas redes sociais</TextVariantes>
-    <div className="flex gap-3">
-      {socialLinks.map(({ href, icon: Icon }) => (
-        <Link key={href} href={href} target="_blank">
-          <Icon className="text-lg text-primary" />
-        </Link>
-      ))}
-    </div>
-  </div>
-);
+const SocialLinks = () => {
+  const t = useTranslations("footer");
 
-const OfficialSite = () => (
-  <div className="flex flex-col gap-3 items-center">
-    <TextVariantes variant="top_title">Visite nosso site oficial</TextVariantes>
-    <Link href="https://www.t2mlab.com" target="_blank" className={buttonVariants()}>
-      https://www.t2mlab.com
-    </Link>
-  </div>
-);
+  return (
+    <div className="flex flex-col gap-3 items-center">
+      <TextVariantes variant="top_title">{t("socialLinks.title")}</TextVariantes>
+      <div className="flex gap-3">
+        {socialLinks.map(({ href, icon: Icon, label }) => (
+          <Link key={href} href={href} target="_blank">
+            <Icon className="text-lg text-primary" />
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const OfficialSite = () => {
+  const t = useTranslations("footer");
+
+  return (
+    <div className="flex flex-col gap-3 items-center">
+      <TextVariantes variant="top_title">{t("officialSite.title")}</TextVariantes>
+      <Link href={t("officialSite.link")} target="_blank" className={buttonVariants()}>
+        {t("officialSite.link")}
+      </Link>
+    </div>
+  );
+};
 
 export const Footer = () => {
   const [isMounted, setIsMounted] = React.useState<boolean>(false);
   const { theme } = useTheme();
+  const t = useTranslations("footer");
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -136,12 +148,12 @@ export const Footer = () => {
       <div className="flex flex-col items-center">
         <Image
           src={theme == "dark" ? "/img/LOGOT2MBRANCA.png" : "/img/LOGOT2M.png"}
-          alt="Logo da T2M"
+          alt={t("footerInfo.logoAlt")}
           width={407}
           height={177}
           quality={100}
         />
-        <TextVariantes variant="top_title">© T2M 2023 | Todos direitos reservados</TextVariantes>
+        <TextVariantes variant="top_title">{t("footerInfo.text")}</TextVariantes>
       </div>
 
       <div className="flex flex-col gap-20 lg:hidden">

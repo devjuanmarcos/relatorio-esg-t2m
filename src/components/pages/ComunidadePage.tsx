@@ -8,6 +8,7 @@ import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
+import { useTranslations } from "next-intl";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -28,6 +29,11 @@ const ImageWithCardTextBanner = dynamic(() =>
 const ComunidadePage: React.FC = () => {
   const isMounted = useIsMounted();
 
+  const callBannerTrad = useTranslations("ComunidadePage.callBannerTrad");
+  const oportunidadesInclusivasTrad = useTranslations("ComunidadePage.oportunidadesInclusivasTrad");
+  const nossosParceirosTrad = useTranslations("ComunidadePage.nossosParceirosTrad");
+  const listagemParceirosTrad = useTranslations("ComunidadePage.listagemParceirosTrad");
+
   if (!isMounted) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -39,104 +45,96 @@ const ComunidadePage: React.FC = () => {
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/temp/capacitandoComunidade.jpg",
     buttonLink: "https://www.t2mlab.com/nosso-blog/",
-    buttonText: "Nosso blog",
+    buttonText: callBannerTrad("buttonText"),
     buttonTarget: "_blank",
-    title: "Capacitando a comunidade",
-    paragraph:
-      "A empresa desenvolve iniciativas que vão além dos negócios, buscando gerar benefícios sociais e ambientais alinhados com seus valores.",
+    title: callBannerTrad("title"),
+    paragraph: callBannerTrad("paragraph"),
   };
 
   const oportunidadesInclusivasData: ImageWithCardTextBannerInterface = {
-    topTitle: "Residência",
-    title: "Oportunidades inclusivas e capacitadoras para a região",
-    paragraph:
-      "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que visa capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia. Este programa oferece formação técnica em desenvolvimento de software e prepara os participantes para ingressarem no mercado de trabalho em um setor de alta demanda. Com isso, a T2M reforça seu compromisso com a responsabilidade social e com o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
-    imageAlt: "Escritório da T2M",
+    topTitle: oportunidadesInclusivasTrad("topTitle"),
+    title: oportunidadesInclusivasTrad("title"),
+    paragraph: oportunidadesInclusivasTrad("paragraph"),
+    imageAlt: oportunidadesInclusivasTrad("imageAlt"),
     imageUrl: "/img/final/trabalheConosco.jpg",
     imageAlignment: "start",
-    buttonText: "Quero me inscrever",
+    buttonText: oportunidadesInclusivasTrad("buttonText"),
     buttonLink: "https://serratec.org/residencia/",
     buttonTarget: "_blank",
   };
 
   const nossosParceirosData: SimpleCallBannerInterface = {
     alignment: "end",
-    topTitle: "Resultados",
+    topTitle: nossosParceirosTrad("topTitle"),
     imageUrl: "/img/final/nossosParceiros.jpg",
-    title: "Nossos parceiros",
-    paragraph: "Nossa rede de colaboradores que impulsiona e molda o sucesso em cada etapa",
+    title: nossosParceirosTrad("title"),
+    paragraph: nossosParceirosTrad("paragraph"),
   };
 
   const listagemParceirosData: IconsCardsBannerInterface = {
     images: [
       {
         id: 1,
-        title: "Scaled Agile",
-        paragraph:
-          "A Scaled Agile, Inc. é reconhecida mundialmente como a criadora do Scaled Agile Framework® (SAFe), uma abordagem líder para a agilidade empresarial.",
+        title: listagemParceirosTrad("images.0.title"),
+        paragraph: listagemParceirosTrad("images.0.paragraph"),
+        imageAlt: listagemParceirosTrad("images.0.imageAlt"),
         imageUrl: "/img/temp/parceiros/ScaledAgile.png",
-        imageAlt: "Logo da Scaled Agile",
       },
       {
         id: 2,
-        title: "Serratec",
-        paragraph:
-          "Venha fazer parte de um dos maiores polos tecnológicos do Brasil! Serviços e benefícios para sua empresa ou Startup começarem com o pé direito!",
+        title: listagemParceirosTrad("images.1.title"),
+        paragraph: listagemParceirosTrad("images.1.paragraph"),
+        imageAlt: listagemParceirosTrad("images.1.imageAlt"),
         imageUrl: "/img/temp/parceiros/Serratec.png",
-        imageAlt: "Logo do Serratec",
       },
       {
         id: 3,
-        title: "IBM",
-        paragraph: "Soluções para implementar um processo de desenvolvimento de sistemas completo e automatizado.",
+        title: listagemParceirosTrad("images.2.title"),
+        paragraph: listagemParceirosTrad("images.2.paragraph"),
+        imageAlt: listagemParceirosTrad("images.2.imageAlt"),
         imageUrl: "/img/temp/parceiros/IBM.png",
-        imageAlt: "Logo da IBM",
       },
       {
         id: 4,
-        title: "Microsoft",
-        paragraph: "A Microsoft é uma Bigtech líder em computação em nuvem, Power Platform e inteligência artificial.",
+        title: listagemParceirosTrad("images.3.title"),
+        paragraph: listagemParceirosTrad("images.3.paragraph"),
+        imageAlt: listagemParceirosTrad("images.3.imageAlt"),
         imageUrl: "/img/temp/parceiros/Microsoft.png",
-        imageAlt: "Logo da Microsoft",
       },
       {
         id: 5,
-        title: "Delphi",
-        paragraph: "Ferramenta para Virtualização de Dados e para soluções de Mascaramento de Dados. ",
+        title: listagemParceirosTrad("images.4.title"),
+        paragraph: listagemParceirosTrad("images.4.paragraph"),
+        imageAlt: listagemParceirosTrad("images.4.imageAlt"),
         imageUrl: "/img/temp/parceiros/Delphi.png",
-        imageAlt: "Logo da Delphi",
       },
       {
         id: 6,
-        title: "BIOMOB",
-        paragraph:
-          "Acessibilidade e inclusão é a nossa missão. Criamos Soluções digitais para tomar o convívio social mais harmônico, proporcionando qualidade da vida e uma participação plena na sociedade para aqueles que se veem omitidos dela.",
+        title: listagemParceirosTrad("images.5.title"),
+        paragraph: listagemParceirosTrad("images.5.paragraph"),
+        imageAlt: listagemParceirosTrad("images.5.imageAlt"),
         imageUrl: "/img/temp/parceiros/BIOMOB.png",
-        imageAlt: "Logo da BIOMOB",
       },
       {
         id: 7,
-        title: "Automation Anywhere",
-        paragraph:
-          "A Automation Anywhere busca liberar as pessoas das tarefas triviais e repetitivas para que passem mais tempo usando seu intelecto e sua criatividade para resolver desafios empresariais avançados e realizar trabalho que exige conhecimento específico.",
+        title: listagemParceirosTrad("images.6.title"),
+        paragraph: listagemParceirosTrad("images.6.paragraph"),
+        imageAlt: listagemParceirosTrad("images.6.imageAlt"),
         imageUrl: "/img/temp/parceiros/AutomationAnywhere.png",
-        imageAlt: "Logo da Automation Anywhere",
       },
       {
         id: 8,
-        title: "VMEdu",
-        paragraph:
-          "A VMEdu é a empresa líder na indústria de certificação e treinamento profissional e já propiciou o treinamento de mais de 500.000 alunos de mais de 3500 empresas em mais de 150 países com uma taxa de sucesso de 98,7% por meio de sua rede global de mais de 1100 provedores de treinamento.",
+        title: listagemParceirosTrad("images.7.title"),
+        paragraph: listagemParceirosTrad("images.7.paragraph"),
+        imageAlt: listagemParceirosTrad("images.7.imageAlt"),
         imageUrl: "/img/temp/parceiros/VMEdu.png",
-        imageAlt: "Logo da VMEdu",
       },
       {
         id: 9,
-        title: "Future",
-        paragraph:
-          "Reconhecida no mercado brasileiro de Segurança da Informação, possuímos uma sólida base de clientes, distribuídos em diversos portes e segmentos, atendendo desde grandes empresas públicas e privadas, até empresas de médio porte. ",
+        title: listagemParceirosTrad("images.8.title"),
+        paragraph: listagemParceirosTrad("images.8.paragraph"),
+        imageAlt: listagemParceirosTrad("images.8.imageAlt"),
         imageUrl: "/img/temp/parceiros/Future.png",
-        imageAlt: "Logo da Future",
       },
     ],
     type: "center",
