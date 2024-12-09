@@ -8,8 +8,7 @@ import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBann
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
-import { ImageWithTopicsBannerInterface } from "@banners/ImageWithTopicsBanner";
-import { FaAccessibleIcon } from "react-icons/fa6";
+import { IoPeopleCircle } from "react-icons/io5";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
 import {
@@ -28,7 +27,10 @@ import {
   FaGavel,
   FaHands,
   FaGift,
+  FaLeaf,
+  FaUsers,
 } from "react-icons/fa";
+import { GiEarthAmerica, GiGlobe } from "react-icons/gi";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
 import { useTranslations } from "next-intl";
@@ -291,6 +293,78 @@ const HomePage: React.FC = () => {
     type: "border",
   };
 
+  const tresDimensoesData: NumberCardsBannerInterface = {
+    // ods: [3, 8, 12, 13],
+    // title: "As quatro dimensões",
+    // paragraph:
+    // "A Sustentabilidade 4.4 refere-se a uma abordagem avançada e integrada ao modelo empresarial da chamada Quarta Revolução Industrial. O objetivo é utilizar as tecnologias disponíveis para gerar conhecimento e produtividade, combinando as transformações digitais em processos industriais, econômicos e sociais com inovações e avanços tecnológicos, além de práticas sustentáveis, para promover uma economia mais eficiente, responsável e resiliente.",
+    numberCards: [
+      {
+        title: "Sustentabilidade Ambiental",
+        icon: FaLeaf,
+        paragraph:
+          "Melhoria da saúde e do bem-estar humano, proteção do capital natural (terra, ar, água, minerais, etc.) e dos ecossistemas globais. Isso inclui questões relacionadas à energia e ao clima, os impactos e as externalidades na produção de bens e na prestação de serviços, além das infraestruturas 'verdes' e da economia circular.",
+      },
+      {
+        title: "Responsabilidade Social",
+        icon: FaUsers,
+        paragraph:
+          "Preservação do capital social, criando serviços que apoiam comunidades, culturas e globalização, com investimentos em saúde, saneamento, educação e acesso a serviços essenciais, conforme os Objetivos de Desenvolvimento Sustentável (ODS ONU).",
+      },
+      {
+        title: "Governança Consciente",
+        icon: FaBalanceScale,
+        paragraph:
+          "Organizações devem agregar valor aos clientes, investir nos funcionários, atuar de forma ética com fornecedores, apoiar comunidades e proteger o meio ambiente, adotando práticas sustentáveis para gerar valor de longo prazo.",
+      },
+    ],
+    type: "border",
+  };
+
+  const sustentabilidadeAmbientalData: ImageWithCardTextBannerInterface = {
+    imageAlt: "ícone da sustentabilidade ambiental",
+    title: "Sustentabilidade Ambiental",
+    imageUrl: "/img/temp/esg/ambiental.png",
+    objectContain: true,
+    paragraphs: [
+      "Refere-se à preservação dos recursos naturais e à redução dos impactos negativos causados pelas atividades humanas no meio ambiente.",
+      "O objetivo é promover a saúde e o bem-estar humano, tanto no presente quanto no futuro, através da proteção do capital natural (terra, ar, água, minerais, entre outros), além da preservação dos ecossistemas globais. Isso inclui a atenção às questões de energia e clima, o desenvolvimento de infraestruturas 'verdes' e a adoção de uma economia circular.",
+      "Conservação da Biodiversidade: Assegurar que os ecossistemas e as espécies não sejam degradados, promovendo a proteção de habitats naturais e a recuperação de áreas já afetadas.",
+      "Gestão Responsável dos Recursos Naturais: Utilizar de forma racional recursos como água, solo e energia, buscando reduzir desperdícios e evitar o esgotamento desses recursos essenciais para a sustentabilidade.",
+      "Redução da Pegada Ecológica: Implementar práticas que diminuam a emissão de gases de efeito estufa (como o CO₂), o consumo de fontes de energia não-renováveis e a geração de resíduos, com o objetivo de mitigar as mudanças climáticas.",
+      "Uso de Tecnologias Verdes e Renováveis: Adotar fontes de energia renováveis (solar, eólica, hídrica) e práticas agrícolas e industriais mais limpas e eficientes, que contribuam para a preservação ambiental e para a eficiência dos processos produtivos.",
+    ],
+    imageAlignment: "end",
+  };
+
+  const responsabilidadeSocialData: ImageWithCardTextBannerInterface = {
+    imageAlt: "Responsabilidade Social",
+    title: "Responsabilidade Social",
+    imageUrl: "/img/temp/esg/social.png",
+    objectContain: true,
+    paragraphs: [
+      "A responsabilidade social vai além de simples ações isoladas; ela está ligada à preservação dos recursos sociais e ao bem-estar coletivo, garantindo que as pessoas tenham uma vida digna e igualdade de oportunidades. Esse conceito abrange uma visão mais ampla, que leva em consideração as diversas comunidades, culturas e os impactos da globalização. Ao focar no desenvolvimento humano, busca-se investir em áreas essenciais como saúde, saneamento, educação e acesso a serviços, além de promover o conhecimento, a nutrição, o lazer e a cultura.",
+      "A justiça social, por sua vez, é fundamental para diminuir as desigualdades sociais e econômicas, garantindo o acesso universal a direitos básicos, como saúde, educação, segurança e moradia. Esse compromisso com a igualdade visa criar uma sociedade mais justa e equitativa para todos.",
+      "No mesmo sentido, a responsabilidade social também busca fortalecer os princípios da Declaração Universal dos Direitos Humanos, defendendo os direitos básicos para que cada pessoa possa viver com dignidade, liberdade, saúde e segurança.",
+      "A melhoria da qualidade de vida é outro objetivo importante, especialmente quando se trata de aumentar o Índice de Desenvolvimento Humano (IDH). Isso é feito por meio de ações focadas em áreas como educação, saúde, saneamento, programas sociais e causas comunitárias, além de incentivar práticas que envolvem turismo, esporte e lazer.",
+      "Por fim, a participação social é essencial para envolver as comunidades nas decisões que afetam suas vidas. O empoderamento social, por meio do engajamento nas esferas política e econômica, fortalece a cidadania e assegura que as vozes das pessoas sejam ouvidas e respeitadas.",
+    ],
+    imageAlignment: "end",
+  };
+
+  const governancaConscienteData: ImageWithCardTextBannerInterface = {
+    imageAlt: "Governança Consciente",
+    title: "Governança Consciente",
+    imageUrl: "/img/temp/esg/governanca.png",
+    objectContain: true,
+    paragraphs: [
+      "A preservação dos recursos econômicos e o uso eficiente dos ativos e compromissos orçamentários visam manter níveis elevados e estáveis de crescimento econômico ao longo do tempo. Contudo, esse crescimento não deve ser o único objetivo das organizações, pois a qualidade do crescimento é tão importante quanto a sua quantidade. O propósito das organizações evolui conforme as mudanças no ambiente socioeconômico e nas condições do ecossistema, permitindo que continue relevante para todas as Partes Interessadas.",
+      "É essencial garantir que empresas, governos e organizações gerem valor e lucros de maneira sustentável, sem prejudicar os recursos naturais ou sociais, adotando práticas financeiras que considerem os impactos ambientais e sociais de suas ações, conhecidas como investimentos ESG (ambiental, social e de governança).",
+      "Além disso, a gestão eficiente de recursos implica na utilização prudente e responsável do capital, buscando maximizar a rentabilidade a longo prazo sem comprometer o bem-estar das gerações futuras ou os ecossistemas.",
+    ],
+    imageAlignment: "end",
+  };
+
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem] ">
       <React.Suspense>
@@ -305,6 +379,11 @@ const HomePage: React.FC = () => {
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
       <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
       <SimpleCallBanner {...sustentabilidadeData} />
+      <NumberCardsBanner {...tresDimensoesData} />
+      <ImageWithCardTextBanner {...sustentabilidadeAmbientalData} />
+      <ImageWithCardTextBanner {...responsabilidadeSocialData} />
+      <ImageWithCardTextBanner {...governancaConscienteData} />
+      <DividingLine />
       <NumberCardsBanner {...movimentoRegenerativoData} />
       <NumberCardsBanner {...nossasCampanhasData} />
     </div>

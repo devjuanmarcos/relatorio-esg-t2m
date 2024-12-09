@@ -8,9 +8,11 @@ import Link from "next/link";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import Image from "next/image";
 import { useWindowSize } from "@/context/WindowSizeContext";
+import { IconType } from "react-icons";
 
 export interface ImageWithCardTextBannerInterface {
-  imageUrl: string;
+  imageUrl?: string;
+  icon?: IconType;
   imageAlt: string;
   title?: string;
   topTitle?: string;
@@ -27,6 +29,7 @@ export interface ImageWithCardTextBannerInterface {
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
   imageUrl,
+  icon,
   imageAlt,
   topTitle,
   paragraph,
@@ -100,43 +103,63 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
     </div>
   );
 
+  const Icon = () => {
+    if (icon) {
+      const IconComponent = icon;
+      return <IconComponent className="w-full h-auto aspect-[5/5] text-primary" />;
+    }
+    return null;
+  };
+
   return (
     <div className="flex flex-col md:grid grid-cols-2 lg:grid-cols-5 gap-6 md:gap-[3.5rem] items-center px-4 md:px-12 ">
       {width && width <= 768 ? (
         <>
           {renderTextContent}
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
-            width={1064}
-            height={716}
-            quality={100}
-          />
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
+              width={1064}
+              height={716}
+              quality={100}
+            />
+          ) : (
+            <Icon />
+          )}
         </>
       ) : imageAlignment == "start" ? (
         <>
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
-            width={1064}
-            height={716}
-            quality={100}
-          />
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
+              width={1064}
+              height={716}
+              quality={100}
+            />
+          ) : (
+            <Icon />
+          )}
           {renderTextContent}
         </>
       ) : (
         <>
           {renderTextContent}
-          <Image
-            src={imageUrl}
-            alt={imageAlt}
-            className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
-            width={1064}
-            height={716}
-            quality={100}
-          />
+          {imageUrl ? (
+            <Image
+              src={imageUrl}
+              alt={imageAlt}
+              className={`w-full h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[532/358] rounded-[.75rem] lg:col-span-2 `}
+              width={1064}
+              height={716}
+              quality={100}
+            />
+          ) : (
+            <Icon />
+          )}
         </>
       )}
     </div>
