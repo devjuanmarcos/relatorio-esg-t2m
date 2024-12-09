@@ -170,7 +170,7 @@ const HomePage: React.FC = () => {
   };
 
   const metodologiaData: SimpleCallBannerInterface = {
-    alignment: "start",
+    alignment: "bottom",
     topTitle: metodologiaTrad("topTitle"),
     title: metodologiaTrad("title"),
     paragraph: metodologiaTrad("paragraph"),
