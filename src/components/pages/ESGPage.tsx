@@ -24,9 +24,10 @@ import {
   FaUserAlt,
   FaUsers,
   FaUtensils,
+  FaVenus,
   FaWheelchair,
 } from "react-icons/fa";
-import { MdCo2, MdFoodBank, MdInsertDriveFile } from "react-icons/md";
+import { MdCo2, MdInsertDriveFile } from "react-icons/md";
 import { LuRecycle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
 
@@ -142,7 +143,7 @@ const ESGPage: React.FC = () => {
   };
 
   const gestaoResiduosData: SimpleCallBannerInterface = {
-    alignment: "end",
+    alignment: "start",
     imageUrl: "/img/final/esg/reciclagem.jpg",
     topTitle: gestaoResiduosTrad("topTitle"),
     lineColor: "bg-var-ambiental",
@@ -420,7 +421,7 @@ const ESGPage: React.FC = () => {
   };
 
   const equipeGenteGestaoData: SimpleCallBannerInterface = {
-    alignment: "end",
+    alignment: "bottom",
     imageUrl: "/img/final/esg/mulheres.png",
     topTitle: equipeGenteGestaoTrad("topTitle"),
     lineColor: "bg-var-social",
@@ -442,7 +443,7 @@ const ESGPage: React.FC = () => {
   };
 
   const programaQualidadeVidaData: SimpleCallBannerInterface = {
-    alignment: "end",
+    alignment: "bottomEnd",
     imageUrl: "/img/final/esg/qualidadeVida2.png",
     topTitle: programaQualidadeVidaTrad("topTitle"),
     lineColor: "bg-var-social",
@@ -528,6 +529,16 @@ const ESGPage: React.FC = () => {
       {
         title: feitosSocialTrad("numberCards.2.title"),
         icon: FaUsers,
+        paragraph: "",
+      },
+      {
+        title: feitosSocialTrad("numberCards.3.title"),
+        icon: FaFemale,
+        paragraph: "",
+      },
+      {
+        title: feitosSocialTrad("numberCards.4.title"),
+        icon: FaVenus,
         paragraph: "",
       },
     ],

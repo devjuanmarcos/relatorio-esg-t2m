@@ -256,6 +256,12 @@ input[type="range"]::-ms-track {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .bg-img {
+    position: unset;
+  }
+}
+
 .blur-up {
   filter: blur(5px);
   transition: filter 0.3s ease-in-out;

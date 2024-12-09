@@ -24,7 +24,7 @@ export interface SimpleCallBannerInterface {
   buttonText?: string;
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
-  alignment: "end" | "start";
+  alignment: "end" | "start" | "bottom" | "bottomEnd";
   topTitleColor?: string;
   icon?: IconImageInterface;
   ods?: string[];
@@ -84,16 +84,76 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
     );
   };
 
+  if (alignment == "bottom" || alignment == "bottomEnd") {
+    return (
+      <div
+        className={`relative bg-no-repeat bg-cover flex flex-col gap-12 justify-center items-center 
+        ${alignment == "bottom" ? "md:items-start" : "md:items-end"} w-full max-md:pt-[4rem] md:mb-20 pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
+      >
+        <Image
+          src={imageUrl}
+          alt="Cover Image"
+          className=" bg-bottom object-cover aspect-[1440/572] md:max-h-[28.75rem] w-full"
+          width={1000}
+          height={600}
+          sizes="(max-width: 768px) 100vw, 1000px"
+        />
+        {topTitle ? (
+          <BoxCard
+            type="simple"
+            extraClassname={`${alignment == "bottom" ? " md:ml-12" : " md:mr-12"} md:absolute -bottom-20 `}
+          >
+            {title && (
+              <TextVariantes variant="title_georgia" lineBottom lineColor={lineColor}>
+                {title}
+              </TextVariantes>
+            )}
+            {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
+            {buttonLink && buttonText && (
+              <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
+                {buttonText}
+              </Link>
+            )}
+            <div className="flex flex-col md:flex-row gap-4 items-center">
+              {renderOds()}
+              <div className="flex items-center gap-4 ">
+                {renderIcon()}
+                <TextVariantes variant="top_title" extraClassName={topTitleColor}>
+                  {topTitle}
+                </TextVariantes>
+              </div>
+            </div>
+          </BoxCard>
+        ) : (
+          <BoxCard
+            type="simple"
+            extraClassname={`${alignment == "bottom" ? "ml-2 md:ml-12" : "mr-2 md:mr-12"} absolute -bottom-20 `}
+          >
+            <TextVariantes variant="h2_title" lineBottom lineColor={lineColor}>
+              {title}
+            </TextVariantes>
+            {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
+            {buttonLink && buttonText && (
+              <Link href={buttonLink} target={buttonTarget} className={buttonVariants()}>
+                {buttonText}
+              </Link>
+            )}
+            {renderOds()}
+          </BoxCard>
+        )}
+      </div>
+    );
+  }
   return (
     <div
-      className={`relative bg-no-repeat bg-cover flex justify-center ${
+      className={`relative bg-no-repeat bg-cover flex max-md:flex-col gap-3 justify-center w-full ${
         alignment === "start" ? "md:justify-start" : "md:justify-end"
-      } items-center md:items-end w-full aspect-[1440/572] md:max-h-[35.75rem] px-2 md:px-12 max-md:pt-[4rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
+      } items-center md:items-end w-full md:aspect-[1440/572] md:max-h-[35.75rem] px-2 md:px-12 max-md:pt-[2rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image
         src={imageUrl}
         alt="Cover Image"
-        className="bg-img bg-bottom"
+        className="bg-img bg-bottom max-md:object-cover max-md:rounded-xl max-md:aspect-[1440/572] max-md:max-h-[28.75rem] max-md:w-full"
         width={1000}
         height={600}
         sizes="(max-width: 768px) 100vw, 1000px"
