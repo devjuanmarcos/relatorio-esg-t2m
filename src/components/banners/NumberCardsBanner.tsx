@@ -7,6 +7,7 @@ import { NumberCard, NumberCardInterface, NumberCardWithIconAndBorder } from "..
 import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
 import { OdsCard } from "../cards/odsCard";
+import Image from "next/image";
 
 export interface TextCardInterface {
   title: string;
@@ -22,7 +23,7 @@ export interface ButtonInterface {
 }
 
 export interface NumberCardsBannerInterface {
-  numberCards: NumberCardInterface[];
+  numberCards?: NumberCardInterface[];
   title?: string;
   topTitle?: string;
   paragraph?: string;
@@ -33,6 +34,8 @@ export interface NumberCardsBannerInterface {
   cardType?: "default" | "mini";
   cardColor?: string;
   cardBorder?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -47,6 +50,8 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   cardBorder,
   extraButtonBottom,
   ods,
+  imageAlt,
+  imageUrl,
 }) => {
   const isMounted = useIsMounted();
 
@@ -66,27 +71,32 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
             </TextVariantes>
           )}
           {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
+          {imageUrl && imageAlt && (
+            <Image src={imageUrl} alt={imageAlt} width={1000} height={500} className="w-full h-auto" />
+          )}
           {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
         </div>
         {ods && <OdsCard ods={ods} />}
       </div>
-      <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-12"}  justify-center`}>
-        {numberCards.map((iconCard) => {
-          if (type != "default") {
-            return (
-              <NumberCardWithIconAndBorder
-                key={iconCard.title}
-                {...iconCard}
-                type={cardType}
-                cardColor={cardColor}
-                cardBorder={cardBorder}
-              />
-            );
-          } else {
-            return <NumberCard key={iconCard.title} {...iconCard} cardColor={cardColor} cardBorder={cardBorder} />;
-          }
-        })}
-      </div>
+      {numberCards && (
+        <div className={`flex flex-wrap  ${type == "default" ? "gap-y-8 ml-7" : "gap-12"}  justify-center`}>
+          {numberCards.map((iconCard) => {
+            if (type != "default") {
+              return (
+                <NumberCardWithIconAndBorder
+                  key={iconCard.title}
+                  {...iconCard}
+                  type={cardType}
+                  cardColor={cardColor}
+                  cardBorder={cardBorder}
+                />
+              );
+            } else {
+              return <NumberCard key={iconCard.title} {...iconCard} cardColor={cardColor} cardBorder={cardBorder} />;
+            }
+          })}
+        </div>
+      )}
       {extraButtonBottom && (
         <Link
           className={`${buttonVariants(extraButtonBottom.buttonType || ("" as any))} -mt-8 `}

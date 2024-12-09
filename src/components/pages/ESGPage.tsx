@@ -30,6 +30,7 @@ import {
 import { MdCo2, MdInsertDriveFile } from "react-icons/md";
 import { LuRecycle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -316,28 +317,30 @@ const ESGPage: React.FC = () => {
     alignment: "center",
     cardColor: "var-ambiental",
     cardBorder: "border-var-ambiental",
-    numberCards: [
-      {
-        title: feitosAmbientalTrad("numberCards.0.title"),
-        icon: FaTree,
-        paragraph: "",
-      },
-      {
-        title: feitosAmbientalTrad("numberCards.1.title"),
-        icon: MdCo2,
-        paragraph: "",
-      },
-      {
-        title: feitosAmbientalTrad("numberCards.2.title"),
-        icon: LuRecycle,
-        paragraph: "",
-      },
-      {
-        title: feitosAmbientalTrad("numberCards.3.title"),
-        icon: MdInsertDriveFile,
-        paragraph: "",
-      },
-    ],
+    imageUrl: "/img/temp/esg/100.png",
+    imageAlt: feitosAmbientalTrad("imageAlt"),
+    // numberCards: [
+    //   {
+    //     title: feitosAmbientalTrad("numberCards.0.title"),
+    //     icon: FaTree,
+    //     paragraph: "",
+    //   },
+    //   {
+    //     title: feitosAmbientalTrad("numberCards.1.title"),
+    //     icon: MdCo2,
+    //     paragraph: "",
+    //   },
+    //   {
+    //     title: feitosAmbientalTrad("numberCards.2.title"),
+    //     icon: LuRecycle,
+    //     paragraph: "",
+    //   },
+    //   {
+    //     title: feitosAmbientalTrad("numberCards.3.title"),
+    //     icon: MdInsertDriveFile,
+    //     paragraph: "",
+    //   },
+    // ],
     type: "border",
   };
 
@@ -784,6 +787,7 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...reciclagemMaterialTexto1Data} />
       <DividingLine lineColor={"bg-var-ambiental"} />
       <NumberCardsBanner {...feitosAmbientalData} />
+
       <DividingLine lineColor={"bg-var-ambiental"} />
 
       {/* Social */}
