@@ -112,6 +112,9 @@ const ESGPage: React.FC = () => {
   const certificacoesPadroesInternacionaisTexto1Trad = useTranslations(
     "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
   );
+  const certificacoesPadroesInternacionaisTexto2Trad = useTranslations(
+    "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
+  );
   const canaisDenunciaTrad = useTranslations("ESGPage.Governamental.canaisDenunciaTrad");
   const canaisDenunciaTexto1Trad = useTranslations("ESGPage.Governamental.canaisDenunciaTexto1Trad");
   const equidadeSalarialTrad = useTranslations("ESGPage.Governamental.equidadeSalarialTrad");
@@ -480,33 +483,8 @@ const ESGPage: React.FC = () => {
     alignment: "center",
     cardColor: "var-social",
     cardBorder: "border-var-social",
-    numberCards: [
-      {
-        title: feitosSocialTrad("numberCards.0.title"),
-        icon: FaUtensils,
-        paragraph: "",
-      },
-      {
-        title: feitosSocialTrad("numberCards.1.title"),
-        icon: FaHandsHelping,
-        paragraph: "",
-      },
-      {
-        title: feitosSocialTrad("numberCards.2.title"),
-        icon: FaUsers,
-        paragraph: "",
-      },
-      {
-        title: feitosSocialTrad("numberCards.3.title"),
-        icon: FaFemale,
-        paragraph: "",
-      },
-      {
-        title: feitosSocialTrad("numberCards.4.title"),
-        icon: FaVenus,
-        paragraph: "",
-      },
-    ],
+    imageUrl: "/img/temp/esg/feitosSociais.png",
+    imageAlt: feitosSocialTrad("imageAlt"),
     type: "border",
   };
 
@@ -625,6 +603,20 @@ const ESGPage: React.FC = () => {
     pdfText1: certificacoesPadroesInternacionaisTexto1Trad("linkText1"),
     pdfLink2: "https://biomobtinastorage.blob.core.windows.net/biomob/Cert_ISO%2037301_Port_19.03.2024.pdf",
     pdfText2: certificacoesPadroesInternacionaisTexto1Trad("linkText2"),
+  };
+
+  const certificacoesPadroesInternacionaisTexto2Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.0"),
+      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.1"),
+      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.2"),
+      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.3"),
+    ],
+    imageAlt: certificacoesPadroesInternacionaisTexto2Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/cursos.jpg",
+    imageAlignment: "start",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
   };
 
   const canaisDenunciaData: SimpleCallBannerInterface = {
@@ -770,6 +762,7 @@ const ESGPage: React.FC = () => {
 
       <SimpleCallBanner {...certificacoesPadroesInternacionaisData} />
       <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto1Data} />
+      <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto2Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
 
       <SimpleCallBanner {...canaisDenunciaData} />

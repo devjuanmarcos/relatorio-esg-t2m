@@ -426,7 +426,8 @@
             "title": "55,88% do time de negócios é composto por mulheres",
             "iconAlt": "Ícone de mulher"
           }
-        ]
+        ],
+        "imageAlt": "Resumo visual das ações e diversidade da organização: 1) 422 kg de alimentos arrecadados, representados por um ícone de comida; 2) 7 ações sociais realizadas, incluindo Bioconecta, DBA, Outubro Rosa e 4 ações de Gesto Solidário, simbolizadas por um ícone de mãos ajudando; 3) 180 voluntários envolvidos em ações sociais, ilustrados por um ícone de usuários; 4) 60% do time administrativo composto por mulheres, indicado por um ícone de mulher; 5) 55,88% do time de negócios composto por mulheres, também representado por um ícone de mulher. Cada dado é acompanhado por ícones temáticos que reforçam visualmente a mensagem."
       },
       "campanha1Trad": {
         "paragraph": "Foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
@@ -472,12 +473,21 @@
       },
       "certificacoesPadroesInternacionaisTexto1Trad": {
         "paragraphs": [
-          "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
-          "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
+          "A T2M está comprometida com o crescimento profissional de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos que visam impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
+          "Entre os treinamentos oferecidos, destacam-se o PL400, com 40 horas de aprendizado focado no desenvolvimento Low Code e certificações reconhecidas, o Microsoft 365 Endpoint Administrator (MD-102), também com certificações, e conceitos fundamentais de Linux e Windows, garantindo uma base sólida em sistemas operacionais.",
+          "Além disso, a T2M investe em cursos como Inglês, essencial para atuar em ambientes globais, e Agile to Market, que prepara os profissionais para trabalhar com metodologias ágeis e entregar valor de forma eficiente.",
+          "Com essa abordagem, a T2M reforça seu compromisso em criar um ambiente onde o aprendizado contínuo e o desenvolvimento de competências sejam pilares para o sucesso de cada funcionário."
         ],
         "imageAlt": "Imagem do escritório da T2M",
         "linkText1": "PDF certificado ISO 37001",
         "linkText2": "PDF certificado ISO 37301"
+      },
+      "certificacoesPadroesInternacionaisTexto2Trad": {
+        "paragraphs": [
+          "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
+          "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
+        ],
+        "imageAlt": "Imagem do escritório da T2M"
       },
       "canaisDenunciaTrad": {
         "topTitle": "Governança",

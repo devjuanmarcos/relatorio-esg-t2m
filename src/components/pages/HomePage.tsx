@@ -92,6 +92,7 @@ const HomePage: React.FC = () => {
     buttonText: callBannerTrad("buttonText"),
     title: callBannerTrad("title"),
     paragraph: callBannerTrad("paragraph"),
+    alignment: "start",
   };
 
   const mensagemCeoData: ImageWithCardTextBannerInterface = {

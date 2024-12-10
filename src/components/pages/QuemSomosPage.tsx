@@ -74,13 +74,14 @@ const QuemSomosPage: React.FC = () => {
     );
   }
 
-  const callBannerData: CallBannerInterface = {
+  const callBannerData: SimpleCallBannerInterface = {
     imageUrl: "/img/temp/quemsomos.png",
     buttonLink: "https://www.t2mlab.com",
     buttonText: callBannerTrad("buttonText"),
     buttonTarget: "_blank",
     title: callBannerTrad("title"),
     paragraph: callBannerTrad("paragraph"),
+    alignment: "bottom",
   };
 
   const trabalheConoscoData: ImageWithCardTextBannerInterface = {
@@ -235,7 +236,7 @@ const QuemSomosPage: React.FC = () => {
   return (
     <div className="flex flex-col mb-20 gap-[4.75rem]">
       <React.Suspense>
-        <MemoizedCallBanner {...callBannerData} />
+        <SimpleCallBanner {...callBannerData} />
       </React.Suspense>
 
       <ImageWithCardTextBanner {...trabalheConoscoData} />
