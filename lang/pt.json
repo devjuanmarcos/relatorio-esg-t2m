@@ -373,10 +373,7 @@
             "title": "101",
             "paragraph": "Contratações realizadas"
           },
-          {
-            "title": "75%",
-            "paragraph": "Permanência na T2M após o programa"
-          },
+
           {
             "title": "4%",
             "paragraph": "Pessoas com deficiência no programa"
@@ -385,10 +382,7 @@
             "title": "21%",
             "paragraph": "Participação feminina"
           },
-          {
-            "title": "7%",
-            "paragraph": "Pessoas negras participantes"
-          },
+
           {
             "title": "51%",
             "paragraph": "Egressos de escola pública"
@@ -512,7 +506,9 @@
           "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
           "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
         ],
-        "imageAlt": "Imagem do escritório da T2M"
+        "imageAlt": "Imagem do escritório da T2M",
+        "linkText1": "PDF certificado ISO 37001",
+        "linkText2": "PDF certificado ISO 37301"
       },
       "canaisDenunciaTrad": {
         "topTitle": "Governança",

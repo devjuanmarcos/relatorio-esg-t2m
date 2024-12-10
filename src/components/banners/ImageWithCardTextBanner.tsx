@@ -25,6 +25,10 @@ export interface ImageWithCardTextBannerInterface {
   objectContain?: boolean;
   pointColor?: string;
   lineColor?: string;
+  pdfLink1?: string;
+  pdfText1?: string;
+  pdfLink2?: string;
+  pdfText2?: string;
 }
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
@@ -42,6 +46,10 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   objectContain,
   pointColor,
   lineColor,
+  pdfLink1,
+  pdfLink2,
+  pdfText1,
+  pdfText2,
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
@@ -92,6 +100,18 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
             {buttonText}
           </Link>
         )}
+        <div className="flex gap-2">
+          {pdfLink1 && pdfText1 && (
+            <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+              {pdfText1}
+            </Link>
+          )}
+          {pdfLink2 && pdfText2 && (
+            <Link href={pdfLink2} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+              {pdfText2}
+            </Link>
+          )}
+        </div>
       </div>
       {!topTitle && imageAlignment == "end" && (
         <span

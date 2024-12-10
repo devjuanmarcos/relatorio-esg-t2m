@@ -32,14 +32,13 @@ type TitleDefaultType = {
 };
 
 type ItemCarouselType = {
-  image: NextImageType;
-  texts: TitleDefaultType;
+  image: string;
+  imageAlt: string;
 };
 
-type InnovationInMovieSectionType = {
-  texts: TitleDefaultType;
+type CarouselSectionType = {
   images: ItemCarouselType[];
-  link: string;
+  reverse?: boolean;
 };
 
 type IconTextCardType = {
@@ -48,11 +47,4 @@ type IconTextCardType = {
   icon: IconType | ElementType;
 };
 
-export type {
-  NextImageType,
-  IconProps,
-  TitleDefaultType,
-  InnovationInMovieSectionType,
-  ItemCarouselType,
-  IconTextCardType,
-};
+export type { NextImageType, IconProps, TitleDefaultType, CarouselSectionType, ItemCarouselType, IconTextCardType };

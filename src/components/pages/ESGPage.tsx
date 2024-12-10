@@ -31,6 +31,9 @@ import { MdCo2, MdInsertDriveFile } from "react-icons/md";
 import { LuRecycle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
+import { CarouselSectionType } from "@/@types/types";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -50,6 +53,10 @@ const ImageWithCardTextBanner = dynamic(() =>
 
 const NumberCardsBanner = dynamic(() =>
   import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
+);
+
+const CarouselSection = dynamic(() =>
+  import("@/components/banners/CarouselSection").then((mod) => mod.CarouselSection)
 );
 
 const ESGPage: React.FC = () => {
@@ -158,7 +165,7 @@ const ESGPage: React.FC = () => {
 
   const gestaoResiduosTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: gestaoResiduosTexto1Trad("paragraph"),
-    imageAlt: gestaoResiduosTexto1Trad("imageUrl"),
+    imageAlt: gestaoResiduosTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/impactosAmbientais.jpg",
     imageAlignment: "end",
     lineColor: "bg-var-ambiental",
@@ -385,40 +392,32 @@ const ESGPage: React.FC = () => {
         title: "101",
         paragraph: numerosResidenciaTrad("numberCards.1.paragraph"),
       },
-      {
-        icon: FaChartLine,
-        title: "75%",
-        paragraph: numerosResidenciaTrad("numberCards.2.paragraph"),
-      },
+
       {
         icon: FaWheelchair,
         title: "4%",
-        paragraph: numerosResidenciaTrad("numberCards.3.paragraph"),
+        paragraph: numerosResidenciaTrad("numberCards.2.paragraph"),
       },
       {
         icon: FaFemale,
         title: "21%",
-        paragraph: numerosResidenciaTrad("numberCards.4.paragraph"),
+        paragraph: numerosResidenciaTrad("numberCards.3.paragraph"),
       },
-      {
-        icon: FaUserAlt,
-        title: "7%",
-        paragraph: numerosResidenciaTrad("numberCards.5.paragraph"),
-      },
+
       {
         icon: FaSchool,
         title: "51%",
-        paragraph: numerosResidenciaTrad("numberCards.6.paragraph"),
+        paragraph: numerosResidenciaTrad("numberCards.4.paragraph"),
       },
       {
         icon: FaHandsHelping,
         title: "62%",
-        paragraph: numerosResidenciaTrad("numberCards.7.paragraph"),
+        paragraph: numerosResidenciaTrad("numberCards.5.paragraph"),
       },
       {
         icon: FaChalkboardTeacher,
         title: "10",
-        paragraph: numerosResidenciaTrad("numberCards.8.paragraph"),
+        paragraph: numerosResidenciaTrad("numberCards.6.paragraph"),
       },
     ],
   };
@@ -566,6 +565,16 @@ const ESGPage: React.FC = () => {
     pointColor: "text-var-social",
   };
 
+  const campanhaNatalData: CarouselSectionType = {
+    images: [
+      { image: "/img/temp/esg/natal/0.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/1.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/2.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/3.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/4.jpeg", imageAlt: "" },
+    ],
+  };
+
   // GOVERNAMENTAL
   const normasCodigosLegislacoesData: SimpleCallBannerInterface = {
     alignment: "start",
@@ -645,10 +654,14 @@ const ESGPage: React.FC = () => {
       certificacoesPadroesInternacionaisTexto1Trad("paragraphs.1"),
     ],
     imageAlt: certificacoesPadroesInternacionaisTexto1Trad("imageAlt"),
-    imageUrl: "/img/temp/esg/verificado.jpg",
+    imageUrl: "/img/final/esg/iso.png",
     imageAlignment: "end",
     lineColor: "bg-var-governanca",
     pointColor: "text-var-governanca",
+    pdfLink1: "https://biomobtinastorage.blob.core.windows.net/biomob/Cert_ISO37001_Port_19.03.2024.pdf",
+    pdfText1: certificacoesPadroesInternacionaisTexto1Trad("linkText1"),
+    pdfLink2: "https://biomobtinastorage.blob.core.windows.net/biomob/Cert_ISO%2037301_Port_19.03.2024.pdf",
+    pdfText2: certificacoesPadroesInternacionaisTexto1Trad("linkText2"),
   };
 
   const canaisDenunciaData: SimpleCallBannerInterface = {
@@ -750,7 +763,7 @@ const ESGPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col mb-20 gap-[4.75rem]">
+    <div className="flex flex-col mb-20 gap-[4.75rem] justify-center items-center">
       {/* Ajustar todos os textos alt depois de trocar para as imagens finais */}
       <React.Suspense fallback={<Skeleton className="w-full aspect-[1440/572]" />}>
         <MemoizedCallBanner {...callBannerData} />
@@ -814,6 +827,7 @@ const ESGPage: React.FC = () => {
       <NumberCardsBanner {...feitosSocialData} />
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
+      <CarouselSection {...campanhaNatalData} />
       <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
