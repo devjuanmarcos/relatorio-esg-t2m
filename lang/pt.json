@@ -364,38 +364,7 @@
         "title": "Caso Prático T2M – Parceria Serratec",
         "topTitle": "Indicadores - Residência",
         "paragraph": "Profissionais contratados pela T2M oriundos do Programa de Residência em TIC do Serratec 2019.2 – 2024.1",
-        "numberCards": [
-          {
-            "title": "205",
-            "paragraph": "Pessoas adotadas pelo programa"
-          },
-          {
-            "title": "101",
-            "paragraph": "Contratações realizadas"
-          },
-
-          {
-            "title": "4%",
-            "paragraph": "Pessoas com deficiência no programa"
-          },
-          {
-            "title": "21%",
-            "paragraph": "Participação feminina"
-          },
-
-          {
-            "title": "51%",
-            "paragraph": "Egressos de escola pública"
-          },
-          {
-            "title": "62%",
-            "paragraph": "Beneficiários de ações afirmativas"
-          },
-          {
-            "title": "10",
-            "paragraph": "Atuam como professores ou monitores do programa"
-          }
-        ]
+        "imageAlt": "Resumo visual de dados do programa: 1) 205 pessoas adotadas pelo programa; 2) 101 contratações realizadas; 3) 4% de participantes com deficiência; 4) 21% de participação feminina; 5) 51% de egressos de escola pública; 6) 10 participantes atuam como professores ou monitores do programa. Os dados são apresentados de forma clara, com números destacados para facilitar a compreensão."
       },
       "equipeGenteGestaoTrad": {
         "topTitle": "Social",
@@ -539,29 +508,7 @@
       "metasTrad": {
         "title": "Nossas metas em 2025",
         "paragraph": "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
-        "numberCards": [
-          {
-            "title": "Duplicar a quantidade de árvores plantadas"
-          },
-          {
-            "title": "Redução total das emissões de carbono"
-          },
-          {
-            "title": "Ampliar o consumo de material reciclado"
-          },
-          {
-            "title": "Aumentar em 50% a arrecadação de alimentos"
-          },
-          {
-            "title": "Duplicar a quantidade de ações sociais realizadas"
-          },
-          {
-            "title": "Aumentar em 30% a quantidade de voluntários em ações sociais"
-          },
-          {
-            "title": "Obter certificações ISO 27001 e ISO 27701"
-          }
-        ]
+        "imageAlt": "Sete metas organizacionais apresentadas em formato de lista: 1) Duplicar a quantidade de árvores plantadas; 2) Reduzir totalmente as emissões de carbono; 3) Ampliar o consumo de material reciclado; 4) Aumentar em 50% a arrecadação de alimentos; 5) Duplicar a quantidade de ações sociais realizadas; 6) Aumentar em 30% a quantidade de voluntários em ações sociais; 7) Obter certificações ISO 27001 e ISO 27701. Cada item é destacado de forma clara para fácil leitura."
       }
     }
   },

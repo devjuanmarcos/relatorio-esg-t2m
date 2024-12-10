@@ -381,45 +381,8 @@ const ESGPage: React.FC = () => {
     alignment: "center",
     cardBorder: "border-t-var-social",
     cardColor: "var-social",
-    numberCards: [
-      {
-        icon: FaChild,
-        title: "205",
-        paragraph: numerosResidenciaTrad("numberCards.0.paragraph"),
-      },
-      {
-        icon: FaBriefcase,
-        title: "101",
-        paragraph: numerosResidenciaTrad("numberCards.1.paragraph"),
-      },
-
-      {
-        icon: FaWheelchair,
-        title: "4%",
-        paragraph: numerosResidenciaTrad("numberCards.2.paragraph"),
-      },
-      {
-        icon: FaFemale,
-        title: "21%",
-        paragraph: numerosResidenciaTrad("numberCards.3.paragraph"),
-      },
-
-      {
-        icon: FaSchool,
-        title: "51%",
-        paragraph: numerosResidenciaTrad("numberCards.4.paragraph"),
-      },
-      {
-        icon: FaHandsHelping,
-        title: "62%",
-        paragraph: numerosResidenciaTrad("numberCards.5.paragraph"),
-      },
-      {
-        icon: FaChalkboardTeacher,
-        title: "10",
-        paragraph: numerosResidenciaTrad("numberCards.6.paragraph"),
-      },
-    ],
+    imageAlt: numerosResidenciaTrad("imageAlt"),
+    imageUrl: "/img/temp/esg/numerosResidencia.png",
   };
 
   const equipeGenteGestaoData: SimpleCallBannerInterface = {
@@ -722,43 +685,8 @@ const ESGPage: React.FC = () => {
     paragraph: metasTrad("paragraph"),
     cardType: "mini",
     alignment: "center",
-    numberCards: [
-      {
-        title: metasTrad("numberCards.0.title"),
-        icon: FaTree,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.1.title"),
-        icon: MdCo2,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.2.title"),
-        icon: LuRecycle,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.3.title"),
-        icon: FaUtensils,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.4.title"),
-        icon: FaHandsHelping,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.5.title"),
-        icon: FaUsers,
-        paragraph: "",
-      },
-      {
-        title: metasTrad("numberCards.6.title"),
-        icon: FaCertificate,
-        paragraph: "",
-      },
-    ],
+    imageUrl: "/img/temp/esg/metas.png",
+    imageAlt: metasTrad("imageAlt"),
     type: "border",
   };
 

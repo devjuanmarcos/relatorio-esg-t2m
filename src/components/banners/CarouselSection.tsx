@@ -3,7 +3,7 @@ import React from "react";
 import { CarouselSectionType } from "@/@types/types";
 import { EmblaOptionsType } from "embla-carousel";
 import { useTranslations } from "next-intl";
-import { ItemCarouselType1, ItemCarouselType2 } from "../ui/Carousel";
+import { ItemCarouselType1 } from "../ui/Carousel";
 import EmblaCarousel from "../ui/EmblaCarousel";
 import { CarouselSkeletonSection } from "../ui/skeleton/InnovationInMovieSection";
 

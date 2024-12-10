@@ -65,7 +65,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
     >
       {(topTitle || title || imageUrl || paragraph || ods) && (
         <div className="flex items-center md:justify-between gap-12 flex-col md:flex-row ">
-          <div className={`flex flex-col gap-3 max-w-[42rem] `}>
+          <div className={`flex flex-col gap-3 `}>
             {topTitle && (
               <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
                 {topTitle}
@@ -75,7 +75,11 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
             {imageUrl && imageAlt && (
               <Image src={imageUrl} alt={imageAlt} width={1000} height={500} className="w-full h-auto" />
             )}
-            {paragraph && <TextVariantes variant="paragraph_01">{paragraph}</TextVariantes>}
+            {paragraph && (
+              <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
+                {paragraph}
+              </TextVariantes>
+            )}
           </div>
           {ods && <OdsCard ods={ods} />}
         </div>
