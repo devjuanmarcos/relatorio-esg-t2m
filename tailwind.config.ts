@@ -29,6 +29,7 @@ const config: Config = {
         sm: "640px",
         md: "768px",
         lg: "1024px",
+        "2lg": "1148px",
         xl: "1280px",
         "2xl": "1536px",
         "max-sm": { raw: "(max-width: 640px)" },

@@ -41,17 +41,17 @@ const CallBanner: React.FC<CallBannerInterface> = ({
 
   return (
     <div
-      className={`relative bg-no-repeat bg-cover flex flex-col gap-3 justify-center ${
-        alignment === "start" ? "md:items-start" : "md:items-center"
+      className={`relative bg-no-repeat bg-cover flex flex-col gap-3 justify-center  ${
+        alignment === "start" ? "lg:items-start" : "lg:items-center"
       }  w-full
-       md:aspect-[1440/572] px-2 md:px-12 pt-[8rem] md:pt-[10rem] pb-4 md:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
+       lg:aspect-[1440/572] px-2 lg:px-12 pt-[8rem] lg:pt-[10rem] pb-4 lg:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image
         ref={imageRef1}
         priority
         src={imageUrl}
         alt="Cover Image"
-        className="bg-img blur-up max-md:object-cover max-md:rounded-xl max-md:aspect-[1440/572] max-md:max-h-[28.75rem] max-md:w-full"
+        className="bg-img blur-up max-lg:object-cover max-lg:rounded-xl max-lg:aspect-[1440/572] max-lg:max-h-[28.75rem] max-lg:w-full"
         sizes="(max-width: 768px) 100vw, 1440px"
         width={1440}
         height={720}

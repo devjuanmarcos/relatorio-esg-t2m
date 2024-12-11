@@ -21,14 +21,16 @@ interface TextVariantesProps {
 }
 
 const variantClasses: Record<TextVariants, string> = {
-  h1_main_title: "font-notosans text-4xl leading-tight",
-  paragraph_01: "font-opensans text-base",
-  top_title: "font-bold text-xl",
-  title_georgia: "font-notosans text-4xl leading-[2.6875rem] ",
-  button_text: "font-opensans font-medium",
-  h2_title: "font-opensans font-bold text-3xl leading-[2.6875rem]",
-  title_card: "font-opensans font-semibold text-xl",
-  h2_title_semibold: "font-opensans font-semibold text-3xl leading-[2.6875rem]",
+  h1_main_title: "font-notosans text-2xl leading-snug md:text-3xl md:leading-snug lg:text-4xl lg:leading-tight",
+  paragraph_01: "font-opensans text-sm leading-normal md:text-base md:leading-normal lg:text-base",
+  top_title: "font-bold text-lg leading-normal md:text-xl lg:text-xl",
+  title_georgia: "font-notosans text-2xl leading-snug md:text-3xl md:leading-snug lg:text-4xl lg:leading-[2.6875rem]",
+  button_text: "font-opensans font-medium text-sm md:text-base",
+  h2_title:
+    "font-opensans font-bold text-2xl leading-snug md:text-2xl md:leading-[2rem] lg:text-3xl lg:leading-[2.6875rem]",
+  title_card: "font-opensans font-semibold text-lg leading-normal md:text-xl lg:text-xl",
+  h2_title_semibold:
+    "font-opensans font-semibold text-2xl leading-snug md:text-2xl md:leading-[2rem] lg:text-3xl lg:leading-[2.6875rem]",
 };
 
 const TextVariantes: React.FC<TextVariantesProps> = ({

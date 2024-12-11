@@ -575,6 +575,18 @@ const ESGPage: React.FC = () => {
     pointColor: "text-var-governanca",
   };
 
+  const feitosGovernamentalData: NumberCardsBannerInterface = {
+    title: feitosSocialTrad("title"),
+    paragraph: feitosSocialTrad("paragraph"),
+    cardType: "mini",
+    alignment: "center",
+    cardColor: "var-social",
+    cardBorder: "border-var-social",
+    imageUrl: "/img/temp/esg/feitosGovernamentais.png",
+    imageAlt: feitosSocialTrad("imageAlt"),
+    type: "border",
+  };
+
   const certificacoesPadroesInternacionaisData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/esg/certificacoes.png",
@@ -683,7 +695,7 @@ const ESGPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col mb-20 gap-[4.75rem] justify-center items-center">
+    <div className="flex flex-col mb-20 gap-[2.75rem] lg:gap-[4.75rem]  justify-center items-center">
       {/* Ajustar todos os textos alt depois de trocar para as imagens finais */}
       <React.Suspense fallback={<Skeleton className="w-full aspect-[1440/572]" />}>
         <MemoizedCallBanner {...callBannerData} />
@@ -771,6 +783,8 @@ const ESGPage: React.FC = () => {
 
       <SimpleCallBanner {...equidadeSalarialData} />
       <ImageWithCardTextBanner {...equidadeSalarialTexto1Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+      <NumberCardsBanner {...feitosSocialData} />
       <DividingLine lineColor={"bg-var-governanca"} />
 
       <NumberCardsBanner {...metasData} />

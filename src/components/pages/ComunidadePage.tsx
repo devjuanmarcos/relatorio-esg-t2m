@@ -141,7 +141,7 @@ const ComunidadePage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col mb-20 gap-[4.75rem]">
+    <div className="flex flex-col mb-20 gap-[2.75rem] lg:gap-[4.75rem] ">
       <React.Suspense>
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>

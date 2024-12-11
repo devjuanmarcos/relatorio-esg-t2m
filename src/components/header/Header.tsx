@@ -82,12 +82,14 @@ export const Header = () => {
 
   return (
     <header className="flex justify-between w-full lg:grid grid-cols-[85px_1fr_85px] items-center bg-background px-4 py-[.375rem] border-b border-primary">
-      <Image
-        src={theme == "dark" ? "/img/LOGOT2MBRANCA.png" : "/img/LOGOT2M.png"}
-        alt="Logo da T2M - Test to Market"
-        width={85}
-        height={37}
-      />
+      <Link href={"/"}>
+        <Image
+          src={theme == "dark" ? "/img/LOGOT2MBRANCA.png" : "/img/LOGOT2M.png"}
+          alt="Logo da T2M - Test to Market"
+          width={85}
+          height={37}
+        />
+      </Link>
       <div className="hidden lg:flex gap-[.625rem] items-center justify-center w-full">
         {topics.map((topic, index) => (
           <React.Fragment key={topic.href}>

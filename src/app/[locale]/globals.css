@@ -100,53 +100,6 @@
     transition: background-color 0.3s linear;
   }
 
-  .h1_main_title {
-    font-family: var(--font-notosans);
-    font-size: 3.5rem;
-    line-height: 4.2rem;
-  }
-
-  .paragraph_01 {
-    font-family: var(--font-opensans);
-  }
-
-  .top_title {
-    font-weight: bold;
-    font-size: 1.375rem;
-    line-height: auto;
-  }
-
-  .title_georgia {
-    font-family: var(--font-notosans);
-    font-size: 2.25rem;
-    line-height: 2.6875rem;
-  }
-
-  .button_text {
-    font-family: var(--font-opensans);
-    font-weight: 500;
-  }
-
-  .h2_title {
-    font-family: var(--font-opensans);
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 2.6875rem;
-  }
-
-  .title_card {
-    font-family: var(--font-opensans);
-    font-weight: 600;
-    font-size: 1.25rem;
-  }
-
-  .h2_title_semibold {
-    font-family: var(--font-opensans);
-    font-weight: 600;
-    line-height: 2.6875rem;
-    font-size: 2.5rem;
-  }
-
   body {
     color: rgb(var(--foreground));
     background-color: rgb(var(--var-background));
@@ -256,7 +209,7 @@ input[type="range"]::-ms-track {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .bg-img {
     position: unset;
   }

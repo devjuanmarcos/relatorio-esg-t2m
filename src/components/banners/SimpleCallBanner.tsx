@@ -87,13 +87,13 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   if (alignment == "bottom" || alignment == "bottomEnd") {
     return (
       <div
-        className={`relative bg-no-repeat bg-cover flex flex-col gap-12 justify-center items-center 
-        ${alignment == "bottom" ? "md:items-start" : "md:items-end"} w-full max-md:pt-[4rem] md:mb-20 pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
+        className={`relative bg-no-repeat bg-cover flex flex-col gap-3 justify-center 
+        ${alignment == "bottom" ? "lg:items-start" : "lg:items-end"} w-full max-lg:pt-[4rem] max-lg:px-2 lg:mb-20 pb-4 lg:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
       >
         <Image
           src={imageUrl}
           alt="Cover Image"
-          className=" bg-bottom object-cover aspect-[1440/572] md:max-h-[28.75rem] w-full"
+          className=" bg-bottom object-cover aspect-[1440/572] lg:max-h-[28.75rem] w-full max-lg:rounded-lg"
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
@@ -101,8 +101,13 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         {topTitle ? (
           <BoxCard
             type="simple"
-            extraClassname={`${alignment == "bottom" ? " md:ml-12" : " md:mr-12"} md:absolute -bottom-20 `}
+            extraClassname={`${alignment == "bottom" ? " lg:ml-12" : " lg:mr-12"} lg:absolute -bottom-20 `}
           >
+            {!icon && (
+              <TextVariantes variant="top_title" extraClassName={topTitleColor}>
+                {topTitle}
+              </TextVariantes>
+            )}
             {title && (
               <TextVariantes variant="title_georgia" lineBottom lineColor={lineColor}>
                 {title}
@@ -114,20 +119,23 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
                 {buttonText}
               </Link>
             )}
-            <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
               {renderOds()}
               <div className="flex items-center gap-4 ">
                 {renderIcon()}
-                <TextVariantes variant="top_title" extraClassName={topTitleColor}>
-                  {topTitle}
-                </TextVariantes>
+
+                {icon && (
+                  <TextVariantes variant="top_title" extraClassName={topTitleColor}>
+                    {topTitle}
+                  </TextVariantes>
+                )}
               </div>
             </div>
           </BoxCard>
         ) : (
           <BoxCard
             type="simple"
-            extraClassname={`${alignment == "bottom" ? "ml-2 md:ml-12" : "mr-2 md:mr-12"} absolute -bottom-20 `}
+            extraClassname={`${alignment == "bottom" ? "ml-2 lg:ml-12" : "mr-2 lg:mr-12"} absolute -bottom-20 `}
           >
             <TextVariantes variant="h2_title" lineBottom lineColor={lineColor}>
               {title}
@@ -146,14 +154,14 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   }
   return (
     <div
-      className={`relative bg-no-repeat bg-cover flex max-md:flex-col gap-3 justify-center w-full ${
-        alignment === "start" ? "md:justify-start" : "md:justify-end"
-      } items-center md:items-end w-full md:aspect-[1440/572] md:max-h-[35.75rem] px-2 md:px-12 max-md:pt-[2rem] pb-4 md:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
+      className={`relative bg-no-repeat bg-cover flex max-lg:flex-col gap-3 justify-center w-full ${
+        alignment === "start" ? "lg:justify-start" : "lg:justify-end"
+      }  lg:items-end w-full lg:aspect-[1440/572] lg:max-h-[35.75rem] px-2 lg:px-12 max-lg:pt-[2rem] pb-4 lg:py-[4.75rem] bg-center transition-all duration-500 blur-0`}
     >
       <Image
         src={imageUrl}
         alt="Cover Image"
-        className="bg-img bg-bottom max-md:object-cover max-md:rounded-xl max-md:aspect-[1440/572] max-md:max-h-[28.75rem] max-md:w-full"
+        className="bg-img bg-bottom max-lg:object-cover max-lg:rounded-xl max-lg:aspect-[1440/572] max-lg:max-h-[28.75rem] max-lg:w-full"
         width={1000}
         height={600}
         sizes="(max-width: 768px) 100vw, 1000px"
