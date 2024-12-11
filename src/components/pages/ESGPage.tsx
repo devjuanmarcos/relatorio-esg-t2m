@@ -119,6 +119,8 @@ const ESGPage: React.FC = () => {
   const canaisDenunciaTexto1Trad = useTranslations("ESGPage.Governamental.canaisDenunciaTexto1Trad");
   const equidadeSalarialTrad = useTranslations("ESGPage.Governamental.equidadeSalarialTrad");
   const equidadeSalarialTexto1Trad = useTranslations("ESGPage.Governamental.equidadeSalarialTexto1Trad");
+  const feitosGovernamentalTrad = useTranslations("ESGPage.Governamental.feitosGovernamentalTrad");
+
   const metasTrad = useTranslations("ESGPage.Governamental.metasTrad");
 
   if (!isMounted) {
@@ -576,14 +578,14 @@ const ESGPage: React.FC = () => {
   };
 
   const feitosGovernamentalData: NumberCardsBannerInterface = {
-    title: feitosSocialTrad("title"),
-    paragraph: feitosSocialTrad("paragraph"),
+    title: feitosGovernamentalTrad("title"),
+    paragraph: feitosGovernamentalTrad("paragraph"),
     cardType: "mini",
     alignment: "center",
-    cardColor: "var-social",
-    cardBorder: "border-var-social",
+    cardColor: "var-governanca",
+    cardBorder: "border-var-governanca",
     imageUrl: "/img/temp/esg/feitosGovernamentais.png",
-    imageAlt: feitosSocialTrad("imageAlt"),
+    imageAlt: feitosGovernamentalTrad("imageAlt"),
     type: "border",
   };
 
@@ -784,7 +786,7 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...equidadeSalarialData} />
       <ImageWithCardTextBanner {...equidadeSalarialTexto1Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
-      <NumberCardsBanner {...feitosSocialData} />
+      <NumberCardsBanner {...feitosGovernamentalData} />
       <DividingLine lineColor={"bg-var-governanca"} />
 
       <NumberCardsBanner {...metasData} />
