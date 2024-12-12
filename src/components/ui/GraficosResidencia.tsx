@@ -22,6 +22,11 @@ const DadosEmpresa = {
 
 const GraficosResidencia = () => {
   const graficoProgressoRef = React.useRef<HTMLCanvasElement | null>(null);
+  const graficoContratadosAdotadosRef = React.useRef<HTMLCanvasElement | null>(null);
+  const graficoContratadosFormadosRef = React.useRef<HTMLCanvasElement | null>(null);
+  const graficoDeficienciaRef = React.useRef<HTMLCanvasElement | null>(null);
+  const graficoMulheresRef = React.useRef<HTMLCanvasElement | null>(null);
+
   const chartInstances = React.useRef<Chart[]>([]);
 
   React.useEffect(() => {
@@ -42,6 +47,49 @@ const GraficosResidencia = () => {
           colors: ["#4CAF50", "#E0E0E0"], // Verde para progresso e cinza para restante
           type: "doughnut", // Tipo de gráfico: rosca
         },
+        {
+          ref: graficoContratadosAdotadosRef,
+          data: [
+            { label: "Contratados Adotados", value: DadosEmpresa.contratadosAdotados },
+            { label: "Formados na Residência", value: DadosResidencia.formados - DadosEmpresa.contratadosAdotados },
+          ],
+          title: "Contratados Adotados em base aos Formados na Residência",
+          colors: ["#FF9800", "#E0E0E0"],
+          type: "doughnut",
+        },
+        {
+          ref: graficoContratadosFormadosRef,
+          data: [
+            { label: "Contratados Adotados", value: DadosEmpresa.contratadosAdotados },
+            {
+              label: "Contratados na Residência",
+              value: DadosResidencia.contratados - DadosEmpresa.contratadosAdotados,
+            },
+          ],
+          title: "Contratados Adotados em base aos Contratados na Residência",
+          colors: ["#3F51B5", "#E0E0E0"],
+          type: "doughnut",
+        },
+        {
+          ref: graficoDeficienciaRef,
+          data: [
+            { label: "Deficientes Contratados", value: DadosEmpresa.pessoasComDeficiencia },
+            { label: "Deficientes Formados", value: 36 - DadosEmpresa.pessoasComDeficiencia },
+          ],
+          title: "Deficientes Contratados em base aos Deficientes Formados",
+          colors: ["#9C27B0", "#E0E0E0"],
+          type: "doughnut",
+        },
+        {
+          ref: graficoMulheresRef,
+          data: [
+            { label: "Mulheres Contratadas", value: DadosEmpresa.participacaoFeminina },
+            { label: "Mulheres Formadas e Contratadas", value: 143 - DadosEmpresa.participacaoFeminina },
+          ],
+          title: "Mulheres Contratadas em base às Mulheres Formadas e Contratadas",
+          colors: ["#E91E63", "#E0E0E0"],
+          type: "doughnut",
+        },
       ];
 
       configs.forEach(({ ref, data, title, colors, type }) => {
@@ -55,7 +103,6 @@ const GraficosResidencia = () => {
                   label: "Total",
                   data: data.map((item) => item.value),
                   backgroundColor: colors,
-                  // Desabilitar a interação de hover completamente
                   tooltip: {
                     enabled: false, // Desabilitar tooltips
                   },
@@ -68,7 +115,6 @@ const GraficosResidencia = () => {
                 legend: {
                   position: "top",
                   labels: {
-                    // Remover a entrada de "Restante" na legenda
                     filter: function (legendItem: any) {
                       return legendItem.text !== "Restante";
                     },
@@ -79,12 +125,10 @@ const GraficosResidencia = () => {
                   text: title,
                 },
                 datalabels: {
-                  // Remover a exibição das porcentagens
                   formatter: (value: number, context: any) => {
-                    // Retorna uma string vazia para não exibir nada
                     return "";
                   },
-                  color: "#fff", // Cor do texto dentro do gráfico
+                  color: "#fff",
                   font: {
                     weight: "bold",
                   },
@@ -112,9 +156,21 @@ const GraficosResidencia = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-4 gap-4">
       <div className="flex justify-center items-center">
         <canvas ref={graficoProgressoRef} />
+      </div>
+      <div className="flex justify-center items-center">
+        <canvas ref={graficoContratadosAdotadosRef} />
+      </div>
+      <div className="flex justify-center items-center">
+        <canvas ref={graficoContratadosFormadosRef} />
+      </div>
+      <div className="flex justify-center items-center">
+        <canvas ref={graficoDeficienciaRef} />
+      </div>
+      <div className="flex justify-center items-center">
+        <canvas ref={graficoMulheresRef} />
       </div>
     </div>
   );
