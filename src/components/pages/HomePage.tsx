@@ -32,6 +32,8 @@ import {
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
 import { useTranslations } from "next-intl";
+import ComparisonChart from "../ui/GraficosResidencia";
+import GraficosResidencia from "../ui/GraficosResidencia";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -371,6 +373,7 @@ const HomePage: React.FC = () => {
       <React.Suspense>
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
+      {/* <GraficosResidencia /> */}
       <ImageWithCardTextBanner {...mensagemCeoData} />
       <DividingLine />
       <ImageWithCardTextBanner {...sobreRelatorioData} />

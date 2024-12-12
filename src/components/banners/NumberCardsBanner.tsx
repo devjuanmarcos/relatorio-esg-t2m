@@ -36,6 +36,7 @@ export interface NumberCardsBannerInterface {
   cardBorder?: string;
   imageUrl?: string;
   imageAlt?: string;
+  graphic?: React.ComponentType;
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -52,6 +53,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   ods,
   imageAlt,
   imageUrl,
+  graphic,
 }) => {
   const isMounted = useIsMounted();
 
@@ -59,11 +61,13 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
     return;
   }
 
+  const Graphic = graphic;
+
   return (
     <div
       className={`px-2 md:px-12 flex flex-col w-full ${type == "default" ? "gap-10" : "gap-20 "} ${alignment == "center" && "justify-center items-center text-center"} `}
     >
-      {(topTitle || title || imageUrl || paragraph || ods) && (
+      {(topTitle || title || imageUrl || paragraph || ods || graphic) && (
         <div className="flex items-center md:justify-between gap-12 flex-col md:flex-row ">
           <div className={`flex flex-col gap-3 `}>
             {topTitle && (
@@ -75,6 +79,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
             {imageUrl && imageAlt && (
               <Image src={imageUrl} alt={imageAlt} width={1000} height={500} className="w-full h-auto" />
             )}
+            {Graphic && <Graphic />}
             {paragraph && (
               <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
                 {paragraph}

@@ -34,6 +34,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { CarouselSectionType } from "@/@types/types";
+import GraficosResidencia from "../ui/GraficosResidencia";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
