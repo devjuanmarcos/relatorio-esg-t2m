@@ -3,6 +3,7 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import React from "react";
 import TextVariantes from "./TextsVariants";
 import { FaUsers, FaFemale, FaAccessibleIcon, FaBuilding, FaGraduationCap } from "react-icons/fa";
+import { FaPerson } from "react-icons/fa6";
 
 Chart.register(...registerables, ChartDataLabels);
 
@@ -56,7 +57,7 @@ const GraficosResidencia = () => {
               value: DadosResidencia.contratados - DadosEmpresa.contratadosAdotados,
             },
           ],
-          colors: ["#3F51B5", "#E0E0E0"],
+          colors: ["#9C27B0", "#E0E0E0"],
           type: "doughnut",
         },
         {
@@ -65,7 +66,7 @@ const GraficosResidencia = () => {
             { label: "Deficientes Contratados", value: DadosEmpresa.pessoasComDeficiencia },
             { label: "Deficientes Formados", value: 36 - DadosEmpresa.pessoasComDeficiencia },
           ],
-          colors: ["#9C27B0", "#E0E0E0"],
+          colors: ["#3F51B5", "#E0E0E0"],
           type: "doughnut",
         },
         {
@@ -140,7 +141,7 @@ const GraficosResidencia = () => {
         <div className="relative">
           <canvas ref={graficoContratadosAdotadosRef} />
           <div className="absolute inset-0 flex items-center justify-center">
-            <FaBuilding className="text-[6.5rem]" style={{ color: "#FF9800" }} />
+            <FaPerson className="text-[6.5rem]" style={{ color: "#FF9800" }} />
           </div>
         </div>
         <TextVariantes variant="mega_button_text">18,2%</TextVariantes>
@@ -153,7 +154,7 @@ const GraficosResidencia = () => {
         <div className="relative">
           <canvas ref={graficoContratadosFormadosRef} />
           <div className="absolute inset-0 flex items-center justify-center">
-            <FaGraduationCap className="text-[6.5rem]" style={{ color: "#3F51B5" }} />
+            <FaGraduationCap className="text-[6.5rem]" style={{ color: "#9C27B0" }} />
           </div>
         </div>
         <TextVariantes variant="mega_button_text">20%</TextVariantes>
@@ -166,7 +167,7 @@ const GraficosResidencia = () => {
         <div className="relative">
           <canvas ref={graficoDeficienciaRef} />
           <div className="absolute inset-0 flex items-center justify-center">
-            <FaAccessibleIcon className="text-[6.5rem]" style={{ color: "#9C27B0" }} />
+            <FaAccessibleIcon className="text-[6.5rem]" style={{ color: "#3F51B5" }} />
           </div>
         </div>
         <TextVariantes variant="mega_button_text">11%</TextVariantes>
