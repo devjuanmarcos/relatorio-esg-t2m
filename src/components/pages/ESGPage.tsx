@@ -741,7 +741,8 @@ const ESGPage: React.FC = () => {
       {/* Social */}
       <SimpleCallBanner {...patrocinadorIniciativasData} />
       <ImageWithCardTextBanner {...patrocinadorIniciativasTexto1Data} />
-      <NumberCardsBanner {...numerosResidenciaData} />
+      {/* <NumberCardsBanner {...numerosResidenciaData} /> */}
+      <GraficosResidencia />
       <DividingLine lineColor={"bg-var-social"} />
 
       <SimpleCallBanner {...equipeGenteGestaoData} />

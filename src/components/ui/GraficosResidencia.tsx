@@ -1,6 +1,8 @@
 import { Chart, registerables } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import React from "react";
+import TextVariantes from "./TextsVariants";
+import { FaUsers, FaFemale, FaAccessibleIcon, FaBuilding, FaGraduationCap } from "react-icons/fa";
 
 Chart.register(...registerables, ChartDataLabels);
 
@@ -21,7 +23,6 @@ const DadosEmpresa = {
 };
 
 const GraficosResidencia = () => {
-  const graficoProgressoRef = React.useRef<HTMLCanvasElement | null>(null);
   const graficoContratadosAdotadosRef = React.useRef<HTMLCanvasElement | null>(null);
   const graficoContratadosFormadosRef = React.useRef<HTMLCanvasElement | null>(null);
   const graficoDeficienciaRef = React.useRef<HTMLCanvasElement | null>(null);
@@ -38,22 +39,11 @@ const GraficosResidencia = () => {
     const createCharts = () => {
       const configs = [
         {
-          ref: graficoProgressoRef,
-          data: [
-            { label: "Egressos Escola Pública", value: DadosEmpresa.egressosEscolaPublica },
-            { label: "Restante", value: DadosEmpresa.contratadosAdotados - DadosEmpresa.egressosEscolaPublica },
-          ],
-          title: "Progresso de Egressos de Escola Pública",
-          colors: ["#4CAF50", "#E0E0E0"], // Verde para progresso e cinza para restante
-          type: "doughnut", // Tipo de gráfico: rosca
-        },
-        {
           ref: graficoContratadosAdotadosRef,
           data: [
             { label: "Contratados Adotados", value: DadosEmpresa.contratadosAdotados },
             { label: "Formados na Residência", value: DadosResidencia.formados - DadosEmpresa.contratadosAdotados },
           ],
-          title: "Contratados Adotados em base aos Formados na Residência",
           colors: ["#FF9800", "#E0E0E0"],
           type: "doughnut",
         },
@@ -66,7 +56,6 @@ const GraficosResidencia = () => {
               value: DadosResidencia.contratados - DadosEmpresa.contratadosAdotados,
             },
           ],
-          title: "Contratados Adotados em base aos Contratados na Residência",
           colors: ["#3F51B5", "#E0E0E0"],
           type: "doughnut",
         },
@@ -76,7 +65,6 @@ const GraficosResidencia = () => {
             { label: "Deficientes Contratados", value: DadosEmpresa.pessoasComDeficiencia },
             { label: "Deficientes Formados", value: 36 - DadosEmpresa.pessoasComDeficiencia },
           ],
-          title: "Deficientes Contratados em base aos Deficientes Formados",
           colors: ["#9C27B0", "#E0E0E0"],
           type: "doughnut",
         },
@@ -86,26 +74,21 @@ const GraficosResidencia = () => {
             { label: "Mulheres Contratadas", value: DadosEmpresa.participacaoFeminina },
             { label: "Mulheres Formadas e Contratadas", value: 143 - DadosEmpresa.participacaoFeminina },
           ],
-          title: "Mulheres Contratadas em base às Mulheres Formadas e Contratadas",
           colors: ["#E91E63", "#E0E0E0"],
           type: "doughnut",
         },
       ];
 
-      configs.forEach(({ ref, data, title, colors, type }) => {
+      configs.forEach(({ ref, data, colors, type }) => {
         if (ref.current) {
           const chart = new Chart(ref.current, {
             type: type || ("bar" as any), // Defina o tipo de gráfico
             data: {
-              labels: data.map((item) => item.label).filter((label) => label !== "Restante"), // Remover "Restante" do cabeçalho
+              labels: data.map((item) => item.label),
               datasets: [
                 {
-                  label: "Total",
                   data: data.map((item) => item.value),
                   backgroundColor: colors,
-                  tooltip: {
-                    enabled: false, // Desabilitar tooltips
-                  },
                 },
               ],
             },
@@ -113,33 +96,16 @@ const GraficosResidencia = () => {
               responsive: true,
               plugins: {
                 legend: {
-                  position: "top",
-                  labels: {
-                    filter: function (legendItem: any) {
-                      return legendItem.text !== "Restante";
-                    },
-                  },
+                  display: false, // Remove o label
                 },
                 title: {
-                  display: true,
-                  text: title,
+                  display: false, // Remove o título
                 },
                 datalabels: {
-                  formatter: (value: number, context: any) => {
-                    return "";
-                  },
-                  color: "#fff",
-                  font: {
-                    weight: "bold",
-                  },
-                  align: "center",
-                  anchor: "center",
+                  display: false, // Remove os rótulos dos dados
                 },
               },
               cutout: "70%", // Controla o tamanho da rosca
-              interaction: {
-                mode: null, // Desabilitar interação
-              },
             },
           });
           chartInstances.current.push(chart);
@@ -156,22 +122,74 @@ const GraficosResidencia = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="flex justify-center items-center">
-        <canvas ref={graficoProgressoRef} />
+    <div
+    className={`px-2 md:px-12 flex flex-col w-full gap-10 justify-center items-center text-center`}
+  >
+      <div className="flex items-center md:justify-between gap-12 flex-col ">
+        <div className={`flex flex-col gap-3 `}>
+            <TextVariantes variant="top_title" lineCenter lineBottom >
+            Indicadores da Residência em TIC
+            </TextVariantes>
+           <TextVariantes variant="h2_title">Caso Prático T2M – Parceria Serratec</TextVariantes>
+            <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
+            Dados sobre os 502 residentes contratados imediatamente após a conclusão da Residência em TIC.
+            </TextVariantes>
       </div>
-      <div className="flex justify-center items-center">
-        <canvas ref={graficoContratadosAdotadosRef} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2 md:px-12">
+      <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
+        <div className="relative">
+          <canvas ref={graficoContratadosAdotadosRef} />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <FaBuilding className="text-[6.5rem]" style={{ color: "#FF9800" }} />
+          </div>
+        </div>
+        <TextVariantes variant="mega_button_text">18,2%</TextVariantes>
+        <TextVariantes variant="paragraph_01">
+        205 residentes adotados, representando 18,75% do total de 1092 formados
+        </TextVariantes>
       </div>
-      <div className="flex justify-center items-center">
-        <canvas ref={graficoContratadosFormadosRef} />
+
+      <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
+        <div className="relative">
+          <canvas ref={graficoContratadosFormadosRef} />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <FaGraduationCap className="text-[6.5rem]" style={{ color: "#3F51B5" }} />
+          </div>
+        </div>
+        <TextVariantes variant="mega_button_text">20%</TextVariantes>
+        <TextVariantes variant="paragraph_01">
+        Contratou 102 formados, o que representa 20% de 520 das contratações realizadas pelas empresas apoiadoras.
+        </TextVariantes>
       </div>
-      <div className="flex justify-center items-center">
-        <canvas ref={graficoDeficienciaRef} />
+
+      <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
+        <div className="relative">
+          <canvas ref={graficoDeficienciaRef} />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <FaAccessibleIcon className="text-[6.5rem]" style={{ color: "#9C27B0" }} />
+          </div>
+        </div>
+        <TextVariantes variant="mega_button_text">11%</TextVariantes>
+        <TextVariantes variant="paragraph_01">
+        Do total de 36 pessoas com deficiência formadas, 11% (4 pessoas) foram contratadas pela T2M.
+        </TextVariantes>
       </div>
-      <div className="flex justify-center items-center">
-        <canvas ref={graficoMulheresRef} />
+
+      <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
+        <div className="relative">
+          <canvas ref={graficoMulheresRef} />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <FaFemale className="text-[6.5rem]" style={{ color: "#E91E63" }} />
+          </div>
+        </div>
+        <TextVariantes variant="mega_button_text">14,42%</TextVariantes>
+        <TextVariantes variant="paragraph_01">
+        A T2M contratou 21 mulheres, o que corresponde a 14,42% das contratações diretas.
+        </TextVariantes>
       </div>
+    </div>
+    </div>
+    
     </div>
   );
 };
