@@ -8,7 +8,6 @@ import { ImageWithCardTextBannerInterface } from "@banners/ImageWithCardTextBann
 import { SimpleCallBannerInterface } from "@banners/SimpleCallBanner";
 import { IconsCardsBannerInterface } from "@banners/IconsCardsBanner";
 import { ThreeTextCardsWithNumberCardBannerInterface } from "@banners/ThreeTextCardsWithNumberCardBanner";
-import { IoPeopleCircle } from "react-icons/io5";
 import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
 import {
@@ -30,7 +29,6 @@ import {
   FaLeaf,
   FaUsers,
 } from "react-icons/fa";
-import { GiEarthAmerica, GiGlobe } from "react-icons/gi";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
 import { useTranslations } from "next-intl";
@@ -60,6 +58,8 @@ const ThreeTextCardsWithNumberCardBanner = dynamic(() =>
 const NumberCardsBanner = dynamic(() =>
   import("@/components/banners/NumberCardsBanner").then((mod) => mod.NumberCardsBanner)
 );
+
+const AcordionCalendar = dynamic(() => import("@/components/ui/acordionCalendar").then((mod) => mod.default));
 
 const HomePage: React.FC = () => {
   const isMounted = useIsMounted();
@@ -387,6 +387,7 @@ const HomePage: React.FC = () => {
       <DividingLine />
       <NumberCardsBanner {...movimentoRegenerativoData} />
       <NumberCardsBanner {...nossasCampanhasData} />
+      <AcordionCalendar />
     </div>
   );
 };

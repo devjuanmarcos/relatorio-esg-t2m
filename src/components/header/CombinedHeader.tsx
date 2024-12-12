@@ -55,11 +55,24 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-accessibility-bar flex flex-col ">
       <div
-        className="max-h-12 overflow-y-hidden relative flex justify-center md:justify-between gap-4 items-center bg-text-verde-medio w-full 
+        className="max-h-12 overflow-y-hidden relative flex justify-center md:justify-start gap-4 items-center 
+        bg-text-verde-medio w-full 
       px-4 py-1 my-0 mx-auto text-var-icone-barra-acessibilidade "
       >
         <VLibrasIntegration />
         <div className="flex gap-4 text-var-icone-barra-acessibilidade items-center mr-auto">
+          <div className="hidden lg:flex gap-1 items-center text-end max-h-[3.125rem] overflow-hidden">
+            <span className="flex flex-col text-sm justify-end ">
+              <span className="w-max text-end ">by</span>
+            </span>
+            <NextImage
+              imageUrl={"/img/BIOMOB-BRANCA.png"}
+              altImage={t("logo")}
+              ariaLabel={t("logo")}
+              sizes="100vw"
+              className="w-auto h-[1.625rem]"
+            />
+          </div>
           <span className="md:contents hidden font-semibold text-[1.4rem] font-montserrat">{t("acessibilidade")}</span>
           <SwitchWithIcon />
           <FontSizeSlider />
@@ -73,18 +86,6 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
           />
           <LeitorDeAudio />
           <ComboboxLanguage locale={locale} type="header" />
-        </div>
-        <div className="hidden lg:flex gap-1 items-center text-end max-h-[3.125rem] overflow-hidden">
-          <span className="flex flex-col text-sm justify-end ">
-            <span className="w-max text-end ">by</span>
-          </span>
-          <NextImage
-            imageUrl={"/img/BIOMOB-BRANCA.png"}
-            altImage={t("logo")}
-            ariaLabel={t("logo")}
-            sizes="100vw"
-            className="w-[8.75rem] h-[1.625rem]"
-          />
         </div>
       </div>
       <Header />

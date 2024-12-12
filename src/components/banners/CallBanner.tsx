@@ -44,7 +44,8 @@ const CallBanner: React.FC<CallBannerInterface> = ({
       className={`relative bg-no-repeat bg-cover flex flex-col gap-3 justify-center  ${
         alignment === "start" ? "lg:items-start" : "lg:items-center"
       }  w-full
-       lg:aspect-[1440/572] px-2 lg:px-12 pt-[8rem] lg:pt-[10rem] pb-4 lg:pb-[4.75rem] bg-center transition-all duration-500 blur-0`}
+       lg:aspect-[1440/572] px-2 lg:px-12 pt-[8rem] lg:pt-[10rem] pb-4 lg:pb-[4.75rem] bg-center 
+       transition-all duration-500 blur-0`}
     >
       <Image
         ref={imageRef1}
