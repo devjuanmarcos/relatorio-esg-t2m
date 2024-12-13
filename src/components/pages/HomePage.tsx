@@ -373,7 +373,6 @@ const HomePage: React.FC = () => {
       <React.Suspense>
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
-      {/* <GraficosResidencia /> */}
       <ImageWithCardTextBanner {...mensagemCeoData} />
       <DividingLine />
       <ImageWithCardTextBanner {...sobreRelatorioData} />

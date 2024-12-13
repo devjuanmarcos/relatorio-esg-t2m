@@ -5,7 +5,7 @@ import { buttonVariants } from "./button";
 import { Input } from "./input";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "./command";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
-import { FaSearch, FaTimes } from "react-icons/fa"; // Importando ícones de pesquisa e limpar
+import { FaSearch, FaTimes } from "react-icons/fa";
 import { Calendar } from "lucide-react";
 
 type Category =
@@ -97,15 +97,14 @@ const EventCard = ({ title, category, date }: { title: string; category: Categor
     "Evento relacionado à categoria " + category
   )}`;
 
-  const categoryData = categoryImages[category]; // Pegando os dados da categoria
+  const categoryData = categoryImages[category];
 
   return (
     <div className="grid grid-cols-3 min-h-40 items-center p-4 border rounded-lg shadow-md hover:shadow-lg transition relative  ">
       <div className="flex z-30 bg-background col-span-3 sm:col-span-2">
         <span className="hidden 2sm:flow-root text-[3.75rem] mr-4 font-bold min-w-[4.25rem] text-center">{day}</span>
-        {/* Exibindo o dia do evento */}
         <div>
-          <div className="text-sm  font-semibold">{categoryData.title}</div> {/* Exibindo o título da categoria */}
+          <div className="text-sm  font-semibold">{categoryData.title}</div>
           <h3 className="text-xl font-bold">{title}</h3>
           <p className="">{formattedDate}</p>
           <div className="flex items-center mt-2">
@@ -122,8 +121,8 @@ const EventCard = ({ title, category, date }: { title: string; category: Categor
       </div>
       <div className="hidden sm:flex absolute w-32 h-40 aspect-square z-10 right-0">
         <Image
-          src={categoryData.imageUrl} // Usando a imagem associada à categoria
-          alt={categoryData.imageAlt} // Usando o texto alternativo da categoria
+          src={categoryData.imageUrl}
+          alt={categoryData.imageAlt}
           width={300}
           height={300}
           objectFit="cover"
@@ -139,16 +138,12 @@ const AcordionCalendar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [open, setOpen] = useState(false);
 
-  // Filtra os eventos com base no mês selecionado ou pela pesquisa
   const filteredEvents = events.filter((event) => {
-    // Se houver algo no campo de pesquisa, ignora o filtro do mês
     const matchesSearch = event.title.toLowerCase().includes(searchQuery.toLowerCase());
 
     if (searchQuery) {
-      // Se houver pesquisa, apenas filtra pela pesquisa
       return matchesSearch;
     } else {
-      // Caso contrário, filtra tanto pelo mês quanto pela pesquisa (que estará vazia)
       const eventMonth = new Date(event.date).toLocaleString("pt-BR", { month: "long" }).toLowerCase();
       const matchesMonth = selectedMonth ? eventMonth === selectedMonth.toLowerCase() : true;
       return matchesMonth && matchesSearch;
@@ -196,7 +191,6 @@ const AcordionCalendar = () => {
           </PopoverContent>
         </Popover>
 
-        {/* Campo de pesquisa com ícones */}
         <div className="relative w-full max-w-[25rem]">
           <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           <Input

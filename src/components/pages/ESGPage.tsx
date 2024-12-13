@@ -98,6 +98,7 @@ const ESGPage: React.FC = () => {
   const feitosSocialTrad = useTranslations("ESGPage.Social.feitosSocialTrad");
   const campanha1Trad = useTranslations("ESGPage.Social.campanha1Trad");
   const campanha2Trad = useTranslations("ESGPage.Social.campanha2Trad");
+  const campanha3Trad = useTranslations("ESGPage.Social.campanha3Trad");
 
   // TRADUÇÕES BANNERS GOVERNAMENTAIS
   const normasCodigosLegislacoesTrad = useTranslations("ESGPage.Governamental.normasCodigosLegislacoesTrad");
@@ -494,8 +495,8 @@ const ESGPage: React.FC = () => {
   const campanha1Data: ImageWithCardTextBannerInterface = {
     paragraph: campanha1Trad("paragraph"),
     imageAlt: campanha1Trad("imageAlt"),
-    imageUrl: "/img/final/esg/esperancar.jpeg",
-    imageAlignment: "end",
+    imageUrl: "/img/final/esg/padre.jpeg",
+    imageAlignment: "start",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
   };
@@ -503,6 +504,15 @@ const ESGPage: React.FC = () => {
   const campanha2Data: ImageWithCardTextBannerInterface = {
     paragraph: campanha2Trad("paragraph"),
     imageAlt: campanha2Trad("imageAlt"),
+    imageUrl: "/img/final/esg/esperancar.jpeg",
+    imageAlignment: "end",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const campanha3Data: ImageWithCardTextBannerInterface = {
+    paragraph: campanha3Trad("paragraph"),
+    imageAlt: campanha3Trad("imageAlt"),
     imageUrl: "/img/final/esg/appo.jpeg",
     imageAlignment: "start",
     lineColor: "bg-var-social",
@@ -548,7 +558,7 @@ const ESGPage: React.FC = () => {
   };
 
   const comiteT2MData: SimpleCallBannerInterface = {
-    alignment: "end",
+    alignment: "bottomEnd",
     imageUrl: "/img/final/esg/comites.jpg",
     topTitle: comiteT2MTrad("topTitle"),
     lineColor: "bg-var-governanca",
@@ -763,7 +773,8 @@ const ESGPage: React.FC = () => {
       <NumberCardsBanner {...feitosSocialData} />
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
-      <CarouselSection {...campanhaNatalData} />
+      <ImageWithCardTextBanner {...campanha3Data} />
+      {/* <CarouselSection {...campanhaNatalData} /> */}
       <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
