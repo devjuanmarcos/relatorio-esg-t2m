@@ -434,12 +434,44 @@
         "imageAlt": "Imagem do escritório da T2M"
       },
       "campanha2Trad": {
-        "paragraph": "Durante o Tech Day 10, foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
+        "paragraphs": [
+          "Durante o Tech Day 09, foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel Cardoso, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
+          "O Projeto Esperançar é uma iniciativa da Casa da Cidadania de Petrópolis, que auxilia e acolhe mulheres vítimas das enchentes que atingiram a cidade em 2022, incluindo aquelas que vivem em aluguel social e as que se encontram em situação de vulnerabilidade."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "campanha3Trad": {
-        "paragraph": "A campanha do Outubro Rosa foi reforçada com a doação de 216 quilos de alimentos recebidos no Tech Day 9 e destinados à APPO - Associação Petropolitana dos Pacientes Oncológicos. Essa ação foi apadrinhada pela T2M para representar o Outubro Rosa.",
+        "paragraphs": [
+          "A campanha do Outubro Rosa foi reforçada com a doação de 216 quilos de alimentos recebidos no Tech Day 10 e destinados à APPO - Associação Petropolitana dos Pacientes Oncológicos. A APPO foi escolhida pela T2M para ser a receptora de nossa campanha representando o mês do Outubro Rosa.",
+          "A APPO promove eventos com a finalidade de auxiliar os interesses da Instituição, bem como promover a união dos pacientes oncológicos, estabelecendo convênios e intercâmbios com Instituições Brasileiras e Estrangeiras que facilitem a vida e o trabalho dos pacientes oncológicos."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
+      },
+      "campanha4Trad": {
+        "paragraphs": [
+          "Durante o Tech Day 11, conseguimos arrecadar e doar generosamente 288 quilos de alimentos ao Lar Santa Catarina. Esse Gesto Solidário foi idealizado e acompanhado de perto pelo nosso colaborador Bruno da Matta.",
+          "O Lar Santa Catarina é uma organização não-governamental sem fins lucrativos que tem como objetivo principal a promoção da Assistência Social, com a finalidade de acolher, orientar e amparar crianças, adolescentes e jovens com déficit cognitivo e/ou motor em suas especificidades, buscando a superação de dificuldades e o desenvolvimento de habilidades."
+        ],
+        "imageAlt": "Imagem do escritório da T2M"
+      },
+      "campanhaNatalTrad": {
+        "topTitle": "Gesto Solidário",
+        "title": "Campanha de Natal",
+        "paragraph": "Em dezembro, decidimos escolher três destinatários para nossas doações de presentes de Natal.",
+        "numberCards": [
+          {
+            "title": "Espaço do Saber",
+            "paragraph": "O projeto, através de uma abordagem interdisciplinar, oferece meios e estímulos para que crianças e adolescentes desenvolvam habilidades cognitivas, motivação e interesse pelo aprendizado."
+          },
+          {
+            "title": "Creche Escola Recrear",
+            "paragraph": "A Creche Escola Recrear acolhe e educa mais de 100 crianças em tempo integral, valorizando o cuidado, a humanização, o respeito e a ética, garantindo que sua missão seja diária e com ações eficientes para que as crianças tenham um futuro melhor."
+          },
+          {
+            "title": "Funcionários essenciais Serratec",
+            "paragraph": "Não poderíamos deixar de apoiar os trabalhadores que fazem nosso dia a dia fluir com tranquilidade, qualidade e segurança: porteiros e auxiliares de limpeza que têm filhos pequenos."
+          }
+        ]
       }
     },
     "Governamental": {

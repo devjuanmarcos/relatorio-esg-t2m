@@ -34,6 +34,7 @@ export interface NumberCardsBannerInterface {
   cardType?: "default" | "mini";
   cardColor?: string;
   cardBorder?: string;
+  lineColor?: string;
   imageUrl?: string;
   imageAlt?: string;
   graphic?: React.ComponentType;
@@ -54,6 +55,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   imageAlt,
   imageUrl,
   graphic,
+  lineColor,
 }) => {
   const isMounted = useIsMounted();
 
@@ -71,7 +73,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
         <div className="flex items-center md:justify-between gap-12 flex-col md:flex-row ">
           <div className={`flex flex-col gap-3 `}>
             {topTitle && (
-              <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"}>
+              <TextVariantes variant="top_title" lineBottom lineCenter={type == "border"} lineColor={lineColor}>
                 {topTitle}
               </TextVariantes>
             )}

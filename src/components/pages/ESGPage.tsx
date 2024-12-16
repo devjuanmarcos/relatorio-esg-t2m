@@ -10,31 +10,11 @@ import { Loading } from "../ui/Loading";
 import { Skeleton } from "../ui/skeleton";
 import { DividingLine } from "../ui/dividingLine";
 import { useIsMounted } from "@/hooks/useIsMounted";
-import {
-  FaBriefcase,
-  FaCertificate,
-  FaChalkboardTeacher,
-  FaChartLine,
-  FaChild,
-  FaFemale,
-  FaHandsHelping,
-  FaLeaf,
-  FaSchool,
-  FaTree,
-  FaUserAlt,
-  FaUsers,
-  FaUtensils,
-  FaVenus,
-  FaWheelchair,
-} from "react-icons/fa";
-import { MdCo2, MdInsertDriveFile } from "react-icons/md";
-import { LuRecycle } from "react-icons/lu";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
-import { buttonVariants } from "../ui/button";
 import { CarouselSectionType } from "@/@types/types";
 import GraficosResidencia from "../ui/GraficosResidencia";
+import { TbChristmasBall, TbChristmasTree } from "react-icons/tb";
+import { FaGift } from "react-icons/fa";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -99,6 +79,8 @@ const ESGPage: React.FC = () => {
   const campanha1Trad = useTranslations("ESGPage.Social.campanha1Trad");
   const campanha2Trad = useTranslations("ESGPage.Social.campanha2Trad");
   const campanha3Trad = useTranslations("ESGPage.Social.campanha3Trad");
+  const campanha4Trad = useTranslations("ESGPage.Social.campanha4Trad");
+  const campanhaNatalTrad = useTranslations("ESGPage.Social.campanhaNatalTrad");
 
   // TRADUÇÕES BANNERS GOVERNAMENTAIS
   const normasCodigosLegislacoesTrad = useTranslations("ESGPage.Governamental.normasCodigosLegislacoesTrad");
@@ -502,7 +484,7 @@ const ESGPage: React.FC = () => {
   };
 
   const campanha2Data: ImageWithCardTextBannerInterface = {
-    paragraph: campanha2Trad("paragraph"),
+    paragraphs: [campanha2Trad("paragraphs.0"), campanha2Trad("paragraphs.1")],
     imageAlt: campanha2Trad("imageAlt"),
     imageUrl: "/img/final/esg/esperancar.jpeg",
     imageAlignment: "end",
@@ -511,7 +493,7 @@ const ESGPage: React.FC = () => {
   };
 
   const campanha3Data: ImageWithCardTextBannerInterface = {
-    paragraph: campanha3Trad("paragraph"),
+    paragraphs: [campanha3Trad("paragraphs.0"), campanha3Trad("paragraphs.1")],
     imageAlt: campanha3Trad("imageAlt"),
     imageUrl: "/img/final/esg/appo.jpeg",
     imageAlignment: "start",
@@ -519,7 +501,44 @@ const ESGPage: React.FC = () => {
     pointColor: "text-var-social",
   };
 
-  const campanhaNatalData: CarouselSectionType = {
+  const campanha4Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [campanha4Trad("paragraphs.0"), campanha4Trad("paragraphs.1")],
+    imageAlt: campanha4Trad("imageAlt"),
+    imageUrl: "/img/final/esg/larSantaCatarina.png",
+    imageAlignment: "end",
+    lineColor: "bg-var-social",
+    pointColor: "text-var-social",
+  };
+
+  const campanhaNatalData: NumberCardsBannerInterface = {
+    alignment: "center",
+    topTitle: campanhaNatalTrad("topTitle"),
+    title: campanhaNatalTrad("title"),
+    paragraph: campanhaNatalTrad("paragraph"),
+    cardColor: "var-social",
+    cardBorder: "border-var-social",
+    lineColor: "bg-var-social",
+    numberCards: [
+      {
+        title: campanhaNatalTrad("numberCards.0.title"),
+        icon: TbChristmasBall,
+        paragraph: campanhaNatalTrad("numberCards.0.paragraph"),
+      },
+      {
+        title: campanhaNatalTrad("numberCards.1.title"),
+        icon: TbChristmasTree,
+        paragraph: campanhaNatalTrad("numberCards.1.paragraph"),
+      },
+      {
+        title: campanhaNatalTrad("numberCards.2.title"),
+        icon: FaGift,
+        paragraph: campanhaNatalTrad("numberCards.2.paragraph"),
+      },
+    ],
+    type: "border",
+  };
+
+  const campanhaNatalImagensData: CarouselSectionType = {
     images: [
       { image: "/img/temp/esg/natal/0.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/1.jpeg", imageAlt: "" },
@@ -774,7 +793,9 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
       <ImageWithCardTextBanner {...campanha3Data} />
-      {/* <CarouselSection {...campanhaNatalData} /> */}
+      <ImageWithCardTextBanner {...campanha4Data} />
+      <NumberCardsBanner {...campanhaNatalData} />
+      <CarouselSection {...campanhaNatalImagensData} />
       <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
