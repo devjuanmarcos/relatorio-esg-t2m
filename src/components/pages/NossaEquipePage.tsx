@@ -12,6 +12,8 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { Loading } from "../ui/Loading";
 import { FaCogs, FaShieldAlt, FaTachometerAlt, FaUniversalAccess } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import GraficoColaboradores from "../ui/GraficoColaboradores";
+import GraficoGenero from "../ui/GraficoGenero";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -268,7 +270,11 @@ const NossaEquipePage: React.FC = () => {
       <IconsCardsBanner {...divisaoPorCategoriaData} />
       <SimpleCallBanner {...compromissoComDiversidadeData} />
       <IconsCardsBanner {...ambienteExtremoValorData} />
-      <Simple2TitleImageBanner {...graficosDistribuicaoData} />
+      <div className="grid md:grid-cols-2">
+        <GraficoColaboradores />
+        <GraficoGenero />
+      </div>
+      {/* <Simple2TitleImageBanner {...graficosDistribuicaoData} /> */}
       <SimpleCallBanner {...propostaDeValorData} />
       <ImageWithCardTextBanner {...culturaRespeitoData} />
       <ImageWithCardTextBanner {...beneficiosValorizamData} />

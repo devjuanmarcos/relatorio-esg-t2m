@@ -15,6 +15,7 @@ import { CarouselSectionType } from "@/@types/types";
 import GraficosResidencia from "../ui/GraficosResidencia";
 import { TbChristmasBall, TbChristmasTree } from "react-icons/tb";
 import { FaGift } from "react-icons/fa";
+import GraficosUff from "../ui/GraficosUff";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -363,17 +364,6 @@ const ESGPage: React.FC = () => {
     pointColor: "text-var-social",
   };
 
-  const numerosResidenciaData: NumberCardsBannerInterface = {
-    title: numerosResidenciaTrad("title"),
-    topTitle: numerosResidenciaTrad("topTitle"),
-    paragraph: numerosResidenciaTrad("paragraph"),
-    alignment: "center",
-    cardBorder: "border-t-var-social",
-    cardColor: "var-social",
-    imageAlt: numerosResidenciaTrad("imageAlt"),
-    imageUrl: "/img/temp/esg/numerosResidencia.png",
-  };
-
   const equipeGenteGestaoData: SimpleCallBannerInterface = {
     alignment: "bottom",
     imageUrl: "/img/final/esg/mulheres.png",
@@ -542,7 +532,9 @@ const ESGPage: React.FC = () => {
     images: [
       { image: "/img/temp/esg/natal/0.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/1.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/arvore.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/2.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/presentes.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/3.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/4.jpeg", imageAlt: "" },
     ],
@@ -772,6 +764,7 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...patrocinadorIniciativasTexto1Data} />
       {/* <NumberCardsBanner {...numerosResidenciaData} /> */}
       <GraficosResidencia />
+      <GraficosUff />
       <DividingLine lineColor={"bg-var-social"} />
 
       <SimpleCallBanner {...equipeGenteGestaoData} />
@@ -789,6 +782,7 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...voluntariadoApoioData} />
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
+
       <NumberCardsBanner {...feitosSocialData} />
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
