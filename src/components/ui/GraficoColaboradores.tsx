@@ -7,13 +7,13 @@ import tailwindConfig from "../../../tailwind.config";
 Chart.register(...registerables, twColorsPlugin(tailwindConfig));
 
 const DadosIdade = [
-  { grupo: "Acima de 57 anos", percentual: 3.55, quantidade: 11 },
-  { grupo: "De 36 a 42 anos", percentual: 16.13, quantidade: 50 },
-  { grupo: "De 50 a 56 anos", percentual: 6.45, quantidade: 20 },
-  { grupo: "De 43 a 49 anos", percentual: 19.68, quantidade: 61 },
+  { grupo: "Até 21 anos", percentual: 7.1, quantidade: 22 },
   { grupo: "De 22 a 28 anos", percentual: 27.1, quantidade: 84 },
   { grupo: "De 29 a 35 anos", percentual: 20, quantidade: 62 },
-  { grupo: "Até 21 anos", percentual: 7.1, quantidade: 22 },
+  { grupo: "De 36 a 42 anos", percentual: 16.13, quantidade: 50 },
+  { grupo: "De 43 a 49 anos", percentual: 19.68, quantidade: 61 },
+  { grupo: "De 50 a 56 anos", percentual: 6.45, quantidade: 20 },
+  { grupo: "Acima de 57 anos", percentual: 3.55, quantidade: 11 },
 ];
 
 const GraficoColaboradores = () => {

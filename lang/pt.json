@@ -924,6 +924,12 @@
           "title": "Future",
           "paragraph": "Reconhecida no mercado brasileiro de Segurança da Informação, possuímos uma sólida base de clientes, distribuídos em diversos portes e segmentos, atendendo desde grandes empresas públicas e privadas, até empresas de médio porte.",
           "imageAlt": "Logo da Future"
+        },
+        {
+          "id": 10,
+          "title": "PEGA",
+          "paragraph": "A PEGA Systems é líder mundial em software de transformação digital e automação de processos que fornece uma poderosa plataforma e propicia às principais empresas do mundo a acelerar, transformar e otimizar os seus negócios.",
+          "imageAlt": "Logo da PEGA"
         }
       ],
       "type": "center"

@@ -25,6 +25,7 @@ export interface SimpleCallBannerInterface {
   buttonLink?: string;
   buttonTarget?: React.HTMLAttributeAnchorTarget | undefined;
   alignment: "end" | "start" | "bottom" | "bottomEnd";
+  bottom?: string;
   topTitleColor?: string;
   icon?: IconImageInterface;
   ods?: string[];
@@ -43,6 +44,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
   lineColor,
   icon,
   ods,
+  bottom,
 }) => {
   const isMounted = useIsMounted();
 
@@ -101,7 +103,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         {topTitle ? (
           <BoxCard
             type="simple"
-            extraClassname={`${alignment == "bottom" ? " lg:ml-12" : " lg:mr-12"} lg:absolute -bottom-20 `}
+            extraClassname={`${alignment == "bottom" ? " lg:ml-12" : " lg:mr-12"} lg:absolute ${bottom || "-bottom-20"} `}
           >
             {!icon && (
               <TextVariantes variant="top_title" extraClassName={topTitleColor}>
@@ -135,7 +137,7 @@ export const SimpleCallBanner: React.FC<SimpleCallBannerInterface> = ({
         ) : (
           <BoxCard
             type="simple"
-            extraClassname={`${alignment == "bottom" ? "ml-2 lg:ml-12" : "mr-2 lg:mr-12"} absolute -bottom-20 `}
+            extraClassname={`${alignment == "bottom" ? "ml-2 lg:ml-12" : "mr-2 lg:mr-12"} absolute ${bottom || "-bottom-20"} `}
           >
             <TextVariantes variant="h2_title" lineBottom lineColor={lineColor}>
               {title}

@@ -530,13 +530,10 @@ const ESGPage: React.FC = () => {
 
   const campanhaNatalImagensData: CarouselSectionType = {
     images: [
-      { image: "/img/temp/esg/natal/0.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/1.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/arvore.jpeg", imageAlt: "" },
-      { image: "/img/temp/esg/natal/2.jpeg", imageAlt: "" },
-      { image: "/img/temp/esg/natal/presentes.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/3.jpeg", imageAlt: "" },
-      { image: "/img/temp/esg/natal/4.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/presentes.jpeg", imageAlt: "" },
     ],
   };
 
@@ -593,7 +590,7 @@ const ESGPage: React.FC = () => {
   const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
     paragraph: comiteT2MTexto2Trad("paragraph"),
     imageAlt: comiteT2MTexto2Trad("imageAlt"),
-    imageUrl: "/img/temp/esg/prevencao.jpg",
+    imageUrl: "/img/temp/esg/cipa.jpeg",
     imageAlignment: "end",
     lineColor: "bg-var-governanca",
     pointColor: "text-var-governanca",
