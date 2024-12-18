@@ -780,16 +780,18 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...campanhasSolidariasTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
 
-      <SimpleCallBanner {...voluntariadoApoioData} />
-      <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
-      <DividingLine lineColor={"bg-var-social"} />
-
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
       <ImageWithCardTextBanner {...campanha3Data} />
       <ImageWithCardTextBanner {...campanha4Data} />
       <NumberCardsBanner {...campanhaNatalData} />
       <CarouselSection {...campanhaNatalImagensData} />
+      <DividingLine lineColor={"bg-var-social"} />
+
+      <SimpleCallBanner {...voluntariadoApoioData} />
+      <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
+      <DividingLine lineColor={"bg-var-social"} />
+
       <NumberCardsBanner {...feitosSocialData} />
       <DividingLine lineColor={"bg-var-social"} />
 
