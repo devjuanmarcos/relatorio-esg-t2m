@@ -567,7 +567,7 @@ const ESGPage: React.FC = () => {
 
   const comiteT2MData: SimpleCallBannerInterface = {
     alignment: "bottomEnd",
-    imageUrl: "/img/final/esg/comites.jpg",
+    imageUrl: "/img/temp/esg/cipa.jpeg",
     topTitle: comiteT2MTrad("topTitle"),
     lineColor: "bg-var-governanca",
     icon: {
@@ -590,7 +590,7 @@ const ESGPage: React.FC = () => {
   const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
     paragraph: comiteT2MTexto2Trad("paragraph"),
     imageAlt: comiteT2MTexto2Trad("imageAlt"),
-    imageUrl: "/img/temp/esg/cipa.jpeg",
+    imageUrl: "/img/final/esg/comites.jpg",
     imageAlignment: "end",
     lineColor: "bg-var-governanca",
     pointColor: "text-var-governanca",
