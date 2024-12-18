@@ -96,6 +96,9 @@ const GraficoColaboradores = () => {
                   },
                 },
               },
+              datalabels: {
+                display: false, // Remove o texto dentro das barras
+              },
             },
           },
         });
