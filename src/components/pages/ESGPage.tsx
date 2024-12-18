@@ -566,7 +566,7 @@ const ESGPage: React.FC = () => {
   };
 
   const comiteT2MData: SimpleCallBannerInterface = {
-    alignment: "bottomEnd",
+    alignment: "bottom",
     imageUrl: "/img/temp/esg/cipa.jpeg",
     topTitle: comiteT2MTrad("topTitle"),
     lineColor: "bg-var-governanca",
