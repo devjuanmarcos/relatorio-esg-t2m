@@ -368,9 +368,9 @@ const ESGPage: React.FC = () => {
     alignment: "bottom",
     imageUrl: "/img/final/esg/mulheres.png",
     topTitle: equipeGenteGestaoTrad("topTitle"),
-    lineColor: "bg-var-social",
+    lineColor: "bg-var-governanca",
     icon: {
-      icon: "/img/temp/esg/social.png",
+      icon: "/img/temp/esg/governanca.png",
       iconAlt: equipeGenteGestaoTrad("iconAlt"),
     },
     title: equipeGenteGestaoTrad("title"),
@@ -382,17 +382,17 @@ const ESGPage: React.FC = () => {
     imageAlt: equipeGenteGestaoTexto1Trad("imageAlt"),
     imageUrl: "/img/final/esg/mulheres2.jpg",
     imageAlignment: "end",
-    lineColor: "bg-var-social",
-    pointColor: "text-var-social",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
   };
 
   const programaQualidadeVidaData: SimpleCallBannerInterface = {
     alignment: "bottomEnd",
     imageUrl: "/img/final/esg/qualidadeVida2.png",
     topTitle: programaQualidadeVidaTrad("topTitle"),
-    lineColor: "bg-var-social",
+    lineColor: "bg-var-governanca",
     icon: {
-      icon: "/img/temp/esg/social.png",
+      icon: "/img/temp/esg/governanca.png",
       iconAlt: programaQualidadeVidaTrad("iconAlt"),
     },
     title: programaQualidadeVidaTrad("title"),
@@ -404,8 +404,8 @@ const ESGPage: React.FC = () => {
     imageAlt: programaQualidadeVidaTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
     imageAlignment: "start",
-    lineColor: "bg-var-social",
-    pointColor: "text-var-social",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
   };
 
   const campanhasSolidariasData: SimpleCallBannerInterface = {
@@ -768,14 +768,6 @@ const ESGPage: React.FC = () => {
       <GraficosUff />
       <DividingLine lineColor={"bg-var-social"} />
 
-      <SimpleCallBanner {...equipeGenteGestaoData} />
-      <ImageWithCardTextBanner {...equipeGenteGestaoTexto1Data} />
-      <DividingLine lineColor={"bg-var-social"} />
-
-      <SimpleCallBanner {...programaQualidadeVidaData} />
-      <ImageWithCardTextBanner {...programaQualidadeVidaTexto1Data} />
-      <DividingLine lineColor={"bg-var-social"} />
-
       <SimpleCallBanner {...campanhasSolidariasData} />
       <ImageWithCardTextBanner {...campanhasSolidariasTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
@@ -798,6 +790,14 @@ const ESGPage: React.FC = () => {
       {/* Governança */}
       <SimpleCallBanner {...normasCodigosLegislacoesData} />
       <ImageWithCardTextBanner {...normasCodigosLegislacoesTexto1Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
+      <SimpleCallBanner {...programaQualidadeVidaData} />
+      <ImageWithCardTextBanner {...programaQualidadeVidaTexto1Data} />
+      <DividingLine lineColor={"bg-var-governanca"} />
+
+      <SimpleCallBanner {...equipeGenteGestaoData} />
+      <ImageWithCardTextBanner {...equipeGenteGestaoTexto1Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
 
       <SimpleCallBanner {...comiteT2MData} />
