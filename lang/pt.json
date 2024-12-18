@@ -390,7 +390,7 @@
         "iconAlt": "Ícone referente ao tópico social"
       },
       "campanhasSolidariasTexto1Trad": {
-        "paragraph": "A T2M promove, ao longo de todo o ano, a campanha Gesto Solidário, campanha para arrecadação de alimentos e roupas, destinados a instituições locais e pessoas em situação de rua. Durante o período de festas, organizamos também a campanha Adote sua Cartinha de Natal, especialmente voltada ao envio de presentes para crianças em situação de vulnerabilidade e com diversidade funcional, levando alegria e apoio às comunidades e instituições. A T2M incentiva ativamente seus colaboradores a participarem dessas ações, fortalecendo a cultura de solidariedade e engajamento social dentro da empresa. Esse apoio coletivo é essencial para o sucesso das campanhas e para ampliar nosso impacto positivo na comunidade.",
+        "paragraph": "A T2M realiza anualmente a campanha Gesto Solidário, arrecadando alimentos e roupas para instituições e pessoas em situação de rua. No período de festas, promove a campanha Adote sua Cartinha de Natal, com o objetivo de enviar presentes a crianças em vulnerabilidade e com diversidade funcional. Todo mês, um colaborador T2M apadrinha uma instituição ou projeto, escolhendo onde serão direcionadas as doações. Durante o Techday, entregamos os itens arrecadados diretamente aos representantes das organizações apoiadas. A T2M incentiva a participação ativa de seus colaboradores, reforçando a cultura de solidariedade e ampliando o impacto positivo na comunidade.",
         "imageAlt": "Imagem de doações realizadas pela T2M, Biomob e Serratec"
       },
       "voluntariadoApoioTrad": {
@@ -509,10 +509,8 @@
       },
       "certificacoesPadroesInternacionaisTexto1Trad": {
         "paragraphs": [
-          "A T2M está comprometida com o crescimento profissional de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos que visam impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
-          "Entre os treinamentos oferecidos, destacam-se o PL400, com 40 horas de aprendizado focado no desenvolvimento Low Code e certificações reconhecidas, o Microsoft 365 Endpoint Administrator (MD-102), também com certificações, e conceitos fundamentais de Linux e Windows, garantindo uma base sólida em sistemas operacionais.",
-          "Além disso, a T2M investe em cursos como Inglês, essencial para atuar em ambientes globais, e Agile to Market, que prepara os profissionais para trabalhar com metodologias ágeis e entregar valor de forma eficiente.",
-          "Com essa abordagem, a T2M reforça seu compromisso em criar um ambiente onde o aprendizado contínuo e o desenvolvimento de competências sejam pilares para o sucesso de cada funcionário."
+          "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
+          "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
         ],
         "imageAlt": "Imagem do escritório da T2M",
         "linkText1": "PDF certificado ISO 37001",
@@ -520,8 +518,10 @@
       },
       "certificacoesPadroesInternacionaisTexto2Trad": {
         "paragraphs": [
-          "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
-          "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
+          "A T2M está comprometida com o crescimento profissional de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos que visam impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
+          "Entre os treinamentos oferecidos, destacam-se o PL400, com 40 horas de aprendizado focado no desenvolvimento Low Code e certificações reconhecidas, o Microsoft 365 Endpoint Administrator (MD-102), também com certificações, e conceitos fundamentais de Linux e Windows, garantindo uma base sólida em sistemas operacionais.",
+          "Além disso, a T2M investe em cursos como Inglês, essencial para atuar em ambientes globais, e Agile to Market, que prepara os profissionais para trabalhar com metodologias ágeis e entregar valor de forma eficiente.",
+          "Com essa abordagem, a T2M reforça seu compromisso em criar um ambiente onde o aprendizado contínuo e o desenvolvimento de competências sejam pilares para o sucesso de cada funcionário."
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
@@ -744,7 +744,7 @@
     },
     "ambienteExtremoValorTrad": {
       "title": "Um ambiente de extremo valor",
-      "paragraph": "Nosso compromisso é criar um ambiente onde todos se sintam valorizados, independentemente de sua origem, gênero, etnia, ou qualquer outra característica pessoal.",
+      "paragraph": "Nosso compromisso é criar um ambiente onde todos se sintam valorizados, independente de sua origem, gênero, etnia, ou qualquer outra característica pessoal.",
       "images": [
         {
           "id": 1,
@@ -799,7 +799,7 @@
     },
     "beneficiosValorizamTrad": {
       "title": "Acessibilidade e Inclusão",
-      "paragraph": "Além disso, oferecemos uma gama de benefícios que visam o bem-estar e qualidade de vida dos nossos colaboradores, como assistência médica e odontológica, auxílios diversos (home-office, alimentação, refeição e transporte), seguro de vida, Wellhub e plano de carreira.",
+      "paragraph": "Além disso, oferecemos uma gama de benefícios que visam o bem-estar e qualidade de vida dos nossos colaboradores, como assistência médica e odontológica, auxílios diversos (home-office, alimentação, refeição e transporte), seguro de vida, TotalPass e plano de carreira.",
       "imageAlt": "Mulher usando óculos de realidade virtual"
     },
     "direitosHumanosTrad": {
@@ -897,7 +897,7 @@
         },
         {
           "id": 5,
-          "title": "Delphi",
+          "title": "Delphix",
           "paragraph": "Ferramenta para Virtualização de Dados e para soluções de Mascaramento de Dados.",
           "imageAlt": "Logo da Delphi"
         },

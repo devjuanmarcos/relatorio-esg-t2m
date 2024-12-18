@@ -52,7 +52,7 @@ const NossaEquipePage: React.FC = () => {
   const beneficiosValorizamTrad = useTranslations("NossaEquipePage.beneficiosValorizamTrad");
   const direitosHumanosTrad = useTranslations("NossaEquipePage.direitosHumanosTrad");
   const compromissoDireitosHumanosTrad = useTranslations("NossaEquipePage.compromissoDireitosHumanosTrad");
-  const garantiaAmbienteTrad = useTranslations("NossaEquipePage.garantiaAmbienteTrad");
+  // const garantiaAmbienteTrad = useTranslations("NossaEquipePage.garantiaAmbienteTrad");
   const diversidadeInclusaoTrad = useTranslations("NossaEquipePage.diversidadeInclusaoTrad");
   const diversidadeGeneroTrad = useTranslations("NossaEquipePage.diversidadeGeneroTrad");
   const diversidadeSexualTrad = useTranslations("NossaEquipePage.diversidadeSexualTrad");
@@ -174,28 +174,28 @@ const NossaEquipePage: React.FC = () => {
     },
   };
 
-  const propostaDeValorData: SimpleCallBannerInterface = {
-    alignment: "end",
-    imageUrl: "/img/temp/propostaValor2.png",
-    title: propostaDeValorTrad("title"),
-    paragraph: propostaDeValorTrad("paragraph"),
-  };
+  // const propostaDeValorData: SimpleCallBannerInterface = {
+  //   alignment: "end",
+  //   imageUrl: "/img/temp/propostaValor2.png",
+  //   title: propostaDeValorTrad("title"),
+  //   paragraph: propostaDeValorTrad("paragraph"),
+  // };
 
-  const culturaRespeitoData: ImageWithCardTextBannerInterface = {
-    title: culturaRespeitoTrad("title"),
-    paragraph: culturaRespeitoTrad("paragraph"),
-    imageAlt: culturaRespeitoTrad("imageAlt"),
-    imageUrl: "/img/temp/etiveInclusao.jpg",
-    imageAlignment: "end",
-  };
+  // const culturaRespeitoData: ImageWithCardTextBannerInterface = {
+  //   title: culturaRespeitoTrad("title"),
+  //   paragraph: culturaRespeitoTrad("paragraph"),
+  //   imageAlt: culturaRespeitoTrad("imageAlt"),
+  //   imageUrl: "/img/temp/etiveInclusao.jpg",
+  //   imageAlignment: "end",
+  // };
 
-  const beneficiosValorizamData: ImageWithCardTextBannerInterface = {
-    title: beneficiosValorizamTrad("title"),
-    paragraph: beneficiosValorizamTrad("paragraph"),
-    imageAlt: beneficiosValorizamTrad("imageAlt"),
-    imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
-    imageAlignment: "start",
-  };
+  // const beneficiosValorizamData: ImageWithCardTextBannerInterface = {
+  //   title: beneficiosValorizamTrad("title"),
+  //   paragraph: beneficiosValorizamTrad("paragraph"),
+  //   imageAlt: beneficiosValorizamTrad("imageAlt"),
+  //   imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
+  //   imageAlignment: "start",
+  // };
 
   const direitosHumanosData: SimpleCallBannerInterface = {
     alignment: "start",
@@ -210,10 +210,10 @@ const NossaEquipePage: React.FC = () => {
     paragraph: compromissoDireitosHumanosTrad("paragraph"),
   };
 
-  const garantiaAmbienteData: SimpleTextBannerInterface = {
-    title: garantiaAmbienteTrad("title"),
-    paragraph: garantiaAmbienteTrad("paragraph"),
-  };
+  // const garantiaAmbienteData: SimpleTextBannerInterface = {
+  //   title: garantiaAmbienteTrad("title"),
+  //   paragraph: garantiaAmbienteTrad("paragraph"),
+  // };
 
   const diversidadeInclusao: SimpleCallBannerInterface = {
     alignment: "end",
@@ -275,12 +275,12 @@ const NossaEquipePage: React.FC = () => {
         <GraficoGenero />
       </div>
       {/* <Simple2TitleImageBanner {...graficosDistribuicaoData} /> */}
-      <SimpleCallBanner {...propostaDeValorData} />
+      {/* <SimpleCallBanner {...propostaDeValorData} />
       <ImageWithCardTextBanner {...culturaRespeitoData} />
-      <ImageWithCardTextBanner {...beneficiosValorizamData} />
+      <ImageWithCardTextBanner {...beneficiosValorizamData} /> */}
       <SimpleCallBanner {...direitosHumanosData} />
       <SimpleTextBanner {...compromissoDireitosHumanosData} />
-      <SimpleTextBanner {...garantiaAmbienteData} />
+      {/* <SimpleTextBanner {...garantiaAmbienteData} /> */}
       <SimpleCallBanner {...diversidadeInclusao} />
       <SimpleTextBanner {...diversidadeGeneroData} />
       <SimpleTextBanner {...diversidadeSexualData} />

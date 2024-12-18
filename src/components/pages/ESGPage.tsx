@@ -98,7 +98,7 @@ const ESGPage: React.FC = () => {
     "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
   );
   const certificacoesPadroesInternacionaisTexto2Trad = useTranslations(
-    "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
+    "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto2Trad"
   );
   const canaisDenunciaTrad = useTranslations("ESGPage.Governamental.canaisDenunciaTrad");
   const canaisDenunciaTexto1Trad = useTranslations("ESGPage.Governamental.canaisDenunciaTexto1Trad");
@@ -468,7 +468,7 @@ const ESGPage: React.FC = () => {
     paragraph: campanha1Trad("paragraph"),
     imageAlt: campanha1Trad("imageAlt"),
     imageUrl: "/img/final/esg/padre.jpeg",
-    imageAlignment: "start",
+    imageAlignment: "end",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
   };
@@ -477,7 +477,7 @@ const ESGPage: React.FC = () => {
     paragraphs: [campanha2Trad("paragraphs.0"), campanha2Trad("paragraphs.1")],
     imageAlt: campanha2Trad("imageAlt"),
     imageUrl: "/img/final/esg/esperancar.jpeg",
-    imageAlignment: "end",
+    imageAlignment: "start",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
   };
@@ -486,7 +486,7 @@ const ESGPage: React.FC = () => {
     paragraphs: [campanha3Trad("paragraphs.0"), campanha3Trad("paragraphs.1")],
     imageAlt: campanha3Trad("imageAlt"),
     imageUrl: "/img/final/esg/appo.jpeg",
-    imageAlignment: "start",
+    imageAlignment: "end",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
   };
@@ -495,7 +495,7 @@ const ESGPage: React.FC = () => {
     paragraphs: [campanha4Trad("paragraphs.0"), campanha4Trad("paragraphs.1")],
     imageAlt: campanha4Trad("imageAlt"),
     imageUrl: "/img/final/esg/larSantaCatarina.png",
-    imageAlignment: "end",
+    imageAlignment: "start",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
   };
@@ -534,6 +534,10 @@ const ESGPage: React.FC = () => {
       { image: "/img/temp/esg/natal/arvore.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/3.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/presentes.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/5.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/6.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/7.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/8.jpeg", imageAlt: "" },
     ],
   };
 
@@ -780,13 +784,13 @@ const ESGPage: React.FC = () => {
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
       <DividingLine lineColor={"bg-var-social"} />
 
-      <NumberCardsBanner {...feitosSocialData} />
       <ImageWithCardTextBanner {...campanha1Data} />
       <ImageWithCardTextBanner {...campanha2Data} />
       <ImageWithCardTextBanner {...campanha3Data} />
       <ImageWithCardTextBanner {...campanha4Data} />
       <NumberCardsBanner {...campanhaNatalData} />
       <CarouselSection {...campanhaNatalImagensData} />
+      <NumberCardsBanner {...feitosSocialData} />
       <DividingLine lineColor={"bg-var-social"} />
 
       {/* Governança */}
