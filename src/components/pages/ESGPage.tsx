@@ -132,7 +132,7 @@ const ESGPage: React.FC = () => {
     title: oportunidadesInclusivasTrad("title"),
     paragraph: oportunidadesInclusivasTrad("paragraph"),
     imageAlt: oportunidadesInclusivasTrad("imageAlt"),
-    imageUrl: "/img/temp/esg/odsonu2.png",
+    imageUrl: "/img/temp/odsonu.png",
     imageAlignment: "start",
     buttonText: oportunidadesInclusivasTrad("buttonText"),
     buttonLink: "#",

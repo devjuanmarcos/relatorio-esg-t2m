@@ -138,9 +138,9 @@ const ComunidadePage: React.FC = () => {
       },
       {
         id: 10,
-        title: listagemParceirosTrad("images.0.title"),
-        paragraph: listagemParceirosTrad("images.0.paragraph"),
-        imageAlt: listagemParceirosTrad("images.0.imageAlt"),
+        title: listagemParceirosTrad("images.9.title"),
+        paragraph: listagemParceirosTrad("images.9.paragraph"),
+        imageAlt: listagemParceirosTrad("images.9.imageAlt"),
         imageUrl: "/img/temp/parceiros/PEGA.png",
       },
     ],
