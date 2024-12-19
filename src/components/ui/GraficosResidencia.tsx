@@ -179,7 +179,7 @@ const GraficosResidencia = () => {
                 <FaPerson className="text-[6.5rem]" style={{ color: "#FF9800" }} />
               </div>
             </div>
-            <TextVariantes variant="mega_button_text">18,2%</TextVariantes>
+            <TextVariantes variant="mega_button_text">18,75%</TextVariantes>
             <TextVariantes variant="paragraph_01">
               205 residentes adotados, representando 18,75% do total de 1092 formados
             </TextVariantes>

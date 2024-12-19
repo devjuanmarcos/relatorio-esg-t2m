@@ -82,6 +82,7 @@ const QuemSomosPage: React.FC = () => {
     title: callBannerTrad("title"),
     paragraph: callBannerTrad("paragraph"),
     alignment: "bottom",
+    bottom: "-bottom-2",
   };
 
   const trabalheConoscoData: ImageWithCardTextBannerInterface = {

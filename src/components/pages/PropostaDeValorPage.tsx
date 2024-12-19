@@ -25,7 +25,7 @@ const PropostaDeValorPage: React.FC = () => {
   const isMounted = useIsMounted();
 
   const callBannerTrad = useTranslations("PropostaValorPage.callBannerTrad");
-  const solucoesQualidadeTrad = useTranslations("PropostaValorPage.solucoesQualidadeTrad");
+  // const solucoesQualidadeTrad = useTranslations("PropostaValorPage.solucoesQualidadeTrad");
   const inovacaoTrad = useTranslations("PropostaValorPage.inovacaoTrad");
   const praticasResponsivasTrad = useTranslations("PropostaValorPage.praticasResponsivasTrad");
   const transparenciaIgualdadeTrad = useTranslations("PropostaValorPage.transparenciaIgualdadeTrad");
@@ -47,13 +47,13 @@ const PropostaDeValorPage: React.FC = () => {
     paragraph: callBannerTrad("paragraph"),
   };
 
-  const solucoesQualidadeData: ImageWithCardTextBannerInterface = {
-    imageAlt: solucoesQualidadeTrad("imageAlt"),
-    imageUrl: "/img/temp/lampada.png",
-    title: solucoesQualidadeTrad("title"),
-    paragraph: solucoesQualidadeTrad("paragraph"),
-    imageAlignment: "end",
-  };
+  // const solucoesQualidadeData: ImageWithCardTextBannerInterface = {
+  //   imageAlt: solucoesQualidadeTrad("imageAlt"),
+  //   imageUrl: "/img/temp/lampada.png",
+  //   title: solucoesQualidadeTrad("title"),
+  //   paragraph: solucoesQualidadeTrad("paragraph"),
+  //   imageAlignment: "end",
+  // };
 
   const inovacaoData: ImageWithCardTextBannerInterface = {
     imageAlt: inovacaoTrad("imageAlt"),
@@ -87,7 +87,7 @@ const PropostaDeValorPage: React.FC = () => {
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
 
-      <ImageWithCardTextBanner {...solucoesQualidadeData} />
+      {/* <ImageWithCardTextBanner {...solucoesQualidadeData} /> */}
       <ImageWithCardTextBanner {...inovacaoData} />
       <ImageWithCardTextBanner {...praticasResponsivasData} />
       <SimpleCallBanner {...transparenciaIgualdadeData} />

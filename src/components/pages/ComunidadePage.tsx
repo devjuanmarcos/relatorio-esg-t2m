@@ -136,6 +136,13 @@ const ComunidadePage: React.FC = () => {
         imageAlt: listagemParceirosTrad("images.8.imageAlt"),
         imageUrl: "/img/temp/parceiros/Future.png",
       },
+      {
+        id: 10,
+        title: listagemParceirosTrad("images.9.title"),
+        paragraph: listagemParceirosTrad("images.9.paragraph"),
+        imageAlt: listagemParceirosTrad("images.9.imageAlt"),
+        imageUrl: "/img/temp/parceiros/PEGA.png",
+      },
     ],
     type: "center",
   };
