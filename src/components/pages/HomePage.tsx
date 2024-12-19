@@ -34,6 +34,7 @@ import { MdBusinessCenter } from "react-icons/md";
 import { useTranslations } from "next-intl";
 import ComparisonChart from "../ui/GraficosResidencia";
 import GraficosResidencia from "../ui/GraficosResidencia";
+import { CarouselSectionType } from "@/@types/types";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
@@ -63,6 +64,10 @@ const NumberCardsBanner = dynamic(() =>
 
 const AcordionCalendar = dynamic(() => import("@/components/ui/acordionCalendar").then((mod) => mod.default));
 
+const CarouselSection = dynamic(() =>
+  import("@/components/banners/CarouselSection").then((mod) => mod.CarouselSection)
+);
+
 const HomePage: React.FC = () => {
   const isMounted = useIsMounted();
   const callBannerTrad = useTranslations("HomePage.callBannerTrad");
@@ -78,6 +83,7 @@ const HomePage: React.FC = () => {
   const sustentabilidadeTrad = useTranslations("HomePage.sustentabilidadeTrad");
   const movimentoRegenerativoTrad = useTranslations("HomePage.movimentoRegenerativoTrad");
   const nossasCampanhasTrad = useTranslations("HomePage.nossasCampanhasTrad");
+  const codigoCondutaTrad = useTranslations("HomePage.codigoCondutaTrad");
 
   if (!isMounted) {
     return (
@@ -251,7 +257,9 @@ const HomePage: React.FC = () => {
   const movimentoRegenerativoData: NumberCardsBannerInterface = {
     ods: [11, 13, 15],
     title: movimentoRegenerativoTrad("title"),
-    paragraph: movimentoRegenerativoTrad("paragraph"),
+    paragraphs: [movimentoRegenerativoTrad("paragraphs.0")],
+    pdfLink1: "https://www.instagram.com/tempodeplantar2024/p/DDIZpg-PX44/?img_index=1",
+    pdfText1: "Instagram do Movimento Regenerativo Tempo de Plantar",
     numberCards: [
       {
         title: movimentoRegenerativoTrad("numberCards.0.title"),
@@ -270,6 +278,47 @@ const HomePage: React.FC = () => {
       },
     ],
     type: "border",
+  };
+
+  const voluntariadoApoioImagensData: CarouselSectionType = {
+    images: [
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ.webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (2).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (3).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (4).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (5).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (6).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (7).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (8).webp",
+        imageAlt: "",
+      },
+      {
+        image: "/img/final/plantio/Comitê de Plantio de Árvores de Petrópolis - Rio de Janeiro - RJ (9).webp",
+        imageAlt: "",
+      },
+    ],
   };
 
   const nossasCampanhasData: NumberCardsBannerInterface = {
@@ -368,6 +417,16 @@ const HomePage: React.FC = () => {
     imageAlignment: "end",
   };
 
+  const codigoCondutaData: ImageWithCardTextBannerInterface = {
+    topTitle: codigoCondutaTrad("topTitle"),
+    title: codigoCondutaTrad("title"),
+    pdfText1: codigoCondutaTrad("linkText"),
+    pdfLink1: "https://www.t2mlab.com/compliance/",
+    imageUrl: "/img/temp/C-digo-de-conduta.png",
+    imageAlt: codigoCondutaTrad("imageAlt"),
+    imageAlignment: "start",
+  };
+
   return (
     <div className="flex flex-col mb-20 gap-[2.75rem] lg:gap-[4.75rem]  ">
       <React.Suspense>
@@ -388,7 +447,9 @@ const HomePage: React.FC = () => {
       <ImageWithCardTextBanner {...governancaConscienteData} />
       <DividingLine />
       <NumberCardsBanner {...movimentoRegenerativoData} />
+      <CarouselSection {...voluntariadoApoioImagensData} />
       <NumberCardsBanner {...nossasCampanhasData} />
+      <ImageWithCardTextBanner {...codigoCondutaData} />
       <AcordionCalendar />
     </div>
   );

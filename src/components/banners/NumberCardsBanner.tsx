@@ -38,6 +38,9 @@ export interface NumberCardsBannerInterface {
   imageUrl?: string;
   imageAlt?: string;
   graphic?: React.ComponentType;
+  paragraphs?: string[];
+  pdfLink1?: string;
+  pdfText1?: string;
 }
 
 export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
@@ -56,6 +59,9 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
   imageUrl,
   graphic,
   lineColor,
+  paragraphs,
+  pdfLink1,
+  pdfText1,
 }) => {
   const isMounted = useIsMounted();
 
@@ -86,6 +92,17 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
               <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
                 {paragraph}
               </TextVariantes>
+            )}
+            {paragraphs &&
+              paragraphs.map((text, index) => (
+                <TextVariantes key={index} variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
+                  {text}
+                </TextVariantes>
+              ))}
+            {pdfLink1 && pdfText1 && (
+              <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+                {pdfText1}
+              </Link>
             )}
           </div>
           {ods && <OdsCard ods={ods} />}

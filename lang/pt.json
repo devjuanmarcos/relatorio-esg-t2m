@@ -204,7 +204,9 @@
     },
     "movimentoRegenerativoTrad": {
       "title": "Movimento Regenerativo Tempo de Plantar",
-      "paragraph": "Ao apoiar projetos culturais e de plantação de árvores, como o Movimento Regenerativo Tempo de Plantar, fortalecemos o protagonismo das comunidades e promovemos o sentimento de pertencimento. Com o plantio de árvores, além de proteger o meio ambiente, criamos um legado duradouro, garantindo que as futuras gerações cresçam em um território que valoriza e preserva suas memórias e a natureza ao seu redor.",
+      "paragraphs": [
+        "O Movimento Tempo de Plantar Petrópolis em parceria com o Programa Floresta Viva, CR Agrícola Ambiental, Viveiro Muda Tudo e com a Secretaria do Meio Ambiente e Desenvolvimento Sustentável de Petrópolis vem promovendo Reflorestamento com Educação Ambiental e Desenvolvimento Social para a conservação e preservação ambiental para melhoria da qualidade de vida em toda região Serrana."
+      ],
       "numberCards": [
         {
           "title": "Movimento autogestionário",
@@ -237,6 +239,12 @@
           "paragraph": "A Bioconecta é uma feira de empregabilidade que oferece oportunidades de primeiro emprego, com foco em mães solteiras e pessoas com deficiência, promovendo inclusão e igualdade no mercado de trabalho."
         }
       ]
+    },
+    "codigoCondutaTrad": {
+      "topTitle": "Etíca e Conduta",
+      "title": "Acesse aqui nosso código de Compliance, Ética e Conduta",
+      "linkText": "Acessar",
+      "imageAlt": "Código de ética, complience e conduta."
     }
   },
 

@@ -446,10 +446,19 @@ const ESGPage: React.FC = () => {
   const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: voluntariadoApoioTexto1Trad("paragraph"),
     imageAlt: voluntariadoApoioTexto1Trad("imageAlt"),
-    imageUrl: "/img/final/esg/apoioEmpregabilidade.jpeg",
+    imageUrl: "/img/temp/esg/Apresentação DBA - Cuidando de quem cuida (2)_page-0001.jpg",
     imageAlignment: "start",
     lineColor: "bg-var-social",
     pointColor: "text-var-social",
+  };
+
+  const voluntariadoApoioImagensData: CarouselSectionType = {
+    images: [
+      { image: "/img/final/esg/apoioEmpregabilidade.jpeg", imageAlt: "" },
+      { image: "/img/final/esg/dba1.jpeg", imageAlt: "" },
+      { image: "/img/final/esg/dba2.jpeg", imageAlt: "" },
+      { image: "/img/final/esg/dba3.jpeg", imageAlt: "" },
+    ],
   };
 
   const feitosSocialData: NumberCardsBannerInterface = {
@@ -782,6 +791,7 @@ const ESGPage: React.FC = () => {
 
       <SimpleCallBanner {...voluntariadoApoioData} />
       <ImageWithCardTextBanner {...voluntariadoApoioTexto1Data} />
+      <CarouselSection {...voluntariadoApoioImagensData} />
       <DividingLine lineColor={"bg-var-social"} />
 
       <NumberCardsBanner {...feitosSocialData} />
