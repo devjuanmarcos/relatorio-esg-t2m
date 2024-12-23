@@ -547,6 +547,10 @@ const ESGPage: React.FC = () => {
       { image: "/img/temp/esg/natal/6.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/7.jpeg", imageAlt: "" },
       { image: "/img/temp/esg/natal/8.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/9.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/10.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/11.jpeg", imageAlt: "" },
+      { image: "/img/temp/esg/natal/12.jpeg", imageAlt: "" },
     ],
   };
 
