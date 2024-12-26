@@ -14,6 +14,7 @@ interface paragraphsWithTopicsInterface {
   subTitle?: string;
   topics?: string[];
   paragraphs?: string[];
+  lastParagraphs?: string[];
 }
 
 export interface ImageWithCardTextBannerInterface {
@@ -121,6 +122,12 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
                     ))}
                   </ul>
                 )}
+                {section.lastParagraphs &&
+                  section.lastParagraphs.map((text, i) => (
+                    <TextVariantes key={i} variant="paragraph_01">
+                      {text}
+                    </TextVariantes>
+                  ))}
               </div>
             ))}
         </div>

@@ -441,7 +441,6 @@
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
-
       "utilizacaoNuvemTrad": {
         "topTitle": "Ambiental",
         "title": "Utilização de Nuvem, reduzindo o consumo de hardware",
@@ -466,15 +465,18 @@
         "paragraph": "Esses resultados demonstram o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando nossa estratégia tecnológica às metas ESG.",
         "imageAlt": "Imagem do escritório da T2M"
       },
-
       "consumoConscienteTrad": {
         "topTitle": "Ambiental",
-        "title": "Consumo consciente de Água",
+        "title": "Consumo Consciente de Água",
         "lineColor": "bg-var-ambiental",
         "iconAlt": "ícone referente ao tópico ambiental"
       },
       "consumoConscienteTexto1Trad": {
-        "paragraph": "O consumo consciente de água é uma prioridade na T2M, e implementamos diversas práticas para reduzir o desperdício desse recurso vital. Além disso, promovemos campanhas internas de conscientização, incentivando nossos colaboradores a adotar hábitos responsáveis no uso de água tanto no ambiente de trabalho quanto em suas casas. Essa prática visa reduzir o consumo de água e contribuir para a preservação dos recursos hídricos, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Com essas ações, buscamos minimizar nosso impacto ambiental e inspirar uma cultura de sustentabilidade entre nossos colaboradores.",
+        "paragraph": "O consumo consciente de água é uma prioridade na T2M. Implementamos práticas para reduzir o desperdício desse recurso vital, além de promover campanhas internas de conscientização para engajar nossos colaboradores em hábitos responsáveis, tanto no trabalho quanto em suas residências.",
+        "topics": [
+          "Objetivo: Reduzir o consumo de água e contribuir para a preservação dos recursos hídricos, em alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU.",
+          "Impacto: Com essas ações, buscamos minimizar nosso impacto ambiental e fomentar uma cultura de sustentabilidade entre nossos colaboradores."
+        ],
         "imageAlt": "Imagem do escritório da T2M com foco em consumo consciente de água",
         "iconAlt": "Ícone representativo de consumo consciente de água"
       },
@@ -484,7 +486,10 @@
         "iconAlt": "Ícone referente ao tópico ambiental"
       },
       "estimuloReducaoTexto1Trad": {
-        "paragraph": "A T2M incentiva seus colaboradores a adotarem práticas de mobilidade mais sustentáveis, reduzindo o transito e a emissão de CO2 por veículos a combustão. Para facilitar essa transição, oferecemos incentivos para o uso de transporte público e compartilhado, esse estímulo à mobilidade sustentável reflete nosso compromisso em diminuir a emissão de gases de efeito estufa e reduzir nossa pegada de carbono. Além disso, promovemos a conscientização sobre os benefícios de uma mobilidade mais sustentável, contribuindo para o bem-estar dos colaboradores e para a preservação do meio ambiente.",
+        "paragraphs": [
+          "A T2M incentiva seus colaboradores a adotarem práticas de mobilidade mais sustentáveis, reduzindo o trânsito e as emissões de CO₂ por veículos a combustão. Para facilitar essa transição, oferecemos incentivos para o uso de transporte público e compartilhado. Esse estímulo à mobilidade sustentável reflete nosso compromisso com a redução de gases de efeito estufa e com a diminuição de nossa pegada de carbono.",
+          "Além disso, promovemos a conscientização sobre os benefícios de uma mobilidade mais sustentável, contribuindo para o bem-estar dos colaboradores e a preservação do meio ambiente."
+        ],
         "imageAlt": "Escritório da T2M"
       },
       "cadeiaFornecedoresTrad": {
@@ -493,7 +498,17 @@
         "iconAlt": "Ícone referente ao tópico ambiental"
       },
       "cadeiaFornecedoresTexto1Trad": {
-        "paragraph": "A T2M valoriza uma cadeia de fornecedores alinhada com seus princípios de sustentabilidade, priorizando parcerias com empresas que adotam práticas ambientalmente responsáveis. Realizamos uma avaliação criteriosa de nossos fornecedores para garantir que compartilhem nossos valores em relação à preservação ambiental e à redução de impactos negativos no meio ambiente. Isso inclui fornecedores que implementam métodos sustentáveis em sua produção, utilizam materiais reciclados, adotam programas de redução de resíduos e cumprem normas de responsabilidade ambiental. Ao integrar práticas de ESG em nossa cadeia de suprimentos, reforçamos nossa operação sustentável e ampliamos nosso impacto positivo, incentivando outras organizações a adotarem práticas responsáveis.",
+        "paragraphs": [
+          "A T2M valoriza uma cadeia de fornecedores alinhada aos seus princípios de sustentabilidade, priorizando parcerias com empresas que adotam práticas ambientalmente responsáveis. Realizamos uma avaliação criteriosa para garantir que os fornecedores compartilhem nossos valores de preservação ambiental e redução de impactos negativos no meio ambiente.",
+          "Isso inclui fornecedores que:"
+        ],
+        "topics": [
+          "Implementam métodos sustentáveis em sua produção.",
+          "Utilizam materiais reciclados.",
+          "Adotam programas de redução de resíduos.",
+          "Cumprem normas de responsabilidade ambiental."
+        ],
+        "lastParagraph": "Ao integrar práticas ESG em nossa cadeia de suprimentos, reforçamos uma operação sustentável e ampliamos nosso impacto positivo, incentivando outras organizações a adotarem práticas responsáveis.",
         "imageAlt": "Escritório da T2M"
       },
       "reciclagemMaterialTrad": {
@@ -502,7 +517,12 @@
         "iconAlt": "Ícone referente ao tópico ambiental"
       },
       "reciclagemMaterialTexto1Trad": {
-        "paragraph": "A T2M adota práticas rigorosas de reciclagem de equipamentos eletrônicos e baterias, reconhecendo a importância do descarte adequado desses materiais para evitar impactos negativos ao meio ambiente. Os resíduos eletrônicos são enviados para empresas certificadas que garantem o tratamento correto e a reciclagem de componentes, contribuindo para a recuperação de materiais valiosos e a redução de resíduos tóxicos. Internamente, promovemos a conscientização sobre a importância da reciclagem de eletrônicos entre os colaboradores, incentivando o descarte adequado. Essa iniciativa reflete nosso compromisso com a economia circular, evitando a contaminação do solo e das águas e promovendo uma gestão de resíduos mais eficiente e responsável.",
+        "paragraph": "A T2M adota práticas rigorosas de reciclagem de equipamentos eletrônicos e baterias, reconhecendo a importância do descarte adequado para evitar impactos ambientais negativos.",
+        "topics": [
+          "Resíduos eletrônicos: São enviados para empresas certificadas que garantem o tratamento correto e a reciclagem de componentes, contribuindo para a recuperação de materiais valiosos e a redução de resíduos tóxicos.",
+          "Conscientização interna: Promovemos entre os colaboradores a importância do descarte adequado de eletrônicos, incentivando a participação ativa na gestão de resíduos."
+        ],
+        "lastParagraph": "Essa iniciativa reflete nosso compromisso com a economia circular, evitando a contaminação do solo e das águas e promovendo uma gestão de resíduos eficiente e responsável.",
         "imageAlt": "Escritório da T2M"
       },
       "feitosAmbientalTrad": {

@@ -246,6 +246,11 @@ const ESGPage: React.FC = () => {
 
   const consumoConscienteTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: consumoConscienteTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [consumoConscienteTexto1Trad("topics.0"), consumoConscienteTexto1Trad("topics.1")],
+      },
+    ],
     imageAlt: consumoConscienteTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/consumoConsciente.jpg",
     imageAlignment: "start",
@@ -267,7 +272,7 @@ const ESGPage: React.FC = () => {
   };
 
   const estimuloReducaoTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraph: estimuloReducaoTexto1Trad("paragraph"),
+    paragraphs: [estimuloReducaoTexto1Trad("paragraphs.0"), estimuloReducaoTexto1Trad("paragraphs.1")],
     imageAlt: estimuloReducaoTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/mobilidadeSustentavcel.jpg",
     imageAlignment: "end",
@@ -289,7 +294,18 @@ const ESGPage: React.FC = () => {
   };
 
   const cadeiaFornecedoresTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraph: cadeiaFornecedoresTexto1Trad("paragraph"),
+    paragraphs: [cadeiaFornecedoresTexto1Trad("paragraphs.0"), cadeiaFornecedoresTexto1Trad("paragraphs.1")],
+    paragraphsWithTopics: [
+      {
+        topics: [
+          cadeiaFornecedoresTexto1Trad("topics.0"),
+          cadeiaFornecedoresTexto1Trad("topics.1"),
+          cadeiaFornecedoresTexto1Trad("topics.2"),
+          cadeiaFornecedoresTexto1Trad("topics.3"),
+        ],
+        lastParagraphs: [cadeiaFornecedoresTexto1Trad("lastParagraph")],
+      },
+    ],
     imageAlt: cadeiaFornecedoresTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/sustentabilidade.jpg",
     imageAlignment: "start",
@@ -312,6 +328,12 @@ const ESGPage: React.FC = () => {
 
   const reciclagemMaterialTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: reciclagemMaterialTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [reciclagemMaterialTexto1Trad("topics.0"), reciclagemMaterialTexto1Trad("topics.1")],
+        lastParagraphs: [reciclagemMaterialTexto1Trad("lastParagraph")],
+      },
+    ],
     imageAlt: reciclagemMaterialTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/lampada.jpg",
     imageAlignment: "end",
