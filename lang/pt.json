@@ -833,7 +833,7 @@
   "QuemSomosPage": {
     "callBannerTrad": {
       "title": "Quem somos?",
-      "paragraph": "Hoje, passados mais de 20 anos da fundação da T2M, somos uma empresa madura, com cerca de 300 funcionários, em constante processo de aprimoramento técnico, reconhecida pela qualidade do nosso trabalho por importantes companhias do nosso portfólio de clientes.",
+      "paragraph": "Hoje, com mais de 20 anos desde a fundação da T2M, somos uma empresa madura, composta por cerca de 300 funcionários em constante processo de aprimoramento técnico. Somos reconhecidos pela qualidade do nosso trabalho por importantes companhias que integram nosso portfólio de clientes.",
       "buttonText": "Site oficial da empresa"
     },
     "trabalheConoscoTrad": {
@@ -847,52 +847,85 @@
       "title": "Experiências extraordinárias e acessíveis para todos.",
       "paragraph": "A T2M – Test to Market Ltda. é uma empresa brasileira, com mais de 20 anos de existência, especializada em assegurar excelência em desenvolvimento de software, através de testes rigorosos e acompanhamento detalhado de todas as demais etapas da construção de um projeto. Recentemente, ampliamos a nossa prestação de serviços, agregando privacidade e segurança de dados, acessibilidade digital e Business Agility, por meio de renomados parceiros nestes segmentos."
     },
+    "importanciaTerceirizarTestesTrad": {
+      "title": "Terceirização de Testes de Qualidade de Software",
+      "paragraph": "A terceirização é essencial para sistemas críticos, como os bancários, de controle aéreo e hospitalares, que demandam alta precisão e segurança, pelas seguintes razões:",
+      "numberCards": [
+        {
+          "title": "Acesso a Especialistas:",
+          "paragraph": "Profissionais qualificados garantem testes profundos e o uso de práticas de ponta."
+        },
+        {
+          "title": "Foco no Core Business:",
+          "paragraph": "Libera a equipe interna para desenvolver novas funcionalidades, melhorando a produtividade."
+        },
+        {
+          "title": "Redução de Custos e Tempo:",
+          "paragraph": "Evita a criação de equipes internas de testes, otimizando investimentos conforme a demanda."
+        },
+        {
+          "title": "Escalabilidade e Flexibilidade:",
+          "paragraph": "Capacidade de ajustar os testes à demanda, atendendo picos e lançamentos de novos produtos."
+        },
+        {
+          "title": "Imparcialidade e Visão Externa:",
+          "paragraph": "Uma equipe externa identifica falhas que podem passar despercebidas por equipes internas."
+        },
+        {
+          "title": "Acesso a Ferramentas Avançadas:",
+          "paragraph": "Uso de tecnologias de automação, testes de carga e outras práticas, sem os custos de implementação interna."
+        }
+      ]
+    },
     "servicosExcelenciaTrad": {
-      "title": "Como os nossos serviços de excelência podem ajudar a impulsionar seus negócios.",
-      "paragraph": "Saiba como podemos ampliar, significativamente, a eficácia, a qualidade e a segurança dos seus negócios e serviços, trazendo resultados superiores.",
+      "topTitle": "Nossos serviços",
       "icons": [
         {
           "title": "Qualidade de Software",
-          "paragraph": "Nossas soluções em Qualidade de Software otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação de nossos clientes."
+          "paragraph": "Nossas soluções otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação de nossos clientes."
         },
         {
           "title": "Privacidade e Segurança",
-          "paragraph": "Nosso foco é superar desafios de Segurança da Informação, oferecendo soluções consultivas para atender as necessidades específicas de cada cliente."
+          "paragraph": "Superamos desafios de segurança da informação, oferecendo soluções consultivas adaptadas às necessidades específicas de cada cliente."
         },
         {
           "title": "Acessibilidade Digital",
-          "paragraph": "Na T2M, buscamos a inclusão digital, promovendo acessibilidade e inovação para garantir um ambiente digital mais inclusivo e acessível para todos."
+          "paragraph": "Buscamos promover inclusão digital, garantindo que nossos produtos e serviços sejam acessíveis e inovadores, criando um ambiente digital inclusivo para todos."
         },
         {
           "title": "Business Agility",
-          "paragraph": "Ajudamos empresas a se adaptarem rapidamente às mudanças de mercado, aproveitando oportunidades e melhorando a agilidade organizacional."
+          "paragraph": "Ajudamos empresas a se adaptarem rapidamente às mudanças do mercado, aproveitando oportunidades e melhorando a agilidade organizacional."
         }
       ]
     },
     "iniciativasTrad": {
       "topTitle": "Iniciativas",
-      "title": "Nossas iniciativas e compromissos",
-      "paragraph": "Na T2M, nossas iniciativas e compromissos são fundamentados na busca contínua pela excelência e pelo impacto positivo em todas as áreas que atuamos. Estamos empenhados em promover a qualidade de vida dos nossos colaboradores, incentivar a inovação e garantir a inclusão digital em nossas soluções."
+      "title": "Nossas Iniciativas e Compromissos",
+      "paragraph": "Na T2M, nossas iniciativas são fundamentadas na busca contínua pela excelência e pelo impacto positivo. Promovemos qualidade de vida para nossos colaboradores, incentivamos a inovação e garantimos inclusão digital em nossas soluções."
     },
     "qualidadeDeVidaTrad": {
       "title": "Qualidade de Vida e Bem-Estar",
-      "paragraph": "A T2M prioriza o bem-estar de seus colaboradores e suas famílias, oferecendo um ambiente de trabalho saudável e equilibrado. Buscamos continuamente melhorar a qualidade de vida no dia a dia de nossos profissionais, promovendo opções de benefícios que atendem a diferentes necessidades, como flexibilidade de horário, apoio à saúde mental e programas de qualidade de vida.",
+      "paragraph": "A T2M prioriza o bem-estar de seus colaboradores e suas famílias, oferecendo um ambiente de trabalho saudável e equilibrado. Buscamos continuamente melhorar a qualidade de vida no dia a dia, com benefícios que atendem a diferentes necessidades, como:",
+      "topics": ["Flexibilidade de horário.", "Apoio à saúde mental.", "Programas de qualidade de vida."],
       "imageAlt": "Mulher com casaco vermelho na natureza"
     },
     "desenvolvimentoProfissionalTrad": {
       "title": "Desenvolvimento Profissional e Inovação",
-      "paragraph": "Investimos no crescimento contínuo de nossa equipe por meio de treinamentos especializados e programas de capacitação. Incentivamos a inovação com a aplicação de metodologias ágeis e a exploração de novas tecnologias, garantindo que nossos profissionais estejam sempre na vanguarda das tendências de mercado e preparados para oferecer soluções inovadoras aos nossos clientes.",
+      "paragraph": "Investimos no crescimento contínuo de nossa equipe por meio de treinamentos especializados e programas de capacitação. Incentivamos a inovação com metodologias ágeis e novas tecnologias, garantindo que nossos profissionais estejam sempre na vanguarda do mercado.",
       "imageAlt": "Mulher usando óculos de realidade virtual"
     },
     "acessibilidadeInclusaoTrad": {
       "title": "Acessibilidade e Inclusão",
-      "paragraph": "Estamos comprometidos em promover a inclusão e acessibilidade digital em todas as nossas soluções. A T2M adota práticas que garantem que nossos produtos e serviços sejam acessíveis a todas as pessoas, independentemente de suas necessidades específicas, como a implementação de tecnologias de acessibilidade em aplicativos e sites, além de fomentar um ambiente de trabalho inclusivo, que respeita e valoriza a diversidade.",
+      "paragraph": "Estamos comprometidos com a promoção da inclusão e acessibilidade digital. Adotamos práticas que garantem produtos e serviços acessíveis para todas as pessoas, como:",
+      "topics": [
+        "Implementação de tecnologias de acessibilidade em aplicativos e sites.",
+        "Promoção de um ambiente de trabalho inclusivo que respeita e valoriza a diversidade."
+      ],
       "imageAlt": "Militar na cadeira de rodas junto com a sua família"
     },
     "tresPilaresTrad": {
       "topTitle": "3 Pilares",
-      "title": "Nossos pilares estratégicos",
-      "paragraph": "A essência da T2M está fundamentada em uma visão clara, valores sólidos e uma missão inspiradora. Esses pilares norteiam todas as nossas ações, guiando nosso compromisso com a excelência, a inovação e a inclusão. Conheça abaixo os fundamentos que definem quem somos e como atuamos."
+      "title": "Nossos Pilares Estratégicos"
     },
     "quatroCardsMetodologiaTrad": {
       "textCards": [
@@ -904,42 +937,19 @@
         {
           "topTitle": "Segundo Pilar",
           "title": "Missão",
-          "paragraph": "Garantir que os produtos de nossos clientes atendam aos mais elevados padrões de qualidade, confiabilidade, acessibilidade e usabilidade, sempre respeitando os prazos e necessidades específicas de cada negócio, e capacitar continuamente profissionais para transformar o mercado de tecnologia."
+          "paragraph": "Garantir que os produtos de nossos clientes atendam aos mais elevados padrões de qualidade, confiabilidade, acessibilidade e usabilidade, respeitando prazos e necessidades específicas, além de capacitar continuamente profissionais para transformar o mercado de tecnologia."
         },
         {
           "topTitle": "Terceiro Pilar",
           "title": "Valores",
-          "paragraph": "Na T2M, nosso compromisso é com a excelência, entregando serviços de alta qualidade respaldados por conhecimento técnico e experiência consolidada. Valorizamos a inovação, utilizando metodologias ágeis e tecnologias de ponta para transformar desafios em oportunidades. Atuamos com ética e isenção, garantindo decisões imparciais que priorizam os melhores interesses dos nossos clientes. Além disso, promovemos inclusão e sustentabilidade por meio da formação profissional, acessibilidade digital e práticas que impulsionam o desenvolvimento humano e tecnológico. Nosso comprometimento é focado nos resultados, respeitando prazos, confiabilidade e usabilidade, sempre em alinhamento com as necessidades dos nossos parceiros."
-        }
-      ]
-    },
-    "importanciaTerceirizarTestesTrad": {
-      "title": "A importância de terceirizar Testes de Qualidade de Software",
-      "paragraph": "A terceirização dos testes de qualidade de software é essencial em sistemas críticos, como os bancários, de controle aéreo e hospitalares, que exigem alta precisão e segurança.",
-      "numberCards": [
-        {
-          "title": "Acesso a especialistas",
-          "paragraph": "Empresas especializadas oferecem profissionais qualificados, garantindo testes mais profundos e o uso de práticas de ponta para assegurar a qualidade do software."
-        },
-        {
-          "title": "Foco no core business",
-          "paragraph": "Com a terceirização, a equipe interna pode concentrar-se no desenvolvimento de novas funcionalidades, melhorando a produtividade e impulsionando o crescimento do negócio."
-        },
-        {
-          "title": "Redução de custos e tempo",
-          "paragraph": "Evitar a criação de equipes internas de testes reduz custos fixos e permite otimizar o investimento conforme a demanda, acelerando os processos de testes."
-        },
-        {
-          "title": "Escalabilidade e flexibilidade",
-          "paragraph": "Empresas terceirizadas conseguem ajustar a capacidade de testes conforme a demanda, atendendo picos e ajustando a escala conforme o lançamento de novos produtos."
-        },
-        {
-          "title": "Imparcialidade e visão externa",
-          "paragraph": "Uma equipe externa traz uma visão imparcial do produto, ajudando a identificar falhas que uma equipe interna pode não perceber, melhorando a qualidade geral."
-        },
-        {
-          "title": "Acesso a ferramentas e tecnologias avançadas",
-          "paragraph": "Empresas especializadas têm acesso a ferramentas de ponta para automação, testes de carga e outras práticas, evitando o alto custo de implementação interna."
+          "paragraph": "Na T2M, nosso compromisso é:",
+          "topics": [
+            "Excelência: Serviços de alta qualidade respaldados por conhecimento técnico e experiência consolidada.",
+            "Inovação: Uso de metodologias ágeis e tecnologias de ponta para transformar desafios em oportunidades.",
+            "Ética e Isenção: Decisões imparciais que priorizam os melhores interesses dos clientes.",
+            "Inclusão e Sustentabilidade: Formação profissional, acessibilidade digital e práticas que impulsionam o desenvolvimento humano e tecnológico.",
+            "Foco nos Resultados: Cumprimento de prazos, confiabilidade e alinhamento com as necessidades dos parceiros."
+          ]
         }
       ]
     }

@@ -103,98 +103,6 @@ const QuemSomosPage: React.FC = () => {
     paragraph: experienciasExtraordinariasTrad("paragraph"),
   };
 
-  const servicosExcelenciaData: IconsCardsBannerInterface = {
-    title: servicosExcelenciaTrad("title"),
-    paragraph: servicosExcelenciaTrad("paragraph"),
-    icons: [
-      {
-        id: 1,
-        title: servicosExcelenciaTrad("icons.0.title"),
-        paragraph: servicosExcelenciaTrad("icons.0.paragraph"),
-        icon: FaCogs,
-      },
-      {
-        id: 2,
-        title: servicosExcelenciaTrad("icons.1.title"),
-        paragraph: servicosExcelenciaTrad("icons.1.paragraph"),
-        icon: FaShieldAlt,
-      },
-      {
-        id: 3,
-        title: servicosExcelenciaTrad("icons.2.title"),
-        paragraph: servicosExcelenciaTrad("icons.2.paragraph"),
-        icon: FaUniversalAccess,
-      },
-      {
-        id: 4,
-        title: servicosExcelenciaTrad("icons.3.title"),
-        paragraph: servicosExcelenciaTrad("icons.3.paragraph"),
-        icon: FaTachometerAlt,
-      },
-    ],
-    type: "start",
-  };
-
-  const iniciativasData: SimpleCallBannerInterface = {
-    alignment: "end",
-    topTitle: iniciativasTrad("topTitle"),
-    title: iniciativasTrad("title"),
-    paragraph: iniciativasTrad("paragraph"),
-    imageUrl: "/img/temp/iniciativas.png",
-  };
-
-  const qualidadeDeVidaData: ImageWithCardTextBannerInterface = {
-    title: qualidadeDeVidaTrad("title"),
-    paragraph: qualidadeDeVidaTrad("paragraph"),
-    imageAlt: qualidadeDeVidaTrad("imageAlt"),
-    imageUrl: "/img/temp/mulherCasacoVermelho.png",
-    imageAlignment: "end",
-  };
-
-  const desenvolvimentoProfissionalData: ImageWithCardTextBannerInterface = {
-    title: desenvolvimentoProfissionalTrad("title"),
-    paragraph: desenvolvimentoProfissionalTrad("paragraph"),
-    imageAlt: desenvolvimentoProfissionalTrad("imageAlt"),
-    imageUrl: "/img/final/desenvolvimentoProfissional.jpg",
-    imageAlignment: "start",
-  };
-
-  const acessibilidadeInclusao: ImageWithCardTextBannerInterface = {
-    title: acessibilidadeInclusaoTrad("title"),
-    paragraph: acessibilidadeInclusaoTrad("paragraph"),
-    imageAlt: acessibilidadeInclusaoTrad("imageAlt"),
-    imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
-    imageAlignment: "end",
-  };
-
-  const tresPilaresData: SimpleCallBannerInterface = {
-    topTitle: tresPilaresTrad("topTitle"),
-    title: tresPilaresTrad("title"),
-    paragraph: tresPilaresTrad("paragraph"),
-    imageUrl: "/img/temp/3pilares.png",
-    alignment: "start",
-  };
-
-  const quatroCardsMetodologiaData: ThreeTextCardsWithNumberCardBannerInterface = {
-    textCards: [
-      {
-        topTitle: quatroCardsMetodologiaTrad("textCards.0.topTitle"),
-        title: quatroCardsMetodologiaTrad("textCards.0.title"),
-        paragraph: quatroCardsMetodologiaTrad("textCards.0.paragraph"),
-      },
-      {
-        topTitle: quatroCardsMetodologiaTrad("textCards.1.topTitle"),
-        title: quatroCardsMetodologiaTrad("textCards.1.title"),
-        paragraph: quatroCardsMetodologiaTrad("textCards.1.paragraph"),
-      },
-      {
-        topTitle: quatroCardsMetodologiaTrad("textCards.2.topTitle"),
-        title: quatroCardsMetodologiaTrad("textCards.2.title"),
-        paragraph: quatroCardsMetodologiaTrad("textCards.2.paragraph"),
-      },
-    ],
-  };
-
   const importanciaTerceirizarTestesData: NumberCardsBannerInterface = {
     ods: [8, 9, 17],
     title: importanciaTerceirizarTestesTrad("title"),
@@ -234,6 +142,113 @@ const QuemSomosPage: React.FC = () => {
     type: "border",
   };
 
+  const servicosExcelenciaData: IconsCardsBannerInterface = {
+    topTitle: servicosExcelenciaTrad("topTitle"),
+    icons: [
+      {
+        id: 1,
+        title: servicosExcelenciaTrad("icons.0.title"),
+        paragraph: servicosExcelenciaTrad("icons.0.paragraph"),
+        icon: FaCogs,
+      },
+      {
+        id: 2,
+        title: servicosExcelenciaTrad("icons.1.title"),
+        paragraph: servicosExcelenciaTrad("icons.1.paragraph"),
+        icon: FaShieldAlt,
+      },
+      {
+        id: 3,
+        title: servicosExcelenciaTrad("icons.2.title"),
+        paragraph: servicosExcelenciaTrad("icons.2.paragraph"),
+        icon: FaUniversalAccess,
+      },
+      {
+        id: 4,
+        title: servicosExcelenciaTrad("icons.3.title"),
+        paragraph: servicosExcelenciaTrad("icons.3.paragraph"),
+        icon: FaTachometerAlt,
+      },
+    ],
+    type: "center",
+  };
+
+  const iniciativasData: SimpleCallBannerInterface = {
+    alignment: "end",
+    topTitle: iniciativasTrad("topTitle"),
+    title: iniciativasTrad("title"),
+    paragraph: iniciativasTrad("paragraph"),
+    imageUrl: "/img/temp/iniciativas.png",
+  };
+
+  const qualidadeDeVidaData: ImageWithCardTextBannerInterface = {
+    title: qualidadeDeVidaTrad("title"),
+    paragraph: qualidadeDeVidaTrad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [qualidadeDeVidaTrad("topics.0"), qualidadeDeVidaTrad("topics.1"), qualidadeDeVidaTrad("topics.2")],
+      },
+    ],
+    imageAlt: qualidadeDeVidaTrad("imageAlt"),
+    imageUrl: "/img/temp/mulherCasacoVermelho.png",
+    imageAlignment: "end",
+  };
+
+  const desenvolvimentoProfissionalData: ImageWithCardTextBannerInterface = {
+    title: desenvolvimentoProfissionalTrad("title"),
+    paragraph: desenvolvimentoProfissionalTrad("paragraph"),
+    imageAlt: desenvolvimentoProfissionalTrad("imageAlt"),
+    imageUrl: "/img/final/desenvolvimentoProfissional.jpg",
+    imageAlignment: "start",
+  };
+
+  const acessibilidadeInclusao: ImageWithCardTextBannerInterface = {
+    title: acessibilidadeInclusaoTrad("title"),
+    paragraph: acessibilidadeInclusaoTrad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [acessibilidadeInclusaoTrad("topics.0"), acessibilidadeInclusaoTrad("topics.1")],
+      },
+    ],
+    imageAlt: acessibilidadeInclusaoTrad("imageAlt"),
+    imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
+    imageAlignment: "end",
+  };
+
+  const tresPilaresData: SimpleCallBannerInterface = {
+    topTitle: tresPilaresTrad("topTitle"),
+    title: tresPilaresTrad("title"),
+    imageUrl: "/img/temp/3pilares.png",
+    alignment: "start",
+  };
+
+  const quatroCardsMetodologiaData: ThreeTextCardsWithNumberCardBannerInterface = {
+    textCards: [
+      {
+        topTitle: quatroCardsMetodologiaTrad("textCards.0.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.0.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.0.paragraph"),
+      },
+      {
+        topTitle: quatroCardsMetodologiaTrad("textCards.1.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.1.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.1.paragraph"),
+      },
+      {
+        topTitle: quatroCardsMetodologiaTrad("textCards.2.topTitle"),
+        title: quatroCardsMetodologiaTrad("textCards.2.title"),
+        paragraph: quatroCardsMetodologiaTrad("textCards.2.paragraph"),
+        topics: [
+          quatroCardsMetodologiaTrad("textCards.2.topics.0"),
+          quatroCardsMetodologiaTrad("textCards.2.topics.1"),
+          quatroCardsMetodologiaTrad("textCards.2.topics.2"),
+          quatroCardsMetodologiaTrad("textCards.2.topics.3"),
+          quatroCardsMetodologiaTrad("textCards.2.topics.4"),
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="flex flex-col mb-20 gap-[2.75rem] lg:gap-[4.75rem] ">
       <React.Suspense>
@@ -242,7 +257,9 @@ const QuemSomosPage: React.FC = () => {
 
       <ImageWithCardTextBanner {...trabalheConoscoData} />
       <DividingLine />
+
       <SimpleCallBanner {...experienciasExtraordinariasData} />
+      <NumberCardsBanner {...importanciaTerceirizarTestesData} />
       <IconsCardsBanner {...servicosExcelenciaData} />
       <SimpleCallBanner {...iniciativasData} />
       <ImageWithCardTextBanner {...qualidadeDeVidaData} />
@@ -251,7 +268,6 @@ const QuemSomosPage: React.FC = () => {
       <SimpleCallBanner {...tresPilaresData} />
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
       <DividingLine />
-      <NumberCardsBanner {...importanciaTerceirizarTestesData} />
     </div>
   );
 };

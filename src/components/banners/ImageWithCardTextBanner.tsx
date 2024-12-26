@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useWindowSize } from "@/context/WindowSizeContext";
 import { IconType } from "react-icons";
 
-interface paragraphsWithTopicsInterface {
+export interface paragraphsWithTopicsInterface {
   subTitle?: string;
   topics?: string[];
   paragraphs?: string[];

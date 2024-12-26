@@ -89,7 +89,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
             )}
             {Graphic && <Graphic />}
             {paragraph && (
-              <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
+              <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] ">
                 {paragraph}
               </TextVariantes>
             )}

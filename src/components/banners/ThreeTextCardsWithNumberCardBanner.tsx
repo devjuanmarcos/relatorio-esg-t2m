@@ -69,6 +69,15 @@ export const ThreeTextCardsWithNumberCardBanner: React.FC<ThreeTextCardsWithNumb
             </TextVariantes>
             <TextVariantes variant="h2_title">{limitedTextCards[2].title}</TextVariantes>
             <TextVariantes variant="paragraph_01">{limitedTextCards[2].paragraph}</TextVariantes>
+            {limitedTextCards[2].topics && (
+              <ul className="list-disc ml-6">
+                {limitedTextCards[2].topics.map((topic) => (
+                  <li key={topic} className="mb-2">
+                    <TextVariantes variant="paragraph_01">{topic}</TextVariantes>
+                  </li>
+                ))}
+              </ul>
+            )}
           </>
         )}
       </div>
