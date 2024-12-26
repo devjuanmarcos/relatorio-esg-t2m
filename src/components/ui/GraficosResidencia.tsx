@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import { FaPerson } from "react-icons/fa6";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 Chart.register(...registerables, ChartDataLabels);
 
@@ -46,6 +47,8 @@ const GraficosResidencia = () => {
   const graficoProfessoresRef = React.useRef<HTMLCanvasElement | null>(null);
 
   const chartInstances = React.useRef<Chart[]>([]);
+
+  const t = useTranslations("ESGPage.Social.numerosResidenciaTrad");
 
   React.useEffect(() => {
     const destroyCharts = () => {
@@ -164,11 +167,11 @@ const GraficosResidencia = () => {
       <div className="flex items-center md:justify-between gap-12 flex-col ">
         <div className={`flex flex-col gap-3 `}>
           <TextVariantes variant="top_title" lineCenter lineBottom>
-            Indicadores da Residência em TIC
+            {t("topTitle")}
           </TextVariantes>
-          <TextVariantes variant="h2_title">Caso Prático T2M – Parceria Serratec</TextVariantes>
+          <TextVariantes variant="h2_title">{t("title")}</TextVariantes>
           <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
-            Dados sobre os 502 residentes contratados imediatamente após a conclusão da Residência em TIC.
+            {t("paragraph")}
           </TextVariantes>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2 md:px-12">
@@ -180,9 +183,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">18,75%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              205 residentes adotados, representando 18,75% do total de 1092 formados
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.0")}</TextVariantes>
           </div>
 
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
@@ -193,9 +194,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">20%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Contratou 102 formados, o que representa 20% de 520 das contratações realizadas pelas empresas apoiadoras.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.1")}</TextVariantes>
           </div>
 
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
@@ -206,9 +205,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">11%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Do total de 36 pessoas com deficiência formadas, 11% (4 pessoas) foram contratadas pela T2M.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.2")}</TextVariantes>
           </div>
 
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
@@ -219,9 +216,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">14,42%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              A T2M contratou 21 mulheres, o que corresponde a 14,42% das contratações diretas.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.3")}</TextVariantes>
           </div>
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
             <div className="relative">
@@ -231,10 +226,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">51%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Dos 102 adotados contratados, {DadosEmpresa.egressosEscolaPublica} são egressos de escola pública,
-              representando 51% do total.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.4")}</TextVariantes>
           </div>
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
             <div className="relative">
@@ -244,9 +236,7 @@ const GraficosResidencia = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">25%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Dos 40 professores e monitores do ciclo do Serratec, 10 são da T2M, representando 25% do total.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.5")}</TextVariantes>
           </div>
         </div>
       </div>

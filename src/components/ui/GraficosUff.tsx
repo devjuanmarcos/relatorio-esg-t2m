@@ -3,6 +3,7 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 import React from "react";
 import TextVariantes from "./TextsVariants";
 import { FaGraduationCap, FaUserCheck } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 Chart.register(...registerables, ChartDataLabels);
 
@@ -17,6 +18,8 @@ const GraficosUff = () => {
   const graficoPermanecemRef = React.useRef<HTMLCanvasElement | null>(null);
 
   const chartInstances = React.useRef<Chart[]>([]);
+
+  const t = useTranslations("ESGPage.Social.numerosUffTrad");
 
   React.useEffect(() => {
     const destroyCharts = () => {
@@ -98,11 +101,11 @@ const GraficosUff = () => {
       <div className="flex items-center md:justify-between gap-12 flex-col ">
         <div className={`flex flex-col gap-3 `}>
           <TextVariantes variant="top_title" lineCenter lineBottom>
-            Indicadores da Universidade Federal Fluminense
+            {t("topTitle")}
           </TextVariantes>
-          <TextVariantes variant="h2_title">Caso Prático T2M – Parceria UFF</TextVariantes>
+          <TextVariantes variant="h2_title"> {t("title")}</TextVariantes>
           <TextVariantes variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
-            Dados sobre os 518 formados oriundos da parceria com a UFF em seus cursos certificados 2019.2 – 2024.1
+            {t("paragraph")}
           </TextVariantes>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-2 md:px-12 md:max-w-[50%]">
@@ -115,10 +118,7 @@ const GraficosUff = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">19%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Dos 518 formados pela UFF, {DadosEmpresa.contratados} foram contratados pela T2M, representando 19% do
-              total de formados.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.0")}</TextVariantes>
           </div>
 
           <div className="relative bg-background rounded-lg p-8 flex flex-col gap-1 w-full text-primary shadow-md border-t border-t-primary text-center">
@@ -130,10 +130,7 @@ const GraficosUff = () => {
               </div>
             </div>
             <TextVariantes variant="mega_button_text">65%</TextVariantes>
-            <TextVariantes variant="paragraph_01">
-              Dos {DadosEmpresa.contratados} contratados, {DadosEmpresa.permanecem} permanecem na empresa, representando{" "}
-              65% do total de contratados.
-            </TextVariantes>
+            <TextVariantes variant="paragraph_01">{t("paragraphs.1")}</TextVariantes>
           </div>
         </div>
       </div>

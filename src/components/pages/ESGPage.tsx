@@ -67,7 +67,6 @@ const ESGPage: React.FC = () => {
   // TRADUÇÕES BANNERS SOCIAIS:
   const patrocinadorIniciativasTrad = useTranslations("ESGPage.Social.patrocinadorIniciativasTrad");
   const patrocinadorIniciativasTexto1Trad = useTranslations("ESGPage.Social.patrocinadorIniciativasTexto1Trad");
-  const numerosResidenciaTrad = useTranslations("ESGPage.Social.numerosResidenciaTrad");
   const equipeGenteGestaoTrad = useTranslations("ESGPage.Social.equipeGenteGestaoTrad");
   const equipeGenteGestaoTexto1Trad = useTranslations("ESGPage.Social.equipeGenteGestaoTexto1Trad");
   const programaQualidadeVidaTrad = useTranslations("ESGPage.Social.programaQualidadeVidaTrad");
@@ -391,6 +390,12 @@ const ESGPage: React.FC = () => {
 
   const patrocinadorIniciativasTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: patrocinadorIniciativasTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [patrocinadorIniciativasTexto1Trad("topics.0"), patrocinadorIniciativasTexto1Trad("topics.1")],
+        lastParagraphs: [patrocinadorIniciativasTexto1Trad("lastParagraph")],
+      },
+    ],
     imageAlt: patrocinadorIniciativasTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/serratec.svg",
     imageAlignment: "start",
@@ -457,6 +462,11 @@ const ESGPage: React.FC = () => {
 
   const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: campanhasSolidariasTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [campanhasSolidariasTexto1Trad("topics.0"), campanhasSolidariasTexto1Trad("topics.1")],
+      },
+    ],
     imageAlt: campanhasSolidariasTexto1Trad("imageAlt"),
     imageUrl: "/img/final/esg/doacoes.jpg",
     imageAlignment: "end",
@@ -479,6 +489,12 @@ const ESGPage: React.FC = () => {
 
   const voluntariadoApoioTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: voluntariadoApoioTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        subTitle: voluntariadoApoioTexto1Trad("subTitle"),
+        topics: [voluntariadoApoioTexto1Trad("topics.0"), voluntariadoApoioTexto1Trad("topics.1")],
+      },
+    ],
     imageAlt: voluntariadoApoioTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/Apresentação DBA - Cuidando de quem cuida (2)_page-0001.jpg",
     imageAlignment: "start",

@@ -527,7 +527,7 @@
       },
       "feitosAmbientalTrad": {
         "title": "Nossos feitos em 2024",
-        "paragraph": "Em 2024, avançamos em iniciativas que reforçam a sustentabilidade e a inclusão, promovendo diversidade, equidade e práticas ESG sólidas, com foco em um impacto positivo para 2025.",
+        "paragraph": "Em 2024, intensificamos nossas ações voltadas para a sustentabilidade ambiental, ampliando iniciativas de preservação, inovação em energia renovável e redução de emissões. Nosso compromisso com práticas ESG sólidas reflete um impacto positivo contínuo, guiando-nos rumo a metas ainda mais ambiciosas em 2025.",
         "imageAlt": "Imagem ilustrando conquistas ambientais: 100 árvores plantadas, redução de 99,72% nas emissões de carbono, consumo de material descartável zerado e economia de 2.500 folhas com assinaturas digitais.",
         "numberCards": [
           {
@@ -545,6 +545,7 @@
         ]
       }
     },
+
     "Social": {
       "patrocinadorIniciativasTrad": {
         "topTitle": "Social",
@@ -552,15 +553,39 @@
         "iconAlt": "ícone referente ao tópico social"
       },
       "patrocinadorIniciativasTexto1Trad": {
-        "paragraph": "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que visa capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia. Além de patrocinar, a T2M disponibiliza funcionários para ministrarem aulas e monitorias, contribuindo ativamente para a formação dos residentes. A empresa também mantém uma parceria com a UFF na FEST (Fábrica Escola de Software e Teste), apoiando cursos essenciais como Product Owner, Scrum Master e Qualidade de Software. Essas ações reforçam o compromisso da T2M com a responsabilidade social e o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
+        "paragraph": "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que capacita jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia.",
+        "topics": [
+          "Contribuições da T2M: Além do patrocínio, disponibilizamos funcionários para ministrar aulas e monitorias, contribuindo ativamente para a formação dos residentes.",
+          "Parceria com a UFF: Participamos da FEST (Fábrica Escola de Software e Teste), apoiando cursos como Product Owner, Scrum Master e Qualidade de Software."
+        ],
+        "lastParagraph": "Essas ações reforçam o compromisso da T2M com a responsabilidade social e o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
         "imageAlt": "Escritório da T2M"
       },
       "numerosResidenciaTrad": {
         "title": "Caso Prático T2M – Parceria Serratec",
-        "topTitle": "Indicadores - Residência",
-        "paragraph": "Profissionais contratados pela T2M oriundos do Programa de Residência em TIC do Serratec 2019.2 – 2024.1",
-        "imageAlt": "Resumo visual de dados do programa: 1) 205 pessoas adotadas pelo programa; 2) 101 contratações realizadas; 3) 4% de participantes com deficiência; 4) 21% de participação feminina; 5) 51% de egressos de escola pública; 6) 10 participantes atuam como professores ou monitores do programa. Os dados são apresentados de forma clara, com números destacados para facilitar a compreensão."
+        "topTitle": "Indicadores da Residência em TIC",
+        "paragraph": "Dados sobre os 502 residentes contratados imediatamente após a conclusão da Residência em TIC:",
+        "imageAlt": "Resumo visual de dados do programa: 1) 205 pessoas adotadas pelo programa; 2) 101 contratações realizadas; 3) 4% de participantes com deficiência; 4) 21% de participação feminina; 5) 51% de egressos de escola pública; 6) 10 participantes atuam como professores ou monitores do programa. Os dados são apresentados de forma clara, com números destacados para facilitar a compreensão.",
+        "paragraphs": [
+          "205 residentes adotados, representando 18,75% do total de 1092 formados",
+          "Contratou 102 formados, o que representa 20% de 520 das contratações realizadas pelas empresas apoiadoras.",
+          "Do total de 36 pessoas com deficiência formadas, 11% (4 pessoas) foram contratadas pela T2M.",
+          "A T2M contratou 21 mulheres, o que corresponde a 14,42% das contratações diretas.",
+          "Dos 102 adotados contratados, 52 são egressos de escola pública, representando 51% do total.",
+          "Dos 40 professores e monitores do ciclo do Serratec, 10 são da T2M, representando 25% do total."
+        ]
       },
+      "numerosUffTrad": {
+        "title": "Caso Prático T2M - Parceria UFF",
+        "topTitle": "Indicadores da Universidade Federal Fluminense",
+        "paragraph": "Dados sobre os 518 formados oriundos da parceria com a UFF (2019.2–2024.1):",
+        "imageAlt": "Resumo do caso Caso Prático T2M - Parceria UFF",
+        "paragraphs": [
+          "Dos 518 formados pela UFF, 98 foram contratados pela T2M, representando 19% do total de formados.",
+          "Dos 98 contratados, 64 permanecem na empresa, representando 65% do total de contratados."
+        ]
+      },
+
       "equipeGenteGestaoTrad": {
         "topTitle": "Governnaça",
         "title": "Equipe de gente e gestão composta 100% por mulheres",
@@ -579,22 +604,32 @@
         "paragraph": "A T2M promove o bem-estar de seus colaboradores por meio de seu Programa de Atividade Física, realizado todos os sábados. Esse programa visa melhorar a qualidade de vida e a saúde mental dos colaboradores, incentivando-os a adotar um estilo de vida mais saudável e ativo. As atividades são adaptadas para atender diferentes níveis de condicionamento, promovendo o engajamento e a integração entre os participantes. A T2M acredita que investir na saúde dos colaboradores contribui para um ambiente de trabalho mais produtivo e feliz.",
         "imageAlt": "Imagem ilustrativa do programa de atividade física no escritório da T2M"
       },
+
       "campanhasSolidariasTrad": {
         "topTitle": "Social",
-        "title": "Campanhas solidárias",
+        "title": "Campanhas Solidárias",
         "iconAlt": "Ícone referente ao tópico social"
       },
       "campanhasSolidariasTexto1Trad": {
-        "paragraph": "A T2M realiza anualmente a campanha Gesto Solidário, arrecadando alimentos e roupas para instituições e pessoas em situação de rua. No período de festas, promove a campanha Adote sua Cartinha de Natal, com o objetivo de enviar presentes a crianças em vulnerabilidade e com diversidade funcional. Todo mês, um colaborador T2M apadrinha uma instituição ou projeto, escolhendo onde serão direcionadas as doações. Durante o Techday, entregamos os itens arrecadados diretamente aos representantes das organizações apoiadas. A T2M incentiva a participação ativa de seus colaboradores, reforçando a cultura de solidariedade e ampliando o impacto positivo na comunidade.",
+        "paragraph": "A T2M realiza anualmente a campanha Gesto Solidário, arrecadando alimentos e roupas para instituições e pessoas em situação de vulnerabilidade.",
+        "topics": [
+          "Durante o período de festas, promovemos a campanha Adote sua Cartinha de Natal, enviando presentes para crianças em situação de vulnerabilidade ou com diversidade funcional.",
+          "Mensalmente, realizamos a Campanha Solidária, recolhendo doações destinadas a uma instituição ou projeto, apadrinhado por um colaborador, que escolhe para onde serão direcionadas as doações."
+        ],
         "imageAlt": "Imagem de doações realizadas pela T2M, Biomob e Serratec"
       },
       "voluntariadoApoioTrad": {
         "topTitle": "Social",
-        "title": "Voluntariado e apoio a iniciativas de empregabilidade",
+        "title": "Voluntariado e apoio à empregabilidade",
         "iconAlt": "Ícone referente ao tópico social"
       },
       "voluntariadoApoioTexto1Trad": {
-        "paragraph": "A T2M tem um compromisso sólido com o voluntariado e o apoio à empregabilidade, participando ativamente de programas e iniciativas que promovem a inclusão social e o desenvolvimento de jovens talentos. A empresa colabora com feiras de emprego voltadas para pessoas em situação de vulnerabilidade, como mães solo, LGBTQIAP+, pessoas com diversidades funcionais, refugiados, egressos do sistema prisional e jovens em busca do primeiro emprego. Além disso, a T2M incentiva seus colaboradores a se voluntariarem como palestrantes e instrutores em cursos preparatórios que abordam habilidades técnicas e comportamentais essenciais, preparando os participantes para se destacarem no mercado de trabalho.",
+        "paragraph": "A T2M participa ativamente de programas de voluntariado e empregabilidade, promovendo a inclusão social e o desenvolvimento de jovens talentos.",
+        "subTitle": "Foco do Programa:",
+        "topics": [
+          "Pessoas em vulnerabilidade social, como mães solo, LGBTQIAP+, pessoas com diversidade funcional, refugiados e egressos do sistema prisional.",
+          "Feiras de emprego e cursos preparatórios para desenvolver habilidades técnicas e comportamentais, capacitando participantes para o mercado de trabalho."
+        ],
         "imageAlt": "Imagem do escritório da T2M, com ênfase no apoio à empregabilidade"
       },
       "feitosSocialTrad": {
@@ -624,31 +659,33 @@
         ],
         "imageAlt": "Resumo visual das ações e diversidade da organização: 1) 422 kg de alimentos arrecadados, representados por um ícone de comida; 2) 7 ações sociais realizadas, incluindo Bioconecta, DBA, Outubro Rosa e 4 ações de Gesto Solidário, simbolizadas por um ícone de mãos ajudando; 3) 180 voluntários envolvidos em ações sociais, ilustrados por um ícone de usuários; 4) 60% do time administrativo composto por mulheres, indicado por um ícone de mulher; 5) 55,88% do time de negócios composto por mulheres, também representado por um ícone de mulher. Cada dado é acompanhado por ícones temáticos que reforçam visualmente a mensagem."
       },
+
       "campanha1Trad": {
-        "paragraph": "A instituição contemplada, indicada por um de nossos colaboradores, foi a Associação Oficina de Jesus – Padre Quinha, dedicada à recuperação e reintegração social de dependentes químicos de álcool e/ou outras drogas. Durante o Tech Day 8, arrecadamos 148 kg de alimentos, que foram doados para apoiar o trabalho essencial da Associação.",
+        "paragraph": "Tech Day 8: Arrecadados 148 kg de alimentos para a Associação Oficina de Jesus – Padre Quinha, dedicada à recuperação e reintegração social de dependentes químicos de álcool e/ou outras drogas.",
         "imageAlt": "Imagem do escritório da T2M"
       },
       "campanha2Trad": {
         "paragraphs": [
-          "Durante o Tech Day 09, foram doados 206 quilos de alimentos ao Projeto Esperançar, uma iniciativa voltada a transformar vidas e oferecer suporte a quem mais precisa. A ação foi apadrinhada pelo colaborador Emanuel Cardoso, que desempenhou um papel fundamental na mobilização e arrecadação. Essa doação reflete o espírito de solidariedade e comprometimento social que inspira a comunidade a contribuir para um futuro melhor.",
+          "Tech Day 9: 206 kg de alimentos doados ao Projeto Esperançar, com apoio do colaborador Emanuel Cardoso.",
           "O Projeto Esperançar é uma iniciativa da Casa da Cidadania de Petrópolis, que auxilia e acolhe mulheres vítimas das enchentes que atingiram a cidade em 2022, incluindo aquelas que vivem em aluguel social e as que se encontram em situação de vulnerabilidade."
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "campanha3Trad": {
         "paragraphs": [
-          "A campanha do Outubro Rosa foi reforçada com a doação de 216 quilos de alimentos recebidos no Tech Day 10 e destinados à APPO - Associação Petropolitana dos Pacientes Oncológicos. A APPO foi escolhida pela T2M para ser a receptora de nossa campanha representando o mês do Outubro Rosa.",
+          "Tech Day 10 (Outubro Rosa): 216 kg de alimentos doados à APPO – Associação Petropolitana dos Pacientes Oncológicos, indicada pela colaboradora Angela Motta.",
           "A APPO promove eventos com a finalidade de auxiliar os interesses da Instituição, bem como promover a união dos pacientes oncológicos, estabelecendo convênios e intercâmbios com Instituições Brasileiras e Estrangeiras que facilitem a vida e o trabalho dos pacientes oncológicos."
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "campanha4Trad": {
         "paragraphs": [
-          "Durante o Tech Day 11, conseguimos arrecadar e doar generosamente 288 quilos de alimentos ao Lar Santa Catarina. Esse Gesto Solidário foi idealizado e acompanhado de perto pelo nosso colaborador Bruno da Matta.",
+          "Tech Day 11: 288 kg de alimentos doados ao Lar Santa Catarina, com idealização do colaborador Bruno da Matta.",
           "O Lar Santa Catarina é uma organização não-governamental sem fins lucrativos que tem como objetivo principal a promoção da Assistência Social, com a finalidade de acolher, orientar e amparar crianças, adolescentes e jovens com déficit cognitivo e/ou motor em suas especificidades, buscando a superação de dificuldades e o desenvolvimento de habilidades."
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
+
       "campanhaNatalTrad": {
         "topTitle": "Gesto Solidário",
         "title": "Campanha de Natal",
@@ -669,6 +706,7 @@
         ]
       }
     },
+
     "Governamental": {
       "normasCodigosLegislacoesTrad": {
         "topTitle": "Governança",
