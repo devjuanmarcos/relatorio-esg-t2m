@@ -55,6 +55,11 @@ const ComunidadePage: React.FC = () => {
     topTitle: oportunidadesInclusivasTrad("topTitle"),
     title: oportunidadesInclusivasTrad("title"),
     paragraph: oportunidadesInclusivasTrad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [oportunidadesInclusivasTrad("topics.0"), oportunidadesInclusivasTrad("topics.1")],
+      },
+    ],
     imageAlt: oportunidadesInclusivasTrad("imageAlt"),
     imageUrl: "/img/final/trabalheConosco.jpg",
     imageAlignment: "start",

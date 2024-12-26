@@ -92,9 +92,9 @@
     "mensagemCeoTrad": {
       "imageAlt": "Foto do Guilherme, CEO da T2M",
       "title": "Liderança inovadora.",
-      "topTitle": "Mensagem do nosso CEO",
+      "topTitle": "Mensagem da Diretoria Executiva",
       "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável 2024 reflete o compromisso da T2M com a transparência e a responsabilidade social. Este documento é um canal essencial para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU e aos princípios ESG.",
-      "buttonText": "Leia a mensagem do nosso CEO"
+      "buttonText": "Leia a mensagem da Diretoria Executiva"
     },
     "sobreRelatorioTrad": {
       "title": "Sobre este relatório",
@@ -159,7 +159,7 @@
         },
         {
           "id": 6,
-          "title": "Diversidade e equidade",
+          "title": "Comitê Gestor",
           "paragraphs": [
             "Promoção de um ambiente inclusivo com iniciativas que valorizam a diversidade cultural, social e de gênero.",
             "Políticas que equiparam oportunidades, incentivam a equidade e garantem respeito mútuo, fortalecendo uma cultura organizacional plural e sustentável."
@@ -371,7 +371,7 @@
         },
         {
           "title": "Dezembro de 2024",
-          "paragraph": "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Esse marco faz parte de um esforço contínuo para restaurar a vegetação nativa e recuperar áreas degradadas."
+          "paragraph": "Em dezembro de 2024, a T2M financiou o plantio de 100 mudas no arboreto do Vale das Videiras. Esse marco faz parte de um esforço contínuo para restaurar a vegetação nativa e recuperar áreas degradadas."
         },
         {
           "title": "Expectativas para 2025",
@@ -769,6 +769,12 @@
         "linkText1": "PDF certificado ISO 37001",
         "linkText2": "PDF certificado ISO 37301"
       },
+      "organogramaTexto1Trad": {
+        "title": "Organograma da T2M",
+        "paragraph": "Uma ferramenta estratégica que demonstra a organização e a colaboração entre os diversos departamentos, impulsionando a eficiência e a tomada de decisões. ",
+        "imageAlt": "Organograma da T2M",
+        "linkText1": "Visualizar Organograma"
+      },
       "certificacoesPadroesInternacionaisTexto2Trad": {
         "title": "Crescimento Profissional",
         "paragraph": "A T2M investe no crescimento de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos para impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
@@ -1105,81 +1111,85 @@
   "ComunidadePage": {
     "callBannerTrad": {
       "title": "Capacitando a comunidade",
-      "paragraph": "A empresa desenvolve iniciativas que vão além dos negócios, buscando gerar benefícios sociais e ambientais alinhados com seus valores.",
+      "paragraph": "A T2M desenvolve iniciativas que vão além dos negócios, buscando gerar benefícios sociais e ambientais alinhados com seus valores.",
       "buttonText": "Nosso blog"
     },
     "oportunidadesInclusivasTrad": {
       "topTitle": "Residência",
       "title": "Oportunidades inclusivas e capacitadoras para a região",
-      "paragraph": "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que visa capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia. Este programa oferece formação técnica em desenvolvimento de software e prepara os participantes para ingressarem no mercado de trabalho em um setor de alta demanda. Com isso, a T2M reforça seu compromisso com a responsabilidade social e com o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável.",
+      "paragraph": "A T2M é um dos principais patrocinadores do Programa de Residência de Software do Serratec, que tem como objetivo capacitar jovens em situação de vulnerabilidade econômica para carreiras na área de tecnologia.",
+      "topics": [
+        "Formação técnica: O programa oferece capacitação em desenvolvimento de software, preparando os participantes para ingressarem no mercado de trabalho em um setor de alta demanda.",
+        "Compromisso social: Essa iniciativa reforça o compromisso da T2M com a responsabilidade social e o desenvolvimento de talentos locais, promovendo uma economia mais inclusiva e sustentável."
+      ],
       "imageAlt": "Escritório da T2M",
       "buttonText": "Quero me inscrever"
     },
     "nossosParceirosTrad": {
       "topTitle": "Resultados",
       "title": "Nossos parceiros",
-      "paragraph": "Nossa rede de colaboradores que impulsiona e molda o sucesso em cada etapa"
+      "paragraph": "Nossa rede de aliados impulsiona e molda o sucesso em cada etapa de nossos projetos. Conheça alguns de nossos parceiros:"
     },
     "listagemParceirosTrad": {
       "images": [
         {
           "id": 1,
           "title": "Scaled Agile",
-          "paragraph": "A Scaled Agile, Inc. é reconhecida mundialmente como a criadora do Scaled Agile Framework® (SAFe), uma abordagem líder para a agilidade empresarial.",
+          "paragraph": "Reconhecida mundialmente como a criadora do Scaled Agile Framework® (SAFe), uma abordagem líder em agilidade empresarial.",
           "imageAlt": "Logo da Scaled Agile"
         },
         {
           "id": 2,
           "title": "Serratec",
-          "paragraph": "Venha fazer parte de um dos maiores polos tecnológicos do Brasil! Serviços e benefícios para sua empresa ou Startup começarem com o pé direito!",
+          "paragraph": "Um dos maiores polos tecnológicos do Brasil, oferecendo serviços e benefícios para empresas e startups iniciarem com o pé direito.",
           "imageAlt": "Logo do Serratec"
         },
         {
           "id": 3,
           "title": "IBM",
-          "paragraph": "Soluções para implementar um processo de desenvolvimento de sistemas completo e automatizado.",
+          "paragraph": "Soluções para implementar processos de desenvolvimento de sistemas completos e automatizados.",
           "imageAlt": "Logo da IBM"
         },
         {
           "id": 4,
           "title": "Microsoft",
-          "paragraph": "A Microsoft é uma Bigtech líder em computação em nuvem, Power Platform e inteligência artificial.",
+          "paragraph": "BigTech líder em computação em nuvem, Power Platform e inteligência artificial.",
           "imageAlt": "Logo da Microsoft"
         },
         {
           "id": 5,
           "title": "Delphix",
-          "paragraph": "Ferramenta para Virtualização de Dados e para soluções de Mascaramento de Dados.",
+          "paragraph": "Ferramenta de virtualização de dados e soluções de mascaramento de dados.",
           "imageAlt": "Logo da Delphi"
         },
         {
           "id": 6,
           "title": "BIOMOB",
-          "paragraph": "Acessibilidade e inclusão é a nossa missão. Criamos Soluções digitais para tomar o convívio social mais harmônico, proporcionando qualidade da vida e uma participação plena na sociedade para aqueles que se veem omitidos dela.",
+          "paragraph": "Promove acessibilidade e inclusão por meio de soluções digitais, harmonizando o convívio social e proporcionando qualidade de vida a pessoas que se encontram excluídas da sociedade.",
           "imageAlt": "Logo da BIOMOB"
         },
         {
           "id": 7,
           "title": "Automation Anywhere",
-          "paragraph": "A Automation Anywhere busca liberar as pessoas das tarefas triviais e repetitivas para que passem mais tempo usando seu intelecto e sua criatividade para resolver desafios empresariais avançados e realizar trabalho que exige conhecimento específico.",
+          "paragraph": "Soluções para liberar profissionais de tarefas triviais e repetitivas, permitindo maior foco em criatividade e resolução de desafios empresariais avançados.",
           "imageAlt": "Logo da Automation Anywhere"
         },
         {
           "id": 8,
           "title": "VMEdu",
-          "paragraph": "A VMEdu é a empresa líder na indústria de certificação e treinamento profissional e já propiciou o treinamento de mais de 500.000 alunos de mais de 3500 empresas em mais de 150 países com uma taxa de sucesso de 98,7% por meio de sua rede global de mais de 1100 provedores de treinamento.",
+          "paragraph": "Líder na indústria de certificação e treinamento profissional, com mais de 500.000 alunos treinados em mais de 3.500 empresas e uma taxa de sucesso de 98,7%, por meio de uma rede global de mais de 1.100 provedores de treinamento.",
           "imageAlt": "Logo da VMEdu"
         },
         {
           "id": 9,
           "title": "Future",
-          "paragraph": "Reconhecida no mercado brasileiro de Segurança da Informação, possuímos uma sólida base de clientes, distribuídos em diversos portes e segmentos, atendendo desde grandes empresas públicas e privadas, até empresas de médio porte.",
+          "paragraph": "Reconhecida no mercado brasileiro de segurança da informação, atendendo clientes de diversos portes e segmentos, desde grandes empresas públicas e privadas até empresas de médio porte.",
           "imageAlt": "Logo da Future"
         },
         {
           "id": 10,
           "title": "PEGA",
-          "paragraph": "A PEGA Systems é líder mundial em software de transformação digital e automação de processos que fornece uma poderosa plataforma e propicia às principais empresas do mundo a acelerar, transformar e otimizar os seus negócios.",
+          "paragraph": "Líder mundial em software de transformação digital e automação de processos, fornecendo uma plataforma poderosa que ajuda empresas a acelerar, transformar e otimizar seus negócios.",
           "imageAlt": "Logo da PEGA"
         }
       ],
@@ -1189,7 +1199,7 @@
 
   "MensagemCeoPage": {
     "callBannerTrad": {
-      "title": "Mensagem do nosso CEO",
+      "title": "Mensagem da Diretoria Executiva",
       "paragraph": "Na T2M, reforçamos nosso compromisso e alinhamento com os ODS da ONU e as práticas de ESG.",
       "buttonText": "Guilherme da Motta Alves - Linkedin"
     },

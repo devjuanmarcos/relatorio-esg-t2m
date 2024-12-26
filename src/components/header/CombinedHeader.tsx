@@ -85,7 +85,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
             className="text-var-icone-barra-acessibilidade cursor-pointer"
           />
           <LeitorDeAudio />
-          <ComboboxLanguage locale={locale} type="header" />
+          {/* <ComboboxLanguage locale={locale} type="header" /> */}
         </div>
       </div>
       <Header />
