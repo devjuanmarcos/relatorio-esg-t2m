@@ -101,7 +101,6 @@ const HomePage: React.FC = () => {
     imageUrl: "/img/final/impactoSocial.jpg",
     buttonLink:
       "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/RELATORIO_ESG_T2M.pdf?t=2024-12-26T20%3A31%3A13.464Z",
-
     buttonTarget: "_blank",
     buttonText: callBannerTrad("buttonText"),
     title: callBannerTrad("title"),
