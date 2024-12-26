@@ -99,7 +99,8 @@ const HomePage: React.FC = () => {
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/final/impactoSocial.jpg",
-    buttonLink: "https://biomobtinastorage.blob.core.windows.net/biomob/RELATORIO_ESG_T2M.pdf",
+    buttonLink:
+      "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/RELATORIO_ESG_T2M.pdf?t=2024-12-26T19%3A56%3A17.387Z",
     buttonTarget: "_blank",
     buttonText: callBannerTrad("buttonText"),
     title: callBannerTrad("title"),
