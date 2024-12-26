@@ -586,25 +586,6 @@
         ]
       },
 
-      "equipeGenteGestaoTrad": {
-        "topTitle": "Governnaça",
-        "title": "Equipe de gente e gestão composta 100% por mulheres",
-        "iconAlt": "Ícone referente ao tópico governança"
-      },
-      "equipeGenteGestaoTexto1Trad": {
-        "paragraph": "O time de Gente e Gestão da T2M é 100% composto por mulheres, evidenciando o forte comprometimento da empresa com a diversidade e a inclusão. Além disso, cerca de 67% do time administrativo é formado por mulheres, pessoas com deficiência e pessoas pretas, reforçando a dedicação da T2M em promover um ambiente de trabalho plural e representativo. Esta equipe de Gente e Gestão desempenha um papel fundamental na construção de uma cultura organizacional acolhedora e igualitária, implementando políticas de desenvolvimento profissional e ações que valorizam a diversidade de perspectivas dentro da empresa. A T2M acredita que a inclusão é um pilar essencial para o sucesso de sua cultura organizacional, impulsionando a inovação e gerando um impacto social positivo.",
-        "imageAlt": "Escritório da T2M"
-      },
-      "programaQualidadeVidaTrad": {
-        "topTitle": "Governança",
-        "title": "Programa de qualidade de vida",
-        "iconAlt": "Ícone referente ao tópico governança"
-      },
-      "programaQualidadeVidaTexto1Trad": {
-        "paragraph": "A T2M promove o bem-estar de seus colaboradores por meio de seu Programa de Atividade Física, realizado todos os sábados. Esse programa visa melhorar a qualidade de vida e a saúde mental dos colaboradores, incentivando-os a adotar um estilo de vida mais saudável e ativo. As atividades são adaptadas para atender diferentes níveis de condicionamento, promovendo o engajamento e a integração entre os participantes. A T2M acredita que investir na saúde dos colaboradores contribui para um ambiente de trabalho mais produtivo e feliz.",
-        "imageAlt": "Imagem ilustrativa do programa de atividade física no escritório da T2M"
-      },
-
       "campanhasSolidariasTrad": {
         "topTitle": "Social",
         "title": "Campanhas Solidárias",
@@ -715,11 +696,39 @@
       },
       "normasCodigosLegislacoesTexto1Trad": {
         "paragraphs": [
-          "A T2M, fundada no Brasil em 2002, atua com forte ênfase na transparência e conformidade com as normas, códigos e legislações aplicáveis tanto no contexto corporativo quanto nacional. Nossa normativa se estende a todos os colaboradores, parceiros e diretoria, orientando responsabilidades legais e princípios éticos que sustentam as operações da T2M.",
-          "Nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance e Diversidade e Inclusão, serve como guia de referência para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos, além de promoverem padrões éticos, reduzem a probabilidade de ocorrências de condutas inadequadas.",
-          "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa Intranet, onde são revisados valores, normas e políticas internas."
+          "Fundada no Brasil em 2002, a T2M atua com forte ênfase na transparência e conformidade com normas, códigos e legislações aplicáveis tanto no contexto corporativo quanto nacional.",
+          "Nossa normativa se aplica a todos os colaboradores, parceiros e diretoria, orientando responsabilidades legais e princípios éticos que sustentam as operações da T2M.",
+          "O nosso Código de Ética e Conduta, aliado às Políticas de Antissuborno, Compliance e Diversidade e Inclusão, serve como guia para condutas adequadas com clientes, fornecedores e parceiros. Esses documentos promovem padrões éticos e minimizam a ocorrência de condutas inadequadas.",
+          "Para reforçar o alinhamento com nossas diretrizes, todos os colaboradores devem periodicamente completar o Curso de Políticas Internas, disponível em nossa intranet, revisando valores, normas e políticas internas."
         ],
         "imageAlt": "Imagem do escritório da T2M"
+      },
+      "programaQualidadeVidaTrad": {
+        "topTitle": "Governança",
+        "title": "Programa de Qualidade de Vida",
+        "iconAlt": "Ícone referente ao tópico governança"
+      },
+      "programaQualidadeVidaTexto1Trad": {
+        "paragraph": "A T2M promove o bem-estar de seus colaboradores por meio do Programa de Atividade Física, realizado todos os sábados.",
+        "topics": [
+          "Objetivo: Melhorar a qualidade de vida e a saúde mental dos colaboradores.",
+          "Características: As atividades são adaptadas a diferentes níveis de condicionamento, incentivando um estilo de vida saudável e ativo, além de promover integração entre os participantes."
+        ],
+        "lastParagraph": "A T2M acredita que investir na saúde de seus colaboradores contribui para um ambiente de trabalho mais produtivo e feliz.",
+        "imageAlt": "Imagem ilustrativa do programa de atividade física no escritório da T2M"
+      },
+      "equipeGenteGestaoTrad": {
+        "topTitle": "Governnaça",
+        "title": "Equipe de Gente e Gestão 100% Composta por Mulheres",
+        "iconAlt": "Ícone referente ao tópico governança"
+      },
+      "equipeGenteGestaoTexto1Trad": {
+        "paragraphs": [
+          "O time de Gente e Gestão da T2M é integralmente formado por mulheres, refletindo o forte comprometimento da empresa com diversidade e inclusão.",
+          "Além disso, aproximadamente 67% do time administrativo é composto por mulheres, pessoas com deficiência e pessoas pretas, reforçando o compromisso da T2M com um ambiente plural e representativo.",
+          "Essa equipe desempenha um papel fundamental na construção de uma cultura organizacional acolhedora e igualitária, implementando políticas de desenvolvimento profissional e valorizando perspectivas diversas. A inclusão é considerada um pilar essencial para o sucesso da cultura organizacional da T2M, impulsionando a inovação e gerando impacto social positivo."
+        ],
+        "imageAlt": "Escritório da T2M"
       },
       "comiteT2MTrad": {
         "topTitle": "Governança",
@@ -727,35 +736,51 @@
         "iconAlt": "Ícone referente ao tópico governança"
       },
       "comiteT2MTexto1Trad": {
-        "paragraph": "Compliance: Este comitê é responsável pela gestão independente e autônoma do Programa de Integridade da T2M, garantindo os recursos necessários para assegurar a imparcialidade das práticas de compliance na empresa. Além de incentivar o reporte de suspeitas e violações, o comitê busca cultivar uma cultura de responsabilidade em todos os níveis, incentivando a prevenção e detecção de fraudes. O Compliance Officer, função essencial neste processo, possui autonomia e acesso direto à Alta Direção, bem como autoridade para gerenciar o Sistema de Antissuborno e Compliance da organização.",
+        "title": "Complieance:",
+        "paragraph": "Responsável pela gestão independente do Programa de Integridade da T2M, garantindo os recursos necessários para assegurar a imparcialidade das práticas de compliance.",
+        "topics": [
+          "Funções: Incentivar o reporte de suspeitas e violações, promover a prevenção e detecção de fraudes, e cultivar uma cultura de responsabilidade em todos os níveis.",
+          "Autonomia: O Compliance Officer possui acesso direto à alta direção e autoridade para gerenciar o Sistema de Antissuborno e Compliance da organização."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "comiteT2MTexto2Trad": {
-        "paragraph": "CIPA (Comissão Interna de Prevenção de Acidentes): Em cumprimento à NR-5, a CIPA da T2M tem a função de identificar e mitigar riscos no ambiente de trabalho, promover campanhas de conscientização e treinamentos, além de estar envolvida em questões de assédio, fortalecendo a cultura de segurança e prevenção entre nossos colaboradores. Atualmente, a comissão é composta por 10 membros, sendo 30% mulheres, o que reforça nosso compromisso com a diversidade e inclusão.",
+        "title": "CIPA (Comissão Interna de Prevenção de Acidentes):",
+        "paragraph": "Em cumprimento à NR-5, a CIPA identifica e mitiga riscos no ambiente de trabalho, promove campanhas de conscientização, treinamentos e aborda questões de assédio.",
+
+        "topics": [
+          "Composição atual: 10 membros, sendo 30% mulheres, reforçando o compromisso com a diversidade e inclusão."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "certificacoesPadroesInternacionaisTrad": {
         "topTitle": "Governança",
-        "title": "Certificações e padrões internacionais",
+        "title": "Certificações e Padrões Internacionais",
         "iconAlt": "Ícone referente ao tópico governança",
-        "paragraph": "Além dos comitês, a T2M está alinhada com padrões internacionais de integridade e ética empresarial."
+        "paragraph": "A T2M está alinhada a padrões internacionais de integridade e ética empresarial:"
       },
       "certificacoesPadroesInternacionaisTexto1Trad": {
-        "paragraphs": [
-          "Contamos com as certificações ISO 37001:2017, que estabelece e aprimora o sistema de gestão antissuborno e promove uma cultura de transparência; e a ISO 37301:2021, que define os padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis.",
-          "Essas certificações são um reflexo do nosso compromisso com práticas empresariais éticas, transparentes e responsáveis. Essas iniciativas demonstram o compromisso da T2M em manter um ambiente de trabalho seguro, ético e em conformidade com as melhores práticas do mercado."
+        "topics": [
+          "ISO 37001:2017: Define e aprimora o sistema de gestão antissuborno, promovendo uma cultura de transparência.",
+          "ISO 37301:2021: Estabelece padrões para sistemas de compliance, assegurando conformidade com leis e regulamentações aplicáveis."
         ],
+        "lastParagraph": "Essas certificações refletem o compromisso da T2M com práticas éticas, transparentes e responsáveis, garantindo um ambiente de trabalho seguro e em conformidade com as melhores práticas de mercado.",
         "imageAlt": "Imagem do escritório da T2M",
         "linkText1": "PDF certificado ISO 37001",
         "linkText2": "PDF certificado ISO 37301"
       },
       "certificacoesPadroesInternacionaisTexto2Trad": {
-        "paragraphs": [
-          "A T2M está comprometida com o crescimento profissional de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos que visam impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
-          "Entre os treinamentos oferecidos, destacam-se o PL400, com 40 horas de aprendizado focado no desenvolvimento Low Code e certificações reconhecidas, o Microsoft 365 Endpoint Administrator (MD-102), também com certificações, e conceitos fundamentais de Linux e Windows, garantindo uma base sólida em sistemas operacionais.",
-          "Além disso, a T2M investe em cursos como Inglês, essencial para atuar em ambientes globais, e Agile to Market, que prepara os profissionais para trabalhar com metodologias ágeis e entregar valor de forma eficiente.",
-          "Com essa abordagem, a T2M reforça seu compromisso em criar um ambiente onde o aprendizado contínuo e o desenvolvimento de competências sejam pilares para o sucesso de cada funcionário."
+        "title": "Crescimento Profissional",
+        "paragraph": "A T2M investe no crescimento de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos para impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
+        "subTitle": "Destaques dos treinamentos:",
+        "topics": [
+          "PL400: 40 horas de aprendizado em desenvolvimento Low Code, com certificações.",
+          "Microsoft 365 Endpoint Administrator (MD-102): Curso com certificação.",
+          "Fundamentos de Linux e Windows: Garantindo uma base sólida em sistemas operacionais.",
+          "Inglês: Essencial para atuação em ambientes globais.",
+          "Agile to Market: Preparação para trabalhar com metodologias ágeis e entrega eficiente de valor."
         ],
+        "lastParagraph": "Essa abordagem reforça o compromisso da T2M com o aprendizado contínuo e o desenvolvimento de competências, pilares para o sucesso de cada colaborador.",
         "imageAlt": "Imagem do escritório da T2M"
       },
       "canaisDenunciaTrad": {
@@ -764,33 +789,42 @@
         "iconAlt": "Ícone referente ao tópico governança"
       },
       "canaisDenunciaTexto1Trad": {
-        "paragraphs": [
-          "A T2M disponibiliza um Canal de Denúncias diretamente ligado ao Comitê de Ética, que recebe e analisa todas as denúncias enviadas, além de supervisionar a implementação, o monitoramento e a integridade do Programa de Compliance da empresa.",
-          "As denúncias podem ser realizadas de forma anônima, através de um formulário de fácil acesso, garantindo confidencialidade e segurança para os denunciantes.",
-          "Além deste canal, também oferecemos um Canal de Denúncias específico da CIPA, direcionado para a comunicação de casos de assédio e outros incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
-          "Toda informação pessoal compartilhada é tratada com rigoroso sigilo, assegurando a privacidade dos colaboradores. Ambos os canais têm como objetivo promover um ambiente seguro, ético e acolhedor para todos."
+        "paragraph": "A T2M disponibiliza um Canal de Denúncias diretamente ligado ao Comitê de Ética, que recebe e analisa todas as denúncias, além de supervisionar o Programa de Compliance.",
+        "subTitle": "Características",
+        "topics": [
+          "Garantia de confidencialidade e segurança para os denunciantes.",
+          "Disponibilidade para denúncias anônimas por meio de um formulário de fácil acesso."
+        ],
+        "lastParagraphs": [
+          "Também oferecemos um Canal de Denúncias específico da CIPA, voltado para casos de assédio e incidentes relacionados à segurança e bem-estar no ambiente de trabalho.",
+          "Toda informação pessoal é tratada com sigilo rigoroso, assegurando a privacidade dos colaboradores e promovendo um ambiente seguro, ético e acolhedor."
         ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "equidadeSalarialTrad": {
         "topTitle": "Governança",
-        "title": "Equidade salarial",
+        "title": "Equidade Salarial",
         "iconAlt": "Ícone referente ao tópico governança",
-        "paragraph": "A T2M disponibiliza do Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, relatório que reforça o compromisso com a justiça social.",
+        "paragraph": "A T2M disponibiliza o Relatório de Transparência e Igualdade Salarial de Mulheres e Homens, reforçando o compromisso com a justiça social.",
         "buttonText": "Acessar relatório"
       },
       "equidadeSalarialTexto1Trad": {
-        "paragraph": "Este relatório apresenta critérios de remuneração e ações para garantir diversidade, como a criação de um Plano de Cargos e Salários ou Plano de Carreira, políticas de contratação de mulheres (negras, com deficiência, em situação de violência, chefes de família, LGBTQIA+, indígenas) e políticas de promoção de mulheres para cargos de direção e gerência.",
+        "title": "Conteúdo do relatório:",
+        "topics": [
+          "Critérios de remuneração.",
+          "Políticas de contratação inclusivas (mulheres negras, pessoas com deficiência, LGBTQIA+, indígenas, chefes de família, entre outras).",
+          "Ações para promoção de mulheres a cargos de direção e gerência."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
       },
       "feitosGovernamentalTrad": {
-        "title": "Nossos feitos de governança em 2024",
-        "paragraph": "Em 2024, a T2M continuou a fortalecer suas práticas de governança, alinhando-se aos mais elevados padrões de ética, transparência e conformidade.",
+        "title": "Nossos Feitos de Governança em 2024",
+        "paragraph": "Em 2024, a T2M fortaleceu suas práticas de governança, alinhando-se aos mais elevados padrões de ética, transparência e conformidade.",
         "imageAlt": "a"
       },
       "metasTrad": {
         "title": "Nossas metas em 2025",
-        "paragraph": "Seguimos comprometidos com a sustentabilidade e inclusão, focando na melhoria contínua das práticas ESG para 2025, com impacto positivo para a sociedade e o meio ambiente.",
+        "paragraph": "Seguimos comprometidos com a sustentabilidade e a inclusão, focando na melhoria contínua das práticas ESG para 2025, gerando impacto positivo para a sociedade e o meio ambiente.",
         "imageAlt": "Sete metas organizacionais apresentadas em formato de lista: 1) Duplicar a quantidade de árvores plantadas; 2) Reduzir totalmente as emissões de carbono; 3) Ampliar o consumo de material reciclado; 4) Aumentar em 50% a arrecadação de alimentos; 5) Duplicar a quantidade de ações sociais realizadas; 6) Aumentar em 30% a quantidade de voluntários em ações sociais; 7) Obter certificações ISO 27001 e ISO 27701. Cada item é destacado de forma clara para fácil leitura."
       }
     }

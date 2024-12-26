@@ -67,10 +67,6 @@ const ESGPage: React.FC = () => {
   // TRADUÇÕES BANNERS SOCIAIS:
   const patrocinadorIniciativasTrad = useTranslations("ESGPage.Social.patrocinadorIniciativasTrad");
   const patrocinadorIniciativasTexto1Trad = useTranslations("ESGPage.Social.patrocinadorIniciativasTexto1Trad");
-  const equipeGenteGestaoTrad = useTranslations("ESGPage.Social.equipeGenteGestaoTrad");
-  const equipeGenteGestaoTexto1Trad = useTranslations("ESGPage.Social.equipeGenteGestaoTexto1Trad");
-  const programaQualidadeVidaTrad = useTranslations("ESGPage.Social.programaQualidadeVidaTrad");
-  const programaQualidadeVidaTexto1Trad = useTranslations("ESGPage.Social.programaQualidadeVidaTexto1Trad");
   const campanhasSolidariasTrad = useTranslations("ESGPage.Social.campanhasSolidariasTrad");
   const campanhasSolidariasTexto1Trad = useTranslations("ESGPage.Social.campanhasSolidariasTexto1Trad");
   const voluntariadoApoioTrad = useTranslations("ESGPage.Social.voluntariadoApoioTrad");
@@ -87,6 +83,10 @@ const ESGPage: React.FC = () => {
   const normasCodigosLegislacoesTexto1Trad = useTranslations(
     "ESGPage.Governamental.normasCodigosLegislacoesTexto1Trad"
   );
+  const programaQualidadeVidaTrad = useTranslations("ESGPage.Governamental.programaQualidadeVidaTrad");
+  const programaQualidadeVidaTexto1Trad = useTranslations("ESGPage.Governamental.programaQualidadeVidaTexto1Trad");
+  const equipeGenteGestaoTrad = useTranslations("ESGPage.Governamental.equipeGenteGestaoTrad");
+  const equipeGenteGestaoTexto1Trad = useTranslations("ESGPage.Governamental.equipeGenteGestaoTexto1Trad");
   const comiteT2MTrad = useTranslations("ESGPage.Governamental.comiteT2MTrad");
   const comiteT2MTexto1Trad = useTranslations("ESGPage.Governamental.comiteT2MTexto1Trad");
   const comiteT2MTexto2Trad = useTranslations("ESGPage.Governamental.comiteT2MTexto2Trad");
@@ -403,50 +403,6 @@ const ESGPage: React.FC = () => {
     pointColor: "text-var-social",
   };
 
-  const equipeGenteGestaoData: SimpleCallBannerInterface = {
-    alignment: "bottom",
-    imageUrl: "/img/final/esg/mulheres.png",
-    topTitle: equipeGenteGestaoTrad("topTitle"),
-    lineColor: "bg-var-governanca",
-    icon: {
-      icon: "/img/temp/esg/governanca.png",
-      iconAlt: equipeGenteGestaoTrad("iconAlt"),
-    },
-    title: equipeGenteGestaoTrad("title"),
-    ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
-  };
-
-  const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraph: equipeGenteGestaoTexto1Trad("paragraph"),
-    imageAlt: equipeGenteGestaoTexto1Trad("imageAlt"),
-    imageUrl: "/img/final/esg/mulheres2.jpg",
-    imageAlignment: "end",
-    lineColor: "bg-var-governanca",
-    pointColor: "text-var-governanca",
-  };
-
-  const programaQualidadeVidaData: SimpleCallBannerInterface = {
-    alignment: "bottomEnd",
-    imageUrl: "/img/final/esg/qualidadeVida2.png",
-    topTitle: programaQualidadeVidaTrad("topTitle"),
-    lineColor: "bg-var-governanca",
-    icon: {
-      icon: "/img/temp/esg/governanca.png",
-      iconAlt: programaQualidadeVidaTrad("iconAlt"),
-    },
-    title: programaQualidadeVidaTrad("title"),
-    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
-  };
-
-  const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraph: programaQualidadeVidaTexto1Trad("paragraph"),
-    imageAlt: programaQualidadeVidaTexto1Trad("imageAlt"),
-    imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
-    imageAlignment: "start",
-    lineColor: "bg-var-governanca",
-    pointColor: "text-var-governanca",
-  };
-
   const campanhasSolidariasData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/final/esg/campanhasSolidarias.png",
@@ -623,10 +579,65 @@ const ESGPage: React.FC = () => {
       normasCodigosLegislacoesTexto1Trad("paragraphs.0"),
       normasCodigosLegislacoesTexto1Trad("paragraphs.1"),
       normasCodigosLegislacoesTexto1Trad("paragraphs.2"),
+      normasCodigosLegislacoesTexto1Trad("paragraphs.3"),
     ],
     paragraph: "",
     imageAlt: normasCodigosLegislacoesTexto1Trad("imageAlt"),
     imageUrl: "/img/final/esg/legislacao.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const programaQualidadeVidaData: SimpleCallBannerInterface = {
+    alignment: "bottomEnd",
+    imageUrl: "/img/final/esg/qualidadeVida2.png",
+    topTitle: programaQualidadeVidaTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: programaQualidadeVidaTrad("iconAlt"),
+    },
+    title: programaQualidadeVidaTrad("title"),
+    ods: ["/img/ods/3.png", "/img/ods/8.png", "/img/ods/10.png", "/img/ods/12.png"],
+  };
+
+  const programaQualidadeVidaTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraph: programaQualidadeVidaTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [programaQualidadeVidaTexto1Trad("topics.0"), programaQualidadeVidaTexto1Trad("topics.1")],
+        lastParagraphs: [programaQualidadeVidaTexto1Trad("lastParagraph")],
+      },
+    ],
+    imageAlt: programaQualidadeVidaTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/atividadeFisica.jpeg",
+    imageAlignment: "start",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+  };
+
+  const equipeGenteGestaoData: SimpleCallBannerInterface = {
+    alignment: "bottom",
+    imageUrl: "/img/final/esg/mulheres.png",
+    topTitle: equipeGenteGestaoTrad("topTitle"),
+    lineColor: "bg-var-governanca",
+    icon: {
+      icon: "/img/temp/esg/governanca.png",
+      iconAlt: equipeGenteGestaoTrad("iconAlt"),
+    },
+    title: equipeGenteGestaoTrad("title"),
+    ods: ["/img/ods/5.png", "/img/ods/8.png", "/img/ods/10.png"],
+  };
+
+  const equipeGenteGestaoTexto1Data: ImageWithCardTextBannerInterface = {
+    paragraphs: [
+      equipeGenteGestaoTexto1Trad("paragraphs.0"),
+      equipeGenteGestaoTexto1Trad("paragraphs.1"),
+      equipeGenteGestaoTexto1Trad("paragraphs.2"),
+    ],
+    imageAlt: equipeGenteGestaoTexto1Trad("imageAlt"),
+    imageUrl: "/img/final/esg/mulheres2.jpg",
     imageAlignment: "end",
     lineColor: "bg-var-governanca",
     pointColor: "text-var-governanca",
@@ -646,7 +657,13 @@ const ESGPage: React.FC = () => {
   };
 
   const comiteT2MTexto1Data: ImageWithCardTextBannerInterface = {
+    title: comiteT2MTexto1Trad("title"),
     paragraph: comiteT2MTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [comiteT2MTexto1Trad("topics.0"), comiteT2MTexto1Trad("topics.1")],
+      },
+    ],
     imageAlt: comiteT2MTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/compliance.jpg",
     imageAlignment: "start",
@@ -655,7 +672,13 @@ const ESGPage: React.FC = () => {
   };
 
   const comiteT2MTexto2Data: ImageWithCardTextBannerInterface = {
+    title: comiteT2MTexto2Trad("title"),
     paragraph: comiteT2MTexto2Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [comiteT2MTexto2Trad("topics.0")],
+      },
+    ],
     imageAlt: comiteT2MTexto2Trad("imageAlt"),
     imageUrl: "/img/final/esg/comites.jpg",
     imageAlignment: "end",
@@ -690,9 +713,14 @@ const ESGPage: React.FC = () => {
   };
 
   const certificacoesPadroesInternacionaisTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraphs: [
-      certificacoesPadroesInternacionaisTexto1Trad("paragraphs.0"),
-      certificacoesPadroesInternacionaisTexto1Trad("paragraphs.1"),
+    paragraphsWithTopics: [
+      {
+        topics: [
+          certificacoesPadroesInternacionaisTexto1Trad("topics.0"),
+          certificacoesPadroesInternacionaisTexto1Trad("topics.1"),
+        ],
+        lastParagraphs: [certificacoesPadroesInternacionaisTexto1Trad("lastParagraph")],
+      },
     ],
     imageAlt: certificacoesPadroesInternacionaisTexto1Trad("imageAlt"),
     imageUrl: "/img/final/esg/iso.png",
@@ -706,11 +734,20 @@ const ESGPage: React.FC = () => {
   };
 
   const certificacoesPadroesInternacionaisTexto2Data: ImageWithCardTextBannerInterface = {
-    paragraphs: [
-      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.0"),
-      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.1"),
-      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.2"),
-      certificacoesPadroesInternacionaisTexto2Trad("paragraphs.3"),
+    title: certificacoesPadroesInternacionaisTexto2Trad("title"),
+    paragraph: certificacoesPadroesInternacionaisTexto2Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        subTitle: certificacoesPadroesInternacionaisTexto2Trad("subTitle"),
+        topics: [
+          certificacoesPadroesInternacionaisTexto2Trad("topics.0"),
+          certificacoesPadroesInternacionaisTexto2Trad("topics.1"),
+          certificacoesPadroesInternacionaisTexto2Trad("topics.2"),
+          certificacoesPadroesInternacionaisTexto2Trad("topics.3"),
+          certificacoesPadroesInternacionaisTexto2Trad("topics.4"),
+        ],
+        lastParagraphs: [certificacoesPadroesInternacionaisTexto2Trad("lastParagraph")],
+      },
     ],
     imageAlt: certificacoesPadroesInternacionaisTexto2Trad("imageAlt"),
     imageUrl: "/img/temp/esg/cursos.jpg",
@@ -733,11 +770,13 @@ const ESGPage: React.FC = () => {
   };
 
   const canaisDenunciaTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraphs: [
-      canaisDenunciaTexto1Trad("paragraphs.0"),
-      canaisDenunciaTexto1Trad("paragraphs.1"),
-      canaisDenunciaTexto1Trad("paragraphs.2"),
-      canaisDenunciaTexto1Trad("paragraphs.3"),
+    paragraph: canaisDenunciaTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        subTitle: canaisDenunciaTexto1Trad("subTitle"),
+        topics: [canaisDenunciaTexto1Trad("topics.0"), canaisDenunciaTexto1Trad("topics.1")],
+        lastParagraphs: [canaisDenunciaTexto1Trad("lastParagraphs.0"), canaisDenunciaTexto1Trad("lastParagraphs.1")],
+      },
     ],
     imageAlt: canaisDenunciaTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/canalDenuncia2.jpg",
@@ -764,7 +803,16 @@ const ESGPage: React.FC = () => {
   };
 
   const equidadeSalarialTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraph: equidadeSalarialTexto1Trad("paragraph"),
+    title: equidadeSalarialTexto1Trad("title"),
+    paragraphsWithTopics: [
+      {
+        topics: [
+          equidadeSalarialTexto1Trad("topics.0"),
+          equidadeSalarialTexto1Trad("topics.1"),
+          equidadeSalarialTexto1Trad("topics.2"),
+        ],
+      },
+    ],
     imageAlt: equidadeSalarialTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/salarial.jpg",
     imageAlignment: "end",
