@@ -11,7 +11,8 @@ export interface IconCard {
   id: number;
   icon: IconType;
   title: string;
-  paragraph: string;
+  paragraph?: string;
+  paragraphs?: string[];
 }
 
 export interface imageCard {
@@ -61,7 +62,13 @@ export const IconsCardsBanner: React.FC<IconsCardsBannerInterface> = ({ paragrap
               >
                 <Icon className="size-10 text-primary " />
                 <TextVariantes variant="top_title">{iconCard.title}</TextVariantes>
-                <TextVariantes variant="paragraph_01">{iconCard.paragraph}</TextVariantes>
+                {iconCard.paragraph && <TextVariantes variant="paragraph_01">{iconCard.paragraph}</TextVariantes>}
+                {iconCard.paragraphs &&
+                  iconCard.paragraphs.map((text, index) => (
+                    <TextVariantes key={index} variant="paragraph_01" extraClassName="max-w-[42rem] mx-auto">
+                      {text}
+                    </TextVariantes>
+                  ))}
               </div>
             );
           })}

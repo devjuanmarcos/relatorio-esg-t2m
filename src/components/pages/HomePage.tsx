@@ -83,6 +83,10 @@ const HomePage: React.FC = () => {
   const sustentabilidadeTrad = useTranslations("HomePage.sustentabilidadeTrad");
   const movimentoRegenerativoTrad = useTranslations("HomePage.movimentoRegenerativoTrad");
   const nossasCampanhasTrad = useTranslations("HomePage.nossasCampanhasTrad");
+  const tresDimensoesTrad = useTranslations("HomePage.tresDimensoesTrad");
+  const sustentabilidadeAmbientalTrad = useTranslations("HomePage.sustentabilidadeAmbientalTrad");
+  const responsabilidadeSocialTrad = useTranslations("HomePage.responsabilidadeSocialTrad");
+  const governancaConscienteTrad = useTranslations("HomePage.governancaConscienteTrad");
   const codigoCondutaTrad = useTranslations("HomePage.codigoCondutaTrad");
 
   if (!isMounted) {
@@ -141,37 +145,53 @@ const HomePage: React.FC = () => {
       {
         id: 1,
         title: partesInteressadasTrad("icons.0.title"),
-        paragraph: partesInteressadasTrad("icons.0.paragraph"),
+        paragraphs: [
+          partesInteressadasTrad("icons.0.paragraphs.0"),
+          partesInteressadasTrad("icons.0.paragraphs.1"),
+          partesInteressadasTrad("icons.0.paragraphs.2"),
+        ],
         icon: FaUserTie,
       },
       {
         id: 2,
         title: partesInteressadasTrad("icons.1.title"),
-        paragraph: partesInteressadasTrad("icons.1.paragraph"),
+        paragraphs: [partesInteressadasTrad("icons.1.paragraphs.0"), partesInteressadasTrad("icons.1.paragraphs.1")],
         icon: FaHandshake,
       },
       {
         id: 3,
         title: partesInteressadasTrad("icons.2.title"),
-        paragraph: partesInteressadasTrad("icons.2.paragraph"),
+        paragraphs: [
+          partesInteressadasTrad("icons.2.paragraphs.0"),
+          partesInteressadasTrad("icons.2.paragraphs.1"),
+          partesInteressadasTrad("icons.2.paragraphs.2"),
+        ],
         icon: FaHandHoldingHeart,
       },
       {
         id: 4,
         title: partesInteressadasTrad("icons.3.title"),
-        paragraph: partesInteressadasTrad("icons.3.paragraph"),
+        paragraphs: [
+          partesInteressadasTrad("icons.3.paragraphs.0"),
+          partesInteressadasTrad("icons.3.paragraphs.1"),
+          partesInteressadasTrad("icons.3.paragraphs.2"),
+        ],
         icon: FaPeopleCarry,
       },
       {
         id: 5,
         title: partesInteressadasTrad("icons.4.title"),
-        paragraph: partesInteressadasTrad("icons.4.paragraph"),
+        paragraphs: [
+          partesInteressadasTrad("icons.4.paragraphs.0"),
+          partesInteressadasTrad("icons.4.paragraphs.1"),
+          partesInteressadasTrad("icons.4.paragraphs.2"),
+        ],
         icon: FaGavel,
       },
       {
         id: 6,
         title: partesInteressadasTrad("icons.5.title"),
-        paragraph: partesInteressadasTrad("icons.5.paragraph"),
+        paragraphs: [partesInteressadasTrad("icons.5.paragraphs.0"), partesInteressadasTrad("icons.5.paragraphs.1")],
         icon: FaBalanceScale,
       },
     ],
@@ -189,14 +209,20 @@ const HomePage: React.FC = () => {
   const quatroCardsMetodologiaData: ThreeTextCardsWithNumberCardBannerInterface = {
     textCards: [
       {
-        topTitle: quatroCardsMetodologiaTrad("textCards.0.topTitle"),
         title: quatroCardsMetodologiaTrad("textCards.0.title"),
         paragraph: quatroCardsMetodologiaTrad("textCards.0.paragraph"),
+        topics: [
+          quatroCardsMetodologiaTrad("textCards.0.topics.0"),
+          quatroCardsMetodologiaTrad("textCards.0.topics.1"),
+        ],
       },
       {
-        topTitle: quatroCardsMetodologiaTrad("textCards.1.topTitle"),
         title: quatroCardsMetodologiaTrad("textCards.1.title"),
         paragraph: quatroCardsMetodologiaTrad("textCards.1.paragraph"),
+        topics: [
+          quatroCardsMetodologiaTrad("textCards.1.topics.0"),
+          quatroCardsMetodologiaTrad("textCards.1.topics.1"),
+        ],
       },
     ],
   };
@@ -252,32 +278,6 @@ const HomePage: React.FC = () => {
     paragraph: sustentabilidadeTrad("paragraph"),
     alignment: "start",
     imageUrl: "/img/temp/esg/plantar.jpg",
-  };
-
-  const movimentoRegenerativoData: NumberCardsBannerInterface = {
-    ods: [11, 13, 15],
-    title: movimentoRegenerativoTrad("title"),
-    paragraphs: [movimentoRegenerativoTrad("paragraphs.0")],
-    pdfLink1: "https://www.instagram.com/tempodeplantar2024/p/DDIZpg-PX44/?img_index=1",
-    pdfText1: "Instagram do Movimento Regenerativo Tempo de Plantar",
-    numberCards: [
-      {
-        title: movimentoRegenerativoTrad("numberCards.0.title"),
-        icon: FaHandsHelping,
-        paragraph: movimentoRegenerativoTrad("numberCards.0.paragraph"),
-      },
-      {
-        title: movimentoRegenerativoTrad("numberCards.1.title"),
-        icon: FaCalendarAlt,
-        paragraph: movimentoRegenerativoTrad("numberCards.1.paragraph"),
-      },
-      {
-        title: movimentoRegenerativoTrad("numberCards.2.title"),
-        icon: FaTree,
-        paragraph: movimentoRegenerativoTrad("numberCards.2.paragraph"),
-      },
-    ],
-    type: "border",
   };
 
   const voluntariadoApoioImagensData: CarouselSectionType = {
@@ -346,75 +346,154 @@ const HomePage: React.FC = () => {
   };
 
   const tresDimensoesData: NumberCardsBannerInterface = {
-    // ods: [3, 8, 12, 13],
-    // title: "As quatro dimensões",
-    // paragraph:
-    // "A Sustentabilidade 4.4 refere-se a uma abordagem avançada e integrada ao modelo empresarial da chamada Quarta Revolução Industrial. O objetivo é utilizar as tecnologias disponíveis para gerar conhecimento e produtividade, combinando as transformações digitais em processos industriais, econômicos e sociais com inovações e avanços tecnológicos, além de práticas sustentáveis, para promover uma economia mais eficiente, responsável e resiliente.",
     numberCards: [
       {
-        title: "Sustentabilidade Ambiental",
+        title: tresDimensoesTrad("numberCards.0.title"),
         icon: FaLeaf,
-        paragraph:
-          "Melhoria da saúde e do bem-estar humano, proteção do capital natural (terra, ar, água, minerais, etc.) e dos ecossistemas globais. Isso inclui questões relacionadas à energia e ao clima, os impactos e as externalidades na produção de bens e na prestação de serviços, além das infraestruturas 'verdes' e da economia circular.",
+        paragraph: tresDimensoesTrad("numberCards.0.paragraph"),
       },
       {
-        title: "Responsabilidade Social",
+        title: tresDimensoesTrad("numberCards.1.title"),
         icon: FaUsers,
-        paragraph:
-          "Preservação do capital social, criando serviços que apoiam comunidades, culturas e globalização, com investimentos em saúde, saneamento, educação e acesso a serviços essenciais, conforme os Objetivos de Desenvolvimento Sustentável (ODS ONU).",
+        paragraph: tresDimensoesTrad("numberCards.1.paragraph"),
       },
       {
-        title: "Governança Consciente",
+        title: tresDimensoesTrad("numberCards.2.title"),
         icon: FaBalanceScale,
-        paragraph:
-          "Organizações devem agregar valor aos clientes, investir nos funcionários, atuar de forma ética com fornecedores, apoiar comunidades e proteger o meio ambiente, adotando práticas sustentáveis para gerar valor de longo prazo.",
+        paragraph: tresDimensoesTrad("numberCards.2.paragraph"),
       },
     ],
     type: "border",
   };
 
   const sustentabilidadeAmbientalData: ImageWithCardTextBannerInterface = {
-    imageAlt: "ícone da sustentabilidade ambiental",
-    title: "Sustentabilidade Ambiental",
+    imageAlt: sustentabilidadeAmbientalTrad("imageAlt"),
+    title: sustentabilidadeAmbientalTrad("title"),
     imageUrl: "/img/temp/esg/ambiental.png",
     objectContain: true,
-    paragraphs: [
-      "Refere-se à preservação dos recursos naturais e à redução dos impactos negativos causados pelas atividades humanas no meio ambiente.",
-      "O objetivo é promover a saúde e o bem-estar humano, tanto no presente quanto no futuro, através da proteção do capital natural (terra, ar, água, minerais, entre outros), além da preservação dos ecossistemas globais. Isso inclui a atenção às questões de energia e clima, o desenvolvimento de infraestruturas 'verdes' e a adoção de uma economia circular.",
-      "Conservação da Biodiversidade: Assegurar que os ecossistemas e as espécies não sejam degradados, promovendo a proteção de habitats naturais e a recuperação de áreas já afetadas.",
-      "Gestão Responsável dos Recursos Naturais: Utilizar de forma racional recursos como água, solo e energia, buscando reduzir desperdícios e evitar o esgotamento desses recursos essenciais para a sustentabilidade.",
-      "Redução da Pegada Ecológica: Implementar práticas que diminuam a emissão de gases de efeito estufa (como o CO₂), o consumo de fontes de energia não-renováveis e a geração de resíduos, com o objetivo de mitigar as mudanças climáticas.",
-      "Uso de Tecnologias Verdes e Renováveis: Adotar fontes de energia renováveis (solar, eólica, hídrica) e práticas agrícolas e industriais mais limpas e eficientes, que contribuam para a preservação ambiental e para a eficiência dos processos produtivos.",
+    paragraphs: [sustentabilidadeAmbientalTrad("paragraph")],
+    paragraphsWithTopics: [
+      {
+        subTitle: sustentabilidadeAmbientalTrad("paragraphsWithTopics.0.subTitle"),
+        topics: [
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.0.topics.0"),
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.0.topics.1"),
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.0.topics.2"),
+        ],
+      },
+      {
+        subTitle: sustentabilidadeAmbientalTrad("paragraphsWithTopics.1.subTitle"),
+        topics: [
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.1.topics.0"),
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.1.topics.1"),
+          sustentabilidadeAmbientalTrad("paragraphsWithTopics.1.topics.2"),
+        ],
+      },
     ],
     imageAlignment: "end",
   };
 
   const responsabilidadeSocialData: ImageWithCardTextBannerInterface = {
-    imageAlt: "Responsabilidade Social",
-    title: "Responsabilidade Social",
     imageUrl: "/img/temp/esg/social.png",
+    imageAlt: responsabilidadeSocialTrad("imageAlt"),
+    title: responsabilidadeSocialTrad("title"),
     objectContain: true,
-    paragraphs: [
-      "A responsabilidade social vai além de simples ações isoladas; ela está ligada à preservação dos recursos sociais e ao bem-estar coletivo, garantindo que as pessoas tenham uma vida digna e igualdade de oportunidades. Esse conceito abrange uma visão mais ampla, que leva em consideração as diversas comunidades, culturas e os impactos da globalização. Ao focar no desenvolvimento humano, busca-se investir em áreas essenciais como saúde, saneamento, educação e acesso a serviços, além de promover o conhecimento, a nutrição, o lazer e a cultura.",
-      "A justiça social, por sua vez, é fundamental para diminuir as desigualdades sociais e econômicas, garantindo o acesso universal a direitos básicos, como saúde, educação, segurança e moradia. Esse compromisso com a igualdade visa criar uma sociedade mais justa e equitativa para todos.",
-      "No mesmo sentido, a responsabilidade social também busca fortalecer os princípios da Declaração Universal dos Direitos Humanos, defendendo os direitos básicos para que cada pessoa possa viver com dignidade, liberdade, saúde e segurança.",
-      "A melhoria da qualidade de vida é outro objetivo importante, especialmente quando se trata de aumentar o Índice de Desenvolvimento Humano (IDH). Isso é feito por meio de ações focadas em áreas como educação, saúde, saneamento, programas sociais e causas comunitárias, além de incentivar práticas que envolvem turismo, esporte e lazer.",
-      "Por fim, a participação social é essencial para envolver as comunidades nas decisões que afetam suas vidas. O empoderamento social, por meio do engajamento nas esferas política e econômica, fortalece a cidadania e assegura que as vozes das pessoas sejam ouvidas e respeitadas.",
+    paragraphsWithTopics: [
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.0.subTitle"),
+        topics: [
+          responsabilidadeSocialTrad("paragraphsWithTopics.0.topics.0"),
+          responsabilidadeSocialTrad("paragraphsWithTopics.0.topics.1"),
+        ],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.1.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.1.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.2.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.2.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.3.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.3.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.4.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.4.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.5.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.5.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.6.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.6.paragraphs.0")],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.7.subTitle"),
+        topics: [
+          responsabilidadeSocialTrad("paragraphsWithTopics.7.topics.0"),
+          responsabilidadeSocialTrad("paragraphsWithTopics.7.topics.1"),
+        ],
+      },
+      {
+        subTitle: responsabilidadeSocialTrad("paragraphsWithTopics.8.subTitle"),
+        paragraphs: [responsabilidadeSocialTrad("paragraphsWithTopics.8.paragraphs.0")],
+      },
     ],
     imageAlignment: "end",
   };
 
   const governancaConscienteData: ImageWithCardTextBannerInterface = {
-    imageAlt: "Governança Consciente",
-    title: "Governança Consciente",
     imageUrl: "/img/temp/esg/governanca.png",
+    imageAlt: governancaConscienteTrad("imageAlt"),
+    title: governancaConscienteTrad("title"),
     objectContain: true,
-    paragraphs: [
-      "A preservação dos recursos econômicos e o uso eficiente dos ativos e compromissos orçamentários visam manter níveis elevados e estáveis de crescimento econômico ao longo do tempo. Contudo, esse crescimento não deve ser o único objetivo das organizações, pois a qualidade do crescimento é tão importante quanto a sua quantidade. O propósito das organizações evolui conforme as mudanças no ambiente socioeconômico e nas condições do ecossistema, permitindo que continue relevante para todas as Partes Interessadas.",
-      "É essencial garantir que empresas, governos e organizações gerem valor e lucros de maneira sustentável, sem prejudicar os recursos naturais ou sociais, adotando práticas financeiras que considerem os impactos ambientais e sociais de suas ações, conhecidas como investimentos ESG (ambiental, social e de governança).",
-      "Além disso, a gestão eficiente de recursos implica na utilização prudente e responsável do capital, buscando maximizar a rentabilidade a longo prazo sem comprometer o bem-estar das gerações futuras ou os ecossistemas.",
+    paragraphsWithTopics: [
+      {
+        subTitle: governancaConscienteTrad("paragraphsWithTopics.0.subTitle"),
+        paragraphs: [governancaConscienteTrad("paragraphsWithTopics.0.paragraphs.0")],
+      },
+      {
+        subTitle: governancaConscienteTrad("paragraphsWithTopics.1.subTitle"),
+        topics: [
+          governancaConscienteTrad("paragraphsWithTopics.1.topics.0"),
+          governancaConscienteTrad("paragraphsWithTopics.1.topics.1"),
+        ],
+      },
+      {
+        subTitle: governancaConscienteTrad("paragraphsWithTopics.2.subTitle"),
+        paragraphs: [governancaConscienteTrad("paragraphsWithTopics.2.paragraphs.0")],
+      },
     ],
     imageAlignment: "end",
+  };
+
+  const movimentoRegenerativoData: NumberCardsBannerInterface = {
+    ods: [11, 13, 15],
+    title: movimentoRegenerativoTrad("title"),
+    paragraphs: [movimentoRegenerativoTrad("paragraphs.0")],
+    pdfLink1: "https://www.instagram.com/tempodeplantar2024/p/DDIZpg-PX44/?img_index=1",
+    pdfText1: "Instagram do Movimento Regenerativo Tempo de Plantar",
+    numberCards: [
+      {
+        title: movimentoRegenerativoTrad("numberCards.0.title"),
+        icon: FaHandsHelping,
+        paragraph: movimentoRegenerativoTrad("numberCards.0.paragraph"),
+      },
+      {
+        title: movimentoRegenerativoTrad("numberCards.1.title"),
+        icon: FaCalendarAlt,
+        paragraph: movimentoRegenerativoTrad("numberCards.1.paragraph"),
+      },
+      {
+        title: movimentoRegenerativoTrad("numberCards.2.title"),
+        icon: FaTree,
+        paragraph: movimentoRegenerativoTrad("numberCards.2.paragraph"),
+      },
+    ],
+    type: "border",
   };
 
   const codigoCondutaData: ImageWithCardTextBannerInterface = {

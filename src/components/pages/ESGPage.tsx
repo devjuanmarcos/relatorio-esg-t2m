@@ -135,7 +135,7 @@ const ESGPage: React.FC = () => {
     imageUrl: "/img/temp/odsonu.png",
     imageAlignment: "start",
     buttonText: oportunidadesInclusivasTrad("buttonText"),
-    buttonLink: "#",
+    buttonLink: "https://www.t2mlab.com/contato/",
     buttonTarget: "_blank",
     objectContain: true,
   };
@@ -177,6 +177,11 @@ const ESGPage: React.FC = () => {
 
   const contratosAssinadosTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: contratosAssinadosTexto1Trad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [contratosAssinadosTexto1Trad("topics.0"), contratosAssinadosTexto1Trad("topics.1")],
+      },
+    ],
     imageAlt: contratosAssinadosTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/digitalizacaoDocumentos.jpg",
     imageAlignment: "start",
@@ -197,24 +202,31 @@ const ESGPage: React.FC = () => {
     ods: ["/img/ods/7.png", "/img/ods/9.png", "/img/ods/12.png", "/img/ods/13.png"],
   };
 
-  const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
-    paragraphs: [utilizacaoNuvemTexto2Trad("paragraphs.0"), utilizacaoNuvemTexto2Trad("paragraphs.1")],
-    imageAlt: utilizacaoNuvemTexto2Trad("imageAlt"),
-    imageUrl: "/img/temp/esg/emissaoCarbono.jpg",
-    imageAlignment: "start",
-    lineColor: "bg-var-ambiental",
-    pointColor: "text-var-ambiental",
-  };
-
   const utilizacaoNuvemTexto1Data: ImageWithCardTextBannerInterface = {
-    paragraphs: [
-      utilizacaoNuvemTexto1Trad("paragraphs.0"),
-      utilizacaoNuvemTexto1Trad("paragraphs.1"),
-      utilizacaoNuvemTexto1Trad("paragraphs.2"),
+    paragraphs: [utilizacaoNuvemTexto1Trad("paragraphs.0")],
+    paragraphsWithTopics: [
+      {
+        topics: [utilizacaoNuvemTexto1Trad("topics.0"), utilizacaoNuvemTexto1Trad("topics.1")],
+      },
     ],
     imageAlt: utilizacaoNuvemTexto1Trad("imageAlt"),
     imageUrl: "/img/temp/esg/computacaoNuvem.jpg",
     imageAlignment: "end",
+    lineColor: "bg-var-ambiental",
+    pointColor: "text-var-ambiental",
+  };
+
+  const utilizacaoNuvemTexto2Data: ImageWithCardTextBannerInterface = {
+    title: utilizacaoNuvemTexto2Trad("title"),
+    paragraphsWithTopics: [
+      {
+        topics: [utilizacaoNuvemTexto2Trad("topics.0"), utilizacaoNuvemTexto2Trad("topics.1")],
+      },
+    ],
+    paragraph: utilizacaoNuvemTexto2Trad("paragraph"),
+    imageAlt: utilizacaoNuvemTexto2Trad("imageAlt"),
+    imageUrl: "/img/temp/esg/emissaoCarbono.jpg",
+    imageAlignment: "start",
     lineColor: "bg-var-ambiental",
     pointColor: "text-var-ambiental",
   };

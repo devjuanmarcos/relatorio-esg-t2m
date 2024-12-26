@@ -10,7 +10,8 @@ import { NumberCard, NumberCardInterface } from "../cards/numberCard";
 export interface TextCardInterface {
   title: string;
   paragraph: string;
-  topTitle: string;
+  topTitle?: string;
+  topics?: string[];
 }
 
 export interface ThreeTextCardsWithNumberCardBannerInterface {
@@ -41,11 +42,22 @@ export const ThreeTextCardsWithNumberCardBanner: React.FC<ThreeTextCardsWithNumb
       <div className="grid md:grid-cols-2 gap-10 md:gap-5">
         {limitedTextCards.slice(0, 2).map((card, index) => (
           <div key={index} className="flex flex-col gap-3">
-            <TextVariantes variant="top_title" lineBottom>
-              {card.topTitle}
-            </TextVariantes>
+            {topTitle && (
+              <TextVariantes variant="top_title" lineBottom>
+                {card.topTitle}
+              </TextVariantes>
+            )}
             <TextVariantes variant="h2_title">{card.title}</TextVariantes>
             <TextVariantes variant="paragraph_01">{card.paragraph}</TextVariantes>
+            {card.topics && (
+              <ul className="list-disc ml-6">
+                {card.topics.map((topic) => (
+                  <li key={topic} className="mb-2">
+                    <TextVariantes variant="paragraph_01">{topic}</TextVariantes>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>

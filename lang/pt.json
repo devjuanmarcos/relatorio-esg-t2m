@@ -86,14 +86,14 @@
   "HomePage": {
     "callBannerTrad": {
       "title": "Relatório de Impacto Social",
-      "paragraph": "Impacto Social e Desenvolvimento Sustentável que apresenta as ações e os compromissos da T2M com práticas de responsabilidade social, ambiental e de governança (ESG).",
-      "buttonText": "Baixe o Relatório de Impacto Social "
+      "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável apresenta as ações e os compromissos da T2M com práticas de responsabilidade social, ambiental e de governança (ESG).",
+      "buttonText": "Baixe o Relatório de Impacto Social"
     },
     "mensagemCeoTrad": {
       "imageAlt": "Foto do Guilherme, CEO da T2M",
       "title": "Liderança inovadora.",
       "topTitle": "Mensagem do nosso CEO",
-      "paragraph": "Este Relatório de Impacto Social e Desenvolvimento Sustentável de 2024 reflete nosso compromisso com a transparência e responsabilidade social na T2M. Ele serve como um canal fundamental para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável da ONU e aos princípios de ESG.",
+      "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável 2024 reflete o compromisso da T2M com a transparência e a responsabilidade social. Este documento é um canal essencial para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU e aos princípios ESG.",
       "buttonText": "Leia a mensagem do nosso CEO"
     },
     "sobreRelatorioTrad": {
@@ -107,142 +107,299 @@
     },
     "processoMaterialidadeTrad": {
       "title": "Processo de materialidade",
-      "paragraph": "Mantemos um relacionamento constante e transparente com todas as nossas partes interessadas, de indivíduos a organizações, para que possamos entender suas expectativas e preocupações e traduzi-las em informações de valor estratégico para auxiliar a gestão de nossos negócios."
+      "paragraph": "Mantemos um relacionamento constante e transparente com nossas partes interessadas, deindivíduos a organizações. Esse diálogo nos permite compreender expectativas e preocupações, transformando-as em informações estratégicas que orientam a gestão de nossos negócios e nossas práticas de responsabilidade sociais, ambientais e de governança."
     },
     "partesInteressadasTrad": {
       "title": "Partes Interessadas",
-      "paragraph": "A T2M valoriza a colaboração com todas as partes interessadas para promover inovação, transparência e soluções de impacto positivo. Estabelecemos canais de diálogo e iniciativas que refletem o compromisso com nossos valores e objetivos estratégicos.",
+      "paragraph": "A T2M valoriza a colaboração com suas partes interessadas para promover inovação, transparência e soluções de impacto positivo. Nossos canais de diálogo e iniciativas refletem esse compromisso com nossos valores e objetivos estratégicos. A seguir, nossas ações para cada uma das partes interessadas.",
       "icons": [
         {
           "id": 1,
           "title": "Colaboradores",
-          "paragraph": "Programas de capacitação contínua, pesquisa de clima organizacional, encontros de alinhamento estratégico e workshops para colaboradores."
+          "paragraphs": [
+            "Programas de capacitação contínua.",
+            "Pesquisa de clima organizacional.",
+            "Encontros de alinhamento estratégico e workshops."
+          ]
         },
         {
           "id": 2,
           "title": "Clientes",
-          "paragraph": "Reuniões de acompanhamento e apresentação de resultados, suporte dedicado para resolver questões e aprimorar os serviços."
+          "paragraphs": [
+            "Reuniões de acompanhamento e apresentação de resultados.",
+            "Suporte dedicado para resolver questões e aprimorar serviços."
+          ]
         },
         {
           "id": 3,
           "title": "Parceiros estratégicos",
-          "paragraph": "Acordos de colaboração para projetos de impacto, participação em eventos de mercado, palestras e conferências, além de encontros periódicos para fortalecer parcerias e alianças estratégicas."
+          "paragraphs": [
+            "Acordos de colaboração para projetos de impacto.",
+            "Participação em eventos de mercado, palestras e conferências. ",
+            "Encontros periódicos para fortalecer parcerias e alianças."
+          ]
         },
         {
           "id": 4,
           "title": "Comunidade",
-          "paragraph": "Iniciativas de responsabilidade social, participação em eventos locais, apoio a ONGs e projetos comunitários, promovendo impacto positivo e sustentável nas áreas em que atuamos com eficiência."
+          "paragraphs": [
+            "Iniciativas de responsabilidade social.",
+            "Participação em eventos locais e apoio a ONGs e projetos comunitários.",
+            "Promoção de impactos positivos e sustentáveis nas áreas em que atuamos."
+          ]
         },
         {
           "id": 5,
           "title": "Governança e compliance",
-          "paragraph": "Alinhamento estratégico com regulamentações, políticas robustas de compliance e interações contínuas com entidades governamentais e reguladoras do setor. Certificações ISO 37101 e ISO 37301, além de práticas sólidas de antissuborno e adesão a um rigoroso código de ética."
+          "paragraphs": [
+            "Alinhamento com regulamentações e políticas robustas de compliance.",
+            "Certificações ISO 37101 e ISO 37301.",
+            "Práticas sólidas de antissuborno e adesão a um rigoroso código de ética."
+          ]
         },
         {
           "id": 6,
           "title": "Diversidade e equidade",
-          "paragraph": "Promoção de um ambiente inclusivo por meio de iniciativas que valorizam a diversidade cultural, social e de gênero. Políticas para equiparar oportunidades, incentivar a equidade e garantir respeito mútuo, construindo uma cultura organizacional sustentável e plural."
+          "paragraphs": [
+            "Promoção de um ambiente inclusivo com iniciativas que valorizam a diversidade cultural, social e de gênero.",
+            "Políticas que equiparam oportunidades, incentivam a equidade e garantem respeito mútuo, fortalecendo uma cultura organizacional plural e sustentável."
+          ]
         }
       ]
     },
     "metodologiaTrad": {
       "topTitle": "Metodologia",
       "title": "Como definimos o conteúdo do relatório?",
-      "paragraph": "Anualmente, conduzimos um exercício de materialidade para compreender as perspectivas das partes interessadas sobre os temas ambientais, sociais e econômicos mais relevantes para a gestão sustentável, identificando também oportunidades para promover aprendizado e incentivar o engajamento com as melhores práticas."
+      "paragraph": "Anualmente, realizamos um exercício de materialidade para compreender as prioridades e expectativas das partes interessadas sobre temas ambientais, sociais e econômicos mais relevantes para a gestão sustentável. Esse processo também identifica oportunidades de aprendizado e incentiva o alinhamento com as melhores práticas."
     },
     "quatroCardsMetodologiaTrad": {
       "textCards": [
         {
-          "topTitle": "Revisão",
-          "title": "Reflexão sobre as ações e políticas voltadas à diversidade e inclusão do período anterior.",
-          "paragraph": "Durante a revisão, avaliamos os avanços alcançados na criação de um ambiente inclusivo e no engajamento de diferentes grupos de stakeholders. Decidimos incluir novos tópicos, como 'Diversidade em múltiplos aspectos nas políticas corporativas' e 'Aprimoramento de acessibilidade em produtos e serviços', para alinhar melhor as práticas às necessidades atuais."
+          "title": "Revisão",
+          "paragraph": "Na etapa de revisão, avaliamos as ações e políticas implementadas no período anterior, especialmente aquelas relacionadas à diversidade e inclusão. Identificamos avanços na criação de um ambiente inclusivo e no engajamento de diferentes stakeholders. Como resultado, incorporamos novos tópicos, como:",
+          "topics": [
+            "Diversidade em múltiplos aspectos nas políticas corporativas",
+            "Aprimoramento de acessibilidade em produtos e serviços"
+          ]
         },
         {
-          "topTitle": "Análise",
-          "title": "Integração de sugestões com foco em fortalecer as estratégias inclusivas, ambientais e para saúde e bem-estar.",
-          "paragraph": "Durante o processo de análise, foram destacados temas prioritários, como a importância de campanhas educativas que sensibilizem e engajem os colaboradores em práticas inclusivas, sustentáveis e que promovessem o cuidado com a saúde e o bem-estar de todos."
+          "title": "Análise",
+          "paragraph": "A análise é dedicada à integração de sugestões e insights que fortalecem nossas estratégias inclusivas, ambientais e de bem-estar. Durante essa etapa, destacamos temas prioritários, como:",
+          "topics": [
+            "Campanhas educativas para sensibilizar e engajar colaboradores em práticas sustentáveis.",
+            "Iniciativas voltadas à saúde e ao bem-estar de todos os envolvidos."
+          ]
         }
       ]
     },
     "greenwashingDesenvolvimentoSustentavelTrad": {
       "topTitle": "Greenwashing x Desenvolvimento Sustentável",
       "title": "A verdade por trás das práticas de sustentabilidade",
-      "paragraph": "Muitas empresas utilizam práticas de greenwashing, apresentando iniciativas ambientais superficiais sem mudar realmente seus processos, o que prejudica a transparência e desorienta consumidores e investidores.",
+      "paragraph": "Enquanto algumas empresas recorrem ao greenwashing — promovendo iniciativas ambientais superficiais sem mudanças significativas em seus processos —, na T2M, nosso compromisso é gerar impacto positivo real.",
       "extraButtonBottom": {
         "buttonText": "Continue lendo o artigo no nosso site oficial"
       },
       "numberCards": [
         {
           "title": "Impacto Ambiental Real",
-          "paragraph": "Empresas comprometidas com o desenvolvimento sustentável realizam mudanças reais, como a redução das emissões de carbono e o uso responsável dos recursos naturais, para causar impacto ambiental positivo."
+          "paragraph": "Empresas verdadeiramente comprometidas com o desenvolvimento sustentável implementam mudanças concretas, como a redução de emissões de carbono e o uso responsável de recursos naturais."
         },
         {
           "title": "Transparência Corporativa",
-          "paragraph": "Para evitar greenwashing, é crucial que as empresas publiquem relatórios claros sobre suas ações e conquistas sustentáveis, com dados verificáveis e metas concretas."
+          "paragraph": "Para evitar greenwashing, a transparência é fundamental. Relatórios claros, com dados verificáveis e metas concretas, são essenciais para construir confiança."
         },
         {
           "title": "Consumo Consciente",
-          "paragraph": "Consumidores conscientes podem identificar práticas de greenwashing ao buscar marcas com compromissos sustentáveis comprovados, como o uso de materiais recicláveis e políticas de redução de desperdício."
+          "paragraph": "Consumidores conscientes devem buscar marcas com compromissos sustentáveis comprovados, como o uso de materiais recicláveis e políticas de redução de desperdício."
         },
         {
           "title": "Certificações e Auditorias",
-          "paragraph": "A obtenção de certificações reconhecidas e auditorias externas ajuda a validar o compromisso das empresas com a sustentabilidade, oferecendo confiança aos consumidores e investidores."
+          "paragraph": "Certificações reconhecidas e auditorias externas validam as ações sustentáveis das empresas, garantindo credibilidade para consumidores e investidores."
         },
         {
           "title": "Economia Circular",
-          "paragraph": "A economia circular é uma alternativa ao modelo tradicional de 'descarte após o uso', incentivando as empresas a reciclar, reutilizar e reduzir os resíduos, promovendo uma abordagem sustentável e regenerativa."
+          "paragraph": "A transição para uma economia circular prioriza a reciclagem, reutilização e redução de resíduos, substituindo o modelo de descarte tradicional por uma abordagem regenerativa."
         },
         {
           "title": "O Papel da Governança",
-          "paragraph": "A governança desempenha um papel fundamental no combate ao greenwashing, pois orienta as decisões empresariais para práticas responsáveis e alinhadas aos ODS, garantindo integridade e responsabilidade."
+          "paragraph": "Uma governança eficaz orienta decisões empresariais alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS), promovendo práticas éticas e responsáveis."
         }
       ]
     },
     "sustentabilidadeTrad": {
       "title": "Sustentabilidade",
-      "paragraph": "Estamos comprometidos em contribuir para o desenvolvimento sustentável por meio dos nossos negócios e operações, gerando valor de longo prazo para nossos clientes, funcionários, fornecedores, acionistas e a sociedade."
+      "paragraph": "Estamos comprometidos em contribuir para o desenvolvimento sustentável por meio de nossos negócios e operações, gerando valor de longo prazo para nossos clientes, funcionários, fornecedores, acionistas e a sociedade."
+    },
+    "tresDimensoesTrad": {
+      "numberCards": [
+        {
+          "title": "Sustentabilidade Ambiental",
+          "paragraph": "Melhoria da saúde e do bem-estar humano, proteção do capital natural (terra, ar, água, minerais etc.) e dos ecossistemas globais. Isso inclui questões relacionadas à energia e ao clima, impactos e externalidades na produção de bens e na prestação de serviços, além de infraestruturas &quot;verdes&quot; e a economia circular."
+        },
+        {
+          "title": "Responsabilidade Social",
+          "paragraph": "Preservação do capital social, com a criação de serviços que apoiem comunidades, culturas e a globalização, por meio de investimentos em saúde, saneamento, educação e acesso a serviços essenciais, conforme os Objetivos de Desenvolvimento Sustentável (ODS) da ONU."
+        },
+        {
+          "title": "Governança Consciente",
+          "paragraph": "As organizações devem agregar valor aos clientes, investir em seus funcionários, atuar de forma ética com fornecedores, apoiar comunidades e proteger o meio ambiente, adotando práticas sustentáveis para gerar valor a longo prazo."
+        }
+      ]
+    },
+    "sustentabilidadeAmbientalTrad": {
+      "imageAlt": "ícone da sustentabilidade ambiental",
+      "title": "Sustentabilidade Ambiental",
+      "paragraph": "A sustentabilidade ambiental refere-se à preservação dos recursos naturais e à redução dos impactos negativos causados pelas atividades humanas no meio ambiente.",
+      "paragraphsWithTopics": [
+        {
+          "subTitle": "Objetivos:",
+          "topics": [
+            "Promover a saúde e o bem-estar humano, tanto no presente quanto no futuro.",
+            "Proteger o capital natural (terra, ar, água, minerais, entre outros) e preservar ecossistemas globais.",
+            "Atuar em questões relacionadas à energia e clima, desenvolvendo infraestruturas &quot;verdes&quot; e adotando uma economia circular."
+          ]
+        },
+        {
+          "subTitle": "Principais Ações:",
+          "topics": [
+            "Conservação da biodiversidade: Assegurar que ecossistemas e espécies não sejam degradados, promovendo a proteção de habitats naturais e a recuperação de áreas afetadas.",
+            "Gestão responsável dos recursos naturais: Utilizar racionalmente recursos como água, solo e energia, reduzindo desperdícios e evitando o esgotamento de recursos essenciais.",
+            "Redução da pegada ecológica: Implementar práticas que reduzam emissões de gases de efeito estufa (como o CO₂), o consumo de fontes de energia não renováveis e a geração de resíduos.",
+            "Uso de tecnologias verdes e renováveis: Adotar fontes de energia renováveis (solar, eólica, hídrica) e práticas industriais mais limpas e eficientes, contribuindo para a preservação ambiental e eficiência produtiva."
+          ]
+        }
+      ]
+    },
+    "responsabilidadeSocialTrad": {
+      "imageAlt": "ícone da sustentabilidade social",
+      "title": "Responsabilidade Social",
+      "paragraph": "A responsabilidade social vai além de ações isoladas, estando diretamente ligada à preservação dos recursos sociais e ao bem-estar coletivo. Ela garante que as pessoas tenham uma vida digna e igualdade de oportunidades.",
+      "paragraphsWithTopics": [
+        {
+          "subTitle": "Abrangência:",
+          "topics": [
+            "Envolve comunidades, culturas e os impactos da globalização.",
+            "Foco no desenvolvimento humano, com investimentos em saúde, saneamento, educação, acesso a serviços, além de promover conhecimento, nutrição, lazer e cultura."
+          ]
+        },
+        {
+          "subTitle": "Justiça Social:",
+          "paragraphs": [
+            "A justiça social é essencial para reduzir desigualdades econômicas e sociais, garantindo acesso universal a direitos básicos como saúde, educação, segurança e moradia. O compromisso com a igualdade visa construir uma sociedade mais justa e equitativa."
+          ]
+        },
+        {
+          "subTitle": "Direitos Humanos:",
+          "paragraphs": [
+            "A responsabilidade social fortalece os princípios da Declaração Universal dos Direitos Humanos, assegurando que todos possam viver com dignidade, liberdade, saúde e segurança."
+          ]
+        },
+        {
+          "subTitle": "Qualidade de Vida:",
+          "paragraphs": [
+            "Melhorar o Índice de Desenvolvimento Humano (IDH) por meio de ações em educação, saúde, saneamento e programas sociais, promovendo também turismo, esporte e lazer."
+          ]
+        },
+        {
+          "subTitle": "Participação Social:",
+          "paragraphs": [
+            "Envolver comunidades nas decisões que afetam suas vidas é essencial. O empoderamento social, por meio do engajamento político e econômico, fortalece a cidadania e garante que as vozes sejam ouvidas e respeitadas."
+          ]
+        },
+        {
+          "subTitle": "Governança Consciente",
+          "paragraphs": [
+            "A preservação dos recursos econômicos e o uso eficiente de ativos e compromissos orçamentários visam manter níveis elevados e estáveis de crescimento econômico ao longo do tempo. No entanto, a qualidade do crescimento é tão importante quanto sua quantidade."
+          ]
+        },
+        {
+          "subTitle": "Propósito das Organizações:",
+          "paragraphs": [
+            "O propósito organizacional deve evoluir conforme mudanças no ambiente socioeconômico e nas condições do ecossistema, garantindo relevância para todas as partes interessadas."
+          ]
+        },
+        {
+          "subTitle": "Práticas Sustentáveis:",
+          "topics": [
+            "Crescimento sustentável: Gerar valor e lucros de forma responsável, sem prejudicar recursos naturais ou sociais.",
+            "Investimentos ESG: Incorporar impactos ambientais e sociais nas práticas financeiras, alinhando-se aos princípios ESG."
+          ]
+        },
+        {
+          "subTitle": "Gestão Eficiente:",
+          "paragraphs": [
+            "Maximizar a rentabilidade a longo prazo, utilizando recursos de forma prudente e responsável, sem comprometer o bem-estar das gerações futuras ou os ecossistemas."
+          ]
+        }
+      ]
+    },
+    "governancaConscienteTrad": {
+      "imageAlt": "Governança Consciente",
+      "title": "Governança Consciente",
+      "paragraph": "A preservação dos recursos econômicos e o uso eficiente de ativos e compromissos orçamentários visam manter níveis elevados e estáveis de crescimento econômico ao longo do tempo. No entanto, a qualidade do crescimento é tão importante quanto sua quantidade.",
+      "paragraphsWithTopics": [
+        {
+          "subTitle": "Propósito das Organizações:",
+          "paragraphs": [
+            "O propósito organizacional deve evoluir conforme mudanças no ambiente socioeconômico e nas condições do ecossistema, garantindo relevância para todas as partes interessadas."
+          ]
+        },
+        {
+          "subTitle": "Práticas Sustentáveis:",
+          "topics": [
+            "Crescimento sustentável: Gerar valor e lucros de forma responsável, sem prejudicar recursos naturais ou sociais.",
+            "Investimentos ESG: Incorporar impactos ambientais e sociais nas práticas financeiras, alinhando-se aos princípios ESG."
+          ]
+        },
+        {
+          "subTitle": "Gestão Eficiente:",
+          "paragraphs": [
+            "Maximizar a rentabilidade a longo prazo, utilizando recursos de forma prudente e responsável, sem comprometer o bem-estar das gerações futuras ou os ecossistemas."
+          ]
+        }
+      ]
     },
     "movimentoRegenerativoTrad": {
       "title": "Movimento Regenerativo Tempo de Plantar",
       "paragraphs": [
-        "O Movimento Tempo de Plantar Petrópolis em parceria com o Programa Floresta Viva, CR Agrícola Ambiental, Viveiro Muda Tudo e com a Secretaria do Meio Ambiente e Desenvolvimento Sustentável de Petrópolis vem promovendo Reflorestamento com Educação Ambiental e Desenvolvimento Social para a conservação e preservação ambiental para melhoria da qualidade de vida em toda região Serrana."
+        "O Movimento Tempo de Plantar Petrópolis, em parceria com o Programa Floresta Viva, CR Agrícola Ambiental, Viveiro Muda Tudo e a Secretaria do Meio Ambiente e Desenvolvimento Sustentável de Petrópolis, promove reflorestamento aliado à educação ambiental e desenvolvimento social, visando a conservação e preservação ambiental e a melhoria da qualidade de vida na região Serrana."
       ],
       "numberCards": [
         {
-          "title": "Movimento autogestionário",
-          "paragraph": "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa das pessoas no plantio de árvores, criando uma conexão direta com a natureza e promovendo uma maior conscientização ambiental."
+          "title": "Movimento Autogestionário",
+          "paragraph": "Anualmente, no período das chuvas (outubro a março), o movimento estimula a participação ativa da comunidade no plantio de árvores. Essa iniciativa cria uma conexão direta com a natureza, promovendo maior conscientização ambiental."
         },
         {
-          "title": "Em dezembro de 2024",
-          "paragraph": "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Este marco faz parte de um esforço contínuo para promover a restauração da vegetação nativa e a recuperação de áreas degradadas."
+          "title": "Dezembro de 2024",
+          "paragraph": "Em dezembro de 2024, a T2M plantou 100 mudas no arboreto do Vale das Videiras. Esse marco faz parte de um esforço contínuo para restaurar a vegetação nativa e recuperar áreas degradadas."
         },
         {
-          "title": "A expectativa para 2025",
-          "paragraph": "Para 2025, a meta é dobrar o plantio de árvores em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e de iniciativas locais."
+          "title": "Expectativas para 2025",
+          "paragraph": "Para 2025, a meta é dobrar o número de árvores plantadas em toda a cidade, com o apoio de todos os colaboradores. O objetivo é restaurar bosques nativos e espécies autóctones, com a participação ativa da comunidade e iniciativas locais."
         }
       ]
     },
     "nossasCampanhasTrad": {
       "title": "Nossas campanhas",
-      "paragraph": "Além de oferecer testes automatizados de excelência, a T2M se orgulha em criar e produzir suas próprias campanhas",
+      "paragraph": "Além de oferecer testes automatizados de excelência, a T2M se orgulha de criar e promover campanhas próprias, alinhadas a seus valores e objetivos sociais.",
       "numberCards": [
         {
           "title": "Gesto Solidário",
-          "paragraph": "Desde 2023, realizamos campanhas solidárias, como arrecadação de alimentos, roupas de frio, produtos de higiene e tampinhas plásticas trocadas por cadeiras de rodas, fraldas e bengalas."
+          "paragraph": "Desde 2023, realizamos campanhas solidárias para arrecadação de alimentos, roupas de frio, produtos de higiene e tampinhas plásticas, que são trocadas por cadeiras de rodas, fraldas e bengalas."
         },
         {
           "title": "Dia das Boas Ações",
-          "paragraph": "O DBA - Cuidando de Quem Cuida é um evento para mães e cuidadores, oferecendo cuidados estéticos, palestras e dicas de bem-estar, integrando o movimento global Dia das Boas Ações (DBA)."
+          "paragraph": "O evento Cuidando de Quem Cuida, parte do movimento global Dia das Boas Ações (DBA), oferece cuidados estéticos, palestras e dicas de bem-estar para mães e cuidadores."
         },
         {
           "title": "Bioconecta",
-          "paragraph": "A Bioconecta é uma feira de empregabilidade que oferece oportunidades de primeiro emprego, com foco em mães solteiras e pessoas com deficiência, promovendo inclusão e igualdade no mercado de trabalho."
+          "paragraph": "A Bioconecta é uma feira de empregabilidade que cria oportunidades de primeiro emprego, com foco em mães solteiras e pessoas com deficiência, promovendo inclusão e igualdade no mercado de trabalho."
         }
       ]
     },
     "codigoCondutaTrad": {
       "topTitle": "Etíca e Conduta",
-      "title": "Acesse aqui nosso código de Compliance, Ética e Conduta",
+      "title": "Acesse aqui nosso Código de Compliance, Ética e Conduta.",
       "linkText": "Acessar",
       "imageAlt": "Código de ética, complience e conduta."
     }
@@ -258,7 +415,7 @@
       "oportunidadesInclusivasTrad": {
         "topTitle": "Estratégia",
         "title": "Nosso compromisso",
-        "paragraph": "Nosso compromisso com o ESG é parte central de nossa estratégia, contribuindo para a redução dos impactos ambientais, o fortalecimento de práticas sociais inclusivas e a adoção de uma governança corporativa ética e responsável. Nosso esforço contínuo para integrar os ODS às operações fortalece nossa atuação sustentável, gerando valor para todas as partes interessadas.",
+        "paragraph": "O ESG está no centro de nossa estratégia, contribuindo para a redução de impactos ambientais, o fortalecimento de práticas sociais inclusivas e a adoção de uma governança corporativa ética e responsável. Nosso esforço contínuo para integrar os ODS às operações fortalece nossa atuação sustentável, gerando valor para todas as partes interessadas.",
         "buttonText": "Quero fazer parte",
         "imageAlt": "Escritório da T2M"
       },
@@ -269,7 +426,7 @@
       },
       "gestaoResiduosTexto1Trad": {
         "imageAlt": "Escritório da T2M",
-        "paragraph": "A T2M adota a sustentabilidade por meio de ações como o plantio de árvores, o consumo quase zero de materiais descartáveis e iniciativas para reduzir nossa emissão de carbono. Essas práticas fortalecem nosso papel na preservação do meio ambiente e na construção de um futuro mais sustentável para todos."
+        "paragraph": "A T2M adota práticas sustentáveis, como o plantio de árvores, a redução quase total do uso de materiais descartáveis e iniciativas para minimizar as emissões de carbono. Essas ações consolidam nosso papel na preservação do meio ambiente e na construção de um futuro mais sustentável para todos."
       },
       "contratosAssinadosTrad": {
         "topTitle": "Ambiental",
@@ -277,29 +434,39 @@
         "iconAlt": "Ícone referente ao tópico ambiental"
       },
       "contratosAssinadosTexto1Trad": {
-        "paragraph": "Como parte de nossa dedicação à sustentabilidade, a T2M adotou uma política de digitalização de documentos e assinatura virtual de contratos, reduzindo significativamente a necessidade de impressão em papel. A transição para contratos digitais não só agiliza nossos processos como também preserva recursos naturais, diminuindo o consumo de papel, tinta e energia. Esta prática contribui diretamente para a redução do desmatamento e o uso sustentável dos recursos naturais. Ao longo do ano, essa prática resultou em uma expressiva redução de resíduos de papel, reforçando o envolvimento da T2M com o meio ambiente e com uma gestão moderna e sustentável.",
+        "paragraph": "Como parte de nosso compromisso com a sustentabilidade, a T2M implementou uma política de digitalização de documentos e assinatura virtual de contratos. Essa transição reduziu, significativamente, a necessidade de impressão em papel, agilizando processos e preservando recursos naturais.",
+        "topics": [
+          "Impactos positivos: Redução do consumo de papel, tinta e energia, contribuindo diretamente para a diminuição do desmatamento.",
+          "Resultados: Ao longo do ano, essa prática levou a uma expressiva redução de resíduos de papel, reforçando nosso compromisso com uma gestão moderna e sustentável."
+        ],
         "imageAlt": "Imagem do escritório da T2M"
       },
+
       "utilizacaoNuvemTrad": {
         "topTitle": "Ambiental",
         "title": "Utilização de Nuvem, reduzindo o consumo de hardware",
         "iconAlt": "Ícone referente ao tópico ambiental"
       },
-      "utilizacaoNuvemTexto2Trad": {
-        "paragraphs": [
-          "Desde a migração para o Microsoft Cloud, nossa empresa alcançou uma significativa redução nas emissões de carbono, reforçando o compromisso com práticas sustentáveis. Com base em dados estimados, evitamos a emissão de 2,192 milhões toneladas de carbono, o que representa uma redução de 99,72% das emissões potenciais, graças à utilização de ferramentas como o SharePoint e o Exchange Online.",
-          "Nesse período, as emissões efetivas somaram apenas 0,007 toneladas, em comparação às 2,468 toneladas estimadas em um cenário tradicional. Essa transição para uma infraestrutura digital mais eficiente demonstra o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando a estratégia tecnológica às metas ESG."
-        ],
-        "imageAlt": "Imagem do escritório da T2M"
-      },
       "utilizacaoNuvemTexto1Trad": {
         "paragraphs": [
-          "Na T2M, o uso das soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, é essencial para reduzir o consumo de energia e a necessidade de novos hardwares físicos.",
-          "Essas ferramentas diminuem a demanda por servidores físicos, que consomem muita energia e exigem manutenção. Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável.",
-          "Além disso, a nuvem oferece escalabilidade, eficiência, segurança e acessibilidade de dados, refletindo o compromisso da T2M com práticas tecnológicas sustentáveis e inovadoras."
+          "A T2M utiliza soluções em nuvem da Microsoft, como OneDrive, Azure e Teams, para reduzir o consumo de energia e a necessidade de novos hardwares físicos."
+        ],
+        "topics": [
+          "Essas ferramentas diminuem a dependência de servidores físicos, que consomem grandes quantidades de energia e requerem manutenção constante.",
+          "Com o objetivo da Microsoft de usar energia 100% renovável em seus datacenters até 2025, a T2M contribui para um futuro mais sustentável."
         ],
         "imageAlt": "Escritório da T2M"
       },
+      "utilizacaoNuvemTexto2Trad": {
+        "title": "Resultados da migração para o Microsoft Cloud:",
+        "topics": [
+          "Evitamos a emissão de 2,192 milhões de toneladas de carbono, representando uma redução de 99,72% das emissões potenciais.",
+          "Emissões efetivas somaram apenas 0,007 toneladas, comparadas a 2,468 toneladas em um cenário tradicional."
+        ],
+        "paragraph": "Esses resultados demonstram o impacto positivo das soluções em nuvem na redução da pegada de carbono, alinhando nossa estratégia tecnológica às metas ESG.",
+        "imageAlt": "Imagem do escritório da T2M"
+      },
+
       "consumoConscienteTrad": {
         "topTitle": "Ambiental",
         "title": "Consumo consciente de Água",

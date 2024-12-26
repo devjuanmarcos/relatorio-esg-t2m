@@ -10,6 +10,12 @@ import Image from "next/image";
 import { useWindowSize } from "@/context/WindowSizeContext";
 import { IconType } from "react-icons";
 
+interface paragraphsWithTopicsInterface {
+  subTitle?: string;
+  topics?: string[];
+  paragraphs?: string[];
+}
+
 export interface ImageWithCardTextBannerInterface {
   imageUrl?: string;
   icon?: IconType;
@@ -29,6 +35,7 @@ export interface ImageWithCardTextBannerInterface {
   pdfText1?: string;
   pdfLink2?: string;
   pdfText2?: string;
+  paragraphsWithTopics?: paragraphsWithTopicsInterface[];
 }
 
 export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface> = ({
@@ -50,6 +57,7 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
   pdfLink2,
   pdfText1,
   pdfText2,
+  paragraphsWithTopics,
 }) => {
   const isMounted = useIsMounted();
   const { width } = useWindowSize();
@@ -93,6 +101,27 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
               <TextVariantes key={index} variant="paragraph_01">
                 {text}
               </TextVariantes>
+            ))}
+          {paragraphsWithTopics &&
+            paragraphsWithTopics.map((section, index) => (
+              <div key={index} className="flex flex-col gap-4 mt-2">
+                {section.subTitle && <TextVariantes variant="title_card">{section.subTitle}</TextVariantes>}
+                {section.paragraphs &&
+                  section.paragraphs.map((text, i) => (
+                    <TextVariantes key={i} variant="paragraph_01">
+                      {text}
+                    </TextVariantes>
+                  ))}
+                {section.topics && (
+                  <ul className="list-disc ml-6 ">
+                    {section.topics.map((topic, i) => (
+                      <li key={i} className="mb-2">
+                        <TextVariantes variant="paragraph_01">{topic}</TextVariantes>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))}
         </div>
         {buttonLink && buttonText && (
