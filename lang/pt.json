@@ -996,126 +996,100 @@
         {
           "id": 1,
           "title": "Qualidade de Software",
-          "paragraph": "Nossas soluções em Qualidade de Software otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação dos nossos clientes."
+          "paragraph": "Nossas soluções otimizam todas as etapas do desenvolvimento, garantindo eficiência, confiabilidade e a satisfação de nossos clientes."
         },
         {
           "id": 2,
           "title": "Segurança de Dados",
-          "paragraph": "Nosso time especializado supera os desafios de Segurança da Informação, garantindo a proteção e confidencialidade de dados sensíveis."
+          "paragraph": "Nosso time especializado supera os desafios de segurança da informação, assegurando a proteção e confidencialidade de dados sensíveis."
         },
         {
           "id": 3,
           "title": "Acessibilidade Digital",
-          "paragraph": "Com nossa expertise em acessibilidade digital, garantimos que todas as pessoas possam acessar e interagir com seus produtos digitais de forma inclusiva."
+          "paragraph": "Com expertise em acessibilidade digital, garantimos que todas as pessoas possam acessar e interagir com produtos digitais de forma inclusiva."
         },
         {
           "id": 4,
           "title": "Business Agility",
-          "paragraph": "Nosso grupo de Business Agility foca em ajudar empresas a se adaptarem rapidamente às mudanças de mercado e otimizar sua performance."
+          "paragraph": "Nosso grupo de Business Agility ajuda empresas a se adaptarem rapidamente às mudanças de mercado e a otimizarem sua performance."
         }
       ]
     },
     "compromissoComDiversidadeTrad": {
-      "title": "Compromisso com a diversidade e inclusão",
-      "paragraph": "Recentemente fechamos uma parceria com a BIOMOB, voltada para projetos sociais e serviços ligados à diversidade e inclusão, para aprimorar o nosso comportamento em relação a estes temas e à acessibilidade de forma geral."
+      "title": "Compromisso com a Diversidade e Inclusão",
+      "paragraph": "Firmamos uma parceria com a BIOMOB, voltada para projetos sociais e serviços ligados à diversidade e inclusão, a fim de aprimorar nossas práticas relacionadas a esses temas e à acessibilidade."
     },
     "ambienteExtremoValorTrad": {
-      "title": "Um ambiente de extremo valor",
-      "paragraph": "Nosso objetivo é criar um ambiente onde todos se sintam valorizados, independente de sua origem, gênero, etnia, ou qualquer outra característica pessoal.",
+      "title": "Um Ambiente voltado para a Valorização",
+      "paragraph": "Nosso objetivo é criar um ambiente onde todos se sintam valorizados, independentemente de sua origem, gênero, etnia ou qualquer outra característica pessoal.",
       "images": [
         {
           "id": 1,
           "title": "Gênero",
-          "paragraph": "Garantimos igualdade de oportunidades, reconhecendo a força de uma equipe equilibrada em gênero.",
+          "paragraph": "Promovemos igualdade de oportunidades, reconhecendo a força de uma equipe equilibrada.",
           "imageAlt": "ícone de gênero"
         },
         {
           "id": 2,
           "title": "Raça",
-          "paragraph": "Celebramos todas as etnias e trabalhamos para que nossa equipe seja um reflexo da pluralidade de nossa sociedade.",
+          "paragraph": "Celebramos todas as etnias e trabalhamos para que nossa equipe reflita a pluralidade da sociedade.",
           "imageAlt": "ícone de raça"
         },
         {
           "id": 3,
           "title": "Idade",
-          "paragraph": "Respeitamos a sabedoria dos mais experientes e a energia dos mais jovens, entendendo que todos têm contribuições valiosas.",
+          "paragraph": "Respeitamos a sabedoria dos mais experientes e a energia dos mais jovens, reconhecendo contribuições valiosas de todos.",
           "imageAlt": "ícone de idade"
         },
         {
           "id": 5,
           "title": "Diversidades Funcionais",
-          "paragraph": "Oferecemos um ambiente de trabalho acessível e inclusivo, reconhecendo as habilidades e talentos de pessoas com deficiência.",
+          "paragraph": "Criamos um ambiente acessível e inclusivo, valorizando as habilidades e talentos de pessoas com deficiência.",
           "imageAlt": "ícone de diversidades funcionais"
         },
         {
           "id": 6,
           "title": "Acessibilidade",
-          "paragraph": "Tanto os nossos escritórios, quanto o nosso site são acessíveis para pessoas com limitações visuais, auditivas, físicas e cognitivas.",
+          "paragraph": "Nossos escritórios e nosso site são acessíveis para pessoas com limitações visuais, auditivas, físicas e cognitivas.",
           "imageAlt": "ícone de acessibilidade"
         }
       ]
     },
-    "graficosDistribuicaoTrad": {
-      "firstImage": {
-        "title": "Diversidade de Gênero na Nossa Equipe",
-        "imageAlt": "Gráfico da diversidade de Gênero na Nossa Equipe"
-      },
-      "secondImage": {
-        "title": "Diversidade de Gênero na Nossa Equipe",
-        "imageAlt": "Gráfico da distribuição por faixa etária"
-      }
-    },
-    "propostaDeValorTrad": {
-      "title": "Nossa proposta de valor para o funcionário",
-      "paragraph": "Na nossa empresa, acreditamos que o sucesso está diretamente ligado ao respeito, ética e inclusão em todos os aspectos do ambiente de trabalho."
-    },
-    "culturaRespeitoTrad": {
-      "title": "Cultura de Respeito, Ética e Inclusão",
-      "paragraph": "Promovemos uma cultura de transparência e equidade, onde todos os colaboradores têm as mesmas oportunidades de crescimento e reconhecimento. Nosso compromisso com a diversidade e inclusão é refletido em práticas que garantem um espaço seguro e respeitoso, onde todos podem se expressar e contribuir com seu potencial máximo.",
-      "imageAlt": "Mulher com casaco vermelho na natureza"
-    },
-    "beneficiosValorizamTrad": {
-      "title": "Acessibilidade e Inclusão",
-      "paragraph": "Além disso, oferecemos uma gama de benefícios que visam o bem-estar e qualidade de vida dos nossos colaboradores, como assistência médica e odontológica, auxílios diversos (home-office, alimentação, refeição e transporte), seguro de vida, TotalPass e plano de carreira.",
-      "imageAlt": "Mulher usando óculos de realidade virtual"
-    },
     "direitosHumanosTrad": {
       "topTitle": "Cultivar",
-      "title": "Direitos humanos e práticas trabalhistas justas",
-      "paragraph": "Estamos comprometidos em criar ambientes de trabalho inclusivos, onde todos têm as mesmas oportunidades de alcançar seu pleno potencial. Acreditamos que a promoção dos direitos humanos e a construção de espaços respeitosos são essenciais para a preservação da integridade de nossa marca e para o nosso sucesso contínuo."
+      "title": "Direitos Humanos e Práticas Trabalhistas Justas",
+      "paragraph": "Estamos comprometidos em criar ambientes inclusivos, onde todos tenham as mesmas oportunidades de alcançar seu pleno potencial. A promoção dos direitos humanos e a construção de espaços respeitosos são essenciais para preservar nossa integridade e garantir nosso sucesso contínuo."
     },
     "compromissoDireitosHumanosTrad": {
       "title": "Compromisso com os Direitos Humanos e Normas Internacionais",
-      "paragraph": "Compromisso firme de respeito aos direitos humanos, alinhando nossas práticas aos princípios estabelecidos pela Declaração Universal dos Direitos Humanos e normas reconhecidas internacionalmente. Nossos valores estão fundamentados nos Princípios Orientadores das Nações Unidas sobre Empresas e Direitos Humanos, assim como na Carta Internacional dos Direitos Humanos e na Declaração da Organização Internacional do Trabalho (OIT) sobre Direitos Fundamentais no Trabalho. Essas diretrizes são incorporadas em nossas Normas de Conduta nos Negócios, que se aplicam igualmente a todos os colaboradores, fornecedores e parceiros da T2M, garantindo um ambiente de trabalho inclusivo, respeitoso e seguro."
-    },
-    "garantiaAmbienteTrad": {
-      "title": "Garantia de um Ambiente de Trabalho Seguro e Respeitoso",
-      "paragraph": "Compromisso firme de respeito aos direitos humanos, alinhando nossas práticas aos princípios estabelecidos pela Declaração Universal dos Direitos Humanos e normas reconhecidas internacionalmente. Nossos valores estão fundamentados nos Princípios Orientadores das Nações Unidas sobre Empresas e Direitos Humanos, assim como na Carta Internacional dos Direitos Humanos e na Declaração da Organização Internacional do Trabalho (OIT) sobre Direitos Fundamentais no Trabalho. Essas diretrizes são incorporadas em nossas Normas de Conduta nos Negócios, que se aplicam igualmente a todos os colaboradores, fornecedores e parceiros da T2M, garantindo um ambiente de trabalho inclusivo, respeitoso e seguro."
+      "paragraph": "Adotamos práticas alinhadas à Declaração Universal dos Direitos Humanos e a normas internacionais, como:",
+      "topics": [
+        "Princípios Orientadores das Nações Unidas sobre Empresas e Direitos Humanos.",
+        "Declaração da Organização Internacional do Trabalho (OIT) sobre Direitos Fundamentais no Trabalho."
+      ],
+      "lastParagraph": "Esses valores são incorporados às nossas Normas de Conduta nos Negócios, aplicáveis a colaboradores, fornecedores e parceiros."
     },
     "diversidadeInclusaoTrad": {
       "topTitle": "Nosso posicionamento",
-      "title": "Diversidade e inclusão",
+      "title": "Diversidade e Inclusão",
       "paragraph": "Na T2M, buscamos entregar soluções tecnológicas de alta qualidade que impulsionem o sucesso dos nossos clientes. Oferecemos serviços especializados em qualidade de software, privacidade e segurança, acessibilidade digital e business agility, sempre com foco na entrega de resultados concretos. Selecionamos metodologias e tecnologias de ponta para transformar desafios em oportunidades, garantindo que nossos clientes possam confiar em nossos processos e obter resultados no tempo certo."
     },
     "diversidadeGeneroTrad": {
       "title": "Diversidade de Gênero",
-      "paragraph": "Na T2M, acreditamos que a igualdade de gênero é um fator crucial para o sucesso e a inovação. Trabalhamos para criar um ambiente em que homens, mulheres e pessoas não binárias tenham suas vozes ouvidas e seus talentos plenamente reconhecidos. Implementamos iniciativas voltadas à equidade, oferecendo as mesmas oportunidades de desenvolvimento e crescimento para todos, independentemente de seu gênero. Para nós, um ambiente equilibrado e justo é a base para soluções criativas e para a construção de um futuro mais inclusivo."
+      "paragraph": "Acreditamos que a igualdade de gênero é fundamental para o sucesso e a inovação. Oferecemos as mesmas oportunidades de crescimento para todos, independentemente de gênero, criando um ambiente equilibrado e justo."
     },
     "diversidadeSexualTrad": {
       "title": "Diversidade Sexual",
-      "paragraph": "O respeito à diversidade sexual é um dos alicerces da nossa cultura na T2M. Nos orgulhamos de promover um ambiente acolhedor e seguro para que colaboradores LGBTQIA+ possam expressar sua identidade com autenticidade. Mais do que combater o preconceito, celebramos a individualidade e incentivamos práticas que transformam a inclusão em um pilar estratégico. Acreditamos que, ao valorizar diferentes formas de amar e ser, fortalecemos nossa capacidade de colaborar e inovar como equipe."
+      "paragraph": "Promovemos um ambiente acolhedor para colaboradores LGBTQIA+, celebrando a individualidade e transformando a inclusão em um pilar estratégico."
     },
     "diversidadeCulturalTrad": {
-      "title": "Diversidade Cultural",
-      "paragraph": "Na T2M, abraçamos a riqueza cultural e histórica que a diversidade racial traz para a nossa empresa. Encaramos a pluralidade de raças e etnias como uma oportunidade de aprendizado e evolução. Com políticas firmes contra o racismo e ações proativas para garantir igualdade de oportunidades, trabalhamos para construir um ambiente onde cada indivíduo seja valorizado pelo que é, contribuindo com perspectivas únicas que nos tornam mais fortes como organização."
+      "title": "Diversidade Cultural e Racial",
+      "paragraph": "Valorizamos a pluralidade de raças e etnias como fonte de aprendizado e evolução, garantindo igualdade de oportunidades e combatendo qualquer forma de racismo."
     },
-    "diversidadeRacialTrad": {
-      "title": "Diversidade Racial",
-      "paragraph": "A diversidade racial na T2M é vista como uma riqueza que fortalece nosso ambiente de trabalho e amplia nossas perspectivas. Estamos comprometidos com a promoção de um ambiente que respeita, acolhe e valoriza todas as raças e etnias, reconhecendo a importância de diferentes experiências de vida para o desenvolvimento de soluções criativas e eficazes. Temos políticas claras contra qualquer forma de racismo e trabalhamos para garantir que todos os colaboradores, independentemente de sua origem racial, tenham as mesmas oportunidades de crescimento, sendo respeitados e valorizados por sua contribuição única para a empresa."
-    },
+
     "diversidadeDeficienciaTrad": {
       "title": "Diversidade para Pessoas com Deficiência",
-      "paragraph": "A inclusão de pessoas com deficiência é mais do que uma prioridade para a T2M; é um compromisso com a equidade e a acessibilidade. Adaptamos nossos espaços e processos para garantir que todos os nossos colaboradores possam atuar com autonomia e dignidade. Além disso, promovemos a conscientização interna para criar um ambiente verdadeiramente inclusivo, onde as habilidades de cada indivíduo são valorizadas e onde barreiras se transformam em pontes para o sucesso compartilhado."
+      "paragraph": "Adaptamos nossos espaços e processos para assegurar autonomia e dignidade a todos os colaboradores, transformando barreiras em pontes para o sucesso compartilhado."
     },
     "saudeBemEstarTrad": {
       "topTitle": "Pilar",

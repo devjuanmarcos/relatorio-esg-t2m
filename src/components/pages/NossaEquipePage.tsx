@@ -27,14 +27,6 @@ const IconsCardsBanner = dynamic(() =>
   import("@/components/banners/IconsCardsBanner").then((mod) => mod.IconsCardsBanner)
 );
 
-const Simple2TitleImageBanner = dynamic(() =>
-  import("@/components/banners/Simple2TitleImageBanner").then((mod) => mod.Simple2TitleImageBanner)
-);
-
-const ImageWithCardTextBanner = dynamic(() =>
-  import("@/components/banners/ImageWithCardTextBanner").then((mod) => mod.ImageWithCardTextBanner)
-);
-
 const SimpleTextBanner = dynamic(() =>
   import("@/components/banners/SimpleTextBanner").then((mod) => mod.SimpleTextBanner)
 );
@@ -46,18 +38,12 @@ const NossaEquipePage: React.FC = () => {
   const divisaoPorCategoriaTrad = useTranslations("NossaEquipePage.divisaoPorCategoriaTrad");
   const compromissoComDiversidadeTrad = useTranslations("NossaEquipePage.compromissoComDiversidadeTrad");
   const ambienteExtremoValorTrad = useTranslations("NossaEquipePage.ambienteExtremoValorTrad");
-  const graficosDistribuicaoTrad = useTranslations("NossaEquipePage.graficosDistribuicaoTrad");
-  const propostaDeValorTrad = useTranslations("NossaEquipePage.propostaDeValorTrad");
-  const culturaRespeitoTrad = useTranslations("NossaEquipePage.culturaRespeitoTrad");
-  const beneficiosValorizamTrad = useTranslations("NossaEquipePage.beneficiosValorizamTrad");
   const direitosHumanosTrad = useTranslations("NossaEquipePage.direitosHumanosTrad");
   const compromissoDireitosHumanosTrad = useTranslations("NossaEquipePage.compromissoDireitosHumanosTrad");
-  // const garantiaAmbienteTrad = useTranslations("NossaEquipePage.garantiaAmbienteTrad");
   const diversidadeInclusaoTrad = useTranslations("NossaEquipePage.diversidadeInclusaoTrad");
   const diversidadeGeneroTrad = useTranslations("NossaEquipePage.diversidadeGeneroTrad");
   const diversidadeSexualTrad = useTranslations("NossaEquipePage.diversidadeSexualTrad");
   const diversidadeCulturalTrad = useTranslations("NossaEquipePage.diversidadeCulturalTrad");
-  const diversidadeRacialTrad = useTranslations("NossaEquipePage.diversidadeRacialTrad");
   const diversidadeDeficienciaTrad = useTranslations("NossaEquipePage.diversidadeDeficienciaTrad");
   const saudeBemEstarTrad = useTranslations("NossaEquipePage.saudeBemEstarTrad");
   const saudeBemEstarTextoTrad = useTranslations("NossaEquipePage.saudeBemEstarTextoTrad");
@@ -161,42 +147,6 @@ const NossaEquipePage: React.FC = () => {
     type: "center",
   };
 
-  const graficosDistribuicaoData: Simple2TitleImageBannerInterface = {
-    firstImage: {
-      title: graficosDistribuicaoTrad("firstImage.title"),
-      imageUrl: "/img/temp/grafico1.png",
-      imageAlt: graficosDistribuicaoTrad("firstImage.imageAlt"),
-    },
-    secondImage: {
-      title: graficosDistribuicaoTrad("secondImage.title"),
-      imageUrl: "/img/temp/grafico2.png",
-      imageAlt: graficosDistribuicaoTrad("secondImage.imageAlt"),
-    },
-  };
-
-  // const propostaDeValorData: SimpleCallBannerInterface = {
-  //   alignment: "end",
-  //   imageUrl: "/img/temp/propostaValor2.png",
-  //   title: propostaDeValorTrad("title"),
-  //   paragraph: propostaDeValorTrad("paragraph"),
-  // };
-
-  // const culturaRespeitoData: ImageWithCardTextBannerInterface = {
-  //   title: culturaRespeitoTrad("title"),
-  //   paragraph: culturaRespeitoTrad("paragraph"),
-  //   imageAlt: culturaRespeitoTrad("imageAlt"),
-  //   imageUrl: "/img/temp/etiveInclusao.jpg",
-  //   imageAlignment: "end",
-  // };
-
-  // const beneficiosValorizamData: ImageWithCardTextBannerInterface = {
-  //   title: beneficiosValorizamTrad("title"),
-  //   paragraph: beneficiosValorizamTrad("paragraph"),
-  //   imageAlt: beneficiosValorizamTrad("imageAlt"),
-  //   imageUrl: "/img/final/acessibilidadeInclusao.jpeg",
-  //   imageAlignment: "start",
-  // };
-
   const direitosHumanosData: SimpleCallBannerInterface = {
     alignment: "start",
     imageUrl: "/img/temp/direitosHumanos.png",
@@ -208,12 +158,13 @@ const NossaEquipePage: React.FC = () => {
   const compromissoDireitosHumanosData: SimpleTextBannerInterface = {
     title: compromissoDireitosHumanosTrad("title"),
     paragraph: compromissoDireitosHumanosTrad("paragraph"),
+    paragraphsWithTopics: [
+      {
+        topics: [compromissoDireitosHumanosTrad("topics.0"), compromissoDireitosHumanosTrad("topics.1")],
+        lastParagraphs: [compromissoDireitosHumanosTrad("lastParagraph")],
+      },
+    ],
   };
-
-  // const garantiaAmbienteData: SimpleTextBannerInterface = {
-  //   title: garantiaAmbienteTrad("title"),
-  //   paragraph: garantiaAmbienteTrad("paragraph"),
-  // };
 
   const diversidadeInclusao: SimpleCallBannerInterface = {
     alignment: "end",
@@ -236,11 +187,6 @@ const NossaEquipePage: React.FC = () => {
   const diversidadeCulturalData: SimpleTextBannerInterface = {
     title: diversidadeCulturalTrad("title"),
     paragraph: diversidadeCulturalTrad("paragraph"),
-  };
-
-  const diversidadeRacialData: SimpleTextBannerInterface = {
-    title: diversidadeRacialTrad("title"),
-    paragraph: diversidadeRacialTrad("paragraph"),
   };
 
   const diversidadeDeficienciaData: SimpleTextBannerInterface = {
@@ -274,18 +220,12 @@ const NossaEquipePage: React.FC = () => {
         <GraficoColaboradores />
         <GraficoGenero />
       </div>
-      {/* <Simple2TitleImageBanner {...graficosDistribuicaoData} /> */}
-      {/* <SimpleCallBanner {...propostaDeValorData} />
-      <ImageWithCardTextBanner {...culturaRespeitoData} />
-      <ImageWithCardTextBanner {...beneficiosValorizamData} /> */}
       <SimpleCallBanner {...direitosHumanosData} />
       <SimpleTextBanner {...compromissoDireitosHumanosData} />
-      {/* <SimpleTextBanner {...garantiaAmbienteData} /> */}
       <SimpleCallBanner {...diversidadeInclusao} />
       <SimpleTextBanner {...diversidadeGeneroData} />
       <SimpleTextBanner {...diversidadeSexualData} />
       <SimpleTextBanner {...diversidadeCulturalData} />
-      <SimpleTextBanner {...diversidadeRacialData} />
       <SimpleTextBanner {...diversidadeDeficienciaData} />
       <SimpleCallBanner {...saudeBemEstarData} />
       <SimpleTextBanner {...saudeBemEstarTextoData} />
