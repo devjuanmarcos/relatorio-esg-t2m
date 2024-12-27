@@ -252,7 +252,7 @@
       "paragraph": "A sustentabilidade ambiental refere-se à preservação dos recursos naturais e à redução dos impactos negativos causados pelas atividades humanas no meio ambiente.",
       "paragraphsWithTopics": [
         {
-          "subTitle": "Objetivos:",
+          "subTitle": "Objetivos",
           "topics": [
             "Promover a saúde e o bem-estar humano, tanto no presente quanto no futuro.",
             "Proteger o capital natural (terra, ar, água, minerais, entre outros) e preservar ecossistemas globais.",
@@ -260,7 +260,7 @@
           ]
         },
         {
-          "subTitle": "Principais Ações:",
+          "subTitle": "Principais Ações",
           "topics": [
             "Conservação da biodiversidade: Assegurar que ecossistemas e espécies não sejam degradados, promovendo a proteção de habitats naturais e a recuperação de áreas afetadas.",
             "Gestão responsável dos recursos naturais: Utilizar racionalmente recursos como água, solo e energia, reduzindo desperdícios e evitando o esgotamento de recursos essenciais.",
@@ -276,32 +276,32 @@
       "paragraph": "A responsabilidade social vai além de ações isoladas, estando diretamente ligada à preservação dos recursos sociais e ao bem-estar coletivo. Ela garante que as pessoas tenham uma vida digna e igualdade de oportunidades.",
       "paragraphsWithTopics": [
         {
-          "subTitle": "Abrangência:",
+          "subTitle": "Abrangência",
           "topics": [
             "Envolve comunidades, culturas e os impactos da globalização.",
             "Foco no desenvolvimento humano, com investimentos em saúde, saneamento, educação, acesso a serviços, além de promover conhecimento, nutrição, lazer e cultura."
           ]
         },
         {
-          "subTitle": "Justiça Social:",
+          "subTitle": "Justiça Social",
           "paragraphs": [
             "A justiça social é essencial para reduzir desigualdades econômicas e sociais, garantindo acesso universal a direitos básicos como saúde, educação, segurança e moradia. O compromisso com a igualdade visa construir uma sociedade mais justa e equitativa."
           ]
         },
         {
-          "subTitle": "Direitos Humanos:",
+          "subTitle": "Direitos Humanos",
           "paragraphs": [
             "A responsabilidade social fortalece os princípios da Declaração Universal dos Direitos Humanos, assegurando que todos possam viver com dignidade, liberdade, saúde e segurança."
           ]
         },
         {
-          "subTitle": "Qualidade de Vida:",
+          "subTitle": "Qualidade de Vida",
           "paragraphs": [
             "Melhorar o Índice de Desenvolvimento Humano (IDH) por meio de ações em educação, saúde, saneamento e programas sociais, promovendo também turismo, esporte e lazer."
           ]
         },
         {
-          "subTitle": "Participação Social:",
+          "subTitle": "Participação Social",
           "paragraphs": [
             "Envolver comunidades nas decisões que afetam suas vidas é essencial. O empoderamento social, por meio do engajamento político e econômico, fortalece a cidadania e garante que as vozes sejam ouvidas e respeitadas."
           ]
@@ -313,20 +313,20 @@
           ]
         },
         {
-          "subTitle": "Propósito das Organizações:",
+          "subTitle": "Propósito das Organizações",
           "paragraphs": [
             "O propósito organizacional deve evoluir conforme mudanças no ambiente socioeconômico e nas condições do ecossistema, garantindo relevância para todas as partes interessadas."
           ]
         },
         {
-          "subTitle": "Práticas Sustentáveis:",
+          "subTitle": "Práticas Sustentáveis",
           "topics": [
             "Crescimento sustentável: Gerar valor e lucros de forma responsável, sem prejudicar recursos naturais ou sociais.",
             "Investimentos ESG: Incorporar impactos ambientais e sociais nas práticas financeiras, alinhando-se aos princípios ESG."
           ]
         },
         {
-          "subTitle": "Gestão Eficiente:",
+          "subTitle": "Gestão Eficiente",
           "paragraphs": [
             "Maximizar a rentabilidade a longo prazo, utilizando recursos de forma prudente e responsável, sem comprometer o bem-estar das gerações futuras ou os ecossistemas."
           ]
@@ -339,20 +339,20 @@
       "paragraph": "A preservação dos recursos econômicos e o uso eficiente de ativos e compromissos orçamentários visam manter níveis elevados e estáveis de crescimento econômico ao longo do tempo. No entanto, a qualidade do crescimento é tão importante quanto sua quantidade.",
       "paragraphsWithTopics": [
         {
-          "subTitle": "Propósito das Organizações:",
+          "subTitle": "Propósito das Organizações",
           "paragraphs": [
             "O propósito organizacional deve evoluir conforme mudanças no ambiente socioeconômico e nas condições do ecossistema, garantindo relevância para todas as partes interessadas."
           ]
         },
         {
-          "subTitle": "Práticas Sustentáveis:",
+          "subTitle": "Práticas Sustentáveis",
           "topics": [
             "Crescimento sustentável: Gerar valor e lucros de forma responsável, sem prejudicar recursos naturais ou sociais.",
             "Investimentos ESG: Incorporar impactos ambientais e sociais nas práticas financeiras, alinhando-se aos princípios ESG."
           ]
         },
         {
-          "subTitle": "Gestão Eficiente:",
+          "subTitle": "Gestão Eficiente",
           "paragraphs": [
             "Maximizar a rentabilidade a longo prazo, utilizando recursos de forma prudente e responsável, sem comprometer o bem-estar das gerações futuras ou os ecossistemas."
           ]
@@ -457,7 +457,7 @@
         "imageAlt": "Escritório da T2M"
       },
       "utilizacaoNuvemTexto2Trad": {
-        "title": "Resultados da migração para o Microsoft Cloud:",
+        "title": "Resultados da migração para o Microsoft Cloud",
         "topics": [
           "Evitamos a emissão de 2,192 milhões de toneladas de carbono, representando uma redução de 99,72% das emissões potenciais.",
           "Emissões efetivas somaram apenas 0,007 toneladas, comparadas a 2,468 toneladas em um cenário tradicional."
@@ -564,7 +564,7 @@
       "numerosResidenciaTrad": {
         "title": "Caso Prático T2M – Parceria Serratec",
         "topTitle": "Indicadores da Residência em TIC",
-        "paragraph": "Dados sobre os 502 residentes contratados imediatamente após a conclusão da Residência em TIC:",
+        "paragraph": "Dados sobre os 502 residentes contratados imediatamente após a conclusão da Residência em TIC",
         "imageAlt": "Resumo visual de dados do programa: 1) 205 pessoas adotadas pelo programa; 2) 101 contratações realizadas; 3) 4% de participantes com deficiência; 4) 21% de participação feminina; 5) 51% de egressos de escola pública; 6) 10 participantes atuam como professores ou monitores do programa. Os dados são apresentados de forma clara, com números destacados para facilitar a compreensão.",
         "paragraphs": [
           "205 residentes adotados, representando 18,75% do total de 1092 formados",
@@ -578,7 +578,7 @@
       "numerosUffTrad": {
         "title": "Caso Prático T2M - Parceria UFF",
         "topTitle": "Indicadores da Universidade Federal Fluminense",
-        "paragraph": "Dados sobre os 518 formados oriundos da parceria com a UFF (2019.2–2024.1):",
+        "paragraph": "Dados sobre os 518 formados oriundos da parceria com a UFF (2019.2–2024.1)",
         "imageAlt": "Resumo do caso Caso Prático T2M - Parceria UFF",
         "paragraphs": [
           "Dos 518 formados pela UFF, 98 foram contratados pela T2M, representando 19% do total de formados.",
@@ -602,7 +602,7 @@
       },
       "voluntariadoApoioTexto1Trad": {
         "paragraph": "A T2M participa ativamente de programas de voluntariado e empregabilidade, promovendo a inclusão social e o desenvolvimento de jovens talentos.",
-        "subTitle": "Foco do Programa:",
+        "subTitle": "Foco do Programa",
         "topics": [
           "Pessoas em vulnerabilidade social, como mães solo, LGBTQIAP+, pessoas com diversidade funcional, refugiados e egressos do sistema prisional.",
           "Feiras de emprego e cursos preparatórios para desenvolver habilidades técnicas e comportamentais, capacitando participantes para o mercado de trabalho."
@@ -753,7 +753,7 @@
         "topTitle": "Governança",
         "title": "Certificações e Padrões Internacionais",
         "iconAlt": "Ícone referente ao tópico governança",
-        "paragraph": "A T2M está alinhada a padrões internacionais de integridade e ética empresarial:"
+        "paragraph": "A T2M está alinhada a padrões internacionais de integridade e ética empresarial"
       },
       "certificacoesPadroesInternacionaisTexto1Trad": {
         "topics": [
@@ -774,7 +774,7 @@
       "certificacoesPadroesInternacionaisTexto2Trad": {
         "title": "Crescimento Profissional",
         "paragraph": "A T2M investe no crescimento de seus colaboradores, oferecendo um portfólio robusto de treinamentos e cursos para impulsionar suas carreiras e capacitá-los para enfrentar os desafios do mercado.",
-        "subTitle": "Destaques dos treinamentos:",
+        "subTitle": "Destaques dos treinamentos",
         "topics": [
           "PL400: 40 horas de aprendizado em desenvolvimento Low Code, com certificações.",
           "Microsoft 365 Endpoint Administrator (MD-102): Curso com certificação.",
@@ -811,7 +811,7 @@
         "buttonText": "Acessar relatório"
       },
       "equidadeSalarialTexto1Trad": {
-        "title": "Conteúdo do relatório:",
+        "title": "Conteúdo do relatório de equidade salarial",
         "topics": [
           "Critérios de remuneração.",
           "Políticas de contratação inclusivas (mulheres negras, pessoas com deficiência, LGBTQIA+, indígenas, chefes de família, entre outras).",
