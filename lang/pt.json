@@ -91,10 +91,10 @@
     },
     "mensagemCeoTrad": {
       "imageAlt": "Foto do Guilherme, CEO da T2M",
-      "title": "Liderança inovadora.",
-      "topTitle": "Mensagem da Diretoria Executiva",
-      "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável 2024 reflete o compromisso da T2M com a transparência e a responsabilidade social. Este documento é um canal essencial para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU e aos princípios ESG.",
-      "buttonText": "Leia a mensagem da Diretoria Executiva"
+      "title": "Liderança inovadora ",
+      "topTitle": "Mensagem do nosso CEO ",
+      "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável 2024 reflete o compromisso da T2M com a transparência e a responsabilidade social. Este documento é um canal essencial para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU e aos princípios ESG. ",
+      "buttonText": "Leia a Mensagem do nosso CEO "
     },
     "sobreRelatorioTrad": {
       "title": "Sobre este relatório",
@@ -107,7 +107,7 @@
     },
     "processoMaterialidadeTrad": {
       "title": "Processo de materialidade",
-      "paragraph": "Mantemos um relacionamento constante e transparente com nossas partes interessadas, deindivíduos a organizações. Esse diálogo nos permite compreender expectativas e preocupações, transformando-as em informações estratégicas que orientam a gestão de nossos negócios e nossas práticas de responsabilidade sociais, ambientais e de governança."
+      "paragraph": "Mantemos um relacionamento constante e transparente com nossas partes interessadas, de indivíduos a organizações. Esse diálogo nos permite compreender expectativas e preocupações, transformando-as em informações estratégicas que orientam a gestão de nossos negócios e nossas práticas de responsabilidade sociais, ambientais e de governança."
     },
     "partesInteressadasTrad": {
       "title": "Partes Interessadas",
@@ -234,7 +234,7 @@
       "numberCards": [
         {
           "title": "Sustentabilidade Ambiental",
-          "paragraph": "Melhoria da saúde e do bem-estar humano, proteção do capital natural (terra, ar, água, minerais etc.) e dos ecossistemas globais. Isso inclui questões relacionadas à energia e ao clima, impactos e externalidades na produção de bens e na prestação de serviços, além de infraestruturas &quot;verdes&quot; e a economia circular."
+          "paragraph": "Melhoria da saúde e do bem-estar humano, proteção do capital natural (terra, ar, água, minerais etc.) e dos ecossistemas globais. Isso inclui questões relacionadas à energia e ao clima, impactos e externalidades na produção de bens e na prestação de serviços, além de infraestruturas 'verdes' e a economia circular."
         },
         {
           "title": "Responsabilidade Social",
@@ -256,7 +256,7 @@
           "topics": [
             "Promover a saúde e o bem-estar humano, tanto no presente quanto no futuro.",
             "Proteger o capital natural (terra, ar, água, minerais, entre outros) e preservar ecossistemas globais.",
-            "Atuar em questões relacionadas à energia e clima, desenvolvendo infraestruturas &quot;verdes&quot; e adotando uma economia circular."
+            "Atuar em questões relacionadas à energia e clima, desenvolvendo infraestruturas 'verdes' e adotando uma economia circular."
           ]
         },
         {
@@ -398,10 +398,10 @@
       ]
     },
     "codigoCondutaTrad": {
-      "topTitle": "Etíca e Conduta",
-      "title": "Acesse aqui nosso Código de Compliance, Ética e Conduta.",
+      "topTitle": "Acesse aqui nossos Códigos de Complicance, Ética e Conduta",
+      "title": "Ética e Conduta",
       "linkText": "Acessar",
-      "imageAlt": "Código de ética, complience e conduta."
+      "imageAlt": "Código de ética, Compliance e conduta."
     }
   },
 
@@ -592,11 +592,7 @@
         "iconAlt": "Ícone referente ao tópico social"
       },
       "campanhasSolidariasTexto1Trad": {
-        "paragraph": "A T2M realiza anualmente a campanha Gesto Solidário, arrecadando alimentos e roupas para instituições e pessoas em situação de vulnerabilidade.",
-        "topics": [
-          "Durante o período de festas, promovemos a campanha Adote sua Cartinha de Natal, enviando presentes para crianças em situação de vulnerabilidade ou com diversidade funcional.",
-          "Mensalmente, realizamos a Campanha Solidária, recolhendo doações destinadas a uma instituição ou projeto, apadrinhado por um colaborador, que escolhe para onde serão direcionadas as doações."
-        ],
+        "paragraph": "A T2M realiza anualmente a campanha Gesto Solidário, arrecadando alimentos e roupas para instituições e pessoas em situação de rua. No período de festas, promove a campanha Adote sua Cartinha de Natal, com o objetivo de enviar presentes a crianças em vulnerabilidade e com diversidade funcional. Todo mês, um colaborador T2M apadrinha uma instituição ou projeto, escolhendo onde serão direcionadas as doações. Durante o Techday, um evento mensal que promove o compartilhamento de projetos, conhecimentos e networking entre os colaboradores, entregamos os itens arrecadados diretamente aos representantes das organizações apoiadas. A T2M incentiva a participação ativa de seus colaboradores, reforçando a cultura de solidariedade e ampliando o impacto positivo na comunidade.",
         "imageAlt": "Imagem de doações realizadas pela T2M, Biomob e Serratec"
       },
       "voluntariadoApoioTrad": {
@@ -709,7 +705,7 @@
         "iconAlt": "Ícone referente ao tópico governança"
       },
       "programaQualidadeVidaTexto1Trad": {
-        "paragraph": "A T2M promove o bem-estar de seus colaboradores por meio do Programa de Atividade Física, realizado todos os sábados.",
+        "paragraph": "A T2M promove o bem-estar de seus colaboradores por meio do Programa Qualidade de Vida, realizado todos os sábados.",
         "topics": [
           "Objetivo: Melhorar a qualidade de vida e a saúde mental dos colaboradores.",
           "Características: As atividades são adaptadas a diferentes níveis de condicionamento, incentivando um estilo de vida saudável e ativo, além de promover integração entre os participantes."
@@ -736,7 +732,7 @@
         "iconAlt": "Ícone referente ao tópico governança"
       },
       "comiteT2MTexto1Trad": {
-        "title": "Complieance:",
+        "title": "Compliance",
         "paragraph": "Responsável pela gestão independente do Programa de Integridade da T2M, garantindo os recursos necessários para assegurar a imparcialidade das práticas de compliance.",
         "topics": [
           "Funções: Incentivar o reporte de suspeitas e violações, promover a prevenção e detecção de fraudes, e cultivar uma cultura de responsabilidade em todos os níveis.",
@@ -745,7 +741,7 @@
         "imageAlt": "Imagem do escritório da T2M"
       },
       "comiteT2MTexto2Trad": {
-        "title": "CIPA (Comissão Interna de Prevenção de Acidentes):",
+        "title": "CIPA (Comissão Interna de Prevenção de Acidentes)",
         "paragraph": "Em cumprimento à NR-5, a CIPA identifica e mitiga riscos no ambiente de trabalho, promove campanhas de conscientização, treinamentos e aborda questões de assédio.",
 
         "topics": [
@@ -1199,7 +1195,7 @@
 
   "MensagemCeoPage": {
     "callBannerTrad": {
-      "title": "Mensagem da Diretoria Executiva",
+      "title": "Mensagem do nosso CEO",
       "paragraph": "Na T2M, reforçamos nosso compromisso e alinhamento com os ODS da ONU e as práticas de ESG.",
       "buttonText": "Guilherme da Motta Alves - Linkedin"
     },

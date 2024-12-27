@@ -14,10 +14,15 @@ import { FaCogs, FaShieldAlt, FaTachometerAlt, FaUniversalAccess } from "react-i
 import { useTranslations } from "next-intl";
 import GraficoColaboradores from "../ui/GraficoColaboradores";
 import GraficoGenero from "../ui/GraficoGenero";
+import { ImageWithCardTextBannerExpandedInterface } from "../banners/ImageWithCardTextBannerExpanded";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => <span>Carregando...</span>,
 });
+
+const ImageWithCardTextBannerExpanded = dynamic(() =>
+  import("@/components/banners/ImageWithCardTextBannerExpanded").then((mod) => mod.ImageWithCardTextBannerExpanded)
+);
 
 const SimpleCallBanner = dynamic(() =>
   import("@/components/banners/SimpleCallBanner").then((mod) => mod.SimpleCallBanner)
@@ -35,6 +40,7 @@ const NossaEquipePage: React.FC = () => {
   const isMounted = useIsMounted();
 
   const callBannerTrad = useTranslations("NossaEquipePage.callBannerTrad");
+  const organogramaTexto1Trad = useTranslations("ESGPage.Governamental.organogramaTexto1Trad");
   const divisaoPorCategoriaTrad = useTranslations("NossaEquipePage.divisaoPorCategoriaTrad");
   const compromissoComDiversidadeTrad = useTranslations("NossaEquipePage.compromissoComDiversidadeTrad");
   const ambienteExtremoValorTrad = useTranslations("NossaEquipePage.ambienteExtremoValorTrad");
@@ -63,6 +69,20 @@ const NossaEquipePage: React.FC = () => {
     buttonTarget: "_blank",
     title: callBannerTrad("title"),
     paragraph: callBannerTrad("paragraph"),
+  };
+
+  const organogramaTexto1Data: ImageWithCardTextBannerExpandedInterface = {
+    title: organogramaTexto1Trad("title"),
+    paragraph: organogramaTexto1Trad("paragraph"),
+    imageAlt: organogramaTexto1Trad("imageAlt"),
+    imageUrl: "/img/temp/organograma.jpg",
+    imageAlignment: "end",
+    lineColor: "bg-var-governanca",
+    pointColor: "text-var-governanca",
+    // pdfLink1:
+    //   "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/organograma%201%20(1).pdf?t=2024-12-26T19%3A20%3A10.342Z",
+    // pdfText1: organogramaTexto1Trad("linkText1"),
+    imageExpand: true,
   };
 
   const divisaoPorCategoriaData: IconsCardsBannerInterface = {
@@ -213,7 +233,7 @@ const NossaEquipePage: React.FC = () => {
         <MemoizedCallBanner {...callBannerData} />
       </React.Suspense>
 
-      <IconsCardsBanner {...divisaoPorCategoriaData} />
+      <ImageWithCardTextBannerExpanded {...organogramaTexto1Data} />
       <SimpleCallBanner {...compromissoComDiversidadeData} />
       <IconsCardsBanner {...ambienteExtremoValorData} />
       <div className="grid md:grid-cols-2">

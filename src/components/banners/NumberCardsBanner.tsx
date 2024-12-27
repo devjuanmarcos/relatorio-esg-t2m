@@ -85,7 +85,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
             )}
             {title && <TextVariantes variant="h2_title">{title}</TextVariantes>}
             {imageUrl && imageAlt && (
-              <Image src={imageUrl} alt={imageAlt} width={1000} height={500} className="w-full h-auto" />
+              <Image src={imageUrl} alt={imageAlt} width={1300} height={500} quality={100} className="w-full h-auto" />
             )}
             {Graphic && <Graphic />}
             {paragraph && (
@@ -100,7 +100,11 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
                 </TextVariantes>
               ))}
             {pdfLink1 && pdfText1 && (
-              <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+              <Link
+                href={pdfLink1}
+                target={"_blank"}
+                className={`${buttonVariants({ variant: "link", size: "default" })} ${alignment == "center" && "mx-auto"}`}
+              >
                 {pdfText1}
               </Link>
             )}

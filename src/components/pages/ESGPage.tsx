@@ -16,6 +16,7 @@ import GraficosResidencia from "../ui/GraficosResidencia";
 import { TbChristmasBall, TbChristmasTree } from "react-icons/tb";
 import { FaGift } from "react-icons/fa";
 import GraficosUff from "../ui/GraficosUff";
+import { ImageWithCardTextBannerExpandedInterface } from "../banners/ImageWithCardTextBannerExpanded";
 
 const MemoizedCallBanner = dynamic(() => import("@/components/banners/CallBanner").then((mod) => mod.default), {
   loading: () => (
@@ -96,7 +97,6 @@ const ESGPage: React.FC = () => {
   const certificacoesPadroesInternacionaisTexto1Trad = useTranslations(
     "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto1Trad"
   );
-  const organogramaTexto1Trad = useTranslations("ESGPage.Governamental.organogramaTexto1Trad");
   const certificacoesPadroesInternacionaisTexto2Trad = useTranslations(
     "ESGPage.Governamental.certificacoesPadroesInternacionaisTexto2Trad"
   );
@@ -419,11 +419,6 @@ const ESGPage: React.FC = () => {
 
   const campanhasSolidariasTexto1Data: ImageWithCardTextBannerInterface = {
     paragraph: campanhasSolidariasTexto1Trad("paragraph"),
-    paragraphsWithTopics: [
-      {
-        topics: [campanhasSolidariasTexto1Trad("topics.0"), campanhasSolidariasTexto1Trad("topics.1")],
-      },
-    ],
     imageAlt: campanhasSolidariasTexto1Trad("imageAlt"),
     imageUrl: "/img/final/esg/doacoes.jpg",
     imageAlignment: "end",
@@ -734,19 +729,6 @@ const ESGPage: React.FC = () => {
     pdfText2: certificacoesPadroesInternacionaisTexto1Trad("linkText2"),
   };
 
-  const organogramaTexto1Data: ImageWithCardTextBannerInterface = {
-    title: organogramaTexto1Trad("title"),
-    paragraph: organogramaTexto1Trad("paragraph"),
-    imageAlt: organogramaTexto1Trad("imageAlt"),
-    imageUrl: "/img/temp/organograma.jpg",
-    imageAlignment: "end",
-    lineColor: "bg-var-governanca",
-    pointColor: "text-var-governanca",
-    pdfLink1:
-      "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/organograma%201%20(1).pdf?t=2024-12-26T19%3A20%3A10.342Z",
-    pdfText1: organogramaTexto1Trad("linkText1"),
-  };
-
   const certificacoesPadroesInternacionaisTexto2Data: ImageWithCardTextBannerInterface = {
     title: certificacoesPadroesInternacionaisTexto2Trad("title"),
     paragraph: certificacoesPadroesInternacionaisTexto2Trad("paragraph"),
@@ -934,7 +916,6 @@ const ESGPage: React.FC = () => {
       <SimpleCallBanner {...certificacoesPadroesInternacionaisData} />
       <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto1Data} />
       <ImageWithCardTextBanner {...certificacoesPadroesInternacionaisTexto2Data} />
-      <ImageWithCardTextBanner {...organogramaTexto1Data} />
       <DividingLine lineColor={"bg-var-governanca"} />
 
       <SimpleCallBanner {...canaisDenunciaData} />

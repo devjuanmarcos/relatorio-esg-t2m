@@ -42,7 +42,7 @@ export const ThreeTextCardsWithNumberCardBanner: React.FC<ThreeTextCardsWithNumb
       <div className="grid md:grid-cols-2 gap-10 md:gap-5">
         {limitedTextCards.slice(0, 2).map((card, index) => (
           <div key={index} className="flex flex-col gap-3">
-            {topTitle && (
+            {card.topTitle && (
               <TextVariantes variant="top_title" lineBottom>
                 {card.topTitle}
               </TextVariantes>
