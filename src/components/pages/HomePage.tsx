@@ -515,11 +515,11 @@ const HomePage: React.FC = () => {
       <ImageWithCardTextBanner {...mensagemCeoData} />
       <DividingLine />
       <ImageWithCardTextBanner {...sobreRelatorioData} />
+      <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
       <SimpleCallBanner {...processoMaterialidadeData} />
       <IconsCardsBanner {...partesInteressadasData} />
       <SimpleCallBanner {...metodologiaData} />
       <ThreeTextCardsWithNumberCardBanner {...quatroCardsMetodologiaData} />
-      <NumberCardsBanner {...greenwashingDesenvolvimentoSustentavelData} />
       <SimpleCallBanner {...sustentabilidadeData} />
       <NumberCardsBanner {...tresDimensoesData} />
       <ImageWithCardTextBanner {...sustentabilidadeAmbientalData} />
