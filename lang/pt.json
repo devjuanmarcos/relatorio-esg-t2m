@@ -92,9 +92,9 @@
     "mensagemCeoTrad": {
       "imageAlt": "Foto do Guilherme, CEO da T2M",
       "title": "Liderança inovadora ",
-      "topTitle": "Mensagem do nosso CEO ",
+      "topTitle": "Mensagem do Diretor Executivo",
       "paragraph": "O Relatório de Impacto Social e Desenvolvimento Sustentável 2024 reflete o compromisso da T2M com a transparência e a responsabilidade social. Este documento é um canal essencial para comunicar nossas ações e avanços em sustentabilidade, alinhando nossas práticas aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU e aos princípios ESG. ",
-      "buttonText": "Leia a Mensagem do nosso CEO "
+      "buttonText": "Leia a mensagem do Diretor Executivo"
     },
     "sobreRelatorioTrad": {
       "title": "Sobre este relatório",
@@ -1195,7 +1195,7 @@
 
   "MensagemCeoPage": {
     "callBannerTrad": {
-      "title": "Mensagem do nosso CEO",
+      "title": "Mensagem do Diretor Executivo",
       "paragraph": "Na T2M, reforçamos nosso compromisso e alinhamento com os ODS da ONU e as práticas de ESG.",
       "buttonText": "Guilherme da Motta Alves - Linkedin"
     },
