@@ -100,10 +100,10 @@ const HomePage: React.FC = () => {
 
   const callBannerData: CallBannerInterface = {
     imageUrl: "/img/final/impactoSocial.jpg",
-    buttonLink:
-      "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/RELATORIO_ESG_T2M.pdf?t=2024-12-26T20%3A31%3A13.464Z",
-    buttonTarget: "_blank",
-    buttonText: callBannerTrad("buttonText"),
+    // buttonLink:
+    //   "https://cbkracjbkuqkxxmomlei.supabase.co/storage/v1/object/public/uploads/Temp/RELATORIO_ESG_T2M.pdf?t=2024-12-26T20%3A31%3A13.464Z",
+    // buttonTarget: "_blank",
+    // buttonText: callBannerTrad("buttonText"),
     title: callBannerTrad("title"),
     paragraph: callBannerTrad("paragraph"),
     alignment: "start",
@@ -196,6 +196,12 @@ const HomePage: React.FC = () => {
         paragraphs: [partesInteressadasTrad("icons.5.paragraphs.0"), partesInteressadasTrad("icons.5.paragraphs.1")],
         icon: FaBalanceScale,
       },
+      {
+        id: 7,
+        title: partesInteressadasTrad("icons.5.title"),
+        paragraph: partesInteressadasTrad("icons.5.paragraphs.1"),
+        icon: FaHouseUser,
+      },
     ],
     type: "center",
   };
@@ -270,11 +276,6 @@ const HomePage: React.FC = () => {
         title: greenwashingDesenvolvimentoSustentavelTrad("numberCards.5.title"),
         icon: FaBalanceScale,
         paragraph: greenwashingDesenvolvimentoSustentavelTrad("numberCards.5.paragraph"),
-      },
-      {
-        title: greenwashingDesenvolvimentoSustentavelTrad("numberCards.6.title"),
-        icon: FaHouseUser,
-        paragraph: greenwashingDesenvolvimentoSustentavelTrad("numberCards.6.paragraph"),
       },
     ],
     type: "border",

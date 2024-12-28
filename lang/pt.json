@@ -164,6 +164,18 @@
             "Promoção de um ambiente inclusivo com iniciativas que valorizam a diversidade cultural, social e de gênero.",
             "Políticas que equiparam oportunidades, incentivam a equidade e garantem respeito mútuo, fortalecendo uma cultura organizacional plural e sustentável."
           ]
+        },
+        {
+          "title": "Comitê Gestor",
+          "paragraphs": [
+            "Promoção de um ambiente inclusivo com iniciativas que valorizam a diversidade cultural, social e de gênero.",
+            "Políticas que equiparam oportunidades, incentivam a equidade e garantem respeito mútuo, fortalecendo uma cultura organizacional plural e sustentável."
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Conselho de Cotistas",
+          "paragraph": "Criado para garantir a condução profissional dos negócios, privilegiando sempre a perenidade da empresa, o Conselho de Acionistas visa difundir, aplicar e perenizar os princípios, crenças e valores do Grupo."
         }
       ]
     },
@@ -223,10 +235,6 @@
         {
           "title": "O Papel da Governança",
           "paragraph": "Uma governança eficaz orienta decisões empresariais alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS), promovendo práticas éticas e responsáveis."
-        },
-        {
-          "title": "Conselho de Cotistas",
-          "paragraph": "Criado para garantir a condução profissional dos negócios, privilegiando sempre a perenidade da empresa, o Conselho de Acionistas visa difundir, aplicar e perenizar os princípios, crenças e valores do Grupo."
         }
       ]
     },
