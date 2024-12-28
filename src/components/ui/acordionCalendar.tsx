@@ -89,10 +89,14 @@ const months = [
 ];
 
 const EventCard = ({ title, category, date }: { title: string; category: Category; date: string }) => {
-  const eventDate = new Date(date);
-  const day = eventDate.getDate();
-  const formattedDate = eventDate.toLocaleDateString("pt-BR", { year: "numeric", month: "long", day: "numeric" });
-
+  const eventDate = new Date(date + "T00:00:00Z");
+  const day = eventDate.getUTCDate();
+  const formattedDate = eventDate.toLocaleDateString("pt-BR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
   const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${eventDate.toISOString().replace(/[-:]/g, "").split(".")[0]}/${eventDate.toISOString().replace(/[-:]/g, "").split(".")[0]}&details=${encodeURIComponent(
     "Evento relacionado à categoria " + category
   )}`;
