@@ -199,7 +199,7 @@ const HomePage: React.FC = () => {
       {
         id: 7,
         title: partesInteressadasTrad("icons.6.title"),
-        paragraph: partesInteressadasTrad("icons.6.paragraphs.1"),
+        paragraph: partesInteressadasTrad("icons.6.paragraph"),
         icon: FaHouseUser,
       },
     ],
