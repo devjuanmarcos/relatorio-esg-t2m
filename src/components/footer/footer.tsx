@@ -153,7 +153,6 @@ export const Footer = () => {
           height={177}
           quality={100}
         />
-        <TextVariantes variant="top_title">{t("footerInfo.text")}</TextVariantes>
       </div>
 
       <div className="flex flex-col gap-20 lg:hidden">

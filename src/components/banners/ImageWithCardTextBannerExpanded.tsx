@@ -142,12 +142,12 @@ export const ImageWithCardTextBannerExpanded: React.FC<ImageWithCardTextBannerEx
         )}
         <div className="flex gap-2">
           {pdfLink1 && pdfText1 && (
-            <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+            <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "default", size: "default" })}>
               {pdfText1}
             </Link>
           )}
           {pdfLink2 && pdfText2 && (
-            <Link href={pdfLink2} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+            <Link href={pdfLink2} target={"_blank"} className={buttonVariants({ variant: "default", size: "default" })}>
               {pdfText2}
             </Link>
           )}
@@ -277,7 +277,7 @@ export const ImageWithCardTextBannerExpanded: React.FC<ImageWithCardTextBannerEx
                 <Image
                   src={imageUrl}
                   alt={imageAlt}
-                  className={`w-auto h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[16/9] rounded-[.75rem] lg:col-span-2`}
+                  className={`w-auto h-full max-h-[22.375rem] ${objectContain ? "object-contain" : "object-cover"} aspect-[20/9] rounded-[.75rem] lg:col-span-2`}
                   width={1064}
                   height={716}
                   quality={100}

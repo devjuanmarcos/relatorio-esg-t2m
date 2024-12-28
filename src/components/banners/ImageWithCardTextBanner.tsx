@@ -138,12 +138,12 @@ export const ImageWithCardTextBanner: React.FC<ImageWithCardTextBannerInterface>
         )}
         <div className="flex gap-2">
           {pdfLink1 && pdfText1 && (
-            <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+            <Link href={pdfLink1} target={"_blank"} className={buttonVariants({ variant: "default", size: "default" })}>
               {pdfText1}
             </Link>
           )}
           {pdfLink2 && pdfText2 && (
-            <Link href={pdfLink2} target={"_blank"} className={buttonVariants({ variant: "link", size: "default" })}>
+            <Link href={pdfLink2} target={"_blank"} className={buttonVariants({ variant: "default", size: "default" })}>
               {pdfText2}
             </Link>
           )}

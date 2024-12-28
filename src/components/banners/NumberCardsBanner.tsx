@@ -103,7 +103,7 @@ export const NumberCardsBanner: React.FC<NumberCardsBannerInterface> = ({
               <Link
                 href={pdfLink1}
                 target={"_blank"}
-                className={`${buttonVariants({ variant: "link", size: "default" })} ${alignment == "center" && "mx-auto"}`}
+                className={`${buttonVariants({ variant: "default", size: "default" })} ${alignment == "center" && "mx-auto"}`}
               >
                 {pdfText1}
               </Link>
