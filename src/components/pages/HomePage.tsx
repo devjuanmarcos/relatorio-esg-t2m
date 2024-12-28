@@ -28,6 +28,7 @@ import {
   FaGift,
   FaLeaf,
   FaUsers,
+  FaHouseUser,
 } from "react-icons/fa";
 import { NumberCardsBannerInterface } from "../banners/NumberCardsBanner";
 import { MdBusinessCenter } from "react-icons/md";
@@ -269,6 +270,11 @@ const HomePage: React.FC = () => {
         title: greenwashingDesenvolvimentoSustentavelTrad("numberCards.5.title"),
         icon: FaBalanceScale,
         paragraph: greenwashingDesenvolvimentoSustentavelTrad("numberCards.5.paragraph"),
+      },
+      {
+        title: greenwashingDesenvolvimentoSustentavelTrad("numberCards.6.title"),
+        icon: FaHouseUser,
+        paragraph: greenwashingDesenvolvimentoSustentavelTrad("numberCards.6.paragraph"),
       },
     ],
     type: "border",
