@@ -198,8 +198,8 @@ const HomePage: React.FC = () => {
       },
       {
         id: 7,
-        title: partesInteressadasTrad("icons.5.title"),
-        paragraph: partesInteressadasTrad("icons.5.paragraphs.1"),
+        title: partesInteressadasTrad("icons.6.title"),
+        paragraph: partesInteressadasTrad("icons.6.paragraphs.1"),
         icon: FaHouseUser,
       },
     ],
